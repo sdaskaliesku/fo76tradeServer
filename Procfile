@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -Dserver.port=$PORT -Dmongo.user=$mongo_user -Dmongo.password=$mongo_password -Dmongo.db=$mongo_db -Dmongo.url=$mongo_url -jar target/fo76tradeServer-1.0-SNAPSHOT.jar
