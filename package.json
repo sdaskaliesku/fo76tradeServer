@@ -1,0 +1,30 @@
+{
+  "name": "fallout76-trade-hub",
+  "version": "1.0.0",
+  "description": "Fallout76 trade hub",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sdaskaliesku/fo76tradeServer.git"
+  },
+  "author": "Serhii Daskaliesku",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sdaskaliesku/fo76tradeServer/issues"
+  },
+  "homepage": "https://github.com/sdaskaliesku/fo76tradeServer/",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
