@@ -9,278 +9,288 @@ import org.springframework.data.mongodb.core.index.Indexed;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ItemDTO {
 
-	@Id
-	private String id;
-	@Indexed
-	private String ownerId;
-	@Indexed
-	private String ownerName;
-	@Indexed
-	private String description;
-	private Double price;
-	@Indexed
-	private Boolean tradeOnly;
-	@Indexed
-	private Boolean tradePossible;
-	@Indexed
-	private String text;
-	@Indexed(unique = true)
-	private Long serverHandleId;
-	private Integer count;
-	private Integer itemValue;
-	@Indexed
-	private FilterFlag filterFlag;
-	private Integer currentHealth;
-	private Integer damage;
-	private Integer durability;
-	private Integer maximumHealth;
-	private Double weight;
-	private Double weaponDisplayAccuracy;
-	private Double weaponDisplayRateOfFire;
-	private Double weaponDisplayRange;
-	@Indexed
-	private Integer numLegendaryStars;
-	@Indexed
-	private Integer itemLevel;
-	private Integer rarity;
-	private Boolean isTradable;
-	private Boolean isSpoiled;
-	private Boolean isSetItem;
-	private Boolean isQuestItem;
-	@Indexed
-	private Boolean isLegendary;
-	@Indexed
-	private List<StatsDTO> stats;
+  @Id
+  private String id;
+  @Indexed
+  private String ownerId;
+  @Indexed
+  private String ownerName;
+  @Indexed
+  private String description;
+  private Double price;
+  @Indexed
+  private Boolean tradeOnly;
+  @Indexed
+  private Boolean tradePossible;
+  @Indexed
+  private String text;
+  @Indexed(unique = true)
+  private Long serverHandleId;
+  private Integer count;
+  private Integer itemValue;
+  @Indexed
+  private FilterFlag filterFlag;
+  private Integer currentHealth;
+  private Integer damage;
+  private Integer durability;
+  private Integer maximumHealth;
+  private Double weight;
+  private Double weaponDisplayAccuracy;
+  private Double weaponDisplayRateOfFire;
+  private Double weaponDisplayRange;
+  @Indexed
+  private Integer numLegendaryStars;
+  @Indexed
+  private Integer itemLevel;
+  private Integer rarity;
+  private Boolean isTradable;
+  private Boolean isSpoiled;
+  private Boolean isSetItem;
+  private Boolean isQuestItem;
+  @Indexed
+  private Boolean isLegendary;
+  @Indexed
+  private List<StatsDTO> stats;
+  @Indexed
+  private List<LegendaryMod> legendaryMods;
 
-	public List<StatsDTO> getStats() {
-		return stats;
-	}
+  public List<LegendaryMod> getLegendaryMods() {
+    return legendaryMods;
+  }
 
-	public void setStats(List<StatsDTO> stats) {
-		this.stats = stats;
-	}
+  public void setLegendaryMods(List<LegendaryMod> legendaryMods) {
+    this.legendaryMods = legendaryMods;
+  }
 
-	public String getOwnerName() {
-		return ownerName;
-	}
+  public List<StatsDTO> getStats() {
+    return stats;
+  }
 
-	public void setOwnerName(String ownerName) {
-		this.ownerName = ownerName;
-	}
+  public void setStats(List<StatsDTO> stats) {
+    this.stats = stats;
+  }
 
-	public String getId() {
-		return id;
-	}
+  public String getOwnerName() {
+    return ownerName;
+  }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+  public void setOwnerName(String ownerName) {
+    this.ownerName = ownerName;
+  }
 
-	public String getOwnerId() {
-		return ownerId;
-	}
+  public String getId() {
+    return id;
+  }
 
-	public void setOwnerId(String ownerId) {
-		this.ownerId = ownerId;
-	}
+  public void setId(String id) {
+    this.id = id;
+  }
 
-	public String getDescription() {
-		return description;
-	}
+  public String getOwnerId() {
+    return ownerId;
+  }
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
+  }
 
-	public Double getPrice() {
-		return price;
-	}
+  public String getDescription() {
+    return description;
+  }
 
-	public void setPrice(Double price) {
-		this.price = price;
-	}
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-	public Boolean getTradeOnly() {
-		return tradeOnly;
-	}
+  public Double getPrice() {
+    return price;
+  }
 
-	public void setTradeOnly(Boolean tradeOnly) {
-		this.tradeOnly = tradeOnly;
-	}
+  public void setPrice(Double price) {
+    this.price = price;
+  }
 
-	public Boolean getTradePossible() {
-		return tradePossible;
-	}
+  public Boolean getTradeOnly() {
+    return tradeOnly;
+  }
 
-	public void setTradePossible(Boolean tradePossible) {
-		this.tradePossible = tradePossible;
-	}
+  public void setTradeOnly(Boolean tradeOnly) {
+    this.tradeOnly = tradeOnly;
+  }
 
-	public String getText() {
-		return text;
-	}
+  public Boolean getTradePossible() {
+    return tradePossible;
+  }
 
-	public void setText(String text) {
-		this.text = text;
-	}
+  public void setTradePossible(Boolean tradePossible) {
+    this.tradePossible = tradePossible;
+  }
 
-	public Long getServerHandleId() {
-		return serverHandleId;
-	}
+  public String getText() {
+    return text;
+  }
 
-	public void setServerHandleId(Long serverHandleId) {
-		this.serverHandleId = serverHandleId;
-	}
+  public void setText(String text) {
+    this.text = text;
+  }
 
-	public Integer getCount() {
-		return count;
-	}
+  public Long getServerHandleId() {
+    return serverHandleId;
+  }
 
-	public void setCount(Integer count) {
-		this.count = count;
-	}
+  public void setServerHandleId(Long serverHandleId) {
+    this.serverHandleId = serverHandleId;
+  }
 
-	public Integer getItemValue() {
-		return itemValue;
-	}
+  public Integer getCount() {
+    return count;
+  }
 
-	public void setItemValue(Integer itemValue) {
-		this.itemValue = itemValue;
-	}
+  public void setCount(Integer count) {
+    this.count = count;
+  }
 
-	public FilterFlag getFilterFlag() {
-		return filterFlag;
-	}
+  public Integer getItemValue() {
+    return itemValue;
+  }
 
-	public void setFilterFlag(FilterFlag filterFlag) {
-		this.filterFlag = filterFlag;
-	}
+  public void setItemValue(Integer itemValue) {
+    this.itemValue = itemValue;
+  }
 
-	public Integer getCurrentHealth() {
-		return currentHealth;
-	}
+  public FilterFlag getFilterFlag() {
+    return filterFlag;
+  }
 
-	public void setCurrentHealth(Integer currentHealth) {
-		this.currentHealth = currentHealth;
-	}
+  public void setFilterFlag(FilterFlag filterFlag) {
+    this.filterFlag = filterFlag;
+  }
 
-	public Integer getDamage() {
-		return damage;
-	}
+  public Integer getCurrentHealth() {
+    return currentHealth;
+  }
 
-	public void setDamage(Integer damage) {
-		this.damage = damage;
-	}
+  public void setCurrentHealth(Integer currentHealth) {
+    this.currentHealth = currentHealth;
+  }
 
-	public Integer getDurability() {
-		return durability;
-	}
+  public Integer getDamage() {
+    return damage;
+  }
 
-	public void setDurability(Integer durability) {
-		this.durability = durability;
-	}
+  public void setDamage(Integer damage) {
+    this.damage = damage;
+  }
 
-	public Integer getMaximumHealth() {
-		return maximumHealth;
-	}
+  public Integer getDurability() {
+    return durability;
+  }
 
-	public void setMaximumHealth(Integer maximumHealth) {
-		this.maximumHealth = maximumHealth;
-	}
+  public void setDurability(Integer durability) {
+    this.durability = durability;
+  }
 
-	public Double getWeight() {
-		return weight;
-	}
+  public Integer getMaximumHealth() {
+    return maximumHealth;
+  }
 
-	public void setWeight(Double weight) {
-		this.weight = weight;
-	}
+  public void setMaximumHealth(Integer maximumHealth) {
+    this.maximumHealth = maximumHealth;
+  }
 
-	public Double getWeaponDisplayAccuracy() {
-		return weaponDisplayAccuracy;
-	}
+  public Double getWeight() {
+    return weight;
+  }
 
-	public void setWeaponDisplayAccuracy(Double weaponDisplayAccuracy) {
-		this.weaponDisplayAccuracy = weaponDisplayAccuracy;
-	}
+  public void setWeight(Double weight) {
+    this.weight = weight;
+  }
 
-	public Double getWeaponDisplayRateOfFire() {
-		return weaponDisplayRateOfFire;
-	}
+  public Double getWeaponDisplayAccuracy() {
+    return weaponDisplayAccuracy;
+  }
 
-	public void setWeaponDisplayRateOfFire(Double weaponDisplayRateOfFire) {
-		this.weaponDisplayRateOfFire = weaponDisplayRateOfFire;
-	}
+  public void setWeaponDisplayAccuracy(Double weaponDisplayAccuracy) {
+    this.weaponDisplayAccuracy = weaponDisplayAccuracy;
+  }
 
-	public Double getWeaponDisplayRange() {
-		return weaponDisplayRange;
-	}
+  public Double getWeaponDisplayRateOfFire() {
+    return weaponDisplayRateOfFire;
+  }
 
-	public void setWeaponDisplayRange(Double weaponDisplayRange) {
-		this.weaponDisplayRange = weaponDisplayRange;
-	}
+  public void setWeaponDisplayRateOfFire(Double weaponDisplayRateOfFire) {
+    this.weaponDisplayRateOfFire = weaponDisplayRateOfFire;
+  }
 
-	public Integer getNumLegendaryStars() {
-		return numLegendaryStars;
-	}
+  public Double getWeaponDisplayRange() {
+    return weaponDisplayRange;
+  }
 
-	public void setNumLegendaryStars(Integer numLegendaryStars) {
-		this.numLegendaryStars = numLegendaryStars;
-	}
+  public void setWeaponDisplayRange(Double weaponDisplayRange) {
+    this.weaponDisplayRange = weaponDisplayRange;
+  }
 
-	public Integer getItemLevel() {
-		return itemLevel;
-	}
+  public Integer getNumLegendaryStars() {
+    return numLegendaryStars;
+  }
 
-	public void setItemLevel(Integer itemLevel) {
-		this.itemLevel = itemLevel;
-	}
+  public void setNumLegendaryStars(Integer numLegendaryStars) {
+    this.numLegendaryStars = numLegendaryStars;
+  }
 
-	public Integer getRarity() {
-		return rarity;
-	}
+  public Integer getItemLevel() {
+    return itemLevel;
+  }
 
-	public void setRarity(Integer rarity) {
-		this.rarity = rarity;
-	}
+  public void setItemLevel(Integer itemLevel) {
+    this.itemLevel = itemLevel;
+  }
 
-	public Boolean getTradable() {
-		return isTradable;
-	}
+  public Integer getRarity() {
+    return rarity;
+  }
 
-	public void setTradable(Boolean tradable) {
-		isTradable = tradable;
-	}
+  public void setRarity(Integer rarity) {
+    this.rarity = rarity;
+  }
 
-	public Boolean getSpoiled() {
-		return isSpoiled;
-	}
+  public Boolean getTradable() {
+    return isTradable;
+  }
 
-	public void setSpoiled(Boolean spoiled) {
-		isSpoiled = spoiled;
-	}
+  public void setTradable(Boolean tradable) {
+    isTradable = tradable;
+  }
 
-	public Boolean getSetItem() {
-		return isSetItem;
-	}
+  public Boolean getSpoiled() {
+    return isSpoiled;
+  }
 
-	public void setSetItem(Boolean setItem) {
-		isSetItem = setItem;
-	}
+  public void setSpoiled(Boolean spoiled) {
+    isSpoiled = spoiled;
+  }
 
-	public Boolean getQuestItem() {
-		return isQuestItem;
-	}
+  public Boolean getSetItem() {
+    return isSetItem;
+  }
 
-	public void setQuestItem(Boolean questItem) {
-		isQuestItem = questItem;
-	}
+  public void setSetItem(Boolean setItem) {
+    isSetItem = setItem;
+  }
 
-	public Boolean getLegendary() {
-		return isLegendary;
-	}
+  public Boolean getQuestItem() {
+    return isQuestItem;
+  }
 
-	public void setLegendary(Boolean legendary) {
-		isLegendary = legendary;
-	}
+  public void setQuestItem(Boolean questItem) {
+    isQuestItem = questItem;
+  }
+
+  public Boolean getLegendary() {
+    return isLegendary;
+  }
+
+  public void setLegendary(Boolean legendary) {
+    isLegendary = legendary;
+  }
 }

@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public enum DamageType {
-	FLAG_0(0, "Nothing"),
-	FLAG_1(1, "Ballistic"),
-	FLAG_2(2, "Water"),
+	NOTHING(0, "Nothing"),
+	BALLISTIC(1, "Ballistic"),
+	WATER(2, "Water"),
 	FLAG_3(3, ""),
-	FLAG_4(4, "Energy"),
+	ENERGY(4, "Energy"),
 	FLAG_5(5, ""),
-	FLAG_6(6, "Radiation"),
-	FLAG_10(10, "Ammo");
+	RADIATION(6, "Radiation"),
+	AMMO(10, "Ammo");
 	private final int flag;
 	private final String name;
 
