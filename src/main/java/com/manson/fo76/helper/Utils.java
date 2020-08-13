@@ -1,4 +1,4 @@
-package com.manson.fo76;
+package com.manson.fo76.helper;
 
 import com.manson.fo76.domain.User;
 import com.manson.fo76.domain.dto.ItemDTO;
@@ -17,6 +17,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public final class Utils {
 
@@ -80,6 +81,10 @@ public final class Utils {
     objectMap.put("text", itemCardEntry.getItemCardText());
     objectMap.put("damageType", itemCardEntry.getDamageTypeEnum());
     return JsonParser.mapToStatsDTO(objectMap);
+  }
+
+  public static boolean validatePassword(User user, User userInDb) {
+    return StringUtils.equals(user.getPassword(), userInDb.getPassword());
   }
 
 }

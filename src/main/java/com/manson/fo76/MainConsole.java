@@ -5,6 +5,7 @@ import com.manson.fo76.domain.ModData;
 import com.manson.fo76.domain.User;
 import com.manson.fo76.domain.dto.ItemDTO;
 import com.manson.fo76.domain.items.ItemDescriptor;
+import com.manson.fo76.helper.Utils;
 import com.manson.fo76.repository.ItemRepository;
 import com.manson.fo76.service.ItemService;
 import com.manson.fo76.service.JsonParser;
@@ -17,7 +18,6 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //@SpringBootApplication
 public class MainConsole implements CommandLineRunner {

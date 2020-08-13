@@ -6,6 +6,7 @@ import com.manson.fo76.domain.User;
 import com.manson.fo76.domain.dto.ItemDTO;
 import com.manson.fo76.domain.items.ItemDescriptor;
 import com.manson.fo76.domain.items.enums.FilterFlag;
+import com.manson.fo76.helper.Utils;
 import com.manson.fo76.repository.ItemRepository;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -110,23 +111,34 @@ public class ItemService {
     return true;
   }
 
-  public boolean deleteItem(String itemId) {
-    itemRepository.deleteById(itemId);
-    return true;
+  public void deleteItems(List<ItemDTO> items) {
+    itemRepository.deleteAll(items);
   }
 
   public ItemDTO addItem(String userId, ItemDTO itemDTO) {
     User user = userService.findByIdOrName(userId);
-    if (Objects.nonNull(user)) {
-      itemDTO.setOwnerName(user.getName());
-      itemDTO.setOwnerId(user.getId());
-      return itemRepository.save(itemDTO);
+    return addItem(user, itemDTO);
+  }
+
+  public ItemDTO addItem(User user, ItemDTO itemDTO) {
+    if (Objects.isNull(user)) {
+      return null;
     }
-    return null;
+    User userInDb = userService.findByIdOrName(user.getId());
+    if (!Utils.validatePassword(user, userInDb)) {
+      return null;
+    }
+    itemDTO.setOwnerName(user.getName());
+    itemDTO.setOwnerId(user.getId());
+    return itemRepository.save(itemDTO);
   }
 
   public List<ItemDTO> addItems(String userId, List<ItemDTO> itemsDTO) {
     return itemsDTO.stream().map(itemDTO -> addItem(userId, itemDTO)).collect(Collectors.toList());
+  }
+
+  public List<ItemDTO> addItems(User user, List<ItemDTO> itemsDTO) {
+    return itemsDTO.stream().map(itemDTO -> addItem(user, itemDTO)).collect(Collectors.toList());
   }
 
   public Page<ItemDTO> findAllByOwnerId(User user, Pageable pageable) {
@@ -139,7 +151,9 @@ public class ItemService {
 
   public Pair<User, List<ItemDescriptor>> processModDataItems(ModData modData,
       ItemsUploadFilters itemsUploadFilters) {
-    if (modData == null) {
+    if (modData == null || CollectionUtils.isEmpty(modData.getInventoryList()) || CollectionUtils
+        .isEmpty(modData.getPlayerInventory()) || CollectionUtils.isEmpty(modData.getStashInventory())
+        || modData.getUser() == null) {
       return null;
     }
     List<ItemDescriptor> inventoryList = modData.getInventoryList();
