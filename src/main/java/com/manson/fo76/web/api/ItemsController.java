@@ -13,6 +13,8 @@ import java.util.Objects;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -28,6 +30,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/items")
 public class ItemsController {
+
+  private static final Logger LOGGER = LoggerFactory.getLogger(ItemsController.class);
 
   private final ItemService itemService;
 
@@ -84,7 +88,7 @@ public class ItemsController {
       List<ItemDescriptor> itemDescriptors = pair.getValue();
       return Utils.convertItems(itemDescriptors, pair.getKey());
     } catch (Exception e) {
-      e.printStackTrace();
+      LOGGER.error("Error while preparing mod data {}", modDataRequest, e);
     }
     return new ArrayList<>();
   }
@@ -99,7 +103,7 @@ public class ItemsController {
       itemService.addItems(uploadItemRequest.getUser(), uploadItemRequest.getItems());
       return ResponseEntity.ok().build();
     } catch (Exception e) {
-      e.printStackTrace();
+      LOGGER.error("Error while uploading items: {}", uploadItemRequest, e);
     }
     return ResponseEntity.noContent().build();
   }

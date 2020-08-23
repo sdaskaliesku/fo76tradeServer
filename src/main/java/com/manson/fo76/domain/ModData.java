@@ -3,6 +3,7 @@ package com.manson.fo76.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.manson.fo76.domain.items.ItemDescriptor;
 import java.util.List;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class ModData extends AbstractObject {
 	@JsonProperty("InventoryList")
@@ -42,5 +43,15 @@ public class ModData extends AbstractObject {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	@Override
+	public String toString() {
+		return new ToStringBuilder(this, org.apache.commons.lang3.builder.ToStringStyle.NO_CLASS_NAME_STYLE)
+				.append("inventoryList", inventoryList)
+				.append("playerInventory", playerInventory)
+				.append("stashInventory", stashInventory)
+				.append("user", user)
+				.toString();
 	}
 }
