@@ -15,8 +15,56 @@
   #output-wrapper {
     display: none;
   }
+
+  label {
+    display: block;
+  }
 </style>
 <body>
+
+<div>
+  <h3>Filters:</h3>
+  <label>
+    Only legendaries:
+    <input id="legendaries" type="checkbox">
+  </label>
+  <label>
+    Weapon:
+    <input data-filter="2,3" class="filter" type="checkbox">
+  </label>
+  <label>
+    Armor:
+    <input data-filter="4" class="filter" type="checkbox">
+  </label>
+  <label>
+    Holo:
+    <input data-filter="512" class="filter" type="checkbox">
+  </label>
+  <label>
+    Aid:
+    <input data-filter="8,9" class="filter" type="checkbox">
+  </label>
+  <label>
+    Notes:
+    <input data-filter="128,8192" class="filter" type="checkbox">
+  </label>
+  <label>
+    Misc:
+    <input data-filter="33280" class="filter" type="checkbox">
+  </label>
+  <label>
+    Mods:
+    <input data-filter="2048" class="filter" type="checkbox">
+  </label>
+  <label>
+    Junk:
+    <input data-filter="33792,1024" class="filter" type="checkbox">
+  </label>
+  <label>
+    Ammo:
+    <input data-filter="4096" class="filter" type="checkbox">
+  </label>
+</div>
 
 <div>
   <h3>Input file:</h3>
@@ -28,10 +76,17 @@
 </div>
 
 <div id="output-wrapper">
-  <div>
+  <div class="download-wrapper">
     <button id="download-csv">Download CSV</button>
     <button id="download-json">Download JSON</button>
     <button id="download-html">Download HTML</button>
+  </div>
+
+  <div>
+    <label for="filter-value">
+      Filter by name:
+      <input id="filter-value" type="text" placeholder="Filter by name">
+    </label>
   </div>
 
   <div id="output"></div>
@@ -47,31 +102,66 @@
     }
     return 'None';
   };
+  const filterValue = $('#filter-value');
+  filterValue.on('change', () => updateFilter());
+  function updateFilter() {
+    table.setFilter('text', 'like', filterValue.val());
+  }
+
+  let getFilters = () => {
+    let itemFilters = {
+      filterFlags: [],
+      legendaryOnly: false,
+    };
+    let filterFlags = [];
+    let els = $('.filter');
+    for (let i = 0; i < els.length; i++) {
+      let el = $(els[i]);
+      if (el.is(':checked')) {
+        let filterAttr = el.data('filter');
+        if (typeof filterAttr !== 'number' && filterAttr.includes(',')) {
+          let filters = el.data('filter').split(',');
+          filterFlags = filterFlags.concat(filters);
+        } else {
+          filterFlags.push(filterAttr);
+        }
+      }
+    }
+    itemFilters.filterFlags = filterFlags;
+    itemFilters.legendaryOnly = $('#legendaries').is(':checked');
+    return itemFilters;
+  };
 
   let table = new Tabulator('#output', {
     layout: 'fitColumns',
     placeholder: 'No Data Set',
+    tooltips: true,
+    pagination: 'local',
+    paginationSize: 20,
+    groupBy: 'filterFlag',
+    paginationSizeSelector: [5, 10, 20, 50, 100, 500],
     columns: [
-      {title: 'Name', field: 'text', sorter: 'string', width: 200},
-      {title: 'Type', field: 'filterFlag', sorter: 'string', width: 200},
-      {title: 'Level', field: 'itemLevel', sorter: 'number', width: 200},
-      {title: 'Legendary stars', field: 'numLegendaryStars', formatter: 'star', width: 200},
+      {title: 'Name', field: 'text', sorter: 'string', width: 300},
+      {title: 'Legendary stars', field: 'numLegendaryStars', formatter: 'star', width: 100},
+      {title: 'Type', field: 'filterFlag', sorter: 'string', width: 80},
+      {title: 'Level', field: 'itemLevel', sorter: 'number', width: 50},
+      {title: 'Count', field: 'count', sorter: 'number', width: 50},
       {
         title: '1 star',
         field: 'legendaryMods',
-        width: 200,
+        width: 300,
         formatter: (cell) => legendaryFormatter(cell, 0),
       },
       {
         title: '2 star',
         field: 'legendaryMods',
-        width: 200,
+        width: 300,
         formatter: (cell) => legendaryFormatter(cell, 1),
       },
       {
         title: '3 star',
         field: 'legendaryMods',
-        width: 200,
+        width: 300,
         formatter: (cell) => legendaryFormatter(cell, 2),
       },
     ],
@@ -87,12 +177,8 @@
   $('#download-html').click(() => {
     table.download('html', 'data.html', {style: true});
   });
-
   $(document).ready(function() {
     let modDataRequest = {};
-    modDataRequest.filters = {
-      legendaryOnly: true,
-    };
     modDataRequest.modData = {};
     $('#file').on('change', function() {
       let fileReader = new FileReader();
@@ -102,6 +188,9 @@
       fileReader.readAsText($('#file').prop('files')[0]);
     });
     $('#prepare').click(() => {
+      filterValue.val('');
+      table.clearFilter();
+      modDataRequest.filters = getFilters();
       fetch('items/prepareModData', {
         method: 'POST',
         headers: {
