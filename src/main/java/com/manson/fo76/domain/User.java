@@ -1,10 +1,12 @@
 package com.manson.fo76.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
 
 	@Id

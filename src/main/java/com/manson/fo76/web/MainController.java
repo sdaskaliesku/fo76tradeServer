@@ -11,4 +11,9 @@ public class MainController {
 		return "index.html";
 	}
 
+	@RequestMapping(value = "/temp")
+	public String temp() {
+		return "temp.html";
+	}
+
 }

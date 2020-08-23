@@ -56,7 +56,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     httpSecurity.csrf().disable()
         // all other requests need to be authenticated
         .authorizeRequests()
-        .antMatchers("/items/prepareModData", "/items/upload", "/items/delete", "/items/deleteAll", "/users/delete", "/users/forgot")
+        .antMatchers("/items/upload", "/items/delete", "/items/deleteAll", "/users/delete", "/users/forgot")
         .authenticated()
         // dont authenticate this particular request
         .antMatchers("/**").permitAll()

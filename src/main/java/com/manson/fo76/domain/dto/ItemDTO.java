@@ -1,6 +1,8 @@
 package com.manson.fo76.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.manson.fo76.domain.items.enums.FilterFlag;
 import java.util.List;
 import org.springframework.data.annotation.Id;
@@ -25,6 +27,7 @@ public class ItemDTO {
   @Indexed
   private String text;
   @Indexed(unique = true)
+  @JsonProperty(access = Access.WRITE_ONLY)
   private Long serverHandleId;
   private Integer count;
   private Integer itemValue;

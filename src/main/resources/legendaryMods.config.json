@@ -1,0 +1,524 @@
+[
+  {
+    "star": 1,
+    "text": "Anti-Armor",
+    "abbreviation": "AA",
+    "translations": {
+      "en": "Ignores 50% of your target's armor"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Assassin's",
+    "abbreviation": "A",
+    "translations": {
+      "en": "+10% damage to Players"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Berserker's",
+    "abbreviation": "Br",
+    "translations": {
+      "en": "Lower Damage Resistance increases damage dealt."
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Bloodied",
+    "abbreviation": "B",
+    "translations": {
+      "en": "Damage increases as health decreases."
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Concussive",
+    "abbreviation": "C",
+    "translations": {
+      "en": "Gain a chance to knock your target back"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Executioners",
+    "abbreviation": "Exe",
+    "translations": {
+      "en": "+50% more damage when your target is below 40% health"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Exterminator's",
+    "abbreviation": "Ext",
+    "translations": {
+      "en": "+30% damage to Mirelurks and bugs"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Furious",
+    "abbreviation": "F",
+    "translations": {
+      "en": "Damage increased after each consecutive hit on the same target"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Ghoul Slayer's",
+    "abbreviation": "GS",
+    "translations": {
+      "en": "+30% damage to ghouls"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Hunter's",
+    "abbreviation": "H",
+    "translations": {
+      "en": "+30% damage to animals"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Instigating",
+    "abbreviation": "I",
+    "translations": {
+      "en": "Double damage if target is full health"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Junkie's",
+    "abbreviation": "J",
+    "translations": {
+      "en": "Damage increases when suffering from addictions."
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Medic's",
+    "abbreviation": "M",
+    "translations": {
+      "en": "V.A.T.S. crits will heal you and your group"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Mutant's",
+    "abbreviation": "Mu",
+    "translations": {
+      "en": "Damage increased by 10% if you are mutated"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Mutant Slayer's",
+    "abbreviation": "mutslayer",
+    "translations": {
+      "en": "+30% damage to super mutants"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Nocturnal",
+    "abbreviation": "N",
+    "translations": {
+      "en": "Damage increases with the night and decreases with the day"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Stalker's",
+    "abbreviation": "St",
+    "translations": {
+      "en": "If not in combat, +100% VATS accuracy at +50% AP cost"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Suppressor's",
+    "abbreviation": "Su",
+    "translations": {
+      "en": "Reduce your target's damage output by 20% for 3s"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Troubleshooter's",
+    "abbreviation": "T",
+    "translations": {
+      "en": "+30% damage to robots"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Two Shot",
+    "abbreviation": "TS",
+    "translations": {
+      "en": "Shoots an additional projectile"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Vampire's",
+    "abbreviation": "V",
+    "translations": {
+      "en": "Gain brief health regeneration when you hit an enemy"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Zealot's",
+    "abbreviation": "Z",
+    "translations": {
+      "en": "+30% damage to Scorched"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Double",
+    "abbreviation": "D",
+    "translations": {
+      "en": "Double ammo capacity"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 1,
+    "text": "Quad",
+    "abbreviation": "Q",
+    "translations": {
+      "en": "Quadruple ammo capacity"
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+
+  {
+    "star": 2,
+    "text": "50% limb damage",
+    "abbreviation": "50L",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 2,
+    "text": "50% Critical Shot Damage",
+    "abbreviation": "50",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 2,
+    "text": "25% increased Fire Rate",
+    "abbreviation": "FFR",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 2,
+    "text": "40% Bashing damage",
+    "abbreviation": "40B",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 2,
+    "text": "10% Aiming Damage",
+    "abbreviation": "10",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 2,
+    "text": "Explosive",
+    "abbreviation": "E",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 2,
+    "text": "33% VATS hit chance",
+    "abbreviation": "33",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+
+  {
+    "star": 3,
+    "text": "Movement Speed",
+    "abbreviation": "MS",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "Perception +1",
+    "abbreviation": "PER",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "15% faster reload",
+    "abbreviation": "15R",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "25% VATS AP Cost",
+    "abbreviation": "25",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "250 DR while reloading",
+    "abbreviation": "250",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "50 DR while aiming",
+    "abbreviation": "50DR",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "15% critical fill",
+    "abbreviation": "15V",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "90% Reduced Weight",
+    "abbreviation": "90",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  },
+  {
+    "star": 3,
+    "text": "Agility +1",
+    "abbreviation": "AGI",
+    "translations": {
+      "en": ""
+    },
+    "itemTypes": [
+      "armor",
+      "melee",
+      "ranged"
+    ]
+  }
+]

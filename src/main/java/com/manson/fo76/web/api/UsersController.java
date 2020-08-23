@@ -52,6 +52,13 @@ public class UsersController {
     return userService.findByIdOrName(user);
   }
 
+  @PostMapping(
+      value = "/token", consumes = "application/json", produces = "application/json")
+  public User token(@RequestBody String token) {
+    String username = jwtTokenUtil.getUsernameFromToken(token);
+    return userService.findByIdOrName(username);
+  }
+
   @GetMapping("/findAll")
   public List<User> findAll() {
     return userService.findAll();

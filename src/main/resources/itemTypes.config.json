@@ -1,0 +1,567 @@
+[
+  {
+    "type": "armor",
+    "text": "Combat Armor",
+    "abbreviation": "combat"
+  },
+  {
+    "type": "armor",
+    "text": "Leather Armor",
+    "abbreviation": "leather"
+  },
+  {
+    "type": "armor",
+    "text": "Marine Armor",
+    "abbreviation": "marine"
+  },
+  {
+    "type": "armor",
+    "text": "Metal Armor",
+    "abbreviation": "metal"
+  },
+  {
+    "type": "armor",
+    "text": "Raider Armor",
+    "abbreviation": "raider"
+  },
+  {
+    "type": "armor",
+    "text": "Robot Armor",
+    "abbreviation": "robot"
+  },
+  {
+    "type": "armor",
+    "text": "Scout Armor",
+    "abbreviation": "scout"
+  },
+  {
+    "type": "armor",
+    "text": "Trapper Armor",
+    "abbreviation": "trapper"
+  },
+  {
+    "type": "armor",
+    "text": "Wooden Armor",
+    "abbreviation": "wood"
+  },
+  {
+    "type": "ranged",
+    "text": ".44 Revolver",
+    "abbreviation": "44revolver"
+  },
+  {
+    "type": "ranged",
+    "text": ".50 cal Machine Gun",
+    "abbreviation": "50cal"
+  },
+  {
+    "type": "ranged",
+    "text": "10mm Submachine",
+    "abbreviation": "10mmsub"
+  },
+  {
+    "type": "ranged",
+    "text": "10mm pistol",
+    "abbreviation": "10mm"
+  },
+  {
+    "type": "ranged",
+    "text": "Assault Rifle",
+    "abbreviation": "assault"
+  },
+  {
+    "type": "ranged",
+    "text": "Auto Grenade Launcher",
+    "abbreviation": "autolauncher"
+  },
+  {
+    "type": "ranged",
+    "text": "Black Powder Blunderbuss",
+    "abbreviation": "blunderbuss"
+  },
+  {
+    "type": "ranged",
+    "text": "Black Powder Pistol",
+    "abbreviation": "powderpistol"
+  },
+  {
+    "type": "ranged",
+    "text": "Black Powder Rifle",
+    "abbreviation": "powderrifle"
+  },
+  {
+    "type": "ranged",
+    "text": "Bow",
+    "abbreviation": "bow"
+  },
+  {
+    "type": "ranged",
+    "text": "Broadsider",
+    "abbreviation": "broadsider"
+  },
+  {
+    "type": "ranged",
+    "text": "Combat Rifle",
+    "abbreviation": "combatrifle"
+  },
+  {
+    "type": "ranged",
+    "text": "Combat Shotgun",
+    "abbreviation": "combatshotgun"
+  },
+  {
+    "type": "ranged",
+    "text": "Compound Bow",
+    "abbreviation": "compound"
+  },
+  {
+    "type": "ranged",
+    "text": "Crossbow",
+    "abbreviation": "crossbow"
+  },
+  {
+    "type": "ranged",
+    "text": "Cryolator",
+    "abbreviation": "cryolator"
+  },
+  {
+    "type": "ranged",
+    "text": "Double-barrel shotgun",
+    "abbreviation": "doublebarrel"
+  },
+  {
+    "type": "ranged",
+    "text": "Fat Man",
+    "abbreviation": "fatman"
+  },
+  {
+    "type": "ranged",
+    "text": "Flamer",
+    "abbreviation": "flamer"
+  },
+  {
+    "type": "ranged",
+    "text": "Gamma Gun",
+    "abbreviation": "gamma"
+  },
+  {
+    "type": "ranged",
+    "text": "Gatling Gun",
+    "abbreviation": "gatling"
+  },
+  {
+    "type": "ranged",
+    "text": "Gatling Laser",
+    "abbreviation": "gatlaser"
+  },
+  {
+    "type": "ranged",
+    "text": "Gatling Plasma",
+    "abbreviation": "gatplasma"
+  },
+  {
+    "type": "ranged",
+    "text": "Gauss Rifle",
+    "abbreviation": "gauss"
+  },
+  {
+    "type": "ranged",
+    "text": "Handmade Rifle",
+    "abbreviation": "handmade"
+  },
+  {
+    "type": "ranged",
+    "text": "Harpoon Gun",
+    "abbreviation": "harpoon"
+  },
+  {
+    "type": "ranged",
+    "text": "Hunting Rifle",
+    "abbreviation": "hunting"
+  },
+  {
+    "type": "ranged",
+    "text": "Laser Rifle",
+    "abbreviation": "laser"
+  },
+  {
+    "type": "ranged",
+    "text": "Laser Gun",
+    "abbreviation": "laser"
+  },
+  {
+    "type": "ranged",
+    "text": "Lever-Action Rifle",
+    "abbreviation": "lever"
+  },
+  {
+    "type": "ranged",
+    "text": "Light Machine Gun",
+    "abbreviation": "lmg"
+  },
+  {
+    "type": "ranged",
+    "text": "M79 Grenade Launcher",
+    "abbreviation": "grenadelauncher"
+  },
+  {
+    "type": "ranged",
+    "text": "Minigun",
+    "abbreviation": "minigun"
+  },
+  {
+    "type": "ranged",
+    "text": "Missile Launcher",
+    "abbreviation": "missilelauncher"
+  },
+  {
+    "type": "ranged",
+    "text": "Pipe Bolt-Action Rifle",
+    "abbreviation": "pipebolt"
+  },
+  {
+    "type": "ranged",
+    "text": "Pipe Bolt-Action Pistol",
+    "abbreviation": "pipebolt"
+  },
+  {
+    "type": "ranged",
+    "text": "Pipe Pistol",
+    "abbreviation": "pipe"
+  },
+  {
+    "type": "ranged",
+    "text": "Pipe Rifle",
+    "abbreviation": "pipe"
+  },
+  {
+    "type": "ranged",
+    "text": "Pipe Revolver",
+    "abbreviation": "piperevolver"
+  },
+  {
+    "type": "ranged",
+    "text": "Plasma Gun",
+    "abbreviation": "plasma"
+  },
+  {
+    "type": "ranged",
+    "text": "Plasma Rifle",
+    "abbreviation": "plasma"
+  },
+  {
+    "type": "ranged",
+    "text": "Pump Action Shotgun",
+    "abbreviation": "pump"
+  },
+  {
+    "type": "ranged",
+    "text": "Radium Rifle",
+    "abbreviation": "radium"
+  },
+  {
+    "type": "ranged",
+    "text": "Railway Rifle",
+    "abbreviation": "railway"
+  },
+  {
+    "type": "ranged",
+    "text": "Salvaged Assaultron Head",
+    "abbreviation": "assaulthead"
+  },
+  {
+    "type": "ranged",
+    "text": "Single Action Revolver",
+    "abbreviation": "singlerevolver"
+  },
+  {
+    "type": "ranged",
+    "text": "Submachine gun",
+    "abbreviation": "submachine"
+  },
+  {
+    "type": "ranged",
+    "text": "Tesla Rifle",
+    "abbreviation": "tesla"
+  },
+  {
+    "type": "ranged",
+    "text": "The Dragon",
+    "abbreviation": "dragon"
+  },
+  {
+    "type": "ranged",
+    "text": "The Fixer",
+    "abbreviation": "fixer"
+  },
+  {
+    "type": "ranged",
+    "text": "Ultracite Gatling Laser",
+    "abbreviation": "ultragatling"
+  },
+  {
+    "type": "ranged",
+    "text": "Ultracite Laser Pistol",
+    "abbreviation": "ultralaser"
+  },
+  {
+    "type": "ranged",
+    "text": "Ultracite Laser Rifle",
+    "abbreviation": "ultralaser"
+  },
+  {
+    "type": "ranged",
+    "text": "Western Revolver",
+    "abbreviation": "western"
+  },
+  {
+    "type": "melee",
+    "text": "Assaultron Blade",
+    "abbreviation": "assaultblade"
+  },
+  {
+    "type": "melee",
+    "text": "Baseball Bat",
+    "abbreviation": "baseball"
+  },
+  {
+    "type": "melee",
+    "text": "Baton",
+    "abbreviation": "baton"
+  },
+  {
+    "type": "melee",
+    "text": "Bear Arm",
+    "abbreviation": "bear"
+  },
+  {
+    "type": "melee",
+    "text": "Board",
+    "abbreviation": "board"
+  },
+  {
+    "type": "melee",
+    "text": "Bone Club",
+    "abbreviation": "boneclub"
+  },
+  {
+    "type": "melee",
+    "text": "Bone Hammer",
+    "abbreviation": "bonehammer"
+  },
+  {
+    "type": "melee",
+    "text": "Bowie Knife",
+    "abbreviation": "bowie"
+  },
+  {
+    "type": "melee",
+    "text": "Boxing Glove",
+    "abbreviation": "box"
+  },
+  {
+    "type": "melee",
+    "text": "Chinese Officer Sword",
+    "abbreviation": "chinesesword"
+  },
+  {
+    "type": "melee",
+    "text": "Combat Knife",
+    "abbreviation": "combatknife"
+  },
+  {
+    "type": "melee",
+    "text": "Cultist Blade",
+    "abbreviation": "cultistblade"
+  },
+  {
+    "type": "melee",
+    "text": "Cultist Dagger",
+    "abbreviation": "cultistdagger"
+  },
+  {
+    "type": "melee",
+    "text": "Death Tambo",
+    "abbreviation": "tambo"
+  },
+  {
+    "type": "melee",
+    "text": "Deathclaw Gauntlet",
+    "abbreviation": "deathclaw"
+  },
+  {
+    "type": "melee",
+    "text": "Fire Axe",
+    "abbreviation": "fireaxe"
+  },
+  {
+    "type": "melee",
+    "text": "Golf Club",
+    "abbreviation": "golfclub"
+  },
+  {
+    "type": "melee",
+    "text": "Grognak's Axe",
+    "abbreviation": "grognak"
+  },
+  {
+    "type": "melee",
+    "text": "Guitar Sword",
+    "abbreviation": "guitarsword"
+  },
+  {
+    "type": "melee",
+    "text": "Hatchet",
+    "abbreviation": "hatchet"
+  },
+  {
+    "type": "melee",
+    "text": "Knuckles",
+    "abbreviation": "knuckles"
+  },
+  {
+    "type": "melee",
+    "text": "Lead Pipe",
+    "abbreviation": "leadpipe"
+  },
+  {
+    "type": "melee",
+    "text": "Machete",
+    "abbreviation": "machete"
+  },
+  {
+    "type": "melee",
+    "text": "Meat Hook",
+    "abbreviation": "meathook"
+  },
+  {
+    "type": "melee",
+    "text": "Mole miner Gauntlet",
+    "abbreviation": "molegauntlet"
+  },
+  {
+    "type": "melee",
+    "text": "Mr. Handy Buzz Blade",
+    "abbreviation": "buzzblade"
+  },
+  {
+    "type": "melee",
+    "text": "Multi-purpose Axe",
+    "abbreviation": "multiaxe"
+  },
+  {
+    "type": "melee",
+    "text": "Pickaxe",
+    "abbreviation": "pickaxe"
+  },
+  {
+    "type": "melee",
+    "text": "Pipe Wrench",
+    "abbreviation": "pipewrench"
+  },
+  {
+    "type": "melee",
+    "text": "Pitchfork",
+    "abbreviation": "pitchfork"
+  },
+  {
+    "type": "melee",
+    "text": "Pole Hook",
+    "abbreviation": "polehook"
+  },
+  {
+    "type": "melee",
+    "text": "Pool Cue",
+    "abbreviation": "pool"
+  },
+  {
+    "type": "melee",
+    "text": "Power Fist",
+    "abbreviation": "powerfist"
+  },
+  {
+    "type": "melee",
+    "text": "Revolutionary Sword",
+    "abbreviation": "revolutionarysword"
+  },
+  {
+    "type": "melee",
+    "text": "Ripper",
+    "abbreviation": "ripper"
+  },
+  {
+    "type": "melee",
+    "text": "Rolling Pin",
+    "abbreviation": "rollingpin"
+  },
+  {
+    "type": "melee",
+    "text": "Sheepsquatch Club",
+    "abbreviation": "sheepclub"
+  },
+  {
+    "type": "melee",
+    "text": "Sheepsquatch Staff",
+    "abbreviation": "sheepstaff"
+  },
+  {
+    "type": "melee",
+    "text": "Shepherd's Crook",
+    "abbreviation": "shepherdscrook"
+  },
+  {
+    "type": "melee",
+    "text": "Shishkebab",
+    "abbreviation": "shishkebab"
+  },
+  {
+    "type": "melee",
+    "text": "Shovel",
+    "abbreviation": "shovel"
+  },
+  {
+    "type": "melee",
+    "text": "Sickle",
+    "abbreviation": "sickle"
+  },
+  {
+    "type": "melee",
+    "text": "Ski Sword",
+    "abbreviation": "skisword"
+  },
+  {
+    "type": "melee",
+    "text": "Sledgehammer",
+    "abbreviation": "sledgehammer"
+  },
+  {
+    "type": "melee",
+    "text": "Spear",
+    "abbreviation": "spear"
+  },
+  {
+    "type": "melee",
+    "text": "Super Sledge",
+    "abbreviation": "supersledge"
+  },
+  {
+    "type": "melee",
+    "text": "Switchblade",
+    "abbreviation": "switchblade"
+  },
+  {
+    "type": "melee",
+    "text": "Tire Iron",
+    "abbreviation": "tireiron"
+  },
+  {
+    "type": "melee",
+    "text": "Walking Cane",
+    "abbreviation": "walkingcane"
+  },
+  {
+    "type": "melee",
+    "text": "War Drum",
+    "abbreviation": "wardrum"
+  }
+]
