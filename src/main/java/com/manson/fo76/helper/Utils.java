@@ -5,6 +5,8 @@ import com.manson.fo76.domain.dto.ItemDTO;
 import com.manson.fo76.domain.dto.LegendaryMod;
 import com.manson.fo76.domain.dto.StatsDTO;
 import com.manson.fo76.domain.items.ItemDescriptor;
+import com.manson.fo76.domain.items.enums.DamageType;
+import com.manson.fo76.domain.items.enums.FilterFlag;
 import com.manson.fo76.domain.items.enums.ItemCardText;
 import com.manson.fo76.domain.items.item_card.ItemCardEntry;
 import com.manson.fo76.service.JsonParser;
@@ -17,7 +19,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.collections4.IterableUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -38,9 +39,40 @@ public final class Utils {
         .collect(Collectors.toList());
   }
 
+  private static Number silentParse(String value) {
+    try {
+      return Double.valueOf(value);
+    } catch (Exception ignored) {
+
+    }
+    return -1;
+  }
+
   public static ItemDTO convertItem(ItemDescriptor item, User user) {
     Map<String, Object> objectMap = JsonParser.objectToMap(item);
-    objectMap.put("filterFlag", item.getFilterFlagEnum());
+    FilterFlag filterFlag = item.getFilterFlagEnum();
+    if (filterFlag == FilterFlag.WEAPON) {
+      for (ItemCardEntry itemCardEntry : item.getItemCardEntries()) {
+        if (itemCardEntry.getDamageTypeEnum() == DamageType.AMMO) {
+          filterFlag = FilterFlag.WEAPON_RANGED;
+          break;
+        }
+        ItemCardText cardText = itemCardEntry.getItemCardText();
+        if (cardText == ItemCardText.ROF && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
+          filterFlag = FilterFlag.WEAPON_RANGED;
+          break;
+        }
+        if (cardText == ItemCardText.MELEE_SPEED) {
+          filterFlag = FilterFlag.WEAPON_MELEE;
+          break;
+        }
+        if (cardText == ItemCardText.RNG && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
+          filterFlag = FilterFlag.WEAPON_THROWN;
+          break;
+        }
+      }
+    }
+    objectMap.put("filterFlag", filterFlag);
     ItemDTO itemDTO = JsonParser.mapToItemDTO(objectMap);
     itemDTO.setOwnerId(user.getId());
     itemDTO.setOwnerName(user.getName());

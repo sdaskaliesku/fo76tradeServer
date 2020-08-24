@@ -8,6 +8,9 @@ import org.apache.commons.lang3.StringUtils;
 public enum FilterFlag {
   POWER_ARMOR("Power Armor", 0),
   WEAPON("Weapon", 2, 3),
+  WEAPON_MELEE("Weapon - Melee"),
+  WEAPON_RANGED("Weapon - Ranged"),
+  WEAPON_THROWN("Weapon - Thrown"),
   ARMOR("Armor", 4),
   AID("Aid", 8, 9),
   HOLO("Holo", 512),
