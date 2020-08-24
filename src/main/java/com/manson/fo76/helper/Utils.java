@@ -13,9 +13,11 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.IterableUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -67,7 +69,11 @@ public final class Utils {
       if (statsDTO != null) {
         stats.add(statsDTO);
       } else if (itemCardEntry.getItemCardText() == ItemCardText.DESC) {
-        itemDTO.setLegendaryMods(processLegendaryMods(itemCardEntry));
+        List<LegendaryMod> legendaryMods = processLegendaryMods(itemCardEntry);
+        itemDTO.setLegendaryMods(legendaryMods);
+        // TODO: temp solution for temp page, needs to be removed
+        itemDTO.setLegendaryModsTemp(
+            legendaryMods.stream().filter(Objects::nonNull).map(LegendaryMod::getValue).collect(Collectors.toList()));
       }
     }
     return stats;

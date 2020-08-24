@@ -92,22 +92,30 @@
       <input id="filter-value" type="text" placeholder="Filter by name">
     </label>
   </div>
+  <div>
+    <label for="deleteSelected">
+      <button id="deleteSelected">Delete selected rows</button>
+    </label>
+  </div>
+
 
   <div id="output"></div>
 </div>
 
 </body>
 <script>
-  let legendaryFormatter = (cell, index) => {
-    try {
-      return cell.getValue()[index].value;
-    } catch (e) {
-
+  $('#deleteSelected').click(() => {
+    let rows = table.getSelectedRows();
+    if (rows && rows.length > 0) {
+      for (let i = 0; i < rows.length; i++) {
+        rows[i].delete().then(() => {
+        });
+      }
     }
-    return 'None';
-  };
+  });
   const filterValue = $('#filter-value');
   filterValue.on('change', () => updateFilter());
+
   function updateFilter() {
     table.setFilter('text', 'like', filterValue.val());
   }
@@ -116,7 +124,7 @@
     let itemFilters = {
       filterFlags: [],
       legendaryOnly: false,
-      tradableOnly: true
+      tradableOnly: true,
     };
     let filterFlags = [];
     let els = $('.filter');
@@ -145,8 +153,19 @@
     pagination: 'local',
     paginationSize: 50,
     groupBy: 'filterFlag',
-    paginationSizeSelector: [5, 10, 20, 50, 100, 500, 1000],
+    paginationSizeSelector: [5, 10, 20, 50, 100, 500, 1000, 5000],
     columns: [
+      {
+        formatter: 'rowSelection',
+        titleFormatter: 'rowSelection',
+        width: 10,
+        hozAlign: 'center',
+        headerSort: false,
+        download: false,
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
       {title: 'Name', field: 'text', sorter: 'string', width: 300},
       {title: 'Legendary stars', field: 'numLegendaryStars', formatter: 'star', width: 100},
       {title: 'Type', field: 'filterFlag', sorter: 'string', width: 80},
@@ -154,24 +173,32 @@
       {title: 'Count', field: 'count', sorter: 'number', width: 50},
       {
         title: '1 star',
-        field: 'legendaryMods',
+        field: 'legendaryModsTemp.0',
         width: 300,
         sorter: 'string',
-        formatter: (cell) => legendaryFormatter(cell, 0),
       },
       {
         title: '2 star',
-        field: 'legendaryMods',
+        field: 'legendaryModsTemp.1',
         width: 300,
         sorter: 'string',
-        formatter: (cell) => legendaryFormatter(cell, 1),
       },
       {
         title: '3 star',
-        field: 'legendaryMods',
+        field: 'legendaryModsTemp.2',
         width: 300,
         sorter: 'string',
-        formatter: (cell) => legendaryFormatter(cell, 2),
+      },
+      {
+        formatter: 'buttonCross',
+        width: 30,
+        hozAlign: 'center',
+        headerSort: false,
+        download: false,
+        cellClick: function(e, cell) {
+          cell.getRow().delete().then(() => {
+          });
+        },
       },
     ],
   });
@@ -184,7 +211,7 @@
   });
 
   $('#download-html').click(() => {
-    table.download('html', 'data.html', {style: true});
+    table.download('html', 'data.html');
   });
   $(document).ready(function() {
     let modDataRequest = {};

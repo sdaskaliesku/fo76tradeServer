@@ -56,6 +56,16 @@ public class ItemDTO {
   private List<StatsDTO> stats;
   @Indexed
   private List<LegendaryMod> legendaryMods;
+  // TODO: Remove this, once final UI will be ready
+  private List<String> legendaryModsTemp;
+
+  public List<String> getLegendaryModsTemp() {
+    return legendaryModsTemp;
+  }
+
+  public void setLegendaryModsTemp(List<String> legendaryModsTemp) {
+    this.legendaryModsTemp = legendaryModsTemp;
+  }
 
   public List<LegendaryMod> getLegendaryMods() {
     return legendaryMods;
