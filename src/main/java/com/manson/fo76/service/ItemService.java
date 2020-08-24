@@ -37,12 +37,17 @@ public class ItemService {
 
   private static void processItems(List<ItemDescriptor> items, Map<Long, ItemDescriptor> map,
       ItemsUploadFilters itemsUploadFilters) {
+    if (CollectionUtils.isEmpty(items)) {
+      return;
+    }
     for (ItemDescriptor itemDescriptor : items) {
       if (map.containsKey(itemDescriptor.getServerHandleId())) {
         continue;
       }
-      if (itemDescriptor.getTradable() == null || !itemDescriptor.getTradable()) {
-        continue;
+      if (itemsUploadFilters.isTradableOnly()) {
+        if (itemDescriptor.getTradable() == null || !itemDescriptor.getTradable()) {
+          continue;
+        }
       }
       FilterFlag filterFlag = itemDescriptor.getFilterFlagEnum();
       boolean matchesFilter = false;
@@ -50,12 +55,10 @@ public class ItemService {
         System.out.println("Empty filter flag");
         continue;
       } else {
-        if (itemsUploadFilters != null) {
-          if (itemsUploadFilters.isLegendaryOnly()) {
-            Integer stars = itemDescriptor.getNumLegendaryStars();
-            if (stars == null || stars <= 0) {
-              continue;
-            }
+        if (itemsUploadFilters.isLegendaryOnly()) {
+          Integer stars = itemDescriptor.getNumLegendaryStars();
+          if (stars == null || stars <= 0) {
+            continue;
           }
           if (CollectionUtils.isEmpty(itemsUploadFilters.getFilterFlags())) {
             matchesFilter = true;
@@ -151,10 +154,15 @@ public class ItemService {
 
   public Pair<User, List<ItemDescriptor>> processModDataItems(ModData modData,
       ItemsUploadFilters itemsUploadFilters) {
-    if (modData == null || CollectionUtils.isEmpty(modData.getInventoryList()) || CollectionUtils
-        .isEmpty(modData.getPlayerInventory()) || CollectionUtils.isEmpty(modData.getStashInventory())
-        || modData.getUser() == null) {
+    if (modData == null) {
       return null;
+    }
+    if (modData.getUser() == null) {
+      // TODO: delete this, once final UI will be ready
+      User user = new User();
+      user.setName("temp");
+      user.setPassword("temp");
+      modData.setUser(user);
     }
     List<ItemDescriptor> inventoryList = modData.getInventoryList();
     List<ItemDescriptor> playerInventory = modData.getPlayerInventory();

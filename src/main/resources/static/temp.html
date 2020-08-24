@@ -25,6 +25,10 @@
 <div>
   <h3>Filters:</h3>
   <label>
+    Only tradable items:
+    <input id="tradableOnly" type="checkbox" checked>
+  </label>
+  <label>
     Only legendaries:
     <input id="legendaries" type="checkbox">
   </label>
@@ -112,6 +116,7 @@
     let itemFilters = {
       filterFlags: [],
       legendaryOnly: false,
+      tradableOnly: true
     };
     let filterFlags = [];
     let els = $('.filter');
@@ -129,6 +134,7 @@
     }
     itemFilters.filterFlags = filterFlags;
     itemFilters.legendaryOnly = $('#legendaries').is(':checked');
+    itemFilters.tradableOnly = $('#tradableOnly').is(':checked');
     return itemFilters;
   };
 

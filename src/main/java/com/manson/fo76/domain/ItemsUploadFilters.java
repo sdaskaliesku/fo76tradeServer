@@ -8,6 +8,7 @@ public class ItemsUploadFilters {
 
 	private List<Integer> filterFlags = new ArrayList<>();
 	private boolean legendaryOnly;
+	private boolean tradableOnly;
 
 	public List<Integer> getFilterFlags() {
 		return filterFlags;
@@ -23,6 +24,14 @@ public class ItemsUploadFilters {
 
 	public void setLegendaryOnly(boolean legendaryOnly) {
 		this.legendaryOnly = legendaryOnly;
+	}
+
+	public boolean isTradableOnly() {
+		return tradableOnly;
+	}
+
+	public void setTradableOnly(boolean tradableOnly) {
+		this.tradableOnly = tradableOnly;
 	}
 
 	@Override
