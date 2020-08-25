@@ -21,8 +21,12 @@ import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public final class Utils {
+
+  private static final Logger LOGGER = LoggerFactory.getLogger(Utils.class);
 
   private static final Set<ItemCardText> IGNORED_CARDS = new HashSet<>();
 
@@ -48,31 +52,42 @@ public final class Utils {
     return -1;
   }
 
-  public static ItemDTO convertItem(ItemDescriptor item, User user) {
-    Map<String, Object> objectMap = JsonParser.objectToMap(item);
+  private static FilterFlag findFilterFlag(ItemDescriptor item) {
     FilterFlag filterFlag = item.getFilterFlagEnum();
-    if (filterFlag == FilterFlag.WEAPON) {
-      for (ItemCardEntry itemCardEntry : item.getItemCardEntries()) {
-        if (itemCardEntry.getDamageTypeEnum() == DamageType.AMMO) {
-          filterFlag = FilterFlag.WEAPON_RANGED;
-          break;
-        }
-        ItemCardText cardText = itemCardEntry.getItemCardText();
-        if (cardText == ItemCardText.ROF && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
-          filterFlag = FilterFlag.WEAPON_RANGED;
-          break;
-        }
-        if (cardText == ItemCardText.MELEE_SPEED) {
-          filterFlag = FilterFlag.WEAPON_MELEE;
-          break;
-        }
-        if (cardText == ItemCardText.RNG && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
-          filterFlag = FilterFlag.WEAPON_THROWN;
-          break;
+    try {
+      if (filterFlag == FilterFlag.WEAPON) {
+        for (ItemCardEntry itemCardEntry : item.getItemCardEntries()) {
+          if (itemCardEntry.getDamageTypeEnum() == DamageType.AMMO) {
+            filterFlag = FilterFlag.WEAPON_RANGED;
+            break;
+          }
+          ItemCardText cardText = itemCardEntry.getItemCardText();
+          if (cardText == ItemCardText.ROF && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
+            filterFlag = FilterFlag.WEAPON_RANGED;
+            break;
+          }
+          if (cardText == ItemCardText.MELEE_SPEED) {
+            filterFlag = FilterFlag.WEAPON_MELEE;
+            break;
+          }
+          if (cardText == ItemCardText.RNG && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
+            filterFlag = FilterFlag.WEAPON_THROWN;
+            break;
+          }
         }
       }
+      if (filterFlag == FilterFlag.ARMOR && item.getCurrentHealth() == -1) {
+        filterFlag = FilterFlag.ARMOR_OUTFIT;
+      }
+    } catch (Exception e) {
+      LOGGER.error("Error while looking for specific filter flag {}", item, e);
     }
-    objectMap.put("filterFlag", filterFlag);
+    return filterFlag;
+  }
+
+  public static ItemDTO convertItem(ItemDescriptor item, User user) {
+    Map<String, Object> objectMap = JsonParser.objectToMap(item);
+    objectMap.put("filterFlag", findFilterFlag(item));
     ItemDTO itemDTO = JsonParser.mapToItemDTO(objectMap);
     itemDTO.setOwnerId(user.getId());
     itemDTO.setOwnerName(user.getName());
@@ -101,11 +116,15 @@ public final class Utils {
       if (statsDTO != null) {
         stats.add(statsDTO);
       } else if (itemCardEntry.getItemCardText() == ItemCardText.DESC) {
-        List<LegendaryMod> legendaryMods = processLegendaryMods(itemCardEntry);
-        itemDTO.setLegendaryMods(legendaryMods);
-        // TODO: temp solution for temp page, needs to be removed
-        itemDTO.setLegendaryModsTemp(
-            legendaryMods.stream().filter(Objects::nonNull).map(LegendaryMod::getValue).collect(Collectors.toList()));
+        if (itemDTO.getFilterFlag() != null && itemDTO.getFilterFlag().isHasStarMods()) {
+          List<LegendaryMod> legendaryMods = processLegendaryMods(itemCardEntry);
+          itemDTO.setLegendaryMods(legendaryMods);
+          // TODO: temp solution for temp page, needs to be removed
+          itemDTO.setLegendaryModsTemp(
+              legendaryMods.stream().filter(Objects::nonNull).map(LegendaryMod::getValue).collect(Collectors.toList()));
+        } else {
+          itemDTO.setDescription(itemCardEntry.getValue());
+        }
       }
     }
     return stats;

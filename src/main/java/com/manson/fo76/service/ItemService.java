@@ -17,6 +17,8 @@ import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -25,6 +27,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ItemService {
+
+  private static final Logger LOGGER = LoggerFactory.getLogger(ItemService.class);
 
   private final ItemRepository itemRepository;
   private final UserService userService;
@@ -52,7 +56,7 @@ public class ItemService {
       FilterFlag filterFlag = itemDescriptor.getFilterFlagEnum();
       boolean matchesFilter = false;
       if (filterFlag == null) {
-        System.out.println("Empty filter flag");
+        LOGGER.warn("Empty filter flag for {}", itemDescriptor);
         continue;
       } else {
         if (itemsUploadFilters.isLegendaryOnly()) {
@@ -60,18 +64,16 @@ public class ItemService {
           if (stars == null || stars <= 0) {
             continue;
           }
-          if (CollectionUtils.isEmpty(itemsUploadFilters.getFilterFlags())) {
-            matchesFilter = true;
-          } else {
-            for (Integer flag : filterFlag.getFlags()) {
-              if (itemsUploadFilters.getFilterFlags().contains(flag)) {
-                matchesFilter = true;
-                break;
-              }
+        }
+        if (CollectionUtils.isEmpty(itemsUploadFilters.getFilterFlags())) {
+          matchesFilter = true;
+        } else {
+          for (Integer flag : filterFlag.getFlags()) {
+            if (itemsUploadFilters.getFilterFlags().contains(flag)) {
+              matchesFilter = true;
+              break;
             }
           }
-        } else {
-          matchesFilter = true;
         }
       }
       if (matchesFilter) {

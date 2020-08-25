@@ -7,11 +7,12 @@ import org.apache.commons.lang3.StringUtils;
 
 public enum FilterFlag {
   POWER_ARMOR("Power Armor", 0),
-  WEAPON("Weapon", 2, 3),
-  WEAPON_MELEE("Weapon - Melee"),
-  WEAPON_RANGED("Weapon - Ranged"),
+  WEAPON("Weapon", true, 2, 3),
+  WEAPON_MELEE("Weapon - Melee", true),
+  WEAPON_RANGED("Weapon - Ranged", true),
   WEAPON_THROWN("Weapon - Thrown"),
-  ARMOR("Armor", 4),
+  ARMOR("Armor", true, 4),
+  ARMOR_OUTFIT("Armor - Outfit"),
   AID("Aid", 8, 9),
   HOLO("Holo", 512),
   AMMO("Ammo", 4096),
@@ -22,15 +23,26 @@ public enum FilterFlag {
 
   private final List<Integer> flags = new ArrayList<>();
   private final String name;
+  private final boolean hasStarMods;
 
-  FilterFlag(String name, Integer... flags) {
+  FilterFlag(String name, boolean hasStarMods, Integer... flags) {
     this.flags.addAll(Arrays.asList(flags));
     this.name = name;
+    this.hasStarMods = hasStarMods;
+  }
+
+  FilterFlag(String name, Integer... flags) {
+    this(name, false, flags);
+  }
+
+  FilterFlag(String name, boolean hasStarMods, int flag) {
+    this.flags.add(flag);
+    this.name = name;
+    this.hasStarMods = hasStarMods;
   }
 
   FilterFlag(String name, int flag) {
-    this.flags.add(flag);
-    this.name = name;
+    this(name, false, flag);
   }
 
   public static FilterFlag fromInt(Integer flag) {
@@ -47,6 +59,10 @@ public enum FilterFlag {
     }
     return Arrays.stream(FilterFlag.values())
         .filter(filterFlag -> StringUtils.equalsIgnoreCase(flag, filterFlag.getName())).findFirst().orElse(null);
+  }
+
+  public boolean isHasStarMods() {
+    return hasStarMods;
   }
 
   public List<Integer> getFlags() {
