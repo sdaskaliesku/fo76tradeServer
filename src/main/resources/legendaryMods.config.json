@@ -1,524 +1,1293 @@
 [
   {
     "star": 1,
-    "text": "Anti-Armor",
-    "abbreviation": "AA",
-    "translations": {
-      "en": "Ignores 50% of your target's armor"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
     "text": "Assassin's",
     "abbreviation": "A",
+    "additionalAbbreviations": [
+      "Ass"
+    ],
+    "id": "mod_Legendary_Armor1_LessDMGPlayers",
     "translations": {
-      "en": "+10% damage to Players"
+      "en": "75% chance to reduce damage by 8% from Players."
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "armor",
+    "enabled": true
   },
   {
     "star": 1,
-    "text": "Berserker's",
-    "abbreviation": "Br",
+    "text": "Regenerating",
+    "abbreviation": "R",
+    "additionalAbbreviations": [
+      "Regen"
+    ],
+    "id": "mod_Legendary_Armor1_HealthRegen",
     "translations": {
-      "en": "Lower Damage Resistance increases damage dealt."
+      "en": "Slowly regenerate health while not in combat"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Bloodied",
-    "abbreviation": "B",
-    "translations": {
-      "en": "Damage increases as health decreases."
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Concussive",
-    "abbreviation": "C",
-    "translations": {
-      "en": "Gain a chance to knock your target back"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Executioners",
-    "abbreviation": "Exe",
-    "translations": {
-      "en": "+50% more damage when your target is below 40% health"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Exterminator's",
-    "abbreviation": "Ext",
-    "translations": {
-      "en": "+30% damage to Mirelurks and bugs"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Furious",
-    "abbreviation": "F",
-    "translations": {
-      "en": "Damage increased after each consecutive hit on the same target"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Ghoul Slayer's",
-    "abbreviation": "GS",
-    "translations": {
-      "en": "+30% damage to ghouls"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Hunter's",
-    "abbreviation": "H",
-    "translations": {
-      "en": "+30% damage to animals"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Instigating",
-    "abbreviation": "I",
-    "translations": {
-      "en": "Double damage if target is full health"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Junkie's",
-    "abbreviation": "J",
-    "translations": {
-      "en": "Damage increases when suffering from addictions."
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Medic's",
-    "abbreviation": "M",
-    "translations": {
-      "en": "V.A.T.S. crits will heal you and your group"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Mutant's",
-    "abbreviation": "Mu",
-    "translations": {
-      "en": "Damage increased by 10% if you are mutated"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Mutant Slayer's",
-    "abbreviation": "mutslayer",
-    "translations": {
-      "en": "+30% damage to super mutants"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "armor",
+    "enabled": true
   },
   {
     "star": 1,
     "text": "Nocturnal",
     "abbreviation": "N",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Armor1_ResistancesNight",
     "translations": {
-      "en": "Damage increases with the night and decreases with the day"
+      "en": "Damage Resistance and Energy Resistance increase with the night and decrease with the day"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "armor",
+    "enabled": true
   },
   {
     "star": 1,
-    "text": "Stalker's",
-    "abbreviation": "St",
+    "text": "Bolstering",
+    "abbreviation": "B",
+    "additionalAbbreviations": [
+      "BOL"
+    ],
+    "id": "mod_Legendary_Armor1_ResistancesProportionalHealth",
     "translations": {
-      "en": "If not in combat, +100% VATS accuracy at +50% AP cost"
+      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the higher your health."
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Suppressor's",
-    "abbreviation": "Su",
-    "translations": {
-      "en": "Reduce your target's damage output by 20% for 3s"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Troubleshooter's",
-    "abbreviation": "T",
-    "translations": {
-      "en": "+30% damage to robots"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Two Shot",
-    "abbreviation": "TS",
-    "translations": {
-      "en": "Shoots an additional projectile"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 1,
-    "text": "Vampire's",
-    "abbreviation": "V",
-    "translations": {
-      "en": "Gain brief health regeneration when you hit an enemy"
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "armor",
+    "enabled": true
   },
   {
     "star": 1,
     "text": "Zealot's",
     "abbreviation": "Z",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Armor1_LessDmgScorched",
     "translations": {
-      "en": "+30% damage to Scorched"
+      "en": "-15% damage from Scorched"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "armor",
+    "enabled": true
   },
   {
     "star": 1,
-    "text": "Double",
-    "abbreviation": "D",
+    "text": "Exterminator's",
+    "abbreviation": "ET",
+    "additionalAbbreviations": [
+      "EXT"
+    ],
+    "id": "mod_Legendary_Weapon1_DmgVsBugs",
+    "translations": {
+      "en": "+30% damage to Mirelurks and bugs"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Exterminator's",
+    "abbreviation": "ET",
+    "additionalAbbreviations": [
+      "EXT"
+    ],
+    "id": "mod_Legendary_Armor1_LessDMGBugs",
+    "translations": {
+      "en": "-15% damage from Mirelurks and bugs"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Hunter's",
+    "abbreviation": "H",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Armor1_LessDMGAnimals",
+    "translations": {
+      "en": "-15% damage from animals"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Auto Revive",
+    "abbreviation": "AS",
+    "additionalAbbreviations": [
+      "Auto"
+    ],
+    "id": "mod_Legendary_Armor1_AutoRevive",
+    "translations": {
+      "en": "When incapacitated, gain a 50% chance to revive yourself with a Stimpak, once every minute"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Unyielding",
+    "abbreviation": "U",
+    "additionalAbbreviations": [
+      "UNY"
+    ],
+    "id": "mod_Legendary_Armor1_LowHealthIncreasesStats",
+    "translations": {
+      "en": "Gain up to +3 to all stats (except END) when low health"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Mutant's",
+    "abbreviation": "M",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Armor1_ResistancesMutation",
+    "translations": {
+      "en": "+10 Damage Resistance and Energy Resistance if you are mutated"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Bolstering",
+    "abbreviation": "B",
+    "additionalAbbreviations": [
+      "BOL"
+    ],
+    "id": "mod_Legendary_Armor1_ResistancesInverseHealth",
+    "translations": {
+      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the lower your health"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Mutant Slayer's",
+    "abbreviation": "MS",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Armor1_LessDMGSuperMutants",
+    "translations": {
+      "en": "-15% damage from Super Mutants"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Chameleon",
+    "abbreviation": "CH",
+    "additionalAbbreviations": [
+      "CHA"
+    ],
+    "id": "mod_Legendary_Armor1_Chameleon",
+    "translations": {
+      "en": "Blend with the environment while sneaking and not moving"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Cloaking",
+    "abbreviation": "CL",
+    "additionalAbbreviations": [
+      "Cloak"
+    ],
+    "id": "mod_Legendary_Armor1_CloakOnMelee",
+    "translations": {
+      "en": "Being hit in melee generates a Stealth Field once per 30 seconds"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Auto Stim",
+    "abbreviation": "AS",
+    "additionalAbbreviations": [
+      "Auto"
+    ],
+    "id": "mod_Legendary_Armor1_LowHealthTriggersStimpak",
+    "translations": {
+      "en": "Automatically use a Stimpak when hit while health is 25% or less, once every 60 seconds"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Ghoul Slayer's",
+    "abbreviation": "G",
+    "additionalAbbreviations": [
+      "GS"
+    ],
+    "id": "mod_Legendary_Armor1_LessDMGGhouls",
+    "translations": {
+      "en": "-15% damage from ghouls"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Weightless",
+    "abbreviation": "W",
+    "additionalAbbreviations": [
+      "WL"
+    ],
+    "id": "mod_Legendary_Armor1_Weightless",
+    "translations": {
+      "en": "Weighs 90% less and does not count as armor for the Chameleon mutation."
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Troubleshooter's",
+    "abbreviation": "TRO",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Armor1_LessDMGRobots",
+    "translations": {
+      "en": "-15% damage from robots"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Perception",
+    "abbreviation": "1P",
+    "additionalAbbreviations": [
+      "+1P",
+      "PER"
+    ],
+    "id": "mod_Legendary_Armor2_StatPerception",
+    "translations": {
+      "en": "+1 Perception"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Agility",
+    "abbreviation": "1A",
+    "additionalAbbreviations": [
+      "+1A",
+      "AGI"
+    ],
+    "id": "mod_Legendary_Armor2_StatAgility",
+    "translations": {
+      "en": "+1 Agility"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Luck",
+    "abbreviation": "1L",
+    "additionalAbbreviations": [
+      "+1L",
+      "LUK"
+    ],
+    "id": "mod_Legendary_Armor2_StatLuck",
+    "translations": {
+      "en": "+1 Luck"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Strength",
+    "abbreviation": "1S",
+    "additionalAbbreviations": [
+      "+1S",
+      "STR"
+    ],
+    "id": "mod_Legendary_Armor2_StatStrength",
+    "translations": {
+      "en": "+1 Strength"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Endurance",
+    "abbreviation": "1E",
+    "additionalAbbreviations": [
+      "+1E",
+      "END"
+    ],
+    "id": "mod_Legendary_Armor2_StatEndurance",
+    "translations": {
+      "en": "+1 Endurance"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Antiseptic",
+    "abbreviation": "25D",
+    "additionalAbbreviations": [
+      "DR",
+      "Disease"
+    ],
+    "id": "mod_Legendary_Armor2_DiseaseResistance",
+    "translations": {
+      "en": "+25% Environmental Disease Resistance"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Poisoner's",
+    "abbreviation": "25P",
+    "additionalAbbreviations": [
+      "POI",
+      "Poisoner's"
+    ],
+    "id": "mod_Legendary_Armor2_PoisonResistance",
+    "translations": {
+      "en": "+25 Poison Resistance"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Intelligence",
+    "abbreviation": "1I",
+    "additionalAbbreviations": [
+      "+1I",
+      "INT"
+    ],
+    "id": "mod_Legendary_Armor2_StatIntelligence",
+    "translations": {
+      "en": "+1 Intelligence"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Powered",
+    "abbreviation": "AP",
+    "additionalAbbreviations": [
+      "PWR",
+      "Powered"
+    ],
+    "id": "mod_Legendary_Armor2_APRegen",
+    "translations": {
+      "en": "Increases Action Point refresh speed"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Charisma",
+    "abbreviation": "1C",
+    "additionalAbbreviations": [
+      "+1C",
+      "CHA"
+    ],
+    "id": "mod_Legendary_Armor2_StatCharisma",
+    "translations": {
+      "en": "+1 Charisma"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Sprinter's",
+    "abbreviation": null,
+    "additionalAbbreviations": [],
+    "id": "zzzmod_Legendary_Armor2_Speed",
+    "translations": {
+      "en": "Increases movement speed by 5%"
+    },
+    "itemType": "armor",
+    "enabled": false
+  },
+  {
+    "star": 2,
+    "text": "HazMat",
+    "abbreviation": "25R",
+    "additionalAbbreviations": [
+      "RR",
+      "Rad"
+    ],
+    "id": "mod_Legendary_Armor2_RadResistance",
+    "translations": {
+      "en": "+25 Radiation Resistance"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Reduced ammo weight",
+    "abbreviation": "AWR",
+    "additionalAbbreviations": [
+      "Ammo"
+    ],
+    "id": "mod_Legendary_Armor3_WeightAmmo",
+    "translations": {
+      "en": "Ammo weight reduced by 20%"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Reduced limb damage",
+    "abbreviation": "15L",
+    "additionalAbbreviations": [
+      "Limb"
+    ],
+    "id": "mod_Legendary_Armor3_ReducedLimbDamage",
+    "translations": {
+      "en": "Receive 15% less limb damage"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Reduced food/drink/chem weight",
+    "abbreviation": "FWR",
+    "additionalAbbreviations": [
+      "Aid",
+      "Food"
+    ],
+    "id": "mod_Legendary_Armor3_WeightFoodDrinkChems",
+    "translations": {
+      "en": "Food, drink, and chem weights reduced by 20%"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Safecracker's",
+    "abbreviation": "Lock",
+    "additionalAbbreviations": [
+      "Safe",
+      "Safercracker's"
+    ],
+    "id": "mod_Legendary_Armor3_LockPick",
+    "translations": {
+      "en": "Increases size of sweet-spot while picking locks"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Reduced weapon weight",
+    "abbreviation": "WWR",
+    "additionalAbbreviations": [
+      "Weapon"
+    ],
+    "id": "mod_Legendary_Armor3_WeightWeapons",
+    "translations": {
+      "en": "Weapon weights reduced by 20%"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Sentinel's",
+    "abbreviation": "SENT",
+    "additionalAbbreviations": [
+      "Stand",
+      "Sentinel's"
+    ],
+    "id": "mod_Legendary_Armor3_LessDamageStandStill",
+    "translations": {
+      "en": "75% chance to reduce damage by 15% while standing still"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Improved sneaking",
+    "abbreviation": "Sneak",
+    "additionalAbbreviations": [
+      "Detect"
+    ],
+    "id": "mod_Legendary_Armor3_Sneak",
+    "translations": {
+      "en": "Become harder to detect while sneaking"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Acrobat's",
+    "abbreviation": "50F",
+    "additionalAbbreviations": [
+      "Acrobat's"
+    ],
+    "id": "mod_Legendary_Armor3_LessFallDamage",
+    "translations": {
+      "en": "Reduces falling damage by 50%"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Cavalier's",
+    "abbreviation": "15B",
+    "additionalAbbreviations": [
+      "Blocking"
+    ],
+    "id": "mod_Legendary_Armor3_LessDamageBlocking",
+    "translations": {
+      "en": "Reduces damage while blocking by 15%"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Durability",
+    "abbreviation": "50D",
+    "additionalAbbreviations": [
+      "Durability"
+    ],
+    "id": "mod_Legendary_Armor3_Durability",
+    "translations": {
+      "en": "50% more durability than normal"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Cavalier's",
+    "abbreviation": "CAV",
+    "additionalAbbreviations": [
+      "Sprint",
+      "Cavalier's"
+    ],
+    "id": "mod_Legendary_Armor3_LessDamageSprinting",
+    "translations": {
+      "en": "75% chance to reduce damage by 15% while sprinting."
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Diver's",
+    "abbreviation": "Aqua",
+    "additionalAbbreviations": [
+      "Underwater"
+    ],
+    "id": "mod_Legendary_Armor3_Waterbreathing",
+    "translations": {
+      "en": "Grants the ability to breathe underwater"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Reduced junk weight",
+    "abbreviation": "JWR",
+    "additionalAbbreviations": [
+      "Junk"
+    ],
+    "id": "mod_Legendary_Armor3_WeightJunk",
+    "translations": {
+      "en": "Junk item weights reduced by 20%"
+    },
+    "itemType": "armor",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Suppressor's",
+    "abbreviation": "SS",
+    "additionalAbbreviations": [
+      "SUP"
+    ],
+    "id": "mod_Legendary_Weapon1_DebuffDamage",
+    "translations": {
+      "en": "Reduce your target's damage output by 20% for 3s"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Bloodied",
+    "abbreviation": "B",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DamageInverseHealth",
+    "translations": {
+      "en": "Damage increases as health decreases."
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Medic's",
+    "abbreviation": "MED",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_Guns_CritsHealGroup",
+    "translations": {
+      "en": "V.A.T.S. crits will heal you and your group"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Vampire's",
+    "abbreviation": "V",
+    "additionalAbbreviations": [
+      "Vamp"
+    ],
+    "id": "mod_Legendary_Weapon1_Vampire",
+    "translations": {
+      "en": "Gain brief health regeneration when you hit an enemy"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Never Ending",
+    "abbreviation": null,
+    "additionalAbbreviations": [],
+    "id": "zzzmod_Legendary_Weapon1_Guns_AmmoCapacity2x",
     "translations": {
       "en": "Double ammo capacity"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": false
+  },
+  {
+    "star": 1,
+    "text": "Assassin's",
+    "abbreviation": "A",
+    "additionalAbbreviations": [
+      "Ass"
+    ],
+    "id": "mod_Legendary_Weapon1_DmgVsPlayers",
+    "translations": {
+      "en": "+10% damage to Players"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Zealot's",
+    "abbreviation": "Z",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DmgVsScorched",
+    "translations": {
+      "en": "+30% damage to Scorched"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Berserker's",
+    "abbreviation": "BER",
+    "additionalAbbreviations": [
+      "BR",
+      "BS"
+    ],
+    "id": "mod_Legendary_Weapon1_DamageUnarmored",
+    "translations": {
+      "en": "Lower Damage Resistance increases damage dealt."
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Nocturnal",
+    "abbreviation": "N",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DamageNight",
+    "translations": {
+      "en": "Damage increases with the night and decreases with the day"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Mutant's",
+    "abbreviation": "M",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DmgWithMutation",
+    "translations": {
+      "en": "Damage increased by 10% if you are mutated"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Executioner's",
+    "abbreviation": "EX",
+    "additionalAbbreviations": [
+      "EXE"
+    ],
+    "id": "mod_Legendary_Weapon1_Execute",
+    "translations": {
+      "en": "+50% more damage when your target is below 40% health"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Instigating",
+    "abbreviation": "I",
+    "additionalAbbreviations": [
+      "INST"
+    ],
+    "id": "mod_Legendary_Weapon1_DamageFirstBlood",
+    "translations": {
+      "en": "Double damage if target is full health"
+    },
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 1,
     "text": "Quad",
     "abbreviation": "Q",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_Guns_AmmoCapacity4x",
     "translations": {
       "en": "Quadruple ammo capacity"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
-
   {
-    "star": 2,
-    "text": "50% limb damage",
-    "abbreviation": "50L",
+    "star": 1,
+    "text": "Ghoul Slayer's",
+    "abbreviation": "G",
+    "additionalAbbreviations": [
+      "GS"
+    ],
+    "id": "mod_Legendary_Weapon1_DmgVsGhouls",
     "translations": {
-      "en": ""
+      "en": "+30% damage to ghouls"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
-    "star": 2,
-    "text": "50% Critical Shot Damage",
-    "abbreviation": "50",
+    "star": 1,
+    "text": "Stalker's",
+    "abbreviation": "S",
+    "additionalAbbreviations": [
+      "ST"
+    ],
+    "id": "mod_Legendary_Weapon1_AccuracyNotInCombat",
     "translations": {
-      "en": ""
+      "en": "If not in combat, +100% VATS accuracy at +50% AP cost"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
-    "star": 2,
-    "text": "25% increased Fire Rate",
-    "abbreviation": "FFR",
+    "star": 1,
+    "text": "Troubleshooter's",
+    "abbreviation": "TRO",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DmgVsRobots",
     "translations": {
-      "en": ""
+      "en": "+30% damage to robots"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
-    "star": 2,
-    "text": "40% Bashing damage",
-    "abbreviation": "40B",
+    "star": 1,
+    "text": "Anti-armor",
+    "abbreviation": "AA",
+    "additionalAbbreviations": [
+      "Anti",
+      "Armor"
+    ],
+    "id": "mod_Legendary_Weapon1_AntiArmor",
     "translations": {
-      "en": ""
+      "en": "Ignores 50% of your target's armor"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Furious",
+    "abbreviation": "F",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DmgConsecutiveHits",
+    "translations": {
+      "en": "Damage increased after each consecutive hit on the same target"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Hunter's",
+    "abbreviation": "H",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DmgVsAnimals",
+    "translations": {
+      "en": "+30% damage to animals"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Concussive",
+    "abbreviation": "C",
+    "additionalAbbreviations": [],
+    "id": "zzzmod_Legendary_Weapon1_Knockback",
+    "translations": {
+      "en": "Gain a chance to knock your target back"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Two Shot",
+    "abbreviation": "TS",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_Guns_TwoShot",
+    "translations": {
+      "en": "Shoots an additional projectile"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Mutant Slayer's",
+    "abbreviation": "MS",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DmgVsSupermutants",
+    "translations": {
+      "en": "+30% damage to super mutants"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 1,
+    "text": "Junkie's",
+    "abbreviation": "J",
+    "additionalAbbreviations": [],
+    "id": "mod_Legendary_Weapon1_DamageAddiction",
+    "translations": {
+      "en": "Damage increases when suffering from addictions."
+    },
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 2,
-    "text": "10% Aiming Damage",
+    "text": "Hitman's",
     "abbreviation": "10",
+    "additionalAbbreviations": [
+      "Aim",
+      "Aim dmg"
+    ],
+    "id": "mod_Legendary_Weapon2_Guns_DmgSights",
     "translations": {
-      "en": ""
+      "en": "+10% damage while aiming"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Melee Speed",
+    "abbreviation": "SS",
+    "additionalAbbreviations": [
+      "40S",
+      "Swing"
+    ],
+    "id": "mod_Legendary_Weapon2_Melee_SwingSpeed",
+    "translations": {
+      "en": "40% faster swing speed"
+    },
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 2,
     "text": "Explosive",
     "abbreviation": "E",
+    "additionalAbbreviations": [
+      "Exp"
+    ],
+    "id": "mod_Legendary_Weapon2_Guns_ExplosiveBullets",
     "translations": {
-      "en": ""
+      "en": "Bullets explode for area damage."
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 2,
-    "text": "33% VATS hit chance",
+    "text": "Riposting",
+    "abbreviation": "50B",
+    "additionalAbbreviations": [
+      "Blocking",
+      "Reflect"
+    ],
+    "id": "mod_Legendary_Weapon2_Melee_BlockReflects",
+    "translations": {
+      "en": "Reflects 50% of melee damage back while blocking"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Basher's",
+    "abbreviation": "40",
+    "additionalAbbreviations": [
+      "Bash",
+      "Bash Dmg"
+    ],
+    "id": "mod_Legendary_Weapon2_Guns_Bashing",
+    "translations": {
+      "en": "Bashing damage increased by 40%"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Power Attack Damage",
+    "abbreviation": "40",
+    "additionalAbbreviations": [
+      "Power Attack",
+      "Attack Dmg"
+    ],
+    "id": "mod_Legendary_Weapon2_Melee_DamagePowerAttack",
+    "translations": {
+      "en": "40% more power attack damage"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "VATS Enhanced",
     "abbreviation": "33",
+    "additionalAbbreviations": [
+      "Hit Chance",
+      "VATS Hit"
+    ],
+    "id": "mod_Legendary_Weapon2_Guns_VATSAccuracy",
     "translations": {
-      "en": ""
+      "en": "+33% VATS hit chance"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-
-  {
-    "star": 3,
-    "text": "Movement Speed",
-    "abbreviation": "MS",
-    "translations": {
-      "en": ""
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
-    "star": 3,
-    "text": "Perception +1",
-    "abbreviation": "PER",
+    "star": 2,
+    "text": "Rapid",
+    "abbreviation": "FFR",
+    "additionalAbbreviations": [
+      "FR",
+      "25"
+    ],
+    "id": "mod_Legendary_Weapon2_Guns_RoF",
     "translations": {
-      "en": ""
+      "en": "25% faster fire rate"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Irradiated",
+    "abbreviation": null,
+    "additionalAbbreviations": [],
+    "id": "CUT_mod_Legendary_Weapon2_RadiationDamage",
+    "translations": {
+      "en": "Converts damage to Radiation and adds 10%"
+    },
+    "itemType": "weapon",
+    "enabled": false
+  },
+  {
+    "star": 2,
+    "text": "Explosive",
+    "abbreviation": "E",
+    "additionalAbbreviations": [
+      "Exp"
+    ],
+    "id": "mod_Legendary_Weapon2_Guns_ExplosiveBullets_Shotgun",
+    "translations": {
+      "en": "Bullets explode for area damage."
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Lucky",
+    "abbreviation": "50V",
+    "additionalAbbreviations": [
+      "Crit",
+      "Crit Dmg"
+    ],
+    "id": "mod_Legendary_Weapon2_Guns_DmgCrits",
+    "translations": {
+      "en": "V.A.T.S. critical shots do +50% damage"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 2,
+    "text": "Crippling",
+    "abbreviation": "50L",
+    "additionalAbbreviations": [
+      "Limb",
+      "Limb Dmg"
+    ],
+    "id": "mod_Legendary_Weapon2_DmgLimbs",
+    "translations": {
+      "en": "+50% limb damage"
+    },
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 3,
-    "text": "15% faster reload",
-    "abbreviation": "15R",
+    "text": "Endurance",
+    "abbreviation": "1E",
+    "additionalAbbreviations": [
+      "+1E",
+      "END"
+    ],
+    "id": "mod_Legendary_Weapon3_Melee_StatEndurance",
     "translations": {
-      "en": ""
+      "en": "+1 Endurance"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 3,
-    "text": "25% VATS AP Cost",
+    "text": "Cavalier's",
+    "abbreviation": "40",
+    "additionalAbbreviations": [
+      "Power Attack"
+    ],
+    "id": "mod_Legendary_Weapon3_Melee_LessDamagePowerAttack",
+    "translations": {
+      "en": "Take 40% less damage while power attacking"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Lucky",
+    "abbreviation": "15C",
+    "additionalAbbreviations": [
+      "Crit meter",
+      "VATS Crit"
+    ],
+    "id": "mod_Legendary_Weapon3_Guns_CritSpeed",
+    "translations": {
+      "en": "Your V.A.T.S. critical meter fills 15% faster"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Strength",
+    "abbreviation": "1S",
+    "additionalAbbreviations": [
+      "+1S",
+      "STR"
+    ],
+    "id": "mod_Legendary_Weapon3_Melee_StatStrength",
+    "translations": {
+      "en": "+1 Strength"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "VATS Enhanced",
     "abbreviation": "25",
+    "additionalAbbreviations": [
+      "25AP",
+      "AP Cost"
+    ],
+    "id": "mod_Legendary_Weapon3_Guns_VATSCostAP",
     "translations": {
-      "en": ""
+      "en": "25% less V.A.T.S. Action Point cost"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 3,
-    "text": "250 DR while reloading",
+    "text": "Durability",
+    "abbreviation": "50D",
+    "additionalAbbreviations": [
+      "Durability"
+    ],
+    "id": "mod_Legendary_Weapon3_Durability",
+    "translations": {
+      "en": "50% more durability than normal"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Nimble",
+    "abbreviation": "Move speed",
+    "additionalAbbreviations": [
+      "Move faster"
+    ],
+    "id": "mod_Legendary_Weapon3_Guns_MoveSpeedSights",
+    "translations": {
+      "en": "Faster movement speed while aiming"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Cavalier's",
+    "abbreviation": "15",
+    "additionalAbbreviations": [
+      "Blocking"
+    ],
+    "id": "mod_Legendary_Weapon3_Melee_LessDamageBlock",
+    "translations": {
+      "en": "Take 15% less damage while blocking"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Perception",
+    "abbreviation": "1P",
+    "additionalAbbreviations": [
+      "+1P",
+      "PER"
+    ],
+    "id": "mod_Legendary_Weapon3_Guns_StatPerception",
+    "translations": {
+      "en": "+1 Perception"
+    },
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Resilient",
     "abbreviation": "250",
+    "additionalAbbreviations": [
+      "Reload DR"
+    ],
+    "id": "mod_Legendary_Weapon3_Guns_ResistReload",
     "translations": {
-      "en": ""
+      "en": "+250 Damage Resistance while reloading"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 3,
-    "text": "50 DR while aiming",
-    "abbreviation": "50DR",
+    "text": "Steadfast",
+    "abbreviation": "50",
+    "additionalAbbreviations": [
+      "Aim DR"
+    ],
+    "id": "mod_Legendary_Weapon3_Guns_ResistSights",
     "translations": {
-      "en": ""
+      "en": "+50 Damage Resistance while aiming"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 3,
-    "text": "15% critical fill",
-    "abbreviation": "15V",
-    "translations": {
-      "en": ""
-    },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
-  },
-  {
-    "star": 3,
-    "text": "90% Reduced Weight",
+    "text": "Lightweight",
     "abbreviation": "90",
+    "additionalAbbreviations": [
+      "RW"
+    ],
+    "id": "mod_Legendary_Weapon3_Weight",
     "translations": {
-      "en": ""
+      "en": "90% reduced weight"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
   },
   {
     "star": 3,
-    "text": "Agility +1",
-    "abbreviation": "AGI",
+    "text": "Agility",
+    "abbreviation": "1A",
+    "additionalAbbreviations": [
+      "+1A",
+      "AGI"
+    ],
+    "id": "mod_Legendary_Weapon3_StatAgility",
     "translations": {
-      "en": ""
+      "en": "+1 Agility"
     },
-    "itemTypes": [
-      "armor",
-      "melee",
-      "ranged"
-    ]
+    "itemType": "weapon",
+    "enabled": true
+  },
+  {
+    "star": 3,
+    "text": "Rapid",
+    "abbreviation": "FR",
+    "additionalAbbreviations": [
+      "15R",
+      "Reload"
+    ],
+    "id": "mod_Legendary_Weapon3_Guns_ReloadSpeed",
+    "translations": {
+      "en": "15% faster reload"
+    },
+    "itemType": "weapon",
+    "enabled": true
   }
 ]

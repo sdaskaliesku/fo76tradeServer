@@ -1,31 +1,11 @@
 package com.manson.fo76;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.manson.fo76.domain.ItemType;
-import com.manson.fo76.domain.ItemsUploadFilters;
-import com.manson.fo76.domain.LegendaryMod;
-import com.manson.fo76.domain.ModData;
-import com.manson.fo76.domain.User;
-import com.manson.fo76.domain.dto.ItemDTO;
-import com.manson.fo76.domain.items.ItemDescriptor;
-import com.manson.fo76.helper.Utils;
 import com.manson.fo76.repository.ItemRepository;
 import com.manson.fo76.service.ItemService;
-import com.manson.fo76.service.JsonParser;
 import com.manson.fo76.service.UserService;
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //@SpringBootApplication
 public class MainConsole implements CommandLineRunner {

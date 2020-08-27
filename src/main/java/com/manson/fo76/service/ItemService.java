@@ -1,13 +1,18 @@
 package com.manson.fo76.service;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.manson.fo76.domain.ItemsUploadFilters;
+import com.manson.fo76.domain.LegendaryModDescriptor;
 import com.manson.fo76.domain.ModData;
+import com.manson.fo76.domain.ModDataRequest;
 import com.manson.fo76.domain.User;
 import com.manson.fo76.domain.dto.ItemDTO;
 import com.manson.fo76.domain.items.ItemDescriptor;
 import com.manson.fo76.domain.items.enums.FilterFlag;
 import com.manson.fo76.helper.Utils;
 import com.manson.fo76.repository.ItemRepository;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,19 +29,25 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ResourceUtils;
 
 @Service
 public class ItemService {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ItemService.class);
+  private static final String LEG_MODS_CONFIG_FILE = "classpath:legendaryMods.config.json";
+  private static final TypeReference<List<LegendaryModDescriptor>> LEG_MOD_TYPE_REF = new TypeReference<List<LegendaryModDescriptor>>() {
+  };
 
   private final ItemRepository itemRepository;
   private final UserService userService;
+  private List<LegendaryModDescriptor> legendaryMods;
 
   @Autowired
-  public ItemService(ItemRepository itemRepository, UserService userService) {
+  public ItemService(ItemRepository itemRepository, UserService userService, ObjectMapper objectMapper) {
     this.itemRepository = itemRepository;
     this.userService = userService;
+    this.legendaryMods = loadMods(objectMapper);
   }
 
   private static void processItems(List<ItemDescriptor> items, Map<Long, ItemDescriptor> map,
@@ -80,6 +91,18 @@ public class ItemService {
         map.put(itemDescriptor.getServerHandleId(), itemDescriptor);
       }
     }
+  }
+
+  private static List<LegendaryModDescriptor> loadMods(ObjectMapper objectMapper) {
+    List<LegendaryModDescriptor> legendaryMods = new ArrayList<>();
+    try {
+      File file = ResourceUtils.getFile(LEG_MODS_CONFIG_FILE);
+      legendaryMods = objectMapper.readValue(file, LEG_MOD_TYPE_REF).stream().filter(LegendaryModDescriptor::isEnabled).collect(
+          Collectors.toList());
+    } catch (Exception e) {
+      LOGGER.error("Error while loading legendary mods config", e);
+    }
+    return legendaryMods;
   }
 
   public Page<ItemDTO> findAll(Pageable pageable) {
@@ -154,7 +177,7 @@ public class ItemService {
     return findAllByOwnerName(user.getName(), pageable);
   }
 
-  public Pair<User, List<ItemDescriptor>> processModDataItems(ModData modData,
+  private Pair<User, List<ItemDescriptor>> processModDataItems(ModData modData,
       ItemsUploadFilters itemsUploadFilters) {
     if (modData == null) {
       return null;
@@ -174,6 +197,16 @@ public class ItemService {
     processItems(playerInventory, allItems, itemsUploadFilters);
     processItems(stashInventory, allItems, itemsUploadFilters);
     return new ImmutablePair<>(modData.getUser(), new ArrayList<>(allItems.values()));
+  }
+
+  public List<ItemDTO> prepareModData(ModDataRequest modDataRequest) {
+    Pair<User, List<ItemDescriptor>> pair = processModDataItems(modDataRequest.getModData(),
+        modDataRequest.getFilters());
+    if (pair == null) {
+      return new ArrayList<>();
+    }
+    List<ItemDescriptor> itemDescriptors = pair.getValue();
+    return Utils.convertItems(itemDescriptors, legendaryMods, pair.getKey());
   }
 
 }

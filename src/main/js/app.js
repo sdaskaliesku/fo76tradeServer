@@ -81,14 +81,58 @@ $(document).ready(function() {
         field: 'numLegendaryStars',
         formatter: 'star',
         width: 90,
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
       },
-      {title: 'Type', field: 'filterFlag', sorter: 'string', width: 180},
-      {title: 'Level', field: 'itemLevel', sorter: 'number', width: 90},
-      {title: 'Count', field: 'count', sorter: 'number', width: 100},
-      {title: '1 star', field: 'legendaryModsTemp.0', sorter: 'string'},
-      {title: '2 star', field: 'legendaryModsTemp.1', sorter: 'string'},
-      {title: '3 star', field: 'legendaryModsTemp.2', sorter: 'string'},
-      {title: 'Description', field: 'description', sorter: 'string'},
+      {
+        title: 'Abbr', field: 'abbreviation', sorter: 'string', width: 150,
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        title: 'Type', field: 'filterFlag', sorter: 'string', width: 180,
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        title: 'Level', field: 'itemLevel', sorter: 'number', width: 90,
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        title: 'Count', field: 'count', sorter: 'number', width: 100,
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        title: '1 star', field: 'legendaryModsTemp.0', sorter: 'string',
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        title: '2 star', field: 'legendaryModsTemp.1', sorter: 'string',
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        title: '3 star', field: 'legendaryModsTemp.2', sorter: 'string',
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
+      {
+        title: 'Description', field: 'description', sorter: 'string',
+        cellClick: function(e, cell) {
+          cell.getRow().toggleSelect();
+        },
+      },
       {
         formatter: 'buttonCross',
         width: 10,
@@ -120,7 +164,8 @@ $(document).ready(function() {
       try {
         modDataRequest.modData = JSON.parse(fileReader.result);
       } catch (e) {
-        alert('Malformed file, please send the file to author(manson_ew2) to fix the issue!');
+        alert(
+            'Malformed file, please send the file to author(manson_ew2) to fix the issue!');
       }
     };
     const files = $(this).prop('files');
@@ -143,13 +188,18 @@ $(document).ready(function() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(modDataRequest),
-    }).then((resp) => resp.json(), () => alert('Malformed file, please send the file to author(manson_ew2) to fix the issue!')).then(data => {
+    }).
+    then((resp) => resp.json(), () => alert(
+        'Malformed file, please send the file to author(manson_ew2) to fix the issue!')).
+    then(data => {
       if (data === null || data === undefined || data.length < 1) {
-        alert('Malformed file, please send the file to author(manson_ew2) to fix the issue!');
+        alert(
+            'Malformed file, please send the file to author(manson_ew2) to fix the issue!');
         return;
       }
       table.setData(data);
       $('#output-wrapper').show();
-    }, () => alert('Malformed file, please send the file to author(manson_ew2) to fix the issue!'));
+    }, () => alert(
+        'Malformed file, please send the file to author(manson_ew2) to fix the issue!'));
   });
 });

@@ -56,6 +56,7 @@ public class ItemDTO {
   private List<StatsDTO> stats;
   @Indexed
   private List<LegendaryMod> legendaryMods;
+  private String abbreviation;
   // TODO: Remove this, once final UI will be ready
   private List<String> legendaryModsTemp;
 
@@ -65,6 +66,14 @@ public class ItemDTO {
 
   public void setLegendaryModsTemp(List<String> legendaryModsTemp) {
     this.legendaryModsTemp = legendaryModsTemp;
+  }
+
+  public String getAbbreviation() {
+    return abbreviation;
+  }
+
+  public void setAbbreviation(String abbreviation) {
+    this.abbreviation = abbreviation;
   }
 
   public List<LegendaryMod> getLegendaryMods() {

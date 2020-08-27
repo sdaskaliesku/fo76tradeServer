@@ -7,14 +7,15 @@ public class LegendaryMod {
 
   private String value;
   private int star;
+  private String abbreviation;
 
-  public LegendaryMod(String value, int star) {
+  public LegendaryMod(String value, int star, String abbreviation) {
     this.value = value;
     this.star = star;
   }
 
   public LegendaryMod(String value) {
-    this(value, 0);
+    this(value, 0, null);
   }
 
   public LegendaryMod() {
@@ -35,5 +36,13 @@ public class LegendaryMod {
 
   public void setStar(int star) {
     this.star = star;
+  }
+
+  public String getAbbreviation() {
+    return abbreviation;
+  }
+
+  public void setAbbreviation(String abbreviation) {
+    this.abbreviation = abbreviation;
   }
 }
