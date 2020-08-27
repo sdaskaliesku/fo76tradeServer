@@ -30,13 +30,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ResourceUtils;
 
 @Service
 public class ItemService {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ItemService.class);
-  private static final String LEG_MODS_CONFIG_FILE = "classpath:legendaryMods.config.json";
+  private static final String LEG_MODS_CONFIG_FILE = "classpath*:legendaryMods.config.json";
   private static final TypeReference<List<LegendaryModDescriptor>> LEG_MOD_TYPE_REF = new TypeReference<List<LegendaryModDescriptor>>() {
   };
 
