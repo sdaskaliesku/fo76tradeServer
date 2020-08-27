@@ -2,6 +2,7 @@ package com.manson.fo76.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.io.Resources;
 import com.manson.fo76.domain.ItemsUploadFilters;
 import com.manson.fo76.domain.LegendaryModDescriptor;
 import com.manson.fo76.domain.ModData;
@@ -12,7 +13,7 @@ import com.manson.fo76.domain.items.ItemDescriptor;
 import com.manson.fo76.domain.items.enums.FilterFlag;
 import com.manson.fo76.helper.Utils;
 import com.manson.fo76.repository.ItemRepository;
-import java.io.File;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -25,9 +26,6 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -37,7 +35,7 @@ import org.springframework.stereotype.Service;
 public class ItemService {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ItemService.class);
-  private static final String LEG_MODS_CONFIG_FILE = "classpath*:legendaryMods.config.json";
+  private static final String LEG_MODS_CONFIG_FILE = "legendaryMods.config.json";
   private static final TypeReference<List<LegendaryModDescriptor>> LEG_MOD_TYPE_REF = new TypeReference<List<LegendaryModDescriptor>>() {
   };
 
@@ -98,10 +96,9 @@ public class ItemService {
   private static List<LegendaryModDescriptor> loadMods(ObjectMapper objectMapper) {
     List<LegendaryModDescriptor> legendaryMods = new ArrayList<>();
     try {
-      ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-      Resource resource = resolver.getResource(LEG_MODS_CONFIG_FILE);
-      File file = resource.getFile();
-      legendaryMods = objectMapper.readValue(file, LEG_MOD_TYPE_REF).stream().filter(LegendaryModDescriptor::isEnabled)
+      URL resource = Resources.getResource(LEG_MODS_CONFIG_FILE);
+      legendaryMods = objectMapper.readValue(resource, LEG_MOD_TYPE_REF).stream()
+          .filter(LegendaryModDescriptor::isEnabled)
           .collect(
               Collectors.toList());
     } catch (Exception e) {
