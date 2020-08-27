@@ -25,6 +25,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -41,13 +42,13 @@ public class ItemService {
 
   private final ItemRepository itemRepository;
   private final UserService userService;
-  private List<LegendaryModDescriptor> legendaryMods;
+  private final List<LegendaryModDescriptor> legendaryMods;
 
   @Autowired
-  public ItemService(ItemRepository itemRepository, UserService userService, ObjectMapper objectMapper) {
+  public ItemService(ItemRepository itemRepository, UserService userService, ObjectMapper objectMapper, ResourceLoader resourceLoader) {
     this.itemRepository = itemRepository;
     this.userService = userService;
-    this.legendaryMods = loadMods(objectMapper);
+    this.legendaryMods = loadMods(resourceLoader, objectMapper);
   }
 
   private static void processItems(List<ItemDescriptor> items, Map<Long, ItemDescriptor> map,
@@ -93,10 +94,10 @@ public class ItemService {
     }
   }
 
-  private static List<LegendaryModDescriptor> loadMods(ObjectMapper objectMapper) {
+  private static List<LegendaryModDescriptor> loadMods(ResourceLoader resourceLoader, ObjectMapper objectMapper) {
     List<LegendaryModDescriptor> legendaryMods = new ArrayList<>();
     try {
-      File file = ResourceUtils.getFile(LEG_MODS_CONFIG_FILE);
+      File file = resourceLoader.getResource(LEG_MODS_CONFIG_FILE).getFile();
       legendaryMods = objectMapper.readValue(file, LEG_MOD_TYPE_REF).stream().filter(LegendaryModDescriptor::isEnabled).collect(
           Collectors.toList());
     } catch (Exception e) {
