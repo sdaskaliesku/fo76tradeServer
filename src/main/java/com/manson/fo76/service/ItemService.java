@@ -25,7 +25,9 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -44,10 +46,10 @@ public class ItemService {
   private final List<LegendaryModDescriptor> legendaryMods;
 
   @Autowired
-  public ItemService(ItemRepository itemRepository, UserService userService, ObjectMapper objectMapper, ResourceLoader resourceLoader) {
+  public ItemService(ItemRepository itemRepository, UserService userService, ObjectMapper objectMapper) {
     this.itemRepository = itemRepository;
     this.userService = userService;
-    this.legendaryMods = loadMods(resourceLoader, objectMapper);
+    this.legendaryMods = loadMods(objectMapper);
   }
 
   private static void processItems(List<ItemDescriptor> items, Map<Long, ItemDescriptor> map,
@@ -93,12 +95,15 @@ public class ItemService {
     }
   }
 
-  private static List<LegendaryModDescriptor> loadMods(ResourceLoader resourceLoader, ObjectMapper objectMapper) {
+  private static List<LegendaryModDescriptor> loadMods(ObjectMapper objectMapper) {
     List<LegendaryModDescriptor> legendaryMods = new ArrayList<>();
     try {
-      File file = resourceLoader.getResource(LEG_MODS_CONFIG_FILE).getFile();
-      legendaryMods = objectMapper.readValue(file, LEG_MOD_TYPE_REF).stream().filter(LegendaryModDescriptor::isEnabled).collect(
-          Collectors.toList());
+      ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+      Resource resource = resolver.getResource(LEG_MODS_CONFIG_FILE);
+      File file = resource.getFile();
+      legendaryMods = objectMapper.readValue(file, LEG_MOD_TYPE_REF).stream().filter(LegendaryModDescriptor::isEnabled)
+          .collect(
+              Collectors.toList());
     } catch (Exception e) {
       LOGGER.error("Error while loading legendary mods config", e);
     }
