@@ -12,16 +12,17 @@ import org.apache.commons.lang3.StringUtils;
 public class LegendaryModDescriptor {
 
   private int star;
-  private String text;
   private String abbreviation;
   private List<String> additionalAbbreviations;
   private String id;
   private Map<String, String> translations;
+  private Map<String, String> texts;
   private String itemType;
   private boolean enabled = true;
 
   public LegendaryModDescriptor() {
     translations = new HashMap<>();
+    texts = new HashMap<>();
     additionalAbbreviations = new ArrayList<>();
   }
 
@@ -39,14 +40,6 @@ public class LegendaryModDescriptor {
 
   public void setStar(int star) {
     this.star = star;
-  }
-
-  public String getText() {
-    return text;
-  }
-
-  public void setText(String text) {
-    this.text = text;
   }
 
   public String getAbbreviation() {
@@ -89,6 +82,14 @@ public class LegendaryModDescriptor {
     this.enabled = enabled;
   }
 
+  public Map<String, String> getTexts() {
+    return texts;
+  }
+
+  public void setTexts(Map<String, String> texts) {
+    this.texts = texts;
+  }
+
   private static String prepareString(String input) {
     return input.trim().replace("'", "").replace("+", "").replace(".", "");
   }
@@ -96,9 +97,10 @@ public class LegendaryModDescriptor {
   @JsonIgnore
   public boolean isTheSameMod(String input) {
     input = prepareString(input);
-    boolean matchesName = StringUtils.equalsIgnoreCase(prepareString(text), input);
-    if (matchesName) {
-      return true;
+    for (String text : texts.values()) {
+      if (StringUtils.equalsIgnoreCase(prepareString(text), input)) {
+        return true;
+      }
     }
     for (String translation: translations.values()) {
       if (StringUtils.equalsIgnoreCase(prepareString(translation), input)) {

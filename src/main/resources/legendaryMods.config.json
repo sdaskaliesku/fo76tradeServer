@@ -1,261 +1,336 @@
 [
   {
     "star": 1,
-    "text": "Assassin's",
     "abbreviation": "A",
     "additionalAbbreviations": [
       "Ass"
     ],
     "id": "mod_Legendary_Armor1_LessDMGPlayers",
     "translations": {
-      "en": "75% chance to reduce damage by 8% from Players."
+      "en": "75% chance to reduce damage by 8% from Players.",
+      "ru": "75% шанс снизить урон от игроков на 8%."
+    },
+    "texts": {
+      "ru": "Убийственный",
+      "en": "Assassin's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Regenerating",
     "abbreviation": "R",
     "additionalAbbreviations": [
       "Regen"
     ],
     "id": "mod_Legendary_Armor1_HealthRegen",
     "translations": {
-      "en": "Slowly regenerate health while not in combat"
+      "en": "Slowly regenerate health while not in combat",
+      "ru": "Здоровье постепенно восстанавливается, пока вы не участвуете в боях"
+    },
+    "texts": {
+      "ru": "Регенерирующий",
+      "en": "Regenerating"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Nocturnal",
     "abbreviation": "N",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Armor1_ResistancesNight",
     "translations": {
-      "en": "Damage Resistance and Energy Resistance increase with the night and decrease with the day"
+      "en": "Damage Resistance and Energy Resistance increase with the night and decrease with the day",
+      "ru": "Сопротивляемость обычному и энергетическому урону усиливается ночью и снижается днем."
+    },
+    "texts": {
+      "ru": "Ночной",
+      "en": "Nocturnal"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Bolstering",
     "abbreviation": "B",
     "additionalAbbreviations": [
       "BOL"
     ],
     "id": "mod_Legendary_Armor1_ResistancesProportionalHealth",
     "translations": {
-      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the higher your health."
+      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the higher your health.",
+      "ru": "Повышение сопротивляемости обычному и энергетическому урону по мере повышения здоровья (до +35)."
+    },
+    "texts": {
+      "ru": "Усиление",
+      "en": "Bolstering"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Zealot's",
     "abbreviation": "Z",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Armor1_LessDmgScorched",
     "translations": {
-      "en": "-15% damage from Scorched"
+      "en": "-15% damage from Scorched",
+      "ru": "-15% урона от горелых"
+    },
+    "texts": {
+      "ru": "Зилотская",
+      "en": "Zealot's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Exterminator's",
     "abbreviation": "ET",
     "additionalAbbreviations": [
       "EXT"
     ],
     "id": "mod_Legendary_Weapon1_DmgVsBugs",
     "translations": {
-      "en": "+30% damage to Mirelurks and bugs"
+      "en": "+30% damage to Mirelurks and bugs",
+      "ru": "+30% к урону болотникам и насекомым"
+    },
+    "texts": {
+      "ru": "Истребителя",
+      "en": "Exterminator's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Exterminator's",
     "abbreviation": "ET",
     "additionalAbbreviations": [
       "EXT"
     ],
     "id": "mod_Legendary_Armor1_LessDMGBugs",
     "translations": {
-      "en": "-15% damage from Mirelurks and bugs"
+      "en": "-15% damage from Mirelurks and bugs",
+      "ru": "-15% урона от болотников и насекомых"
+    },
+    "texts": {
+      "ru": "Гибельный",
+      "en": "Exterminator's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Hunter's",
     "abbreviation": "H",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Armor1_LessDMGAnimals",
     "translations": {
-      "en": "-15% damage from animals"
+      "en": "-15% damage from animals",
+      "ru": "-15% урона от животных"
+    },
+    "texts": {
+      "ru": "Охотничий",
+      "en": "Hunter's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Auto Revive",
     "abbreviation": "AS",
     "additionalAbbreviations": [
       "Auto"
     ],
     "id": "mod_Legendary_Armor1_AutoRevive",
     "translations": {
-      "en": "When incapacitated, gain a 50% chance to revive yourself with a Stimpak, once every minute"
+      "en": "When incapacitated, gain a 50% chance to revive yourself with a Stimpak, once every minute",
+      "ru": "Погибая, вы сможете раз в минуту оживить себя с помощью стимулятора с вероятностью 50%"
+    },
+    "texts": {
+      "ru": "Автоматическое оживление",
+      "en": "Auto Revive"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Unyielding",
     "abbreviation": "U",
     "additionalAbbreviations": [
       "UNY"
     ],
     "id": "mod_Legendary_Armor1_LowHealthIncreasesStats",
     "translations": {
-      "en": "Gain up to +3 to all stats (except END) when low health"
+      "en": "Gain up to +3 to all stats (except END) when low health",
+      "ru": "+3 ко всем параметрам (кроме выносливости) при низком уровне здоровья"
+    },
+    "texts": {
+      "ru": "Стойкая",
+      "en": "Unyielding"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Mutant's",
     "abbreviation": "M",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Armor1_ResistancesMutation",
     "translations": {
-      "en": "+10 Damage Resistance and Energy Resistance if you are mutated"
+      "en": "+10 Damage Resistance and Energy Resistance if you are mutated",
+      "ru": "+10 к сопротивляемости обычному и энергетическому урону при мутации."
+    },
+    "texts": {
+      "ru": "Мутантный",
+      "en": "Mutant's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Bolstering",
     "abbreviation": "B",
     "additionalAbbreviations": [
       "BOL"
     ],
     "id": "mod_Legendary_Armor1_ResistancesInverseHealth",
     "translations": {
-      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the lower your health"
+      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the lower your health",
+      "ru": "Повышение сопротивляемости обычному и энергетическому урону по мере уменьшения здоровья (до +35)."
+    },
+    "texts": {
+      "ru": "Усиление",
+      "en": "Bolstering"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Mutant Slayer's",
     "abbreviation": "MS",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Armor1_LessDMGSuperMutants",
     "translations": {
-      "en": "-15% damage from Super Mutants"
+      "en": "-15% damage from Super Mutants",
+      "ru": "-15% урона от супермутантов"
+    },
+    "texts": {
+      "ru": "Мутантоистребительный",
+      "en": "Mutant Slayer's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Chameleon",
     "abbreviation": "CH",
     "additionalAbbreviations": [
       "CHA"
     ],
     "id": "mod_Legendary_Armor1_Chameleon",
     "translations": {
-      "en": "Blend with the environment while sneaking and not moving"
+      "en": "Blend with the environment while sneaking and not moving",
+      "ru": "Сливайтесь с окружением в режиме скрытного передвижения и стоя на месте"
+    },
+    "texts": {
+      "ru": "Хамелеон",
+      "en": "Chameleon"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Cloaking",
     "abbreviation": "CL",
     "additionalAbbreviations": [
       "Cloak"
     ],
     "id": "mod_Legendary_Armor1_CloakOnMelee",
     "translations": {
-      "en": "Being hit in melee generates a Stealth Field once per 30 seconds"
+      "en": "Being hit in melee generates a Stealth Field once per 30 seconds",
+      "ru": "Ранение в ближнем бою создает стелс-поле раз в 30 секунд."
+    },
+    "texts": {
+      "ru": "Маскирующая",
+      "en": "Cloaking"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Auto Stim",
     "abbreviation": "AS",
     "additionalAbbreviations": [
       "Auto"
     ],
     "id": "mod_Legendary_Armor1_LowHealthTriggersStimpak",
     "translations": {
-      "en": "Automatically use a Stimpak when hit while health is 25% or less, once every 60 seconds"
+      "en": "Automatically use a Stimpak when hit while health is 25% or less, once every 60 seconds",
+      "ru": "Автоматическое применение стимулятора при падении уровня здоровья до 25% или ниже раз в 60 секунд."
+    },
+    "texts": {
+      "ru": "Стимуляторная",
+      "en": "Auto Stim"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Ghoul Slayer's",
     "abbreviation": "G",
     "additionalAbbreviations": [
       "GS"
     ],
     "id": "mod_Legendary_Armor1_LessDMGGhouls",
     "translations": {
-      "en": "-15% damage from ghouls"
+      "en": "-15% damage from ghouls",
+      "ru": "-15% урона от гулей"
+    },
+    "texts": {
+      "ru": "Антирадиационный",
+      "en": "Ghoul Slayer's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Weightless",
     "abbreviation": "W",
     "additionalAbbreviations": [
       "WL"
     ],
     "id": "mod_Legendary_Armor1_Weightless",
     "translations": {
-      "en": "Weighs 90% less and does not count as armor for the Chameleon mutation."
+      "en": "Weighs 90% less and does not count as armor for the Chameleon mutation.",
+      "ru": "Весит на 90% меньше и не считается как броня для мутации \"Хамелеон\""
+    },
+    "texts": {
+      "ru": "Невесомый",
+      "en": "Weightless"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Troubleshooter's",
     "abbreviation": "TRO",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Armor1_LessDMGRobots",
     "translations": {
-      "en": "-15% damage from robots"
+      "en": "-15% damage from robots",
+      "ru": "-15% урона от роботов"
+    },
+    "texts": {
+      "ru": "Механика",
+      "en": "Troubleshooter's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Perception",
     "abbreviation": "1P",
     "additionalAbbreviations": [
       "+1P",
@@ -263,14 +338,18 @@
     ],
     "id": "mod_Legendary_Armor2_StatPerception",
     "translations": {
-      "en": "+1 Perception"
+      "en": "+1 Perception",
+      "ru": "+1 к восприятию"
+    },
+    "texts": {
+      "ru": "Восприятие",
+      "en": "Perception"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Agility",
     "abbreviation": "1A",
     "additionalAbbreviations": [
       "+1A",
@@ -278,14 +357,18 @@
     ],
     "id": "mod_Legendary_Armor2_StatAgility",
     "translations": {
-      "en": "+1 Agility"
+      "en": "+1 Agility",
+      "ru": "+1 к ловкости"
+    },
+    "texts": {
+      "ru": "Ловкость",
+      "en": "Agility"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Luck",
     "abbreviation": "1L",
     "additionalAbbreviations": [
       "+1L",
@@ -293,14 +376,18 @@
     ],
     "id": "mod_Legendary_Armor2_StatLuck",
     "translations": {
-      "en": "+1 Luck"
+      "en": "+1 Luck",
+      "ru": "+1 к удаче"
+    },
+    "texts": {
+      "ru": "Удача",
+      "en": "Luck"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Strength",
     "abbreviation": "1S",
     "additionalAbbreviations": [
       "+1S",
@@ -308,14 +395,18 @@
     ],
     "id": "mod_Legendary_Armor2_StatStrength",
     "translations": {
-      "en": "+1 Strength"
+      "en": "+1 Strength",
+      "ru": "+1 к силе"
+    },
+    "texts": {
+      "ru": "Сила",
+      "en": "Strength"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Endurance",
     "abbreviation": "1E",
     "additionalAbbreviations": [
       "+1E",
@@ -323,14 +414,18 @@
     ],
     "id": "mod_Legendary_Armor2_StatEndurance",
     "translations": {
-      "en": "+1 Endurance"
+      "en": "+1 Endurance",
+      "ru": "+1 к выносливости"
+    },
+    "texts": {
+      "ru": "Выносливость",
+      "en": "Endurance"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Antiseptic",
     "abbreviation": "25D",
     "additionalAbbreviations": [
       "DR",
@@ -338,14 +433,18 @@
     ],
     "id": "mod_Legendary_Armor2_DiseaseResistance",
     "translations": {
-      "en": "+25% Environmental Disease Resistance"
+      "en": "+25% Environmental Disease Resistance",
+      "ru": "+25% к сопротивляемости болезням от окружающей среды"
+    },
+    "texts": {
+      "ru": "Антисептик",
+      "en": "Antiseptic"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Poisoner's",
     "abbreviation": "25P",
     "additionalAbbreviations": [
       "POI",
@@ -353,14 +452,18 @@
     ],
     "id": "mod_Legendary_Armor2_PoisonResistance",
     "translations": {
-      "en": "+25 Poison Resistance"
+      "en": "+25 Poison Resistance",
+      "ru": "+25 к сопротивляемости ядам"
+    },
+    "texts": {
+      "ru": "Знахарский",
+      "en": "Poisoner's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Intelligence",
     "abbreviation": "1I",
     "additionalAbbreviations": [
       "+1I",
@@ -368,14 +471,18 @@
     ],
     "id": "mod_Legendary_Armor2_StatIntelligence",
     "translations": {
-      "en": "+1 Intelligence"
+      "en": "+1 Intelligence",
+      "ru": "+1 к интеллекту"
+    },
+    "texts": {
+      "ru": "Интеллект",
+      "en": "Intelligence"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Powered",
     "abbreviation": "AP",
     "additionalAbbreviations": [
       "PWR",
@@ -383,14 +490,18 @@
     ],
     "id": "mod_Legendary_Armor2_APRegen",
     "translations": {
-      "en": "Increases Action Point refresh speed"
+      "en": "Increases Action Point refresh speed",
+      "ru": "ОД восстанавливаются быстрее."
+    },
+    "texts": {
+      "ru": "Подключенный",
+      "en": "Powered"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Charisma",
     "abbreviation": "1C",
     "additionalAbbreviations": [
       "+1C",
@@ -398,26 +509,34 @@
     ],
     "id": "mod_Legendary_Armor2_StatCharisma",
     "translations": {
-      "en": "+1 Charisma"
+      "en": "+1 Charisma",
+      "ru": "+1 к харизме"
+    },
+    "texts": {
+      "ru": "Харизма",
+      "en": "Charisma"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Sprinter's",
     "abbreviation": null,
     "additionalAbbreviations": [],
     "id": "zzzmod_Legendary_Armor2_Speed",
     "translations": {
-      "en": "Increases movement speed by 5%"
+      "en": "Increases movement speed by 5%",
+      "ru": "Увеличивает скорость передвижения на 5%"
+    },
+    "texts": {
+      "ru": "Бегуна",
+      "en": "Sprinter's"
     },
     "itemType": "armor",
     "enabled": false
   },
   {
     "star": 2,
-    "text": "HazMat",
     "abbreviation": "25R",
     "additionalAbbreviations": [
       "RR",
@@ -425,42 +544,54 @@
     ],
     "id": "mod_Legendary_Armor2_RadResistance",
     "translations": {
-      "en": "+25 Radiation Resistance"
+      "en": "+25 Radiation Resistance",
+      "ru": "+25 к сопротивляемости радиации"
+    },
+    "texts": {
+      "ru": "Опасное вещество",
+      "en": "HazMat"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Reduced ammo weight",
     "abbreviation": "AWR",
     "additionalAbbreviations": [
       "Ammo"
     ],
     "id": "mod_Legendary_Armor3_WeightAmmo",
     "translations": {
-      "en": "Ammo weight reduced by 20%"
+      "en": "Ammo weight reduced by 20%",
+      "ru": "Боеприпасы весят на 20% меньше"
+    },
+    "texts": {
+      "ru": "Уменьшенный вес всех боеприпасов",
+      "en": "Reduced ammo weight"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Reduced limb damage",
     "abbreviation": "15L",
     "additionalAbbreviations": [
       "Limb"
     ],
     "id": "mod_Legendary_Armor3_ReducedLimbDamage",
     "translations": {
-      "en": "Receive 15% less limb damage"
+      "en": "Receive 15% less limb damage",
+      "ru": "Снижает урон конечностям на 15%"
+    },
+    "texts": {
+      "ru": "Уменьшенный урон конечностям",
+      "en": "Reduced limb damage"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Reduced food/drink/chem weight",
     "abbreviation": "FWR",
     "additionalAbbreviations": [
       "Aid",
@@ -468,14 +599,18 @@
     ],
     "id": "mod_Legendary_Armor3_WeightFoodDrinkChems",
     "translations": {
-      "en": "Food, drink, and chem weights reduced by 20%"
+      "en": "Food, drink, and chem weights reduced by 20%",
+      "ru": "Еда, вода и препараты весят на 20% меньше"
+    },
+    "texts": {
+      "ru": "Уменьшение веса еды, воды и препаратов",
+      "en": "Reduced food/drink/chem weight"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Safecracker's",
     "abbreviation": "Lock",
     "additionalAbbreviations": [
       "Safe",
@@ -483,28 +618,36 @@
     ],
     "id": "mod_Legendary_Armor3_LockPick",
     "translations": {
-      "en": "Increases size of sweet-spot while picking locks"
+      "en": "Increases size of sweet-spot while picking locks",
+      "ru": "Увеличение размера зачетной зоны при взломе замков."
+    },
+    "texts": {
+      "ru": "Взломщика",
+      "en": "Safecracker's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Reduced weapon weight",
     "abbreviation": "WWR",
     "additionalAbbreviations": [
       "Weapon"
     ],
     "id": "mod_Legendary_Armor3_WeightWeapons",
     "translations": {
-      "en": "Weapon weights reduced by 20%"
+      "en": "Weapon weights reduced by 20%",
+      "ru": "Оружие весит на 20% меньше"
+    },
+    "texts": {
+      "ru": "Уменьшенный вес оружия",
+      "en": "Reduced weapon weight"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Sentinel's",
     "abbreviation": "SENT",
     "additionalAbbreviations": [
       "Stand",
@@ -512,70 +655,90 @@
     ],
     "id": "mod_Legendary_Armor3_LessDamageStandStill",
     "translations": {
-      "en": "75% chance to reduce damage by 15% while standing still"
+      "en": "75% chance to reduce damage by 15% while standing still",
+      "ru": "75%-й шанс снизить урон на 15%, пока вы неподвижны."
+    },
+    "texts": {
+      "ru": "Защитный",
+      "en": "Sentinel's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Improved sneaking",
     "abbreviation": "Sneak",
     "additionalAbbreviations": [
       "Detect"
     ],
     "id": "mod_Legendary_Armor3_Sneak",
     "translations": {
-      "en": "Become harder to detect while sneaking"
+      "en": "Become harder to detect while sneaking",
+      "ru": "Вероятность обнаружения в режиме скрытности снижена"
+    },
+    "texts": {
+      "ru": "Улучшенная скрытность",
+      "en": "Improved sneaking"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Acrobat's",
     "abbreviation": "50F",
     "additionalAbbreviations": [
       "Acrobat's"
     ],
     "id": "mod_Legendary_Armor3_LessFallDamage",
     "translations": {
-      "en": "Reduces falling damage by 50%"
+      "en": "Reduces falling damage by 50%",
+      "ru": "Уменьшение урона от падения на 50%."
+    },
+    "texts": {
+      "ru": "Акробата",
+      "en": "Acrobat's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Cavalier's",
     "abbreviation": "15B",
     "additionalAbbreviations": [
       "Blocking"
     ],
     "id": "mod_Legendary_Armor3_LessDamageBlocking",
     "translations": {
-      "en": "Reduces damage while blocking by 15%"
+      "en": "Reduces damage while blocking by 15%",
+      "ru": "Уменьшение урона при блоке на 15%."
+    },
+    "texts": {
+      "ru": "Кавалерский",
+      "en": "Cavalier's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Durability",
     "abbreviation": "50D",
     "additionalAbbreviations": [
       "Durability"
     ],
     "id": "mod_Legendary_Armor3_Durability",
     "translations": {
-      "en": "50% more durability than normal"
+      "en": "50% more durability than normal",
+      "ru": "Прочность выше на 50%"
+    },
+    "texts": {
+      "ru": "Прочность",
+      "en": "Durability"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Cavalier's",
     "abbreviation": "CAV",
     "additionalAbbreviations": [
       "Sprint",
@@ -583,132 +746,172 @@
     ],
     "id": "mod_Legendary_Armor3_LessDamageSprinting",
     "translations": {
-      "en": "75% chance to reduce damage by 15% while sprinting."
+      "en": "75% chance to reduce damage by 15% while sprinting.",
+      "ru": "75% шанс снизить урон на 15% во время бега."
+    },
+    "texts": {
+      "ru": "Кавалерский",
+      "en": "Cavalier's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Diver's",
     "abbreviation": "Aqua",
     "additionalAbbreviations": [
       "Underwater"
     ],
     "id": "mod_Legendary_Armor3_Waterbreathing",
     "translations": {
-      "en": "Grants the ability to breathe underwater"
+      "en": "Grants the ability to breathe underwater",
+      "ru": "Позволяет дышать под водой"
+    },
+    "texts": {
+      "ru": "Дайвера",
+      "en": "Diver's"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Reduced junk weight",
     "abbreviation": "JWR",
     "additionalAbbreviations": [
       "Junk"
     ],
     "id": "mod_Legendary_Armor3_WeightJunk",
     "translations": {
-      "en": "Junk item weights reduced by 20%"
+      "en": "Junk item weights reduced by 20%",
+      "ru": "Хлам весит на 20% меньше"
+    },
+    "texts": {
+      "ru": "Уменьшенный вес хлама",
+      "en": "Reduced junk weight"
     },
     "itemType": "armor",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Suppressor's",
     "abbreviation": "SS",
     "additionalAbbreviations": [
       "SUP"
     ],
     "id": "mod_Legendary_Weapon1_DebuffDamage",
     "translations": {
-      "en": "Reduce your target's damage output by 20% for 3s"
+      "en": "Reduce your target's damage output by 20% for 3s",
+      "ru": "Сила урона цели будет снижена на 20% в течение 3 сек."
+    },
+    "texts": {
+      "ru": "Глушительный",
+      "en": "Suppressor's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Bloodied",
     "abbreviation": "B",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DamageInverseHealth",
     "translations": {
-      "en": "Damage increases as health decreases."
+      "en": "Damage increases as health decreases.",
+      "ru": "Чем меньше уровень здоровья, тем выше урон."
+    },
+    "texts": {
+      "ru": "Окровавленный",
+      "en": "Bloodied"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Medic's",
     "abbreviation": "MED",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_Guns_CritsHealGroup",
     "translations": {
-      "en": "V.A.T.S. crits will heal you and your group"
+      "en": "V.A.T.S. crits will heal you and your group",
+      "ru": "Критические атаки в V.A.T.S. лечат вас и ваших соратников"
+    },
+    "texts": {
+      "ru": "Медицинский",
+      "en": "Medic's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Vampire's",
     "abbreviation": "V",
     "additionalAbbreviations": [
       "Vamp"
     ],
     "id": "mod_Legendary_Weapon1_Vampire",
     "translations": {
-      "en": "Gain brief health regeneration when you hit an enemy"
+      "en": "Gain brief health regeneration when you hit an enemy",
+      "ru": "Здоровье быстро восстанавливается после того, как вы атаковали противника"
+    },
+    "texts": {
+      "ru": "Вампирский",
+      "en": "Vampire's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Never Ending",
     "abbreviation": null,
     "additionalAbbreviations": [],
     "id": "zzzmod_Legendary_Weapon1_Guns_AmmoCapacity2x",
     "translations": {
-      "en": "Double ammo capacity"
+      "en": "Double ammo capacity",
+      "ru": "Удвоенный боезапас"
+    },
+    "texts": {
+      "ru": "Бесконечный",
+      "en": "Never Ending"
     },
     "itemType": "weapon",
     "enabled": false
   },
   {
     "star": 1,
-    "text": "Assassin's",
     "abbreviation": "A",
     "additionalAbbreviations": [
       "Ass"
     ],
     "id": "mod_Legendary_Weapon1_DmgVsPlayers",
     "translations": {
-      "en": "+10% damage to Players"
+      "en": "+10% damage to Players",
+      "ru": "+10% к урону игрокам"
+    },
+    "texts": {
+      "ru": "Убийственный",
+      "en": "Assassin's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Zealot's",
     "abbreviation": "Z",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DmgVsScorched",
     "translations": {
-      "en": "+30% damage to Scorched"
+      "en": "+30% damage to Scorched",
+      "ru": "+30% к урону горелым"
+    },
+    "texts": {
+      "ru": "Зилотская",
+      "en": "Zealot's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Berserker's",
     "abbreviation": "BER",
     "additionalAbbreviations": [
       "BR",
@@ -716,118 +919,154 @@
     ],
     "id": "mod_Legendary_Weapon1_DamageUnarmored",
     "translations": {
-      "en": "Lower Damage Resistance increases damage dealt."
+      "en": "Lower Damage Resistance increases damage dealt.",
+      "ru": "Чем ниже сопротивляемость урону, тем выше наносимый урон."
+    },
+    "texts": {
+      "ru": "Берсеркерский",
+      "en": "Berserker's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Nocturnal",
     "abbreviation": "N",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DamageNight",
     "translations": {
-      "en": "Damage increases with the night and decreases with the day"
+      "en": "Damage increases with the night and decreases with the day",
+      "ru": "Урон усиливается ночью и снижается днем"
+    },
+    "texts": {
+      "ru": "Ночной",
+      "en": "Nocturnal"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Mutant's",
     "abbreviation": "M",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DmgWithMutation",
     "translations": {
-      "en": "Damage increased by 10% if you are mutated"
+      "en": "Damage increased by 10% if you are mutated",
+      "ru": "+10% к урону, если у вас имеются мутации"
+    },
+    "texts": {
+      "ru": "Мутантный",
+      "en": "Mutant's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Executioner's",
     "abbreviation": "EX",
     "additionalAbbreviations": [
       "EXE"
     ],
     "id": "mod_Legendary_Weapon1_Execute",
     "translations": {
-      "en": "+50% more damage when your target is below 40% health"
+      "en": "+50% more damage when your target is below 40% health",
+      "ru": "+50% к урону, если уровень здоровья вашей цели ниже 40%"
+    },
+    "texts": {
+      "ru": "Палаческий",
+      "en": "Executioner's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Instigating",
     "abbreviation": "I",
     "additionalAbbreviations": [
       "INST"
     ],
     "id": "mod_Legendary_Weapon1_DamageFirstBlood",
     "translations": {
-      "en": "Double damage if target is full health"
+      "en": "Double damage if target is full health",
+      "ru": "Удвоенный урон целям с максимальным количеством очков здоровья"
+    },
+    "texts": {
+      "ru": "Провоцирующий",
+      "en": "Instigating"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Quad",
     "abbreviation": "Q",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_Guns_AmmoCapacity4x",
     "translations": {
-      "en": "Quadruple ammo capacity"
+      "en": "Quadruple ammo capacity",
+      "ru": "Боезапас, увеличенный в 4 раза"
+    },
+    "texts": {
+      "ru": "Бесконечная автоматическая стрельба",
+      "en": "Quad"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Ghoul Slayer's",
     "abbreviation": "G",
     "additionalAbbreviations": [
       "GS"
     ],
     "id": "mod_Legendary_Weapon1_DmgVsGhouls",
     "translations": {
-      "en": "+30% damage to ghouls"
+      "en": "+30% damage to ghouls",
+      "ru": "+30% к урону гулям"
+    },
+    "texts": {
+      "ru": "Антирадиационный",
+      "en": "Ghoul Slayer's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Stalker's",
     "abbreviation": "S",
     "additionalAbbreviations": [
       "ST"
     ],
     "id": "mod_Legendary_Weapon1_AccuracyNotInCombat",
     "translations": {
-      "en": "If not in combat, +100% VATS accuracy at +50% AP cost"
+      "en": "If not in combat, +100% VATS accuracy at +50% AP cost",
+      "ru": "+100% к точности в V.A.T.S. по цене +50% ОД, если вы не в бою"
+    },
+    "texts": {
+      "ru": "Следопытский",
+      "en": "Stalker's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Troubleshooter's",
     "abbreviation": "TRO",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DmgVsRobots",
     "translations": {
-      "en": "+30% damage to robots"
+      "en": "+30% damage to robots",
+      "ru": "+30% к урону роботам"
+    },
+    "texts": {
+      "ru": "Механика",
+      "en": "Troubleshooter's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Anti-armor",
     "abbreviation": "AA",
     "additionalAbbreviations": [
       "Anti",
@@ -835,86 +1074,114 @@
     ],
     "id": "mod_Legendary_Weapon1_AntiArmor",
     "translations": {
-      "en": "Ignores 50% of your target's armor"
+      "en": "Ignores 50% of your target's armor",
+      "ru": "Эффективность брони противника снижается на 50%"
+    },
+    "texts": {
+      "ru": "Бронебойный",
+      "en": "Anti-armor"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Furious",
     "abbreviation": "F",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DmgConsecutiveHits",
     "translations": {
-      "en": "Damage increased after each consecutive hit on the same target"
+      "en": "Damage increased after each consecutive hit on the same target",
+      "ru": "Увеличение урона с каждой последующей атакой одной и той же цели"
+    },
+    "texts": {
+      "ru": "Яростный",
+      "en": "Furious"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Hunter's",
     "abbreviation": "H",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DmgVsAnimals",
     "translations": {
-      "en": "+30% damage to animals"
+      "en": "+30% damage to animals",
+      "ru": "+30% к урону животным"
+    },
+    "texts": {
+      "ru": "Охотничий",
+      "en": "Hunter's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Concussive",
     "abbreviation": "C",
     "additionalAbbreviations": [],
     "id": "zzzmod_Legendary_Weapon1_Knockback",
     "translations": {
-      "en": "Gain a chance to knock your target back"
+      "en": "Gain a chance to knock your target back",
+      "ru": "Получите шанс сбить цель с ног"
+    },
+    "texts": {
+      "ru": "Ударный",
+      "en": "Concussive"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Two Shot",
     "abbreviation": "TS",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_Guns_TwoShot",
     "translations": {
-      "en": "Shoots an additional projectile"
+      "en": "Shoots an additional projectile",
+      "ru": "Выпускает дополнительный снаряд"
+    },
+    "texts": {
+      "ru": "Двухзарядный",
+      "en": "Two Shot"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Mutant Slayer's",
     "abbreviation": "MS",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DmgVsSupermutants",
     "translations": {
-      "en": "+30% damage to super mutants"
+      "en": "+30% damage to super mutants",
+      "ru": "+30% к урону супермутантам"
+    },
+    "texts": {
+      "ru": "Мутантоистребительный",
+      "en": "Mutant Slayer's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 1,
-    "text": "Junkie's",
     "abbreviation": "J",
     "additionalAbbreviations": [],
     "id": "mod_Legendary_Weapon1_DamageAddiction",
     "translations": {
-      "en": "Damage increases when suffering from addictions."
+      "en": "Damage increases when suffering from addictions.",
+      "ru": "Урон повышается при ломке от зависимости."
+    },
+    "texts": {
+      "ru": "Наркоманский",
+      "en": "Junkie's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Hitman's",
     "abbreviation": "10",
     "additionalAbbreviations": [
       "Aim",
@@ -922,14 +1189,18 @@
     ],
     "id": "mod_Legendary_Weapon2_Guns_DmgSights",
     "translations": {
-      "en": "+10% damage while aiming"
+      "en": "+10% damage while aiming",
+      "ru": "+10% к наносимому урону при прицеливании"
+    },
+    "texts": {
+      "ru": "Ликвидаторский",
+      "en": "Hitman's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Melee Speed",
     "abbreviation": "SS",
     "additionalAbbreviations": [
       "40S",
@@ -937,28 +1208,36 @@
     ],
     "id": "mod_Legendary_Weapon2_Melee_SwingSpeed",
     "translations": {
-      "en": "40% faster swing speed"
+      "en": "40% faster swing speed",
+      "ru": "Повышение скорости замаха на 40%."
+    },
+    "texts": {
+      "ru": "Скорость атаки в ближнем бою",
+      "en": "Melee Speed"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Explosive",
     "abbreviation": "E",
     "additionalAbbreviations": [
       "Exp"
     ],
     "id": "mod_Legendary_Weapon2_Guns_ExplosiveBullets",
     "translations": {
-      "en": "Bullets explode for area damage."
+      "en": "Bullets explode for area damage.",
+      "ru": "Пули взрываются и наносят урон по площади."
+    },
+    "texts": {
+      "ru": "Взрывной",
+      "en": "Explosive"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Riposting",
     "abbreviation": "50B",
     "additionalAbbreviations": [
       "Blocking",
@@ -966,14 +1245,18 @@
     ],
     "id": "mod_Legendary_Weapon2_Melee_BlockReflects",
     "translations": {
-      "en": "Reflects 50% of melee damage back while blocking"
+      "en": "Reflects 50% of melee damage back while blocking",
+      "ru": "Возвращает атакующему 50% урона в ближнем бою при блокировании."
+    },
+    "texts": {
+      "ru": "Рипост",
+      "en": "Riposting"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Basher's",
     "abbreviation": "40",
     "additionalAbbreviations": [
       "Bash",
@@ -981,14 +1264,18 @@
     ],
     "id": "mod_Legendary_Weapon2_Guns_Bashing",
     "translations": {
-      "en": "Bashing damage increased by 40%"
+      "en": "Bashing damage increased by 40%",
+      "ru": "+40% к урону в ближнем бою"
+    },
+    "texts": {
+      "ru": "Хрясь!",
+      "en": "Basher's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Power Attack Damage",
     "abbreviation": "40",
     "additionalAbbreviations": [
       "Power Attack",
@@ -996,14 +1283,18 @@
     ],
     "id": "mod_Legendary_Weapon2_Melee_DamagePowerAttack",
     "translations": {
-      "en": "40% more power attack damage"
+      "en": "40% more power attack damage",
+      "ru": "Увеличение урона от мощных атак на 40%."
+    },
+    "texts": {
+      "ru": "Урон от мощных атак",
+      "en": "Power Attack Damage"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "VATS Enhanced",
     "abbreviation": "33",
     "additionalAbbreviations": [
       "Hit Chance",
@@ -1011,14 +1302,18 @@
     ],
     "id": "mod_Legendary_Weapon2_Guns_VATSAccuracy",
     "translations": {
-      "en": "+33% VATS hit chance"
+      "en": "+33% VATS hit chance",
+      "ru": "+33% к шансу провести удачную атаку в V.A.T.S."
+    },
+    "texts": {
+      "ru": "С улучшенным V.A.T.S.",
+      "en": "VATS Enhanced"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Rapid",
     "abbreviation": "FFR",
     "additionalAbbreviations": [
       "FR",
@@ -1026,40 +1321,52 @@
     ],
     "id": "mod_Legendary_Weapon2_Guns_RoF",
     "translations": {
-      "en": "25% faster fire rate"
+      "en": "25% faster fire rate",
+      "ru": "Повышение скорострельности на 25%"
+    },
+    "texts": {
+      "ru": "Стремительный",
+      "en": "Rapid"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Irradiated",
     "abbreviation": null,
     "additionalAbbreviations": [],
     "id": "CUT_mod_Legendary_Weapon2_RadiationDamage",
     "translations": {
-      "en": "Converts damage to Radiation and adds 10%"
+      "en": "Converts damage to Radiation and adds 10%",
+      "ru": "Превращает урон в радиацию и добавляет 10%"
+    },
+    "texts": {
+      "ru": "Радиоактивный",
+      "en": "Irradiated"
     },
     "itemType": "weapon",
     "enabled": false
   },
   {
     "star": 2,
-    "text": "Explosive",
     "abbreviation": "E",
     "additionalAbbreviations": [
       "Exp"
     ],
     "id": "mod_Legendary_Weapon2_Guns_ExplosiveBullets_Shotgun",
     "translations": {
-      "en": "Bullets explode for area damage."
+      "en": "Bullets explode for area damage.",
+      "ru": "Пули взрываются и наносят урон по площади."
+    },
+    "texts": {
+      "ru": "Взрывной",
+      "en": "Explosive"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Lucky",
     "abbreviation": "50V",
     "additionalAbbreviations": [
       "Crit",
@@ -1067,14 +1374,18 @@
     ],
     "id": "mod_Legendary_Weapon2_Guns_DmgCrits",
     "translations": {
-      "en": "V.A.T.S. critical shots do +50% damage"
+      "en": "V.A.T.S. critical shots do +50% damage",
+      "ru": "+50% к урону, наносимому критическими атаками в V.A.T.S."
+    },
+    "texts": {
+      "ru": "Счастливый",
+      "en": "Lucky"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 2,
-    "text": "Crippling",
     "abbreviation": "50L",
     "additionalAbbreviations": [
       "Limb",
@@ -1082,14 +1393,18 @@
     ],
     "id": "mod_Legendary_Weapon2_DmgLimbs",
     "translations": {
-      "en": "+50% limb damage"
+      "en": "+50% limb damage",
+      "ru": "+50% к урону конечностям"
+    },
+    "texts": {
+      "ru": "Калечащий",
+      "en": "Crippling"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Endurance",
     "abbreviation": "1E",
     "additionalAbbreviations": [
       "+1E",
@@ -1097,28 +1412,36 @@
     ],
     "id": "mod_Legendary_Weapon3_Melee_StatEndurance",
     "translations": {
-      "en": "+1 Endurance"
+      "en": "+1 Endurance",
+      "ru": "+1 к выносливости"
+    },
+    "texts": {
+      "ru": "Выносливость",
+      "en": "Endurance"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Cavalier's",
     "abbreviation": "40",
     "additionalAbbreviations": [
       "Power Attack"
     ],
     "id": "mod_Legendary_Weapon3_Melee_LessDamagePowerAttack",
     "translations": {
-      "en": "Take 40% less damage while power attacking"
+      "en": "Take 40% less damage while power attacking",
+      "ru": "Уменьшение урона при мощной атаке на 40%."
+    },
+    "texts": {
+      "ru": "Кавалерский",
+      "en": "Cavalier's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Lucky",
     "abbreviation": "15C",
     "additionalAbbreviations": [
       "Crit meter",
@@ -1126,14 +1449,18 @@
     ],
     "id": "mod_Legendary_Weapon3_Guns_CritSpeed",
     "translations": {
-      "en": "Your V.A.T.S. critical meter fills 15% faster"
+      "en": "Your V.A.T.S. critical meter fills 15% faster",
+      "ru": "Индикатор критической атаки V.A.T.S. заполняется на 15% быстрее"
+    },
+    "texts": {
+      "ru": "Счастливый",
+      "en": "Lucky"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Strength",
     "abbreviation": "1S",
     "additionalAbbreviations": [
       "+1S",
@@ -1141,14 +1468,18 @@
     ],
     "id": "mod_Legendary_Weapon3_Melee_StatStrength",
     "translations": {
-      "en": "+1 Strength"
+      "en": "+1 Strength",
+      "ru": "+1 к силе"
+    },
+    "texts": {
+      "ru": "Сила",
+      "en": "Strength"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "VATS Enhanced",
     "abbreviation": "25",
     "additionalAbbreviations": [
       "25AP",
@@ -1156,56 +1487,72 @@
     ],
     "id": "mod_Legendary_Weapon3_Guns_VATSCostAP",
     "translations": {
-      "en": "25% less V.A.T.S. Action Point cost"
+      "en": "25% less V.A.T.S. Action Point cost",
+      "ru": "Уменьшает расход ОД на атаки в режиме V.A.T.S. на 25%."
+    },
+    "texts": {
+      "ru": "С улучшенным V.A.T.S.",
+      "en": "VATS Enhanced"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Durability",
     "abbreviation": "50D",
     "additionalAbbreviations": [
       "Durability"
     ],
     "id": "mod_Legendary_Weapon3_Durability",
     "translations": {
-      "en": "50% more durability than normal"
+      "en": "50% more durability than normal",
+      "ru": "Прочность выше на 50%"
+    },
+    "texts": {
+      "ru": "Прочность",
+      "en": "Durability"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Nimble",
     "abbreviation": "Move speed",
     "additionalAbbreviations": [
       "Move faster"
     ],
     "id": "mod_Legendary_Weapon3_Guns_MoveSpeedSights",
     "translations": {
-      "en": "Faster movement speed while aiming"
+      "en": "Faster movement speed while aiming",
+      "ru": "Увеличенная скорость передвижения при прицеливании."
+    },
+    "texts": {
+      "ru": "Ловкий",
+      "en": "Nimble"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Cavalier's",
     "abbreviation": "15",
     "additionalAbbreviations": [
       "Blocking"
     ],
     "id": "mod_Legendary_Weapon3_Melee_LessDamageBlock",
     "translations": {
-      "en": "Take 15% less damage while blocking"
+      "en": "Take 15% less damage while blocking",
+      "ru": "Уменьшение урона при блоке на 15%."
+    },
+    "texts": {
+      "ru": "Кавалерский",
+      "en": "Cavalier's"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Perception",
     "abbreviation": "1P",
     "additionalAbbreviations": [
       "+1P",
@@ -1213,56 +1560,72 @@
     ],
     "id": "mod_Legendary_Weapon3_Guns_StatPerception",
     "translations": {
-      "en": "+1 Perception"
+      "en": "+1 Perception",
+      "ru": "+1 к восприятию"
+    },
+    "texts": {
+      "ru": "Восприятие",
+      "en": "Perception"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Resilient",
     "abbreviation": "250",
     "additionalAbbreviations": [
       "Reload DR"
     ],
     "id": "mod_Legendary_Weapon3_Guns_ResistReload",
     "translations": {
-      "en": "+250 Damage Resistance while reloading"
+      "en": "+250 Damage Resistance while reloading",
+      "ru": "+250 к сопротивляемости урону при перезарядке."
+    },
+    "texts": {
+      "ru": "Безотказный",
+      "en": "Resilient"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Steadfast",
     "abbreviation": "50",
     "additionalAbbreviations": [
       "Aim DR"
     ],
     "id": "mod_Legendary_Weapon3_Guns_ResistSights",
     "translations": {
-      "en": "+50 Damage Resistance while aiming"
+      "en": "+50 Damage Resistance while aiming",
+      "ru": "+50 к сопротивляемости урону при прицеливании."
+    },
+    "texts": {
+      "ru": "Надежный",
+      "en": "Steadfast"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Lightweight",
     "abbreviation": "90",
     "additionalAbbreviations": [
       "RW"
     ],
     "id": "mod_Legendary_Weapon3_Weight",
     "translations": {
-      "en": "90% reduced weight"
+      "en": "90% reduced weight",
+      "ru": "Вес снижен на 90%"
+    },
+    "texts": {
+      "ru": "Легкая",
+      "en": "Lightweight"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Agility",
     "abbreviation": "1A",
     "additionalAbbreviations": [
       "+1A",
@@ -1270,14 +1633,18 @@
     ],
     "id": "mod_Legendary_Weapon3_StatAgility",
     "translations": {
-      "en": "+1 Agility"
+      "en": "+1 Agility",
+      "ru": "+1 к ловкости"
+    },
+    "texts": {
+      "ru": "Ловкость",
+      "en": "Agility"
     },
     "itemType": "weapon",
     "enabled": true
   },
   {
     "star": 3,
-    "text": "Rapid",
     "abbreviation": "FR",
     "additionalAbbreviations": [
       "15R",
@@ -1285,7 +1652,12 @@
     ],
     "id": "mod_Legendary_Weapon3_Guns_ReloadSpeed",
     "translations": {
-      "en": "15% faster reload"
+      "en": "15% faster reload",
+      "ru": "Ускорение перезарядки на 15%"
+    },
+    "texts": {
+      "ru": "Стремительный",
+      "en": "Rapid"
     },
     "itemType": "weapon",
     "enabled": true

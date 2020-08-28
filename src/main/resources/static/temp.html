@@ -40,10 +40,14 @@
   label {
     display: block;
   }
+  .card.card-body {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
 </style>
 <body>
 <nav class="navbar navbar-dark bg-dark">
-  v0.1a
+  v0.1b
 </nav>
 <div class="alert alert-warning" role="alert">
   Filters (works before file uploading)
@@ -87,6 +91,16 @@
 
 <div id="output-wrapper">
   <div class="alert alert-warning" role="alert">
+    <p>
+      <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#fieldsToDownload" aria-expanded="false" aria-controls="collapseExample">
+        Fields to download
+      </button>
+    </p>
+    <div class="collapse" id="fieldsToDownload">
+      <div class="card card-body">
+
+      </div>
+    </div>
     Export data:
     <div class="btn-group" role="group" aria-label="Download section">
       <button class="btn btn-sm btn-info download" data-format="csv">CSV</button>

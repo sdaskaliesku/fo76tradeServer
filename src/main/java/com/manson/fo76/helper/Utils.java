@@ -143,7 +143,10 @@ public final class Utils {
             continue;
           }
           itemDTO.setLegendaryMods(legendaryMods);
-          String abbreviation = legendaryMods.stream().map(LegendaryMod::getAbbreviation).collect(Collectors.joining("/"));
+          String abbreviation = legendaryMods.stream().map(LegendaryMod::getAbbreviation).filter(StringUtils::isNotBlank).collect(Collectors.joining("/"));
+          if (StringUtils.isBlank(abbreviation)) {
+            abbreviation = StringUtils.EMPTY;
+          }
           itemDTO.setAbbreviation(abbreviation);
           // TODO: temp solution for temp page, needs to be removed
           itemDTO.setLegendaryModsTemp(

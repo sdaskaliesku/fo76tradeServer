@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 
 public class TestsForLosers {
 
-	@Test
-	void justDoNotHaveTimeForTests() {
-		assertTrue(true);
-	}
+  @Test
+  void justDoNotHaveTimeForTests() {
+    assertTrue(true);
+  }
 }
