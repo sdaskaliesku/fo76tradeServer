@@ -36,10 +36,22 @@
   #output-wrapper {
     display: none;
   }
+  .alert.alert-success > div {
+    margin-bottom: 1rem;
+  }
 
   label {
     display: block;
   }
+
+  input[type='checkbox'], label {
+    text-transform: lowercase;
+  }
+
+  input[type='checkbox']::first-letter, label::first-letter {
+    text-transform: uppercase;
+  }
+
   .card.card-body {
     flex-direction: row;
     margin-bottom: 1rem;
@@ -47,35 +59,12 @@
 </style>
 <body>
 <nav class="navbar navbar-dark bg-dark">
-  v0.1b
+  <a class="navbar-brand">Fo76TradeHub v0.2</a>
+  <a href="https://discord.gg/7fef733" target="_blank" class="btn btn-outline-success my-2 my-sm-0" type="button">Help</a>
 </nav>
 <div class="alert alert-warning" role="alert">
-  Filters (works before file uploading)
-  <div class="btn-group" role="group" aria-label="Filters">
-    <input id="tradableOnly" type="checkbox" data-toggle="toggle" data-on="Tradable"
-           data-off="Tradable" data-size="sm" checked/>
-    <input id="legendaries" type="checkbox" data-toggle="toggle" data-on="Legendaries"
-           data-off="Legendaries" data-size="sm"/>
-    <input data-filter="2,3" class="filter" type="checkbox" data-toggle="toggle" data-on="Weapon"
-           data-off="Weapon" data-size="sm"/>
-    <input data-filter="4" class="filter" type="checkbox" data-toggle="toggle" data-on="Armor"
-           data-off="Armor" data-size="sm"/>
-    <input data-filter="512" class="filter" type="checkbox" data-toggle="toggle" data-on="Holo"
-           data-off="Holo" data-size="sm"/>
-    <input data-filter="8,9" class="filter" type="checkbox" data-toggle="toggle" data-on="Aid"
-           data-off="Aid" data-size="sm"/>
-    <input data-filter="128,8192" class="filter" type="checkbox" data-toggle="toggle"
-           data-on="Notes"
-           data-off="Notes" data-size="sm"/>
-    <input data-filter="33280" class="filter" type="checkbox" data-toggle="toggle" data-on="Misc"
-           data-off="Misc" data-size="sm"/>
-    <input data-filter="2048" class="filter" type="checkbox" data-toggle="toggle" data-on="Mods"
-           data-off="Mods" data-size="sm"/>
-    <input data-filter="33792,1024" class="filter" type="checkbox" data-toggle="toggle"
-           data-on="Junk"
-           data-off="Junk" data-size="sm"/>
-    <input data-filter="4096" class="filter" type="checkbox" data-toggle="toggle" data-on="Ammo"
-           data-off="Ammo" data-size="sm"/>
+  Filters for uploading
+  <div class="btn-group" role="group" aria-label="Filters" id="filters">
   </div>
 </div>
 
@@ -92,7 +81,8 @@
 <div id="output-wrapper">
   <div class="alert alert-warning" role="alert">
     <p>
-      <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#fieldsToDownload" aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-info" type="button" data-toggle="collapse"
+              data-target="#fieldsToDownload" aria-expanded="false" aria-controls="collapseExample">
         Fields to download
       </button>
     </p>
@@ -109,20 +99,26 @@
     </div>
   </div>
 
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Filter by name</span>
+  <div class="alert alert-success" role="alert">
+    <h3>Filters</h3>
+    <div class="btn-group" role="group" aria-label="Filters" id="table-filters">
     </div>
-    <input id="filter-value" placeholder="Filter by name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-    <div class="input-group-append">
-      <button class="btn btn-outline-secondary" type="button" id="clear-filter">Clear</button>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Filter by name</span>
+      </div>
+      <input id="filter-value" placeholder="Filter by name" type="text" class="form-control"
+             aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="clear-filter">Clear</button>
+      </div>
     </div>
-  </div>
-
-  <div class="input-group">
-    <label for="deleteSelected">
-      <button class="btn btn-sm btn-danger" id="deleteSelected">Delete selected rows</button>
-    </label>
+    <div>
+      <div class="btn-group" role="group">
+        <button class="btn btn-warning" type="button" id="clear-all-filters">Clear All Filters</button>
+        <button class="btn btn-danger" id="deleteSelected">Delete selected rows</button>
+      </div>
+    </div>
   </div>
 
 
