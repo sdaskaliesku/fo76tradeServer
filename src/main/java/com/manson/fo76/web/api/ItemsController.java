@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.annotations.ApiIgnore;
 
 @RestController
 @RequestMapping("/items")
@@ -44,29 +45,34 @@ public class ItemsController {
     return pageRequest;
   }
 
+  @ApiIgnore
   @GetMapping("/findAll")
   public Page<ItemDTO> findAll(@RequestParam(required = false) Integer page,
       @RequestParam(required = false) Integer size) {
     return itemService.findAll(createPageRequest(page, size));
   }
 
+  @ApiIgnore
   @GetMapping("/findAllByOwnerId")
   public Page<ItemDTO> findAllByOwnerId(@RequestParam String ownerId, @RequestParam(required = false) Integer page,
       @RequestParam(required = false) Integer size) {
     return itemService.findAllByOwnerId(ownerId, createPageRequest(page, size));
   }
 
+  @ApiIgnore
   @GetMapping("/findAllByOwnerName")
   public Page<ItemDTO> findAllByOwnerName(@RequestParam String ownerName, @RequestParam(required = false) Integer page,
       @RequestParam(required = false) Integer size) {
     return itemService.findAllByOwnerName(ownerName, createPageRequest(page, size));
   }
 
+  @ApiIgnore
   @GetMapping("/findByIdAndOwnerId")
   public ItemDTO findByIdAndOwnerId(@RequestParam String id, @RequestParam String ownerId) {
     return itemService.findByIdAndOwnerId(id, ownerId);
   }
 
+  @ApiIgnore
   @GetMapping("/findByIdAndOwnerName")
   public ItemDTO findByIdAndOwnerName(@RequestParam String id, @RequestParam String ownerName) {
     return itemService.findByIdAndOwnerName(id, ownerName);
@@ -83,6 +89,7 @@ public class ItemsController {
     return new ArrayList<>();
   }
 
+  @ApiIgnore
   @PostMapping(
       value = "/upload", consumes = "application/json", produces = "application/json")
   public ResponseEntity<Object> prepareModData(@RequestBody UploadItemRequest uploadItemRequest) {
@@ -98,6 +105,7 @@ public class ItemsController {
     return ResponseEntity.noContent().build();
   }
 
+  @ApiIgnore
   @PostMapping(
       value = "/delete", consumes = "application/json", produces = "application/json")
   public ResponseEntity<Object> delete(@RequestBody List<ItemDTO> items) {
@@ -113,6 +121,7 @@ public class ItemsController {
     return ResponseEntity.noContent().build();
   }
 
+  @ApiIgnore
   @DeleteMapping(value = "/deleteAll")
   public ResponseEntity<Object> deleteAll(@RequestParam String userId) {
     if (StringUtils.isEmpty(userId)) {
