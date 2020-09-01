@@ -57,6 +57,8 @@ public class ItemDTO {
   @Indexed
   private List<LegendaryMod> legendaryMods;
   private String abbreviation;
+  private String accountOwner;
+  private String characterOwner;
   // TODO: Remove this, once final UI will be ready
   private List<String> legendaryModsTemp;
 
@@ -66,6 +68,22 @@ public class ItemDTO {
 
   public void setLegendaryModsTemp(List<String> legendaryModsTemp) {
     this.legendaryModsTemp = legendaryModsTemp;
+  }
+
+  public String getAccountOwner() {
+    return accountOwner;
+  }
+
+  public void setAccountOwner(String accountOwner) {
+    this.accountOwner = accountOwner;
+  }
+
+  public String getCharacterOwner() {
+    return characterOwner;
+  }
+
+  public void setCharacterOwner(String characterOwner) {
+    this.characterOwner = characterOwner;
   }
 
   public String getAbbreviation() {

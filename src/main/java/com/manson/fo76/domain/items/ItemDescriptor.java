@@ -14,6 +14,8 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class ItemDescriptor extends AbstractObject {
 
+	private String accountOwner;
+	private String characterOwner;
 	private String text;
 	private Long serverHandleId;
 	private Integer count;
@@ -231,6 +233,22 @@ public class ItemDescriptor extends AbstractObject {
 
 	public void setRarity(Integer rarity) {
 		this.rarity = rarity;
+	}
+
+	public String getAccountOwner() {
+		return accountOwner;
+	}
+
+	public void setAccountOwner(String accountOwner) {
+		this.accountOwner = accountOwner;
+	}
+
+	public String getCharacterOwner() {
+		return characterOwner;
+	}
+
+	public void setCharacterOwner(String characterOwner) {
+		this.characterOwner = characterOwner;
 	}
 
 	@JsonIgnore

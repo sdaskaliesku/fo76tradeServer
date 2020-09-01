@@ -3,10 +3,12 @@ package com.manson.fo76.service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.Resources;
+import com.manson.fo76.CharacterInventory;
 import com.manson.fo76.domain.ItemsUploadFilters;
 import com.manson.fo76.domain.LegendaryModDescriptor;
 import com.manson.fo76.domain.ModData;
 import com.manson.fo76.domain.ModDataRequest;
+import com.manson.fo76.domain.ModUser;
 import com.manson.fo76.domain.User;
 import com.manson.fo76.domain.dto.ItemDTO;
 import com.manson.fo76.domain.items.ItemDescriptor;
@@ -15,12 +17,14 @@ import com.manson.fo76.helper.Utils;
 import com.manson.fo76.repository.ItemRepository;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
@@ -50,13 +54,13 @@ public class ItemService {
     this.legendaryMods = loadMods(objectMapper);
   }
 
-  private static void processItems(List<ItemDescriptor> items, Map<Long, ItemDescriptor> map,
-      ItemsUploadFilters itemsUploadFilters) {
+  private static void processItems(List<ItemDescriptor> items, Map<Long, ItemDescriptor> outputMap,
+      ItemsUploadFilters itemsUploadFilters, String account, String character) {
     if (CollectionUtils.isEmpty(items)) {
       return;
     }
     for (ItemDescriptor itemDescriptor : items) {
-      if (map.containsKey(itemDescriptor.getServerHandleId())) {
+      if (outputMap.containsKey(itemDescriptor.getServerHandleId())) {
         continue;
       }
       if (itemsUploadFilters.isTradableOnly()) {
@@ -88,7 +92,9 @@ public class ItemService {
         }
       }
       if (matchesFilter) {
-        map.put(itemDescriptor.getServerHandleId(), itemDescriptor);
+        itemDescriptor.setAccountOwner(account);
+        itemDescriptor.setCharacterOwner(character);
+        outputMap.put(itemDescriptor.getServerHandleId(), itemDescriptor);
       }
     }
   }
@@ -179,36 +185,44 @@ public class ItemService {
     return findAllByOwnerName(user.getName(), pageable);
   }
 
-  private Pair<User, List<ItemDescriptor>> processModDataItems(ModData modData,
+  private Pair<ModUser, List<ItemDescriptor>> processModDataItems(ModData modData,
       ItemsUploadFilters itemsUploadFilters) {
-    if (modData == null) {
+    if (modData == null || MapUtils.isEmpty(modData.getCharacterInventories())) {
       return null;
     }
     if (modData.getUser() == null) {
       // TODO: delete this, once final UI will be ready
-      User user = new User();
-      user.setName("temp");
+      ModUser user = new ModUser();
+      user.setUser("temp");
       user.setPassword("temp");
       modData.setUser(user);
     }
-    List<ItemDescriptor> inventoryList = modData.getInventoryList();
-    List<ItemDescriptor> playerInventory = modData.getPlayerInventory();
-    List<ItemDescriptor> stashInventory = modData.getStashInventory();
+    Collection<CharacterInventory> values = modData.getCharacterInventories().values();
     Map<Long, ItemDescriptor> allItems = new HashMap<>();
-    processItems(inventoryList, allItems, itemsUploadFilters);
-    processItems(playerInventory, allItems, itemsUploadFilters);
-    processItems(stashInventory, allItems, itemsUploadFilters);
+    for (CharacterInventory inventory : values) {
+      List<ItemDescriptor> playerInventory = inventory.getPlayerInventory();
+      List<ItemDescriptor> stashInventory = inventory.getStashInventory();
+      processItems(playerInventory, allItems, itemsUploadFilters, inventory.getAccountInfoData().getName(), inventory.getCharacterInfoData().getName());
+      processItems(stashInventory, allItems, itemsUploadFilters, inventory.getAccountInfoData().getName(), inventory.getCharacterInfoData().getName());
+    }
     return new ImmutablePair<>(modData.getUser(), new ArrayList<>(allItems.values()));
   }
 
   public List<ItemDTO> prepareModData(ModDataRequest modDataRequest) {
-    Pair<User, List<ItemDescriptor>> pair = processModDataItems(modDataRequest.getModData(),
+    Pair<ModUser, List<ItemDescriptor>> pair = processModDataItems(modDataRequest.getModData(),
         modDataRequest.getFilters());
     if (pair == null) {
       return new ArrayList<>();
     }
     List<ItemDescriptor> itemDescriptors = pair.getValue();
-    return Utils.convertItems(itemDescriptors, legendaryMods, pair.getKey());
+    // todo: convert ModUser to User via userService
+    ModUser modUser = pair.getKey();
+    User user = new User();
+    user.setPassword(modUser.getPassword());
+    user.setName(modUser.getUser());
+    user.setId(modUser.getId());
+
+    return Utils.convertItems(itemDescriptors, legendaryMods, user);
   }
 
 }

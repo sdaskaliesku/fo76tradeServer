@@ -8,6 +8,7 @@ import {
   initUploadFilters,
 } from './dom.functions';
 
+const MIN_SUPPORTED_MOD_VERSION = 0.4;
 let table;
 $(document).ready(function() {
 
@@ -50,11 +51,19 @@ $(document).ready(function() {
   });
   let modDataRequest = {};
   modDataRequest.modData = {};
-  $('#file').on('change', function() {
+  const $file = $('#file');
+  $file.on('change', function() {
     let fileReader = new FileReader();
     fileReader.onload = () => {
       try {
         modDataRequest.modData = JSON.parse(fileReader.result);
+        const currentVersion = Number(modDataRequest.modData.version);
+        if (Number.isNaN(currentVersion) || currentVersion < MIN_SUPPORTED_MOD_VERSION) {
+          modDataRequest.modData = {};
+          alert(
+              `You are using an outdated mod version.\r\nYour version: ${currentVersion}. Min supported version: ${MIN_SUPPORTED_MOD_VERSION}\r\nPlease, update and re-generate itemsmod.ini file!\r\nProcessing aborted.`);
+          $file.val('');
+        }
       } catch (e) {
         alert(
             'Malformed file, please send the file to author(manson_ew2) to fix the issue!');
@@ -78,7 +87,7 @@ $(document).ready(function() {
       paginationSize: 50,
       movableColumns: true,
       groupBy: 'filterFlag',
-      paginationSizeSelector: [5, 10, 20, 50, 100, 500, 1000, 5000],
+      paginationSizeSelector: [5, 10, 20, 50, 100, 500, 1000, 5000, 50000],
       columns: columns,
     });
     initDownloadFilters(table);

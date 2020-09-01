@@ -10,7 +10,24 @@ export const columns = [
       cell.getRow().toggleSelect();
     },
   },
-  {title: 'Name', field: 'text', sorter: 'string'},
+  {
+    title: 'Name', field: 'text', sorter: 'string',
+    cellClick: function(e, cell) {
+      cell.getRow().toggleSelect();
+    },
+  },
+  {
+    title: 'Account', field: 'accountOwner', sorter: 'string',
+    cellClick: function(e, cell) {
+      cell.getRow().toggleSelect();
+    },
+  },
+  {
+    title: 'Character', field: 'characterOwner', sorter: 'string',
+    cellClick: function(e, cell) {
+      cell.getRow().toggleSelect();
+    },
+  },
   {
     title: 'Stars',
     field: 'numLegendaryStars',
@@ -86,7 +103,7 @@ export const filters = [
     id: 'tradableOnly',
     name: 'Tradable',
     checked: true,
-    hide: true
+    hide: true,
   },
   {
     id: 'legendaries',
@@ -107,7 +124,7 @@ export const filters = [
     filters: '4',
     types: [
       'ARMOR',
-      'ARMOR_OUTFIT'
+      'ARMOR_OUTFIT',
     ],
   },
   {
@@ -144,5 +161,5 @@ export const filters = [
     name: 'JUNK',
     filters: '33792, 1024',
     types: [],
-  }
+  },
 ];

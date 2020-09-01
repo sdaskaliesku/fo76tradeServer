@@ -22,12 +22,13 @@ export const initUploadFilters = () => {
   });
 };
 
-const createToggle = ($wrapper, $el, name, width = 120) => {
+const createToggle = ($wrapper, $el, name, width = 150) => {
   $wrapper.append($el);
   $el.bootstrapToggle({
     on: name,
     off: name,
     width,
+    height: 30,
     size: 'small',
   });
 };
@@ -42,12 +43,12 @@ export const initTableFilters = (table) => {
     if (filter.types && filter.types.length > 0) {
       filter.types.forEach(fil => {
         let filterEl = $(createToggleButton(fil, fil, 'table-filter'));
-        createToggle(filtersWrapper, filterEl, fil.replace('_', ' '), 150);
+        createToggle(filtersWrapper, filterEl, fil.replace('_', ' '));
       });
     } else {
       let filterEl = $(
           createToggleButton(filter.name, filter.name, 'table-filter'));
-      createToggle(filtersWrapper, filterEl, filter.name, 150);
+      createToggle(filtersWrapper, filterEl, filter.name);
     }
   });
   let tableFilters = $('.table-filter');
