@@ -114,6 +114,7 @@ public final class Utils {
             if (descriptor.isTheSameMod(mod)) {
               legendaryMod.setAbbreviation(descriptor.getAbbreviation());
               legendaryMod.setStar(descriptor.getStar());
+              legendaryMod.setId(descriptor.getId());
               break;
             }
           }

@@ -8,10 +8,12 @@ public class LegendaryMod {
   private String value;
   private int star;
   private String abbreviation;
+  private String id;
 
   public LegendaryMod(String value, int star, String abbreviation) {
     this.value = value;
     this.star = star;
+    this.abbreviation = abbreviation;
   }
 
   public LegendaryMod(String value) {
@@ -20,6 +22,14 @@ public class LegendaryMod {
 
   public LegendaryMod() {
     this(null);
+  }
+
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
   }
 
   public String getValue() {
