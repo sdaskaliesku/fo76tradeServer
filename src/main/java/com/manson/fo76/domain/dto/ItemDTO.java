@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.manson.fo76.domain.items.enums.FilterFlag;
 import java.util.List;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 
@@ -14,19 +16,13 @@ public class ItemDTO {
   @Id
   private String id;
   @Indexed
-  private String ownerId;
+  private OwnerInfo ownerInfo;
   @Indexed
-  private String ownerName;
-  @Indexed
-  private String description;
-  private Double price;
-  @Indexed
-  private Boolean tradeOnly;
-  @Indexed
-  private Boolean tradePossible;
+  private TradeOptions tradeOptions;
   @Indexed
   private String text;
-  @Indexed(unique = true)
+  @Indexed
+  private String description;
   @JsonProperty(access = Access.WRITE_ONLY)
   private Long serverHandleId;
   private Integer count;
@@ -57,34 +53,6 @@ public class ItemDTO {
   @Indexed
   private List<LegendaryMod> legendaryMods;
   private String abbreviation;
-  private String accountOwner;
-  private String characterOwner;
-  // TODO: Remove this, once final UI will be ready
-  private List<String> legendaryModsTemp;
-
-  public List<String> getLegendaryModsTemp() {
-    return legendaryModsTemp;
-  }
-
-  public void setLegendaryModsTemp(List<String> legendaryModsTemp) {
-    this.legendaryModsTemp = legendaryModsTemp;
-  }
-
-  public String getAccountOwner() {
-    return accountOwner;
-  }
-
-  public void setAccountOwner(String accountOwner) {
-    this.accountOwner = accountOwner;
-  }
-
-  public String getCharacterOwner() {
-    return characterOwner;
-  }
-
-  public void setCharacterOwner(String characterOwner) {
-    this.characterOwner = characterOwner;
-  }
 
   public String getAbbreviation() {
     return abbreviation;
@@ -110,28 +78,12 @@ public class ItemDTO {
     this.stats = stats;
   }
 
-  public String getOwnerName() {
-    return ownerName;
-  }
-
-  public void setOwnerName(String ownerName) {
-    this.ownerName = ownerName;
-  }
-
   public String getId() {
     return id;
   }
 
   public void setId(String id) {
     this.id = id;
-  }
-
-  public String getOwnerId() {
-    return ownerId;
-  }
-
-  public void setOwnerId(String ownerId) {
-    this.ownerId = ownerId;
   }
 
   public String getDescription() {
@@ -142,28 +94,20 @@ public class ItemDTO {
     this.description = description;
   }
 
-  public Double getPrice() {
-    return price;
+  public OwnerInfo getOwnerInfo() {
+    return ownerInfo;
   }
 
-  public void setPrice(Double price) {
-    this.price = price;
+  public void setOwnerInfo(OwnerInfo ownerInfo) {
+    this.ownerInfo = ownerInfo;
   }
 
-  public Boolean getTradeOnly() {
-    return tradeOnly;
+  public TradeOptions getTradeOptions() {
+    return tradeOptions;
   }
 
-  public void setTradeOnly(Boolean tradeOnly) {
-    this.tradeOnly = tradeOnly;
-  }
-
-  public Boolean getTradePossible() {
-    return tradePossible;
-  }
-
-  public void setTradePossible(Boolean tradePossible) {
-    this.tradePossible = tradePossible;
+  public void setTradeOptions(TradeOptions tradeOptions) {
+    this.tradeOptions = tradeOptions;
   }
 
   public String getText() {
@@ -332,5 +276,83 @@ public class ItemDTO {
 
   public void setLegendary(Boolean legendary) {
     isLegendary = legendary;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+
+    if (!(o instanceof ItemDTO)) {
+      return false;
+    }
+
+    ItemDTO itemDTO = (ItemDTO) o;
+
+    return new EqualsBuilder()
+        .append(id, itemDTO.id)
+        .append(ownerInfo, itemDTO.ownerInfo)
+        .append(tradeOptions, itemDTO.tradeOptions)
+        .append(text, itemDTO.text)
+        .append(description, itemDTO.description)
+        .append(serverHandleId, itemDTO.serverHandleId)
+        .append(count, itemDTO.count)
+        .append(itemValue, itemDTO.itemValue)
+        .append(filterFlag, itemDTO.filterFlag)
+        .append(currentHealth, itemDTO.currentHealth)
+        .append(damage, itemDTO.damage)
+        .append(durability, itemDTO.durability)
+        .append(maximumHealth, itemDTO.maximumHealth)
+        .append(weight, itemDTO.weight)
+        .append(weaponDisplayAccuracy, itemDTO.weaponDisplayAccuracy)
+        .append(weaponDisplayRateOfFire, itemDTO.weaponDisplayRateOfFire)
+        .append(weaponDisplayRange, itemDTO.weaponDisplayRange)
+        .append(numLegendaryStars, itemDTO.numLegendaryStars)
+        .append(itemLevel, itemDTO.itemLevel)
+        .append(rarity, itemDTO.rarity)
+        .append(isTradable, itemDTO.isTradable)
+        .append(isSpoiled, itemDTO.isSpoiled)
+        .append(isSetItem, itemDTO.isSetItem)
+        .append(isQuestItem, itemDTO.isQuestItem)
+        .append(isLegendary, itemDTO.isLegendary)
+        .append(stats, itemDTO.stats)
+        .append(legendaryMods, itemDTO.legendaryMods)
+        .append(abbreviation, itemDTO.abbreviation)
+        .isEquals();
+  }
+
+  @Override
+  public int hashCode() {
+    return new HashCodeBuilder(17, 37)
+        .append(id)
+        .append(ownerInfo)
+        .append(tradeOptions)
+        .append(text)
+        .append(description)
+        .append(serverHandleId)
+        .append(count)
+        .append(itemValue)
+        .append(filterFlag)
+        .append(currentHealth)
+        .append(damage)
+        .append(durability)
+        .append(maximumHealth)
+        .append(weight)
+        .append(weaponDisplayAccuracy)
+        .append(weaponDisplayRateOfFire)
+        .append(weaponDisplayRange)
+        .append(numLegendaryStars)
+        .append(itemLevel)
+        .append(rarity)
+        .append(isTradable)
+        .append(isSpoiled)
+        .append(isSetItem)
+        .append(isQuestItem)
+        .append(isLegendary)
+        .append(stats)
+        .append(legendaryMods)
+        .append(abbreviation)
+        .toHashCode();
   }
 }

@@ -8,17 +8,17 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface ItemRepository extends MongoRepository<ItemDTO, String> {
 
-  List<ItemDTO> findAllByOwnerId(String ownerId);
+  List<ItemDTO> findAllByOwnerInfoId(String ownerId);
 
-  Page<ItemDTO> findAllByOwnerId(String ownerId, Pageable pageable);
+  Page<ItemDTO> findAllByOwnerInfoId(String ownerId, Pageable pageable);
 
-  List<ItemDTO> findAllByOwnerName(String ownerName);
+  List<ItemDTO> findAllByOwnerInfoName(String ownerName);
 
-  Page<ItemDTO> findAllByOwnerName(String ownerName, Pageable pageable);
+  Page<ItemDTO> findAllByOwnerInfoName(String ownerName, Pageable pageable);
 
-  ItemDTO findByIdAndOwnerId(String id, String ownerId);
+  ItemDTO findByIdAndOwnerInfoId(String id, String ownerId);
 
-  ItemDTO findByIdAndOwnerName(String id, String ownerName);
+  ItemDTO findByIdAndOwnerInfoName(String id, String ownerName);
 
-  void deleteAllByOwnerId(String ownerId);
+  void deleteAllByOwnerInfoId(String ownerId);
 }

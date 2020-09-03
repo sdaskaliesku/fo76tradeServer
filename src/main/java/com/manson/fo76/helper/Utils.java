@@ -4,7 +4,9 @@ import com.manson.fo76.domain.LegendaryModDescriptor;
 import com.manson.fo76.domain.User;
 import com.manson.fo76.domain.dto.ItemDTO;
 import com.manson.fo76.domain.dto.LegendaryMod;
+import com.manson.fo76.domain.dto.OwnerInfo;
 import com.manson.fo76.domain.dto.StatsDTO;
+import com.manson.fo76.domain.dto.TradeOptions;
 import com.manson.fo76.domain.items.ItemDescriptor;
 import com.manson.fo76.domain.items.enums.DamageType;
 import com.manson.fo76.domain.items.enums.FilterFlag;
@@ -12,19 +14,18 @@ import com.manson.fo76.domain.items.enums.ItemCardText;
 import com.manson.fo76.domain.items.item_card.ItemCardEntry;
 import com.manson.fo76.service.JsonParser;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
-import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,9 +43,43 @@ public final class Utils {
   private Utils() {
   }
 
-  public static List<ItemDTO> convertItems(List<ItemDescriptor> items, List<LegendaryModDescriptor> legendaryMods, User user) {
-    return items.stream().map(item -> convertItem(item, legendaryMods, user))
+  private static boolean areSameItems(ItemDTO first, ItemDTO second) {
+    boolean sameName = StringUtils.equalsIgnoreCase(first.getText(), second.getText());
+    boolean sameLevel = NumberUtils.compare(first.getItemLevel(), second.getItemLevel()) == 0;
+    boolean sameLegMods = StringUtils.equalsIgnoreCase(first.getAbbreviation(), second.getAbbreviation());
+
+    return sameName && sameLevel && sameLegMods;
+  }
+
+  private static List<ItemDTO> dedupeItems(List<ItemDTO> itemDTOS) {
+    List<ItemDTO> deduped = new ArrayList<>();
+    for (ItemDTO itemDTO : itemDTOS) {
+      if (CollectionUtils.isEmpty(deduped)) {
+        deduped.add(itemDTO);
+        continue;
+      }
+      boolean isDuplicate = false;
+      for (ItemDTO item : deduped) {
+        if (areSameItems(itemDTO, item)) {
+          item.setCount(item.getCount() + 1);
+          isDuplicate = true;
+          break;
+        }
+      }
+
+      if (!isDuplicate) {
+        deduped.add(itemDTO);
+      }
+    }
+
+    return deduped;
+  }
+
+  public static List<ItemDTO> convertItems(List<ItemDescriptor> items, List<LegendaryModDescriptor> legendaryMods,
+      User user) {
+    List<ItemDTO> list = items.stream().map(item -> convertItem(item, legendaryMods, user))
         .collect(Collectors.toList());
+    return dedupeItems(list);
   }
 
   private static Number silentParse(String value) {
@@ -91,23 +126,46 @@ public final class Utils {
 
   public static ItemDTO convertItem(ItemDescriptor item, List<LegendaryModDescriptor> legendaryMods, User user) {
     Map<String, Object> objectMap = JsonParser.objectToMap(item);
+    if (MapUtils.isEmpty(objectMap)) {
+      return null;
+    }
     objectMap.put("filterFlag", findFilterFlag(item));
     ItemDTO itemDTO = JsonParser.mapToItemDTO(objectMap);
     if (Objects.isNull(itemDTO)) {
       return null;
     }
-    itemDTO.setOwnerId(user.getId());
-    itemDTO.setOwnerName(user.getName());
+    OwnerInfo ownerInfo = itemDTO.getOwnerInfo();
+    if (Objects.isNull(ownerInfo)) {
+      ownerInfo = new OwnerInfo();
+    }
+    ownerInfo.setId(user.getId());
+    ownerInfo.setName(user.getName());
+
+    TradeOptions tradeOptions = new TradeOptions();
+    Integer itemValue = item.getItemValue();
+    tradeOptions.setGamePrice(itemValue.doubleValue());
+    if (Objects.nonNull(item.getVendingData())) {
+      Integer price = item.getVendingData().getPrice();
+      if (price == 0) {
+        price = itemValue;
+      }
+      tradeOptions.setVendorPrice(price.doubleValue());
+    } else {
+      tradeOptions.setVendorPrice(tradeOptions.getGamePrice());
+    }
+    itemDTO.setTradeOptions(tradeOptions);
+    itemDTO.setOwnerInfo(ownerInfo);
     itemDTO.setStats(processItemCardEntries(item, itemDTO, legendaryMods));
     return itemDTO;
   }
 
-  private static List<LegendaryMod> processLegendaryMods(ItemCardEntry itemCardEntry, List<LegendaryModDescriptor> legModsDescr) {
+  private static List<LegendaryMod> processLegendaryMods(ItemCardEntry itemCardEntry,
+      List<LegendaryModDescriptor> legModsDescr) {
     List<LegendaryMod> mods = new ArrayList<>();
     if (itemCardEntry.getItemCardText() == ItemCardText.DESC) {
       String[] strings = itemCardEntry.getValue().split("\n");
       if (ArrayUtils.isNotEmpty(strings)) {
-        for (String mod: strings) {
+        for (String mod : strings) {
           mod = mod.trim();
           LegendaryMod legendaryMod = new LegendaryMod(mod);
           for (LegendaryModDescriptor descriptor : legModsDescr) {
@@ -128,7 +186,8 @@ public final class Utils {
     return mods;
   }
 
-  private static List<StatsDTO> processItemCardEntries(ItemDescriptor item, ItemDTO itemDTO, List<LegendaryModDescriptor> legModsDescr) {
+  private static List<StatsDTO> processItemCardEntries(ItemDescriptor item, ItemDTO itemDTO,
+      List<LegendaryModDescriptor> legModsDescr) {
     List<StatsDTO> stats = new ArrayList<>();
     if (CollectionUtils.isEmpty(item.getItemCardEntries())) {
       return stats;
@@ -138,20 +197,18 @@ public final class Utils {
       if (statsDTO != null) {
         stats.add(statsDTO);
       } else if (itemCardEntry.getItemCardText() == ItemCardText.DESC) {
-        if (itemDTO.getFilterFlag() != null && itemDTO.getFilterFlag().isHasStarMods()) {
+        if ((itemDTO.getFilterFlag() != null && itemDTO.getFilterFlag().isHasStarMods()) || itemDTO.getLegendary()) {
           List<LegendaryMod> legendaryMods = processLegendaryMods(itemCardEntry, legModsDescr);
           if (CollectionUtils.isEmpty(legendaryMods)) {
             continue;
           }
           itemDTO.setLegendaryMods(legendaryMods);
-          String abbreviation = legendaryMods.stream().map(LegendaryMod::getAbbreviation).filter(StringUtils::isNotBlank).collect(Collectors.joining("/"));
+          String abbreviation = legendaryMods.stream().map(LegendaryMod::getAbbreviation)
+              .filter(StringUtils::isNotBlank).collect(Collectors.joining("/"));
           if (StringUtils.isBlank(abbreviation)) {
             abbreviation = StringUtils.EMPTY;
           }
           itemDTO.setAbbreviation(abbreviation);
-          // TODO: temp solution for temp page, needs to be removed
-          itemDTO.setLegendaryModsTemp(
-              legendaryMods.stream().filter(Objects::nonNull).map(LegendaryMod::getValue).collect(Collectors.toList()));
         } else {
           itemDTO.setDescription(itemCardEntry.getValue());
         }
@@ -165,6 +222,9 @@ public final class Utils {
       return null;
     }
     Map<String, Object> objectMap = JsonParser.objectToMap(itemCardEntry);
+    if (MapUtils.isEmpty(objectMap)) {
+      return null;
+    }
     objectMap.put("text", itemCardEntry.getItemCardText());
     objectMap.put("damageType", itemCardEntry.getDamageTypeEnum());
     return JsonParser.mapToStatsDTO(objectMap);

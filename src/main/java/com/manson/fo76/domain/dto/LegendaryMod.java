@@ -1,6 +1,8 @@
 package com.manson.fo76.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LegendaryMod {
@@ -54,5 +56,35 @@ public class LegendaryMod {
 
   public void setAbbreviation(String abbreviation) {
     this.abbreviation = abbreviation;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+
+    if (!(o instanceof LegendaryMod)) {
+      return false;
+    }
+
+    LegendaryMod that = (LegendaryMod) o;
+
+    return new EqualsBuilder()
+        .append(star, that.star)
+        .append(value, that.value)
+        .append(abbreviation, that.abbreviation)
+        .append(id, that.id)
+        .isEquals();
+  }
+
+  @Override
+  public int hashCode() {
+    return new HashCodeBuilder(17, 37)
+        .append(value)
+        .append(star)
+        .append(abbreviation)
+        .append(id)
+        .toHashCode();
   }
 }

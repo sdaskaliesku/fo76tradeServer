@@ -3,6 +3,7 @@ package com.manson.fo76.domain.items;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.manson.fo76.domain.AbstractObject;
+import com.manson.fo76.domain.dto.OwnerInfo;
 import com.manson.fo76.domain.items.enums.FilterFlag;
 import com.manson.fo76.domain.items.item_card.ItemCardEntry;
 import com.manson.fo76.domain.items.mod_card.ModCardEntry;
@@ -14,8 +15,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class ItemDescriptor extends AbstractObject {
 
-	private String accountOwner;
-	private String characterOwner;
+	private OwnerInfo ownerInfo;
 	private String text;
 	private Long serverHandleId;
 	private Integer count;
@@ -235,20 +235,12 @@ public class ItemDescriptor extends AbstractObject {
 		this.rarity = rarity;
 	}
 
-	public String getAccountOwner() {
-		return accountOwner;
+	public OwnerInfo getOwnerInfo() {
+		return ownerInfo;
 	}
 
-	public void setAccountOwner(String accountOwner) {
-		this.accountOwner = accountOwner;
-	}
-
-	public String getCharacterOwner() {
-		return characterOwner;
-	}
-
-	public void setCharacterOwner(String characterOwner) {
-		this.characterOwner = characterOwner;
+	public void setOwnerInfo(OwnerInfo ownerInfo) {
+		this.ownerInfo = ownerInfo;
 	}
 
 	@JsonIgnore

@@ -17,13 +17,13 @@ export const columns = [
     },
   },
   {
-    title: 'Account', field: 'accountOwner', sorter: 'string',
+    title: 'Account', field: 'ownerInfo.accountOwner', sorter: 'string',
     cellClick: function(e, cell) {
       cell.getRow().toggleSelect();
     },
   },
   {
-    title: 'Character', field: 'characterOwner', sorter: 'string',
+    title: 'Character', field: 'ownerInfo.characterOwner', sorter: 'string',
     cellClick: function(e, cell) {
       cell.getRow().toggleSelect();
     },
@@ -62,19 +62,25 @@ export const columns = [
     },
   },
   {
-    title: '1 star', field: 'legendaryModsTemp.0', sorter: 'string',
+    title: '1 star', field: 'legendaryMods.0.value', sorter: 'string',
     cellClick: function(e, cell) {
       cell.getRow().toggleSelect();
     },
   },
   {
-    title: '2 star', field: 'legendaryModsTemp.1', sorter: 'string',
+    title: '2 star', field: 'legendaryMods.1.value', sorter: 'string',
     cellClick: function(e, cell) {
       cell.getRow().toggleSelect();
     },
   },
   {
-    title: '3 star', field: 'legendaryModsTemp.2', sorter: 'string',
+    title: '3 star', field: 'legendaryMods.2.value', sorter: 'string',
+    cellClick: function(e, cell) {
+      cell.getRow().toggleSelect();
+    },
+  },
+  {
+    title: 'Vendor Price', field: 'tradeOptions.vendorPrice', sorter: 'number',
     cellClick: function(e, cell) {
       cell.getRow().toggleSelect();
     },
