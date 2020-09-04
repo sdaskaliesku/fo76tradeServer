@@ -46,34 +46,34 @@ public class ItemsController {
   }
 
   @ApiIgnore
-  @GetMapping("/findAll")
+  @GetMapping(value = "/findAll", produces = "application/json")
   public Page<ItemDTO> findAll(@RequestParam(required = false) Integer page,
       @RequestParam(required = false) Integer size) {
     return itemService.findAll(createPageRequest(page, size));
   }
 
   @ApiIgnore
-  @GetMapping("/findAllByOwnerId")
+  @GetMapping(value = "/findAllByOwnerId", produces = "application/json")
   public Page<ItemDTO> findAllByOwnerId(@RequestParam String ownerId, @RequestParam(required = false) Integer page,
       @RequestParam(required = false) Integer size) {
     return itemService.findAllByOwnerId(ownerId, createPageRequest(page, size));
   }
 
   @ApiIgnore
-  @GetMapping("/findAllByOwnerName")
+  @GetMapping(value = "/findAllByOwnerName", produces = "application/json")
   public Page<ItemDTO> findAllByOwnerName(@RequestParam String ownerName, @RequestParam(required = false) Integer page,
       @RequestParam(required = false) Integer size) {
     return itemService.findAllByOwnerName(ownerName, createPageRequest(page, size));
   }
 
   @ApiIgnore
-  @GetMapping("/findByIdAndOwnerId")
+  @GetMapping(value = "/findByIdAndOwnerId", produces = "application/json")
   public ItemDTO findByIdAndOwnerId(@RequestParam String id, @RequestParam String ownerId) {
     return itemService.findByIdAndOwnerId(id, ownerId);
   }
 
   @ApiIgnore
-  @GetMapping("/findByIdAndOwnerName")
+  @GetMapping(value = "/findByIdAndOwnerName", produces = "application/json")
   public ItemDTO findByIdAndOwnerName(@RequestParam String id, @RequestParam String ownerName) {
     return itemService.findByIdAndOwnerName(id, ownerName);
   }
@@ -122,7 +122,7 @@ public class ItemsController {
   }
 
   @ApiIgnore
-  @DeleteMapping(value = "/deleteAll")
+  @DeleteMapping(value = "/deleteAll", produces = "application/json")
   public ResponseEntity<Object> deleteAll(@RequestParam String userId) {
     if (StringUtils.isEmpty(userId)) {
       return ResponseEntity.noContent().build();

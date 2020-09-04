@@ -61,12 +61,12 @@ public class UsersController {
     return userService.findByIdOrName(username);
   }
 
-  @GetMapping("/findAll")
+  @GetMapping(value = "/findAll", produces = "application/json")
   public List<User> findAll() {
     return userService.findAll();
   }
 
-  @GetMapping("/findByIdOrName")
+  @GetMapping(value = "/findByIdOrName", produces = "application/json")
   public User findByIdOrName(String idOrName) {
     return userService.findByIdOrName(idOrName);
   }
