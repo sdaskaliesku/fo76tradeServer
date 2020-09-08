@@ -1,19 +1,19 @@
-const LOCAL_STORAGE_TOKEN_KEY = 'fo76marketToken';
+const LOCAL_STORAGE_TOKEN_KEY: string = 'fo76marketToken';
 
 class LocalStorageService {
-  get(key) {
-    return localStorage.getItem(key);
+  get(key: string): string {
+    return <string>localStorage.getItem(key);
   }
 
-  set(key, value) {
+  set(key: string, value: string): void {
     localStorage.setItem(key, value);
   }
 
-  delete(key) {
+  delete(key: string): void {
     localStorage.removeItem(key);
   }
 
-  getToken() {
+  getToken(): string {
     return this.get(LOCAL_STORAGE_TOKEN_KEY);
   }
 }

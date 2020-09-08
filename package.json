@@ -13,10 +13,13 @@
   },
   "homepage": "https://github.com/sdaskaliesku/fo76tradeServer/",
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "bootstrap-vue": "^2.16.0",
+    "tabulator-tables": "^4.8.0"
   },
   "scripts": {
+    "build": "webpack",
     "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js"
   },
   "devDependencies": {
@@ -24,6 +27,21 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "css-loader": "^4.2.2",
+    "expose-loader": "^1.0.0",
+    "file-loader": "^6.1.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.3",
+    "vue-router": "^3.4.3",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }

@@ -1,6 +1,7 @@
 import {localStorageService} from './localStorage.service';
+import {ModDataRequest} from "./domain";
 
-const performRequest = ({url, method, data}) => {
+const performRequest = ({url, method, data}: { url: string, method: string, data: any }) => {
   const params = {
     method,
     headers: {
@@ -11,21 +12,22 @@ const performRequest = ({url, method, data}) => {
   };
   const token = localStorageService.getToken();
   if (token !== null && token !== undefined && token.length > 0) {
+    // @ts-ignore
     params.headers['Authorization'] = `Bearer ${token}`;
   }
-  return fetch(url, params).
-  then((resp) => resp.json(), (e) => {
+  return fetch(url, params).then((resp) => resp.json(), (e) => {
     console.log(e);
   });
 };
 
 class ItemService {
+  private readonly baseEndPoint: string;
 
   constructor() {
     this.baseEndPoint = 'items/';
   }
 
-  prepareModData(modDataRequest) {
+  prepareModData(modDataRequest: ModDataRequest) {
     const finalUrl = `${this.baseEndPoint}prepareModData`;
     return performRequest({
       url: finalUrl,
