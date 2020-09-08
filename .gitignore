@@ -3,3 +3,4 @@ target/
 *.iml
 node_modules/
 built/
+test_resources/
