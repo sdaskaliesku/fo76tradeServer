@@ -16,6 +16,10 @@ export const columns = [
     headerSort: false,
     download: false,
     visible: true,
+    cellClick: function (e: any, cell: any) {
+      e.preventDefault();
+      e.stopPropagation();
+    },
   },
   createColumnDef({title: 'Name', field: 'text'}),
   createColumnDef({title: 'Account', field: 'ownerInfo.accountOwner'}),
@@ -50,6 +54,8 @@ export const columns = [
     download: false,
     visible: true,
     cellClick: function (e: any, cell: any) {
+      e.preventDefault();
+      e.stopPropagation();
       cell.getRow().delete().then(() => {
       });
     },

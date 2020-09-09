@@ -2,12 +2,13 @@ import './css/main.scss';
 import Vue from 'vue';
 import Main from './vue/Main.vue';
 import VueRouter from 'vue-router'
-import {BootstrapVue, IconsPlugin} from 'bootstrap-vue'
-import '@fortawesome/fontawesome-free/js/all.js';
+import { BootstrapVue, BIcon, BIconSearch, BIconX } from 'bootstrap-vue'
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
-Vue.use(IconsPlugin);
+Vue.component("BIcon", BIcon);
+Vue.component("BIconSearch", BIconSearch);
+Vue.component("BIconX", BIconX);
 
 
 const router = new VueRouter({

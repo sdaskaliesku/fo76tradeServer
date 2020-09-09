@@ -16,7 +16,7 @@ const performRequest = ({url, method, data}: { url: string, method: string, data
     params.headers['Authorization'] = `Bearer ${token}`;
   }
   return fetch(url, params).then((resp) => resp.json(), (e) => {
-    console.log(e);
+    console.error(e);
   });
 };
 

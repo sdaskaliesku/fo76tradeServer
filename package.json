@@ -16,6 +16,7 @@
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
     "bootstrap-vue": "^2.16.0",
+    "randomstring": "^1.1.5",
     "tabulator-tables": "^4.8.0"
   },
   "scripts": {

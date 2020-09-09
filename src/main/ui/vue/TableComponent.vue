@@ -41,6 +41,27 @@
       </b-button-group>
     </div>
     <div ref="table" class="table-bordered table-dark table-striped table-sm"></div>
+    <b-modal ok-only centered v-if="selectedItem" id="itemDetailsModal" :title="selectedItem.text">
+      <template v-for="field in modalFields">
+        <span class="modal-row" v-if="!isEmpty(getObjectValue(selectedItem, field.field))"><b>{{field.name}}: </b>{{ getObjectValue(selectedItem, field.field) }}</span>
+      </template>
+      <template v-if="!isEmpty(selectedItem.stats)">
+        <b>Additional parameters:</b>
+        <b-list-group v-for="stat in selectedItem.stats" v-bind:key="randomstring()">
+          <b-list-group-item class="modal-row" v-if="!isEmpty(stat)">
+            Text: {{ stat.text }},
+            DamageType: {{stat.damageType}},
+            Value: {{stat.value}}
+          </b-list-group-item>
+        </b-list-group>
+      </template>
+      <template v-if="selectedItem.legendaryMods && selectedItem.legendaryMods[0].value" >
+        <b>Legendary mods:</b>
+        <b-list-group v-for="mod in selectedItem.legendaryMods" v-bind:key="randomstring()">
+          <b-list-group-item class="modal-row" v-if="!isEmpty(mod)">{{mod.value}}</b-list-group-item>
+        </b-list-group>
+      </template>
+    </b-modal>
   </div>
 </template>
 
@@ -48,6 +69,62 @@
 import {columns} from '../table.columns';
 import Tabulator from 'tabulator-tables';
 import {filters} from '../domain';
+const randomstringFunc = require('randomstring');
+
+const modalFields = [
+  {
+    name: 'Account',
+    field: 'ownerInfo.accountOwner',
+  },
+  {
+    name: 'Character',
+    field: 'ownerInfo.characterOwner',
+  },
+  {
+    name: 'Description',
+    field: 'description',
+  },
+  {
+    name: 'Type',
+    field: 'filterFlag',
+  },
+  {
+    name: 'Legendary',
+    field: 'isLegendary',
+  },
+  {
+    name: 'Tradable',
+    field: 'isTradable',
+  },
+  {
+    name: 'Level',
+    field: 'itemLevel',
+  },
+  {
+    name: 'Count',
+    field: 'count',
+  },
+  {
+    name: 'Game Price',
+    field: 'itemValue',
+  },
+  {
+    name: 'Legendary',
+    field: 'isLegendary',
+  },
+  {
+    name: 'Legendary stars',
+    field: 'numLegendaryStars',
+  },
+  {
+    name: 'Weight',
+    field: 'weight',
+  },
+  {
+    name: 'Abbreviation',
+    field: 'abbreviation',
+  }
+];
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -154,11 +231,32 @@ export default {
       }
       return tableFilters;
     },
+    rowClick: function(e, row) {
+      this.selectedItem = row.getData();
+      this.$bvModal.show('itemDetailsModal');
+    },
+    isEmpty: function(input) {
+      const isUndef = input === undefined;
+      const isNull = input === null;
+      let isEmptyString = false;
+      const type = typeof input;
+      if (type === String || type === Array) {
+        isEmptyString = input.length < 0;
+      }
+      return isUndef ||isNull || isEmptyString;
+    },
+    randomstring: function(params) {
+      return randomstringFunc.generate(params);
+    },
+    getObjectValue: function(object, field) {
+      return field.split('.').reduce((p, c) => p && p[c] || null, object);
+    }
   },
   mounted: function() {
     this.tabulator = new Tabulator(this.$refs.table, {
       data: this.tableData,
       columns: this.getColumnsToDisplay(),
+      rowClick: this.rowClick,
       ...tableConfig,
     });
   },
@@ -166,7 +264,7 @@ export default {
     tableData: {
       handler: function(val) {
         this.tabulator.setData(val);
-      }
+      },
     },
     useGrouping: {
       handler: function() {
@@ -205,12 +303,18 @@ export default {
       filters: tableFilters(),
       searchText: '',
       exportOptions: ['csv', 'html', 'json'],
+      selectedItem: null,
+      modalFields: modalFields
     };
   },
 };
 </script>
 
 <style scoped>
+.modal-row {
+  display: block;
+}
+
 .toolbar {
   display: flex;
   justify-content: flex-end;
