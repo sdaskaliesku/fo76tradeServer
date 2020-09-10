@@ -55,10 +55,10 @@
           </b-list-group-item>
         </b-list-group>
       </template>
-      <template v-if="selectedItem.legendaryMods && selectedItem.legendaryMods[0].value" >
+      <template v-if="!isEmpty(selectedItem.legendaryMods) && !isEmpty(selectedItem.legendaryMods[0]) && !isEmpty(selectedItem.legendaryMods[0].value)" >
         <b>Legendary mods:</b>
         <b-list-group v-for="mod in selectedItem.legendaryMods" v-bind:key="randomstring()">
-          <b-list-group-item class="modal-row" v-if="!isEmpty(mod)">{{mod.value}}</b-list-group-item>
+          <b-list-group-item class="modal-row" v-if="!isEmpty(mod) && !isEmpty(mod.value)">{{mod.value}}</b-list-group-item>
         </b-list-group>
       </template>
     </b-modal>
@@ -107,10 +107,6 @@ const modalFields = [
   {
     name: 'Game Price',
     field: 'itemValue',
-  },
-  {
-    name: 'Legendary',
-    field: 'isLegendary',
   },
   {
     name: 'Legendary stars',
@@ -238,12 +234,12 @@ export default {
     isEmpty: function(input) {
       const isUndef = input === undefined;
       const isNull = input === null;
-      let isEmptyString = false;
+      let isEmpty = false;
       const type = typeof input;
       if (type === String || type === Array) {
-        isEmptyString = input.length < 0;
+        isEmpty = input.length <= 0;
       }
-      return isUndef ||isNull || isEmptyString;
+      return isUndef ||isNull || isEmpty;
     },
     randomstring: function(params) {
       return randomstringFunc.generate(params);
@@ -258,6 +254,9 @@ export default {
       columns: this.getColumnsToDisplay(),
       rowClick: this.rowClick,
       ...tableConfig,
+    });
+    this.$root.$on('bv::modal::hidden', function() {
+      this.selectedItem = null;
     });
   },
   watch: {

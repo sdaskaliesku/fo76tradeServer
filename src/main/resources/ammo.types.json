@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperQuantum",
+    "texts": {
+      "en": "Nuka-Quantum Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0002D8"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkWeatherRain",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0006BB"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyRed",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0006CE"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkMinutemenFlare",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0006D9"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyYellow",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008CF"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkCrackle",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008D2"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyBlue",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008D3"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyPink",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008D6"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPalmSilver",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "000927"
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballBlue",
+    "texts": {
+      "en": "Paintball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "000962"
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballGlow",
+    "texts": {
+      "en": "Paintball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "00097D"
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballYellow",
+    "texts": {
+      "en": "Paintball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "00099C"
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballGreen",
+    "texts": {
+      "en": "Paintball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0009CE"
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballRed",
+    "texts": {
+      "en": "Paintball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0009D5"
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballWhite",
+    "texts": {
+      "en": "Paintball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0009D7"
+  },
+  {
+    "id": "crAmmoDLC01_RobobrainSyringer",
+    "texts": {
+      "en": "Injectable"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "000D98"
+  },
+  {
+    "id": "AmmoDLC04_NukaNuke",
+    "texts": {
+      "en": "Nuka-Nuke"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001087"
+  },
+  {
+    "id": "crAmmoDLC01_BotFlamerFuel",
+    "texts": {
+      "en": "Fuel"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DBC"
+  },
+  {
+    "id": "crAmmoDLC01_BotMissile",
+    "texts": {
+      "en": "Missile"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DC2"
+  },
+  {
+    "id": "crAmmoDLC01_BotRRSpike",
+    "texts": {
+      "en": "Spike"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DCB"
+  },
+  {
+    "id": "crAmmoDLC01_BotGammaCell",
+    "texts": {
+      "en": "Gamma Round"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DCE"
+  },
+  {
+    "id": "crAmmoDLC01_Bot556",
+    "texts": {
+      "en": "5.56"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DD7"
+  },
+  {
+    "id": "crAmmoDLC01_BotFusionCell",
+    "texts": {
+      "en": "Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DE0"
+  },
+  {
+    "id": "crAmmoDLC01_BotFatManMiniNuke",
+    "texts": {
+      "en": "Mini Nuke"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DE8"
+  },
+  {
+    "id": "crAmmoDLC01_BotCryoCell",
+    "texts": {
+      "en": "Cryo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DEA"
+  },
+  {
+    "id": "POST_AmmoDLC03_FatManBowlingBall",
+    "texts": {
+      "en": "Bowling Ball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "002097"
+  },
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperNukaCola",
+    "texts": {
+      "en": "Nuka-Cola Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "002177"
+  },
+  {
+    "id": "POST_AmmoDLC04_AcidSoaker",
+    "texts": {
+      "en": "Acid"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "00231F"
+  },
+  {
+    "id": "AmmoDLC04_BotNukatronCherry",
+    "texts": {
+      "en": "Nuka-Cherry Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0027C3"
+  },
+  {
+    "id": "AmmoDLC04_BotNukatronQuantum",
+    "texts": {
+      "en": "Quantum Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0027D0"
+  },
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperWater",
+    "texts": {
+      "en": "Water"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0042CD"
+  },
+  {
+    "id": "crAmmoAssaultron",
+    "texts": {
+      "en": "Fusion Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "012734"
+  },
+  {
+    "id": "AmmoMissile",
+    "texts": {
+      "en": "Missile"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "012BB8"
+  },
+  {
+    "id": "AmmoCannonBall",
+    "texts": {
+      "en": "Cannonball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "012D2C"
+  },
+  {
+    "id": "Ammo45Caliber",
+    "texts": {
+      "en": ".45"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "013DAF"
+  },
+  {
+    "id": "crAmmoMirelurkHunter",
+    "texts": {
+      "en": "Spray"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01406D"
+  },
+  {
+    "id": "crAmmoMirelurkQueen",
+    "texts": {
+      "en": "Spray"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "015E37"
+  },
+  {
+    "id": "crAmmoMirelurkQueenSpawn",
+    "texts": {
+      "en": "Eggs"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "015F1C"
+  },
+  {
+    "id": "AmmoFusionCore",
+    "texts": {
+      "en": "Core"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0161B9"
+  },
+  {
+    "id": "AmmoFlamerFuel",
+    "texts": {
+      "en": "Fuel"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "017702"
+  },
+  {
+    "id": "AmmoFusionCell",
+    "texts": {
+      "en": "Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "017C3C"
+  },
+  {
+    "id": "Ammo5mm",
+    "texts": {
+      "en": "5mm"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "017DEA"
+  },
+  {
+    "id": "POST_AmmoJunkJet",
+    "texts": {
+      "en": "Junk"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "018090"
+  },
+  {
+    "id": "AmmoFlareGun",
+    "texts": {
+      "en": "Flare"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0184B3"
+  },
+  {
+    "id": "AmmoGammaCell",
+    "texts": {
+      "en": "Gamma Round"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "018FEC"
+  },
+  {
+    "id": "Ammo2mmEC",
+    "texts": {
+      "en": "2mm EC"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "019B33"
+  },
+  {
+    "id": "AmmoCryoCell",
+    "texts": {
+      "en": "Cryo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01A889"
+  },
+  {
+    "id": "Ammo38Caliber",
+    "texts": {
+      "en": ".38"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01A8AE"
+  },
+  {
+    "id": "crAmmoBloodBug",
+    "texts": {
+      "en": "Blood Spray"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01AC47"
+  },
+  {
+    "id": "Ammo44",
+    "texts": {
+      "en": ".44"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01B725"
+  },
+  {
+    "id": "Ammo10mm",
+    "texts": {
+      "en": "10mm"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01B8D7"
+  },
+  {
+    "id": "crAmmoFusionCellEyebot",
+    "texts": {
+      "en": "Fusion Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01E8EF"
+  },
+  {
+    "id": "Ammo308Caliber",
+    "texts": {
+      "en": ".308"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0200C9"
+  },
+  {
+    "id": "AmmoRRSpike",
+    "texts": {
+      "en": "Spike"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0200F7"
+  },
+  {
+    "id": "AmmoShotgunShell",
+    "texts": {
+      "en": "Shell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02043B"
+  },
+  {
+    "id": "crAmmoBloatfly",
+    "texts": {
+      "en": "Larva"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "022296"
+  },
+  {
+    "id": "AmmoFatManMiniNuke",
+    "texts": {
+      "en": "Mini Nuke"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "023387"
+  },
+  {
+    "id": "Ammo50Caliber",
+    "texts": {
+      "en": ".50"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0235E6"
+  },
+  {
+    "id": "zzz_DN029_AmmoCannonLauncher",
+    "texts": {
+      "en": "Gren."
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0240A9"
+  },
+  {
+    "id": "crAmmoFusionCellLtBlue",
+    "texts": {
+      "en": "Fusion Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "024952"
+  },
+  {
+    "id": "crAmmoMirelurkKing",
+    "texts": {
+      "en": "Sonic"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "024EE6"
+  },
+  {
+    "id": "Trap_AmmoFragGrenade",
+    "texts": {
+      "en": "Grenade"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02513E"
+  },
+  {
+    "id": "AmmoFusionCoreMeltdown",
+    "texts": {
+      "en": "Charge"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02609F"
+  },
+  {
+    "id": "AmmoSyringer",
+    "texts": {
+      "en": "Syringe"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "027392"
+  },
+  {
+    "id": "Ammo556",
+    "texts": {
+      "en": "5.56"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "027F78"
+  },
+  {
+    "id": "AmmoWorkshopArtillery",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02B1D9"
+  },
+  {
+    "id": "AmmoWorkshopArtilleryFar",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02B322"
+  },
+  {
+    "id": "AmmoWorkshopArtilleryClose",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02B38F"
+  },
+  {
+    "id": "AmmoFusionCoreKnightMeltdown",
+    "texts": {
+      "en": "Charge"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02BEAC"
+  },
+  {
+    "id": "AmmoSentryShoulder",
+    "texts": {
+      "en": "Missile"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02E951"
+  },
+  {
+    "id": "Ammo5mm_NonPlayable",
+    "texts": {
+      "en": "5mm"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02EB01"
+  },
+  {
+    "id": "AmmoFusionCoreNoSteal",
+    "texts": {
+      "en": "Core"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "030B64"
+  },
+  {
+    "id": "AmmoAlienBlaster",
+    "texts": {
+      "en": "AB Round"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0320BF"
+  },
+  {
+    "id": "AmmoPlasmaCartridge",
+    "texts": {
+      "en": "Plasma"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "032F53"
+  },
+  {
+    "id": "AmmoWorkshopTrapFlamethrowerFuel",
+    "texts": {
+      "en": "Fuel"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03360E"
+  },
+  {
+    "id": "crAmmoSpotlight",
+    "texts": {
+      "en": "Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03463A"
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballOrange",
+    "texts": {
+      "en": "Paintball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59A"
+  },
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperCherry",
+    "texts": {
+      "en": "Nuka-Cherry Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59B"
+  },
+  {
+    "id": "AmmoFusionCellUltracite",
+    "texts": {
+      "en": "Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59D"
+  },
+  {
+    "id": "crAmmoGraftonOilBomb",
+    "texts": {
+      "en": "Oil Bomb"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59F"
+  },
+  {
+    "id": "crAmmoGraftonOilBombSalvo",
+    "texts": {
+      "en": "Oil Bomb"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5A1"
+  },
+  {
+    "id": "crAmmoSnallygasterSpitAttack",
+    "texts": {
+      "en": "Snallygaster Spit Attack Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5A5"
+  },
+  {
+    "id": "AmmoPlasmaCore",
+    "texts": {
+      "en": "Core"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5A7"
+  },
+  {
+    "id": "AmmoCrossbowBolt",
+    "texts": {
+      "en": "Bolt"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5AA"
+  },
+  {
+    "id": "AmmoHarpoon",
+    "texts": {
+      "en": "Harpoon"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5AC"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyGreen",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5AD"
+  },
+  {
+    "id": "Test_AmmoMissile",
+    "texts": {
+      "en": "Missile"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B1"
+  },
+  {
+    "id": "crAmmoScorchbeastQueenSonicAttack",
+    "texts": {
+      "en": "Scorchbeast Sonic Attack Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B3"
+  },
+  {
+    "id": "crAmmoRadToadSpit",
+    "texts": {
+      "en": "Radtoad Spit"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B6"
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPalmGold",
+    "texts": {
+      "en": "Mortar"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B7"
+  },
+  {
+    "id": "crAmmoScorchbeastStrafeAttack",
+    "texts": {
+      "en": "Scorchbeast Strafe Attack Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B9"
+  },
+  {
+    "id": "crAmmoTickSpit",
+    "texts": {
+      "en": "Blood Spray"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5BB"
+  },
+  {
+    "id": "AmmoGrenadeLauncher",
+    "texts": {
+      "en": "40mm"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5BD"
+  },
+  {
+    "id": "Ammo50CaliberBall",
+    "texts": {
+      "en": ".50 Ball"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5BF"
+  },
+  {
+    "id": "crAmmoScorchbeastQueenStrafeAttack",
+    "texts": {
+      "en": "Scorchbeast Strafe Attack Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C1"
+  },
+  {
+    "id": "zzz_AmmoBow",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C3"
+  },
+  {
+    "id": "crAmmoScorchbeastSonicAttack",
+    "texts": {
+      "en": "Scorchbeast Sonic Attack Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C5"
+  },
+  {
+    "id": "crAmmoHoneyBeastBeeSwarm",
+    "texts": {
+      "en": "Bee Swarm"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C7"
+  },
+  {
+    "id": "crAmmoFlatwoods",
+    "texts": {
+      "en": "Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "040F7C"
+  },
+  {
+    "id": "crAmmoMissile_Turret",
+    "texts": {
+      "en": "Missile"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0443DD"
+  },
+  {
+    "id": "AmmoLiberatorLaserAmmo",
+    "texts": {
+      "en": "Laser"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "046503"
+  },
+  {
+    "id": "Ammo10mm_AntiScorchbeast",
+    "texts": {
+      "en": "Ultracite 10mm Round"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481AB"
+  },
+  {
+    "id": "AmmoPlasmaCartridge_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Plasma"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481AD"
+  },
+  {
+    "id": "AmmoPlasmaCore_AntiScorched",
+    "texts": {
+      "en": "Ultracite Plasma Core"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481AF"
+  },
+  {
+    "id": "AmmoCrossbowBolt_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Bolt"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B1"
+  },
+  {
+    "id": "AmmoShotgunShell_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Shell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B3"
+  },
+  {
+    "id": "Ammo44_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .44"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B5"
+  },
+  {
+    "id": "Ammo308Caliber_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .308"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B7"
+  },
+  {
+    "id": "AmmoFusionCore_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Fusion Core"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B9"
+  },
+  {
+    "id": "Ammo50Cal_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .50"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481BB"
+  },
+  {
+    "id": "AmmoRRSpike_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Spike"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481BD"
+  },
+  {
+    "id": "Ammo45Caliber_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .45"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481BF"
+  },
+  {
+    "id": "AmmoFusionCell_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Fusion Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C1"
+  },
+  {
+    "id": "Ammo2mmEC_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite 2mm EC"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C3"
+  },
+  {
+    "id": "Ammo556_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite 5.56"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C5"
+  },
+  {
+    "id": "Ammo5mm_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite 5mm"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C7"
+  },
+  {
+    "id": "Ammo38Caliber_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .38"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "048671"
+  },
+  {
+    "id": "AmmoCamera",
+    "texts": {
+      "en": "Camera Film"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "04A9C9"
+  },
+  {
+    "id": "crAmmoWendigoScreamAttack",
+    "texts": {
+      "en": "Wendigo Scream Attack Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "04B991"
+  },
+  {
+    "id": "crAmmoFloaterFreezerBreath",
+    "texts": {
+      "en": "Freezer Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "056D41"
+  },
+  {
+    "id": "crAmmoFloaterFreezerStare",
+    "texts": {
+      "en": "Floater Flamer"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0571AD"
+  },
+  {
+    "id": "Ammo_Arrow_Firework",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD85"
+  },
+  {
+    "id": "Ammo_Arrow_Explosive",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD87"
+  },
+  {
+    "id": "Ammo_Arrow_Poison",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD89"
+  },
+  {
+    "id": "Ammo_Arrow_Plasma",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD8B"
+  },
+  {
+    "id": "Ammo_Arrow_Flaming",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD8D"
+  },
+  {
+    "id": "Ammo_Arrow_Cryo",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD8F"
+  },
+  {
+    "id": "Ammo_Arrow_Broadhead",
+    "texts": {
+      "en": "Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "41000B07"
+  },
+  {
+    "id": "V96_1_SuppressionSyringerAmmo",
+    "texts": {
+      "en": "Suppression Syringe"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "61002E7C"
+  },
+  {
+    "id": "Ammo_Arrow_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Arrow"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "610098B8"
+  },
+  {
+    "id": "W05_MQ_003P_Muscle_AmmoFusionCell_Polly",
+    "texts": {
+      "en": "Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "D9002D38"
+  },
+  {
+    "id": "crAmmoFloaterFlamerBreath",
+    "texts": {
+      "en": "Floater Flamer"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "D9002D39"
+  },
+  {
+    "id": "crAmmoFloaterFlamerFireball",
+    "texts": {
+      "en": "Floater Fireball Ammo"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "D9002D3B"
+  }
+]

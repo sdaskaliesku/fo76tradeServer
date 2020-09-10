@@ -1,59 +1,64 @@
-import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
-import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.github.underscore.lodash.U;
+import com.manson.fo76.domain.Fo76String;
 import com.manson.fo76.domain.LegendaryModDescriptor;
+import com.manson.fo76.domain.XTranslatorConfig;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
-@SuppressWarnings({"rawtypes", "unchecked"})
 public class PopulateLegModsConfig {
 
   private static final ObjectMapper OM = new ObjectMapper();
+
+  private static final XTranslatorParser xTranslatorParser = new XTranslatorParser(OM);
   private static final TypeReference<List<LegendaryModDescriptor>> TYPE_REFERENCE = new TypeReference<List<LegendaryModDescriptor>>() {
   };
 
-  private static Map<String, Fo76String> parseXml(File file) throws IOException {
-    String xml = String.join("\n", Files.readAllLines(Paths.get(file.toURI())));
-    xml = xml.replace(String.valueOf(xml.charAt(0)), "");
-    Map<String, Object> map = U.fromXml(xml);
-    List<Object> strings = (List<Object>) ((Map) ((Map) map.get("SSTXMLRessources")).get("Content")).get("String");
+  private static Map<String, Fo76String> parseXml(File file) {
+    List<Fo76String> strings = xTranslatorParser.parse(file);
     return genericListToFo76List(strings);
   }
 
-  public static Map<String, Fo76String> genericListToFo76List(List<Object> list) {
+  public static Map<String, Fo76String> genericListToFo76List(List<Fo76String> fo76Strings) {
     Map<String, Fo76String> map = new HashMap<>();
     try {
-      TypeReference<List<Fo76String>> typeReference = new TypeReference<List<Fo76String>>() {
-      };
-      List<Fo76String> fo76Strings = OM.convertValue(list, typeReference);
-      for (Fo76String fo76String : fo76Strings) {
-        map.put(fo76String.getEdid(), fo76String);
-      }
+      map = fo76Strings.stream().collect(Collectors.toMap(Fo76String::getEdid, fo76String -> fo76String, (a, b) -> b));
     } catch (Exception e) {
       e.printStackTrace();
     }
     return map;
   }
 
+  @Test
+  public void dummy2() throws IOException {
+    File input = new File("./test_resources/ammo_types_ru.xml");
+    File output = new File("ammo.types.json");
+    File input1 = new File("D:\\workspace\\fo76tradeServer\\src\\main\\resources\\ammo.types.json");
+    TypeReference<List<XTranslatorConfig>> typeReference = new TypeReference<List<XTranslatorConfig>>() {
+    };
+    List<XTranslatorConfig> xTranslatorConfigs = OM.readValue(input1, typeReference);
+    List<Fo76String> fo76Strings = xTranslatorParser.parse(input);
+    List<XTranslatorConfig> configs = fo76Strings.stream().map(XTranslatorConfig::fromFo76String)
+        .collect(Collectors.toList());
+    for (XTranslatorConfig config : configs) {
+      for (XTranslatorConfig initial : xTranslatorConfigs) {
+        XTranslatorConfig.Companion.merge(initial, config);
+      }
+    }
+
+    OM.writeValue(output, xTranslatorConfigs);
+  }
 
 
-//  @Test
+  @Test
   public void dummy() throws IOException {
-    XmlMapper xmlMapper = new XmlMapper();
-    xmlMapper.setVisibility(PropertyAccessor.ALL, Visibility.NONE);
-    xmlMapper.setVisibility(PropertyAccessor.FIELD, Visibility.ANY);
-    File baseDir = new File("./fo76strings/ru");
+    File baseDir = new File("./test_resources/ru");
     File input = new File("D:\\workspace\\fo76tradeServer\\src\\main\\resources\\legendaryMods.config.json");
-    String locale = "ru";
     List<LegendaryModDescriptor> descriptors = OM.readValue(input, TYPE_REFERENCE);
 
     File keysFile = new File(baseDir, "keys.xml");
@@ -67,8 +72,8 @@ public class PopulateLegModsConfig {
       }
       Fo76String k = keys.get(descriptor.getId());
       Fo76String v = values.get(descriptor.getId());
-      descriptor.getTexts().put(locale, k.getSource());
-      descriptor.getTranslations().put(locale, v.getSource());
+      descriptor.getTexts().put(k.getLang(), k.getSource());
+      descriptor.getTranslations().put(v.getLang(), v.getSource());
     }
 
     OM.writeValue(new File("legModsconfig2.json"), descriptors);
