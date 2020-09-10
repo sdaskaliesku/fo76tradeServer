@@ -5,6 +5,9 @@ import com.manson.fo76.domain.LegendaryModDescriptor;
 import com.manson.fo76.domain.XTranslatorConfig;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -54,15 +57,38 @@ public class PopulateLegModsConfig {
     OM.writeValue(output, xTranslatorConfigs);
   }
 
+  @Test
+  public void readArmorDr() throws Exception {
+    File input = new File("./test_resources/armor_dr.txt");
+    List<String> strings = Files.readAllLines(Paths.get(input.toURI()));
+    strings.remove(0);
+    List<ArmorConfig> configs = new ArrayList<>();
+    for (String line: strings) {
+      String[] config = line.split("\t");
+      int col = 0;
+      int dr = Integer.parseInt(config[col++]);
+      int er = Integer.parseInt(config[col++]);
+      int rr = Integer.parseInt(config[col++]);
+      String name = config[col];
+      ArmorConfig armorDrConfig = new ArmorConfig();
+      armorDrConfig.setDr(dr);
+      armorDrConfig.setRr(rr);
+      armorDrConfig.setEr(er);
+      armorDrConfig.setName(name);
+      configs.add(armorDrConfig);
+    }
+    OM.writeValue(new File("armor.config.json"), configs);
+  }
+
 
   @Test
   public void dummy() throws IOException {
-    File baseDir = new File("./test_resources/ru");
+    File baseDir = new File("./test_resources");
     File input = new File("D:\\workspace\\fo76tradeServer\\src\\main\\resources\\legendaryMods.config.json");
     List<LegendaryModDescriptor> descriptors = OM.readValue(input, TYPE_REFERENCE);
 
-    File keysFile = new File(baseDir, "keys.xml");
-    File valuesFile = new File(baseDir, "values.xml");
+    File keysFile = new File(baseDir, "leg_mods_en_key.xml");
+    File valuesFile = new File(baseDir, "leg_mods_en_value.xml");
     Map<String, Fo76String> keys = parseXml(keysFile);
     Map<String, Fo76String> values = parseXml(valuesFile);
 
@@ -74,6 +100,9 @@ public class PopulateLegModsConfig {
       Fo76String v = values.get(descriptor.getId());
       descriptor.getTexts().put(k.getLang(), k.getSource());
       descriptor.getTranslations().put(v.getLang(), v.getSource());
+      descriptor.setId(k.getEdid());
+      descriptor.setSid(k.getSid());
+      descriptor.setRec(k.getRec());
     }
 
     OM.writeValue(new File("legModsconfig2.json"), descriptors);

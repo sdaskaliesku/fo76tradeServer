@@ -89,6 +89,10 @@ const modalFields = [
     field: 'filterFlag',
   },
   {
+    name: 'Armor type',
+    field: 'armorType',
+  },
+  {
     name: 'Legendary',
     field: 'isLegendary',
   },

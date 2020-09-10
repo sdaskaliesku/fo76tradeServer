@@ -32,6 +32,8 @@ import org.springframework.stereotype.Service
 @Service
 class ItemConverterService @Autowired constructor(private val gameConfigService: GameConfigService) {
 
+    private val IGNORED_CARDS: MutableSet<ItemCardText> = mutableSetOf(ItemCardText.LEG_MODS, ItemCardText.DESC)
+
     private fun processModDataItems(
             modData: ModData?,
             itemsUploadFilters: ItemsUploadFilters,
@@ -123,7 +125,6 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         }
     }
 
-    private val IGNORED_CARDS: MutableSet<ItemCardText> = mutableSetOf(ItemCardText.LEG_MODS, ItemCardText.DESC)
     private fun areSameItems(first: ItemDTO, second: ItemDTO?): Boolean {
         val sameName = StringUtils.equalsIgnoreCase(first.text, second!!.text)
         val sameLevel = NumberUtils.compare(first.itemLevel, second.itemLevel) == 0
@@ -232,6 +233,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         itemDTO.tradeOptions = tradeOptions
         itemDTO.ownerInfo = ownerInfo
         itemDTO.stats = processItemCardEntries(item, itemDTO)
+        itemDTO.armorType = gameConfigService.findArmorType(itemDTO)
         return itemDTO
     }
 

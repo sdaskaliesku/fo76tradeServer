@@ -3,8 +3,13 @@ package com.manson.fo76.service
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.google.common.io.Resources
+import com.manson.fo76.domain.ArmorConfig
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
+import com.manson.fo76.domain.dto.ItemDTO
+import com.manson.fo76.domain.dto.StatsDTO
+import com.manson.fo76.domain.items.enums.ArmorType
+import com.manson.fo76.domain.items.enums.DamageType
 import com.manson.fo76.domain.items.enums.ItemCardText
 import com.manson.fo76.domain.items.item_card.ItemCardEntry
 import java.util.function.Predicate
@@ -21,8 +26,10 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         private val LOGGER = LoggerFactory.getLogger(GameConfigService::class.java)
         private const val LEG_MODS_CONFIG_FILE = "legendaryMods.config.json"
         private const val AMMO_TYPES_CONFIG_FILE = "ammo.types.json"
+        private const val ARMOR_CONFIG_FILE = "armor.config.json"
         private val LEG_MOD_TYPE_REF: TypeReference<List<LegendaryModDescriptor>> = object : TypeReference<List<LegendaryModDescriptor>>() {}
         private val XTRANSLATOR_TYPE_REF: TypeReference<List<XTranslatorConfig>> = object : TypeReference<List<XTranslatorConfig>>() {}
+        private val ARMOR_CONFIG_TYPE_REF: TypeReference<List<ArmorConfig>> = object : TypeReference<List<ArmorConfig>>() {}
 
         private fun <T> loadConfig(objectMapper: ObjectMapper, file: String, typeReference: TypeReference<List<T>>, predicate: Predicate<T>): List<T> {
             var configs: List<T> = ArrayList()
@@ -40,10 +47,12 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
 
     var legModsConfig: List<LegendaryModDescriptor>
     var ammoTypes: List<XTranslatorConfig>
+    var armorConfigs: List<ArmorConfig>
 
     init {
         this.legModsConfig = loadConfig(objectMapper, LEG_MODS_CONFIG_FILE, LEG_MOD_TYPE_REF, XTranslatorConfig::enabled)
         this.ammoTypes = loadConfig(objectMapper, AMMO_TYPES_CONFIG_FILE, XTRANSLATOR_TYPE_REF, XTranslatorConfig::enabled)
+        this.armorConfigs = loadConfig(objectMapper, ARMOR_CONFIG_FILE, ARMOR_CONFIG_TYPE_REF, { true })
     }
 
     fun findItemCardText(cardEntry: ItemCardEntry): ItemCardText {
@@ -70,5 +79,40 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         }
         val value: String = input.toString()
         return legModsConfig.firstOrNull { it.isTheSameMod(value) }
+    }
+
+    private fun findDamageTypeValue(stats: List<StatsDTO>, dmgType: DamageType): Int {
+        for (stat in stats) {
+            if (stat.damageType === dmgType) {
+                if (StringUtils.isBlank(stat.value)) {
+                    return 0
+                }
+                return Integer.valueOf(stat.value)
+            }
+        }
+        return 0
+    }
+
+    fun findArmorType(dr: Int, rr: Int, er: Int): ArmorType {
+        for (config in armorConfigs) {
+            if (config.dr == dr && config.er == er && config.rr == rr) {
+                for (armorType in ArmorType.values()) {
+                    if (StringUtils.containsIgnoreCase(config.name, armorType.value)) {
+                        return armorType
+                    }
+                }
+            }
+        }
+        return ArmorType.Unknown
+    }
+
+    fun findArmorType(itemDTO: ItemDTO): ArmorType {
+        val dr: Int = findDamageTypeValue(itemDTO.stats, DamageType.BALLISTIC)
+        val er: Int = findDamageTypeValue(itemDTO.stats, DamageType.ENERGY)
+        var rr: Int = findDamageTypeValue(itemDTO.stats, DamageType.RADIATION)
+        if (StringUtils.containsIgnoreCase(itemDTO.abbreviation, "25R")) {
+            rr -= 25
+        }
+        return findArmorType(dr, rr, er)
     }
 }

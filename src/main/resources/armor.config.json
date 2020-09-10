@@ -1,0 +1,1928 @@
+[
+  {
+    "name": "Robot - Light - Arm",
+    "dr": 10,
+    "er": 10,
+    "rr": 10
+  },
+  {
+    "name": "Robot - Light - Leg",
+    "dr": 10,
+    "er": 10,
+    "rr": 10
+  },
+  {
+    "name": "Leather - Light - Arm",
+    "dr": 11,
+    "er": 21,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Leg",
+    "dr": 11,
+    "er": 21,
+    "rr": 0
+  },
+  {
+    "name": "Wood - Light - Leg",
+    "dr": 12,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Arm",
+    "dr": 12,
+    "er": 12,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Leg",
+    "dr": 12,
+    "er": 12,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Boiled - Arm",
+    "dr": 12,
+    "er": 31,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Shadowed - Arm",
+    "dr": 12,
+    "er": 31,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Boiled - Leg",
+    "dr": 12,
+    "er": 31,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Shadowed - Leg",
+    "dr": 12,
+    "er": 31,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Sturdy - Arm",
+    "dr": 13,
+    "er": 10,
+    "rr": 13
+  },
+  {
+    "name": "Robot - Sturdy - Leg",
+    "dr": 13,
+    "er": 13,
+    "rr": 13
+  },
+  {
+    "name": "Trapper - Sturdy - Arm",
+    "dr": 14,
+    "er": 10,
+    "rr": 14
+  },
+  {
+    "name": "Trapper - Sturdy - Leg",
+    "dr": 14,
+    "er": 10,
+    "rr": 14
+  },
+  {
+    "name": "Combat - Sturdy - Arm",
+    "dr": 15,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Leg",
+    "dr": 15,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Fiberglass - Arm",
+    "dr": 15,
+    "er": 22,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Fiberglass - Leg",
+    "dr": 15,
+    "er": 22,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Girded - Arm",
+    "dr": 16,
+    "er": 34,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Girded - Leg",
+    "dr": 16,
+    "er": 34,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Chest",
+    "dr": 16,
+    "er": 45,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Arm",
+    "dr": 17,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Leg",
+    "dr": 17,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Heavy - Arm",
+    "dr": 17,
+    "er": 17,
+    "rr": 15
+  },
+  {
+    "name": "Robot - Heavy - Leg",
+    "dr": 17,
+    "er": 17,
+    "rr": 15
+  },
+  {
+    "name": "Leather - Sturdy - Arm",
+    "dr": 17,
+    "er": 36,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Leg",
+    "dr": 17,
+    "er": 36,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Fiberglass - Arm",
+    "dr": 18,
+    "er": 25,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Fiberglass - Leg",
+    "dr": 18,
+    "er": 25,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Boiled - Arm",
+    "dr": 18,
+    "er": 46,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Shadowed - Arm",
+    "dr": 18,
+    "er": 46,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Boiled - Leg",
+    "dr": 18,
+    "er": 46,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Shadowed - Leg",
+    "dr": 18,
+    "er": 46,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Arm",
+    "dr": 19,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Leg",
+    "dr": 19,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Reinforced - Arm",
+    "dr": 19,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Shadowed - Arm",
+    "dr": 19,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Reinforced - Leg",
+    "dr": 19,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Shadowed - Leg",
+    "dr": 19,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Treated - Arm",
+    "dr": 19,
+    "er": 37,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Treated - Leg",
+    "dr": 19,
+    "er": 37,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Arm",
+    "dr": 20,
+    "er": 5,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Leg",
+    "dr": 20,
+    "er": 5,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Arm",
+    "dr": 20,
+    "er": 20,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Leg",
+    "dr": 20,
+    "er": 20,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Light - Painted - Arm",
+    "dr": 20,
+    "er": 20,
+    "rr": 15
+  },
+  {
+    "name": "Robot - Light - Shadowed - Arm",
+    "dr": 20,
+    "er": 20,
+    "rr": 15
+  },
+  {
+    "name": "Robot - Light - Painted - Leg",
+    "dr": 20,
+    "er": 20,
+    "rr": 15
+  },
+  {
+    "name": "Robot - Light - Shadowed - Leg",
+    "dr": 20,
+    "er": 20,
+    "rr": 15
+  },
+  {
+    "name": "Leather - Light - Studded - Arm",
+    "dr": 21,
+    "er": 51,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Studded - Leg",
+    "dr": 21,
+    "er": 51,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Chest",
+    "dr": 21,
+    "er": 59,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Boiled - Chest",
+    "dr": 21,
+    "er": 60,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Light - Shadowed - Chest",
+    "dr": 21,
+    "er": 60,
+    "rr": 0
+  },
+  {
+    "name": "Wood - Light - Arm",
+    "dr": 22,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Arm",
+    "dr": 22,
+    "er": 10,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Leg",
+    "dr": 22,
+    "er": 10,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Reinforced - Arm",
+    "dr": 22,
+    "er": 22,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Shadowed - Arm",
+    "dr": 22,
+    "er": 22,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Reinforced - Leg",
+    "dr": 22,
+    "er": 22,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Shadowed - Leg",
+    "dr": 22,
+    "er": 22,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Light - Enameled - Arm",
+    "dr": 22,
+    "er": 22,
+    "rr": 16
+  },
+  {
+    "name": "Robot - Light - Enameled - Leg",
+    "dr": 22,
+    "er": 22,
+    "rr": 16
+  },
+  {
+    "name": "Leather - Heavy - Arm",
+    "dr": 22,
+    "er": 47,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Leg",
+    "dr": 22,
+    "er": 47,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Girded - Arm",
+    "dr": 22,
+    "er": 49,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Girded - Leg",
+    "dr": 22,
+    "er": 49,
+    "rr": 0
+  },
+  {
+    "name": "Trapper - Sturdy - Welded - Arm",
+    "dr": 23,
+    "er": 14,
+    "rr": 23
+  },
+  {
+    "name": "Trapper - Sturdy - Welded - Leg",
+    "dr": 23,
+    "er": 14,
+    "rr": 23
+  },
+  {
+    "name": "Robot - Sturdy - Painted - Arm",
+    "dr": 23,
+    "er": 20,
+    "rr": 18
+  },
+  {
+    "name": "Robot - Sturdy - Shadowed - Arm",
+    "dr": 23,
+    "er": 20,
+    "rr": 18
+  },
+  {
+    "name": "Robot - Light - Alloyed - Arm",
+    "dr": 23,
+    "er": 23,
+    "rr": 17
+  },
+  {
+    "name": "Robot - Light - Alloyed - Leg",
+    "dr": 23,
+    "er": 23,
+    "rr": 17
+  },
+  {
+    "name": "Robot - Sturdy - Painted - Leg",
+    "dr": 23,
+    "er": 23,
+    "rr": 18
+  },
+  {
+    "name": "Robot - Sturdy - Shadowed - Leg",
+    "dr": 23,
+    "er": 23,
+    "rr": 18
+  },
+  {
+    "name": "Combat - Heavy - Fiberglass - Arm",
+    "dr": 23,
+    "er": 30,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Fiberglass - Leg",
+    "dr": 23,
+    "er": 30,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Boiled - Arm",
+    "dr": 23,
+    "er": 57,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Shadowed - Arm",
+    "dr": 23,
+    "er": 57,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Boiled - Leg",
+    "dr": 23,
+    "er": 57,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Shadowed - Leg",
+    "dr": 23,
+    "er": 57,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Welded - Arm",
+    "dr": 24,
+    "er": 19,
+    "rr": 5
+  },
+  {
+    "name": "Marine - Sturdy - Welded - Leg",
+    "dr": 24,
+    "er": 19,
+    "rr": 5
+  },
+  {
+    "name": "Robot - Light - Chest",
+    "dr": 24,
+    "er": 24,
+    "rr": 13
+  },
+  {
+    "name": "Robot - Light - Polished - Arm",
+    "dr": 24,
+    "er": 24,
+    "rr": 18
+  },
+  {
+    "name": "Robot - Light - Polished - Leg",
+    "dr": 24,
+    "er": 24,
+    "rr": 18
+  },
+  {
+    "name": "Trapper - Sturdy - Tempered - Arm",
+    "dr": 25,
+    "er": 15,
+    "rr": 25
+  },
+  {
+    "name": "Trapper - Sturdy - Tempered - Leg",
+    "dr": 25,
+    "er": 15,
+    "rr": 25
+  },
+  {
+    "name": "Scout - Sturdy - Arm",
+    "dr": 25,
+    "er": 20,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Leg",
+    "dr": 25,
+    "er": 20,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Sturdy - Enameled - Arm",
+    "dr": 25,
+    "er": 22,
+    "rr": 19
+  },
+  {
+    "name": "Combat - Light - Polymer - Arm",
+    "dr": 25,
+    "er": 25,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Polymer - Leg",
+    "dr": 25,
+    "er": 25,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Sturdy - Enameled - Leg",
+    "dr": 25,
+    "er": 25,
+    "rr": 19
+  },
+  {
+    "name": "Leather - Sturdy - Treated - Arm",
+    "dr": 25,
+    "er": 52,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Treated - Leg",
+    "dr": 25,
+    "er": 52,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Arm",
+    "dr": 26,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Leg",
+    "dr": 26,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Welded - Arm",
+    "dr": 26,
+    "er": 12,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Welded - Leg",
+    "dr": 26,
+    "er": 12,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Tempered - Arm",
+    "dr": 26,
+    "er": 21,
+    "rr": 7
+  },
+  {
+    "name": "Marine - Sturdy - Tempered - Leg",
+    "dr": 26,
+    "er": 21,
+    "rr": 7
+  },
+  {
+    "name": "Robot - Sturdy - Alloyed - Arm",
+    "dr": 26,
+    "er": 23,
+    "rr": 20
+  },
+  {
+    "name": "Robot - Sturdy - Alloyed - Leg",
+    "dr": 26,
+    "er": 26,
+    "rr": 20
+  },
+  {
+    "name": "Leather - Light - Girded - Chest",
+    "dr": 26,
+    "er": 65,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Boiled - Chest",
+    "dr": 26,
+    "er": 74,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Shadowed - Chest",
+    "dr": 26,
+    "er": 74,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Tempered - Arm",
+    "dr": 27,
+    "er": 13,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Tempered - Leg",
+    "dr": 27,
+    "er": 13,
+    "rr": 0
+  },
+  {
+    "name": "Trapper - Sturdy - Hardened - Arm",
+    "dr": 27,
+    "er": 16,
+    "rr": 27
+  },
+  {
+    "name": "Trapper - Sturdy - Hardened - Leg",
+    "dr": 27,
+    "er": 16,
+    "rr": 27
+  },
+  {
+    "name": "Robot - Sturdy - Polished - Arm",
+    "dr": 27,
+    "er": 24,
+    "rr": 21
+  },
+  {
+    "name": "Combat - Heavy - Reinforced - Arm",
+    "dr": 27,
+    "er": 27,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Shadowed - Arm",
+    "dr": 27,
+    "er": 27,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Reinforced - Leg",
+    "dr": 27,
+    "er": 27,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Shadowed - Leg",
+    "dr": 27,
+    "er": 27,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Heavy - Painted - Arm",
+    "dr": 27,
+    "er": 27,
+    "rr": 20
+  },
+  {
+    "name": "Robot - Heavy - Shadowed - Arm",
+    "dr": 27,
+    "er": 27,
+    "rr": 20
+  },
+  {
+    "name": "Robot - Heavy - Painted - Leg",
+    "dr": 27,
+    "er": 27,
+    "rr": 20
+  },
+  {
+    "name": "Robot - Heavy - Shadowed - Leg",
+    "dr": 27,
+    "er": 27,
+    "rr": 20
+  },
+  {
+    "name": "Robot - Sturdy - Polished - Leg",
+    "dr": 27,
+    "er": 27,
+    "rr": 21
+  },
+  {
+    "name": "Combat - Light - Brotherhood - Arm",
+    "dr": 27,
+    "er": 37,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Brotherhood - Leg",
+    "dr": 27,
+    "er": 37,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Girded - Arm",
+    "dr": 27,
+    "er": 60,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Girded - Leg",
+    "dr": 27,
+    "er": 60,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Studded - Arm",
+    "dr": 27,
+    "er": 66,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Studded - Leg",
+    "dr": 27,
+    "er": 66,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Arm",
+    "dr": 28,
+    "er": 13,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Leg",
+    "dr": 28,
+    "er": 13,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Hardened - Arm",
+    "dr": 28,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Hardened - Leg",
+    "dr": 28,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Hardened - Arm",
+    "dr": 28,
+    "er": 23,
+    "rr": 9
+  },
+  {
+    "name": "Marine - Sturdy - Hardened - Leg",
+    "dr": 28,
+    "er": 23,
+    "rr": 9
+  },
+  {
+    "name": "Combat - Sturdy - Polymer - Arm",
+    "dr": 28,
+    "er": 28,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Polymer - Leg",
+    "dr": 28,
+    "er": 28,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Chest",
+    "dr": 28,
+    "er": 76,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Buttressed - Arm",
+    "dr": 29,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Buttressed - Leg",
+    "dr": 29,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Heavy - Enameled - Arm",
+    "dr": 29,
+    "er": 29,
+    "rr": 21
+  },
+  {
+    "name": "Robot - Heavy - Enameled - Leg",
+    "dr": 29,
+    "er": 29,
+    "rr": 21
+  },
+  {
+    "name": "Metal - Light - Painted - Arm",
+    "dr": 30,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Shadowed - Arm",
+    "dr": 30,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Painted - Leg",
+    "dr": 30,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Shadowed - Leg",
+    "dr": 30,
+    "er": 6,
+    "rr": 0
+  },
+  {
+    "name": "Trapper - Sturdy - Buttressed - Arm",
+    "dr": 30,
+    "er": 17,
+    "rr": 30
+  },
+  {
+    "name": "Trapper - Sturdy - Buttressed - Leg",
+    "dr": 30,
+    "er": 17,
+    "rr": 30
+  },
+  {
+    "name": "Robot - Heavy - Alloyed - Arm",
+    "dr": 30,
+    "er": 30,
+    "rr": 22
+  },
+  {
+    "name": "Robot - Heavy - Alloyed - Leg",
+    "dr": 30,
+    "er": 30,
+    "rr": 22
+  },
+  {
+    "name": "Combat - Sturdy - Brotherhood - Arm",
+    "dr": 30,
+    "er": 40,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Brotherhood - Leg",
+    "dr": 30,
+    "er": 40,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Treated - Arm",
+    "dr": 30,
+    "er": 63,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Treated - Leg",
+    "dr": 30,
+    "er": 63,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Welded - Arm",
+    "dr": 31,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Welded - Leg",
+    "dr": 31,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Buttressed - Arm",
+    "dr": 31,
+    "er": 26,
+    "rr": 12
+  },
+  {
+    "name": "Marine - Sturdy - Buttressed - Leg",
+    "dr": 31,
+    "er": 26,
+    "rr": 12
+  },
+  {
+    "name": "Robot - Heavy - Polished - Arm",
+    "dr": 31,
+    "er": 31,
+    "rr": 23
+  },
+  {
+    "name": "Robot - Heavy - Polished - Leg",
+    "dr": 31,
+    "er": 31,
+    "rr": 23
+  },
+  {
+    "name": "Leather - Light - Treated - Chest",
+    "dr": 31,
+    "er": 70,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Girded - Chest",
+    "dr": 31,
+    "er": 79,
+    "rr": 0
+  },
+  {
+    "name": "Trapper - Sturdy - Chest",
+    "dr": 32,
+    "er": 14,
+    "rr": 32
+  },
+  {
+    "name": "Raider - Sturdy - Tempered - Arm",
+    "dr": 32,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Tempered - Leg",
+    "dr": 32,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Sturdy - Chest",
+    "dr": 32,
+    "er": 32,
+    "rr": 15
+  },
+  {
+    "name": "Leather - Heavy - Studded - Arm",
+    "dr": 32,
+    "er": 77,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Studded - Leg",
+    "dr": 32,
+    "er": 77,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Enameled - Arm",
+    "dr": 33,
+    "er": 7,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Enameled - Leg",
+    "dr": 33,
+    "er": 7,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Hardened - Arm",
+    "dr": 33,
+    "er": 16,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Hardened - Leg",
+    "dr": 33,
+    "er": 16,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Polymer - Arm",
+    "dr": 33,
+    "er": 33,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Polymer - Leg",
+    "dr": 33,
+    "er": 33,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Boiled - Chest",
+    "dr": 33,
+    "er": 91,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Heavy - Shadowed - Chest",
+    "dr": 33,
+    "er": 91,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Arm",
+    "dr": 34,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Leg",
+    "dr": 34,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Buttressed - Arm",
+    "dr": 34,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Buttressed - Leg",
+    "dr": 34,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Light - Shadowed - Chest",
+    "dr": 34,
+    "er": 34,
+    "rr": 18
+  },
+  {
+    "name": "Metal - Light - Alloyed - Arm",
+    "dr": 35,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Alloyed - Leg",
+    "dr": 35,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Brotherhood - Arm",
+    "dr": 35,
+    "er": 45,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Brotherhood - Leg",
+    "dr": 35,
+    "er": 45,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Painted - Arm",
+    "dr": 36,
+    "er": 7,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Shadowed - Arm",
+    "dr": 36,
+    "er": 7,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Painted - Leg",
+    "dr": 36,
+    "er": 7,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Shadowed - Leg",
+    "dr": 36,
+    "er": 7,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Chest",
+    "dr": 36,
+    "er": 36,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Light - Enameled - Chest",
+    "dr": 36,
+    "er": 36,
+    "rr": 19
+  },
+  {
+    "name": "Leather - Light - Studded - Chest",
+    "dr": 36,
+    "er": 75,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Treated - Chest",
+    "dr": 36,
+    "er": 84,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Welded - Arm",
+    "dr": 37,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Welded - Leg",
+    "dr": 37,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Reinforced - Arm",
+    "dr": 37,
+    "er": 25,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Reinforced - Leg",
+    "dr": 37,
+    "er": 25,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Light - Painted - Chest",
+    "dr": 37,
+    "er": 30,
+    "rr": 13
+  },
+  {
+    "name": "Robot - Light - Alloyed - Chest",
+    "dr": 37,
+    "er": 37,
+    "rr": 20
+  },
+  {
+    "name": "Raider - Heavy - Tempered - Arm",
+    "dr": 38,
+    "er": 18,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Tempered - Leg",
+    "dr": 38,
+    "er": 18,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Light - Polished - Chest",
+    "dr": 38,
+    "er": 38,
+    "rr": 21
+  },
+  {
+    "name": "Leather - Heavy - Girded - Chest",
+    "dr": 38,
+    "er": 96,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Enameled - Arm",
+    "dr": 39,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Enameled - Leg",
+    "dr": 39,
+    "er": 8,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Hardened - Arm",
+    "dr": 39,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Hardened - Leg",
+    "dr": 39,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Polished - Arm",
+    "dr": 40,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Polished - Leg",
+    "dr": 40,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Buttressed - Arm",
+    "dr": 40,
+    "er": 20,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Buttressed - Leg",
+    "dr": 40,
+    "er": 20,
+    "rr": 0
+  },
+  {
+    "name": "Secret Service - Heavy - Arm",
+    "dr": 40,
+    "er": 40,
+    "rr": 40
+  },
+  {
+    "name": "Secret Service - Heavy - Leg",
+    "dr": 40,
+    "er": 40,
+    "rr": 40
+  },
+  {
+    "name": "Trapper - Sturdy - Welded - Chest",
+    "dr": 41,
+    "er": 18,
+    "rr": 41
+  },
+  {
+    "name": "Scout - Sturdy - Fiberglass - Arm",
+    "dr": 41,
+    "er": 28,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Fiberglass - Leg",
+    "dr": 41,
+    "er": 28,
+    "rr": 0
+  },
+  {
+    "name": "Leather - Sturdy - Studded - Chest",
+    "dr": 41,
+    "er": 89,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Alloyed - Arm",
+    "dr": 42,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Alloyed - Leg",
+    "dr": 42,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Chest",
+    "dr": 42,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Heavy - Chest",
+    "dr": 42,
+    "er": 42,
+    "rr": 15
+  },
+  {
+    "name": "Robot - Sturdy - Shadowed - Chest",
+    "dr": 42,
+    "er": 42,
+    "rr": 20
+  },
+  {
+    "name": "Trapper - Sturdy - Tempered - Chest",
+    "dr": 43,
+    "er": 19,
+    "rr": 43
+  },
+  {
+    "name": "Leather - Heavy - Treated - Chest",
+    "dr": 43,
+    "er": 101,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Painted - Arm",
+    "dr": 44,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Shadowed - Arm",
+    "dr": 44,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Painted - Leg",
+    "dr": 44,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Shadowed - Leg",
+    "dr": 44,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Sturdy - Enameled - Chest",
+    "dr": 44,
+    "er": 44,
+    "rr": 21
+  },
+  {
+    "name": "Wood - Light - Chest",
+    "dr": 45,
+    "er": 9,
+    "rr": 0
+  },
+  {
+    "name": "Trapper - Sturdy - Hardened - Chest",
+    "dr": 45,
+    "er": 20,
+    "rr": 45
+  },
+  {
+    "name": "Scout - Sturdy - Polymer - Arm",
+    "dr": 45,
+    "er": 30,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Polymer - Leg",
+    "dr": 45,
+    "er": 30,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Sturdy - Painted - Chest",
+    "dr": 45,
+    "er": 38,
+    "rr": 15
+  },
+  {
+    "name": "Robot - Sturdy - Alloyed - Chest",
+    "dr": 45,
+    "er": 45,
+    "rr": 22
+  },
+  {
+    "name": "Metal - Sturdy - Polished - Arm",
+    "dr": 46,
+    "er": 10,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Polished - Leg",
+    "dr": 46,
+    "er": 10,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Chest",
+    "dr": 46,
+    "er": 19,
+    "rr": 19
+  },
+  {
+    "name": "Combat - Light - Reinforced - Chest",
+    "dr": 46,
+    "er": 46,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Shadowed - Chest",
+    "dr": 46,
+    "er": 46,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Sturdy - Polished - Chest",
+    "dr": 46,
+    "er": 46,
+    "rr": 23
+  },
+  {
+    "name": "Secret Service - Heavy - Welded - Arm",
+    "dr": 46,
+    "er": 46,
+    "rr": 46
+  },
+  {
+    "name": "Secret Service - Heavy - Welded - Leg",
+    "dr": 46,
+    "er": 46,
+    "rr": 46
+  },
+  {
+    "name": "Metal - Heavy - Enameled - Arm",
+    "dr": 47,
+    "er": 10,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Enameled - Leg",
+    "dr": 47,
+    "er": 10,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Chest",
+    "dr": 47,
+    "er": 47,
+    "rr": 0
+  },
+  {
+    "name": "Trapper - Sturdy - Buttressed - Chest",
+    "dr": 48,
+    "er": 21,
+    "rr": 48
+  },
+  {
+    "name": "Secret Service - Heavy - Tempered - Arm",
+    "dr": 48,
+    "er": 48,
+    "rr": 48
+  },
+  {
+    "name": "Secret Service - Heavy - Tempered - Leg",
+    "dr": 48,
+    "er": 48,
+    "rr": 48
+  },
+  {
+    "name": "Leather - Heavy - Studded - Chest",
+    "dr": 48,
+    "er": 106,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Alloyed - Arm",
+    "dr": 49,
+    "er": 11,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Alloyed - Leg",
+    "dr": 49,
+    "er": 11,
+    "rr": 0
+  },
+  {
+    "name": "Secret Service - Heavy - Hardened - Arm",
+    "dr": 50,
+    "er": 50,
+    "rr": 50
+  },
+  {
+    "name": "Secret Service - Heavy - Hardened - Leg",
+    "dr": 50,
+    "er": 50,
+    "rr": 50
+  },
+  {
+    "name": "Metal - Light - Chest",
+    "dr": 51,
+    "er": 11,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Fiberglass - Chest",
+    "dr": 51,
+    "er": 51,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Heavy - Shadowed - Chest",
+    "dr": 52,
+    "er": 52,
+    "rr": 20
+  },
+  {
+    "name": "Raider - Light - Welded - Chest",
+    "dr": 53,
+    "er": 20,
+    "rr": 0
+  },
+  {
+    "name": "Secret Service - Heavy - Buttressed - Arm",
+    "dr": 53,
+    "er": 53,
+    "rr": 53
+  },
+  {
+    "name": "Secret Service - Heavy - Buttressed - Leg",
+    "dr": 53,
+    "er": 53,
+    "rr": 53
+  },
+  {
+    "name": "Metal - Heavy - Polished - Arm",
+    "dr": 54,
+    "er": 12,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Polished - Leg",
+    "dr": 54,
+    "er": 12,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Chest",
+    "dr": 54,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Heavy - Enameled - Chest",
+    "dr": 54,
+    "er": 54,
+    "rr": 21
+  },
+  {
+    "name": "Marine - Sturdy - Welded - Chest",
+    "dr": 55,
+    "er": 28,
+    "rr": 28
+  },
+  {
+    "name": "Robot - Heavy - Painted - Chest",
+    "dr": 55,
+    "er": 48,
+    "rr": 15
+  },
+  {
+    "name": "Robot - Heavy - Alloyed - Chest",
+    "dr": 55,
+    "er": 55,
+    "rr": 22
+  },
+  {
+    "name": "Raider - Light - Tempered - Chest",
+    "dr": 56,
+    "er": 28,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Polymer - Chest",
+    "dr": 56,
+    "er": 56,
+    "rr": 0
+  },
+  {
+    "name": "Robot - Heavy - Polished - Chest",
+    "dr": 56,
+    "er": 56,
+    "rr": 23
+  },
+  {
+    "name": "Combat - Sturdy - Reinforced - Chest",
+    "dr": 57,
+    "er": 57,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Shadowed - Chest",
+    "dr": 57,
+    "er": 57,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Tempered - Chest",
+    "dr": 59,
+    "er": 32,
+    "rr": 32
+  },
+  {
+    "name": "Raider - Light - Hardened - Chest",
+    "dr": 60,
+    "er": 24,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Chest",
+    "dr": 60,
+    "er": 40,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Light - Brotherhood - Chest",
+    "dr": 61,
+    "er": 61,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Chest",
+    "dr": 61,
+    "er": 61,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Fiberglass - Chest",
+    "dr": 62,
+    "er": 62,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Welded - Chest",
+    "dr": 65,
+    "er": 24,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Light - Buttressed - Chest",
+    "dr": 65,
+    "er": 26,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Hardened - Chest",
+    "dr": 65,
+    "er": 38,
+    "rr": 38
+  },
+  {
+    "name": "Metal - Light - Painted - Chest",
+    "dr": 66,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Shadowed - Chest",
+    "dr": 66,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Chest",
+    "dr": 67,
+    "er": 13,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Polymer - Chest",
+    "dr": 67,
+    "er": 67,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Tempered - Chest",
+    "dr": 68,
+    "er": 32,
+    "rr": 0
+  },
+  {
+    "name": "Marine - Sturdy - Buttressed - Chest",
+    "dr": 69,
+    "er": 42,
+    "rr": 42
+  },
+  {
+    "name": "Raider - Heavy - Chest",
+    "dr": 70,
+    "er": 24,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Enameled - Chest",
+    "dr": 71,
+    "er": 15,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Reinforced - Chest",
+    "dr": 71,
+    "er": 71,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Shadowed - Chest",
+    "dr": 71,
+    "er": 71,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Hardened - Chest",
+    "dr": 72,
+    "er": 28,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Sturdy - Brotherhood - Chest",
+    "dr": 72,
+    "er": 72,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Reinforced - Chest",
+    "dr": 75,
+    "er": 47,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Alloyed - Chest",
+    "dr": 76,
+    "er": 31,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Fiberglass - Chest",
+    "dr": 76,
+    "er": 76,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Sturdy - Buttressed - Chest",
+    "dr": 77,
+    "er": 30,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Fiberglass - Chest",
+    "dr": 80,
+    "er": 50,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Light - Polished - Chest",
+    "dr": 81,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Welded - Chest",
+    "dr": 81,
+    "er": 29,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Polymer - Chest",
+    "dr": 81,
+    "er": 81,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Painted - Chest",
+    "dr": 82,
+    "er": 16,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Shadowed - Chest",
+    "dr": 82,
+    "er": 16,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Tempered - Chest",
+    "dr": 84,
+    "er": 37,
+    "rr": 0
+  },
+  {
+    "name": "Scout - Sturdy - Polymer - Chest",
+    "dr": 85,
+    "er": 55,
+    "rr": 0
+  },
+  {
+    "name": "Combat - Heavy - Brotherhood - Chest",
+    "dr": 86,
+    "er": 86,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Chest",
+    "dr": 87,
+    "er": 14,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Enameled - Chest",
+    "dr": 87,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Hardened - Chest",
+    "dr": 88,
+    "er": 33,
+    "rr": 0
+  },
+  {
+    "name": "Secret Service - Heavy - Chest",
+    "dr": 90,
+    "er": 60,
+    "rr": 60
+  },
+  {
+    "name": "Metal - Sturdy - Alloyed - Chest",
+    "dr": 92,
+    "er": 33,
+    "rr": 0
+  },
+  {
+    "name": "Raider - Heavy - Buttressed - Chest",
+    "dr": 93,
+    "er": 35,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Sturdy - Polished - Chest",
+    "dr": 97,
+    "er": 19,
+    "rr": 0
+  },
+  {
+    "name": "Secret Service - Heavy - Welded - Chest",
+    "dr": 100,
+    "er": 70,
+    "rr": 70
+  },
+  {
+    "name": "Metal - Heavy - Painted - Chest",
+    "dr": 102,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Shadowed - Chest",
+    "dr": 102,
+    "er": 17,
+    "rr": 0
+  },
+  {
+    "name": "Secret Service - Heavy - Tempered - Chest",
+    "dr": 105,
+    "er": 75,
+    "rr": 75
+  },
+  {
+    "name": "Secret Service - Heavy - Hardened - Chest",
+    "dr": 105,
+    "er": 80,
+    "rr": 80
+  },
+  {
+    "name": "Metal - Heavy - Enameled - Chest",
+    "dr": 107,
+    "er": 18,
+    "rr": 0
+  },
+  {
+    "name": "Metal - Heavy - Alloyed - Chest",
+    "dr": 112,
+    "er": 34,
+    "rr": 0
+  },
+  {
+    "name": "Secret Service - Heavy - Buttressed - Chest",
+    "dr": 115,
+    "er": 85,
+    "rr": 85
+  },
+  {
+    "name": "Metal - Heavy - Polished - Chest",
+    "dr": 117,
+    "er": 20,
+    "rr": 0
+  }
+]

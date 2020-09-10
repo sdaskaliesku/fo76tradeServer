@@ -30,6 +30,7 @@ export const columns = [
   },
   createColumnDef({title: 'Abbr', field: 'abbreviation'}),
   createColumnDef({title: 'Type', field: 'filterFlag'}),
+  createColumnDef({title: 'ArmorType', field: 'armorType', visible: false}),
   createColumnDef({title: 'Level', field: 'itemLevel'}),
   createColumnDef({title: 'Count', field: 'count'}),
   createColumnDef({title: '1 star', field: 'legendaryMods.0.value'}),
