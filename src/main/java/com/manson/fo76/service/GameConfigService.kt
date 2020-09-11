@@ -120,7 +120,7 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
     }
 
     fun cleanItemName(name: String): String {
-        return name.replace("¢", "").replace("\$\$ZEUSGLYPH", "").trim()
+        return name.replace("¢", "", true).replace("\$\$ZEUSGLYPH", "", true).trim()
     }
 
     fun getPossibleItemName(name: String): String {
@@ -128,7 +128,7 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         for (nameMod in nameModifiers) {
             for (text in nameMod.texts.values) {
                 if (StringUtils.containsIgnoreCase(newName, text)) {
-                    newName = newName.replace(text, "")
+                    newName = newName.replace(text, "", true)
                 }
             }
         }
