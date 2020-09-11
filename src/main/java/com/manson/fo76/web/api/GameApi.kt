@@ -42,7 +42,17 @@ class GameApi @Autowired constructor(private val gameConfigService: GameConfigSe
     }
 
     @GetMapping(value = ["/armorType"], produces = ["application/json"])
-    fun getArmorType(@RequestParam dr: Int,@RequestParam er: Int,@RequestParam rr: Int): ArmorGrade {
+    fun getArmorType(@RequestParam dr: Int, @RequestParam er: Int, @RequestParam rr: Int): ArmorGrade {
         return gameConfigService.findArmorType(dr, rr, er)
+    }
+
+    @GetMapping(value = ["/cleanItemName"], produces = ["application/json"])
+    fun getCleanItemName(@RequestParam input: String): String {
+        return gameConfigService.getPossibleItemName(input)
+    }
+
+    @GetMapping(value = ["/nameModifiers"], produces = ["application/json"])
+    fun getNameModifiers(): List<XTranslatorConfig> {
+        return gameConfigService.nameModifiers
     }
 }
