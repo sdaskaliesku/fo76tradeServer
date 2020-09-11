@@ -239,6 +239,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         itemDTO.ownerInfo = ownerInfo
         itemDTO.stats = processItemCardEntries(item, itemDTO)
         itemDTO.armorGrade = gameConfigService.findArmorType(itemDTO)
+        itemDTO.text = itemDTO.text?.let { gameConfigService.cleanItemName(it) }
         if (shouldConvertItemName(itemDTO)) {
             itemDTO.newName = itemDTO.text?.let { gameConfigService.getPossibleItemName(it) }.toString()
         }

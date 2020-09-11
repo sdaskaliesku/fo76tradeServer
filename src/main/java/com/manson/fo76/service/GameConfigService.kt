@@ -119,8 +119,12 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         return findArmorType(dr, rr, er)
     }
 
+    fun cleanItemName(name: String): String {
+        return name.replace("¢", "").replace("\$\$ZEUSGLYPH", "").trim()
+    }
+
     fun getPossibleItemName(name: String): String {
-        var newName = name.replace("¢", "").replace("", "")
+        var newName = cleanItemName(name)
         for (nameMod in nameModifiers) {
             for (text in nameMod.texts.values) {
                 if (StringUtils.containsIgnoreCase(newName, text)) {
