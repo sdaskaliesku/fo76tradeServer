@@ -85,6 +85,10 @@ const modalFields = [
     field: 'description',
   },
   {
+    name: 'Name converted',
+    field: 'newName',
+  },
+  {
     name: 'Type',
     field: 'filterFlag',
   },

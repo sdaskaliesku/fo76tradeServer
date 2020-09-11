@@ -1,0 +1,4295 @@
+[
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Searing Puncturing Rocket"
+    },
+    "rec": "{-id=160, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03957A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Pint-Sized Slasher Knife"
+    },
+    "rec": "{-id=136, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000089",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Appalachian Thunder Pipe"
+    },
+    "rec": "{-id=67, -idMax=303, #text=INNR:WNAM}",
+    "sid": "790000D4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Blackened Combat Dagger"
+    },
+    "rec": "{-id=135, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A73",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quick Maximum Capacity"
+    },
+    "rec": "{-id=104, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039541",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quick Maximum Capacity"
+    },
+    "rec": "{-id=147, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03956C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Target Seeking Fat Man"
+    },
+    "rec": "{-id=270, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395C1",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Tactical Combat Dagger"
+    },
+    "rec": "{-id=125, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A6F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Radstag Hunting Knife"
+    },
+    "rec": "{-id=122, -idMax=138, #text=INNR:WNAM}",
+    "sid": "61009F4D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Grelok Sorcerer Staff"
+    },
+    "rec": "{-id=121, -idMax=138, #text=INNR:WNAM}",
+    "sid": "6100A6C8",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Electrified Serrated"
+    },
+    "rec": "{-id=74, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03982E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Electrified Serrated"
+    },
+    "rec": "{-id=108, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D71",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Screaming Eagle Wood"
+    },
+    "rec": "{-id=70, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000EB7",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quick High Capacity"
+    },
+    "rec": "{-id=105, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039542",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quick High Capacity"
+    },
+    "rec": "{-id=148, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03956D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Shocking Puncturing"
+    },
+    "rec": "{-id=161, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03957B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Calibrated Powerful"
+    },
+    "rec": "{-id=217, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03959D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Clandestine Service"
+    },
+    "rec": "{-id=41, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61009814",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Grognak Battle Mace"
+    },
+    "rec": "{-id=124, -idMax=138, #text=INNR:WNAM}",
+    "sid": "61009BB6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Recoil Compensated"
+    },
+    "rec": "{-id=86, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03952F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved Targeting"
+    },
+    "rec": "{-id=90, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039533",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved Scattered"
+    },
+    "rec": "{-id=91, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039534",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Recoil Compensated"
+    },
+    "rec": "{-id=140, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039565",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Nuka-Nuke Launcher"
+    },
+    "rec": "{-id=274, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395CD",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Gold Combat Dagger"
+    },
+    "rec": "{-id=126, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A70",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Summersville Fancy"
+    },
+    "rec": "{-id=4, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FD6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Flatwoods Fletcher"
+    },
+    "rec": "{-id=29, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100A44A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Radscorpion Venom"
+    },
+    "rec": "{-id=78, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039526",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved Charging"
+    },
+    "rec": "{-id=115, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03954C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Nuka-Cola Quantum"
+    },
+    "rec": "{-id=155, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039575",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hardened Piercing"
+    },
+    "rec": "{-id=214, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03959A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Experimental MIRV"
+    },
+    "rec": "{-id=269, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395C0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Lucille's Lullaby"
+    },
+    "rec": "{-id=64, -idMax=303, #text=INNR:WNAM}",
+    "sid": "610091D6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Troubleshooter's"
+    },
+    "rec": "{-id=2, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03950B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved Focused"
+    },
+    "rec": "{-id=92, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039535",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Maximum Capacity"
+    },
+    "rec": "{-id=107, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039544",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Maximum Capacity"
+    },
+    "rec": "{-id=150, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03956F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Nuka-Cola Cherry"
+    },
+    "rec": "{-id=154, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039574",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Boosted Agitated"
+    },
+    "rec": "{-id=203, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03958F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Troubleshooter's"
+    },
+    "rec": "{-id=24, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F7",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Troubleshooter's"
+    },
+    "rec": "{-id=14, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039810",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Somerset Special"
+    },
+    "rec": "{-id=278, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B015",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Anti-Power Armor"
+    },
+    "rec": "{-id=246, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61005C3C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Deep Cave Hunter"
+    },
+    "rec": "{-id=68, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100A553",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Mutant Slayer's"
+    },
+    "rec": "{-id=6, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03950F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Mutant Slayer's"
+    },
+    "rec": "{-id=20, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F3",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Mutant Slayer's"
+    },
+    "rec": "{-id=16, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039812",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Scorch Killer's"
+    },
+    "rec": "{-id=73, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04624A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Pioneer Scout's"
+    },
+    "rec": "{-id=36, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A6B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Blue Camouflage"
+    },
+    "rec": "{-id=48, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000F2",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Jack O' Lantern"
+    },
+    "rec": "{-id=54, -idMax=303, #text=INNR:WNAM}",
+    "sid": "4100027D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Screaming Eagle"
+    },
+    "rec": "{-id=69, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000E30",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Screaming Eagle"
+    },
+    "rec": "{-id=71, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000EB8",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "White Crocodile"
+    },
+    "rec": "{-id=5, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FD7",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tesla Capacitor"
+    },
+    "rec": "{-id=184, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007044",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Settler Special"
+    },
+    "rec": "{-id=30, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100A32D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Ghoul Slayer's"
+    },
+    "rec": "{-id=3, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03950C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Exterminator's"
+    },
+    "rec": "{-id=7, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039510",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Sharpshooter's"
+    },
+    "rec": "{-id=114, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03954B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved Short"
+    },
+    "rec": "{-id=119, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039550",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Rocket Swatter"
+    },
+    "rec": "{-id=258, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395B4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Ghoul Slayer's"
+    },
+    "rec": "{-id=21, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Exterminator's"
+    },
+    "rec": "{-id=22, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Asbestos Lined"
+    },
+    "rec": "{-id=86, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039612",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Ghoul Slayer's"
+    },
+    "rec": "{-id=11, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03980D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Exterminator's"
+    },
+    "rec": "{-id=13, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03980F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Croquet Mallet"
+    },
+    "rec": "{-id=132, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04B00A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Burning Barbed"
+    },
+    "rec": "{-id=80, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04BCEC",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Armor Piercing"
+    },
+    "rec": "{-id=216, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000F8",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Burning Barbed"
+    },
+    "rec": "{-id=114, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D77",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Starlet Sniper"
+    },
+    "rec": "{-id=42, -idMax=303, #text=INNR:WNAM}",
+    "sid": "610094FD",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Executioner's"
+    },
+    "rec": "{-id=19, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03951C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "High Capacity"
+    },
+    "rec": "{-id=108, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039545",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved Long"
+    },
+    "rec": "{-id=120, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039551",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "High Capacity"
+    },
+    "rec": "{-id=151, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039570",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Triple Barrel"
+    },
+    "rec": "{-id=194, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039586",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Boosted Fiery"
+    },
+    "rec": "{-id=200, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03958C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "High Capacity"
+    },
+    "rec": "{-id=212, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039598",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Rocket Hammer"
+    },
+    "rec": "{-id=260, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395B6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "VATS Enhanced"
+    },
+    "rec": "{-id=16, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395EF",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Safecracker's"
+    },
+    "rec": "{-id=25, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F8",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Deep Pocketed"
+    },
+    "rec": "{-id=88, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039614",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Executioner's"
+    },
+    "rec": "{-id=4, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039808",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Chain-wrapped"
+    },
+    "rec": "{-id=68, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039828",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stealth Blade"
+    },
+    "rec": "{-id=77, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039831",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tricentennial"
+    },
+    "rec": "{-id=65, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04385F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Tricentennial"
+    },
+    "rec": "{-id=38, -idMax=138, #text=INNR:WNAM}",
+    "sid": "043861",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Silver Lining"
+    },
+    "rec": "{-id=101, -idMax=103, #text=INNR:WNAM}",
+    "sid": "04857C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Black Diamond"
+    },
+    "rec": "{-id=129, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04B008",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bunker Buster"
+    },
+    "rec": "{-id=277, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B014",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Perfect Storm"
+    },
+    "rec": "{-id=282, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B019",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Glass-Covered"
+    },
+    "rec": "{-id=83, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04BCF5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Service Award"
+    },
+    "rec": "{-id=48, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A6D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Combat Dagger"
+    },
+    "rec": "{-id=127, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A71",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Pioneer Scout"
+    },
+    "rec": "{-id=38, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000EF",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hot Rod Shark"
+    },
+    "rec": "{-id=51, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000F5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Chrome Plated"
+    },
+    "rec": "{-id=62, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000FC",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Chain-wrapped"
+    },
+    "rec": "{-id=102, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D6B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stealth Blade"
+    },
+    "rec": "{-id=111, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D74",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Glass-Covered"
+    },
+    "rec": "{-id=117, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D7A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Wavy Willards"
+    },
+    "rec": "{-id=3, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FD5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Triple Barrel"
+    },
+    "rec": "{-id=247, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007046",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Special Issue"
+    },
+    "rec": "{-id=26, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100A4F0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Burning Torch"
+    },
+    "rec": "{-id=50, -idMax=138, #text=INNR:WNAM}",
+    "sid": "6100A6B5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Suppressor's"
+    },
+    "rec": "{-id=23, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039520",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Night-Vision"
+    },
+    "rec": "{-id=84, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03952D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "High Powered"
+    },
+    "rec": "{-id=97, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03953A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Glow-Sighted"
+    },
+    "rec": "{-id=101, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03953E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Comfort Grip"
+    },
+    "rec": "{-id=113, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03954A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Crystallized"
+    },
+    "rec": "{-id=127, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039558",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Night-Vision"
+    },
+    "rec": "{-id=138, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039563",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Glow-Sighted"
+    },
+    "rec": "{-id=144, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039569",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Long Bow Bar"
+    },
+    "rec": "{-id=166, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039580",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hair Trigger"
+    },
+    "rec": "{-id=226, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Regenerating"
+    },
+    "rec": "{-id=3, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E1",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Inquisitor's"
+    },
+    "rec": "{-id=41, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039622",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Nanofiliment"
+    },
+    "rec": "{-id=69, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03963E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Suppressor's"
+    },
+    "rec": "{-id=7, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03980B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Never Ending"
+    },
+    "rec": "{-id=26, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03981C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Critical .38"
+    },
+    "rec": "{-id=181, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046254",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Critical .45"
+    },
+    "rec": "{-id=182, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046255",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Critical .50"
+    },
+    "rec": "{-id=183, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046256",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Last Bastion"
+    },
+    "rec": "{-id=99, -idMax=103, #text=INNR:WNAM}",
+    "sid": "04857A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Trail Warden"
+    },
+    "rec": "{-id=102, -idMax=103, #text=INNR:WNAM}",
+    "sid": "04857D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Civil Unrest"
+    },
+    "rec": "{-id=281, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B018",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Black Knight"
+    },
+    "rec": "{-id=60, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000B89",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Night-Vision"
+    },
+    "rec": "{-id=9, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FDA",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tesla Dynamo"
+    },
+    "rec": "{-id=185, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007045",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Penta Barrel"
+    },
+    "rec": "{-id=249, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007048",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Instigating"
+    },
+    "rec": "{-id=10, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039513",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Berserker's"
+    },
+    "rec": "{-id=13, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039516",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Compensated"
+    },
+    "rec": "{-id=88, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039531",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bull Barrel"
+    },
+    "rec": "{-id=110, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039547",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Electrified"
+    },
+    "rec": "{-id=135, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039560",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Compensated"
+    },
+    "rec": "{-id=142, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039567",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Electrified"
+    },
+    "rec": "{-id=157, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039577",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Electrified"
+    },
+    "rec": "{-id=168, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039582",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quad Barrel"
+    },
+    "rec": "{-id=193, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039585",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Overcharged"
+    },
+    "rec": "{-id=207, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039593",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Three-Crank"
+    },
+    "rec": "{-id=208, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039594",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Life Saving"
+    },
+    "rec": "{-id=6, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Rad Powered"
+    },
+    "rec": "{-id=9, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E7",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Irradiating"
+    },
+    "rec": "{-id=76, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039608",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "BioCommMesh"
+    },
+    "rec": "{-id=82, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03960E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Aerodynamic"
+    },
+    "rec": "{-id=89, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039615",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Microcarbon"
+    },
+    "rec": "{-id=68, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03963D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Penetrating"
+    },
+    "rec": "{-id=10, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03980C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Instigating"
+    },
+    "rec": "{-id=18, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039814",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Berserker's"
+    },
+    "rec": "{-id=21, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039817",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Electrified"
+    },
+    "rec": "{-id=76, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039830",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Precise .38"
+    },
+    "rec": "{-id=175, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04624E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Precise .45"
+    },
+    "rec": "{-id=176, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04624F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Precise .50"
+    },
+    "rec": "{-id=177, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046250",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Refined .38"
+    },
+    "rec": "{-id=178, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046251",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Refined .45"
+    },
+    "rec": "{-id=179, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046252",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Refined .50"
+    },
+    "rec": "{-id=180, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046253",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Daisycutter"
+    },
+    "rec": "{-id=280, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B017",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Responder's"
+    },
+    "rec": "{-id=35, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A6A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Responder's"
+    },
+    "rec": "{-id=39, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000F0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Untarnished"
+    },
+    "rec": "{-id=59, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000FA",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Electrified"
+    },
+    "rec": "{-id=110, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D73",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Blood Eagle"
+    },
+    "rec": "{-id=30, -idMax=138, #text=INNR:WNAM}",
+    "sid": "4100119E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Candy-Claws"
+    },
+    "rec": "{-id=137, -idMax=138, #text=INNR:WNAM}",
+    "sid": "610091AA",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Matte Black"
+    },
+    "rec": "{-id=55, -idMax=303, #text=INNR:WNAM}",
+    "sid": "610091FF",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Blood Eagle"
+    },
+    "rec": "{-id=57, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100982F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Dark Matter"
+    },
+    "rec": "{-id=27, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100A4D7",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Concussive"
+    },
+    "rec": "{-id=0, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039509",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Assassin's"
+    },
+    "rec": "{-id=4, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03950D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Vampire's "
+    },
+    "rec": "{-id=20, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03951D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Anti-armor"
+    },
+    "rec": "{-id=22, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03951F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Endangerol"
+    },
+    "rec": "{-id=77, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039525",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Suppressed"
+    },
+    "rec": "{-id=85, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03952E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Marksman's"
+    },
+    "rec": "{-id=87, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039530",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "High Speed"
+    },
+    "rec": "{-id=96, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039539",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Compressed"
+    },
+    "rec": "{-id=132, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03955D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Vaporizing"
+    },
+    "rec": "{-id=133, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03955E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Suppressed"
+    },
+    "rec": "{-id=139, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039564",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Marksman's"
+    },
+    "rec": "{-id=141, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039566",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Incendiary"
+    },
+    "rec": "{-id=199, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03958B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Four-Crank"
+    },
+    "rec": "{-id=209, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039595",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Five-Crank"
+    },
+    "rec": "{-id=210, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039596",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Calibrated"
+    },
+    "rec": "{-id=219, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03959F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Rocket Bat"
+    },
+    "rec": "{-id=259, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395B5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Vanguard's"
+    },
+    "rec": "{-id=2, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Weightless"
+    },
+    "rec": "{-id=7, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Unyielding"
+    },
+    "rec": "{-id=8, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Incendiary"
+    },
+    "rec": "{-id=10, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E8",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Bolstering"
+    },
+    "rec": "{-id=14, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395ED",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Poisoner's"
+    },
+    "rec": "{-id=17, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Cavalier's"
+    },
+    "rec": "{-id=27, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395FA",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Sentinel's"
+    },
+    "rec": "{-id=30, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395FD",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Assassin's"
+    },
+    "rec": "{-id=32, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395FF",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Fortifying"
+    },
+    "rec": "{-id=33, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039600",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Sprinter's"
+    },
+    "rec": "{-id=35, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039602",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Custom Fit"
+    },
+    "rec": "{-id=90, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039616",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Buttressed"
+    },
+    "rec": "{-id=45, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039626",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Reinforced"
+    },
+    "rec": "{-id=48, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039629",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Fiberglass"
+    },
+    "rec": "{-id=49, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03962A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Buttressed"
+    },
+    "rec": "{-id=65, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03963A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Concussive"
+    },
+    "rec": "{-id=1, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039805",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Anti-armor"
+    },
+    "rec": "{-id=6, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03980A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Assassin's"
+    },
+    "rec": "{-id=12, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03980E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Lead Lined"
+    },
+    "rec": "{-id=63, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039823",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Puncturing"
+    },
+    "rec": "{-id=66, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039826",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Gamma Wave"
+    },
+    "rec": "{-id=244, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046265",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Stand Fast"
+    },
+    "rec": "{-id=100, -idMax=103, #text=INNR:WNAM}",
+    "sid": "04857B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Slay Bells"
+    },
+    "rec": "{-id=131, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04B009",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Candy Cane"
+    },
+    "rec": "{-id=133, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04B00B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Wiffle Bat"
+    },
+    "rec": "{-id=134, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A72",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Free State"
+    },
+    "rec": "{-id=40, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000F1",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Lead Lined"
+    },
+    "rec": "{-id=97, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D66",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Puncturing"
+    },
+    "rec": "{-id=100, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D69",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Survivor's"
+    },
+    "rec": "{-id=31, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D8D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Survivor's"
+    },
+    "rec": "{-id=31, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000D8E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Camouflage"
+    },
+    "rec": "{-id=66, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000D8F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Mole Miner"
+    },
+    "rec": "{-id=1, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FD3",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Wood Grain"
+    },
+    "rec": "{-id=2, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FD4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hex Barrel"
+    },
+    "rec": "{-id=248, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007047",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Nocturnal"
+    },
+    "rec": "{-id=9, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039512",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Stalker's"
+    },
+    "rec": "{-id=12, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039515",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Targeting"
+    },
+    "rec": "{-id=83, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03952C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Targeting"
+    },
+    "rec": "{-id=93, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039536",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Scattered"
+    },
+    "rec": "{-id=94, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039537",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bayoneted"
+    },
+    "rec": "{-id=109, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039546",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Snubnosed"
+    },
+    "rec": "{-id=111, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039548",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Sawed-Off"
+    },
+    "rec": "{-id=112, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039549",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bayoneted"
+    },
+    "rec": "{-id=152, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039571",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Nuka-Cola"
+    },
+    "rec": "{-id=153, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039573",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Shredding"
+    },
+    "rec": "{-id=195, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039587",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Repeating"
+    },
+    "rec": "{-id=198, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03958A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Maximized"
+    },
+    "rec": "{-id=206, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039592",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Six-Crank"
+    },
+    "rec": "{-id=211, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039597",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Converted"
+    },
+    "rec": "{-id=224, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Nocturnal"
+    },
+    "rec": "{-id=1, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395DF",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Auto Stim"
+    },
+    "rec": "{-id=13, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395EB",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Chameleon"
+    },
+    "rec": "{-id=26, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F9",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Acrobat's"
+    },
+    "rec": "{-id=29, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395FC",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Duelist's"
+    },
+    "rec": "{-id=31, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395FE",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Fortified"
+    },
+    "rec": "{-id=72, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039604",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Insulated"
+    },
+    "rec": "{-id=77, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039609",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Brawler's"
+    },
+    "rec": "{-id=85, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039611",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Stablized"
+    },
+    "rec": "{-id=87, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039613",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Pneumatic"
+    },
+    "rec": "{-id=93, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039619",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Laminated"
+    },
+    "rec": "{-id=66, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03963B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Vampire's"
+    },
+    "rec": "{-id=5, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039809",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stalker's"
+    },
+    "rec": "{-id=19, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039815",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Nocturnal"
+    },
+    "rec": "{-id=24, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03981A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hasty .38"
+    },
+    "rec": "{-id=172, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04624B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hasty .45"
+    },
+    "rec": "{-id=173, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04624C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hasty .50"
+    },
+    "rec": "{-id=174, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04624D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Steadfast"
+    },
+    "rec": "{-id=237, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04625E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Beta Wave"
+    },
+    "rec": "{-id=245, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046266",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Vault-Tec"
+    },
+    "rec": "{-id=34, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B00C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Frostbite"
+    },
+    "rec": "{-id=63, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B011",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Pyrolyzer"
+    },
+    "rec": "{-id=279, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B016",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Gardening"
+    },
+    "rec": "{-id=0, -idMax=11, #text=INNR:WNAM}",
+    "sid": "05386C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Atom Cats"
+    },
+    "rec": "{-id=50, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000F4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Blackbird"
+    },
+    "rec": "{-id=47, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000104",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Targeting"
+    },
+    "rec": "{-id=10, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FDB",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Communist"
+    },
+    "rec": "{-id=45, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61003F6B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Blackbird"
+    },
+    "rec": "{-id=9, -idMax=138, #text=INNR:WNAM}",
+    "sid": "61003F6D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Explosive"
+    },
+    "rec": "{-id=188, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007F22",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Fireworks"
+    },
+    "rec": "{-id=189, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007F23",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Flintlock"
+    },
+    "rec": "{-id=56, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61009643",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Mutant's"
+    },
+    "rec": "{-id=1, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03950A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Zealot's"
+    },
+    "rec": "{-id=5, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03950E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hunter's"
+    },
+    "rec": "{-id=8, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039511",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Junkie's"
+    },
+    "rec": "{-id=15, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039518",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bloodied"
+    },
+    "rec": "{-id=17, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03951A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Two Shot"
+    },
+    "rec": "{-id=18, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03951B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bleedout"
+    },
+    "rec": "{-id=76, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039523",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tactical"
+    },
+    "rec": "{-id=102, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03953F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Charging"
+    },
+    "rec": "{-id=116, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03954D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved"
+    },
+    "rec": "{-id=117, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03954E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved"
+    },
+    "rec": "{-id=118, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03954F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Extended"
+    },
+    "rec": "{-id=131, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03955C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tactical"
+    },
+    "rec": "{-id=145, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03956A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Dual Bar"
+    },
+    "rec": "{-id=167, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039581",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Agitated"
+    },
+    "rec": "{-id=204, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039590",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hardened"
+    },
+    "rec": "{-id=215, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03959B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Powerful"
+    },
+    "rec": "{-id=218, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03959E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Advanced"
+    },
+    "rec": "{-id=225, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Mutant's"
+    },
+    "rec": "{-id=4, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E2",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Zealot's"
+    },
+    "rec": "{-id=5, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E3",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Cloaking"
+    },
+    "rec": "{-id=11, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395E9",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Martyr's"
+    },
+    "rec": "{-id=18, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F1",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Hunter's"
+    },
+    "rec": "{-id=23, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Shocking"
+    },
+    "rec": "{-id=75, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039607",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Pocketed"
+    },
+    "rec": "{-id=78, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03960A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Weighted"
+    },
+    "rec": "{-id=94, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03961A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Improved"
+    },
+    "rec": "{-id=39, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039620",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Tempered"
+    },
+    "rec": "{-id=43, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039624",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Hardened"
+    },
+    "rec": "{-id=44, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039625",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Zealot's"
+    },
+    "rec": "{-id=46, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039627",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Shadowed"
+    },
+    "rec": "{-id=47, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039628",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Shadowed"
+    },
+    "rec": "{-id=54, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03962F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Enameled"
+    },
+    "rec": "{-id=58, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039633",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Shadowed"
+    },
+    "rec": "{-id=59, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039634",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Polished"
+    },
+    "rec": "{-id=61, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039636",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Tempered"
+    },
+    "rec": "{-id=63, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039638",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Hardened"
+    },
+    "rec": "{-id=64, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039639",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Mutant's"
+    },
+    "rec": "{-id=2, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039806",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Zealot's"
+    },
+    "rec": "{-id=3, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039807",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Hunter's"
+    },
+    "rec": "{-id=15, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039811",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Bloodied"
+    },
+    "rec": "{-id=22, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039818",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Junkie's"
+    },
+    "rec": "{-id=23, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039819",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Two Shot"
+    },
+    "rec": "{-id=25, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03981B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Security"
+    },
+    "rec": "{-id=59, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03981F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Extended"
+    },
+    "rec": "{-id=61, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039821",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Weighted"
+    },
+    "rec": "{-id=71, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03982B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stunning"
+    },
+    "rec": "{-id=75, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03982F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Serrated"
+    },
+    "rec": "{-id=78, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039832",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Mahogany"
+    },
+    "rec": "{-id=42, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039837",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Aluminum"
+    },
+    "rec": "{-id=45, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03983A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Shrouded"
+    },
+    "rec": "{-id=98, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0444E1",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Vigorous"
+    },
+    "rec": "{-id=242, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046263",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Critical"
+    },
+    "rec": "{-id=243, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046264",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "All Star"
+    },
+    "rec": "{-id=28, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04700F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "All Rise"
+    },
+    "rec": "{-id=128, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04B007",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Inventor"
+    },
+    "rec": "{-id=37, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B00D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Poisoned"
+    },
+    "rec": "{-id=56, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04BCEB",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Survival"
+    },
+    "rec": "{-id=49, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A6E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Poisoned"
+    },
+    "rec": "{-id=90, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D5F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Security"
+    },
+    "rec": "{-id=93, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D62",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Extended"
+    },
+    "rec": "{-id=95, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D64",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Weighted"
+    },
+    "rec": "{-id=105, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D6E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stunning"
+    },
+    "rec": "{-id=109, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D72",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Serrated"
+    },
+    "rec": "{-id=112, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D75",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Jet Pack"
+    },
+    "rec": "{-id=71, -idMax=103, #text=INNR:WNAM}",
+    "sid": "6100696E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Poisoned"
+    },
+    "rec": "{-id=190, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007F24",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Furious"
+    },
+    "rec": "{-id=11, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039514",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Medic's"
+    },
+    "rec": "{-id=14, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039517",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Medic's"
+    },
+    "rec": "{-id=21, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03951E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Flaming"
+    },
+    "rec": "{-id=79, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039528",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bow Bar"
+    },
+    "rec": "{-id=80, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039529",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Muzzled"
+    },
+    "rec": "{-id=89, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039532",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Focused"
+    },
+    "rec": "{-id=95, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039538",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Sighted"
+    },
+    "rec": "{-id=103, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039540",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Muzzled"
+    },
+    "rec": "{-id=143, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039568",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Sighted"
+    },
+    "rec": "{-id=146, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03956B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Flaming"
+    },
+    "rec": "{-id=158, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039578",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Flaming"
+    },
+    "rec": "{-id=169, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039583",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Excited"
+    },
+    "rec": "{-id=202, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03958E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Boosted"
+    },
+    "rec": "{-id=205, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039591",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Painted"
+    },
+    "rec": "{-id=32, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395AE",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Thrower"
+    },
+    "rec": "{-id=291, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395D2",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Powered"
+    },
+    "rec": "{-id=28, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395FB",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Cunning"
+    },
+    "rec": "{-id=34, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039601",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Muffled"
+    },
+    "rec": "{-id=81, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03960D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Polymer"
+    },
+    "rec": "{-id=50, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03962B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Treated"
+    },
+    "rec": "{-id=55, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039630",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Studded"
+    },
+    "rec": "{-id=56, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039631",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Painted"
+    },
+    "rec": "{-id=57, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039632",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Alloyed"
+    },
+    "rec": "{-id=60, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039635",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Furious"
+    },
+    "rec": "{-id=17, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039813",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Medic's"
+    },
+    "rec": "{-id=20, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039816",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Searing"
+    },
+    "rec": "{-id=79, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039833",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Swatter"
+    },
+    "rec": "{-id=130, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03983C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Refined"
+    },
+    "rec": "{-id=192, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046257",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Focused"
+    },
+    "rec": "{-id=232, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046259",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tweaked"
+    },
+    "rec": "{-id=240, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046261",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Vicious"
+    },
+    "rec": "{-id=241, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046262",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "Mothman"
+    },
+    "rec": "{-id=6, -idMax=11, #text=INNR:WNAM}",
+    "sid": "04A9C0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Burning"
+    },
+    "rec": "{-id=82, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04BCEE",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Fireman"
+    },
+    "rec": "{-id=58, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000F9",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Scabber"
+    },
+    "rec": "{-id=46, -idMax=303, #text=INNR:WNAM}",
+    "sid": "41000103",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stanley"
+    },
+    "rec": "{-id=123, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000AE3",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Searing"
+    },
+    "rec": "{-id=113, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D76",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Burning"
+    },
+    "rec": "{-id=116, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D79",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Ghillie"
+    },
+    "rec": "{-id=38, -idMax=103, #text=INNR:WNAM}",
+    "sid": "41001044",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Flaming"
+    },
+    "rec": "{-id=186, -idMax=303, #text=INNR:WNAM}",
+    "sid": "61007F20",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Ghillie"
+    },
+    "rec": "{-id=28, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100A455",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Frenzy"
+    },
+    "rec": "{-id=75, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039522",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Fluted"
+    },
+    "rec": "{-id=81, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03952A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Vented"
+    },
+    "rec": "{-id=98, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03953B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Ported"
+    },
+    "rec": "{-id=99, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03953C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Finned"
+    },
+    "rec": "{-id=100, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03953D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Scoped"
+    },
+    "rec": "{-id=121, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039552",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Scoped"
+    },
+    "rec": "{-id=122, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039553",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Scoped"
+    },
+    "rec": "{-id=124, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039555",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Scoped"
+    },
+    "rec": "{-id=134, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03955F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bladed"
+    },
+    "rec": "{-id=156, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039576",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Spiked"
+    },
+    "rec": "{-id=159, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039579",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Steady"
+    },
+    "rec": "{-id=170, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039584",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Lobber"
+    },
+    "rec": "{-id=230, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395AA",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Braced"
+    },
+    "rec": "{-id=73, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039605",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Leaded"
+    },
+    "rec": "{-id=79, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03960B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Padded"
+    },
+    "rec": "{-id=84, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039610",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Sturdy"
+    },
+    "rec": "{-id=96, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03961C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Welded"
+    },
+    "rec": "{-id=42, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039623",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Boiled"
+    },
+    "rec": "{-id=52, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03962D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Girded"
+    },
+    "rec": "{-id=53, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03962E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Welded"
+    },
+    "rec": "{-id=62, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039637",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Curved"
+    },
+    "rec": "{-id=62, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039822",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Barbed"
+    },
+    "rec": "{-id=65, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039825",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Spiked"
+    },
+    "rec": "{-id=67, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039827",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Bladed"
+    },
+    "rec": "{-id=69, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039829",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Hooked"
+    },
+    "rec": "{-id=72, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03982C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Heated"
+    },
+    "rec": "{-id=73, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03982D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Gilded"
+    },
+    "rec": "{-id=35, -idMax=303, #text=INNR:WNAM}",
+    "sid": "042BE4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Golden"
+    },
+    "rec": "{-id=36, -idMax=303, #text=INNR:WNAM}",
+    "sid": "042BE5",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Fierce"
+    },
+    "rec": "{-id=231, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046258",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Severe"
+    },
+    "rec": "{-id=234, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04625B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Speedy"
+    },
+    "rec": "{-id=235, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04625C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Snappy"
+    },
+    "rec": "{-id=236, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04625D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Chef's"
+    },
+    "rec": "{-id=29, -idMax=138, #text=INNR:WNAM}",
+    "sid": "047010",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Modern"
+    },
+    "rec": "{-id=37, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04B006",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Barbed"
+    },
+    "rec": "{-id=81, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04BCED",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Horned"
+    },
+    "rec": "{-id=84, -idMax=138, #text=INNR:WNAM}",
+    "sid": "04BCF6",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Yellow"
+    },
+    "rec": "{-id=34, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A69",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Gilded"
+    },
+    "rec": "{-id=47, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A6C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Curved"
+    },
+    "rec": "{-id=96, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D65",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Barbed"
+    },
+    "rec": "{-id=99, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D68",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Spiked"
+    },
+    "rec": "{-id=101, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D6A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Bladed"
+    },
+    "rec": "{-id=103, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D6C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Hooked"
+    },
+    "rec": "{-id=106, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D6F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Heated"
+    },
+    "rec": "{-id=107, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D70",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Barbed"
+    },
+    "rec": "{-id=115, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D78",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Horned"
+    },
+    "rec": "{-id=118, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D7B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Cursed"
+    },
+    "rec": "{-id=52, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41001399",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Cursed"
+    },
+    "rec": "{-id=251, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100A2D2",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Karma"
+    },
+    "rec": "{-id=74, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039521",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Recon"
+    },
+    "rec": "{-id=82, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03952B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quick"
+    },
+    "rec": "{-id=106, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039543",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Short"
+    },
+    "rec": "{-id=125, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039556",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Short"
+    },
+    "rec": "{-id=128, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039559",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Large"
+    },
+    "rec": "{-id=136, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039561",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Recon"
+    },
+    "rec": "{-id=137, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039562",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quick"
+    },
+    "rec": "{-id=149, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03956E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Large"
+    },
+    "rec": "{-id=196, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039588",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Fiery"
+    },
+    "rec": "{-id=201, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03958D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tuned"
+    },
+    "rec": "{-id=227, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A7",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Rapid"
+    },
+    "rec": "{-id=253, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395AF",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Lucky"
+    },
+    "rec": "{-id=19, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395F2",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Sharp"
+    },
+    "rec": "{-id=36, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039603",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Dense"
+    },
+    "rec": "{-id=92, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039618",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Sleek"
+    },
+    "rec": "{-id=95, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03961B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Resin"
+    },
+    "rec": "{-id=67, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03963C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Shock"
+    },
+    "rec": "{-id=57, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03981D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Large"
+    },
+    "rec": "{-id=60, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039820",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Sharp"
+    },
+    "rec": "{-id=70, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03982A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Cedar"
+    },
+    "rec": "{-id=46, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03983B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Fancy"
+    },
+    "rec": "{-id=33, -idMax=303, #text=INNR:WNAM}",
+    "sid": "041008",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Hasty"
+    },
+    "rec": "{-id=233, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04625A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Tuned"
+    },
+    "rec": "{-id=239, -idMax=303, #text=INNR:WNAM}",
+    "sid": "046260",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Prime"
+    },
+    "rec": "{-id=171, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04B00E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Shark"
+    },
+    "rec": "{-id=33, -idMax=138, #text=INNR:WNAM}",
+    "sid": "053A68",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Shock"
+    },
+    "rec": "{-id=91, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D60",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Large"
+    },
+    "rec": "{-id=94, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D63",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Sharp"
+    },
+    "rec": "{-id=104, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D6D",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "105mm"
+    },
+    "rec": "{-id=7, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FD8",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonHandHeld",
+    "texts": {
+      "en": "200mm"
+    },
+    "rec": "{-id=8, -idMax=11, #text=INNR:WNAM}",
+    "sid": "61000FD9",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Boney"
+    },
+    "rec": "{-id=8, -idMax=138, #text=INNR:WNAM}",
+    "sid": "61003F6C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Turbo"
+    },
+    "rec": "{-id=120, -idMax=138, #text=INNR:WNAM}",
+    "sid": "61005E5E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Quad"
+    },
+    "rec": "{-id=16, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039519",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Long"
+    },
+    "rec": "{-id=123, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039554",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Long"
+    },
+    "rec": "{-id=126, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039557",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Long"
+    },
+    "rec": "{-id=129, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03955A",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Long"
+    },
+    "rec": "{-id=130, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03955B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Huge"
+    },
+    "rec": "{-id=197, -idMax=303, #text=INNR:WNAM}",
+    "sid": "039589",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": ".308"
+    },
+    "rec": "{-id=221, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A1",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stun"
+    },
+    "rec": "{-id=58, -idMax=138, #text=INNR:WNAM}",
+    "sid": "03981E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Grey"
+    },
+    "rec": "{-id=43, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039838",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Blue"
+    },
+    "rec": "{-id=44, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039839",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "True"
+    },
+    "rec": "{-id=238, -idMax=303, #text=INNR:WNAM}",
+    "sid": "04625F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Gold"
+    },
+    "rec": "{-id=61, -idMax=303, #text=INNR:WNAM}",
+    "sid": "410000FB",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Bats"
+    },
+    "rec": "{-id=44, -idMax=303, #text=INNR:WNAM}",
+    "sid": "4100027C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Stun"
+    },
+    "rec": "{-id=92, -idMax=138, #text=INNR:WNAM}",
+    "sid": "41000D61",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Long"
+    },
+    "rec": "{-id=191, -idMax=303, #text=INNR:WNAM}",
+    "sid": "610064D7",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": ".38"
+    },
+    "rec": "{-id=220, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": ".45"
+    },
+    "rec": "{-id=222, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A2",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": ".50"
+    },
+    "rec": "{-id=223, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395A3",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Tan"
+    },
+    "rec": "{-id=70, -idMax=103, #text=INNR:WNAM}",
+    "sid": "0395EC",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "BOS"
+    },
+    "rec": "{-id=51, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03962C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Red"
+    },
+    "rec": "{-id=40, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039835",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonMelee",
+    "texts": {
+      "en": "Oak"
+    },
+    "rec": "{-id=41, -idMax=138, #text=INNR:WNAM}",
+    "sid": "039836",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "R91"
+    },
+    "rec": "{-id=43, -idMax=303, #text=INNR:WNAM}",
+    "sid": "6100649A",
+    "enabled": true
+  }
+]

@@ -33,6 +33,7 @@ import org.springframework.stereotype.Service
 class ItemConverterService @Autowired constructor(private val gameConfigService: GameConfigService) {
 
     private val IGNORED_CARDS: MutableSet<ItemCardText> = mutableSetOf(ItemCardText.LEG_MODS, ItemCardText.DESC)
+    private val TYPES_FOR_NAME_CONVERT: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
 
     private fun processModDataItems(
             modData: ModData?,
@@ -202,6 +203,10 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return filterFlag
     }
 
+    private fun shouldConvertItemName(item: ItemDTO): Boolean {
+        return TYPES_FOR_NAME_CONVERT.contains(item.filterFlag)
+    }
+
     private fun convertItem(item: ItemDescriptor, user: User): ItemDTO? {
         val objectMap: MutableMap<String, Any?>? = JsonParser.objectToMap(item)
         if (MapUtils.isEmpty(objectMap)) {
@@ -234,6 +239,9 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         itemDTO.ownerInfo = ownerInfo
         itemDTO.stats = processItemCardEntries(item, itemDTO)
         itemDTO.armorGrade = gameConfigService.findArmorType(itemDTO)
+        if (shouldConvertItemName(itemDTO)) {
+            itemDTO.newName = itemDTO.text?.let { gameConfigService.getPossibleItemName(it) }.toString()
+        }
         return itemDTO
     }
 

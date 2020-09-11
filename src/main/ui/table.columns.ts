@@ -22,6 +22,7 @@ export const columns = [
     },
   },
   createColumnDef({title: 'Name', field: 'text'}),
+  createColumnDef({title: 'Name converted', field: 'newName', visible: false}),
   createColumnDef({title: 'Account', field: 'ownerInfo.accountOwner'}),
   createColumnDef({title: 'Character', field: 'ownerInfo.characterOwner'}),
   {

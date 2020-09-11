@@ -14,6 +14,7 @@ import java.nio.file.Paths
 import java.util.ArrayList
 import java.util.HashMap
 import java.util.stream.Collectors
+import org.apache.commons.lang3.StringUtils
 import org.junit.jupiter.api.Test
 
 class PopulateLegModsConfig {
@@ -35,6 +36,46 @@ class PopulateLegModsConfig {
         }
         OM.writeValue(output, xTranslatorConfigs)
     }
+
+    fun shouldIgnoreConfig(config: XTranslatorConfig): Boolean {
+        val values = config.texts.values
+        for (value in values) {
+            if (StringUtils.isBlank(value) || StringUtils.equalsIgnoreCase(value, "black")) {
+                return true
+            }
+            for (ignored in ignoredKeyWords) {
+                if (StringUtils.containsIgnoreCase(value, ignored)) {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+
+    private val ignoredKeyWords = listOf("rifle", "harpoon", "Napalmer", "Headlamp", "Revolver", "Shotgun", "Pistol", "Gun", "Slug Buster", "Plasma", "Cryo", "The Fixer", "Shi", "Double", "Handmade", "*", "Automatic", "Light", "Heavy", "Assault", "Flame", "The")
+
+    @Test
+    internal fun nameModifiers() {
+        val input = File("./test_resources/name_modifiers_en.xml")
+        val output = File("name.modifiers.json")
+        val fo76Strings = xTranslatorParser.parse(input)
+        val configs = fo76Strings.stream().map { obj: Fo76String -> XTranslatorConfig.fromFo76String(obj) }
+                .collect(Collectors.toList())
+        val filtered: ArrayList<XTranslatorConfig> = ArrayList<XTranslatorConfig>()
+        val ignoredIds: ArrayList<String> = ArrayList()
+        for (config in configs) {
+            if (!shouldIgnoreConfig(config)) {
+                filtered.add(config)
+            } else {
+                config.sid?.let { ignoredIds.add(it) }
+            }
+        }
+        // TODO: put "deep pocketed" BEFORE "pocketed" !!!
+        filtered.sortByDescending { it.texts.values.first().length }
+        OM.writeValue(output, filtered)
+        OM.writeValue(File("ignored.name.modifiers.ids.json"), ignoredIds)
+    }
+
 
     @Test
     @Throws(Exception::class)
@@ -84,7 +125,7 @@ class PopulateLegModsConfig {
 //            descriptor.translations.put(v!!.lang, v.source)
             descriptor.id = k.edid
             descriptor.sid = k.sid
-            descriptor.rec = k.rec
+            descriptor.rec = k.rec.toString()
         }
         OM.writeValue(File("legModsconfig2.json"), descriptors)
     }

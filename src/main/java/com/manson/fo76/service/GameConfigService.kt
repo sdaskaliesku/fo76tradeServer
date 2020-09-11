@@ -27,6 +27,7 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         private const val LEG_MODS_CONFIG_FILE = "legendaryMods.config.json"
         private const val AMMO_TYPES_CONFIG_FILE = "ammo.types.json"
         private const val ARMOR_CONFIG_FILE = "armor.config.json"
+        private const val NAME_MODIFIERS_CONFIG_FILE = "name.modifiers.json"
         private val LEG_MOD_TYPE_REF: TypeReference<List<LegendaryModDescriptor>> = object : TypeReference<List<LegendaryModDescriptor>>() {}
         private val XTRANSLATOR_TYPE_REF: TypeReference<List<XTranslatorConfig>> = object : TypeReference<List<XTranslatorConfig>>() {}
         private val ARMOR_CONFIG_TYPE_REF: TypeReference<List<ArmorConfig>> = object : TypeReference<List<ArmorConfig>>() {}
@@ -47,11 +48,13 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
 
     var legModsConfig: List<LegendaryModDescriptor>
     var ammoTypes: List<XTranslatorConfig>
+    var nameModifiers: List<XTranslatorConfig>
     var armorConfigs: List<ArmorConfig>
 
     init {
         this.legModsConfig = loadConfig(objectMapper, LEG_MODS_CONFIG_FILE, LEG_MOD_TYPE_REF, XTranslatorConfig::enabled)
         this.ammoTypes = loadConfig(objectMapper, AMMO_TYPES_CONFIG_FILE, XTRANSLATOR_TYPE_REF, XTranslatorConfig::enabled)
+        this.nameModifiers = loadConfig(objectMapper, NAME_MODIFIERS_CONFIG_FILE, XTRANSLATOR_TYPE_REF, XTranslatorConfig::enabled)
         this.armorConfigs = loadConfig(objectMapper, ARMOR_CONFIG_FILE, ARMOR_CONFIG_TYPE_REF, { true })
     }
 
@@ -114,5 +117,19 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
             rr -= 25
         }
         return findArmorType(dr, rr, er)
+    }
+
+    fun getPossibleItemName(name: String): String {
+        var newName = name.replace("¢", "").replace("", "")
+        for (nameMod in nameModifiers) {
+            for (text in nameMod.texts.values) {
+                if (StringUtils.containsIgnoreCase(newName, text)) {
+                    newName = newName.replace(text, "")
+                }
+            }
+        }
+        return if (StringUtils.isBlank(newName)) {
+            ""
+        } else newName.trim()
     }
 }

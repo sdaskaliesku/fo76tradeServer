@@ -16,7 +16,7 @@ open class XTranslatorConfig {
             val xTranslatorConfig = XTranslatorConfig()
             xTranslatorConfig.id = fo76String.edid
             xTranslatorConfig.sid = fo76String.sid
-            xTranslatorConfig.rec = fo76String.rec
+            xTranslatorConfig.rec = fo76String.rec.toString()
             val texts: MutableMap<String, String> = HashMap()
             texts[fo76String.lang] = fo76String.source!!
             xTranslatorConfig.texts = texts

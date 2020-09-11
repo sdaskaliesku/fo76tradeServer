@@ -7,7 +7,7 @@ class Fo76String {
     var edid: String? = null
 
     @JsonProperty("REC")
-    var rec: String? = null
+    var rec: Object? = null
 
     @JsonProperty("Source")
     var source: String? = null
