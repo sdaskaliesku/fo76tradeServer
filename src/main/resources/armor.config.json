@@ -1,1928 +1,2390 @@
 [
   {
-    "name": "Robot - Light - Arm",
+    "helper": "10-10-10",
     "dr": 10,
     "er": 10,
-    "rr": 10
+    "rr": 10,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0010F375",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Light - Leg",
-    "dr": 10,
-    "er": 10,
-    "rr": 10
-  },
-  {
-    "name": "Leather - Light - Arm",
+    "helper": "11-21-0",
     "dr": 11,
     "er": 21,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Leg",
-    "dr": 11,
-    "er": 21,
-    "rr": 0
-  },
-  {
-    "name": "Wood - Light - Leg",
+    "helper": "12-6-0",
     "dr": 12,
     "er": 6,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "wood-limb",
+    "armorType": "wood",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0012C3B0",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Arm",
+    "helper": "12-12-0",
     "dr": 12,
     "er": 12,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Leg",
-    "dr": 12,
-    "er": 12,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Light - Boiled - Arm",
-    "dr": 12,
-    "er": 31,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Light - Shadowed - Arm",
+    "helper": "12-31-0",
     "dr": 12,
     "er": 31,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Boiled - Leg",
-    "dr": 12,
-    "er": 31,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Light - Shadowed - Leg",
-    "dr": 12,
-    "er": 31,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Sturdy - Arm",
+    "helper": "13-10-13",
     "dr": 13,
     "er": 10,
-    "rr": 13
+    "rr": 13,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Leg",
+    "helper": "13-13-13",
     "dr": 13,
     "er": 13,
-    "rr": 13
+    "rr": 13,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Arm",
+    "helper": "14-10-14",
     "dr": 14,
     "er": 10,
-    "rr": 14
+    "rr": 14,
+    "shortTerm": "trapper-limb",
+    "armorType": "trapper",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "00110895",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Leg",
-    "dr": 14,
-    "er": 10,
-    "rr": 14
-  },
-  {
-    "name": "Combat - Sturdy - Arm",
+    "helper": "15-15-0",
     "dr": 15,
     "er": 15,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Sturdy - Leg",
-    "dr": 15,
-    "er": 15,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Light - Fiberglass - Arm",
-    "dr": 15,
-    "er": 22,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Light - Fiberglass - Leg",
+    "helper": "15-22-0",
     "dr": 15,
     "er": 22,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Girded - Arm",
+    "helper": "16-34-0",
     "dr": 16,
     "er": 34,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Girded - Leg",
-    "dr": 16,
-    "er": 34,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Light - Chest",
+    "helper": "16-45-0",
     "dr": 16,
     "er": 45,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Raider - Light - Arm",
+    "helper": "17-8-0",
     "dr": 17,
     "er": 8,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0018E411",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Raider - Light - Leg",
-    "dr": 17,
-    "er": 8,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Heavy - Arm",
-    "dr": 17,
-    "er": 17,
-    "rr": 15
-  },
-  {
-    "name": "Robot - Heavy - Leg",
+    "helper": "17-17-15",
     "dr": 17,
     "er": 17,
-    "rr": 15
+    "rr": 15,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0010F375",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Leather - Sturdy - Arm",
+    "helper": "17-36-0",
     "dr": 17,
     "er": 36,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Sturdy - Leg",
-    "dr": 17,
-    "er": 36,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Sturdy - Fiberglass - Arm",
+    "helper": "18-25-0",
     "dr": 18,
     "er": 25,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Sturdy - Fiberglass - Leg",
-    "dr": 18,
-    "er": 25,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Sturdy - Boiled - Arm",
-    "dr": 18,
-    "er": 46,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Sturdy - Shadowed - Arm",
+    "helper": "18-46-0",
     "dr": 18,
     "er": 46,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Sturdy - Boiled - Leg",
-    "dr": 18,
-    "er": 46,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Sturdy - Shadowed - Leg",
-    "dr": 18,
-    "er": 46,
-    "rr": 0
-  },
-  {
-    "name": "Marine - Sturdy - Arm",
+    "helper": "19-14-0",
     "dr": 19,
     "er": 14,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "marine-limb",
+    "armorType": "marine",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AA",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Marine - Sturdy - Leg",
-    "dr": 19,
-    "er": 14,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Light - Reinforced - Arm",
-    "dr": 19,
-    "er": 19,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Light - Shadowed - Arm",
+    "helper": "19-19-0",
     "dr": 19,
     "er": 19,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Reinforced - Leg",
-    "dr": 19,
-    "er": 19,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Light - Shadowed - Leg",
-    "dr": 19,
-    "er": 19,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Light - Treated - Arm",
+    "helper": "19-37-0",
     "dr": 19,
     "er": 37,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Treated - Leg",
-    "dr": 19,
-    "er": 37,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Light - Arm",
+    "helper": "20-5-0",
     "dr": 20,
     "er": 5,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0004B933",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Metal - Light - Leg",
-    "dr": 20,
-    "er": 5,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Heavy - Arm",
-    "dr": 20,
-    "er": 20,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Heavy - Leg",
+    "helper": "20-20-0",
     "dr": 20,
     "er": 20,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Robot - Light - Painted - Arm",
+    "helper": "20-20-15",
     "dr": 20,
     "er": 20,
-    "rr": 15
+    "rr": 15,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0010F375",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Light - Shadowed - Arm",
-    "dr": 20,
-    "er": 20,
-    "rr": 15
-  },
-  {
-    "name": "Robot - Light - Painted - Leg",
-    "dr": 20,
-    "er": 20,
-    "rr": 15
-  },
-  {
-    "name": "Robot - Light - Shadowed - Leg",
-    "dr": 20,
-    "er": 20,
-    "rr": 15
-  },
-  {
-    "name": "Leather - Light - Studded - Arm",
+    "helper": "21-51-0",
     "dr": 21,
     "er": 51,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Studded - Leg",
-    "dr": 21,
-    "er": 51,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Sturdy - Chest",
+    "helper": "21-59-0",
     "dr": 21,
     "er": 59,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Light - Boiled - Chest",
+    "helper": "21-60-0",
     "dr": 21,
     "er": 60,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Shadowed - Chest",
-    "dr": 21,
-    "er": 60,
-    "rr": 0
-  },
-  {
-    "name": "Wood - Light - Arm",
+    "helper": "22-6-0",
     "dr": 22,
     "er": 6,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "wood-limb",
+    "armorType": "wood",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0012C3B0",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Raider - Sturdy - Arm",
+    "helper": "22-10-0",
     "dr": 22,
     "er": 10,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E411",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Sturdy - Leg",
-    "dr": 22,
-    "er": 10,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Sturdy - Reinforced - Arm",
-    "dr": 22,
-    "er": 22,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Sturdy - Shadowed - Arm",
+    "helper": "22-22-0",
     "dr": 22,
     "er": 22,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Sturdy - Reinforced - Leg",
+    "helper": "22-22-16",
     "dr": 22,
     "er": 22,
-    "rr": 0
+    "rr": 16,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0010F375",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Sturdy - Shadowed - Leg",
-    "dr": 22,
-    "er": 22,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Light - Enameled - Arm",
-    "dr": 22,
-    "er": 22,
-    "rr": 16
-  },
-  {
-    "name": "Robot - Light - Enameled - Leg",
-    "dr": 22,
-    "er": 22,
-    "rr": 16
-  },
-  {
-    "name": "Leather - Heavy - Arm",
+    "helper": "22-47-0",
     "dr": 22,
     "er": 47,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Leather - Heavy - Leg",
-    "dr": 22,
-    "er": 47,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Sturdy - Girded - Arm",
-    "dr": 22,
-    "er": 49,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Sturdy - Girded - Leg",
+    "helper": "22-49-0",
     "dr": 22,
     "er": 49,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Welded - Arm",
+    "helper": "23-14-23",
     "dr": 23,
     "er": 14,
-    "rr": 23
+    "rr": 23,
+    "shortTerm": "trapper-limb",
+    "armorType": "trapper",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "00110895",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Welded - Leg",
-    "dr": 23,
-    "er": 14,
-    "rr": 23
-  },
-  {
-    "name": "Robot - Sturdy - Painted - Arm",
-    "dr": 23,
-    "er": 20,
-    "rr": 18
-  },
-  {
-    "name": "Robot - Sturdy - Shadowed - Arm",
+    "helper": "23-20-18",
     "dr": 23,
     "er": 20,
-    "rr": 18
+    "rr": 18,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Light - Alloyed - Arm",
+    "helper": "23-23-17",
     "dr": 23,
     "er": 23,
-    "rr": 17
+    "rr": 17,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0010F375",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Light - Alloyed - Leg",
+    "helper": "23-23-18",
     "dr": 23,
     "er": 23,
-    "rr": 17
+    "rr": 18,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Painted - Leg",
-    "dr": 23,
-    "er": 23,
-    "rr": 18
-  },
-  {
-    "name": "Robot - Sturdy - Shadowed - Leg",
-    "dr": 23,
-    "er": 23,
-    "rr": 18
-  },
-  {
-    "name": "Combat - Heavy - Fiberglass - Arm",
+    "helper": "23-30-0",
     "dr": 23,
     "er": 30,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Heavy - Fiberglass - Leg",
-    "dr": 23,
-    "er": 30,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Boiled - Arm",
-    "dr": 23,
-    "er": 57,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Shadowed - Arm",
+    "helper": "23-57-0",
     "dr": 23,
     "er": 57,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Leather - Heavy - Boiled - Leg",
-    "dr": 23,
-    "er": 57,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Shadowed - Leg",
-    "dr": 23,
-    "er": 57,
-    "rr": 0
-  },
-  {
-    "name": "Marine - Sturdy - Welded - Arm",
+    "helper": "24-19-5",
     "dr": 24,
     "er": 19,
-    "rr": 5
+    "rr": 5,
+    "shortTerm": "marine-limb",
+    "armorType": "marine",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AA",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Marine - Sturdy - Welded - Leg",
-    "dr": 24,
-    "er": 19,
-    "rr": 5
-  },
-  {
-    "name": "Robot - Light - Chest",
-    "dr": 24,
-    "er": 24,
-    "rr": 13
-  },
-  {
-    "name": "Robot - Light - Polished - Arm",
+    "helper": "24-24-13",
     "dr": 24,
     "er": 24,
-    "rr": 18
+    "rr": 13,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0010F370",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Light - Polished - Leg",
+    "helper": "24-24-18",
     "dr": 24,
     "er": 24,
-    "rr": 18
+    "rr": 18,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0010F375",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Trapper - Sturdy - Tempered - Arm",
+    "helper": "25-15-25",
     "dr": 25,
     "er": 15,
-    "rr": 25
+    "rr": 25,
+    "shortTerm": "trapper-limb",
+    "armorType": "trapper",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "00110895",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Tempered - Leg",
-    "dr": 25,
-    "er": 15,
-    "rr": 25
-  },
-  {
-    "name": "Scout - Sturdy - Arm",
-    "dr": 25,
-    "er": 20,
-    "rr": 0
-  },
-  {
-    "name": "Scout - Sturdy - Leg",
+    "helper": "25-20-0",
     "dr": 25,
     "er": 20,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-limb",
+    "armorType": "scout",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46B1",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Enameled - Arm",
+    "helper": "25-22-19",
     "dr": 25,
     "er": 22,
-    "rr": 19
+    "rr": 19,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Light - Polymer - Arm",
+    "helper": "25-25-0",
     "dr": 25,
     "er": 25,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Polymer - Leg",
+    "helper": "25-25-19",
     "dr": 25,
     "er": 25,
-    "rr": 0
+    "rr": 19,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Enameled - Leg",
-    "dr": 25,
-    "er": 25,
-    "rr": 19
-  },
-  {
-    "name": "Leather - Sturdy - Treated - Arm",
+    "helper": "25-52-0",
     "dr": 25,
     "er": 52,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Sturdy - Treated - Leg",
-    "dr": 25,
-    "er": 52,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Sturdy - Arm",
+    "helper": "26-6-0",
     "dr": 26,
     "er": 6,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0004B933",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Leg",
-    "dr": 26,
-    "er": 6,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Light - Welded - Arm",
-    "dr": 26,
-    "er": 12,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Light - Welded - Leg",
+    "helper": "26-12-0",
     "dr": 26,
     "er": 12,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0018E411",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Marine - Sturdy - Tempered - Arm",
+    "helper": "26-21-7",
     "dr": 26,
     "er": 21,
-    "rr": 7
+    "rr": 7,
+    "shortTerm": "marine-limb",
+    "armorType": "marine",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AA",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Marine - Sturdy - Tempered - Leg",
-    "dr": 26,
-    "er": 21,
-    "rr": 7
-  },
-  {
-    "name": "Robot - Sturdy - Alloyed - Arm",
+    "helper": "26-23-20",
     "dr": 26,
     "er": 23,
-    "rr": 20
+    "rr": 20,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Alloyed - Leg",
+    "helper": "26-26-20",
     "dr": 26,
     "er": 26,
-    "rr": 20
+    "rr": 20,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Light - Girded - Chest",
+    "helper": "26-65-0",
     "dr": 26,
     "er": 65,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Sturdy - Boiled - Chest",
+    "helper": "26-74-0",
     "dr": 26,
     "er": 74,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Sturdy - Shadowed - Chest",
-    "dr": 26,
-    "er": 74,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Light - Tempered - Arm",
+    "helper": "27-13-0",
     "dr": 27,
     "er": 13,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0018E411",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Raider - Light - Tempered - Leg",
-    "dr": 27,
-    "er": 13,
-    "rr": 0
-  },
-  {
-    "name": "Trapper - Sturdy - Hardened - Arm",
-    "dr": 27,
-    "er": 16,
-    "rr": 27
-  },
-  {
-    "name": "Trapper - Sturdy - Hardened - Leg",
+    "helper": "27-16-27",
     "dr": 27,
     "er": 16,
-    "rr": 27
+    "rr": 27,
+    "shortTerm": "trapper-limb",
+    "armorType": "trapper",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "00110895",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Polished - Arm",
+    "helper": "27-24-21",
     "dr": 27,
     "er": 24,
-    "rr": 21
+    "rr": 21,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Heavy - Reinforced - Arm",
+    "helper": "27-27-0",
     "dr": 27,
     "er": 27,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Heavy - Shadowed - Arm",
+    "helper": "27-27-20",
     "dr": 27,
     "er": 27,
-    "rr": 0
+    "rr": 20,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0010F375",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Heavy - Reinforced - Leg",
+    "helper": "27-27-21",
     "dr": 27,
     "er": 27,
-    "rr": 0
+    "rr": 21,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F375",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Heavy - Shadowed - Leg",
-    "dr": 27,
-    "er": 27,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Heavy - Painted - Arm",
-    "dr": 27,
-    "er": 27,
-    "rr": 20
-  },
-  {
-    "name": "Robot - Heavy - Shadowed - Arm",
-    "dr": 27,
-    "er": 27,
-    "rr": 20
-  },
-  {
-    "name": "Robot - Heavy - Painted - Leg",
-    "dr": 27,
-    "er": 27,
-    "rr": 20
-  },
-  {
-    "name": "Robot - Heavy - Shadowed - Leg",
-    "dr": 27,
-    "er": 27,
-    "rr": 20
-  },
-  {
-    "name": "Robot - Sturdy - Polished - Leg",
-    "dr": 27,
-    "er": 27,
-    "rr": 21
-  },
-  {
-    "name": "Combat - Light - Brotherhood - Arm",
+    "helper": "27-37-0",
     "dr": 27,
     "er": 37,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Brotherhood - Leg",
-    "dr": 27,
-    "er": 37,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Girded - Arm",
-    "dr": 27,
-    "er": 60,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Girded - Leg",
+    "helper": "27-60-0",
     "dr": 27,
     "er": 60,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Leather - Sturdy - Studded - Arm",
+    "helper": "27-66-0",
     "dr": 27,
     "er": 66,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Sturdy - Studded - Leg",
-    "dr": 27,
-    "er": 66,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Heavy - Arm",
+    "helper": "28-13-0",
     "dr": 28,
     "er": 13,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0018E411",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Heavy - Leg",
-    "dr": 28,
-    "er": 13,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Light - Hardened - Arm",
-    "dr": 28,
-    "er": 14,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Light - Hardened - Leg",
+    "helper": "28-14-0",
     "dr": 28,
     "er": 14,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0018E411",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Marine - Sturdy - Hardened - Arm",
+    "helper": "28-23-9",
     "dr": 28,
     "er": 23,
-    "rr": 9
+    "rr": 9,
+    "shortTerm": "marine-limb",
+    "armorType": "marine",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AA",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Marine - Sturdy - Hardened - Leg",
-    "dr": 28,
-    "er": 23,
-    "rr": 9
-  },
-  {
-    "name": "Combat - Sturdy - Polymer - Arm",
-    "dr": 28,
-    "er": 28,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Sturdy - Polymer - Leg",
+    "helper": "28-28-0",
     "dr": 28,
     "er": 28,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Heavy - Chest",
+    "helper": "28-76-0",
     "dr": 28,
     "er": 76,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Light - Buttressed - Arm",
+    "helper": "29-15-0",
     "dr": 29,
     "er": 15,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0018E411",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Raider - Light - Buttressed - Leg",
-    "dr": 29,
-    "er": 15,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Heavy - Enameled - Arm",
-    "dr": 29,
-    "er": 29,
-    "rr": 21
-  },
-  {
-    "name": "Robot - Heavy - Enameled - Leg",
+    "helper": "29-29-21",
     "dr": 29,
     "er": 29,
-    "rr": 21
+    "rr": 21,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0010F375",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Light - Painted - Arm",
+    "helper": "30-6-0",
     "dr": 30,
     "er": 6,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0004B933",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Metal - Light - Shadowed - Arm",
-    "dr": 30,
-    "er": 6,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Light - Painted - Leg",
-    "dr": 30,
-    "er": 6,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Light - Shadowed - Leg",
-    "dr": 30,
-    "er": 6,
-    "rr": 0
-  },
-  {
-    "name": "Trapper - Sturdy - Buttressed - Arm",
+    "helper": "30-17-30",
     "dr": 30,
     "er": 17,
-    "rr": 30
+    "rr": 30,
+    "shortTerm": "trapper-limb",
+    "armorType": "trapper",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "00110895",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Buttressed - Leg",
-    "dr": 30,
-    "er": 17,
-    "rr": 30
-  },
-  {
-    "name": "Robot - Heavy - Alloyed - Arm",
-    "dr": 30,
-    "er": 30,
-    "rr": 22
-  },
-  {
-    "name": "Robot - Heavy - Alloyed - Leg",
+    "helper": "30-30-22",
     "dr": 30,
     "er": 30,
-    "rr": 22
+    "rr": 22,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0010F375",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Sturdy - Brotherhood - Arm",
+    "helper": "30-40-0",
     "dr": 30,
     "er": 40,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Sturdy - Brotherhood - Leg",
-    "dr": 30,
-    "er": 40,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Treated - Arm",
-    "dr": 30,
-    "er": 63,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Treated - Leg",
+    "helper": "30-63-0",
     "dr": 30,
     "er": 63,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Sturdy - Welded - Arm",
+    "helper": "31-14-0",
     "dr": 31,
     "er": 14,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E411",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Sturdy - Welded - Leg",
-    "dr": 31,
-    "er": 14,
-    "rr": 0
-  },
-  {
-    "name": "Marine - Sturdy - Buttressed - Arm",
-    "dr": 31,
-    "er": 26,
-    "rr": 12
-  },
-  {
-    "name": "Marine - Sturdy - Buttressed - Leg",
+    "helper": "31-26-12",
     "dr": 31,
     "er": 26,
-    "rr": 12
+    "rr": 12,
+    "shortTerm": "marine-limb",
+    "armorType": "marine",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AA",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Heavy - Polished - Arm",
+    "helper": "31-31-23",
     "dr": 31,
     "er": 31,
-    "rr": 23
+    "rr": 23,
+    "shortTerm": "robot-limb",
+    "armorType": "robot",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0010F375",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Robot - Heavy - Polished - Leg",
-    "dr": 31,
-    "er": 31,
-    "rr": 23
-  },
-  {
-    "name": "Leather - Light - Treated - Chest",
+    "helper": "31-70-0",
     "dr": 31,
     "er": 70,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Sturdy - Girded - Chest",
+    "helper": "31-79-0",
     "dr": 31,
     "er": 79,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Chest",
+    "helper": "32-14-32",
     "dr": 32,
     "er": 14,
-    "rr": 32
+    "rr": 32,
+    "shortTerm": "trapper-chest",
+    "armorType": "trapper",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "00110899",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Sturdy - Tempered - Arm",
+    "helper": "32-15-0",
     "dr": 32,
     "er": 15,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E411",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Sturdy - Tempered - Leg",
-    "dr": 32,
-    "er": 15,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Sturdy - Chest",
+    "helper": "32-32-15",
     "dr": 32,
     "er": 32,
-    "rr": 15
+    "rr": 15,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F370",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Heavy - Studded - Arm",
+    "helper": "32-77-0",
     "dr": 32,
     "er": 77,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-limb",
+    "armorType": "leather",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Leather - Heavy - Studded - Leg",
-    "dr": 32,
-    "er": 77,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Light - Enameled - Arm",
+    "helper": "33-7-0",
     "dr": 33,
     "er": 7,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0004B933",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Metal - Light - Enameled - Leg",
-    "dr": 33,
-    "er": 7,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Sturdy - Hardened - Arm",
-    "dr": 33,
-    "er": 16,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Sturdy - Hardened - Leg",
+    "helper": "33-16-0",
     "dr": 33,
     "er": 16,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E411",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Heavy - Polymer - Arm",
+    "helper": "33-33-0",
     "dr": 33,
     "er": 33,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Heavy - Polymer - Leg",
-    "dr": 33,
-    "er": 33,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Boiled - Chest",
-    "dr": 33,
-    "er": 91,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Heavy - Shadowed - Chest",
+    "helper": "33-91-0",
     "dr": 33,
     "er": 91,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Arm",
+    "helper": "34-8-0",
     "dr": 34,
     "er": 8,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0004B933",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Leg",
-    "dr": 34,
-    "er": 8,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Sturdy - Buttressed - Arm",
-    "dr": 34,
-    "er": 17,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Sturdy - Buttressed - Leg",
+    "helper": "34-17-0",
     "dr": 34,
     "er": 17,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E411",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Light - Shadowed - Chest",
+    "helper": "34-34-18",
     "dr": 34,
     "er": 34,
-    "rr": 18
+    "rr": 18,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0010F370",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Metal - Light - Alloyed - Arm",
+    "helper": "35-8-0",
     "dr": 35,
     "er": 8,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0004B933",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Metal - Light - Alloyed - Leg",
-    "dr": 35,
-    "er": 8,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Heavy - Brotherhood - Arm",
-    "dr": 35,
-    "er": 45,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Heavy - Brotherhood - Leg",
+    "helper": "35-45-0",
     "dr": 35,
     "er": 45,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-limb",
+    "armorType": "combat",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C7",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Sturdy - Painted - Arm",
+    "helper": "36-7-0",
     "dr": 36,
     "er": 7,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0004B933",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Shadowed - Arm",
-    "dr": 36,
-    "er": 7,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Sturdy - Painted - Leg",
-    "dr": 36,
-    "er": 7,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Sturdy - Shadowed - Leg",
-    "dr": 36,
-    "er": 7,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Light - Chest",
+    "helper": "36-36-0",
     "dr": 36,
     "er": 36,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Light - Enameled - Chest",
+    "helper": "36-36-19",
     "dr": 36,
     "er": 36,
-    "rr": 19
+    "rr": 19,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0010F370",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Light - Studded - Chest",
+    "helper": "36-75-0",
     "dr": 36,
     "er": 75,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Sturdy - Treated - Chest",
+    "helper": "36-84-0",
     "dr": 36,
     "er": 84,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Heavy - Welded - Arm",
+    "helper": "37-17-0",
     "dr": 37,
     "er": 17,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0018E411",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Heavy - Welded - Leg",
-    "dr": 37,
-    "er": 17,
-    "rr": 0
-  },
-  {
-    "name": "Scout - Sturdy - Reinforced - Arm",
-    "dr": 37,
-    "er": 25,
-    "rr": 0
-  },
-  {
-    "name": "Scout - Sturdy - Reinforced - Leg",
+    "helper": "37-25-0",
     "dr": 37,
     "er": 25,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-limb",
+    "armorType": "scout",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46B1",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Light - Painted - Chest",
+    "helper": "37-30-13",
     "dr": 37,
     "er": 30,
-    "rr": 13
+    "rr": 13,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0010F370",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Light - Alloyed - Chest",
+    "helper": "37-37-20",
     "dr": 37,
     "er": 37,
-    "rr": 20
+    "rr": 20,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0010F370",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Raider - Heavy - Tempered - Arm",
+    "helper": "38-18-0",
     "dr": 38,
     "er": 18,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0018E411",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Heavy - Tempered - Leg",
-    "dr": 38,
-    "er": 18,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Light - Polished - Chest",
+    "helper": "38-38-21",
     "dr": 38,
     "er": 38,
-    "rr": 21
+    "rr": 21,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0010F370",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Leather - Heavy - Girded - Chest",
+    "helper": "38-96-0",
     "dr": 38,
     "er": 96,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Sturdy - Enameled - Arm",
+    "helper": "39-8-0",
     "dr": 39,
     "er": 8,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0004B933",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Enameled - Leg",
-    "dr": 39,
-    "er": 8,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Heavy - Hardened - Arm",
-    "dr": 39,
-    "er": 19,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Heavy - Hardened - Leg",
+    "helper": "39-19-0",
     "dr": 39,
     "er": 19,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0018E411",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Light - Polished - Arm",
+    "helper": "40-9-0",
     "dr": 40,
     "er": 9,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Light",
+    "armorId": "0004B933",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Metal - Light - Polished - Leg",
-    "dr": 40,
-    "er": 9,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Heavy - Buttressed - Arm",
-    "dr": 40,
-    "er": 20,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Heavy - Buttressed - Leg",
+    "helper": "40-20-0",
     "dr": 40,
     "er": 20,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-limb",
+    "armorType": "raider",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0018E411",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Arm",
+    "helper": "40-40-40",
     "dr": 40,
     "er": 40,
-    "rr": 40
+    "rr": 40,
+    "shortTerm": "secretservice-limb",
+    "armorType": "secretservice",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "00597669",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Leg",
-    "dr": 40,
-    "er": 40,
-    "rr": 40
-  },
-  {
-    "name": "Trapper - Sturdy - Welded - Chest",
+    "helper": "41-18-41",
     "dr": 41,
     "er": 18,
-    "rr": 41
+    "rr": 41,
+    "shortTerm": "trapper-chest",
+    "armorType": "trapper",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "00110899",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Scout - Sturdy - Fiberglass - Arm",
+    "helper": "41-28-0",
     "dr": 41,
     "er": 28,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-limb",
+    "armorType": "scout",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46B1",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Scout - Sturdy - Fiberglass - Leg",
-    "dr": 41,
-    "er": 28,
-    "rr": 0
-  },
-  {
-    "name": "Leather - Sturdy - Studded - Chest",
+    "helper": "41-89-0",
     "dr": 41,
     "er": 89,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Alloyed - Arm",
+    "helper": "42-9-0",
     "dr": 42,
     "er": 9,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0004B933",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Alloyed - Leg",
-    "dr": 42,
-    "er": 9,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Light - Chest",
+    "helper": "42-15-0",
     "dr": 42,
     "er": 15,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0018E415",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Heavy - Chest",
+    "helper": "42-42-15",
     "dr": 42,
     "er": 42,
-    "rr": 15
+    "rr": 15,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0010F370",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Robot - Sturdy - Shadowed - Chest",
+    "helper": "42-42-20",
     "dr": 42,
     "er": 42,
-    "rr": 20
+    "rr": 20,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F370",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Tempered - Chest",
+    "helper": "43-19-43",
     "dr": 43,
     "er": 19,
-    "rr": 43
+    "rr": 43,
+    "shortTerm": "trapper-chest",
+    "armorType": "trapper",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "00110899",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Leather - Heavy - Treated - Chest",
+    "helper": "43-101-0",
     "dr": 43,
     "er": 101,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Painted - Arm",
+    "helper": "44-9-0",
     "dr": 44,
     "er": 9,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0004B933",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Shadowed - Arm",
-    "dr": 44,
-    "er": 9,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Heavy - Painted - Leg",
-    "dr": 44,
-    "er": 9,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Heavy - Shadowed - Leg",
-    "dr": 44,
-    "er": 9,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Sturdy - Enameled - Chest",
+    "helper": "44-44-21",
     "dr": 44,
     "er": 44,
-    "rr": 21
+    "rr": 21,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F370",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Wood - Light - Chest",
+    "helper": "45-9-0",
     "dr": 45,
     "er": 9,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "wood-chest",
+    "armorType": "wood",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0012C3CB",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Trapper - Sturdy - Hardened - Chest",
+    "helper": "45-20-45",
     "dr": 45,
     "er": 20,
-    "rr": 45
+    "rr": 45,
+    "shortTerm": "trapper-chest",
+    "armorType": "trapper",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "00110899",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Scout - Sturdy - Polymer - Arm",
+    "helper": "45-30-0",
     "dr": 45,
     "er": 30,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-limb",
+    "armorType": "scout",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46B1",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Scout - Sturdy - Polymer - Leg",
-    "dr": 45,
-    "er": 30,
-    "rr": 0
-  },
-  {
-    "name": "Robot - Sturdy - Painted - Chest",
+    "helper": "45-38-15",
     "dr": 45,
     "er": 38,
-    "rr": 15
+    "rr": 15,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F370",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Alloyed - Chest",
+    "helper": "45-45-22",
     "dr": 45,
     "er": 45,
-    "rr": 22
+    "rr": 22,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F370",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Polished - Arm",
+    "helper": "46-10-0",
     "dr": 46,
     "er": 10,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Sturdy",
+    "armorId": "0004B933",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Polished - Leg",
-    "dr": 46,
-    "er": 10,
-    "rr": 0
-  },
-  {
-    "name": "Marine - Sturdy - Chest",
+    "helper": "46-19-19",
     "dr": 46,
     "er": 19,
-    "rr": 19
+    "rr": 19,
+    "shortTerm": "marine-chest",
+    "armorType": "marine",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AF",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Light - Reinforced - Chest",
+    "helper": "46-46-0",
     "dr": 46,
     "er": 46,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Shadowed - Chest",
+    "helper": "46-46-23",
     "dr": 46,
     "er": 46,
-    "rr": 0
+    "rr": 23,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0010F370",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Sturdy - Polished - Chest",
+    "helper": "46-46-46",
     "dr": 46,
     "er": 46,
-    "rr": 23
+    "rr": 46,
+    "shortTerm": "secretservice-limb",
+    "armorType": "secretservice",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "00597669",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Welded - Arm",
-    "dr": 46,
-    "er": 46,
-    "rr": 46
-  },
-  {
-    "name": "Secret Service - Heavy - Welded - Leg",
-    "dr": 46,
-    "er": 46,
-    "rr": 46
-  },
-  {
-    "name": "Metal - Heavy - Enameled - Arm",
+    "helper": "47-10-0",
     "dr": 47,
     "er": 10,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0004B933",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Enameled - Leg",
-    "dr": 47,
-    "er": 10,
-    "rr": 0
-  },
-  {
-    "name": "Combat - Sturdy - Chest",
+    "helper": "47-47-0",
     "dr": 47,
     "er": 47,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Trapper - Sturdy - Buttressed - Chest",
+    "helper": "48-21-48",
     "dr": 48,
     "er": 21,
-    "rr": 48
+    "rr": 48,
+    "shortTerm": "trapper-chest",
+    "armorType": "trapper",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "00110899",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Secret Service - Heavy - Tempered - Arm",
+    "helper": "48-48-48",
     "dr": 48,
     "er": 48,
-    "rr": 48
+    "rr": 48,
+    "shortTerm": "secretservice-limb",
+    "armorType": "secretservice",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "00597669",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Tempered - Leg",
-    "dr": 48,
-    "er": 48,
-    "rr": 48
-  },
-  {
-    "name": "Leather - Heavy - Studded - Chest",
+    "helper": "48-106-0",
     "dr": 48,
     "er": 106,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "leather-chest",
+    "armorType": "leather",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0007B9C6",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Alloyed - Arm",
+    "helper": "49-11-0",
     "dr": 49,
     "er": 11,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0004B933",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Alloyed - Leg",
-    "dr": 49,
-    "er": 11,
-    "rr": 0
-  },
-  {
-    "name": "Secret Service - Heavy - Hardened - Arm",
+    "helper": "50-50-50",
     "dr": 50,
     "er": 50,
-    "rr": 50
+    "rr": 50,
+    "shortTerm": "secretservice-limb",
+    "armorType": "secretservice",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "00597669",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Hardened - Leg",
-    "dr": 50,
-    "er": 50,
-    "rr": 50
-  },
-  {
-    "name": "Metal - Light - Chest",
+    "helper": "51-11-0",
     "dr": 51,
     "er": 11,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "000536C4",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Fiberglass - Chest",
+    "helper": "51-51-0",
     "dr": 51,
     "er": 51,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Heavy - Shadowed - Chest",
+    "helper": "52-52-20",
     "dr": 52,
     "er": 52,
-    "rr": 20
+    "rr": 20,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0010F370",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Light - Welded - Chest",
+    "helper": "53-20-0",
     "dr": 53,
     "er": 20,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0018E415",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Secret Service - Heavy - Buttressed - Arm",
+    "helper": "53-53-53",
     "dr": 53,
     "er": 53,
-    "rr": 53
+    "rr": 53,
+    "shortTerm": "secretservice-limb",
+    "armorType": "secretservice",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "00597669",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Buttressed - Leg",
-    "dr": 53,
-    "er": 53,
-    "rr": 53
-  },
-  {
-    "name": "Metal - Heavy - Polished - Arm",
+    "helper": "54-12-0",
     "dr": 54,
     "er": 12,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-limb",
+    "armorType": "metal",
+    "armorPart": "limb",
+    "armorGrade": "Heavy",
+    "armorId": "0004B933",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Polished - Leg",
-    "dr": 54,
-    "er": 12,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Sturdy - Chest",
+    "helper": "54-19-0",
     "dr": 54,
     "er": 19,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E415",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Heavy - Enameled - Chest",
+    "helper": "54-54-21",
     "dr": 54,
     "er": 54,
-    "rr": 21
+    "rr": 21,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0010F370",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Marine - Sturdy - Welded - Chest",
+    "helper": "55-28-28",
     "dr": 55,
     "er": 28,
-    "rr": 28
+    "rr": 28,
+    "shortTerm": "marine-chest",
+    "armorType": "marine",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AF",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Robot - Heavy - Painted - Chest",
+    "helper": "55-48-15",
     "dr": 55,
     "er": 48,
-    "rr": 15
+    "rr": 15,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0010F370",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Robot - Heavy - Alloyed - Chest",
+    "helper": "55-55-22",
     "dr": 55,
     "er": 55,
-    "rr": 22
+    "rr": 22,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0010F370",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Light - Tempered - Chest",
+    "helper": "56-28-0",
     "dr": 56,
     "er": 28,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0018E415",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Light - Polymer - Chest",
+    "helper": "56-56-0",
     "dr": 56,
     "er": 56,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Robot - Heavy - Polished - Chest",
+    "helper": "56-56-23",
     "dr": 56,
     "er": 56,
-    "rr": 23
+    "rr": 23,
+    "shortTerm": "robot-chest",
+    "armorType": "robot",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0010F370",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Sturdy - Reinforced - Chest",
+    "helper": "57-57-0",
     "dr": 57,
     "er": 57,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Sturdy - Shadowed - Chest",
-    "dr": 57,
-    "er": 57,
-    "rr": 0
-  },
-  {
-    "name": "Marine - Sturdy - Tempered - Chest",
+    "helper": "59-32-32",
     "dr": 59,
     "er": 32,
-    "rr": 32
+    "rr": 32,
+    "shortTerm": "marine-chest",
+    "armorType": "marine",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AF",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Light - Hardened - Chest",
+    "helper": "60-24-0",
     "dr": 60,
     "er": 24,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0018E415",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Scout - Sturdy - Chest",
+    "helper": "60-40-0",
     "dr": 60,
     "er": 40,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-chest",
+    "armorType": "scout",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46AC",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Light - Brotherhood - Chest",
+    "helper": "61-61-0",
     "dr": 61,
     "er": 61,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Heavy - Chest",
+    "helper": "61-61-0",
     "dr": 61,
     "er": 61,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Sturdy - Fiberglass - Chest",
+    "helper": "62-62-0",
     "dr": 62,
     "er": 62,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Sturdy - Welded - Chest",
+    "helper": "65-24-0",
     "dr": 65,
     "er": 24,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E415",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Light - Buttressed - Chest",
+    "helper": "65-26-0",
     "dr": 65,
     "er": 26,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "0018E415",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Marine - Sturdy - Hardened - Chest",
+    "helper": "65-38-38",
     "dr": 65,
     "er": 38,
-    "rr": 38
+    "rr": 38,
+    "shortTerm": "marine-chest",
+    "armorType": "marine",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AF",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Light - Painted - Chest",
+    "helper": "66-14-0",
     "dr": 66,
     "er": 14,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "000536C4",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Metal - Light - Shadowed - Chest",
-    "dr": 66,
-    "er": 14,
-    "rr": 0
-  },
-  {
-    "name": "Metal - Sturdy - Chest",
+    "helper": "67-13-0",
     "dr": 67,
     "er": 13,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "000536C4",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Sturdy - Polymer - Chest",
+    "helper": "67-67-0",
     "dr": 67,
     "er": 67,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Sturdy - Tempered - Chest",
+    "helper": "68-32-0",
     "dr": 68,
     "er": 32,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E415",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Marine - Sturdy - Buttressed - Chest",
+    "helper": "69-42-42",
     "dr": 69,
     "er": 42,
-    "rr": 42
+    "rr": 42,
+    "shortTerm": "marine-chest",
+    "armorType": "marine",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "001107AF",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Heavy - Chest",
+    "helper": "70-24-0",
     "dr": 70,
     "er": 24,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0018E415",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Light - Enameled - Chest",
+    "helper": "71-15-0",
     "dr": 71,
     "er": 15,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "000536C4",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Heavy - Reinforced - Chest",
+    "helper": "71-71-0",
     "dr": 71,
     "er": 71,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Heavy - Shadowed - Chest",
-    "dr": 71,
-    "er": 71,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Sturdy - Hardened - Chest",
+    "helper": "72-28-0",
     "dr": 72,
     "er": 28,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E415",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Sturdy - Brotherhood - Chest",
+    "helper": "72-72-0",
     "dr": 72,
     "er": 72,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Scout - Sturdy - Reinforced - Chest",
+    "helper": "75-47-0",
     "dr": 75,
     "er": 47,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-chest",
+    "armorType": "scout",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46AC",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Light - Alloyed - Chest",
+    "helper": "76-31-0",
     "dr": 76,
     "er": 31,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "000536C4",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Combat - Heavy - Fiberglass - Chest",
+    "helper": "76-76-0",
     "dr": 76,
     "er": 76,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Raider - Sturdy - Buttressed - Chest",
+    "helper": "77-30-0",
     "dr": 77,
     "er": 30,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "0018E415",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Scout - Sturdy - Fiberglass - Chest",
+    "helper": "80-50-0",
     "dr": 80,
     "er": 50,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-chest",
+    "armorType": "scout",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46AC",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Light - Polished - Chest",
+    "helper": "81-17-0",
     "dr": 81,
     "er": 17,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Light",
+    "armorId": "000536C4",
+    "gradeId": "00182E78"
   },
   {
-    "name": "Raider - Heavy - Welded - Chest",
+    "helper": "81-29-0",
     "dr": 81,
     "er": 29,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0018E415",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Combat - Heavy - Polymer - Chest",
+    "helper": "81-81-0",
     "dr": 81,
     "er": 81,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Sturdy - Painted - Chest",
+    "helper": "82-16-0",
     "dr": 82,
     "er": 16,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "000536C4",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Metal - Sturdy - Shadowed - Chest",
-    "dr": 82,
-    "er": 16,
-    "rr": 0
-  },
-  {
-    "name": "Raider - Heavy - Tempered - Chest",
+    "helper": "84-37-0",
     "dr": 84,
     "er": 37,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0018E415",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Scout - Sturdy - Polymer - Chest",
+    "helper": "85-55-0",
     "dr": 85,
     "er": 55,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "scout-chest",
+    "armorType": "scout",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "002E46AC",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Combat - Heavy - Brotherhood - Chest",
+    "helper": "86-86-0",
     "dr": 86,
     "er": 86,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "combat-chest",
+    "armorType": "combat",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0011D3C3",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Chest",
+    "helper": "87-14-0",
     "dr": 87,
     "er": 14,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "000536C4",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Sturdy - Enameled - Chest",
+    "helper": "87-17-0",
     "dr": 87,
     "er": 17,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "000536C4",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Heavy - Hardened - Chest",
+    "helper": "88-33-0",
     "dr": 88,
     "er": 33,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0018E415",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Chest",
+    "helper": "90-60-60",
     "dr": 90,
     "er": 60,
-    "rr": 60
+    "rr": 60,
+    "shortTerm": "secretservice-chest",
+    "armorType": "secretservice",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "00568FA9",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Sturdy - Alloyed - Chest",
+    "helper": "92-33-0",
     "dr": 92,
     "er": 33,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "000536C4",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Raider - Heavy - Buttressed - Chest",
+    "helper": "93-35-0",
     "dr": 93,
     "er": 35,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "raider-chest",
+    "armorType": "raider",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "0018E415",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Sturdy - Polished - Chest",
+    "helper": "97-19-0",
     "dr": 97,
     "er": 19,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Sturdy",
+    "armorId": "000536C4",
+    "gradeId": "00182E79"
   },
   {
-    "name": "Secret Service - Heavy - Welded - Chest",
+    "helper": "100-70-70",
     "dr": 100,
     "er": 70,
-    "rr": 70
+    "rr": 70,
+    "shortTerm": "secretservice-chest",
+    "armorType": "secretservice",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "00568FA9",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Painted - Chest",
+    "helper": "102-17-0",
     "dr": 102,
     "er": 17,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "000536C4",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Shadowed - Chest",
-    "dr": 102,
-    "er": 17,
-    "rr": 0
-  },
-  {
-    "name": "Secret Service - Heavy - Tempered - Chest",
+    "helper": "105-75-75",
     "dr": 105,
     "er": 75,
-    "rr": 75
+    "rr": 75,
+    "shortTerm": "secretservice-chest",
+    "armorType": "secretservice",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "00568FA9",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Hardened - Chest",
+    "helper": "105-80-80",
     "dr": 105,
     "er": 80,
-    "rr": 80
+    "rr": 80,
+    "shortTerm": "secretservice-chest",
+    "armorType": "secretservice",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "00568FA9",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Enameled - Chest",
+    "helper": "107-18-0",
     "dr": 107,
     "er": 18,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "000536C4",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Alloyed - Chest",
+    "helper": "112-34-0",
     "dr": 112,
     "er": 34,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "000536C4",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Secret Service - Heavy - Buttressed - Chest",
+    "helper": "115-85-85",
     "dr": 115,
     "er": 85,
-    "rr": 85
+    "rr": 85,
+    "shortTerm": "secretservice-chest",
+    "armorType": "secretservice",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "00568FA9",
+    "gradeId": "00182E7A"
   },
   {
-    "name": "Metal - Heavy - Polished - Chest",
+    "helper": "117-20-0",
     "dr": 117,
     "er": 20,
-    "rr": 0
+    "rr": 0,
+    "shortTerm": "metal-chest",
+    "armorType": "metal",
+    "armorPart": "chest",
+    "armorGrade": "Heavy",
+    "armorId": "000536C4",
+    "gradeId": "00182E7A"
   }
 ]

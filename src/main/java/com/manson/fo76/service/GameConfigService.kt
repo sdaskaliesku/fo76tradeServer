@@ -8,7 +8,7 @@ import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.dto.StatsDTO
-import com.manson.fo76.domain.items.enums.ArmorType
+import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.DamageType
 import com.manson.fo76.domain.items.enums.ItemCardText
 import com.manson.fo76.domain.items.item_card.ItemCardEntry
@@ -93,20 +93,20 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         return 0
     }
 
-    fun findArmorType(dr: Int, rr: Int, er: Int): ArmorType {
+    fun findArmorType(dr: Int, rr: Int, er: Int): ArmorGrade {
         for (config in armorConfigs) {
             if (config.dr == dr && config.er == er && config.rr == rr) {
-                for (armorType in ArmorType.values()) {
-                    if (StringUtils.containsIgnoreCase(config.name, armorType.value)) {
+                for (armorType in ArmorGrade.values()) {
+                    if (StringUtils.containsIgnoreCase(config.armorGrade.value, armorType.value)) {
                         return armorType
                     }
                 }
             }
         }
-        return ArmorType.Unknown
+        return ArmorGrade.Unknown
     }
 
-    fun findArmorType(itemDTO: ItemDTO): ArmorType {
+    fun findArmorType(itemDTO: ItemDTO): ArmorGrade {
         val dr: Int = findDamageTypeValue(itemDTO.stats, DamageType.BALLISTIC)
         val er: Int = findDamageTypeValue(itemDTO.stats, DamageType.ENERGY)
         var rr: Int = findDamageTypeValue(itemDTO.stats, DamageType.RADIATION)

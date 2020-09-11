@@ -3,7 +3,7 @@ package com.manson.fo76.web.api
 import com.manson.fo76.domain.ArmorConfig
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
-import com.manson.fo76.domain.items.enums.ArmorType
+import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.ItemCardText
 import com.manson.fo76.service.GameConfigService
 import org.springframework.beans.factory.annotation.Autowired
@@ -42,7 +42,7 @@ class GameApi @Autowired constructor(private val gameConfigService: GameConfigSe
     }
 
     @GetMapping(value = ["/armorType"], produces = ["application/json"])
-    fun getArmorType(@RequestParam dr: Int,@RequestParam er: Int,@RequestParam rr: Int): ArmorType {
+    fun getArmorType(@RequestParam dr: Int,@RequestParam er: Int,@RequestParam rr: Int): ArmorGrade {
         return gameConfigService.findArmorType(dr, rr, er)
     }
 }

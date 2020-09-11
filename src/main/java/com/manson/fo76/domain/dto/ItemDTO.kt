@@ -2,10 +2,8 @@ package com.manson.fo76.domain.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.manson.fo76.domain.items.enums.ArmorType
+import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.FilterFlag
-import org.apache.commons.lang3.builder.EqualsBuilder
-import org.apache.commons.lang3.builder.HashCodeBuilder
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.index.Indexed
 
@@ -63,7 +61,7 @@ class ItemDTO {
     var legendaryMods: List<LegendaryMod> = listOf()
     var abbreviation: String = ""
 
-    var armorType: ArmorType = ArmorType.Unknown
+    var armorGrade: ArmorGrade = ArmorGrade.Unknown
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other !is ItemDTO) return false
@@ -96,7 +94,7 @@ class ItemDTO {
         if (stats != other.stats) return false
         if (legendaryMods != other.legendaryMods) return false
         if (abbreviation != other.abbreviation) return false
-        if (armorType != other.armorType) return false
+        if (armorGrade != other.armorGrade) return false
 
         return true
     }
@@ -130,7 +128,7 @@ class ItemDTO {
         result = 31 * result + stats.hashCode()
         result = 31 * result + legendaryMods.hashCode()
         result = 31 * result + abbreviation.hashCode()
-        result = 31 * result + armorType.hashCode()
+        result = 31 * result + armorGrade.hashCode()
         return result
     }
 

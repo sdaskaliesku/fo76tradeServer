@@ -233,7 +233,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         itemDTO.tradeOptions = tradeOptions
         itemDTO.ownerInfo = ownerInfo
         itemDTO.stats = processItemCardEntries(item, itemDTO)
-        itemDTO.armorType = gameConfigService.findArmorType(itemDTO)
+        itemDTO.armorGrade = gameConfigService.findArmorType(itemDTO)
         return itemDTO
     }
 

@@ -5,6 +5,7 @@ import com.manson.fo76.domain.Fo76String
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
 import com.manson.fo76.domain.XTranslatorConfig.Companion.merge
+import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.service.XTranslatorParser
 import java.io.File
 import java.io.IOException
@@ -45,15 +46,19 @@ class PopulateLegModsConfig {
         for (line in strings) {
             val config = line.split("\t").toTypedArray()
             var col = 0
-            val dr = config[col++].toInt()
-            val er = config[col++].toInt()
-            val rr = config[col++].toInt()
-            val name = config[col]
             val armorDrConfig = ArmorConfig()
-            armorDrConfig.dr = dr
-            armorDrConfig.rr = rr
-            armorDrConfig.er = er
-            armorDrConfig.name = name
+            armorDrConfig.helper = config[col++]
+            armorDrConfig.dr = config[col++].toInt()
+            armorDrConfig.er = config[col++].toInt()
+            armorDrConfig.rr = config[col++].toInt()
+            armorDrConfig.shortTerm = config[col++]
+            armorDrConfig.armorType = config[col++]
+            armorDrConfig.armorPart = config[col++]
+            armorDrConfig.armorGrade = ArmorGrade.fromString(config[col++])
+            col++ // do no use this field
+            armorDrConfig.armorId = config[col++]
+            armorDrConfig.gradeId = config[col++]
+
             configs.add(armorDrConfig)
         }
         OM.writeValue(File("armor.config.json"), configs)
