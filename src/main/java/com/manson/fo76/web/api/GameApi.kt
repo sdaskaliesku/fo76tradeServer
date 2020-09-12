@@ -47,8 +47,8 @@ class GameApi @Autowired constructor(private val gameConfigService: GameConfigSe
     }
 
     @GetMapping(value = ["/cleanItemName"], produces = ["application/json"])
-    fun getCleanItemName(@RequestParam input: String): String {
-        return gameConfigService.getPossibleItemName(input)
+    fun getCleanItemName(@RequestParam input: String, @RequestParam(required = false) isArmor: Boolean = false): String {
+        return gameConfigService.getPossibleItemName(input, isArmor)
     }
 
     @GetMapping(value = ["/nameModifiers"], produces = ["application/json"])

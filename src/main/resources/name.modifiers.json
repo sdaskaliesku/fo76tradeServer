@@ -90,6 +90,15 @@
     "enabled": true
   },
   {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Heavy Shocking Sharp"
+    },
+    "rec": "{-id=162, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03957C",
+    "enabled": true
+  },
+  {
     "id": "dn_CommonMelee",
     "texts": {
       "en": "Electrified Serrated"
@@ -141,6 +150,15 @@
     },
     "rec": "{-id=161, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957B",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Heavy Searing Sharp"
+    },
+    "rec": "{-id=163, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03957D",
     "enabled": true
   },
   {
@@ -204,6 +222,15 @@
     },
     "rec": "{-id=140, -idMax=303, #text=INNR:WNAM}",
     "sid": "039565",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Improved Automatic"
+    },
+    "rec": "{-id=255, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395B1",
     "enabled": true
   },
   {
@@ -1010,6 +1037,15 @@
   {
     "id": "dn_CommonGun",
     "texts": {
+      "en": "Heavy Spiked"
+    },
+    "rec": "{-id=164, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03957E",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
       "en": "Long Bow Bar"
     },
     "rec": "{-id=166, -idMax=303, #text=INNR:WNAM}",
@@ -1226,6 +1262,15 @@
   {
     "id": "dn_CommonGun",
     "texts": {
+      "en": "Heavy Sharp"
+    },
+    "rec": "{-id=165, -idMax=303, #text=INNR:WNAM}",
+    "sid": "03957F",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
       "en": "Electrified"
     },
     "rec": "{-id=168, -idMax=303, #text=INNR:WNAM}",
@@ -1289,6 +1334,15 @@
   {
     "id": "dn_CommonArmor",
     "texts": {
+      "en": "Lightweight"
+    },
+    "rec": "{-id=80, -idMax=103, #text=INNR:WNAM}",
+    "sid": "03960C",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
       "en": "BioCommMesh"
     },
     "rec": "{-id=82, -idMax=103, #text=INNR:WNAM}",
@@ -1302,6 +1356,15 @@
     },
     "rec": "{-id=89, -idMax=103, #text=INNR:WNAM}",
     "sid": "039615",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonArmor",
+    "texts": {
+      "en": "Ultra-Light"
+    },
+    "rec": "{-id=91, -idMax=103, #text=INNR:WNAM}",
+    "sid": "039617",
     "enabled": true
   },
   {
@@ -2094,6 +2157,42 @@
     },
     "rec": "{-id=224, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A4",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Automatic"
+    },
+    "rec": "{-id=254, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395B0",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Automatic"
+    },
+    "rec": "{-id=256, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395B2",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Automatic"
+    },
+    "rec": "{-id=257, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395B3",
+    "enabled": true
+  },
+  {
+    "id": "dn_CommonGun",
+    "texts": {
+      "en": "Automatic"
+    },
+    "rec": "{-id=261, -idMax=303, #text=INNR:WNAM}",
+    "sid": "0395BB",
     "enabled": true
   },
   {

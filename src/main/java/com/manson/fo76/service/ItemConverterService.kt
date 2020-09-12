@@ -12,6 +12,7 @@ import com.manson.fo76.domain.dto.OwnerInfo
 import com.manson.fo76.domain.dto.StatsDTO
 import com.manson.fo76.domain.dto.TradeOptions
 import com.manson.fo76.domain.items.ItemDescriptor
+import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.DamageType
 import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.items.enums.ItemCardText
@@ -241,7 +242,8 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         itemDTO.armorGrade = gameConfigService.findArmorType(itemDTO)
         itemDTO.text = itemDTO.text?.let { gameConfigService.cleanItemName(it) }
         if (shouldConvertItemName(itemDTO)) {
-            itemDTO.newName = itemDTO.text?.let { gameConfigService.getPossibleItemName(it) }.toString()
+            val isArmor: Boolean = listOf(FilterFlag.ARMOR, FilterFlag.ARMOR_OUTFIT, FilterFlag.POWER_ARMOR).contains(itemDTO.filterFlag)
+            itemDTO.newName = itemDTO.text?.let { gameConfigService.getPossibleItemName(it, isArmor) }.toString()
         }
         return itemDTO
     }

@@ -123,13 +123,18 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         return name.replace("¢", "", true).replace("\$\$ZEUSGLYPH", "", true).trim()
     }
 
-    fun getPossibleItemName(name: String): String {
+    fun getPossibleItemName(name: String, isArmor: Boolean): String {
         var newName = cleanItemName(name)
         for (nameMod in nameModifiers) {
             for (text in nameMod.texts.values) {
                 if (StringUtils.containsIgnoreCase(newName, text)) {
                     newName = newName.replace(text, "", true)
                 }
+            }
+        }
+        if (isArmor) {
+            for (armorGrade in ArmorGrade.values()) {
+                newName = newName.replace(armorGrade.value, "", true)
             }
         }
         return if (StringUtils.isBlank(newName)) {

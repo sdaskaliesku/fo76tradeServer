@@ -40,8 +40,13 @@ class PopulateLegModsConfig {
     fun shouldIgnoreConfig(config: XTranslatorConfig): Boolean {
         val values = config.texts.values
         for (value in values) {
-            if (StringUtils.isBlank(value) || StringUtils.equalsIgnoreCase(value, "black")) {
+            if (StringUtils.isBlank(value)) {
                 return true
+            }
+            for (ignored in fullyIgnoredKeyWords) {
+                if (StringUtils.equalsIgnoreCase(value, ignored)) {
+                    return true
+                }
             }
             for (ignored in ignoredKeyWords) {
                 if (StringUtils.containsIgnoreCase(value, ignored)) {
@@ -52,7 +57,8 @@ class PopulateLegModsConfig {
         return false
     }
 
-    private val ignoredKeyWords = listOf("rifle", "harpoon", "Napalmer", "Headlamp", "Revolver", "Shotgun", "Pistol", "Gun", "Slug Buster", "Plasma", "Cryo", "The Fixer", "Shi", "Double", "Handmade", "*", "Automatic", "Light", "Heavy", "Assault", "Flame", "The")
+    private val ignoredKeyWords = listOf("rifle", "harpoon", "Napalmer", "Headlamp", "Revolver", "Shotgun", "Pistol", "Gun", "Slug Buster", "Plasma", "Cryo", "The Fixer", "Shi", "Double", "Handmade", "*", "Assault", "Flame", "The")
+    private val fullyIgnoredKeyWords = listOf("black", "light", "heavy")
 
     @Test
     internal fun nameModifiers() {
