@@ -7,23 +7,24 @@ import com.manson.fo76.domain.ModDataRequest
 import com.manson.fo76.domain.ModUser
 import com.manson.fo76.domain.User
 import com.manson.fo76.domain.dto.ItemDTO
+import com.manson.fo76.domain.dto.ItemDetails
 import com.manson.fo76.domain.dto.LegendaryMod
 import com.manson.fo76.domain.dto.OwnerInfo
 import com.manson.fo76.domain.dto.StatsDTO
 import com.manson.fo76.domain.dto.TradeOptions
 import com.manson.fo76.domain.items.ItemDescriptor
-import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.DamageType
 import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.items.enums.ItemCardText
 import com.manson.fo76.domain.items.item_card.ItemCardEntry
+import com.manson.fo76.helper.Utils.areSameItems
+import com.manson.fo76.helper.Utils.silentParse
 import java.util.Comparator
 import java.util.Objects
 import java.util.stream.Collectors
 import org.apache.commons.collections4.CollectionUtils
 import org.apache.commons.collections4.MapUtils
 import org.apache.commons.lang3.StringUtils
-import org.apache.commons.lang3.math.NumberUtils
 import org.apache.commons.lang3.tuple.ImmutablePair
 import org.apache.commons.lang3.tuple.Pair
 import org.slf4j.LoggerFactory
@@ -33,50 +34,12 @@ import org.springframework.stereotype.Service
 @Service
 class ItemConverterService @Autowired constructor(private val gameConfigService: GameConfigService) {
 
-    private val IGNORED_CARDS: MutableSet<ItemCardText> = mutableSetOf(ItemCardText.LEG_MODS, ItemCardText.DESC)
-    private val TYPES_FOR_NAME_CONVERT: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
-
-    private fun processModDataItems(
-            modData: ModData?,
-            itemsUploadFilters: ItemsUploadFilters,
-    ): Pair<ModUser?, List<ItemDescriptor>> {
-        if (modData == null || MapUtils.isEmpty(modData.characterInventories)) {
-            return ImmutablePair(ModUser(), listOf())
-        }
-        if (modData.user == null) {
-            // TODO: delete this, once final UI will be ready
-            val user = ModUser()
-            user.user = "temp"
-            user.password = "temp"
-            modData.user = user
-        }
-        val values = modData.characterInventories.values
-        val allItems: MutableList<ItemDescriptor> = ArrayList()
-        for (inventory in values) {
-            val allCharacterItems: MutableList<ItemDescriptor> = ArrayList()
-            allCharacterItems.addAll(inventory.playerInventory)
-            allCharacterItems.addAll(inventory.stashInventory)
-            processItems(allCharacterItems, allItems, itemsUploadFilters, inventory.accountInfoData.name,
-                    inventory.characterInfoData.name)
-        }
-        return ImmutablePair(modData.user, allItems)
-    }
-
-    fun prepareModData(modDataRequest: ModDataRequest): List<ItemDTO?>? {
-        val pair = processModDataItems(modDataRequest.modData, modDataRequest.filters)
-        val itemDescriptors = pair.value
-        // todo: convert ModUser to User via userService
-        val modUser = pair.key
-        val user = User()
-        user.password = modUser!!.password
-        user.name = modUser.user
-        user.id = modUser.id
-        return convertItems(itemDescriptors, user)
-    }
-
     @Suppress("UnstableApiUsage")
     companion object {
         private val LOGGER = LoggerFactory.getLogger(ItemConverterService::class.java)
+        private val IGNORED_CARDS: MutableSet<ItemCardText> = mutableSetOf(ItemCardText.LEG_MODS, ItemCardText.DESC)
+        private val TYPES_FOR_NAME_CONVERT: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
+        private val ARMOR_TYPES: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.ARMOR_OUTFIT, FilterFlag.POWER_ARMOR)
 
         private fun matchesFilter(filter: ItemsUploadFilters, itemDescriptor: ItemDescriptor?): Boolean {
             if (filter.tradableOnly) {
@@ -127,11 +90,35 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         }
     }
 
-    private fun areSameItems(first: ItemDTO, second: ItemDTO?): Boolean {
-        val sameName = StringUtils.equalsIgnoreCase(first.text, second!!.text)
-        val sameLevel = NumberUtils.compare(first.itemLevel, second.itemLevel) == 0
-        val sameLegMods = StringUtils.equalsIgnoreCase(first.abbreviation, second.abbreviation)
-        return sameName && sameLevel && sameLegMods
+    private fun processModDataItems(
+            modData: ModData?,
+            itemsUploadFilters: ItemsUploadFilters,
+    ): Pair<ModUser?, List<ItemDescriptor>> {
+        if (modData == null || MapUtils.isEmpty(modData.characterInventories)) {
+            return ImmutablePair(ModUser(), listOf())
+        }
+        val values = modData.characterInventories.values
+        val allItems: MutableList<ItemDescriptor> = ArrayList()
+        for (inventory in values) {
+            val allCharacterItems: MutableList<ItemDescriptor> = ArrayList()
+            allCharacterItems.addAll(inventory.playerInventory)
+            allCharacterItems.addAll(inventory.stashInventory)
+            processItems(allCharacterItems, allItems, itemsUploadFilters, inventory.accountInfoData.name,
+                    inventory.characterInfoData.name)
+        }
+        return ImmutablePair(modData.user, allItems)
+    }
+
+    fun prepareModData(modDataRequest: ModDataRequest): List<ItemDTO?>? {
+        val pair = processModDataItems(modDataRequest.modData, modDataRequest.filters)
+        val itemDescriptors = pair.value
+        // todo: convert ModUser to User via userService
+        val modUser = pair.key
+        val user = User()
+        user.password = modUser!!.password
+        user.name = modUser.user
+        user.id = modUser.id
+        return convertItems(itemDescriptors, user)
     }
 
     private fun dedupeItems(itemDTOS: MutableList<ItemDTO>): List<ItemDTO?> {
@@ -161,14 +148,6 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList())
         return dedupeItems(list)
-    }
-
-    private fun silentParse(value: String?): Number {
-        try {
-            return java.lang.Double.valueOf(value)
-        } catch (ignored: Exception) {
-        }
-        return -1
     }
 
     private fun findFilterFlag(item: ItemDescriptor?): FilterFlag {
@@ -208,6 +187,41 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return TYPES_FOR_NAME_CONVERT.contains(item.filterFlag)
     }
 
+    private fun createTradeOptions(item: ItemDTO, itemDescriptor: ItemDescriptor): TradeOptions {
+        val tradeOptions = TradeOptions()
+        val itemValue = item.itemValue
+        tradeOptions.gamePrice = itemValue.toDouble()
+        if (Objects.nonNull(itemDescriptor.vendingData)) {
+            var price = itemDescriptor.vendingData!!.price
+            if (price == 0) {
+                price = itemValue
+            }
+            tradeOptions.vendorPrice = price!!.toDouble()
+        } else {
+            tradeOptions.vendorPrice = tradeOptions.gamePrice
+        }
+        return tradeOptions
+    }
+
+    private fun createOwnerInfo(item: ItemDTO, user: User):OwnerInfo {
+        var ownerInfo = OwnerInfo()
+        if (Objects.nonNull(item.ownerInfo)) {
+            ownerInfo = item.ownerInfo!!
+        }
+        ownerInfo.id = user.id
+        ownerInfo.name = user.name
+        return ownerInfo
+    }
+
+    private fun createItemDetails(item: ItemDTO):ItemDetails {
+        val itemDetails = item.itemDetails
+        itemDetails.armorGrade = gameConfigService.findArmorType(item)
+        if (shouldConvertItemName(item)) {
+            itemDetails.name = item.text?.let { gameConfigService.getPossibleItemName(it, isArmor(item)) }.toString()
+        }
+        return itemDetails
+    }
+
     private fun convertItem(item: ItemDescriptor, user: User): ItemDTO? {
         val objectMap: MutableMap<String, Any?>? = JsonParser.objectToMap(item)
         if (MapUtils.isEmpty(objectMap)) {
@@ -218,34 +232,17 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         if (Objects.isNull(itemDTO)) {
             return null
         }
-        var ownerInfo = OwnerInfo()
-        if (Objects.nonNull(itemDTO!!.ownerInfo)) {
-            ownerInfo = itemDTO.ownerInfo!!
-        }
-        ownerInfo.id = user.id
-        ownerInfo.name = user.name
-        val tradeOptions = TradeOptions()
-        val itemValue = item.itemValue
-        tradeOptions.gamePrice = itemValue!!.toDouble()
-        if (Objects.nonNull(item.vendingData)) {
-            var price = item.vendingData!!.price
-            if (price == 0) {
-                price = itemValue
-            }
-            tradeOptions.vendorPrice = price!!.toDouble()
-        } else {
-            tradeOptions.vendorPrice = tradeOptions.gamePrice
-        }
-        itemDTO.tradeOptions = tradeOptions
-        itemDTO.ownerInfo = ownerInfo
-        itemDTO.stats = processItemCardEntries(item, itemDTO)
-        itemDTO.armorGrade = gameConfigService.findArmorType(itemDTO)
-        itemDTO.text = itemDTO.text?.let { gameConfigService.cleanItemName(it) }
-        if (shouldConvertItemName(itemDTO)) {
-            val isArmor: Boolean = listOf(FilterFlag.ARMOR, FilterFlag.ARMOR_OUTFIT, FilterFlag.POWER_ARMOR).contains(itemDTO.filterFlag)
-            itemDTO.newName = itemDTO.text?.let { gameConfigService.getPossibleItemName(it, isArmor) }.toString()
-        }
+        val itemDto: ItemDTO = itemDTO!!
+        itemDto.ownerInfo = createOwnerInfo(itemDto, user)
+        itemDto.tradeOptions = createTradeOptions(itemDto, item)
+        itemDto.stats = processItemCardEntries(item, itemDto)
+        itemDto.text = itemDto.text?.let { gameConfigService.cleanItemName(it) }
+        itemDto.itemDetails = createItemDetails(itemDto)
         return itemDTO
+    }
+
+    private fun isArmor(item: ItemDTO): Boolean {
+        return ARMOR_TYPES.contains(item.filterFlag)
     }
 
     private fun processLegendaryMods(itemCardEntry: ItemCardEntry, itemCardText: ItemCardText): MutableList<LegendaryMod> {
@@ -297,7 +294,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                     if (StringUtils.isBlank(abbreviation)) {
                         abbreviation = StringUtils.EMPTY
                     }
-                    itemDTO.abbreviation = abbreviation
+                    itemDTO.itemDetails.abbreviation = abbreviation
                 } else {
                     itemDTO.description = itemCardEntry.value
                 }

@@ -66,69 +66,10 @@
 </template>
 
 <script>
-import {columns} from '../table.columns';
+import {columns, modalFields} from '../table.columns';
 import Tabulator from 'tabulator-tables';
 import {filters} from '../domain';
 const randomstringFunc = require('randomstring');
-
-const modalFields = [
-  {
-    name: 'Account',
-    field: 'ownerInfo.accountOwner',
-  },
-  {
-    name: 'Character',
-    field: 'ownerInfo.characterOwner',
-  },
-  {
-    name: 'Description',
-    field: 'description',
-  },
-  {
-    name: 'Name converted',
-    field: 'newName',
-  },
-  {
-    name: 'Type',
-    field: 'filterFlag',
-  },
-  {
-    name: 'Armor Grade',
-    field: 'armorGrade',
-  },
-  {
-    name: 'Legendary',
-    field: 'isLegendary',
-  },
-  {
-    name: 'Tradable',
-    field: 'isTradable',
-  },
-  {
-    name: 'Level',
-    field: 'itemLevel',
-  },
-  {
-    name: 'Count',
-    field: 'count',
-  },
-  {
-    name: 'Game Price',
-    field: 'itemValue',
-  },
-  {
-    name: 'Legendary stars',
-    field: 'numLegendaryStars',
-  },
-  {
-    name: 'Weight',
-    field: 'weight',
-  },
-  {
-    name: 'Abbreviation',
-    field: 'abbreviation',
-  }
-];
 
 const tableConfig = {
   layout: 'fitColumns',

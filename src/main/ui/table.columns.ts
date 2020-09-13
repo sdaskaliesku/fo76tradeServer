@@ -16,22 +16,22 @@ export const columns = [
     headerSort: false,
     download: false,
     visible: true,
-    cellClick: function (e: any, cell: any) {
+    cellClick: function (e: any) {
       e.preventDefault();
       e.stopPropagation();
     },
   },
   createColumnDef({title: 'Name', field: 'text'}),
-  createColumnDef({title: 'Name converted', field: 'newName', visible: false}),
+  createColumnDef({title: 'Name converted', field: 'itemDetails.name', visible: false}),
   createColumnDef({title: 'Account', field: 'ownerInfo.accountOwner'}),
   createColumnDef({title: 'Character', field: 'ownerInfo.characterOwner'}),
   {
     ...createColumnDef({title: 'Stars', field: 'numLegendaryStars'}),
     formatter: 'star',
   },
-  createColumnDef({title: 'Abbr', field: 'abbreviation'}),
+  createColumnDef({title: 'Abbr', field: 'itemDetails.abbreviation'}),
   createColumnDef({title: 'Type', field: 'filterFlag'}),
-  createColumnDef({title: 'ArmorGrade', field: 'armorGrade', visible: false}),
+  createColumnDef({title: 'Armor Grade', field: 'itemDetails.armorGrade', visible: false}),
   createColumnDef({title: 'Level', field: 'itemLevel'}),
   createColumnDef({title: 'Count', field: 'count'}),
   createColumnDef({title: '1 star', field: 'legendaryMods.0.value'}),
@@ -62,4 +62,67 @@ export const columns = [
       });
     },
   },
+];
+
+export const modalFields = [
+  {
+    name: 'Account',
+    field: 'ownerInfo.accountOwner',
+  },
+  {
+    name: 'Character',
+    field: 'ownerInfo.characterOwner',
+  },
+  {
+    name: 'Description',
+    field: 'description',
+  },
+  {
+    name: 'Name converted',
+    field: 'itemDetails.name',
+  },
+  {
+    name: 'Type',
+    field: 'filterFlag',
+  },
+  {
+    name: 'Armor Grade',
+    field: 'itemDetails.armorGrade',
+  },
+  {
+    name: 'Armor formId',
+    field: 'itemDetails.formId',
+  },
+  {
+    name: 'Legendary',
+    field: 'isLegendary',
+  },
+  {
+    name: 'Tradable',
+    field: 'isTradable',
+  },
+  {
+    name: 'Level',
+    field: 'itemLevel',
+  },
+  {
+    name: 'Count',
+    field: 'count',
+  },
+  {
+    name: 'Game Price',
+    field: 'itemValue',
+  },
+  {
+    name: 'Legendary stars',
+    field: 'numLegendaryStars',
+  },
+  {
+    name: 'Weight',
+    field: 'weight',
+  },
+  {
+    name: 'Abbreviation',
+    field: 'itemDetails.abbreviation',
+  }
 ];

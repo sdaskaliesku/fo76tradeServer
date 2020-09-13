@@ -7,7 +7,7 @@ enum class ArmorGrade(@get:JsonValue val value: String) {
     Light("Light"), Sturdy("Sturdy"), Heavy("Heavy"), Unknown("Unknown");
 
     companion object {
-        public fun fromString(input: String?): ArmorGrade {
+        fun fromString(input: String?): ArmorGrade {
             if (StringUtils.isBlank(input)) {
                 return Unknown
             }

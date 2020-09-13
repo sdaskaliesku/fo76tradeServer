@@ -18,7 +18,7 @@ class ItemDescriptor : AbstractObject() {
     var text: String? = null
     var serverHandleId: Long? = null
     var count: Int? = null
-    var itemValue: Int? = null
+    var itemValue: Int = 0
     var filterFlag: Int? = null
     var currentHealth: Int? = null
     var damage: Int? = null

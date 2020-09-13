@@ -55,7 +55,7 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         this.legModsConfig = loadConfig(objectMapper, LEG_MODS_CONFIG_FILE, LEG_MOD_TYPE_REF, XTranslatorConfig::enabled)
         this.ammoTypes = loadConfig(objectMapper, AMMO_TYPES_CONFIG_FILE, XTRANSLATOR_TYPE_REF, XTranslatorConfig::enabled)
         this.nameModifiers = loadConfig(objectMapper, NAME_MODIFIERS_CONFIG_FILE, XTRANSLATOR_TYPE_REF, XTranslatorConfig::enabled)
-        this.armorConfigs = loadConfig(objectMapper, ARMOR_CONFIG_FILE, ARMOR_CONFIG_TYPE_REF, { true })
+        this.armorConfigs = loadConfig(objectMapper, ARMOR_CONFIG_FILE, ARMOR_CONFIG_TYPE_REF) { true }
     }
 
     fun findItemCardText(cardEntry: ItemCardEntry): ItemCardText {
@@ -113,7 +113,7 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         val dr: Int = findDamageTypeValue(itemDTO.stats, DamageType.BALLISTIC)
         val er: Int = findDamageTypeValue(itemDTO.stats, DamageType.ENERGY)
         var rr: Int = findDamageTypeValue(itemDTO.stats, DamageType.RADIATION)
-        if (StringUtils.containsIgnoreCase(itemDTO.abbreviation, "25R")) {
+        if (StringUtils.containsIgnoreCase(itemDTO.itemDetails.abbreviation, "25R")) {
             rr -= 25
         }
         return findArmorType(dr, rr, er)

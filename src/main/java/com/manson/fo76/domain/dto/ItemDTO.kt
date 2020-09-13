@@ -2,7 +2,6 @@ package com.manson.fo76.domain.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.FilterFlag
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.index.Indexed
@@ -17,6 +16,9 @@ class ItemDTO {
 
     @Indexed
     var tradeOptions: TradeOptions? = null
+
+    @Indexed
+    var itemDetails: ItemDetails = ItemDetails()
 
     @Indexed
     var text: String? = null
@@ -59,11 +61,6 @@ class ItemDTO {
 
     @Indexed
     var legendaryMods: List<LegendaryMod> = listOf()
-    var abbreviation: String = ""
-
-    var armorGrade: ArmorGrade = ArmorGrade.Unknown
-    var newName = ""
-
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other !is ItemDTO) return false
@@ -71,6 +68,7 @@ class ItemDTO {
         if (id != other.id) return false
         if (ownerInfo != other.ownerInfo) return false
         if (tradeOptions != other.tradeOptions) return false
+        if (itemDetails != other.itemDetails) return false
         if (text != other.text) return false
         if (description != other.description) return false
         if (serverHandleId != other.serverHandleId) return false
@@ -95,8 +93,6 @@ class ItemDTO {
         if (isLegendary != other.isLegendary) return false
         if (stats != other.stats) return false
         if (legendaryMods != other.legendaryMods) return false
-        if (abbreviation != other.abbreviation) return false
-        if (armorGrade != other.armorGrade) return false
 
         return true
     }
@@ -105,6 +101,7 @@ class ItemDTO {
         var result = id?.hashCode() ?: 0
         result = 31 * result + (ownerInfo?.hashCode() ?: 0)
         result = 31 * result + (tradeOptions?.hashCode() ?: 0)
+        result = 31 * result + itemDetails.hashCode()
         result = 31 * result + (text?.hashCode() ?: 0)
         result = 31 * result + (description?.hashCode() ?: 0)
         result = 31 * result + serverHandleId.hashCode()
@@ -129,8 +126,6 @@ class ItemDTO {
         result = 31 * result + isLegendary.hashCode()
         result = 31 * result + stats.hashCode()
         result = 31 * result + legendaryMods.hashCode()
-        result = 31 * result + abbreviation.hashCode()
-        result = 31 * result + armorGrade.hashCode()
         return result
     }
 

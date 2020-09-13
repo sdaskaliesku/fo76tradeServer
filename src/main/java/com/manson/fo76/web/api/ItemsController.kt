@@ -68,7 +68,7 @@ class ItemsController @Autowired constructor(private val itemService: ItemServic
             return ResponseEntity.noContent().build()
         }
         try {
-            itemService.addItems(uploadItemRequest.user, uploadItemRequest.items!!)
+            itemService.addItems(uploadItemRequest.user, uploadItemRequest.items)
             return ResponseEntity.ok().build()
         } catch (e: Exception) {
             LOGGER.error("Error while uploading items: {}", uploadItemRequest, e)
@@ -104,13 +104,6 @@ class ItemsController @Autowired constructor(private val itemService: ItemServic
             e.printStackTrace()
         }
         return ResponseEntity.noContent().build()
-    }
-
-    //  @PostMapping (value = "/contact", consumes = "application/x-amf")
-    @GetMapping(value = ["/contact"], consumes = ["application/x-amf"])
-    fun postContact(o: Any?) {
-        println(o)
-        //store the contact...
     }
 
     companion object {

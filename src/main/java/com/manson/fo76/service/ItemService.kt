@@ -6,18 +6,20 @@ import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.dto.OwnerInfo
 import com.manson.fo76.helper.Utils
 import com.manson.fo76.repository.ItemRepository
+import java.util.Objects
+import java.util.stream.Collectors
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageImpl
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
-import java.util.*
-import java.util.stream.Collectors
 
 @Service
-class ItemService @Autowired constructor(private val itemRepository: ItemRepository, private val userService: UserService,
-                                         private val itemConverterService: ItemConverterService) {
+class ItemService @Autowired constructor(
+        private val itemRepository: ItemRepository, private val userService: UserService,
+        private val itemConverterService: ItemConverterService,
+) {
     fun findAll(pageable: Pageable?): Page<ItemDTO?> {
         return if (pageable == null) {
             PageImpl(itemRepository.findAll())
@@ -80,8 +82,8 @@ class ItemService @Autowired constructor(private val itemRepository: ItemReposit
         return itemsDTO.stream().map { itemDTO: ItemDTO -> addItem(userId, itemDTO) }.collect(Collectors.toList())
     }
 
-    fun addItems(user: User?, itemsDTO: List<ItemDTO>): MutableList<ItemDTO?>? {
-        return itemsDTO.stream().map { itemDTO: ItemDTO -> addItem(user, itemDTO) }.collect(Collectors.toList())
+    fun addItems(user: User, itemsDTO: List<ItemDTO>): MutableList<ItemDTO?>? {
+        return itemsDTO.stream().map { itemDTO: ItemDTO -> addItem(user, itemDTO) }.filter(Objects::nonNull).collect(Collectors.toList())
     }
 
     fun findAllByOwnerId(user: User, pageable: Pageable?): Page<ItemDTO?>? {
