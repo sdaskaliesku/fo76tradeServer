@@ -3,19 +3,30 @@ package com.manson.fo76.web.api
 import com.manson.fo76.domain.ArmorConfig
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
+import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.items.enums.ItemCardText
+import com.manson.fo76.domain.pricing.PriceCheckResponse
 import com.manson.fo76.service.GameConfigService
+import com.manson.fo76.service.ItemConverterService.Companion.SUPPORTED_PRICE_CHECK_ITEMS
+import com.manson.fo76.service.PriceCheckService
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/game")
-class GameApi @Autowired constructor(private val gameConfigService: GameConfigService) {
+class GameApi @Autowired constructor(private val gameConfigService: GameConfigService, private val priceCheckService: PriceCheckService) {
+
+    companion object {
+        private val LOGGER = LoggerFactory.getLogger(GameApi::class.java)
+    }
 
     @GetMapping(value = ["/legendaryMods"], produces = ["application/json"])
     fun getLegendaryModsConfig(): List<LegendaryModDescriptor> {
@@ -55,5 +66,19 @@ class GameApi @Autowired constructor(private val gameConfigService: GameConfigSe
     @GetMapping(value = ["/nameModifiers"], produces = ["application/json"])
     fun getNameModifiers(): List<XTranslatorConfig> {
         return gameConfigService.nameModifiers
+    }
+
+    @PostMapping(value = ["/priceCheck"], produces = ["application/json"], consumes = ["application/json"])
+    fun priceCheck(@RequestBody item: ItemDTO): PriceCheckResponse {
+        if (!item.isLegendary || !item.isTradable || !SUPPORTED_PRICE_CHECK_ITEMS.contains(item.filterFlag)) {
+            return PriceCheckResponse()
+        }
+        val request = priceCheckService.createPriceCheckRequest(item)
+        return if (request.isValid()) {
+            priceCheckService.priceCheck(request)
+        } else {
+            LOGGER.error("Request is invalid, ignoring: $request\r\n$item")
+            PriceCheckResponse()
+        }
     }
 }

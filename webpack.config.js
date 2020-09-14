@@ -3,7 +3,6 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: './src/main/ui/app.ts',
-  cache: true,
   mode: 'production',
   output: {
     path: __dirname,
@@ -17,7 +16,6 @@ module.exports = {
         options: {
           loaders: {
             'scss': 'vue-style-loader!css-loader!sass-loader',
-            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
           },
         },
       },
@@ -30,7 +28,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|gif|svg|ttf|woff|woff2|eot)$/,
+        test: /\.(svg|ttf|woff|woff2|eot)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]',
@@ -53,35 +51,13 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
     },
   },
-  devServer: {
-    historyApiFallback: true,
-    noInfo: true,
-  },
   performance: {
     hints: false,
   },
-  devtool: '#eval-source-map',
   plugins: [
     new VueLoaderPlugin(),
-  ],
-};
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map';
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"',
-      },
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false,
-      },
-    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),
-  ]);
-}
+  ],
+};

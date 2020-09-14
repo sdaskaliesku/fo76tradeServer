@@ -1,35 +1,15 @@
-import {localStorageService} from './localStorage.service';
 import {ModDataRequest} from "./domain";
+import {BaseService} from "./base.service";
 
-const performRequest = ({url, method, data}: { url: string, method: string, data: any }) => {
-  const params = {
-    method,
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  };
-  const token = localStorageService.getToken();
-  if (token !== null && token !== undefined && token.length > 0) {
-    // @ts-ignore
-    params.headers['Authorization'] = `Bearer ${token}`;
-  }
-  return fetch(url, params).then((resp) => resp.json(), (e) => {
-    console.error(e);
-  });
-};
-
-class ItemService {
-  private readonly baseEndPoint: string;
+class ItemService extends BaseService {
 
   constructor() {
-    this.baseEndPoint = 'items/';
+    super('items/');
   }
 
   prepareModData(modDataRequest: ModDataRequest) {
     const finalUrl = `${this.baseEndPoint}prepareModData`;
-    return performRequest({
+    return this.performRequest({
       url: finalUrl,
       method: 'POST',
       data: modDataRequest,

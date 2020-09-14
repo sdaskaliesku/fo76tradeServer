@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div v-if="!tableData">
       <b-form-group label="Filters for uploading" label-size="lg">
         <b-form-checkbox-group
             v-model="selected"
@@ -10,7 +10,7 @@
         ></b-form-checkbox-group>
       </b-form-group>
     </div>
-    <b-form-file
+    <b-form-file v-if="!tableData"
         v-model="file"
         :state="Boolean(file)"
         placeholder="Choose a file or drop it here..."
@@ -25,14 +25,6 @@
       {{modalText}}
     </b-modal>
     <table-component class="mt-2" v-if="tableData && tableData.length > 0" :table-data="tableData"/>
-    <b-toast toaster="b-toaster-top-full" id="fed76" variant="info">
-      <template v-slot:toast-title>
-        <div class="d-flex flex-grow-1 align-items-baseline">
-          <strong class="mr-auto">Thanks to <a href="https://fed76.info/" target="_blank">imprezobus</a>!</strong>
-        </div>
-      </template>
-      Price estimates powered by <a href="https://fed76.info/pricing/" target="_blank">PriceCheck</a> tool
-    </b-toast>
   </div>
 </template>
 
@@ -93,7 +85,6 @@ export default {
         }).then(
             (items) => {
               if (items && items.length > 0) {
-                this.$bvToast.show('fed76');
                 this.tableData = items;
               } else {
                 this.file = null;

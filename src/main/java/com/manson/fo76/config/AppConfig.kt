@@ -17,6 +17,7 @@ open class AppConfig {
     companion object {
         @get:Bean
         val objectMapper = ObjectMapper()
+        const val ENABLE_AUTO_PRICE_CHECK = false
         private const val MONGO_URL_FORMAT = "mongodb+srv://%s:%s@%s/%s?retryWrites=true&w=majority"
 
         init {

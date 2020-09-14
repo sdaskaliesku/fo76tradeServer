@@ -1,7 +1,16 @@
 <template>
   <div>
-    <div class="toolbar mb-2 mt-2">
+    <div>
+      <div class="align-items-xl-center d-flex flex-column justify-content-center mb-3 mt-5" v-if="isLoading">
+        <b-spinner label="Loading..."></b-spinner>
+        <h2><b-badge variant="warning">Price estimates are loading, this may take a while...Stay tuned</b-badge></h2>
+      </div>
+    </div>
+    <div class="toolbar mb-2 mt-2" v-if="!isLoading">
       <b-button-group>
+        <b-button class="my-2 my-sm-0" variant="info" type="submit" @click="priceCheck">
+          Fed76 price check
+        </b-button>
         <b-button class="my-2 my-sm-0" variant="danger" type="submit" @click="deleteSelected">
           Delete
         </b-button>
@@ -40,28 +49,43 @@
         </b-dropdown>
       </b-button-group>
     </div>
-    <div ref="table" class="table-bordered table-dark table-striped table-sm"></div>
-    <b-modal size="xl" scrollable ok-only centered v-if="selectedItem" id="itemDetailsModal" :title="selectedItem.text">
+    <div ref="table" class="table-bordered table-dark table-striped table-sm" v-if="!isLoading"></div>
+    <b-modal size="xl" scrollable ok-only centered v-if="selectedItem" id="itemDetailsModal"
+             :title="selectedItem.text">
       <template v-for="field in modalFields">
-        <span class="modal-row" v-if="!isEmpty(getObjectValue(selectedItem, field.field))"><b>{{field.name}}: </b>{{ getObjectValue(selectedItem, field.field) }}</span>
+        <span class="modal-row"
+              v-if="!isEmpty(getObjectValue(selectedItem, field.field))"><b>{{ field.name }}: </b>{{
+            getObjectValue(selectedItem, field.field)
+          }}</span>
       </template>
       <template v-if="!isEmpty(selectedItem.stats)">
         <b>Additional parameters:</b>
         <b-list-group v-for="stat in selectedItem.stats" v-bind:key="randomstring()">
           <b-list-group-item class="modal-row" v-if="!isEmpty(stat)">
             Text: {{ stat.text }},
-            DamageType: {{stat.damageType}},
-            Value: {{stat.value}}
+            DamageType: {{ stat.damageType }},
+            Value: {{ stat.value }}
           </b-list-group-item>
         </b-list-group>
       </template>
-      <template v-if="!isEmpty(selectedItem.legendaryMods) && !isEmpty(selectedItem.legendaryMods[0]) && !isEmpty(selectedItem.legendaryMods[0].value)" >
+      <template
+          v-if="!isEmpty(selectedItem.legendaryMods) && !isEmpty(selectedItem.legendaryMods[0]) && !isEmpty(selectedItem.legendaryMods[0].value)">
         <b>Legendary mods:</b>
         <b-list-group v-for="mod in selectedItem.legendaryMods" v-bind:key="randomstring()">
-          <b-list-group-item class="modal-row" v-if="!isEmpty(mod) && !isEmpty(mod.value)">{{mod.value}}</b-list-group-item>
+          <b-list-group-item class="modal-row" v-if="!isEmpty(mod) && !isEmpty(mod.value)">
+            {{ mod.value }}
+          </b-list-group-item>
         </b-list-group>
       </template>
     </b-modal>
+    <b-toast toaster="b-toaster-top-full" id="fed76" variant="info">
+      <template v-slot:toast-title>
+        <div class="d-flex flex-grow-1 align-items-baseline">
+          <strong class="mr-auto">Thanks to <a href="https://fed76.info/" target="_blank">imprezobus</a>!</strong>
+        </div>
+      </template>
+      Price estimates powered by <a href="https://fed76.info/pricing/" target="_blank">PriceCheck</a> tool
+    </b-toast>
   </div>
 </template>
 
@@ -69,7 +93,7 @@
 import {columns, modalFields} from '../table.columns';
 import Tabulator from 'tabulator-tables';
 import {filters} from '../domain';
-const randomstringFunc = require('randomstring');
+import {gameApiService} from '../game.api.service';
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -81,6 +105,7 @@ const tableConfig = {
   groupBy: 'filterFlag',
   paginationSizeSelector: [5, 10, 20, 50, 100, 500, 1000, 5000, 50000],
 };
+const priceCheckFilterFlags = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE'];
 
 const tableFilters = () => {
   const tFilters = [];
@@ -118,6 +143,20 @@ export default {
         }
       });
       return cols;
+    },
+    priceCheck: function() {
+      this.isLoading = true;
+      this.$bvToast.show('fed76');
+      let checkPrices = () => {
+        this.tableData.forEach(async (item) => {
+          if (item.isLegendary && item.isTradable && priceCheckFilterFlags.includes(
+              item.filterFlag)) {
+            item.itemDetails.priceCheckResponse = await gameApiService.priceCheck(item);
+            this.tabulator.setData(this.tableData);
+          }
+        })
+      };
+      new Promise(() => checkPrices()).finally(() => this.isLoading = false);
     },
     deleteSelected: function() {
       const rows = this.tabulator.getSelectedRows();
@@ -188,14 +227,19 @@ export default {
       if (type === String || type === Array) {
         isEmpty = input.length <= 0;
       }
-      return isUndef ||isNull || isEmpty;
+      return isUndef || isNull || isEmpty;
     },
-    randomstring: function(params) {
-      return randomstringFunc.generate(params);
+    randomstring: function() {
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+        const r = parseFloat(
+            '0.' + Math.random().toString().replace('0.', '') + new Date().getTime()) * 16 | 0,
+            v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+      });
     },
     getObjectValue: function(object, field) {
       return field.split('.').reduce((p, c) => p && p[c] || null, object);
-    }
+    },
   },
   mounted: function() {
     this.tabulator = new Tabulator(this.$refs.table, {
@@ -252,7 +296,8 @@ export default {
       searchText: '',
       exportOptions: ['csv', 'html', 'json'],
       selectedItem: null,
-      modalFields: modalFields
+      modalFields: modalFields,
+      isLoading: false
     };
   },
 };

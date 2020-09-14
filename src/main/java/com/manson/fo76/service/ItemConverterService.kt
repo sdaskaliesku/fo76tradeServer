@@ -1,5 +1,6 @@
 package com.manson.fo76.service
 
+import com.manson.fo76.config.AppConfig.Companion.ENABLE_AUTO_PRICE_CHECK
 import com.manson.fo76.domain.ItemsUploadFilters
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.ModData
@@ -40,7 +41,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         private val IGNORED_CARDS: MutableSet<ItemCardText> = mutableSetOf(ItemCardText.LEG_MODS, ItemCardText.DESC)
         private val TYPES_FOR_NAME_CONVERT: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
         private val ARMOR_TYPES: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.ARMOR_OUTFIT, FilterFlag.POWER_ARMOR)
-        private val SUPPORTED_PRICE_CHECK_ITEMS: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
+        val SUPPORTED_PRICE_CHECK_ITEMS: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
 
         private fun matchesFilter(filter: ItemsUploadFilters, itemDescriptor: ItemDescriptor): Boolean {
             if (filter.tradableOnly) {
@@ -221,6 +222,9 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         if (shouldConvertItemName(item)) {
             itemDetails.name = item.text?.let { gameConfigService.getPossibleItemName(it, isArmor(item)) }.toString()
             itemDetails.fedName = gameConfigService.findFedItemName(item)
+            if (!ENABLE_AUTO_PRICE_CHECK) {
+                return itemDetails
+            }
             if (item.isLegendary && item.isTradable && SUPPORTED_PRICE_CHECK_ITEMS.contains(item.filterFlag)) {
                 val request = priceCheckService.createPriceCheckRequest(item)
                 if (request.isValid()) {
