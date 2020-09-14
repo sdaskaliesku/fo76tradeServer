@@ -1,0 +1,1330 @@
+[
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperQuantum",
+    "texts": {
+      "en": "Nuka-Quantum Ammo",
+      "ru": "Боеприпас \"Квантовая Ядер-Кола\""
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0002D8",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkWeatherRain",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0006BB",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyRed",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0006CE",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkMinutemenFlare",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0006D9",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyYellow",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008CF",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkCrackle",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008D2",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyBlue",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008D3",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyPink",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0008D6",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPalmSilver",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "000927",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballBlue",
+    "texts": {
+      "en": "Paintball",
+      "ru": "Шарик с краской — синий"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "000962",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballGlow",
+    "texts": {
+      "en": "Paintball",
+      "ru": "Шарик с краской — светящийся"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "00097D",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballYellow",
+    "texts": {
+      "en": "Paintball",
+      "ru": "Шарик с краской — желтый"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "00099C",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballGreen",
+    "texts": {
+      "en": "Paintball",
+      "ru": "Шарик с краской — зеленый"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0009CE",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballRed",
+    "texts": {
+      "en": "Paintball",
+      "ru": "Шарик с краской — красный"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0009D5",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballWhite",
+    "texts": {
+      "en": "Paintball",
+      "ru": "Шарик с краской — белый"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0009D7",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_RobobrainSyringer",
+    "texts": {
+      "en": "Injectable",
+      "ru": "Пригодно для инъекций"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "000D98",
+    "enabled": true
+  },
+  {
+    "id": "AmmoDLC04_NukaNuke",
+    "texts": {
+      "en": "Nuka-Nuke",
+      "ru": "\"Ядер-Заряд\""
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001087",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_BotFlamerFuel",
+    "texts": {
+      "en": "Fuel",
+      "ru": "Топливо для огнемета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DBC",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_BotMissile",
+    "texts": {
+      "en": "Missile",
+      "ru": "Ракета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DC2",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_BotRRSpike",
+    "texts": {
+      "en": "Spike",
+      "ru": "Железнодорожный гвоздь"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DCB",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_BotGammaCell",
+    "texts": {
+      "en": "Gamma Round",
+      "ru": "Гамма-патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DCE",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_Bot556",
+    "texts": {
+      "en": "5.56",
+      "ru": "5,56-мм патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DD7",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_BotFusionCell",
+    "texts": {
+      "en": "Cell",
+      "ru": "Ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DE0",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_BotFatManMiniNuke",
+    "texts": {
+      "en": "Mini Nuke",
+      "ru": "Ядерный минизаряд"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DE8",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoDLC01_BotCryoCell",
+    "texts": {
+      "en": "Cryo",
+      "ru": "Криогенный заряд"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "001DEA",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC03_FatManBowlingBall",
+    "texts": {
+      "en": "Bowling Ball",
+      "ru": "Модифицированный шар для боулинга"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "002097",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperNukaCola",
+    "texts": {
+      "en": "Nuka-Cola Ammo",
+      "ru": "Боеприпас \"Ядер-Кола\""
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "002177",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC04_AcidSoaker",
+    "texts": {
+      "en": "Acid",
+      "ru": "Концентрированная кислота"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "00231F",
+    "enabled": true
+  },
+  {
+    "id": "AmmoDLC04_BotNukatronCherry",
+    "texts": {
+      "en": "Nuka-Cherry Ammo",
+      "ru": "Ядер-Вишня (боеприпас)"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0027C3",
+    "enabled": true
+  },
+  {
+    "id": "AmmoDLC04_BotNukatronQuantum",
+    "texts": {
+      "en": "Quantum Ammo",
+      "ru": "Квантовая Ядер-кола (боеприпас)"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0027D0",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperWater",
+    "texts": {
+      "en": "Water",
+      "ru": "Немного воды"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0042CD",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoAssaultron",
+    "texts": {
+      "en": "Fusion Cell",
+      "ru": "Ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "012734",
+    "enabled": true
+  },
+  {
+    "id": "AmmoMissile",
+    "texts": {
+      "en": "Missile",
+      "ru": "Ракета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "012BB8",
+    "enabled": true
+  },
+  {
+    "id": "AmmoCannonBall",
+    "texts": {
+      "en": "Cannonball",
+      "ru": "Пушечное ядро"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "012D2C",
+    "enabled": true
+  },
+  {
+    "id": "Ammo45Caliber",
+    "texts": {
+      "en": ".45",
+      "ru": "Патрон калибра .45"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "013DAF",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoMirelurkHunter",
+    "texts": {
+      "en": "Spray",
+      "ru": "Спрей для омаров"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01406D",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoMirelurkQueen",
+    "texts": {
+      "en": "Spray",
+      "ru": "Спрей для омаров"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "015E37",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoMirelurkQueenSpawn",
+    "texts": {
+      "en": "Eggs",
+      "ru": "Яйца болотника"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "015F1C",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCore",
+    "texts": {
+      "en": "Core",
+      "ru": "Ядерный блок"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0161B9",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFlamerFuel",
+    "texts": {
+      "en": "Fuel",
+      "ru": "Топливо"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "017702",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCell",
+    "texts": {
+      "en": "Cell",
+      "ru": "Ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "017C3C",
+    "enabled": true
+  },
+  {
+    "id": "Ammo5mm",
+    "texts": {
+      "en": "5mm",
+      "ru": "5-мм патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "017DEA",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoJunkJet",
+    "texts": {
+      "en": "Junk",
+      "ru": "Хлам"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "018090",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFlareGun",
+    "texts": {
+      "en": "Flare",
+      "ru": "Сигнальная ракета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0184B3",
+    "enabled": true
+  },
+  {
+    "id": "AmmoGammaCell",
+    "texts": {
+      "en": "Gamma Round",
+      "ru": "Гамма-патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "018FEC",
+    "enabled": true
+  },
+  {
+    "id": "Ammo2mmEC",
+    "texts": {
+      "en": "2mm EC",
+      "ru": "2-мм электромагнитный картридж"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "019B33",
+    "enabled": true
+  },
+  {
+    "id": "AmmoCryoCell",
+    "texts": {
+      "en": "Cryo",
+      "ru": "Криогенный заряд"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01A889",
+    "enabled": true
+  },
+  {
+    "id": "Ammo38Caliber",
+    "texts": {
+      "en": ".38",
+      "ru": "Патрон калибра .38"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01A8AE",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoBloodBug",
+    "texts": {
+      "en": "Blood Spray",
+      "ru": "Лужа крови"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01AC47",
+    "enabled": true
+  },
+  {
+    "id": "Ammo44",
+    "texts": {
+      "en": ".44",
+      "ru": "Патрон калибра .44"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01B725",
+    "enabled": true
+  },
+  {
+    "id": "Ammo10mm",
+    "texts": {
+      "en": "10mm",
+      "ru": "10-мм патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01B8D7",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoFusionCellEyebot",
+    "texts": {
+      "en": "Fusion Cell",
+      "ru": "Ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "01E8EF",
+    "enabled": true
+  },
+  {
+    "id": "Ammo308Caliber",
+    "texts": {
+      "en": ".308",
+      "ru": "Патрон калибра .308"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0200C9",
+    "enabled": true
+  },
+  {
+    "id": "AmmoRRSpike",
+    "texts": {
+      "en": "Spike",
+      "ru": "Железнодорожный гвоздь"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0200F7",
+    "enabled": true
+  },
+  {
+    "id": "AmmoShotgunShell",
+    "texts": {
+      "en": "Shell",
+      "ru": "Патрон дробовика"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02043B",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoBloatfly",
+    "texts": {
+      "en": "Larva",
+      "ru": "Жало личинки дутня"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "022296",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFatManMiniNuke",
+    "texts": {
+      "en": "Mini Nuke",
+      "ru": "Ядерный минизаряд"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "023387",
+    "enabled": true
+  },
+  {
+    "id": "Ammo50Caliber",
+    "texts": {
+      "en": ".50",
+      "ru": "Патрон калибра .50"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0235E6",
+    "enabled": true
+  },
+  {
+    "id": "zzz_DN029_AmmoCannonLauncher",
+    "texts": {
+      "en": "Gren.",
+      "ru": "Патрон М203"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0240A9",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoFusionCellLtBlue",
+    "texts": {
+      "en": "Fusion Cell",
+      "ru": "Ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "024952",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoMirelurkKing",
+    "texts": {
+      "en": "Sonic",
+      "ru": "Звуковой удар"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "024EE6",
+    "enabled": true
+  },
+  {
+    "id": "Trap_AmmoFragGrenade",
+    "texts": {
+      "en": "Grenade"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02513E",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCoreMeltdown",
+    "texts": {
+      "en": "Charge",
+      "ru": "Ядерный блок"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02609F",
+    "enabled": true
+  },
+  {
+    "id": "AmmoSyringer",
+    "texts": {
+      "en": "Syringe",
+      "ru": "Заряды для инъектора"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "027392",
+    "enabled": true
+  },
+  {
+    "id": "Ammo556",
+    "texts": {
+      "en": "5.56",
+      "ru": "5,56-мм патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "027F78",
+    "enabled": true
+  },
+  {
+    "id": "AmmoWorkshopArtillery",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02B1D9",
+    "enabled": true
+  },
+  {
+    "id": "AmmoWorkshopArtilleryFar",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02B322",
+    "enabled": true
+  },
+  {
+    "id": "AmmoWorkshopArtilleryClose",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02B38F",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCoreKnightMeltdown",
+    "texts": {
+      "en": "Charge",
+      "ru": "Ядерный блок"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02BEAC",
+    "enabled": true
+  },
+  {
+    "id": "AmmoSentryShoulder",
+    "texts": {
+      "en": "Missile",
+      "ru": "Ракета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02E951",
+    "enabled": true
+  },
+  {
+    "id": "Ammo5mm_NonPlayable",
+    "texts": {
+      "en": "5mm",
+      "ru": "5-мм патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "02EB01",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCoreNoSteal",
+    "texts": {
+      "en": "Core",
+      "ru": "Ядерный блок"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "030B64",
+    "enabled": true
+  },
+  {
+    "id": "AmmoAlienBlaster",
+    "texts": {
+      "en": "AB Round",
+      "ru": "Боеприпас для бластера Чужих"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0320BF",
+    "enabled": true
+  },
+  {
+    "id": "AmmoPlasmaCartridge",
+    "texts": {
+      "en": "Plasma",
+      "ru": "Заряд плазмы"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "032F53",
+    "enabled": true
+  },
+  {
+    "id": "AmmoWorkshopTrapFlamethrowerFuel",
+    "texts": {
+      "en": "Fuel",
+      "ru": "Топливо для огнемета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03360E",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoSpotlight",
+    "texts": {
+      "en": "Cell"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03463A",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_PaintballOrange",
+    "texts": {
+      "en": "Paintball",
+      "ru": "Шарик с краской — оранжевый"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59A",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC04_ThirstZapperCherry",
+    "texts": {
+      "en": "Nuka-Cherry Ammo",
+      "ru": "Боеприпас \"Ядер-Вишня\""
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59B",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCellUltracite",
+    "texts": {
+      "en": "Cell",
+      "ru": "Ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59D",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoGraftonOilBomb",
+    "texts": {
+      "en": "Oil Bomb",
+      "ru": "Боеприпасы — графтонская напалмовая бомба"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E59F",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoGraftonOilBombSalvo",
+    "texts": {
+      "en": "Oil Bomb",
+      "ru": "Залповые боеприприпасы графтонской напалмовой бомбы"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5A1",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoSnallygasterSpitAttack",
+    "texts": {
+      "en": "Snallygaster Spit Attack Ammo",
+      "ru": "Боеприпасы для плевка снеллигастера"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5A5",
+    "enabled": true
+  },
+  {
+    "id": "AmmoPlasmaCore",
+    "texts": {
+      "en": "Core",
+      "ru": "Плазменный блок"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5A7",
+    "enabled": true
+  },
+  {
+    "id": "AmmoCrossbowBolt",
+    "texts": {
+      "en": "Bolt",
+      "ru": "Арбалетный болт"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5AA",
+    "enabled": true
+  },
+  {
+    "id": "AmmoHarpoon",
+    "texts": {
+      "en": "Harpoon",
+      "ru": "Гарпун"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5AC",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPeonyGreen",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5AD",
+    "enabled": true
+  },
+  {
+    "id": "Test_AmmoMissile",
+    "texts": {
+      "en": "Missile",
+      "ru": "Ракета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B1",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoScorchbeastQueenSonicAttack",
+    "texts": {
+      "en": "Scorchbeast Sonic Attack Ammo",
+      "ru": "Боеприпасы для звукового удара зверожога"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B3",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoRadToadSpit",
+    "texts": {
+      "en": "Radtoad Spit",
+      "ru": "Слюна рад-жабы"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B6",
+    "enabled": true
+  },
+  {
+    "id": "POST_AmmoDLC05_FireworkPalmGold",
+    "texts": {
+      "en": "Mortar",
+      "ru": "Миномет"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B7",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoScorchbeastStrafeAttack",
+    "texts": {
+      "en": "Scorchbeast Strafe Attack Ammo",
+      "ru": "Боеприпасы для ураганной атаки зверожога"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5B9",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoTickSpit",
+    "texts": {
+      "en": "Blood Spray",
+      "ru": "Лужа крови"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5BB",
+    "enabled": true
+  },
+  {
+    "id": "AmmoGrenadeLauncher",
+    "texts": {
+      "en": "40mm",
+      "ru": "Граната 40 мм"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5BD",
+    "enabled": true
+  },
+  {
+    "id": "Ammo50CaliberBall",
+    "texts": {
+      "en": ".50 Ball",
+      "ru": "Шар калибра .50"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5BF",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoScorchbeastQueenStrafeAttack",
+    "texts": {
+      "en": "Scorchbeast Strafe Attack Ammo",
+      "ru": "Боеприпасы для ураганной атаки зверожога"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C1",
+    "enabled": true
+  },
+  {
+    "id": "zzz_AmmoBow",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Стрела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C3",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoScorchbeastSonicAttack",
+    "texts": {
+      "en": "Scorchbeast Sonic Attack Ammo",
+      "ru": "Боеприпасы для звукового удара зверожога"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C5",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoHoneyBeastBeeSwarm",
+    "texts": {
+      "en": "Bee Swarm",
+      "ru": "Пчелиный рой медозверей"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "03E5C7",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoFlatwoods",
+    "texts": {
+      "en": "Cell",
+      "ru": "Ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "040F7C",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoMissile_Turret",
+    "texts": {
+      "en": "Missile",
+      "ru": "Ракета"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0443DD",
+    "enabled": true
+  },
+  {
+    "id": "AmmoLiberatorLaserAmmo",
+    "texts": {
+      "en": "Laser",
+      "ru": "Боеприпасы к лазеру освободителя"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "046503",
+    "enabled": true
+  },
+  {
+    "id": "Ammo10mm_AntiScorchbeast",
+    "texts": {
+      "en": "Ultracite 10mm Round",
+      "ru": "Ультрацитовый 10-мм патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481AB",
+    "enabled": true
+  },
+  {
+    "id": "AmmoPlasmaCartridge_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Plasma",
+      "ru": "Ультрацитовый заряд плазмы"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481AD",
+    "enabled": true
+  },
+  {
+    "id": "AmmoPlasmaCore_AntiScorched",
+    "texts": {
+      "en": "Ultracite Plasma Core",
+      "ru": "Ультрацитовый плазменный блок"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481AF",
+    "enabled": true
+  },
+  {
+    "id": "AmmoCrossbowBolt_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Bolt",
+      "ru": "Ультрацитовый арбалетный болт"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B1",
+    "enabled": true
+  },
+  {
+    "id": "AmmoShotgunShell_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Shell",
+      "ru": "Ультрацитовый патрон дробовика"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B3",
+    "enabled": true
+  },
+  {
+    "id": "Ammo44_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .44",
+      "ru": "Ультрацитовый патрон калибра .44"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B5",
+    "enabled": true
+  },
+  {
+    "id": "Ammo308Caliber_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .308",
+      "ru": "Ультрацитовый патрон калибра .308"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B7",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCore_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Fusion Core",
+      "ru": "Ультрацитовый ядерный блок"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481B9",
+    "enabled": true
+  },
+  {
+    "id": "Ammo50Cal_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .50",
+      "ru": "Ультрацитовый патрон калибра .50"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481BB",
+    "enabled": true
+  },
+  {
+    "id": "AmmoRRSpike_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Spike",
+      "ru": "Ультрацитовый железнодорожный гвоздь"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481BD",
+    "enabled": true
+  },
+  {
+    "id": "Ammo45Caliber_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .45",
+      "ru": "Ультрацитовый патрон калибра .45"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481BF",
+    "enabled": true
+  },
+  {
+    "id": "AmmoFusionCell_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Fusion Cell",
+      "ru": "Ультрацитовая ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C1",
+    "enabled": true
+  },
+  {
+    "id": "Ammo2mmEC_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite 2mm EC",
+      "ru": "Ультрацитовый 2-мм электромагнитный картридж"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C3",
+    "enabled": true
+  },
+  {
+    "id": "Ammo556_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite 5.56",
+      "ru": "Ультрацитовый патрон калибра 5,56"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C5",
+    "enabled": true
+  },
+  {
+    "id": "Ammo5mm_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite 5mm",
+      "ru": "Ультрацитовый 5-мм патрон"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0481C7",
+    "enabled": true
+  },
+  {
+    "id": "Ammo38Caliber_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite .38",
+      "ru": "Ультрацитовый патрон калибра .308"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "048671",
+    "enabled": true
+  },
+  {
+    "id": "AmmoCamera",
+    "texts": {
+      "en": "Camera Film",
+      "ru": "Пленка для камеры"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "04A9C9",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoWendigoScreamAttack",
+    "texts": {
+      "en": "Wendigo Scream Attack Ammo",
+      "ru": "Боеприпасы для вопля вендиго"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "04B991",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoFloaterFreezerBreath",
+    "texts": {
+      "en": "Freezer Ammo",
+      "ru": "Боеприпасы замораживающего плавуна"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "056D41",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoFloaterFreezerStare",
+    "texts": {
+      "en": "Floater Flamer",
+      "ru": "Топливо для огнедышащего плавуна"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "0571AD",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_Firework",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Стрела-фейерверк"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD85",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_Explosive",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Взрывчатая стрела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD87",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_Poison",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Отравленная стрела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD89",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_Plasma",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Плазменная стрела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD8B",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_Flaming",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Огненная стрела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD8D",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_Cryo",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Криострела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "05BD8F",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_Broadhead",
+    "texts": {
+      "en": "Arrow",
+      "ru": "Стрела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "41000B07",
+    "enabled": true
+  },
+  {
+    "id": "V96_1_SuppressionSyringerAmmo",
+    "texts": {
+      "en": "Suppression Syringe",
+      "ru": "Убежище 96 — Шприц \"Подавитель\" I"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "61002E7C",
+    "enabled": true
+  },
+  {
+    "id": "Ammo_Arrow_AntiScorchBeast",
+    "texts": {
+      "en": "Ultracite Arrow",
+      "ru": "Ультрацитовая стрела"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "610098B8",
+    "enabled": true
+  },
+  {
+    "id": "W05_MQ_003P_Muscle_AmmoFusionCell_Polly",
+    "texts": {
+      "en": "Cell",
+      "ru": "Изношенная ядерная батарея"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "D9002D38",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoFloaterFlamerBreath",
+    "texts": {
+      "en": "Floater Flamer",
+      "ru": "Топливо для огнедышащего плавуна"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "D9002D39",
+    "enabled": true
+  },
+  {
+    "id": "crAmmoFloaterFlamerFireball",
+    "texts": {
+      "en": "Floater Fireball Ammo",
+      "ru": "Боезапас для огненного шара плавуна"
+    },
+    "rec": "AMMO:ONAM",
+    "sid": "D9002D3B",
+    "enabled": true
+  }
+]

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div v-if="!tableData">
       <b-form-group label="Filters for uploading" label-size="lg">
         <b-form-checkbox-group
             v-model="selected"
@@ -10,7 +10,7 @@
         ></b-form-checkbox-group>
       </b-form-group>
     </div>
-    <b-form-file
+    <b-form-file v-if="!tableData"
         v-model="file"
         :state="Boolean(file)"
         placeholder="Choose a file or drop it here..."
