@@ -1,16 +1,17 @@
 package com.manson.fo76.domain.items.enums
 
+import java.util.ArrayList
+import java.util.Arrays
 import org.apache.commons.lang3.StringUtils
-import java.util.*
 
 enum class FilterFlag {
     POWER_ARMOR("Power Armor", 0),
-    WEAPON("Weapon", true, 2, 3),
     WEAPON_MELEE("Weapon - Melee", true),
     WEAPON_RANGED("Weapon - Ranged", true),
     WEAPON_THROWN("Weapon - Thrown"),
-    ARMOR("Armor", true, 4),
+    WEAPON("Weapon", true, listOf(WEAPON_THROWN, WEAPON_MELEE, WEAPON_RANGED), 2, 3),
     ARMOR_OUTFIT("Armor - Outfit"),
+    ARMOR("Armor", true, listOf(ARMOR_OUTFIT), 4),
     AID("Aid", 8, 9),
     HOLO("Holo", 512),
     AMMO("Ammo", 4096),
@@ -23,21 +24,23 @@ enum class FilterFlag {
     private val flags: MutableList<Int> = ArrayList()
     val value: String
     val isHasStarMods: Boolean
+    val subtypes: List<FilterFlag>
 
-    constructor(name: String, hasStarMods: Boolean, vararg flags: Int) {
+    constructor(name: String, hasStarMods: Boolean, subtypes: List<FilterFlag> = listOf(), vararg flags: Int) {
         this.flags.addAll(flags.asList())
         this.value = name
-        isHasStarMods = hasStarMods
+        this.isHasStarMods = hasStarMods
+        this.subtypes = subtypes
     }
 
-    constructor(name: String, vararg flags: Int) : this(name, false, *flags)
-    constructor(name: String, hasStarMods: Boolean, flag: Int) {
-        flags.add(flag)
-        this.value = name
-        isHasStarMods = hasStarMods
-    }
+    constructor(name: String, vararg flags: Int) : this(name, hasStarMods = false, flags = flags)
+//    constructor(name: String, hasStarMods: Boolean, flag: Int) {
+//        flags.add(flag)
+//        this.value = name
+//        isHasStarMods = hasStarMods
+//    }
 
-    constructor(name: String, flag: Int) : this(name, false, flag)
+//    constructor(name: String, flag: Int) : this(name, false, flag)
 
     fun getFlags(): List<Int> {
         return flags

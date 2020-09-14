@@ -57,7 +57,7 @@ class PopulateLegModsConfig {
         return false
     }
 
-    private val ignoredKeyWords = listOf("rifle", "harpoon", "Napalmer", "Headlamp", "Revolver", "Shotgun", "Pistol", "Gun", "Slug Buster", "Plasma", "Cryo", "The Fixer", "Shi", "Double", "Handmade", "*", "Assault", "Flame", "The")
+    private val ignoredKeyWords = listOf("rifle", "harpoon", "Napalmer", "Headlamp", "Revolver", "Shotgun", "Pistol", "Gun", "Slug Buster", "Plasma", "Cryo", "The Fixer", "Shi", "Double", "Handmade", "*", "Assault", "Flame", "The", "Mole miner")
     private val fullyIgnoredKeyWords = listOf("black", "light", "heavy")
 
     @Test

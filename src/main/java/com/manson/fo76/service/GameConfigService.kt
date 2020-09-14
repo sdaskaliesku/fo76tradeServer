@@ -4,12 +4,14 @@ import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.google.common.io.Resources
 import com.manson.fo76.domain.ArmorConfig
+import com.manson.fo76.domain.FedItemConfig
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.dto.StatsDTO
 import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.DamageType
+import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.items.enums.ItemCardText
 import com.manson.fo76.domain.items.item_card.ItemCardEntry
 import java.util.function.Predicate
@@ -28,9 +30,11 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         private const val AMMO_TYPES_CONFIG_FILE = "ammo.types.json"
         private const val ARMOR_CONFIG_FILE = "armor.config.json"
         private const val NAME_MODIFIERS_CONFIG_FILE = "name.modifiers.json"
+        private const val FED_ITEM_NAMES_CONFIG_FILE = "itemTypes.config.json"
         private val LEG_MOD_TYPE_REF: TypeReference<List<LegendaryModDescriptor>> = object : TypeReference<List<LegendaryModDescriptor>>() {}
         private val XTRANSLATOR_TYPE_REF: TypeReference<List<XTranslatorConfig>> = object : TypeReference<List<XTranslatorConfig>>() {}
         private val ARMOR_CONFIG_TYPE_REF: TypeReference<List<ArmorConfig>> = object : TypeReference<List<ArmorConfig>>() {}
+        private val FED_ITEM_CONFIG_TYPE_REF: TypeReference<List<FedItemConfig>> = object : TypeReference<List<FedItemConfig>>() {}
 
         private fun <T> loadConfig(objectMapper: ObjectMapper, file: String, typeReference: TypeReference<List<T>>, predicate: Predicate<T>): List<T> {
             var configs: List<T> = ArrayList()
@@ -50,12 +54,14 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
     var ammoTypes: List<XTranslatorConfig>
     var nameModifiers: List<XTranslatorConfig>
     var armorConfigs: List<ArmorConfig>
+    var fedItemConfigs: List<FedItemConfig>
 
     init {
         this.legModsConfig = loadConfig(objectMapper, LEG_MODS_CONFIG_FILE, LEG_MOD_TYPE_REF, XTranslatorConfig::enabled)
         this.ammoTypes = loadConfig(objectMapper, AMMO_TYPES_CONFIG_FILE, XTRANSLATOR_TYPE_REF, XTranslatorConfig::enabled)
         this.nameModifiers = loadConfig(objectMapper, NAME_MODIFIERS_CONFIG_FILE, XTRANSLATOR_TYPE_REF, XTranslatorConfig::enabled)
         this.armorConfigs = loadConfig(objectMapper, ARMOR_CONFIG_FILE, ARMOR_CONFIG_TYPE_REF) { true }
+        this.fedItemConfigs = loadConfig(objectMapper, FED_ITEM_NAMES_CONFIG_FILE, FED_ITEM_CONFIG_TYPE_REF) { true }
     }
 
     fun findItemCardText(cardEntry: ItemCardEntry): ItemCardText {
@@ -76,12 +82,29 @@ class GameConfigService @Autowired constructor(objectMapper: ObjectMapper) {
         return if (ammoTypes.any { it.texts.values.contains(input) }) ItemCardText.AMMO else ItemCardText.UNKNOWN
     }
 
-    fun findLegendaryModDescriptor(input: String?): LegendaryModDescriptor? {
+    fun findLegendaryModDescriptor(input: String?, filterFlag: FilterFlag): LegendaryModDescriptor? {
         if (StringUtils.isBlank(input)) {
             return null
         }
         val value: String = input.toString()
-        return legModsConfig.firstOrNull { it.isTheSameMod(value) }
+        return legModsConfig.firstOrNull { it.isTheSameMod(value, filterFlag) }
+    }
+
+    fun findFedItemName(item: ItemDTO): String {
+        if (!item.isLegendary || !item.isTradable) {
+            return ""
+        }
+        for (fedItemConfig in fedItemConfigs) {
+            if (fedItemConfig.type === item.filterFlag) {
+                val itemName = item.itemDetails.name.replace(".", "")
+                val fedItemText = fedItemConfig.text.replace(".", "")
+                val fedItemAbbr = fedItemConfig.abbreviation.replace(".", "")
+                if (StringUtils.containsIgnoreCase(itemName, fedItemText) || StringUtils.containsIgnoreCase(itemName, fedItemAbbr)) {
+                    return fedItemConfig.abbreviation
+                }
+            }
+        }
+        return ""
     }
 
     private fun findDamageTypeValue(stats: List<StatsDTO>, dmgType: DamageType): Int {

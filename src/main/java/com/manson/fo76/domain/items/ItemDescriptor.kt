@@ -8,8 +8,6 @@ import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.items.enums.FilterFlag.Companion.fromInt
 import com.manson.fo76.domain.items.item_card.ItemCardEntry
 import com.manson.fo76.domain.items.mod_card.ModCardEntry
-import org.apache.commons.lang3.builder.EqualsBuilder
-import org.apache.commons.lang3.builder.HashCodeBuilder
 import org.apache.commons.lang3.builder.ToStringBuilder
 import org.apache.commons.lang3.builder.ToStringStyle
 
@@ -28,14 +26,15 @@ class ItemDescriptor : AbstractObject() {
     var weaponDisplayAccuracy: Double? = null
     var weaponDisplayRateOfFire: Double? = null
     var weaponDisplayRange: Double? = null
-    var numLegendaryStars: Int? = null
+    var numLegendaryStars: Int = 0
     var itemLevel: Int? = null
     var rarity: Int? = null
-    var tradable: Boolean? = null
-    var spoiled: Boolean? = null
-    var setItem: Boolean? = null
-    var questItem: Boolean? = null
-    var legendary: Boolean? = null
+
+    var isTradable: Boolean = false
+    var isSpoiled: Boolean = false
+    var isSetItem: Boolean = false
+    var isQuestItem: Boolean = false
+    var isLegendary: Boolean = false
 
     @JsonProperty("ItemCardEntries")
     var itemCardEntries: List<ItemCardEntry>? = null
@@ -48,70 +47,7 @@ class ItemDescriptor : AbstractObject() {
     val filterFlagEnum: FilterFlag
         get() = fromInt(filterFlag)
 
-    override fun equals(o: Any?): Boolean {
-        if (this === o) {
-            return true
-        }
-        if (o == null || javaClass != o.javaClass) {
-            return false
-        }
-        val that = o as ItemDescriptor
-        return EqualsBuilder()
-                .append(text, that.text)
-                .append(serverHandleId, that.serverHandleId)
-                .append(count, that.count)
-                .append(itemValue, that.itemValue)
-                .append(filterFlag, that.filterFlag)
-                .append(currentHealth, that.currentHealth)
-                .append(damage, that.damage)
-                .append(durability, that.durability)
-                .append(maximumHealth, that.maximumHealth)
-                .append(weight, that.weight)
-                .append(weaponDisplayAccuracy, that.weaponDisplayAccuracy)
-                .append(weaponDisplayRateOfFire, that.weaponDisplayRateOfFire)
-                .append(weaponDisplayRange, that.weaponDisplayRange)
-                .append(numLegendaryStars, that.numLegendaryStars)
-                .append(itemLevel, that.itemLevel)
-                .append(rarity, that.rarity)
-                .append(tradable, that.tradable)
-                .append(spoiled, that.spoiled)
-                .append(setItem, that.setItem)
-                .append(questItem, that.questItem)
-                .append(legendary, that.legendary)
-                .append(itemCardEntries, that.itemCardEntries)
-                .append(vendingData, that.vendingData)
-                .append(modCardEntries, that.modCardEntries)
-                .isEquals
-    }
 
-    override fun hashCode(): Int {
-        return HashCodeBuilder(17, 37)
-                .append(text)
-                .append(serverHandleId)
-                .append(count)
-                .append(itemValue)
-                .append(filterFlag)
-                .append(currentHealth)
-                .append(damage)
-                .append(durability)
-                .append(maximumHealth)
-                .append(weight)
-                .append(weaponDisplayAccuracy)
-                .append(weaponDisplayRateOfFire)
-                .append(weaponDisplayRange)
-                .append(numLegendaryStars)
-                .append(itemLevel)
-                .append(rarity)
-                .append(tradable)
-                .append(spoiled)
-                .append(setItem)
-                .append(questItem)
-                .append(legendary)
-                .append(itemCardEntries)
-                .append(vendingData)
-                .append(modCardEntries)
-                .toHashCode()
-    }
 
     override fun toString(): String {
         return ToStringBuilder(this, ToStringStyle.NO_CLASS_NAME_STYLE)
@@ -123,5 +59,67 @@ class ItemDescriptor : AbstractObject() {
                 .append("numLegendaryStars", numLegendaryStars)
                 .append("itemLevel", itemLevel)
                 .toString()
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other !is ItemDescriptor) return false
+
+        if (ownerInfo != other.ownerInfo) return false
+        if (text != other.text) return false
+        if (serverHandleId != other.serverHandleId) return false
+        if (count != other.count) return false
+        if (itemValue != other.itemValue) return false
+        if (filterFlag != other.filterFlag) return false
+        if (currentHealth != other.currentHealth) return false
+        if (damage != other.damage) return false
+        if (durability != other.durability) return false
+        if (maximumHealth != other.maximumHealth) return false
+        if (weight != other.weight) return false
+        if (weaponDisplayAccuracy != other.weaponDisplayAccuracy) return false
+        if (weaponDisplayRateOfFire != other.weaponDisplayRateOfFire) return false
+        if (weaponDisplayRange != other.weaponDisplayRange) return false
+        if (numLegendaryStars != other.numLegendaryStars) return false
+        if (itemLevel != other.itemLevel) return false
+        if (rarity != other.rarity) return false
+        if (isTradable != other.isTradable) return false
+        if (isSpoiled != other.isSpoiled) return false
+        if (isSetItem != other.isSetItem) return false
+        if (isQuestItem != other.isQuestItem) return false
+        if (isLegendary != other.isLegendary) return false
+        if (itemCardEntries != other.itemCardEntries) return false
+        if (vendingData != other.vendingData) return false
+        if (modCardEntries != other.modCardEntries) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = ownerInfo?.hashCode() ?: 0
+        result = 31 * result + (text?.hashCode() ?: 0)
+        result = 31 * result + (serverHandleId?.hashCode() ?: 0)
+        result = 31 * result + (count ?: 0)
+        result = 31 * result + itemValue
+        result = 31 * result + (filterFlag ?: 0)
+        result = 31 * result + (currentHealth ?: 0)
+        result = 31 * result + (damage ?: 0)
+        result = 31 * result + (durability ?: 0)
+        result = 31 * result + (maximumHealth ?: 0)
+        result = 31 * result + (weight?.hashCode() ?: 0)
+        result = 31 * result + (weaponDisplayAccuracy?.hashCode() ?: 0)
+        result = 31 * result + (weaponDisplayRateOfFire?.hashCode() ?: 0)
+        result = 31 * result + (weaponDisplayRange?.hashCode() ?: 0)
+        result = 31 * result + numLegendaryStars
+        result = 31 * result + (itemLevel ?: 0)
+        result = 31 * result + (rarity ?: 0)
+        result = 31 * result + isTradable.hashCode()
+        result = 31 * result + isSpoiled.hashCode()
+        result = 31 * result + isSetItem.hashCode()
+        result = 31 * result + isQuestItem.hashCode()
+        result = 31 * result + isLegendary.hashCode()
+        result = 31 * result + (itemCardEntries?.hashCode() ?: 0)
+        result = 31 * result + (vendingData?.hashCode() ?: 0)
+        result = 31 * result + (modCardEntries?.hashCode() ?: 0)
+        return result
     }
 }

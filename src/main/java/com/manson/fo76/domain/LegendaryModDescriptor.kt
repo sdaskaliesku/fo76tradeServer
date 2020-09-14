@@ -2,6 +2,7 @@ package com.manson.fo76.domain
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import com.manson.fo76.domain.items.enums.FilterFlag
 import java.util.ArrayList
 import java.util.HashMap
 import org.apache.commons.lang3.StringUtils
@@ -12,10 +13,15 @@ class LegendaryModDescriptor : XTranslatorConfig() {
     var abbreviation: String? = null
     var additionalAbbreviations: List<String> = ArrayList()
     var translations: Map<String, String> = HashMap()
-    var itemType: String? = null
+    var itemType: FilterFlag = FilterFlag.UNKNOWN
 
     @JsonIgnore
-    fun isTheSameMod(modName: String): Boolean {
+    fun isTheSameMod(modName: String, filterFlag: FilterFlag): Boolean {
+        if (filterFlag != FilterFlag.UNKNOWN) {
+            if (itemType != filterFlag && !filterFlag.subtypes.contains(itemType) && !itemType.subtypes.contains(filterFlag)) {
+                return false
+            }
+        }
         val input = prepareString(modName)
         for (text in texts.values) {
             if (StringUtils.equalsIgnoreCase(prepareString(text), input)) {

@@ -41,7 +41,7 @@
       </b-button-group>
     </div>
     <div ref="table" class="table-bordered table-dark table-striped table-sm"></div>
-    <b-modal ok-only centered v-if="selectedItem" id="itemDetailsModal" :title="selectedItem.text">
+    <b-modal size="xl" scrollable ok-only centered v-if="selectedItem" id="itemDetailsModal" :title="selectedItem.text">
       <template v-for="field in modalFields">
         <span class="modal-row" v-if="!isEmpty(getObjectValue(selectedItem, field.field))"><b>{{field.name}}: </b>{{ getObjectValue(selectedItem, field.field) }}</span>
       </template>

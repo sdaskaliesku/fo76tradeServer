@@ -2000,15 +2000,6 @@
   {
     "id": "dn_CommonHandHeld",
     "texts": {
-      "en": "Mole Miner"
-    },
-    "rec": "{-id=1, -idMax=11, #text=INNR:WNAM}",
-    "sid": "61000FD3",
-    "enabled": true
-  },
-  {
-    "id": "dn_CommonHandHeld",
-    "texts": {
       "en": "Wood Grain"
     },
     "rec": "{-id=2, -idMax=11, #text=INNR:WNAM}",

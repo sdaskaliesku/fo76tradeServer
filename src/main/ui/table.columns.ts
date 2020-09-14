@@ -38,6 +38,9 @@ export const columns = [
   createColumnDef({title: '2 star', field: 'legendaryMods.1.value'}),
   createColumnDef({title: '3 star', field: 'legendaryMods.2.value'}),
   createColumnDef({title: 'Vendor Price', field: 'tradeOptions.vendorPrice', visible: false}),
+  createColumnDef({title: 'fed76.info Price', field: 'itemDetails.priceCheckResponse.price'}),
+  createColumnDef({title: 'fed76.info description', field: 'itemDetails.priceCheckResponse.description'}),
+  createColumnDef({title: 'fed76.info value', field: 'itemDetails.priceCheckResponse.review.description'}),
   createColumnDef({title: 'Description', field: 'description', visible: false}),
   {
     ...createColumnDef({title: 'Tradable', field: 'isTradable', visible: false}),
@@ -112,6 +115,26 @@ export const modalFields = [
   {
     name: 'Game Price',
     field: 'itemValue',
+  },
+  {
+    name: 'fed76.info name',
+    field: 'itemDetails.priceCheckResponse.name',
+  },
+  {
+    name: 'fed76.info Price',
+    field: 'itemDetails.priceCheckResponse.price',
+  },
+  {
+    name: 'fed76.info description',
+    field: 'itemDetails.priceCheckResponse.description',
+  },
+  {
+    name: 'fed76.info value',
+    field: 'itemDetails.priceCheckResponse.review.description',
+  },
+  {
+    name: 'fed76.info rating value',
+    field: 'itemDetails.priceCheckResponse.review.reviewRating.ratingValue',
   },
   {
     name: 'Legendary stars',

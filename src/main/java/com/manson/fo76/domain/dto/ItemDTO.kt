@@ -129,5 +129,9 @@ class ItemDTO {
         return result
     }
 
+    override fun toString(): String {
+        return "ItemDTO(id=$id, ownerInfo=$ownerInfo, tradeOptions=$tradeOptions, itemDetails=$itemDetails, text=$text, description=$description, serverHandleId=$serverHandleId, count=$count, itemValue=$itemValue, filterFlag=$filterFlag, currentHealth=$currentHealth, damage=$damage, durability=$durability, maximumHealth=$maximumHealth, weight=$weight, weaponDisplayAccuracy=$weaponDisplayAccuracy, weaponDisplayRateOfFire=$weaponDisplayRateOfFire, weaponDisplayRange=$weaponDisplayRange, numLegendaryStars=$numLegendaryStars, itemLevel=$itemLevel, rarity=$rarity, isTradable=$isTradable, isSpoiled=$isSpoiled, isSetItem=$isSetItem, isQuestItem=$isQuestItem, isLegendary=$isLegendary, stats=$stats, legendaryMods=$legendaryMods)"
+    }
+
 
 }

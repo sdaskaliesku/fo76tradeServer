@@ -32,7 +32,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class ItemConverterService @Autowired constructor(private val gameConfigService: GameConfigService) {
+class ItemConverterService @Autowired constructor(private val gameConfigService: GameConfigService, private val priceCheckService: PriceCheckService) {
 
     @Suppress("UnstableApiUsage")
     companion object {
@@ -40,34 +40,35 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         private val IGNORED_CARDS: MutableSet<ItemCardText> = mutableSetOf(ItemCardText.LEG_MODS, ItemCardText.DESC)
         private val TYPES_FOR_NAME_CONVERT: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
         private val ARMOR_TYPES: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.ARMOR_OUTFIT, FilterFlag.POWER_ARMOR)
+        private val SUPPORTED_PRICE_CHECK_ITEMS: MutableSet<FilterFlag> = mutableSetOf(FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED)
 
-        private fun matchesFilter(filter: ItemsUploadFilters, itemDescriptor: ItemDescriptor?): Boolean {
+        private fun matchesFilter(filter: ItemsUploadFilters, itemDescriptor: ItemDescriptor): Boolean {
             if (filter.tradableOnly) {
-                if (itemDescriptor!!.tradable == null || !itemDescriptor.tradable!!) {
+                if (!itemDescriptor.isTradable) {
+                    LOGGER.debug("Skipping item(filter - tradableOnly) $itemDescriptor")
                     return false
                 }
             }
-            val filterFlag = itemDescriptor!!.filterFlagEnum
+            if (filter.legendaryOnly) {
+                if (!itemDescriptor.isLegendary) {
+                    LOGGER.debug("Skipping item(filter - legendaryOnly) $itemDescriptor")
+                    return false
+                }
+            }
+            val filterFlag = itemDescriptor.filterFlagEnum
             if (filterFlag == FilterFlag.UNKNOWN) {
                 LOGGER.warn("Empty filter flag for {}", itemDescriptor)
                 return false
-            } else {
-                if (filter.legendaryOnly) {
-                    val stars = itemDescriptor.numLegendaryStars
-                    if (stars == null || stars <= 0) {
-                        return false
-                    }
-                }
-                if (CollectionUtils.isEmpty(filter.filterFlags)) {
+            }
+            if (CollectionUtils.isEmpty(filter.filterFlags)) {
+                return true
+            }
+            for (flag in filterFlag.getFlags()) {
+                if (filter.filterFlags.contains(flag)) {
                     return true
-                } else {
-                    for (flag in filterFlag.getFlags()) {
-                        if (filter.filterFlags.contains(flag)) {
-                            return true
-                        }
-                    }
                 }
             }
+            LOGGER.debug("Skipping item(filter - filterFlags) $itemDescriptor")
             return false
         }
 
@@ -137,6 +138,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                 }
             }
             if (!isDuplicate) {
+                itemDTO.itemDetails = createItemDetails(itemDTO)
                 deduped.add(itemDTO)
             }
         }
@@ -203,7 +205,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return tradeOptions
     }
 
-    private fun createOwnerInfo(item: ItemDTO, user: User):OwnerInfo {
+    private fun createOwnerInfo(item: ItemDTO, user: User): OwnerInfo {
         var ownerInfo = OwnerInfo()
         if (Objects.nonNull(item.ownerInfo)) {
             ownerInfo = item.ownerInfo!!
@@ -213,11 +215,20 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return ownerInfo
     }
 
-    private fun createItemDetails(item: ItemDTO):ItemDetails {
+    private fun createItemDetails(item: ItemDTO): ItemDetails {
         val itemDetails = item.itemDetails
         itemDetails.armorGrade = gameConfigService.findArmorType(item)
         if (shouldConvertItemName(item)) {
             itemDetails.name = item.text?.let { gameConfigService.getPossibleItemName(it, isArmor(item)) }.toString()
+            itemDetails.fedName = gameConfigService.findFedItemName(item)
+            if (item.isLegendary && item.isTradable && SUPPORTED_PRICE_CHECK_ITEMS.contains(item.filterFlag)) {
+                val request = priceCheckService.createPriceCheckRequest(item)
+                if (request.isValid()) {
+                    itemDetails.priceCheckResponse = priceCheckService.priceCheck(request)
+                } else {
+                    LOGGER.error("Request is invalid, ignoring: $request\r\n$item")
+                }
+            }
         }
         return itemDetails
     }
@@ -237,7 +248,6 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         itemDto.tradeOptions = createTradeOptions(itemDto, item)
         itemDto.stats = processItemCardEntries(item, itemDto)
         itemDto.text = itemDto.text?.let { gameConfigService.cleanItemName(it) }
-        itemDto.itemDetails = createItemDetails(itemDto)
         return itemDTO
     }
 
@@ -245,7 +255,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return ARMOR_TYPES.contains(item.filterFlag)
     }
 
-    private fun processLegendaryMods(itemCardEntry: ItemCardEntry, itemCardText: ItemCardText): MutableList<LegendaryMod> {
+    private fun processLegendaryMods(itemCardEntry: ItemCardEntry, itemCardText: ItemCardText, filterFlag: FilterFlag): MutableList<LegendaryMod> {
         val mods: MutableList<LegendaryMod> = ArrayList()
         if (itemCardText === ItemCardText.DESC) {
             val strings = itemCardEntry.value!!.split("\n").toTypedArray()
@@ -255,11 +265,12 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                     continue
                 }
                 val legendaryMod = LegendaryMod(newMod)
-                val descriptor: LegendaryModDescriptor? = gameConfigService.findLegendaryModDescriptor(newMod)
+                val descriptor: LegendaryModDescriptor? = gameConfigService.findLegendaryModDescriptor(newMod, filterFlag)
                 if (descriptor != null) {
                     legendaryMod.abbreviation = descriptor.abbreviation
                     legendaryMod.star = descriptor.star
                     legendaryMod.id = descriptor.id
+                    legendaryMod.gameId = descriptor.gameId
                 }
                 mods.add(legendaryMod)
             }
@@ -281,8 +292,8 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
             if (statsDTO != null) {
                 stats.add(statsDTO)
             } else if (itemCardText === ItemCardText.DESC) {
-                if (itemDTO.filterFlag.isHasStarMods || itemDTO.isLegendary) {
-                    val legendaryMods: List<LegendaryMod> = processLegendaryMods(itemCardEntry, itemCardText)
+                if (itemDTO.isLegendary) {
+                    val legendaryMods: List<LegendaryMod> = processLegendaryMods(itemCardEntry, itemCardText, itemDTO.filterFlag)
                     if (CollectionUtils.isEmpty(legendaryMods)) {
                         continue
                     }

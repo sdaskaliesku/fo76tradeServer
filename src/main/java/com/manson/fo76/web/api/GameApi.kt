@@ -4,6 +4,7 @@ import com.manson.fo76.domain.ArmorConfig
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
 import com.manson.fo76.domain.items.enums.ArmorGrade
+import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.items.enums.ItemCardText
 import com.manson.fo76.service.GameConfigService
 import org.springframework.beans.factory.annotation.Autowired
@@ -18,12 +19,12 @@ class GameApi @Autowired constructor(private val gameConfigService: GameConfigSe
 
     @GetMapping(value = ["/legendaryMods"], produces = ["application/json"])
     fun getLegendaryModsConfig(): List<LegendaryModDescriptor> {
-        return gameConfigService.legModsConfig;
+        return gameConfigService.legModsConfig
     }
 
     @GetMapping(value = ["/legendaryMod"], produces = ["application/json"])
     fun getLegendaryModConfig(@RequestParam text: String?): LegendaryModDescriptor? {
-        return gameConfigService.findLegendaryModDescriptor(text)
+        return gameConfigService.findLegendaryModDescriptor(text, FilterFlag.UNKNOWN)
     }
 
     @GetMapping(value = ["/itemCardText"], produces = ["application/json"])
