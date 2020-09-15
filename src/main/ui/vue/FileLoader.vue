@@ -24,7 +24,7 @@
     <b-modal title="Error" ok-variant="danger" centered ok-only id="errorModal">
       {{modalText}}
     </b-modal>
-    <table-component class="mt-2" v-if="tableData && tableData.length > 0" :table-data="tableData"/>
+    <table-component @priceCheckEvent='updateTableData' class="mt-2" v-if="tableData && tableData.length > 0" :table-data="tableData"/>
   </div>
 </template>
 
@@ -97,6 +97,9 @@ export default {
     },
   },
   methods: {
+    updateTableData: function(e) {
+      this.tableData = e;
+    },
     showModal: function(text) {
       this.modalText = text;
       this.$bvModal.show('errorModal');

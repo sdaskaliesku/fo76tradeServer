@@ -162,9 +162,9 @@ export default {
         if (item.isLegendary && item.isTradable && priceCheckFilterFlags.includes(
             item.filterFlag)) {
           item.itemDetails.priceCheckResponse = await gameApiService.priceCheck(item);
-          this.tabulator.setData(this.tableData);
         }
       }
+      this.$emit('updateTableData', this.tableData);
       this.isLoading = false;
     },
     singlePriceCheck: async function(e, cell) {
@@ -181,10 +181,10 @@ export default {
         for (const item of this.tableData) {
           if (cellItem.id === item.id) {
             item.itemDetails.priceCheckResponse = priceCheckResponse;
-            this.tabulator.setData(this.tableData);
-            return;
+            break;
           }
         }
+        this.$emit('updateTableData', this.tableData);
       } else {
         this.$bvToast.toast(`Price check available only for tradable legendary armor and weapon!`, {
           title: 'FED76',
@@ -192,6 +192,13 @@ export default {
           autoHideDelay: 1000
         })
       }
+    },
+    deleteSingleRow: function(e, cell) {
+      e.preventDefault();
+      e.stopPropagation();
+      cell.getRow().delete().then(() => {
+      });
+      this.$emit('updateTableData', this.tabulator.getData());
     },
     deleteSelected: function() {
       const rows = this.tabulator.getSelectedRows();
@@ -201,6 +208,7 @@ export default {
           });
         }
       }
+      this.$emit('updateTableData', this.tabulator.getData());
     },
     exportClick: function(e) {
       const type = e.target.dataset['type'];
@@ -295,12 +303,7 @@ export default {
       headerSort: false,
       download: false,
       visible: true,
-      cellClick: function(e, cell) {
-        e.preventDefault();
-        e.stopPropagation();
-        cell.getRow().delete().then(() => {
-        });
-      },
+      cellClick: this.deleteSingleRow
     });
   },
   mounted: function() {
@@ -319,6 +322,7 @@ export default {
       handler: function(val) {
         this.tabulator.setData(val);
       },
+      deep: true
     },
     useGrouping: {
       handler: function() {
