@@ -103,6 +103,7 @@ import Tabulator from 'tabulator-tables';
 import {filters} from '../domain';
 import {gameApiService} from '../game.api.service';
 import Vue from 'vue';
+import {Utils} from '../utils';
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -114,7 +115,6 @@ const tableConfig = {
   groupBy: 'filterFlag',
   paginationSizeSelector: [5, 10, 20, 50, 100, 500, 1000, 5000, 50000],
 };
-const priceCheckFilterFlags = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE'];
 
 const tableFilters = () => {
   const tFilters = [];
@@ -139,6 +139,7 @@ const tableFilters = () => {
 };
 
 let shouldDisplayFed76Toast = true;
+const maxPriceCheckItems = 950;
 
 export default {
   name: 'TableComponent',
@@ -158,10 +159,13 @@ export default {
     priceCheck: async function() {
       this.isLoading = true;
       this.$bvToast.show('fed76');
+      let priceCheckedItems = 0;
       for (const item of this.tableData) {
-        if (item.isLegendary && item.isTradable && priceCheckFilterFlags.includes(
-            item.filterFlag)) {
+        if (Utils.isEligibleForPriceCheck(item) && Utils.isPriceCheckResponseEmpty(item.itemDetails.priceCheckResponse)) {
           item.itemDetails.priceCheckResponse = await gameApiService.priceCheck(item);
+          if (priceCheckedItems++ >= maxPriceCheckItems) {
+            break;
+          }
         }
       }
       this.$emit('updateTableData', this.tableData);
@@ -171,8 +175,10 @@ export default {
       e.preventDefault();
       e.stopPropagation();
       const cellItem = cell.getData();
-      if (cellItem.isLegendary && cellItem.isTradable && priceCheckFilterFlags.includes(
-          cellItem.filterFlag)) {
+      if (Utils.isEligibleForPriceCheck(cellItem)) {
+        if (!Utils.isPriceCheckResponseEmpty(cellItem.itemDetails.priceCheckResponse)) {
+          return;
+        }
         if (shouldDisplayFed76Toast) {
           this.$bvToast.show('fed76');
           shouldDisplayFed76Toast = !shouldDisplayFed76Toast;
@@ -273,12 +279,7 @@ export default {
       return isUndef || isNull || isEmpty;
     },
     randomstring: function() {
-      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
-        const r = parseFloat(
-            '0.' + Math.random().toString().replace('0.', '') + new Date().getTime()) * 16 | 0,
-            v = c === 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-      });
+      return Utils.uuid();
     },
     getObjectValue: function(object, field) {
       return field.split('.').reduce((p, c) => p && p[c] || null, object);

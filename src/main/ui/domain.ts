@@ -36,6 +36,37 @@ export declare interface Filter {
   filters?: string
   types?: Array<string>
 }
+export declare interface AuthorResponse {
+  name: string
+  logo: string
+  description: string
+  url: string
+}
+
+export declare interface ReviewRatingResponse {
+  bestRating: string
+  ratingValue: string
+  worstRating: string
+}
+
+export declare interface ReviewResponse {
+  author: AuthorResponse
+  dateCreated: string
+  description: string
+  name: string
+  reviewRating: ReviewRatingResponse
+  url: string
+}
+
+export declare interface PriceCheckResponse {
+  name: string
+  price: Number
+  review: ReviewResponse
+  timestamp: string
+  path: string
+  description: string
+  isEmpty(): boolean
+}
 
 export const filters: Array<Filter> = [
   {

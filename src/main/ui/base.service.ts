@@ -7,7 +7,7 @@ export class BaseService {
     this.baseEndPoint = baseEndPoint;
   }
 
-  protected performRequest = ({url, method, data}: { url: string, method: string, data: any }) => {
+  protected performRequest = ({url, method, data}: { url: string, method: string, data: any }): any => {
     const params = {
       method,
       headers: {

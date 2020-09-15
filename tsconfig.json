@@ -2,6 +2,7 @@
   "compilerOptions": {
     "outDir": "./built/",
     "sourceMap": true,
+    "lib": ["es6", "dom", "es2017"],
     "strict": true,
     "noImplicitReturns": true,
     "module": "es2015",
