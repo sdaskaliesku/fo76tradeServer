@@ -22,6 +22,7 @@ import com.manson.fo76.helper.Utils.areSameItems
 import com.manson.fo76.helper.Utils.silentParse
 import java.util.Comparator
 import java.util.Objects
+import java.util.UUID
 import java.util.stream.Collectors
 import org.apache.commons.collections4.CollectionUtils
 import org.apache.commons.collections4.MapUtils
@@ -139,6 +140,8 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                 }
             }
             if (!isDuplicate) {
+                // TODO: temp
+                itemDTO.id = UUID.randomUUID().toString()
                 itemDTO.itemDetails = createItemDetails(itemDTO)
                 deduped.add(itemDTO)
             }

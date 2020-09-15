@@ -16,6 +16,7 @@ import {
   BFormInput,
   BIcon,
   BIconSearch,
+  BIconCash,
   BIconX,
   BInputGroup,
   BInputGroupAppend,
@@ -37,6 +38,7 @@ import {
 
 Vue.component("BIcon", BIcon);
 Vue.component("BIconSearch", BIconSearch);
+Vue.component("BIconCash", BIconCash);
 Vue.component("BIconX", BIconX);
 Vue.component("BFormGroup", BFormGroup);
 Vue.component("BFormCheckboxGroup", BFormCheckboxGroup);

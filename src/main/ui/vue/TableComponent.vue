@@ -1,9 +1,14 @@
 <template>
   <div>
     <div>
-      <div class="align-items-xl-center d-flex flex-column justify-content-center mb-3 mt-5" v-if="isLoading">
+      <div class="align-items-xl-center d-flex flex-column justify-content-center mb-3 mt-5"
+           v-if="isLoading">
         <b-spinner label="Loading..."></b-spinner>
-        <h2><b-badge variant="warning">Price estimates are loading, this may take a while...Stay tuned</b-badge></h2>
+        <h2>
+          <b-badge variant="warning">Price estimates are loading, this may take a while...Stay
+            tuned
+          </b-badge>
+        </h2>
       </div>
     </div>
     <div class="toolbar mb-2 mt-2" v-show="!isLoading">
@@ -49,7 +54,8 @@
         </b-dropdown>
       </b-button-group>
     </div>
-    <div ref="table" class="table-bordered table-dark table-striped table-sm" v-show="!isLoading"></div>
+    <div ref="table" class="table-bordered table-dark table-striped table-sm"
+         v-show="!isLoading"></div>
     <b-modal size="xl" scrollable ok-only centered v-if="selectedItem" id="itemDetailsModal"
              :title="selectedItem.text">
       <template v-for="field in modalFields">
@@ -78,13 +84,15 @@
         </b-list-group>
       </template>
     </b-modal>
-    <b-toast toaster="b-toaster-top-full" id="fed76" variant="info">
+    <b-toast id="fed76" variant="info">
       <template v-slot:toast-title>
         <div class="d-flex flex-grow-1 align-items-baseline">
-          <strong class="mr-auto">Thanks to <a href="https://fed76.info/" target="_blank">imprezobus</a>!</strong>
+          <strong class="mr-auto">Thanks to <a href="https://fed76.info/"
+                                               target="_blank">imprezobus</a>!</strong>
         </div>
       </template>
-      Price estimates powered by <a href="https://fed76.info/pricing/" target="_blank">PriceCheck</a> tool
+      Price estimates powered by <a href="https://fed76.info/pricing/"
+                                    target="_blank">PriceCheck</a> tool
     </b-toast>
   </div>
 </template>
@@ -94,6 +102,7 @@ import {columns, modalFields} from '../table.columns';
 import Tabulator from 'tabulator-tables';
 import {filters} from '../domain';
 import {gameApiService} from '../game.api.service';
+import Vue from 'vue';
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -129,6 +138,8 @@ const tableFilters = () => {
   return tFilters;
 };
 
+let shouldDisplayFed76Toast = true;
+
 export default {
   name: 'TableComponent',
   props: {
@@ -155,6 +166,32 @@ export default {
         }
       }
       this.isLoading = false;
+    },
+    singlePriceCheck: async function(e, cell) {
+      e.preventDefault();
+      e.stopPropagation();
+      const cellItem = cell.getData();
+      if (cellItem.isLegendary && cellItem.isTradable && priceCheckFilterFlags.includes(
+          cellItem.filterFlag)) {
+        if (shouldDisplayFed76Toast) {
+          this.$bvToast.show('fed76');
+          shouldDisplayFed76Toast = !shouldDisplayFed76Toast;
+        }
+        const priceCheckResponse = await gameApiService.priceCheck(cellItem);
+        for (const item of this.tableData) {
+          if (cellItem.id === item.id) {
+            item.itemDetails.priceCheckResponse = priceCheckResponse;
+            this.tabulator.setData(this.tableData);
+            return;
+          }
+        }
+      } else {
+        this.$bvToast.toast(`Price check available only for tradable legendary armor and weapon!`, {
+          title: 'FED76',
+          variant: 'danger',
+          autoHideDelay: 1000
+        })
+      }
     },
     deleteSelected: function() {
       const rows = this.tabulator.getSelectedRows();
@@ -239,6 +276,33 @@ export default {
       return field.split('.').reduce((p, c) => p && p[c] || null, object);
     },
   },
+  beforeMount: function() {
+    columns.push({
+      formatter: function() {
+        return new Vue({template: `<b-icon icon="cash" scale="2" variant="info" title="Fed76 Price estimate"/>`}).$mount().$el;
+      },
+      width: 10,
+      hozAlign: 'center',
+      headerSort: false,
+      download: false,
+      visible: true,
+      cellClick: this.singlePriceCheck,
+    });
+    columns.push({
+      formatter: 'buttonCross',
+      width: 10,
+      hozAlign: 'center',
+      headerSort: false,
+      download: false,
+      visible: true,
+      cellClick: function(e, cell) {
+        e.preventDefault();
+        e.stopPropagation();
+        cell.getRow().delete().then(() => {
+        });
+      },
+    });
+  },
   mounted: function() {
     this.tabulator = new Tabulator(this.$refs.table, {
       data: this.tableData,
@@ -295,7 +359,7 @@ export default {
       exportOptions: ['csv', 'html', 'json'],
       selectedItem: null,
       modalFields: modalFields,
-      isLoading: false
+      isLoading: false,
     };
   },
 };

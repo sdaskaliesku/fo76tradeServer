@@ -50,21 +50,7 @@ export const columns = [
     ...createColumnDef({title: 'Legendary', field: 'isLegendary', visible: false}),
     formatter: 'tickCross'
   },
-  createColumnDef({title: 'Weight', field: 'weight', visible: false}),
-  {
-    formatter: 'buttonCross',
-    width: 10,
-    hozAlign: 'center',
-    headerSort: false,
-    download: false,
-    visible: true,
-    cellClick: function (e: any, cell: any) {
-      e.preventDefault();
-      e.stopPropagation();
-      cell.getRow().delete().then(() => {
-      });
-    },
-  },
+  createColumnDef({title: 'Weight', field: 'weight', visible: false})
 ];
 
 export const modalFields = [
