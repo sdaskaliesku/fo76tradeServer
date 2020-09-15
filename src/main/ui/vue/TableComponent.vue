@@ -6,7 +6,7 @@
         <h2><b-badge variant="warning">Price estimates are loading, this may take a while...Stay tuned</b-badge></h2>
       </div>
     </div>
-    <div class="toolbar mb-2 mt-2" v-if="!isLoading">
+    <div class="toolbar mb-2 mt-2" v-show="!isLoading">
       <b-button-group>
         <b-button class="my-2 my-sm-0" variant="info" type="submit" @click="priceCheck">
           Fed76 price check
@@ -49,7 +49,7 @@
         </b-dropdown>
       </b-button-group>
     </div>
-    <div ref="table" class="table-bordered table-dark table-striped table-sm" v-if="!isLoading"></div>
+    <div ref="table" class="table-bordered table-dark table-striped table-sm" v-show="!isLoading"></div>
     <b-modal size="xl" scrollable ok-only centered v-if="selectedItem" id="itemDetailsModal"
              :title="selectedItem.text">
       <template v-for="field in modalFields">
@@ -144,19 +144,17 @@ export default {
       });
       return cols;
     },
-    priceCheck: function() {
+    priceCheck: async function() {
       this.isLoading = true;
       this.$bvToast.show('fed76');
-      let checkPrices = () => {
-        this.tableData.forEach(async (item) => {
-          if (item.isLegendary && item.isTradable && priceCheckFilterFlags.includes(
-              item.filterFlag)) {
-            item.itemDetails.priceCheckResponse = await gameApiService.priceCheck(item);
-            this.tabulator.setData(this.tableData);
-          }
-        })
-      };
-      new Promise(() => checkPrices()).finally(() => this.isLoading = false);
+      for (const item of this.tableData) {
+        if (item.isLegendary && item.isTradable && priceCheckFilterFlags.includes(
+            item.filterFlag)) {
+          item.itemDetails.priceCheckResponse = await gameApiService.priceCheck(item);
+          this.tabulator.setData(this.tableData);
+        }
+      }
+      this.isLoading = false;
     },
     deleteSelected: function() {
       const rows = this.tabulator.getSelectedRows();
