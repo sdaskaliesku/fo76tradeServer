@@ -145,6 +145,15 @@ export default {
   name: 'TableComponent',
   props: {
     tableData: Array,
+    config: {
+      type: Object,
+      required: false,
+      default: function() {
+        return {
+          isFedEnhancer: false
+        };
+      }
+    }
   },
   methods: {
     getColumnsToDisplay: function() {

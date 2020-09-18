@@ -1,7 +1,9 @@
 package com.manson.fo76.service
 
+import com.manson.fo76.domain.fed76.FedModDataRequest
 import com.manson.fo76.domain.ModDataRequest
-import com.manson.fo76.domain.User
+import com.manson.fo76.domain.dto.User
+import com.manson.fo76.domain.fed76.Fed76ItemDto
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.dto.OwnerInfo
 import com.manson.fo76.helper.Utils
@@ -96,6 +98,20 @@ class ItemService @Autowired constructor(
 
     fun prepareModData(modDataRequest: ModDataRequest): List<ItemDTO?>? {
         return itemConverterService.prepareModData(modDataRequest)
+    }
+
+    fun prepareFedModData(fedModDataRequest: FedModDataRequest): List<Fed76ItemDto> {
+        val list = itemConverterService.prepareModData(fedModDataRequest)
+        val fed76Items: MutableList<Fed76ItemDto> = ArrayList()
+        list?.forEach { itemDTO ->
+            if (itemDTO != null) {
+                val converted = JsonParser.convertToFedItemDTO(itemDTO)
+                if (converted != null) {
+                    fed76Items.add(converted)
+                }
+            }
+        }
+        return fed76Items
     }
 
     companion object {

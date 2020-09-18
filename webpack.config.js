@@ -56,8 +56,8 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-    }),
+    // new webpack.LoaderOptionsPlugin({
+    //   minimize: true,
+    // }),
   ],
 };

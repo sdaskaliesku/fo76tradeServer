@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.google.common.io.Resources
 import com.manson.fo76.domain.ArmorConfig
-import com.manson.fo76.domain.FedItemConfig
+import com.manson.fo76.domain.fed76.FedItemConfig
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.XTranslatorConfig
 import com.manson.fo76.domain.dto.ItemDTO

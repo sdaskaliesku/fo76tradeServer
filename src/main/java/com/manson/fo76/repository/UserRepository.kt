@@ -1,6 +1,6 @@
 package com.manson.fo76.repository
 
-import com.manson.fo76.domain.User
+import com.manson.fo76.domain.dto.User
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Service
 

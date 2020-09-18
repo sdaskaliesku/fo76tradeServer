@@ -7,8 +7,9 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#" disabled>Market</b-nav-item>
-          <b-nav-item href="/">Upload inventory dump</b-nav-item>
+          <b-nav-item to="/" @click="$router.go()">Upload inventory dump</b-nav-item>
+          <b-nav-item to="/fed76" @click="$router.go()">Upload FED76 price check enhancer
+          </b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-form>
@@ -62,8 +63,8 @@ export default {
       nexus: NEXUS_LINK,
       version: APP_VERSION,
       isUserLoggedIn,
-      userName
+      userName,
     };
-  }
+  },
 };
 </script>

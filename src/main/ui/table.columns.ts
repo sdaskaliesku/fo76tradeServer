@@ -26,7 +26,7 @@ export const columns = [
   createColumnDef({title: 'Account', field: 'ownerInfo.accountOwner'}),
   createColumnDef({title: 'Character', field: 'ownerInfo.characterOwner'}),
   {
-    ...createColumnDef({title: 'Stars', field: 'numLegendaryStars'}),
+    ...createColumnDef({title: 'Stars', field: 'legendaryMods.length'}),
     formatter: 'star',
   },
   createColumnDef({title: 'Abbr', field: 'itemDetails.abbreviation'}),

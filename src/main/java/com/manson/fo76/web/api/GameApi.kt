@@ -7,10 +7,10 @@ import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.items.enums.ItemCardText
-import com.manson.fo76.domain.pricing.PriceCheckResponse
+import com.manson.fo76.domain.fed76.pricing.PriceCheckResponse
 import com.manson.fo76.service.GameConfigService
 import com.manson.fo76.service.ItemConverterService.Companion.SUPPORTED_PRICE_CHECK_ITEMS
-import com.manson.fo76.service.PriceCheckService
+import com.manson.fo76.service.Fed76Service
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/game")
-class GameApi @Autowired constructor(private val gameConfigService: GameConfigService, private val priceCheckService: PriceCheckService) {
+class GameApi @Autowired constructor(private val gameConfigService: GameConfigService, private val fed76Service: Fed76Service) {
 
     companion object {
         private val LOGGER = LoggerFactory.getLogger(GameApi::class.java)
@@ -73,9 +73,9 @@ class GameApi @Autowired constructor(private val gameConfigService: GameConfigSe
         if (!item.isLegendary || !item.isTradable || !SUPPORTED_PRICE_CHECK_ITEMS.contains(item.filterFlag)) {
             return PriceCheckResponse()
         }
-        val request = priceCheckService.createPriceCheckRequest(item)
+        val request = fed76Service.createPriceCheckRequest(item)
         return if (request.isValid()) {
-            priceCheckService.priceCheck(request)
+            fed76Service.priceCheck(request)
         } else {
             LOGGER.error("Request is invalid, ignoring: $request\r\n$item")
             PriceCheckResponse()

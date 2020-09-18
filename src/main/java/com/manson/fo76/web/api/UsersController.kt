@@ -1,7 +1,7 @@
 package com.manson.fo76.web.api
 
 import com.manson.fo76.domain.JwtResponse
-import com.manson.fo76.domain.User
+import com.manson.fo76.domain.dto.User
 import com.manson.fo76.helper.JwtTokenUtil
 import com.manson.fo76.service.ItemService
 import com.manson.fo76.service.UserService

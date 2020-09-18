@@ -4,10 +4,10 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 class Fo76String {
     @JsonProperty("EDID")
-    var edid: String? = null
+    var edid: String = ""
 
     @JsonProperty("REC")
-    var rec: Object? = null
+    var rec: Any? = null
 
     @JsonProperty("Source")
     var source: String? = null

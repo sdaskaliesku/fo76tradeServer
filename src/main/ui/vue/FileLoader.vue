@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="!tableData">
+    <div v-if="!tableData && !config.isFedEnhancer">
       <b-form-group label="Filters for uploading" label-size="lg">
         <b-form-checkbox-group
             v-model="selected"
@@ -24,13 +24,13 @@
     <b-modal title="Error" ok-variant="danger" centered ok-only id="errorModal">
       {{modalText}}
     </b-modal>
-    <table-component @priceCheckEvent='updateTableData' class="mt-2" v-if="tableData && tableData.length > 0" :table-data="tableData"/>
+    <table-component @priceCheckEvent='updateTableData' class="mt-2" v-if="tableData && tableData.length > 0" :table-data="tableData" :config="config"/>
   </div>
 </template>
 
 <script>
 import {Utils} from '../utils';
-import {filters, MIN_MOD_SUPPORTED_VERSION} from '../domain';
+import {filters, MIN_FED_MOD_SUPPORTED_VERSION, MIN_MOD_SUPPORTED_VERSION} from '../domain';
 import {itemService} from '../item.service';
 import TableComponent from './TableComponent';
 
@@ -54,7 +54,10 @@ export default {
       tableData: null,
       loading: false,
       modalText: '',
-    };
+      config: {
+        isFedEnhancer: this.$route.path === '/fed76'
+      }
+    }
   },
   beforeMount() {
     filters.forEach((filter) => {
@@ -64,6 +67,8 @@ export default {
         checked: filter.checked,
       });
     });
+    this.config.isFedEnhancer = this.$route.path === '/fed76';
+    console.log(this.config.isFedEnhancer);
   },
   watch: {
     file: function(val) {
@@ -72,13 +77,19 @@ export default {
         this.tableData = [];
         Utils.readFile(val).then((data) => {
           const modFileVersion = data.version;
-          if (modFileVersion < MIN_MOD_SUPPORTED_VERSION) {
+          let minSupportedVersion = MIN_MOD_SUPPORTED_VERSION;
+          let prepareModDataFunc = itemService.prepareModData;
+          if (this.config.isFedEnhancer) {
+            minSupportedVersion = MIN_FED_MOD_SUPPORTED_VERSION;
+            prepareModDataFunc = itemService.prepareFedModData;
+          }
+          if (modFileVersion < minSupportedVersion) {
             this.showModal(modalTexts.invalidVersion(modFileVersion));
             this.loading = false;
             this.file = null;
             return Promise.reject();
           }
-          return itemService.prepareModData({
+          return prepareModDataFunc({
             modData: data,
             filters: this.getUploadDataFilters(),
           });

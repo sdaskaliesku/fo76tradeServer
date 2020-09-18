@@ -1,6 +1,6 @@
 package com.manson.fo76.service
 
-import com.manson.fo76.domain.User
+import com.manson.fo76.domain.dto.User
 import com.manson.fo76.helper.Utils
 import com.manson.fo76.repository.UserRepository
 import java.util.Objects

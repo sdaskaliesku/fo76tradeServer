@@ -1,9 +1,13 @@
 package com.manson.fo76.web.api
 
+import com.manson.fo76.domain.fed76.FedModDataRequest
 import com.manson.fo76.domain.ModDataRequest
 import com.manson.fo76.domain.UploadItemRequest
+import com.manson.fo76.domain.fed76.Fed76ItemDto
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.service.ItemService
+import java.util.ArrayList
+import java.util.Objects
 import org.apache.commons.collections4.CollectionUtils
 import org.apache.commons.lang3.StringUtils
 import org.slf4j.LoggerFactory
@@ -11,31 +15,43 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.annotation.DeleteMapping
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.RequestParam
+import org.springframework.web.bind.annotation.RestController
 import springfox.documentation.annotations.ApiIgnore
-import java.util.*
 
 @RestController
 @RequestMapping("/items")
 class ItemsController @Autowired constructor(private val itemService: ItemService) {
     @ApiIgnore
     @GetMapping(value = ["/findAll"], produces = ["application/json"])
-    fun findAll(@RequestParam(required = false) page: Int?,
-                @RequestParam(required = false) size: Int?): Page<ItemDTO?>? {
+    fun findAll(
+            @RequestParam(required = false) page: Int?,
+            @RequestParam(required = false) size: Int?,
+    ): Page<ItemDTO?>? {
         return itemService.findAll(createPageRequest(page, size))
     }
 
     @ApiIgnore
     @GetMapping(value = ["/findAllByOwnerId"], produces = ["application/json"])
-    fun findAllByOwnerId(@RequestParam ownerId: String?, @RequestParam(required = false) page: Int?,
-                         @RequestParam(required = false) size: Int?): Page<ItemDTO?>? {
+    fun findAllByOwnerId(
+            @RequestParam ownerId: String?, @RequestParam(required = false) page: Int?,
+            @RequestParam(required = false) size: Int?,
+    ): Page<ItemDTO?>? {
         return itemService.findAllByOwnerId(ownerId, createPageRequest(page, size))
     }
 
     @ApiIgnore
     @GetMapping(value = ["/findAllByOwnerName"], produces = ["application/json"])
-    fun findAllByOwnerName(@RequestParam ownerName: String?, @RequestParam(required = false) page: Int?,
-                           @RequestParam(required = false) size: Int?): Page<ItemDTO?>? {
+    fun findAllByOwnerName(
+            @RequestParam ownerName: String?, @RequestParam(required = false) page: Int?,
+            @RequestParam(required = false) size: Int?,
+    ): Page<ItemDTO?>? {
         return itemService.findAllByOwnerName(ownerName, createPageRequest(page, size))
     }
 
@@ -57,6 +73,16 @@ class ItemsController @Autowired constructor(private val itemService: ItemServic
             return itemService.prepareModData(modDataRequest)
         } catch (e: Exception) {
             LOGGER.error("Error while preparing mod data {}", modDataRequest, e)
+        }
+        return ArrayList()
+    }
+
+    @RequestMapping(value = ["/prepareFedModData"], consumes = ["application/json"], produces = ["application/json"], method = [RequestMethod.POST])
+    fun prepareFedModData(@RequestBody fedModDataRequest: FedModDataRequest): List<Fed76ItemDto> {
+        try {
+            return itemService.prepareFedModData(fedModDataRequest)
+        } catch (e: Exception) {
+            LOGGER.error("Error while preparing mod data {}", fedModDataRequest, e)
         }
         return ArrayList()
     }

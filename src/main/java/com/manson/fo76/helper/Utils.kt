@@ -1,6 +1,6 @@
 package com.manson.fo76.helper
 
-import com.manson.fo76.domain.User
+import com.manson.fo76.domain.dto.User
 import com.manson.fo76.domain.dto.ItemDTO
 import org.apache.commons.lang3.StringUtils
 import org.apache.commons.lang3.math.NumberUtils

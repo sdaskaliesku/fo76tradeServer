@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils
 import java.util.HashMap
 
 open class XTranslatorConfig {
-    var id: String? = null
+    var id: String = ""
     var gameId: String? = null
     var texts: MutableMap<String, String> = HashMap()
     var rec: String? = null

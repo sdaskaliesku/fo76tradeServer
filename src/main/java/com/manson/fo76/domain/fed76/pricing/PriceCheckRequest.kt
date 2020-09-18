@@ -1,4 +1,4 @@
-package com.manson.fo76.domain.pricing
+package com.manson.fo76.domain.fed76.pricing
 
 import com.manson.fo76.domain.items.enums.ArmorGrade
 import org.apache.commons.lang3.StringUtils

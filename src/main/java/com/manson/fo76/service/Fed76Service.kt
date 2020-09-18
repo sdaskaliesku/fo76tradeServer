@@ -1,45 +1,45 @@
 package com.manson.fo76.service
 
 
-import com.manson.fo76.config.AppConfig
+import com.fasterxml.jackson.databind.ObjectMapper
 import com.manson.fo76.domain.dto.ItemDTO
-import com.manson.fo76.domain.pricing.PriceCheckCacheItem
-import com.manson.fo76.domain.pricing.PriceCheckRequest
-import com.manson.fo76.domain.pricing.PriceCheckResponse
+import com.manson.fo76.domain.dto.ItemDetails
+import com.manson.fo76.domain.fed76.mapping.MappingResponse
+import com.manson.fo76.domain.fed76.pricing.PriceCheckCacheItem
+import com.manson.fo76.domain.fed76.pricing.PriceCheckRequest
+import com.manson.fo76.domain.fed76.pricing.PriceCheckResponse
+import com.manson.fo76.domain.items.enums.ArmorGrade
 import com.manson.fo76.repository.PriceCheckRepository
 import java.time.LocalDateTime
-import javax.ws.rs.client.Client
-import javax.ws.rs.client.ClientBuilder
 import javax.ws.rs.client.WebTarget
+import javax.ws.rs.core.MediaType
 import org.apache.commons.lang3.StringUtils
-import org.glassfish.jersey.client.ClientConfig
-import org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JacksonJsonProvider
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class PriceCheckService(@Autowired private val priceCheckRepository: PriceCheckRepository) {
+class Fed76Service(@Autowired private val priceCheckRepository: PriceCheckRepository, objectMapper: ObjectMapper) : BaseRestClient(objectMapper) {
 
     companion object {
-        private val LOGGER = LoggerFactory.getLogger(PriceCheckService::class.java)
-    }
-
-    private val client: Client
-
-    init {
-        val config = ClientConfig()
-        config.register(JacksonJsonProvider(AppConfig.objectMapper))
-        this.client = ClientBuilder.newClient(config)
+        private val LOGGER = LoggerFactory.getLogger(Fed76Service::class.java)
     }
 
     private fun performRequest(request: PriceCheckRequest): PriceCheckResponse {
-        val webResource: WebTarget = client
+        var webResource: WebTarget = client
                 .target("https://fed76.info/pricing-api/")
                 .queryParam("item", request.name)
                 .queryParam("mods", request.abbreviation)
-                .queryParam("grade", request.armorGrade.value)
-        return webResource.request().accept("application/json").get(PriceCheckResponse::class.java)
+        if (request.armorGrade != ArmorGrade.Unknown) {
+            webResource = webResource.queryParam("grade", request.armorGrade.value)
+        }
+
+        return webResource.request().accept(MediaType.APPLICATION_JSON_TYPE).get(PriceCheckResponse::class.java)
+    }
+
+    fun getMapping(): MappingResponse {
+        val webResource: WebTarget = client.target("https://fed76.info/pricing/mapping")
+        return webResource.request().accept(MediaType.APPLICATION_JSON_TYPE).get(MappingResponse::class.java)
     }
 
     private fun isResponseExpired(response: PriceCheckResponse): Boolean {
@@ -49,13 +49,22 @@ class PriceCheckService(@Autowired private val priceCheckRepository: PriceCheckR
 
     fun createPriceCheckRequest(item: ItemDTO): PriceCheckRequest {
         val priceCheckRequest = PriceCheckRequest()
-        priceCheckRequest.armorGrade = item.itemDetails.armorGrade
+        val itemDetails:  ItemDetails = item.itemDetails
+        priceCheckRequest.armorGrade = itemDetails.armorGrade
+        // FIXME: use id's for abbreviation - needs IDs for weapon
 //        priceCheckRequest.abbreviation = item.legendaryMods.stream()
 //                .map<String>(LegendaryMod::gameId)
 //                .filter(StringUtils::isNotBlank)
 //                .collect(joining("/"))
-        priceCheckRequest.abbreviation = item.itemDetails.abbreviation
-        priceCheckRequest.name = item.itemDetails.fedName
+        priceCheckRequest.abbreviation = itemDetails.abbreviation
+        priceCheckRequest.name = itemDetails.fedName
+        if (StringUtils.isBlank(itemDetails.fedName)) {
+            priceCheckRequest.name = itemDetails.name
+        }
+        if (StringUtils.isAllBlank(itemDetails.name, itemDetails.fedName)) {
+            priceCheckRequest.name = item.text.toString()
+        }
+        priceCheckRequest.name = priceCheckRequest.name.replace("The ", "", true)
         return priceCheckRequest
     }
 

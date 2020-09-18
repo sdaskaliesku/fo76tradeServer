@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch --output ./target/classes/static/built/bundle.js"
+    "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^6.1.0",

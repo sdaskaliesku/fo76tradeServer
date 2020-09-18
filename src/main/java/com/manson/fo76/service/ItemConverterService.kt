@@ -1,12 +1,14 @@
 package com.manson.fo76.service
 
 import com.manson.fo76.config.AppConfig.Companion.ENABLE_AUTO_PRICE_CHECK
+import com.manson.fo76.domain.CharacterInventory
+import com.manson.fo76.domain.fed76.FedModDataRequest
 import com.manson.fo76.domain.ItemsUploadFilters
 import com.manson.fo76.domain.LegendaryModDescriptor
 import com.manson.fo76.domain.ModData
 import com.manson.fo76.domain.ModDataRequest
 import com.manson.fo76.domain.ModUser
-import com.manson.fo76.domain.User
+import com.manson.fo76.domain.dto.User
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.dto.ItemDetails
 import com.manson.fo76.domain.dto.LegendaryMod
@@ -34,7 +36,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class ItemConverterService @Autowired constructor(private val gameConfigService: GameConfigService, private val priceCheckService: PriceCheckService) {
+class ItemConverterService @Autowired constructor(private val gameConfigService: GameConfigService, private val fed76Service: Fed76Service) {
 
     @Suppress("UnstableApiUsage")
     companion object {
@@ -110,6 +112,23 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                     inventory.characterInfoData.name)
         }
         return ImmutablePair(modData.user, allItems)
+    }
+
+    fun prepareModData(fedModDataRequest: FedModDataRequest): List<ItemDTO?>? {
+        val modData = ModData()
+        val map: Map<String, List<ItemDescriptor>> = fedModDataRequest.characterInventories
+        val characterInventory = CharacterInventory()
+        val list: MutableList<ItemDescriptor> = ArrayList()
+        map.forEach { (_, v) -> list.addAll(v) }
+        characterInventory.playerInventory = list
+        modData.characterInventories = mapOf(Pair("test", characterInventory))
+        val pair = processModDataItems(modData, ItemsUploadFilters())
+        val itemDescriptors = pair.value
+        val user = User()
+        user.password = "noop"
+        user.name = "noop"
+        user.id = "noop"
+        return convertItems(itemDescriptors, user)
     }
 
     fun prepareModData(modDataRequest: ModDataRequest): List<ItemDTO?>? {
@@ -229,9 +248,9 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                 return itemDetails
             }
             if (item.isLegendary && item.isTradable && SUPPORTED_PRICE_CHECK_ITEMS.contains(item.filterFlag)) {
-                val request = priceCheckService.createPriceCheckRequest(item)
+                val request = fed76Service.createPriceCheckRequest(item)
                 if (request.isValid()) {
-                    itemDetails.priceCheckResponse = priceCheckService.priceCheck(request)
+                    itemDetails.priceCheckResponse = fed76Service.priceCheck(request)
                 } else {
                     LOGGER.error("Request is invalid, ignoring: $request\r\n$item")
                 }
@@ -312,7 +331,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                     if (StringUtils.isBlank(abbreviation)) {
                         abbreviation = StringUtils.EMPTY
                     }
-                    itemDTO.itemDetails.abbreviation = abbreviation
+                    itemDTO.itemDetails.abbreviation = abbreviation.toUpperCase()
                 } else {
                     itemDTO.description = itemCardEntry.value
                 }

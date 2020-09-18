@@ -1,8 +1,10 @@
 [
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Searing Puncturing Rocket"
+      "en": "Searing Puncturing Rocket",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=160, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957A",
@@ -10,8 +12,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Pint-Sized Slasher Knife"
+      "en": "Pint-Sized Slasher Knife",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=136, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000089",
@@ -19,8 +23,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Appalachian Thunder Pipe"
+      "en": "Appalachian Thunder Pipe",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=67, -idMax=303, #text=INNR:WNAM}",
     "sid": "790000D4",
@@ -28,8 +34,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Blackened Combat Dagger"
+      "en": "Blackened Combat Dagger",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=135, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A73",
@@ -37,8 +45,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quick Maximum Capacity"
+      "en": "Quick Maximum Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=104, -idMax=303, #text=INNR:WNAM}",
     "sid": "039541",
@@ -46,8 +56,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quick Maximum Capacity"
+      "en": "Quick Maximum Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=147, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956C",
@@ -55,8 +67,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Target Seeking Fat Man"
+      "en": "Target Seeking Fat Man",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=270, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395C1",
@@ -64,8 +78,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Tactical Combat Dagger"
+      "en": "Tactical Combat Dagger",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=125, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6F",
@@ -73,8 +89,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Radstag Hunting Knife"
+      "en": "Radstag Hunting Knife",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=122, -idMax=138, #text=INNR:WNAM}",
     "sid": "61009F4D",
@@ -82,8 +100,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Grelok Sorcerer Staff"
+      "en": "Grelok Sorcerer Staff",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=121, -idMax=138, #text=INNR:WNAM}",
     "sid": "6100A6C8",
@@ -91,8 +111,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Heavy Shocking Sharp"
+      "en": "Heavy Shocking Sharp",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=162, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957C",
@@ -100,8 +122,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Electrified Serrated"
+      "en": "Electrified Serrated",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=74, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982E",
@@ -109,8 +133,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Electrified Serrated"
+      "en": "Electrified Serrated",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=108, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D71",
@@ -118,8 +144,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Screaming Eagle Wood"
+      "en": "Screaming Eagle Wood",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=70, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000EB7",
@@ -127,8 +155,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quick High Capacity"
+      "en": "Quick High Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=105, -idMax=303, #text=INNR:WNAM}",
     "sid": "039542",
@@ -136,8 +166,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quick High Capacity"
+      "en": "Quick High Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=148, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956D",
@@ -145,8 +177,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Shocking Puncturing"
+      "en": "Shocking Puncturing",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=161, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957B",
@@ -154,8 +188,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Heavy Searing Sharp"
+      "en": "Heavy Searing Sharp",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=163, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957D",
@@ -163,8 +199,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Calibrated Powerful"
+      "en": "Calibrated Powerful",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=217, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959D",
@@ -172,8 +210,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Clandestine Service"
+      "en": "Clandestine Service",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=41, -idMax=303, #text=INNR:WNAM}",
     "sid": "61009814",
@@ -181,8 +221,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Grognak Battle Mace"
+      "en": "Grognak Battle Mace",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=124, -idMax=138, #text=INNR:WNAM}",
     "sid": "61009BB6",
@@ -190,8 +232,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Recoil Compensated"
+      "en": "Recoil Compensated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=86, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952F",
@@ -199,8 +243,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved Targeting"
+      "en": "Improved Targeting",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=90, -idMax=303, #text=INNR:WNAM}",
     "sid": "039533",
@@ -208,8 +254,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved Scattered"
+      "en": "Improved Scattered",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=91, -idMax=303, #text=INNR:WNAM}",
     "sid": "039534",
@@ -217,8 +265,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Recoil Compensated"
+      "en": "Recoil Compensated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=140, -idMax=303, #text=INNR:WNAM}",
     "sid": "039565",
@@ -226,8 +276,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved Automatic"
+      "en": "Improved Automatic",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=255, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B1",
@@ -235,8 +287,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Nuka-Nuke Launcher"
+      "en": "Nuka-Nuke Launcher",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=274, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395CD",
@@ -244,8 +298,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Gold Combat Dagger"
+      "en": "Gold Combat Dagger",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=126, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A70",
@@ -253,8 +309,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "Summersville Fancy"
+      "en": "Summersville Fancy",
+      "fr": "[Visée]"
     },
     "rec": "{-id=4, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD6",
@@ -262,8 +320,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Flatwoods Fletcher"
+      "en": "Flatwoods Fletcher",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=29, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A44A",
@@ -271,8 +331,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Radscorpion Venom"
+      "en": "Radscorpion Venom",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=78, -idMax=303, #text=INNR:WNAM}",
     "sid": "039526",
@@ -280,8 +342,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved Charging"
+      "en": "Improved Charging",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=115, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954C",
@@ -289,8 +353,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Nuka-Cola Quantum"
+      "en": "Nuka-Cola Quantum",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=155, -idMax=303, #text=INNR:WNAM}",
     "sid": "039575",
@@ -298,8 +364,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hardened Piercing"
+      "en": "Hardened Piercing",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=214, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959A",
@@ -307,8 +375,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Experimental MIRV"
+      "en": "Experimental MIRV",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=269, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395C0",
@@ -316,8 +386,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Lucille's Lullaby"
+      "en": "Lucille's Lullaby",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=64, -idMax=303, #text=INNR:WNAM}",
     "sid": "610091D6",
@@ -325,8 +397,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Troubleshooter's"
+      "en": "Troubleshooter's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=2, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950B",
@@ -334,8 +408,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved Focused"
+      "en": "Improved Focused",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=92, -idMax=303, #text=INNR:WNAM}",
     "sid": "039535",
@@ -343,8 +419,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Maximum Capacity"
+      "en": "Maximum Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=107, -idMax=303, #text=INNR:WNAM}",
     "sid": "039544",
@@ -352,8 +430,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Maximum Capacity"
+      "en": "Maximum Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=150, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956F",
@@ -361,8 +441,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Nuka-Cola Cherry"
+      "en": "Nuka-Cola Cherry",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=154, -idMax=303, #text=INNR:WNAM}",
     "sid": "039574",
@@ -370,8 +452,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Boosted Agitated"
+      "en": "Boosted Agitated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=203, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958F",
@@ -379,8 +463,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Troubleshooter's"
+      "en": "Troubleshooter's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=24, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F7",
@@ -388,8 +474,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Troubleshooter's"
+      "en": "Troubleshooter's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=14, -idMax=138, #text=INNR:WNAM}",
     "sid": "039810",
@@ -397,8 +485,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Somerset Special"
+      "en": "Somerset Special",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=278, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B015",
@@ -406,8 +496,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Anti-Power Armor"
+      "en": "Anti-Power Armor",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=246, -idMax=303, #text=INNR:WNAM}",
     "sid": "61005C3C",
@@ -415,8 +507,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Deep Cave Hunter"
+      "en": "Deep Cave Hunter",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=68, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A553",
@@ -424,8 +518,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Mutant Slayer's"
+      "en": "Mutant Slayer's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=6, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950F",
@@ -433,8 +529,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Mutant Slayer's"
+      "en": "Mutant Slayer's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=20, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F3",
@@ -442,8 +540,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Mutant Slayer's"
+      "en": "Mutant Slayer's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=16, -idMax=138, #text=INNR:WNAM}",
     "sid": "039812",
@@ -451,8 +551,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Scorch Killer's"
+      "en": "Scorch Killer's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=73, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624A",
@@ -460,8 +562,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Pioneer Scout's"
+      "en": "Pioneer Scout's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=36, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6B",
@@ -469,8 +573,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Blue Camouflage"
+      "en": "Blue Camouflage",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=48, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F2",
@@ -478,8 +584,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Jack O' Lantern"
+      "en": "Jack O' Lantern",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=54, -idMax=303, #text=INNR:WNAM}",
     "sid": "4100027D",
@@ -487,8 +595,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Screaming Eagle"
+      "en": "Screaming Eagle",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=69, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000E30",
@@ -496,8 +606,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Screaming Eagle"
+      "en": "Screaming Eagle",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=71, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000EB8",
@@ -505,8 +617,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "White Crocodile"
+      "en": "White Crocodile",
+      "fr": "[Visée]"
     },
     "rec": "{-id=5, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD7",
@@ -514,8 +628,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tesla Capacitor"
+      "en": "Tesla Capacitor",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=184, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007044",
@@ -523,8 +639,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Settler Special"
+      "en": "Settler Special",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=30, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A32D",
@@ -532,8 +650,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Ghoul Slayer's"
+      "en": "Ghoul Slayer's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=3, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950C",
@@ -541,8 +661,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Exterminator's"
+      "en": "Exterminator's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=7, -idMax=303, #text=INNR:WNAM}",
     "sid": "039510",
@@ -550,8 +672,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Sharpshooter's"
+      "en": "Sharpshooter's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=114, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954B",
@@ -559,8 +683,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved Short"
+      "en": "Improved Short",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=119, -idMax=303, #text=INNR:WNAM}",
     "sid": "039550",
@@ -568,8 +694,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Rocket Swatter"
+      "en": "Rocket Swatter",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=258, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B4",
@@ -577,8 +705,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Ghoul Slayer's"
+      "en": "Ghoul Slayer's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=21, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F4",
@@ -586,8 +716,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Exterminator's"
+      "en": "Exterminator's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=22, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F5",
@@ -595,8 +727,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Asbestos Lined"
+      "en": "Asbestos Lined",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=86, -idMax=103, #text=INNR:WNAM}",
     "sid": "039612",
@@ -604,8 +738,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Ghoul Slayer's"
+      "en": "Ghoul Slayer's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=11, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980D",
@@ -613,8 +749,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Exterminator's"
+      "en": "Exterminator's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=13, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980F",
@@ -622,8 +760,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Croquet Mallet"
+      "en": "Croquet Mallet",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=132, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B00A",
@@ -631,8 +771,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Burning Barbed"
+      "en": "Burning Barbed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=80, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCEC",
@@ -640,8 +782,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Armor Piercing"
+      "en": "Armor Piercing",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=216, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F8",
@@ -649,8 +793,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Burning Barbed"
+      "en": "Burning Barbed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=114, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D77",
@@ -658,8 +804,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Starlet Sniper"
+      "en": "Starlet Sniper",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=42, -idMax=303, #text=INNR:WNAM}",
     "sid": "610094FD",
@@ -667,8 +815,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Executioner's"
+      "en": "Executioner's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=19, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951C",
@@ -676,8 +826,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "High Capacity"
+      "en": "High Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=108, -idMax=303, #text=INNR:WNAM}",
     "sid": "039545",
@@ -685,8 +837,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved Long"
+      "en": "Improved Long",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=120, -idMax=303, #text=INNR:WNAM}",
     "sid": "039551",
@@ -694,8 +848,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "High Capacity"
+      "en": "High Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=151, -idMax=303, #text=INNR:WNAM}",
     "sid": "039570",
@@ -703,8 +859,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Triple Barrel"
+      "en": "Triple Barrel",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=194, -idMax=303, #text=INNR:WNAM}",
     "sid": "039586",
@@ -712,8 +870,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Boosted Fiery"
+      "en": "Boosted Fiery",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=200, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958C",
@@ -721,8 +881,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "High Capacity"
+      "en": "High Capacity",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=212, -idMax=303, #text=INNR:WNAM}",
     "sid": "039598",
@@ -730,8 +892,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Rocket Hammer"
+      "en": "Rocket Hammer",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=260, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B6",
@@ -739,8 +903,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "VATS Enhanced"
+      "en": "VATS Enhanced",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=16, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395EF",
@@ -748,8 +914,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Safecracker's"
+      "en": "Safecracker's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=25, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F8",
@@ -757,8 +925,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Deep Pocketed"
+      "en": "Deep Pocketed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=88, -idMax=103, #text=INNR:WNAM}",
     "sid": "039614",
@@ -766,8 +936,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Executioner's"
+      "en": "Executioner's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=4, -idMax=138, #text=INNR:WNAM}",
     "sid": "039808",
@@ -775,8 +947,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Chain-wrapped"
+      "en": "Chain-wrapped",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=68, -idMax=138, #text=INNR:WNAM}",
     "sid": "039828",
@@ -784,8 +958,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stealth Blade"
+      "en": "Stealth Blade",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=77, -idMax=138, #text=INNR:WNAM}",
     "sid": "039831",
@@ -793,8 +969,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tricentennial"
+      "en": "Tricentennial",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=65, -idMax=303, #text=INNR:WNAM}",
     "sid": "04385F",
@@ -802,8 +980,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Tricentennial"
+      "en": "Tricentennial",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=38, -idMax=138, #text=INNR:WNAM}",
     "sid": "043861",
@@ -811,8 +991,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Silver Lining"
+      "en": "Silver Lining",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=101, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857C",
@@ -820,8 +1002,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Black Diamond"
+      "en": "Black Diamond",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=129, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B008",
@@ -829,8 +1013,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bunker Buster"
+      "en": "Bunker Buster",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=277, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B014",
@@ -838,8 +1024,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Perfect Storm"
+      "en": "Perfect Storm",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=282, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B019",
@@ -847,8 +1035,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Glass-Covered"
+      "en": "Glass-Covered",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=83, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCF5",
@@ -856,8 +1046,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Service Award"
+      "en": "Service Award",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=48, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6D",
@@ -865,8 +1057,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Combat Dagger"
+      "en": "Combat Dagger",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=127, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A71",
@@ -874,8 +1068,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Pioneer Scout"
+      "en": "Pioneer Scout",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=38, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000EF",
@@ -883,8 +1079,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hot Rod Shark"
+      "en": "Hot Rod Shark",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=51, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F5",
@@ -892,8 +1090,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Chrome Plated"
+      "en": "Chrome Plated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=62, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000FC",
@@ -901,8 +1101,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Chain-wrapped"
+      "en": "Chain-wrapped",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=102, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6B",
@@ -910,8 +1112,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stealth Blade"
+      "en": "Stealth Blade",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=111, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D74",
@@ -919,8 +1123,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Glass-Covered"
+      "en": "Glass-Covered",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=117, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D7A",
@@ -928,8 +1134,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "Wavy Willards"
+      "en": "Wavy Willards",
+      "fr": "[Visée]"
     },
     "rec": "{-id=3, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD5",
@@ -937,8 +1145,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Triple Barrel"
+      "en": "Triple Barrel",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=247, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007046",
@@ -946,8 +1156,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Special Issue"
+      "en": "Special Issue",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=26, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A4F0",
@@ -955,8 +1167,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Burning Torch"
+      "en": "Burning Torch",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=50, -idMax=138, #text=INNR:WNAM}",
     "sid": "6100A6B5",
@@ -964,8 +1178,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Suppressor's"
+      "en": "Suppressor's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=23, -idMax=303, #text=INNR:WNAM}",
     "sid": "039520",
@@ -973,8 +1189,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Night-Vision"
+      "en": "Night-Vision",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=84, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952D",
@@ -982,8 +1200,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "High Powered"
+      "en": "High Powered",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=97, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953A",
@@ -991,8 +1211,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Glow-Sighted"
+      "en": "Glow-Sighted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=101, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953E",
@@ -1000,8 +1222,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Comfort Grip"
+      "en": "Comfort Grip",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=113, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954A",
@@ -1009,8 +1233,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Crystallized"
+      "en": "Crystallized",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=127, -idMax=303, #text=INNR:WNAM}",
     "sid": "039558",
@@ -1018,8 +1244,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Night-Vision"
+      "en": "Night-Vision",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=138, -idMax=303, #text=INNR:WNAM}",
     "sid": "039563",
@@ -1027,8 +1255,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Glow-Sighted"
+      "en": "Glow-Sighted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=144, -idMax=303, #text=INNR:WNAM}",
     "sid": "039569",
@@ -1036,8 +1266,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Heavy Spiked"
+      "en": "Heavy Spiked",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=164, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957E",
@@ -1045,8 +1277,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Long Bow Bar"
+      "en": "Long Bow Bar",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=166, -idMax=303, #text=INNR:WNAM}",
     "sid": "039580",
@@ -1054,8 +1288,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hair Trigger"
+      "en": "Hair Trigger",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=226, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A6",
@@ -1063,8 +1299,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Regenerating"
+      "en": "Regenerating",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=3, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E1",
@@ -1072,8 +1310,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Inquisitor's"
+      "en": "Inquisitor's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=41, -idMax=103, #text=INNR:WNAM}",
     "sid": "039622",
@@ -1081,8 +1321,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Nanofiliment"
+      "en": "Nanofiliment",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=69, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963E",
@@ -1090,8 +1332,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Suppressor's"
+      "en": "Suppressor's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=7, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980B",
@@ -1099,8 +1343,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Never Ending"
+      "en": "Never Ending",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=26, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981C",
@@ -1108,8 +1354,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Critical .38"
+      "en": "Critical .38",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=181, -idMax=303, #text=INNR:WNAM}",
     "sid": "046254",
@@ -1117,8 +1365,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Critical .45"
+      "en": "Critical .45",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=182, -idMax=303, #text=INNR:WNAM}",
     "sid": "046255",
@@ -1126,8 +1376,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Critical .50"
+      "en": "Critical .50",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=183, -idMax=303, #text=INNR:WNAM}",
     "sid": "046256",
@@ -1135,8 +1387,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Last Bastion"
+      "en": "Last Bastion",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=99, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857A",
@@ -1144,8 +1398,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Trail Warden"
+      "en": "Trail Warden",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=102, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857D",
@@ -1153,8 +1409,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Civil Unrest"
+      "en": "Civil Unrest",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=281, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B018",
@@ -1162,8 +1420,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Black Knight"
+      "en": "Black Knight",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=60, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000B89",
@@ -1171,8 +1431,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "Night-Vision"
+      "en": "Night-Vision",
+      "fr": "[Visée]"
     },
     "rec": "{-id=9, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FDA",
@@ -1180,8 +1442,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tesla Dynamo"
+      "en": "Tesla Dynamo",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=185, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007045",
@@ -1189,8 +1453,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Penta Barrel"
+      "en": "Penta Barrel",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=249, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007048",
@@ -1198,8 +1464,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Instigating"
+      "en": "Instigating",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=10, -idMax=303, #text=INNR:WNAM}",
     "sid": "039513",
@@ -1207,8 +1475,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Berserker's"
+      "en": "Berserker's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=13, -idMax=303, #text=INNR:WNAM}",
     "sid": "039516",
@@ -1216,8 +1486,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Compensated"
+      "en": "Compensated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=88, -idMax=303, #text=INNR:WNAM}",
     "sid": "039531",
@@ -1225,8 +1497,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bull Barrel"
+      "en": "Bull Barrel",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=110, -idMax=303, #text=INNR:WNAM}",
     "sid": "039547",
@@ -1234,8 +1508,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Electrified"
+      "en": "Electrified",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=135, -idMax=303, #text=INNR:WNAM}",
     "sid": "039560",
@@ -1243,8 +1519,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Compensated"
+      "en": "Compensated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=142, -idMax=303, #text=INNR:WNAM}",
     "sid": "039567",
@@ -1252,8 +1530,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Electrified"
+      "en": "Electrified",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=157, -idMax=303, #text=INNR:WNAM}",
     "sid": "039577",
@@ -1261,8 +1541,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Heavy Sharp"
+      "en": "Heavy Sharp",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=165, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957F",
@@ -1270,8 +1552,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Electrified"
+      "en": "Electrified",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=168, -idMax=303, #text=INNR:WNAM}",
     "sid": "039582",
@@ -1279,8 +1563,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quad Barrel"
+      "en": "Quad Barrel",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=193, -idMax=303, #text=INNR:WNAM}",
     "sid": "039585",
@@ -1288,8 +1574,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Overcharged"
+      "en": "Overcharged",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=207, -idMax=303, #text=INNR:WNAM}",
     "sid": "039593",
@@ -1297,8 +1585,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Three-Crank"
+      "en": "Three-Crank",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=208, -idMax=303, #text=INNR:WNAM}",
     "sid": "039594",
@@ -1306,8 +1596,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Life Saving"
+      "en": "Life Saving",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=6, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E4",
@@ -1315,8 +1607,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Rad Powered"
+      "en": "Rad Powered",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=9, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E7",
@@ -1324,8 +1618,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Irradiating"
+      "en": "Irradiating",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=76, -idMax=103, #text=INNR:WNAM}",
     "sid": "039608",
@@ -1333,8 +1629,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Lightweight"
+      "en": "Lightweight",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=80, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960C",
@@ -1342,8 +1640,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "BioCommMesh"
+      "en": "BioCommMesh",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=82, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960E",
@@ -1351,8 +1651,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Aerodynamic"
+      "en": "Aerodynamic",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=89, -idMax=103, #text=INNR:WNAM}",
     "sid": "039615",
@@ -1360,8 +1662,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Ultra-Light"
+      "en": "Ultra-Light",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=91, -idMax=103, #text=INNR:WNAM}",
     "sid": "039617",
@@ -1369,8 +1673,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Microcarbon"
+      "en": "Microcarbon",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=68, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963D",
@@ -1378,8 +1684,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Penetrating"
+      "en": "Penetrating",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=10, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980C",
@@ -1387,8 +1695,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Instigating"
+      "en": "Instigating",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=18, -idMax=138, #text=INNR:WNAM}",
     "sid": "039814",
@@ -1396,8 +1706,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Berserker's"
+      "en": "Berserker's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=21, -idMax=138, #text=INNR:WNAM}",
     "sid": "039817",
@@ -1405,8 +1717,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Electrified"
+      "en": "Electrified",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=76, -idMax=138, #text=INNR:WNAM}",
     "sid": "039830",
@@ -1414,8 +1728,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Precise .38"
+      "en": "Precise .38",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=175, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624E",
@@ -1423,8 +1739,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Precise .45"
+      "en": "Precise .45",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=176, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624F",
@@ -1432,8 +1750,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Precise .50"
+      "en": "Precise .50",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=177, -idMax=303, #text=INNR:WNAM}",
     "sid": "046250",
@@ -1441,8 +1761,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Refined .38"
+      "en": "Refined .38",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=178, -idMax=303, #text=INNR:WNAM}",
     "sid": "046251",
@@ -1450,8 +1772,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Refined .45"
+      "en": "Refined .45",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=179, -idMax=303, #text=INNR:WNAM}",
     "sid": "046252",
@@ -1459,8 +1783,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Refined .50"
+      "en": "Refined .50",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=180, -idMax=303, #text=INNR:WNAM}",
     "sid": "046253",
@@ -1468,8 +1794,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Daisycutter"
+      "en": "Daisycutter",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=280, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B017",
@@ -1477,8 +1805,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Responder's"
+      "en": "Responder's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=35, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6A",
@@ -1486,8 +1816,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Responder's"
+      "en": "Responder's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=39, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F0",
@@ -1495,8 +1827,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Untarnished"
+      "en": "Untarnished",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=59, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000FA",
@@ -1504,8 +1838,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Electrified"
+      "en": "Electrified",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=110, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D73",
@@ -1513,8 +1849,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Blood Eagle"
+      "en": "Blood Eagle",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=30, -idMax=138, #text=INNR:WNAM}",
     "sid": "4100119E",
@@ -1522,8 +1860,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Candy-Claws"
+      "en": "Candy-Claws",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=137, -idMax=138, #text=INNR:WNAM}",
     "sid": "610091AA",
@@ -1531,8 +1871,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Matte Black"
+      "en": "Matte Black",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=55, -idMax=303, #text=INNR:WNAM}",
     "sid": "610091FF",
@@ -1540,8 +1882,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Blood Eagle"
+      "en": "Blood Eagle",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=57, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100982F",
@@ -1549,8 +1893,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Dark Matter"
+      "en": "Dark Matter",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=27, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A4D7",
@@ -1558,8 +1904,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Concussive"
+      "en": "Concussive",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=0, -idMax=303, #text=INNR:WNAM}",
     "sid": "039509",
@@ -1567,8 +1915,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Assassin's"
+      "en": "Assassin's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=4, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950D",
@@ -1576,8 +1926,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Vampire's "
+      "en": "Vampire's ",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=20, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951D",
@@ -1585,8 +1937,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Anti-armor"
+      "en": "Anti-armor",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=22, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951F",
@@ -1594,8 +1948,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Endangerol"
+      "en": "Endangerol",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=77, -idMax=303, #text=INNR:WNAM}",
     "sid": "039525",
@@ -1603,8 +1959,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Suppressed"
+      "en": "Suppressed",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=85, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952E",
@@ -1612,8 +1970,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Marksman's"
+      "en": "Marksman's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=87, -idMax=303, #text=INNR:WNAM}",
     "sid": "039530",
@@ -1621,8 +1981,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "High Speed"
+      "en": "High Speed",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=96, -idMax=303, #text=INNR:WNAM}",
     "sid": "039539",
@@ -1630,8 +1992,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Compressed"
+      "en": "Compressed",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=132, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955D",
@@ -1639,8 +2003,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Vaporizing"
+      "en": "Vaporizing",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=133, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955E",
@@ -1648,8 +2014,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Suppressed"
+      "en": "Suppressed",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=139, -idMax=303, #text=INNR:WNAM}",
     "sid": "039564",
@@ -1657,8 +2025,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Marksman's"
+      "en": "Marksman's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=141, -idMax=303, #text=INNR:WNAM}",
     "sid": "039566",
@@ -1666,8 +2036,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Incendiary"
+      "en": "Incendiary",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=199, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958B",
@@ -1675,8 +2047,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Four-Crank"
+      "en": "Four-Crank",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=209, -idMax=303, #text=INNR:WNAM}",
     "sid": "039595",
@@ -1684,8 +2058,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Five-Crank"
+      "en": "Five-Crank",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=210, -idMax=303, #text=INNR:WNAM}",
     "sid": "039596",
@@ -1693,8 +2069,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Calibrated"
+      "en": "Calibrated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=219, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959F",
@@ -1702,8 +2080,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Rocket Bat"
+      "en": "Rocket Bat",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=259, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B5",
@@ -1711,8 +2091,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Vanguard's"
+      "en": "Vanguard's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=2, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E0",
@@ -1720,8 +2102,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Weightless"
+      "en": "Weightless",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=7, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E5",
@@ -1729,8 +2113,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Unyielding"
+      "en": "Unyielding",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=8, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E6",
@@ -1738,8 +2124,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Incendiary"
+      "en": "Incendiary",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=10, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E8",
@@ -1747,8 +2135,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Bolstering"
+      "en": "Bolstering",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=14, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395ED",
@@ -1756,8 +2146,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Poisoner's"
+      "en": "Poisoner's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=17, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F0",
@@ -1765,8 +2157,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Cavalier's"
+      "en": "Cavalier's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=27, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FA",
@@ -1774,8 +2168,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Sentinel's"
+      "en": "Sentinel's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=30, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FD",
@@ -1783,8 +2179,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Assassin's"
+      "en": "Assassin's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=32, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FF",
@@ -1792,8 +2190,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Fortifying"
+      "en": "Fortifying",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=33, -idMax=103, #text=INNR:WNAM}",
     "sid": "039600",
@@ -1801,8 +2201,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Sprinter's"
+      "en": "Sprinter's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=35, -idMax=103, #text=INNR:WNAM}",
     "sid": "039602",
@@ -1810,8 +2212,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Custom Fit"
+      "en": "Custom Fit",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=90, -idMax=103, #text=INNR:WNAM}",
     "sid": "039616",
@@ -1819,8 +2223,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Buttressed"
+      "en": "Buttressed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=45, -idMax=103, #text=INNR:WNAM}",
     "sid": "039626",
@@ -1828,8 +2234,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Reinforced"
+      "en": "Reinforced",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=48, -idMax=103, #text=INNR:WNAM}",
     "sid": "039629",
@@ -1837,8 +2245,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Fiberglass"
+      "en": "Fiberglass",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=49, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962A",
@@ -1846,8 +2256,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Buttressed"
+      "en": "Buttressed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=65, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963A",
@@ -1855,8 +2267,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Concussive"
+      "en": "Concussive",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=1, -idMax=138, #text=INNR:WNAM}",
     "sid": "039805",
@@ -1864,8 +2278,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Anti-armor"
+      "en": "Anti-armor",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=6, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980A",
@@ -1873,8 +2289,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Assassin's"
+      "en": "Assassin's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=12, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980E",
@@ -1882,8 +2300,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Lead Lined"
+      "en": "Lead Lined",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=63, -idMax=138, #text=INNR:WNAM}",
     "sid": "039823",
@@ -1891,8 +2311,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Puncturing"
+      "en": "Puncturing",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=66, -idMax=138, #text=INNR:WNAM}",
     "sid": "039826",
@@ -1900,8 +2322,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Gamma Wave"
+      "en": "Gamma Wave",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=244, -idMax=303, #text=INNR:WNAM}",
     "sid": "046265",
@@ -1909,8 +2333,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Stand Fast"
+      "en": "Stand Fast",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=100, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857B",
@@ -1918,8 +2344,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Slay Bells"
+      "en": "Slay Bells",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=131, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B009",
@@ -1927,8 +2355,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Candy Cane"
+      "en": "Candy Cane",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=133, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B00B",
@@ -1936,8 +2366,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Wiffle Bat"
+      "en": "Wiffle Bat",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=134, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A72",
@@ -1945,8 +2377,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Free State"
+      "en": "Free State",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=40, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F1",
@@ -1954,8 +2388,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Lead Lined"
+      "en": "Lead Lined",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=97, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D66",
@@ -1963,8 +2399,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Puncturing"
+      "en": "Puncturing",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=100, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D69",
@@ -1972,8 +2410,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Survivor's"
+      "en": "Survivor's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=31, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D8D",
@@ -1981,8 +2421,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Survivor's"
+      "en": "Survivor's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=31, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000D8E",
@@ -1990,8 +2432,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Camouflage"
+      "en": "Camouflage",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=66, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000D8F",
@@ -1999,8 +2443,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "Wood Grain"
+      "en": "Wood Grain",
+      "fr": "[Visée]"
     },
     "rec": "{-id=2, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD4",
@@ -2008,8 +2454,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hex Barrel"
+      "en": "Hex Barrel",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=248, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007047",
@@ -2017,8 +2465,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Nocturnal"
+      "en": "Nocturnal",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=9, -idMax=303, #text=INNR:WNAM}",
     "sid": "039512",
@@ -2026,8 +2476,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Stalker's"
+      "en": "Stalker's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=12, -idMax=303, #text=INNR:WNAM}",
     "sid": "039515",
@@ -2035,8 +2487,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Targeting"
+      "en": "Targeting",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=83, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952C",
@@ -2044,8 +2498,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Targeting"
+      "en": "Targeting",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=93, -idMax=303, #text=INNR:WNAM}",
     "sid": "039536",
@@ -2053,8 +2509,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Scattered"
+      "en": "Scattered",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=94, -idMax=303, #text=INNR:WNAM}",
     "sid": "039537",
@@ -2062,8 +2520,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bayoneted"
+      "en": "Bayoneted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=109, -idMax=303, #text=INNR:WNAM}",
     "sid": "039546",
@@ -2071,8 +2531,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Snubnosed"
+      "en": "Snubnosed",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=111, -idMax=303, #text=INNR:WNAM}",
     "sid": "039548",
@@ -2080,8 +2542,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Sawed-Off"
+      "en": "Sawed-Off",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=112, -idMax=303, #text=INNR:WNAM}",
     "sid": "039549",
@@ -2089,8 +2553,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bayoneted"
+      "en": "Bayoneted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=152, -idMax=303, #text=INNR:WNAM}",
     "sid": "039571",
@@ -2098,8 +2564,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Nuka-Cola"
+      "en": "Nuka-Cola",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=153, -idMax=303, #text=INNR:WNAM}",
     "sid": "039573",
@@ -2107,8 +2575,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Shredding"
+      "en": "Shredding",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=195, -idMax=303, #text=INNR:WNAM}",
     "sid": "039587",
@@ -2116,8 +2586,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Repeating"
+      "en": "Repeating",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=198, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958A",
@@ -2125,8 +2597,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Maximized"
+      "en": "Maximized",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=206, -idMax=303, #text=INNR:WNAM}",
     "sid": "039592",
@@ -2134,8 +2608,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Six-Crank"
+      "en": "Six-Crank",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=211, -idMax=303, #text=INNR:WNAM}",
     "sid": "039597",
@@ -2143,8 +2619,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Converted"
+      "en": "Converted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=224, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A4",
@@ -2152,8 +2630,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Automatic"
+      "en": "Automatic",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=254, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B0",
@@ -2161,8 +2641,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Automatic"
+      "en": "Automatic",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=256, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B2",
@@ -2170,8 +2652,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Automatic"
+      "en": "Automatic",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=257, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B3",
@@ -2179,8 +2663,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Automatic"
+      "en": "Automatic",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=261, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395BB",
@@ -2188,8 +2674,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Nocturnal"
+      "en": "Nocturnal",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=1, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395DF",
@@ -2197,8 +2685,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Auto Stim"
+      "en": "Auto Stim",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=13, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395EB",
@@ -2206,8 +2696,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Chameleon"
+      "en": "Chameleon",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=26, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F9",
@@ -2215,8 +2707,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Acrobat's"
+      "en": "Acrobat's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=29, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FC",
@@ -2224,8 +2718,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Duelist's"
+      "en": "Duelist's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=31, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FE",
@@ -2233,8 +2729,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Fortified"
+      "en": "Fortified",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=72, -idMax=103, #text=INNR:WNAM}",
     "sid": "039604",
@@ -2242,8 +2740,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Insulated"
+      "en": "Insulated",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=77, -idMax=103, #text=INNR:WNAM}",
     "sid": "039609",
@@ -2251,8 +2751,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Brawler's"
+      "en": "Brawler's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=85, -idMax=103, #text=INNR:WNAM}",
     "sid": "039611",
@@ -2260,8 +2762,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Stablized"
+      "en": "Stablized",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=87, -idMax=103, #text=INNR:WNAM}",
     "sid": "039613",
@@ -2269,8 +2773,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Pneumatic"
+      "en": "Pneumatic",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=93, -idMax=103, #text=INNR:WNAM}",
     "sid": "039619",
@@ -2278,8 +2784,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Laminated"
+      "en": "Laminated",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=66, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963B",
@@ -2287,8 +2795,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Vampire's"
+      "en": "Vampire's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=5, -idMax=138, #text=INNR:WNAM}",
     "sid": "039809",
@@ -2296,8 +2806,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stalker's"
+      "en": "Stalker's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=19, -idMax=138, #text=INNR:WNAM}",
     "sid": "039815",
@@ -2305,8 +2817,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Nocturnal"
+      "en": "Nocturnal",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=24, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981A",
@@ -2314,8 +2828,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hasty .38"
+      "en": "Hasty .38",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=172, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624B",
@@ -2323,8 +2839,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hasty .45"
+      "en": "Hasty .45",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=173, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624C",
@@ -2332,8 +2850,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hasty .50"
+      "en": "Hasty .50",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=174, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624D",
@@ -2341,8 +2861,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Steadfast"
+      "en": "Steadfast",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=237, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625E",
@@ -2350,8 +2872,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Beta Wave"
+      "en": "Beta Wave",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=245, -idMax=303, #text=INNR:WNAM}",
     "sid": "046266",
@@ -2359,8 +2883,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Vault-Tec"
+      "en": "Vault-Tec",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=34, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B00C",
@@ -2368,8 +2894,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Frostbite"
+      "en": "Frostbite",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=63, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B011",
@@ -2377,8 +2905,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Pyrolyzer"
+      "en": "Pyrolyzer",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=279, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B016",
@@ -2386,8 +2916,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "Gardening"
+      "en": "Gardening",
+      "fr": "[Visée]"
     },
     "rec": "{-id=0, -idMax=11, #text=INNR:WNAM}",
     "sid": "05386C",
@@ -2395,8 +2927,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Atom Cats"
+      "en": "Atom Cats",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=50, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F4",
@@ -2404,8 +2938,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Blackbird"
+      "en": "Blackbird",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=47, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000104",
@@ -2413,8 +2949,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "Targeting"
+      "en": "Targeting",
+      "fr": "[Visée]"
     },
     "rec": "{-id=10, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FDB",
@@ -2422,8 +2960,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Communist"
+      "en": "Communist",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=45, -idMax=303, #text=INNR:WNAM}",
     "sid": "61003F6B",
@@ -2431,8 +2971,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Blackbird"
+      "en": "Blackbird",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=9, -idMax=138, #text=INNR:WNAM}",
     "sid": "61003F6D",
@@ -2440,8 +2982,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Explosive"
+      "en": "Explosive",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=188, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F22",
@@ -2449,8 +2993,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Fireworks"
+      "en": "Fireworks",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=189, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F23",
@@ -2458,8 +3004,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Flintlock"
+      "en": "Flintlock",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=56, -idMax=303, #text=INNR:WNAM}",
     "sid": "61009643",
@@ -2467,8 +3015,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Mutant's"
+      "en": "Mutant's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=1, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950A",
@@ -2476,8 +3026,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Zealot's"
+      "en": "Zealot's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=5, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950E",
@@ -2485,8 +3037,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hunter's"
+      "en": "Hunter's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=8, -idMax=303, #text=INNR:WNAM}",
     "sid": "039511",
@@ -2494,8 +3048,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Junkie's"
+      "en": "Junkie's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=15, -idMax=303, #text=INNR:WNAM}",
     "sid": "039518",
@@ -2503,8 +3059,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bloodied"
+      "en": "Bloodied",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=17, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951A",
@@ -2512,8 +3070,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Two Shot"
+      "en": "Two Shot",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=18, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951B",
@@ -2521,8 +3081,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bleedout"
+      "en": "Bleedout",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=76, -idMax=303, #text=INNR:WNAM}",
     "sid": "039523",
@@ -2530,8 +3092,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tactical"
+      "en": "Tactical",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=102, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953F",
@@ -2539,8 +3103,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Charging"
+      "en": "Charging",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=116, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954D",
@@ -2548,8 +3114,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved"
+      "en": "Improved",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=117, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954E",
@@ -2557,8 +3125,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Improved"
+      "en": "Improved",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=118, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954F",
@@ -2566,8 +3136,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Extended"
+      "en": "Extended",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=131, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955C",
@@ -2575,8 +3147,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tactical"
+      "en": "Tactical",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=145, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956A",
@@ -2584,8 +3158,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Dual Bar"
+      "en": "Dual Bar",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=167, -idMax=303, #text=INNR:WNAM}",
     "sid": "039581",
@@ -2593,8 +3169,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Agitated"
+      "en": "Agitated",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=204, -idMax=303, #text=INNR:WNAM}",
     "sid": "039590",
@@ -2602,8 +3180,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hardened"
+      "en": "Hardened",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=215, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959B",
@@ -2611,8 +3191,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Powerful"
+      "en": "Powerful",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=218, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959E",
@@ -2620,8 +3202,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Advanced"
+      "en": "Advanced",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=225, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A5",
@@ -2629,8 +3213,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Mutant's"
+      "en": "Mutant's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=4, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E2",
@@ -2638,8 +3224,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Zealot's"
+      "en": "Zealot's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=5, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E3",
@@ -2647,8 +3235,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Cloaking"
+      "en": "Cloaking",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=11, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E9",
@@ -2656,8 +3246,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Martyr's"
+      "en": "Martyr's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=18, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F1",
@@ -2665,8 +3257,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Hunter's"
+      "en": "Hunter's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=23, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F6",
@@ -2674,8 +3268,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Shocking"
+      "en": "Shocking",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=75, -idMax=103, #text=INNR:WNAM}",
     "sid": "039607",
@@ -2683,8 +3279,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Pocketed"
+      "en": "Pocketed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=78, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960A",
@@ -2692,8 +3290,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Weighted"
+      "en": "Weighted",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=94, -idMax=103, #text=INNR:WNAM}",
     "sid": "03961A",
@@ -2701,8 +3301,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Improved"
+      "en": "Improved",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=39, -idMax=103, #text=INNR:WNAM}",
     "sid": "039620",
@@ -2710,8 +3312,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Tempered"
+      "en": "Tempered",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=43, -idMax=103, #text=INNR:WNAM}",
     "sid": "039624",
@@ -2719,8 +3323,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Hardened"
+      "en": "Hardened",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=44, -idMax=103, #text=INNR:WNAM}",
     "sid": "039625",
@@ -2728,8 +3334,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Zealot's"
+      "en": "Zealot's",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=46, -idMax=103, #text=INNR:WNAM}",
     "sid": "039627",
@@ -2737,8 +3345,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Shadowed"
+      "en": "Shadowed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=47, -idMax=103, #text=INNR:WNAM}",
     "sid": "039628",
@@ -2746,8 +3356,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Shadowed"
+      "en": "Shadowed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=54, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962F",
@@ -2755,8 +3367,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Enameled"
+      "en": "Enameled",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=58, -idMax=103, #text=INNR:WNAM}",
     "sid": "039633",
@@ -2764,8 +3378,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Shadowed"
+      "en": "Shadowed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=59, -idMax=103, #text=INNR:WNAM}",
     "sid": "039634",
@@ -2773,8 +3389,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Polished"
+      "en": "Polished",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=61, -idMax=103, #text=INNR:WNAM}",
     "sid": "039636",
@@ -2782,8 +3400,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Tempered"
+      "en": "Tempered",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=63, -idMax=103, #text=INNR:WNAM}",
     "sid": "039638",
@@ -2791,8 +3411,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Hardened"
+      "en": "Hardened",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=64, -idMax=103, #text=INNR:WNAM}",
     "sid": "039639",
@@ -2800,8 +3422,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Mutant's"
+      "en": "Mutant's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=2, -idMax=138, #text=INNR:WNAM}",
     "sid": "039806",
@@ -2809,8 +3433,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Zealot's"
+      "en": "Zealot's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=3, -idMax=138, #text=INNR:WNAM}",
     "sid": "039807",
@@ -2818,8 +3444,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Hunter's"
+      "en": "Hunter's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=15, -idMax=138, #text=INNR:WNAM}",
     "sid": "039811",
@@ -2827,8 +3455,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Bloodied"
+      "en": "Bloodied",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=22, -idMax=138, #text=INNR:WNAM}",
     "sid": "039818",
@@ -2836,8 +3466,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Junkie's"
+      "en": "Junkie's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=23, -idMax=138, #text=INNR:WNAM}",
     "sid": "039819",
@@ -2845,8 +3477,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Two Shot"
+      "en": "Two Shot",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=25, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981B",
@@ -2854,8 +3488,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Security"
+      "en": "Security",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=59, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981F",
@@ -2863,8 +3499,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Extended"
+      "en": "Extended",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=61, -idMax=138, #text=INNR:WNAM}",
     "sid": "039821",
@@ -2872,8 +3510,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Weighted"
+      "en": "Weighted",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=71, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982B",
@@ -2881,8 +3521,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stunning"
+      "en": "Stunning",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=75, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982F",
@@ -2890,8 +3532,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Serrated"
+      "en": "Serrated",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=78, -idMax=138, #text=INNR:WNAM}",
     "sid": "039832",
@@ -2899,8 +3543,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Mahogany"
+      "en": "Mahogany",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=42, -idMax=138, #text=INNR:WNAM}",
     "sid": "039837",
@@ -2908,8 +3554,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Aluminum"
+      "en": "Aluminum",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=45, -idMax=138, #text=INNR:WNAM}",
     "sid": "03983A",
@@ -2917,8 +3565,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Shrouded"
+      "en": "Shrouded",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=98, -idMax=103, #text=INNR:WNAM}",
     "sid": "0444E1",
@@ -2926,8 +3576,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Vigorous"
+      "en": "Vigorous",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=242, -idMax=303, #text=INNR:WNAM}",
     "sid": "046263",
@@ -2935,8 +3587,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Critical"
+      "en": "Critical",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=243, -idMax=303, #text=INNR:WNAM}",
     "sid": "046264",
@@ -2944,8 +3598,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "All Star"
+      "en": "All Star",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=28, -idMax=138, #text=INNR:WNAM}",
     "sid": "04700F",
@@ -2953,8 +3609,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "All Rise"
+      "en": "All Rise",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=128, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B007",
@@ -2962,8 +3620,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Inventor"
+      "en": "Inventor",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=37, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B00D",
@@ -2971,8 +3631,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Poisoned"
+      "en": "Poisoned",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=56, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCEB",
@@ -2980,8 +3642,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Survival"
+      "en": "Survival",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=49, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6E",
@@ -2989,8 +3653,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Poisoned"
+      "en": "Poisoned",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=90, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D5F",
@@ -2998,8 +3664,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Security"
+      "en": "Security",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=93, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D62",
@@ -3007,8 +3675,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Extended"
+      "en": "Extended",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=95, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D64",
@@ -3016,8 +3686,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Weighted"
+      "en": "Weighted",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=105, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6E",
@@ -3025,8 +3697,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stunning"
+      "en": "Stunning",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=109, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D72",
@@ -3034,8 +3708,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Serrated"
+      "en": "Serrated",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=112, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D75",
@@ -3043,8 +3719,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Jet Pack"
+      "en": "Jet Pack",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=71, -idMax=103, #text=INNR:WNAM}",
     "sid": "6100696E",
@@ -3052,8 +3730,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Poisoned"
+      "en": "Poisoned",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=190, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F24",
@@ -3061,8 +3741,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Furious"
+      "en": "Furious",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=11, -idMax=303, #text=INNR:WNAM}",
     "sid": "039514",
@@ -3070,8 +3752,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Medic's"
+      "en": "Medic's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=14, -idMax=303, #text=INNR:WNAM}",
     "sid": "039517",
@@ -3079,8 +3763,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Medic's"
+      "en": "Medic's",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=21, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951E",
@@ -3088,8 +3774,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Flaming"
+      "en": "Flaming",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=79, -idMax=303, #text=INNR:WNAM}",
     "sid": "039528",
@@ -3097,8 +3785,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bow Bar"
+      "en": "Bow Bar",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=80, -idMax=303, #text=INNR:WNAM}",
     "sid": "039529",
@@ -3106,8 +3796,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Muzzled"
+      "en": "Muzzled",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=89, -idMax=303, #text=INNR:WNAM}",
     "sid": "039532",
@@ -3115,8 +3807,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Focused"
+      "en": "Focused",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=95, -idMax=303, #text=INNR:WNAM}",
     "sid": "039538",
@@ -3124,8 +3818,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Sighted"
+      "en": "Sighted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=103, -idMax=303, #text=INNR:WNAM}",
     "sid": "039540",
@@ -3133,8 +3829,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Muzzled"
+      "en": "Muzzled",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=143, -idMax=303, #text=INNR:WNAM}",
     "sid": "039568",
@@ -3142,8 +3840,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Sighted"
+      "en": "Sighted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=146, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956B",
@@ -3151,8 +3851,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Flaming"
+      "en": "Flaming",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=158, -idMax=303, #text=INNR:WNAM}",
     "sid": "039578",
@@ -3160,8 +3862,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Flaming"
+      "en": "Flaming",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=169, -idMax=303, #text=INNR:WNAM}",
     "sid": "039583",
@@ -3169,8 +3873,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Excited"
+      "en": "Excited",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=202, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958E",
@@ -3178,8 +3884,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Boosted"
+      "en": "Boosted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=205, -idMax=303, #text=INNR:WNAM}",
     "sid": "039591",
@@ -3187,8 +3895,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Painted"
+      "en": "Painted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=32, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395AE",
@@ -3196,8 +3906,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Thrower"
+      "en": "Thrower",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=291, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395D2",
@@ -3205,8 +3917,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Powered"
+      "en": "Powered",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=28, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FB",
@@ -3214,8 +3928,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Cunning"
+      "en": "Cunning",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=34, -idMax=103, #text=INNR:WNAM}",
     "sid": "039601",
@@ -3223,8 +3939,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Muffled"
+      "en": "Muffled",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=81, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960D",
@@ -3232,8 +3950,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Polymer"
+      "en": "Polymer",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=50, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962B",
@@ -3241,8 +3961,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Treated"
+      "en": "Treated",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=55, -idMax=103, #text=INNR:WNAM}",
     "sid": "039630",
@@ -3250,8 +3972,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Studded"
+      "en": "Studded",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=56, -idMax=103, #text=INNR:WNAM}",
     "sid": "039631",
@@ -3259,8 +3983,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Painted"
+      "en": "Painted",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=57, -idMax=103, #text=INNR:WNAM}",
     "sid": "039632",
@@ -3268,8 +3994,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Alloyed"
+      "en": "Alloyed",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=60, -idMax=103, #text=INNR:WNAM}",
     "sid": "039635",
@@ -3277,8 +4005,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Furious"
+      "en": "Furious",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=17, -idMax=138, #text=INNR:WNAM}",
     "sid": "039813",
@@ -3286,8 +4016,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Medic's"
+      "en": "Medic's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=20, -idMax=138, #text=INNR:WNAM}",
     "sid": "039816",
@@ -3295,8 +4027,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Searing"
+      "en": "Searing",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=79, -idMax=138, #text=INNR:WNAM}",
     "sid": "039833",
@@ -3304,8 +4038,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Swatter"
+      "en": "Swatter",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=130, -idMax=138, #text=INNR:WNAM}",
     "sid": "03983C",
@@ -3313,8 +4049,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Refined"
+      "en": "Refined",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=192, -idMax=303, #text=INNR:WNAM}",
     "sid": "046257",
@@ -3322,8 +4060,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Focused"
+      "en": "Focused",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=232, -idMax=303, #text=INNR:WNAM}",
     "sid": "046259",
@@ -3331,8 +4071,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tweaked"
+      "en": "Tweaked",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=240, -idMax=303, #text=INNR:WNAM}",
     "sid": "046261",
@@ -3340,8 +4082,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Vicious"
+      "en": "Vicious",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=241, -idMax=303, #text=INNR:WNAM}",
     "sid": "046262",
@@ -3349,8 +4093,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "Mothman"
+      "en": "Mothman",
+      "fr": "[Visée]"
     },
     "rec": "{-id=6, -idMax=11, #text=INNR:WNAM}",
     "sid": "04A9C0",
@@ -3358,8 +4104,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Burning"
+      "en": "Burning",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=82, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCEE",
@@ -3367,8 +4115,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Fireman"
+      "en": "Fireman",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=58, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F9",
@@ -3376,8 +4126,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Scabber"
+      "en": "Scabber",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=46, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000103",
@@ -3385,8 +4137,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stanley"
+      "en": "Stanley",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=123, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000AE3",
@@ -3394,8 +4148,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Searing"
+      "en": "Searing",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=113, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D76",
@@ -3403,8 +4159,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Burning"
+      "en": "Burning",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=116, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D79",
@@ -3412,8 +4170,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Ghillie"
+      "en": "Ghillie",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=38, -idMax=103, #text=INNR:WNAM}",
     "sid": "41001044",
@@ -3421,8 +4181,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Flaming"
+      "en": "Flaming",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=186, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F20",
@@ -3430,8 +4192,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Ghillie"
+      "en": "Ghillie",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=28, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A455",
@@ -3439,8 +4203,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Frenzy"
+      "en": "Frenzy",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=75, -idMax=303, #text=INNR:WNAM}",
     "sid": "039522",
@@ -3448,8 +4214,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Fluted"
+      "en": "Fluted",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=81, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952A",
@@ -3457,8 +4225,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Vented"
+      "en": "Vented",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=98, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953B",
@@ -3466,8 +4236,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Ported"
+      "en": "Ported",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=99, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953C",
@@ -3475,8 +4247,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Finned"
+      "en": "Finned",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=100, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953D",
@@ -3484,8 +4258,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Scoped"
+      "en": "Scoped",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=121, -idMax=303, #text=INNR:WNAM}",
     "sid": "039552",
@@ -3493,8 +4269,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Scoped"
+      "en": "Scoped",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=122, -idMax=303, #text=INNR:WNAM}",
     "sid": "039553",
@@ -3502,8 +4280,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Scoped"
+      "en": "Scoped",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=124, -idMax=303, #text=INNR:WNAM}",
     "sid": "039555",
@@ -3511,8 +4291,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Scoped"
+      "en": "Scoped",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=134, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955F",
@@ -3520,8 +4302,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bladed"
+      "en": "Bladed",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=156, -idMax=303, #text=INNR:WNAM}",
     "sid": "039576",
@@ -3529,8 +4313,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Spiked"
+      "en": "Spiked",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=159, -idMax=303, #text=INNR:WNAM}",
     "sid": "039579",
@@ -3538,8 +4324,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Steady"
+      "en": "Steady",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=170, -idMax=303, #text=INNR:WNAM}",
     "sid": "039584",
@@ -3547,8 +4335,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Lobber"
+      "en": "Lobber",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=230, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395AA",
@@ -3556,8 +4346,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Braced"
+      "en": "Braced",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=73, -idMax=103, #text=INNR:WNAM}",
     "sid": "039605",
@@ -3565,8 +4357,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Leaded"
+      "en": "Leaded",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=79, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960B",
@@ -3574,8 +4368,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Padded"
+      "en": "Padded",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=84, -idMax=103, #text=INNR:WNAM}",
     "sid": "039610",
@@ -3583,8 +4379,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Sturdy"
+      "en": "Sturdy",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=96, -idMax=103, #text=INNR:WNAM}",
     "sid": "03961C",
@@ -3592,8 +4390,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Welded"
+      "en": "Welded",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=42, -idMax=103, #text=INNR:WNAM}",
     "sid": "039623",
@@ -3601,8 +4401,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Boiled"
+      "en": "Boiled",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=52, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962D",
@@ -3610,8 +4412,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Girded"
+      "en": "Girded",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=53, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962E",
@@ -3619,8 +4423,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Welded"
+      "en": "Welded",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=62, -idMax=103, #text=INNR:WNAM}",
     "sid": "039637",
@@ -3628,8 +4434,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Curved"
+      "en": "Curved",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=62, -idMax=138, #text=INNR:WNAM}",
     "sid": "039822",
@@ -3637,8 +4445,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Barbed"
+      "en": "Barbed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=65, -idMax=138, #text=INNR:WNAM}",
     "sid": "039825",
@@ -3646,8 +4456,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Spiked"
+      "en": "Spiked",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=67, -idMax=138, #text=INNR:WNAM}",
     "sid": "039827",
@@ -3655,8 +4467,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Bladed"
+      "en": "Bladed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=69, -idMax=138, #text=INNR:WNAM}",
     "sid": "039829",
@@ -3664,8 +4478,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Hooked"
+      "en": "Hooked",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=72, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982C",
@@ -3673,8 +4489,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Heated"
+      "en": "Heated",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=73, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982D",
@@ -3682,8 +4500,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Gilded"
+      "en": "Gilded",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=35, -idMax=303, #text=INNR:WNAM}",
     "sid": "042BE4",
@@ -3691,8 +4511,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Golden"
+      "en": "Golden",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=36, -idMax=303, #text=INNR:WNAM}",
     "sid": "042BE5",
@@ -3700,8 +4522,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Fierce"
+      "en": "Fierce",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=231, -idMax=303, #text=INNR:WNAM}",
     "sid": "046258",
@@ -3709,8 +4533,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Severe"
+      "en": "Severe",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=234, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625B",
@@ -3718,8 +4544,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Speedy"
+      "en": "Speedy",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=235, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625C",
@@ -3727,8 +4555,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Snappy"
+      "en": "Snappy",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=236, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625D",
@@ -3736,8 +4566,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Chef's"
+      "en": "Chef's",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=29, -idMax=138, #text=INNR:WNAM}",
     "sid": "047010",
@@ -3745,8 +4577,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Modern"
+      "en": "Modern",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=37, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B006",
@@ -3754,8 +4588,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Barbed"
+      "en": "Barbed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=81, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCED",
@@ -3763,8 +4599,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Horned"
+      "en": "Horned",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=84, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCF6",
@@ -3772,8 +4610,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Yellow"
+      "en": "Yellow",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=34, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A69",
@@ -3781,8 +4621,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Gilded"
+      "en": "Gilded",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=47, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6C",
@@ -3790,8 +4632,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Curved"
+      "en": "Curved",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=96, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D65",
@@ -3799,8 +4643,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Barbed"
+      "en": "Barbed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=99, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D68",
@@ -3808,8 +4654,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Spiked"
+      "en": "Spiked",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=101, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6A",
@@ -3817,8 +4665,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Bladed"
+      "en": "Bladed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=103, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6C",
@@ -3826,8 +4676,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Hooked"
+      "en": "Hooked",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=106, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6F",
@@ -3835,8 +4687,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Heated"
+      "en": "Heated",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=107, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D70",
@@ -3844,8 +4698,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Barbed"
+      "en": "Barbed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=115, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D78",
@@ -3853,8 +4709,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Horned"
+      "en": "Horned",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=118, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D7B",
@@ -3862,8 +4720,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Cursed"
+      "en": "Cursed",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=52, -idMax=138, #text=INNR:WNAM}",
     "sid": "41001399",
@@ -3871,8 +4731,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Cursed"
+      "en": "Cursed",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=251, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A2D2",
@@ -3880,8 +4742,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Karma"
+      "en": "Karma",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=74, -idMax=303, #text=INNR:WNAM}",
     "sid": "039521",
@@ -3889,8 +4753,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Recon"
+      "en": "Recon",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=82, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952B",
@@ -3898,8 +4764,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quick"
+      "en": "Quick",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=106, -idMax=303, #text=INNR:WNAM}",
     "sid": "039543",
@@ -3907,8 +4775,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Short"
+      "en": "Short",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=125, -idMax=303, #text=INNR:WNAM}",
     "sid": "039556",
@@ -3916,8 +4786,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Short"
+      "en": "Short",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=128, -idMax=303, #text=INNR:WNAM}",
     "sid": "039559",
@@ -3925,8 +4797,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Large"
+      "en": "Large",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=136, -idMax=303, #text=INNR:WNAM}",
     "sid": "039561",
@@ -3934,8 +4808,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Recon"
+      "en": "Recon",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=137, -idMax=303, #text=INNR:WNAM}",
     "sid": "039562",
@@ -3943,8 +4819,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quick"
+      "en": "Quick",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=149, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956E",
@@ -3952,8 +4830,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Large"
+      "en": "Large",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=196, -idMax=303, #text=INNR:WNAM}",
     "sid": "039588",
@@ -3961,8 +4841,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Fiery"
+      "en": "Fiery",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=201, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958D",
@@ -3970,8 +4852,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tuned"
+      "en": "Tuned",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=227, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A7",
@@ -3979,8 +4863,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Rapid"
+      "en": "Rapid",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=253, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395AF",
@@ -3988,8 +4874,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Lucky"
+      "en": "Lucky",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=19, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F2",
@@ -3997,8 +4885,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Sharp"
+      "en": "Sharp",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=36, -idMax=103, #text=INNR:WNAM}",
     "sid": "039603",
@@ -4006,8 +4896,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Dense"
+      "en": "Dense",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=92, -idMax=103, #text=INNR:WNAM}",
     "sid": "039618",
@@ -4015,8 +4907,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Sleek"
+      "en": "Sleek",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=95, -idMax=103, #text=INNR:WNAM}",
     "sid": "03961B",
@@ -4024,8 +4918,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Resin"
+      "en": "Resin",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=67, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963C",
@@ -4033,8 +4929,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Shock"
+      "en": "Shock",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=57, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981D",
@@ -4042,8 +4940,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Large"
+      "en": "Large",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=60, -idMax=138, #text=INNR:WNAM}",
     "sid": "039820",
@@ -4051,8 +4951,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Sharp"
+      "en": "Sharp",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=70, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982A",
@@ -4060,8 +4962,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Cedar"
+      "en": "Cedar",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=46, -idMax=138, #text=INNR:WNAM}",
     "sid": "03983B",
@@ -4069,8 +4973,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Fancy"
+      "en": "Fancy",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=33, -idMax=303, #text=INNR:WNAM}",
     "sid": "041008",
@@ -4078,8 +4984,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Hasty"
+      "en": "Hasty",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=233, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625A",
@@ -4087,8 +4995,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Tuned"
+      "en": "Tuned",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=239, -idMax=303, #text=INNR:WNAM}",
     "sid": "046260",
@@ -4096,8 +5006,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Prime"
+      "en": "Prime",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=171, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B00E",
@@ -4105,8 +5017,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Shark"
+      "en": "Shark",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=33, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A68",
@@ -4114,8 +5028,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Shock"
+      "en": "Shock",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=91, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D60",
@@ -4123,8 +5039,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Large"
+      "en": "Large",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=94, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D63",
@@ -4132,8 +5050,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Sharp"
+      "en": "Sharp",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=104, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6D",
@@ -4141,8 +5061,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "105mm"
+      "en": "105mm",
+      "fr": "[Visée]"
     },
     "rec": "{-id=7, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD8",
@@ -4150,8 +5072,10 @@
   },
   {
     "id": "dn_CommonHandHeld",
+    "gameId": null,
     "texts": {
-      "en": "200mm"
+      "en": "200mm",
+      "fr": "[Visée]"
     },
     "rec": "{-id=8, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD9",
@@ -4159,8 +5083,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Boney"
+      "en": "Boney",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=8, -idMax=138, #text=INNR:WNAM}",
     "sid": "61003F6C",
@@ -4168,8 +5094,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Turbo"
+      "en": "Turbo",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=120, -idMax=138, #text=INNR:WNAM}",
     "sid": "61005E5E",
@@ -4177,8 +5105,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Quad"
+      "en": "Quad",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=16, -idMax=303, #text=INNR:WNAM}",
     "sid": "039519",
@@ -4186,8 +5116,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Long"
+      "en": "Long",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=123, -idMax=303, #text=INNR:WNAM}",
     "sid": "039554",
@@ -4195,8 +5127,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Long"
+      "en": "Long",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=126, -idMax=303, #text=INNR:WNAM}",
     "sid": "039557",
@@ -4204,8 +5138,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Long"
+      "en": "Long",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=129, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955A",
@@ -4213,8 +5149,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Long"
+      "en": "Long",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=130, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955B",
@@ -4222,8 +5160,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Huge"
+      "en": "Huge",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=197, -idMax=303, #text=INNR:WNAM}",
     "sid": "039589",
@@ -4231,8 +5171,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": ".308"
+      "en": ".308",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=221, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A1",
@@ -4240,8 +5182,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stun"
+      "en": "Stun",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=58, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981E",
@@ -4249,8 +5193,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Grey"
+      "en": "Grey",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=43, -idMax=138, #text=INNR:WNAM}",
     "sid": "039838",
@@ -4258,8 +5204,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Blue"
+      "en": "Blue",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=44, -idMax=138, #text=INNR:WNAM}",
     "sid": "039839",
@@ -4267,8 +5215,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "True"
+      "en": "True",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=238, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625F",
@@ -4276,8 +5226,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Gold"
+      "en": "Gold",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=61, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000FB",
@@ -4285,8 +5237,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Bats"
+      "en": "Bats",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=44, -idMax=303, #text=INNR:WNAM}",
     "sid": "4100027C",
@@ -4294,8 +5248,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Stun"
+      "en": "Stun",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=92, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D61",
@@ -4303,8 +5259,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "Long"
+      "en": "Long",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=191, -idMax=303, #text=INNR:WNAM}",
     "sid": "610064D7",
@@ -4312,8 +5270,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": ".38"
+      "en": ".38",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=220, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A0",
@@ -4321,8 +5281,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": ".45"
+      "en": ".45",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=222, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A2",
@@ -4330,8 +5292,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": ".50"
+      "en": ".50",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=223, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A3",
@@ -4339,8 +5303,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "Tan"
+      "en": "Tan",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=70, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395EC",
@@ -4348,8 +5314,10 @@
   },
   {
     "id": "dn_CommonArmor",
+    "gameId": null,
     "texts": {
-      "en": "BOS"
+      "en": "BOS",
+      "fr": "[Jetpack]"
     },
     "rec": "{-id=51, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962C",
@@ -4357,8 +5325,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Red"
+      "en": "Red",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=40, -idMax=138, #text=INNR:WNAM}",
     "sid": "039835",
@@ -4366,8 +5336,10 @@
   },
   {
     "id": "dn_CommonMelee",
+    "gameId": null,
     "texts": {
-      "en": "Oak"
+      "en": "Oak",
+      "fr": "[Bâton de sorcier de Grelok]"
     },
     "rec": "{-id=41, -idMax=138, #text=INNR:WNAM}",
     "sid": "039836",
@@ -4375,8 +5347,10 @@
   },
   {
     "id": "dn_CommonGun",
+    "gameId": null,
     "texts": {
-      "en": "R91"
+      "en": "R91",
+      "fr": "[Bâton-tonnerre des Appalaches]"
     },
     "rec": "{-id=43, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100649A",

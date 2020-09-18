@@ -1,5 +1,6 @@
 import './css/main.scss';
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 import Main from './vue/Main.vue';
 import {
   BBadge,
@@ -15,8 +16,8 @@ import {
   BFormGroup,
   BFormInput,
   BIcon,
-  BIconSearch,
   BIconCash,
+  BIconSearch,
   BIconX,
   BInputGroup,
   BInputGroupAppend,
@@ -68,10 +69,16 @@ Vue.component("BListGroup", BListGroup);
 Vue.component("BListGroupItem", BListGroupItem);
 Vue.use(ModalPlugin);
 Vue.use(ToastPlugin);
+Vue.use(VueRouter);
+
+const routes = [];
+
+const router = new VueRouter();
 
 new Vue({
   el: "#app",
   template: '<Main/>',
+  router,
   components: {
     Main
   }

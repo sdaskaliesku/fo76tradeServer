@@ -12,7 +12,7 @@ class LegendaryModDescriptor : XTranslatorConfig() {
     var star = 0
     var abbreviation: String? = null
     var additionalAbbreviations: List<String> = ArrayList()
-    var translations: Map<String, String> = HashMap()
+    var translations: MutableMap<String, String> = HashMap()
     var itemType: FilterFlag = FilterFlag.UNKNOWN
 
     @JsonIgnore

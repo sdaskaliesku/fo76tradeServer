@@ -1,4 +1,4 @@
-package com.manson.fo76.domain
+package com.manson.fo76.domain.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import org.apache.commons.lang3.builder.ToStringBuilder
