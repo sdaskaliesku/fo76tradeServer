@@ -5,7 +5,8 @@
     "texts": {
       "en": "Nuka-Quantum Ammo",
       "ru": "Боеприпас \"Квантовая Ядер-Кола\"",
-      "fr": "Mun. Nuka Quantum"
+      "fr": "Mun. Nuka Quantum",
+      "pl": "Am. z Nuka-Coli Quantum"
     },
     "rec": "AMMO:ONAM",
     "sid": "0002D8",
@@ -17,7 +18,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "0006BB",
@@ -29,7 +31,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "0006CE",
@@ -41,7 +44,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "0006D9",
@@ -53,7 +57,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "0008CF",
@@ -65,7 +70,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "0008D2",
@@ -77,7 +83,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "0008D3",
@@ -89,7 +96,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "0008D6",
@@ -101,7 +109,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "000927",
@@ -113,7 +122,8 @@
     "texts": {
       "en": "Paintball",
       "ru": "Шарик с краской — синий",
-      "fr": "Paintball"
+      "fr": "Paintball",
+      "pl": "Kulki"
     },
     "rec": "AMMO:ONAM",
     "sid": "000962",
@@ -125,7 +135,8 @@
     "texts": {
       "en": "Paintball",
       "ru": "Шарик с краской — светящийся",
-      "fr": "Paintball"
+      "fr": "Paintball",
+      "pl": "Kulki"
     },
     "rec": "AMMO:ONAM",
     "sid": "00097D",
@@ -137,7 +148,8 @@
     "texts": {
       "en": "Paintball",
       "ru": "Шарик с краской — желтый",
-      "fr": "Paintball"
+      "fr": "Paintball",
+      "pl": "Kulki"
     },
     "rec": "AMMO:ONAM",
     "sid": "00099C",
@@ -149,7 +161,8 @@
     "texts": {
       "en": "Paintball",
       "ru": "Шарик с краской — зеленый",
-      "fr": "Paintball"
+      "fr": "Paintball",
+      "pl": "Kulki"
     },
     "rec": "AMMO:ONAM",
     "sid": "0009CE",
@@ -161,7 +174,8 @@
     "texts": {
       "en": "Paintball",
       "ru": "Шарик с краской — красный",
-      "fr": "Paintball"
+      "fr": "Paintball",
+      "pl": "Kulki"
     },
     "rec": "AMMO:ONAM",
     "sid": "0009D5",
@@ -173,7 +187,8 @@
     "texts": {
       "en": "Paintball",
       "ru": "Шарик с краской — белый",
-      "fr": "Paintball"
+      "fr": "Paintball",
+      "pl": "Kulki"
     },
     "rec": "AMMO:ONAM",
     "sid": "0009D7",
@@ -185,7 +200,8 @@
     "texts": {
       "en": "Injectable",
       "ru": "Пригодно для инъекций",
-      "fr": "Injectable"
+      "fr": "Injectable",
+      "pl": "Szpryca"
     },
     "rec": "AMMO:ONAM",
     "sid": "000D98",
@@ -197,7 +213,8 @@
     "texts": {
       "en": "Nuka-Nuke",
       "ru": "\"Ядер-Заряд\"",
-      "fr": "Bombe Nuka"
+      "fr": "Bombe Nuka",
+      "pl": "Nuka-atomówka"
     },
     "rec": "AMMO:ONAM",
     "sid": "001087",
@@ -209,7 +226,8 @@
     "texts": {
       "en": "Fuel",
       "ru": "Топливо для огнемета",
-      "fr": "Carburant"
+      "fr": "Carburant",
+      "pl": "Paliwo"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DBC",
@@ -221,7 +239,8 @@
     "texts": {
       "en": "Missile",
       "ru": "Ракета",
-      "fr": "Missile"
+      "fr": "Missile",
+      "pl": "Rakieta"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DC2",
@@ -233,7 +252,8 @@
     "texts": {
       "en": "Spike",
       "ru": "Железнодорожный гвоздь",
-      "fr": "Clou"
+      "fr": "Clou",
+      "pl": "Gwoździe"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DCB",
@@ -245,7 +265,8 @@
     "texts": {
       "en": "Gamma Round",
       "ru": "Гамма-патрон",
-      "fr": "Cartouche Gamma"
+      "fr": "Cartouche Gamma",
+      "pl": "Nabój gamma"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DCE",
@@ -257,7 +278,8 @@
     "texts": {
       "en": "5.56",
       "ru": "5,56-мм патрон",
-      "fr": "5,56"
+      "fr": "5,56",
+      "pl": "5,56"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DD7",
@@ -269,7 +291,8 @@
     "texts": {
       "en": "Cell",
       "ru": "Ядерная батарея",
-      "fr": "Cellule"
+      "fr": "Cellule",
+      "pl": "Ogniwo"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DE0",
@@ -281,7 +304,8 @@
     "texts": {
       "en": "Mini Nuke",
       "ru": "Ядерный минизаряд",
-      "fr": "Mini-bombe"
+      "fr": "Mini-bombe",
+      "pl": "Miniatomówka"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DE8",
@@ -293,7 +317,8 @@
     "texts": {
       "en": "Cryo",
       "ru": "Криогенный заряд",
-      "fr": "Cryo"
+      "fr": "Cryo",
+      "pl": "Krioogniwa"
     },
     "rec": "AMMO:ONAM",
     "sid": "001DEA",
@@ -305,7 +330,8 @@
     "texts": {
       "en": "Bowling Ball",
       "ru": "Модифицированный шар для боулинга",
-      "fr": "Boule de bowling"
+      "fr": "Boule de bowling",
+      "pl": "Kula do kręgli"
     },
     "rec": "AMMO:ONAM",
     "sid": "002097",
@@ -317,7 +343,8 @@
     "texts": {
       "en": "Nuka-Cola Ammo",
       "ru": "Боеприпас \"Ядер-Кола\"",
-      "fr": "Mun. Nuka-Cola"
+      "fr": "Mun. Nuka-Cola",
+      "pl": "Amunicja z Nuka-Coli"
     },
     "rec": "AMMO:ONAM",
     "sid": "002177",
@@ -329,7 +356,8 @@
     "texts": {
       "en": "Acid",
       "ru": "Концентрированная кислота",
-      "fr": "Acide"
+      "fr": "Acide",
+      "pl": "Kwas"
     },
     "rec": "AMMO:ONAM",
     "sid": "00231F",
@@ -341,7 +369,8 @@
     "texts": {
       "en": "Nuka-Cherry Ammo",
       "ru": "Ядер-Вишня (боеприпас)",
-      "fr": "Mun. Nuka Cherry"
+      "fr": "Mun. Nuka Cherry",
+      "pl": "Am. z wiśniowej Nuka-Coli"
     },
     "rec": "AMMO:ONAM",
     "sid": "0027C3",
@@ -353,7 +382,8 @@
     "texts": {
       "en": "Quantum Ammo",
       "ru": "Квантовая Ядер-кола (боеприпас)",
-      "fr": "Mun. Quantum"
+      "fr": "Mun. Quantum",
+      "pl": "Amunicja z Quantum"
     },
     "rec": "AMMO:ONAM",
     "sid": "0027D0",
@@ -365,7 +395,8 @@
     "texts": {
       "en": "Water",
       "ru": "Немного воды",
-      "fr": "Eau"
+      "fr": "Eau",
+      "pl": "Woda"
     },
     "rec": "AMMO:ONAM",
     "sid": "0042CD",
@@ -377,7 +408,8 @@
     "texts": {
       "en": "Fusion Cell",
       "ru": "Ядерная батарея",
-      "fr": "Cellule à fusion"
+      "fr": "Cellule à fusion",
+      "pl": "Ogniwa fuzyjne"
     },
     "rec": "AMMO:ONAM",
     "sid": "012734",
@@ -389,7 +421,8 @@
     "texts": {
       "en": "Missile",
       "ru": "Ракета",
-      "fr": "Missile"
+      "fr": "Missile",
+      "pl": "Rakiety"
     },
     "rec": "AMMO:ONAM",
     "sid": "012BB8",
@@ -401,7 +434,8 @@
     "texts": {
       "en": "Cannonball",
       "ru": "Пушечное ядро",
-      "fr": "Boulet de canon"
+      "fr": "Boulet de canon",
+      "pl": "Kule armatnie"
     },
     "rec": "AMMO:ONAM",
     "sid": "012D2C",
@@ -413,7 +447,8 @@
     "texts": {
       "en": ".45",
       "ru": "Патрон калибра .45",
-      "fr": ".45"
+      "fr": ".45",
+      "pl": ".45"
     },
     "rec": "AMMO:ONAM",
     "sid": "013DAF",
@@ -425,7 +460,8 @@
     "texts": {
       "en": "Spray",
       "ru": "Спрей для омаров",
-      "fr": "Pulvérisation"
+      "fr": "Pulvérisation",
+      "pl": "Strumienie cieczy"
     },
     "rec": "AMMO:ONAM",
     "sid": "01406D",
@@ -437,7 +473,8 @@
     "texts": {
       "en": "Spray",
       "ru": "Спрей для омаров",
-      "fr": "Pulvérisation"
+      "fr": "Pulvérisation",
+      "pl": "Strumienie cieczy"
     },
     "rec": "AMMO:ONAM",
     "sid": "015E37",
@@ -449,7 +486,8 @@
     "texts": {
       "en": "Eggs",
       "ru": "Яйца болотника",
-      "fr": "Œufs"
+      "fr": "Œufs",
+      "pl": "Jaja"
     },
     "rec": "AMMO:ONAM",
     "sid": "015F1C",
@@ -461,7 +499,8 @@
     "texts": {
       "en": "Core",
       "ru": "Ядерный блок",
-      "fr": "Réacteur"
+      "fr": "Réacteur",
+      "pl": "Rdzenie"
     },
     "rec": "AMMO:ONAM",
     "sid": "0161B9",
@@ -473,7 +512,8 @@
     "texts": {
       "en": "Fuel",
       "ru": "Топливо",
-      "fr": "Carburant"
+      "fr": "Carburant",
+      "pl": "Paliwo"
     },
     "rec": "AMMO:ONAM",
     "sid": "017702",
@@ -485,7 +525,8 @@
     "texts": {
       "en": "Cell",
       "ru": "Ядерная батарея",
-      "fr": "Cellule"
+      "fr": "Cellule",
+      "pl": "Ogniwa"
     },
     "rec": "AMMO:ONAM",
     "sid": "017C3C",
@@ -497,7 +538,8 @@
     "texts": {
       "en": "5mm",
       "ru": "5-мм патрон",
-      "fr": "5 mm"
+      "fr": "5 mm",
+      "pl": "5 mm"
     },
     "rec": "AMMO:ONAM",
     "sid": "017DEA",
@@ -509,7 +551,8 @@
     "texts": {
       "en": "Junk",
       "ru": "Хлам",
-      "fr": "Bric-à-brac"
+      "fr": "Bric-à-brac",
+      "pl": "Śmieci"
     },
     "rec": "AMMO:ONAM",
     "sid": "018090",
@@ -521,7 +564,8 @@
     "texts": {
       "en": "Flare",
       "ru": "Сигнальная ракета",
-      "fr": "Fusée éclairante"
+      "fr": "Fusée éclairante",
+      "pl": "Flary"
     },
     "rec": "AMMO:ONAM",
     "sid": "0184B3",
@@ -533,7 +577,8 @@
     "texts": {
       "en": "Gamma Round",
       "ru": "Гамма-патрон",
-      "fr": "Cartouche Gamma"
+      "fr": "Cartouche Gamma",
+      "pl": "Naboje gamma"
     },
     "rec": "AMMO:ONAM",
     "sid": "018FEC",
@@ -545,7 +590,8 @@
     "texts": {
       "en": "2mm EC",
       "ru": "2-мм электромагнитный картридж",
-      "fr": "CE 2 mm"
+      "fr": "CE 2 mm",
+      "pl": "2 mm KE"
     },
     "rec": "AMMO:ONAM",
     "sid": "019B33",
@@ -557,7 +603,8 @@
     "texts": {
       "en": "Cryo",
       "ru": "Криогенный заряд",
-      "fr": "Cryo"
+      "fr": "Cryo",
+      "pl": "Krioogniwa"
     },
     "rec": "AMMO:ONAM",
     "sid": "01A889",
@@ -569,7 +616,8 @@
     "texts": {
       "en": ".38",
       "ru": "Патрон калибра .38",
-      "fr": ".38"
+      "fr": ".38",
+      "pl": ".38"
     },
     "rec": "AMMO:ONAM",
     "sid": "01A8AE",
@@ -581,7 +629,8 @@
     "texts": {
       "en": "Blood Spray",
       "ru": "Лужа крови",
-      "fr": "Gerbe de sang"
+      "fr": "Gerbe de sang",
+      "pl": "Krwawy oprysk"
     },
     "rec": "AMMO:ONAM",
     "sid": "01AC47",
@@ -593,7 +642,8 @@
     "texts": {
       "en": ".44",
       "ru": "Патрон калибра .44",
-      "fr": ".44"
+      "fr": ".44",
+      "pl": ".44"
     },
     "rec": "AMMO:ONAM",
     "sid": "01B725",
@@ -605,7 +655,8 @@
     "texts": {
       "en": "10mm",
       "ru": "10-мм патрон",
-      "fr": "10 mm"
+      "fr": "10 mm",
+      "pl": "10 mm"
     },
     "rec": "AMMO:ONAM",
     "sid": "01B8D7",
@@ -617,7 +668,8 @@
     "texts": {
       "en": "Fusion Cell",
       "ru": "Ядерная батарея",
-      "fr": "Cellule à fusion"
+      "fr": "Cellule à fusion",
+      "pl": "Ogniwa fuzyjne"
     },
     "rec": "AMMO:ONAM",
     "sid": "01E8EF",
@@ -629,7 +681,8 @@
     "texts": {
       "en": ".308",
       "ru": "Патрон калибра .308",
-      "fr": ".308"
+      "fr": ".308",
+      "pl": ".308"
     },
     "rec": "AMMO:ONAM",
     "sid": "0200C9",
@@ -641,7 +694,8 @@
     "texts": {
       "en": "Spike",
       "ru": "Железнодорожный гвоздь",
-      "fr": "Clou"
+      "fr": "Clou",
+      "pl": "Gwoździe"
     },
     "rec": "AMMO:ONAM",
     "sid": "0200F7",
@@ -653,7 +707,8 @@
     "texts": {
       "en": "Shell",
       "ru": "Патрон дробовика",
-      "fr": "Cartouche"
+      "fr": "Cartouche",
+      "pl": "Naboje"
     },
     "rec": "AMMO:ONAM",
     "sid": "02043B",
@@ -665,7 +720,8 @@
     "texts": {
       "en": "Larva",
       "ru": "Жало личинки дутня",
-      "fr": "Larve"
+      "fr": "Larve",
+      "pl": "Szpryce"
     },
     "rec": "AMMO:ONAM",
     "sid": "022296",
@@ -677,7 +733,8 @@
     "texts": {
       "en": "Mini Nuke",
       "ru": "Ядерный минизаряд",
-      "fr": "Mini-bombe"
+      "fr": "Mini-bombe",
+      "pl": "Miniatomówki"
     },
     "rec": "AMMO:ONAM",
     "sid": "023387",
@@ -689,7 +746,8 @@
     "texts": {
       "en": ".50",
       "ru": "Патрон калибра .50",
-      "fr": ".50"
+      "fr": ".50",
+      "pl": ".50"
     },
     "rec": "AMMO:ONAM",
     "sid": "0235E6",
@@ -701,7 +759,8 @@
     "texts": {
       "en": "Gren.",
       "ru": "Патрон М203",
-      "fr": "Gren."
+      "fr": "Gren.",
+      "pl": "Granaty"
     },
     "rec": "AMMO:ONAM",
     "sid": "0240A9",
@@ -713,7 +772,8 @@
     "texts": {
       "en": "Fusion Cell",
       "ru": "Ядерная батарея",
-      "fr": "Cellule à fusion"
+      "fr": "Cellule à fusion",
+      "pl": "Ogniwa fuzyjne"
     },
     "rec": "AMMO:ONAM",
     "sid": "024952",
@@ -725,7 +785,8 @@
     "texts": {
       "en": "Sonic",
       "ru": "Звуковой удар",
-      "fr": "Sonique"
+      "fr": "Sonique",
+      "pl": "Energia dźwiękowa"
     },
     "rec": "AMMO:ONAM",
     "sid": "024EE6",
@@ -736,7 +797,8 @@
     "gameId": "000FF27A",
     "texts": {
       "en": "Grenade",
-      "fr": "Grenade"
+      "fr": "Grenade",
+      "pl": "Granaty"
     },
     "rec": "AMMO:ONAM",
     "sid": "02513E",
@@ -748,7 +810,8 @@
     "texts": {
       "en": "Charge",
       "ru": "Ядерный блок",
-      "fr": "Charge"
+      "fr": "Charge",
+      "pl": "Ładunki"
     },
     "rec": "AMMO:ONAM",
     "sid": "02609F",
@@ -760,7 +823,8 @@
     "texts": {
       "en": "Syringe",
       "ru": "Заряды для инъектора",
-      "fr": "Seringue"
+      "fr": "Seringue",
+      "pl": "Strzykawka"
     },
     "rec": "AMMO:ONAM",
     "sid": "027392",
@@ -772,7 +836,8 @@
     "texts": {
       "en": "5.56",
       "ru": "5,56-мм патрон",
-      "fr": "5,56"
+      "fr": "5,56",
+      "pl": "5,56"
     },
     "rec": "AMMO:ONAM",
     "sid": "027F78",
@@ -784,7 +849,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Pociski"
     },
     "rec": "AMMO:ONAM",
     "sid": "02B1D9",
@@ -796,7 +862,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Pociski"
     },
     "rec": "AMMO:ONAM",
     "sid": "02B322",
@@ -808,7 +875,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Pociski"
     },
     "rec": "AMMO:ONAM",
     "sid": "02B38F",
@@ -831,7 +899,8 @@
     "texts": {
       "en": "Missile",
       "ru": "Ракета",
-      "fr": "Missile"
+      "fr": "Missile",
+      "pl": "Rakiety"
     },
     "rec": "AMMO:ONAM",
     "sid": "02E951",
@@ -843,7 +912,8 @@
     "texts": {
       "en": "5mm",
       "ru": "5-мм патрон",
-      "fr": "5 mm"
+      "fr": "5 mm",
+      "pl": "5 mm"
     },
     "rec": "AMMO:ONAM",
     "sid": "02EB01",
@@ -855,7 +925,8 @@
     "texts": {
       "en": "Core",
       "ru": "Ядерный блок",
-      "fr": "Réacteur"
+      "fr": "Réacteur",
+      "pl": "Rdzenie"
     },
     "rec": "AMMO:ONAM",
     "sid": "030B64",
@@ -867,7 +938,8 @@
     "texts": {
       "en": "AB Round",
       "ru": "Боеприпас для бластера Чужих",
-      "fr": "Munition PA"
+      "fr": "Munition PA",
+      "pl": "Pociski do BO"
     },
     "rec": "AMMO:ONAM",
     "sid": "0320BF",
@@ -879,7 +951,8 @@
     "texts": {
       "en": "Plasma",
       "ru": "Заряд плазмы",
-      "fr": "Plasma"
+      "fr": "Plasma",
+      "pl": "Plazma"
     },
     "rec": "AMMO:ONAM",
     "sid": "032F53",
@@ -891,7 +964,8 @@
     "texts": {
       "en": "Fuel",
       "ru": "Топливо для огнемета",
-      "fr": "Carburant"
+      "fr": "Carburant",
+      "pl": "Paliwo"
     },
     "rec": "AMMO:ONAM",
     "sid": "03360E",
@@ -902,7 +976,8 @@
     "gameId": "0022BC47",
     "texts": {
       "en": "Cell",
-      "fr": "Cellule"
+      "fr": "Cellule",
+      "pl": "Ogniwa"
     },
     "rec": "AMMO:ONAM",
     "sid": "03463A",
@@ -914,7 +989,8 @@
     "texts": {
       "en": "Paintball",
       "ru": "Шарик с краской — оранжевый",
-      "fr": "Paintball"
+      "fr": "Paintball",
+      "pl": "Kulki"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E59A",
@@ -926,7 +1002,8 @@
     "texts": {
       "en": "Nuka-Cherry Ammo",
       "ru": "Боеприпас \"Ядер-Вишня\"",
-      "fr": "Mun. Nuka Cherry"
+      "fr": "Mun. Nuka Cherry",
+      "pl": "Am. z wiśniowej Nuka-Coli"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E59B",
@@ -938,7 +1015,8 @@
     "texts": {
       "en": "Cell",
       "ru": "Ядерная батарея",
-      "fr": "Cellule"
+      "fr": "Cellule",
+      "pl": "Ogniwo"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E59D",
@@ -950,7 +1028,8 @@
     "texts": {
       "en": "Oil Bomb",
       "ru": "Боеприпасы — графтонская напалмовая бомба",
-      "fr": "Bombe à huile"
+      "fr": "Bombe à huile",
+      "pl": "Bomba olejowa"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E59F",
@@ -962,7 +1041,8 @@
     "texts": {
       "en": "Oil Bomb",
       "ru": "Залповые боеприприпасы графтонской напалмовой бомбы",
-      "fr": "Bombe à huile"
+      "fr": "Bombe à huile",
+      "pl": "Bomba olejowa"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5A1",
@@ -974,7 +1054,8 @@
     "texts": {
       "en": "Snallygaster Spit Attack Ammo",
       "ru": "Боеприпасы для плевка снеллигастера",
-      "fr": "Munitions pour crachat de snallygaster"
+      "fr": "Munitions pour crachat de snallygaster",
+      "pl": "Amunicja ataku plującego grzbietooka"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5A5",
@@ -986,7 +1067,8 @@
     "texts": {
       "en": "Core",
       "ru": "Плазменный блок",
-      "fr": "Réacteur"
+      "fr": "Réacteur",
+      "pl": "Rdzenie"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5A7",
@@ -998,7 +1080,8 @@
     "texts": {
       "en": "Bolt",
       "ru": "Арбалетный болт",
-      "fr": "Carreau"
+      "fr": "Carreau",
+      "pl": "Pocisk"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5AA",
@@ -1010,7 +1093,8 @@
     "texts": {
       "en": "Harpoon",
       "ru": "Гарпун",
-      "fr": "Harpon"
+      "fr": "Harpon",
+      "pl": "Harpun"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5AC",
@@ -1022,7 +1106,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5AD",
@@ -1034,7 +1119,8 @@
     "texts": {
       "en": "Missile",
       "ru": "Ракета",
-      "fr": "Missile"
+      "fr": "Missile",
+      "pl": "Rakieta"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5B1",
@@ -1046,7 +1132,8 @@
     "texts": {
       "en": "Scorchbeast Sonic Attack Ammo",
       "ru": "Боеприпасы для звукового удара зверожога",
-      "fr": "Munitions d'attaque sonique de sulfurie"
+      "fr": "Munitions d'attaque sonique de sulfurie",
+      "pl": "Amunicja ataku sonicznego spalacza"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5B3",
@@ -1058,7 +1145,8 @@
     "texts": {
       "en": "Radtoad Spit",
       "ru": "Слюна рад-жабы",
-      "fr": "Crachat de radcrapaud"
+      "fr": "Crachat de radcrapaud",
+      "pl": "Plwociny radropuchy"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5B6",
@@ -1070,7 +1158,8 @@
     "texts": {
       "en": "Mortar",
       "ru": "Миномет",
-      "fr": "Canon"
+      "fr": "Canon",
+      "pl": "Moździerz"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5B7",
@@ -1082,7 +1171,8 @@
     "texts": {
       "en": "Scorchbeast Strafe Attack Ammo",
       "ru": "Боеприпасы для ураганной атаки зверожога",
-      "fr": "Munition pour attaque latérale de sulfurie"
+      "fr": "Munition pour attaque latérale de sulfurie",
+      "pl": "Amunicja ataku bocznego spalacza"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5B9",
@@ -1094,7 +1184,8 @@
     "texts": {
       "en": "Blood Spray",
       "ru": "Лужа крови",
-      "fr": "Gerbe de sang"
+      "fr": "Gerbe de sang",
+      "pl": "Krwawy oprysk"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5BB",
@@ -1106,7 +1197,8 @@
     "texts": {
       "en": "40mm",
       "ru": "Граната 40 мм",
-      "fr": "40 mm"
+      "fr": "40 mm",
+      "pl": "40 mm"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5BD",
@@ -1118,7 +1210,8 @@
     "texts": {
       "en": ".50 Ball",
       "ru": "Шар калибра .50",
-      "fr": "Balle .50"
+      "fr": "Balle .50",
+      "pl": "Kula .50"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5BF",
@@ -1130,7 +1223,8 @@
     "texts": {
       "en": "Scorchbeast Strafe Attack Ammo",
       "ru": "Боеприпасы для ураганной атаки зверожога",
-      "fr": "Munition pour attaque latérale de sulfurie"
+      "fr": "Munition pour attaque latérale de sulfurie",
+      "pl": "Amunicja ataku bocznego spalacza"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5C1",
@@ -1142,7 +1236,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Стрела",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5C3",
@@ -1154,7 +1249,8 @@
     "texts": {
       "en": "Scorchbeast Sonic Attack Ammo",
       "ru": "Боеприпасы для звукового удара зверожога",
-      "fr": "Munitions d'attaque sonique de sulfurie"
+      "fr": "Munitions d'attaque sonique de sulfurie",
+      "pl": "Amunicja ataku sonicznego spalacza"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5C5",
@@ -1166,7 +1262,8 @@
     "texts": {
       "en": "Bee Swarm",
       "ru": "Пчелиный рой медозверей",
-      "fr": "Essaim d'abeilles"
+      "fr": "Essaim d'abeilles",
+      "pl": "Rój pszczół"
     },
     "rec": "AMMO:ONAM",
     "sid": "03E5C7",
@@ -1178,7 +1275,8 @@
     "texts": {
       "en": "Cell",
       "ru": "Ядерная батарея",
-      "fr": "Cellule"
+      "fr": "Cellule",
+      "pl": "Ogniwo"
     },
     "rec": "AMMO:ONAM",
     "sid": "040F7C",
@@ -1190,7 +1288,8 @@
     "texts": {
       "en": "Missile",
       "ru": "Ракета",
-      "fr": "Missile"
+      "fr": "Missile",
+      "pl": "Rakieta"
     },
     "rec": "AMMO:ONAM",
     "sid": "0443DD",
@@ -1202,7 +1301,8 @@
     "texts": {
       "en": "Laser",
       "ru": "Боеприпасы к лазеру освободителя",
-      "fr": "Laser"
+      "fr": "Laser",
+      "pl": "Laser."
     },
     "rec": "AMMO:ONAM",
     "sid": "046503",
@@ -1214,7 +1314,8 @@
     "texts": {
       "en": "Ultracite 10mm Round",
       "ru": "Ультрацитовый 10-мм патрон",
-      "fr": "Cartouche 10 mm à ultracite"
+      "fr": "Cartouche 10 mm à ultracite",
+      "pl": "Ultracytowy nabój 10 mm"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481AB",
@@ -1226,7 +1327,8 @@
     "texts": {
       "en": "Ultracite Plasma",
       "ru": "Ультрацитовый заряд плазмы",
-      "fr": "Plasma à ultracite"
+      "fr": "Plasma à ultracite",
+      "pl": "Ultracytowa plazma"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481AD",
@@ -1238,7 +1340,8 @@
     "texts": {
       "en": "Ultracite Plasma Core",
       "ru": "Ультрацитовый плазменный блок",
-      "fr": "Réacteur à plasma à ultracite"
+      "fr": "Réacteur à plasma à ultracite",
+      "pl": "Ultracytowy rdzeń plazmowy"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481AF",
@@ -1250,7 +1353,8 @@
     "texts": {
       "en": "Ultracite Bolt",
       "ru": "Ультрацитовый арбалетный болт",
-      "fr": "Carreau à ultracite"
+      "fr": "Carreau à ultracite",
+      "pl": "Ultracytowy bełt"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481B1",
@@ -1262,7 +1366,8 @@
     "texts": {
       "en": "Ultracite Shell",
       "ru": "Ультрацитовый патрон дробовика",
-      "fr": "Cartouche à ultracite"
+      "fr": "Cartouche à ultracite",
+      "pl": "Ultracytowy nabój"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481B3",
@@ -1274,7 +1379,8 @@
     "texts": {
       "en": "Ultracite .44",
       "ru": "Ультрацитовый патрон калибра .44",
-      "fr": ".44 à ultracite"
+      "fr": ".44 à ultracite",
+      "pl": "Ultracytowy .44"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481B5",
@@ -1286,7 +1392,8 @@
     "texts": {
       "en": "Ultracite .308",
       "ru": "Ультрацитовый патрон калибра .308",
-      "fr": ".308 à ultracite"
+      "fr": ".308 à ultracite",
+      "pl": "Ultracytowy .308"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481B7",
@@ -1298,7 +1405,8 @@
     "texts": {
       "en": "Ultracite Fusion Core",
       "ru": "Ультрацитовый ядерный блок",
-      "fr": "Réacteur à fusion à ultracite"
+      "fr": "Réacteur à fusion à ultracite",
+      "pl": "Ultracytowy rdzeń fuzyjny"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481B9",
@@ -1310,7 +1418,8 @@
     "texts": {
       "en": "Ultracite .50",
       "ru": "Ультрацитовый патрон калибра .50",
-      "fr": ".50 à ultracite"
+      "fr": ".50 à ultracite",
+      "pl": "Ultracytowy .50"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481BB",
@@ -1322,7 +1431,8 @@
     "texts": {
       "en": "Ultracite Spike",
       "ru": "Ультрацитовый железнодорожный гвоздь",
-      "fr": "Clou à ultracite"
+      "fr": "Clou à ultracite",
+      "pl": "Ultracytowy gwóźdź"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481BD",
@@ -1334,7 +1444,8 @@
     "texts": {
       "en": "Ultracite .45",
       "ru": "Ультрацитовый патрон калибра .45",
-      "fr": ".45 à ultracite"
+      "fr": ".45 à ultracite",
+      "pl": "Ultracytowy .45"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481BF",
@@ -1346,7 +1457,8 @@
     "texts": {
       "en": "Ultracite Fusion Cell",
       "ru": "Ультрацитовая ядерная батарея",
-      "fr": "Cellule à fusion à ultracite"
+      "fr": "Cellule à fusion à ultracite",
+      "pl": "Ultracytowe ogniwo fuzyjne"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481C1",
@@ -1358,7 +1470,8 @@
     "texts": {
       "en": "Ultracite 2mm EC",
       "ru": "Ультрацитовый 2-мм электромагнитный картридж",
-      "fr": "CE 2 mm à ultracite"
+      "fr": "CE 2 mm à ultracite",
+      "pl": "Ultracytowy KE 2 mm"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481C3",
@@ -1370,7 +1483,8 @@
     "texts": {
       "en": "Ultracite 5.56",
       "ru": "Ультрацитовый патрон калибра 5,56",
-      "fr": "5,56 mm à ultracite"
+      "fr": "5,56 mm à ultracite",
+      "pl": "Ultracytowy 5,56"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481C5",
@@ -1382,7 +1496,8 @@
     "texts": {
       "en": "Ultracite 5mm",
       "ru": "Ультрацитовый 5-мм патрон",
-      "fr": "5 mm à ultracite"
+      "fr": "5 mm à ultracite",
+      "pl": "Ultracytowy 5 mm"
     },
     "rec": "AMMO:ONAM",
     "sid": "0481C7",
@@ -1394,7 +1509,8 @@
     "texts": {
       "en": "Ultracite .38",
       "ru": "Ультрацитовый патрон калибра .308",
-      "fr": ".38 à ultracite"
+      "fr": ".38 à ultracite",
+      "pl": "Ultracytowy .38"
     },
     "rec": "AMMO:ONAM",
     "sid": "048671",
@@ -1406,7 +1522,8 @@
     "texts": {
       "en": "Camera Film",
       "ru": "Пленка для камеры",
-      "fr": "Pellicule pour appareil photo"
+      "fr": "Pellicule pour appareil photo",
+      "pl": "Film do aparatu"
     },
     "rec": "AMMO:ONAM",
     "sid": "04A9C9",
@@ -1418,7 +1535,8 @@
     "texts": {
       "en": "Wendigo Scream Attack Ammo",
       "ru": "Боеприпасы для вопля вендиго",
-      "fr": "Munitions d'attaque hurlante de wendigo"
+      "fr": "Munitions d'attaque hurlante de wendigo",
+      "pl": "Atak wrzasku wendigo (amunicja)"
     },
     "rec": "AMMO:ONAM",
     "sid": "04B991",
@@ -1430,7 +1548,8 @@
     "texts": {
       "en": "Freezer Ammo",
       "ru": "Боеприпасы замораживающего плавуна",
-      "fr": "Munitions glaciales"
+      "fr": "Munitions glaciales",
+      "pl": "Amunicja zamrażająca"
     },
     "rec": "AMMO:ONAM",
     "sid": "056D41",
@@ -1442,7 +1561,8 @@
     "texts": {
       "en": "Floater Flamer",
       "ru": "Топливо для огнедышащего плавуна",
-      "fr": "Lance-flammes de Flotteur"
+      "fr": "Lance-flammes de Flotteur",
+      "pl": "Wisielec podpalający"
     },
     "rec": "AMMO:ONAM",
     "sid": "0571AD",
@@ -1454,7 +1574,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Стрела-фейерверк",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "05BD85",
@@ -1466,7 +1587,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Взрывчатая стрела",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "05BD87",
@@ -1478,7 +1600,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Отравленная стрела",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "05BD89",
@@ -1490,7 +1613,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Плазменная стрела",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "05BD8B",
@@ -1502,7 +1626,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Огненная стрела",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "05BD8D",
@@ -1514,7 +1639,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Криострела",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "05BD8F",
@@ -1526,7 +1652,8 @@
     "texts": {
       "en": "Arrow",
       "ru": "Стрела",
-      "fr": "Flèche"
+      "fr": "Flèche",
+      "pl": "Strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "41000B07",
@@ -1538,7 +1665,8 @@
     "texts": {
       "en": "Suppression Syringe",
       "ru": "Убежище 96 — Шприц \"Подавитель\" I",
-      "fr": "Seringue de suppression"
+      "fr": "Seringue de suppression",
+      "pl": "Strzykawka tłumiąca"
     },
     "rec": "AMMO:ONAM",
     "sid": "61002E7C",
@@ -1550,7 +1678,8 @@
     "texts": {
       "en": "Ultracite Arrow",
       "ru": "Ультрацитовая стрела",
-      "fr": "Flèche en ultracite"
+      "fr": "Flèche en ultracite",
+      "pl": "Ultracytowa strzała"
     },
     "rec": "AMMO:ONAM",
     "sid": "610098B8",
@@ -1562,7 +1691,8 @@
     "texts": {
       "en": "Cell",
       "ru": "Изношенная ядерная батарея",
-      "fr": "Cellule"
+      "fr": "Cellule",
+      "pl": "Ogniwo"
     },
     "rec": "AMMO:ONAM",
     "sid": "D9002D38",
@@ -1574,7 +1704,8 @@
     "texts": {
       "en": "Floater Flamer",
       "ru": "Топливо для огнедышащего плавуна",
-      "fr": "Lance-flammes de Flotteur"
+      "fr": "Lance-flammes de Flotteur",
+      "pl": "Wisielec podpalający"
     },
     "rec": "AMMO:ONAM",
     "sid": "D9002D39",
@@ -1586,7 +1717,8 @@
     "texts": {
       "en": "Floater Fireball Ammo",
       "ru": "Боезапас для огненного шара плавуна",
-      "fr": "Munition de lance-flammes de Flotteur"
+      "fr": "Munition de lance-flammes de Flotteur",
+      "pl": "Kule ognia wisielca"
     },
     "rec": "AMMO:ONAM",
     "sid": "D9002D3B",

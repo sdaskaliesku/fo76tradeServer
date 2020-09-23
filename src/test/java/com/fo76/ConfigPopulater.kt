@@ -3,11 +3,20 @@ package com.fo76
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.manson.fo76.domain.Fo76String
+import com.manson.fo76.domain.ItemsUploadFilters
 import com.manson.fo76.domain.LegendaryModDescriptor
+import com.manson.fo76.domain.ModData
+import com.manson.fo76.domain.ModDataRequest
 import com.manson.fo76.domain.XTranslatorConfig
+import com.manson.fo76.domain.dto.ItemDTO
+import com.manson.fo76.domain.items.enums.FilterFlag
 import com.manson.fo76.domain.nuka.NukaRequest
+import com.manson.fo76.domain.nuka.NukaRow
 import com.manson.fo76.repository.PriceCheckRepository
 import com.manson.fo76.service.Fed76Service
+import com.manson.fo76.service.GameConfigService
+import com.manson.fo76.service.ItemConverterService
+import com.manson.fo76.service.ItemService
 import com.manson.fo76.service.NukaCryptService
 import com.manson.fo76.service.XTranslatorParser
 import java.io.File
@@ -25,6 +34,12 @@ class ConfigPopulater {
         private val xTranslatorParser = XTranslatorParser(OM)
         private val LEG_MOD_TYPE_REF: TypeReference<List<LegendaryModDescriptor>> = object : TypeReference<List<LegendaryModDescriptor>>() {}
         private val XTRANSLATOR_TYPE_REF: TypeReference<List<XTranslatorConfig>> = object : TypeReference<List<XTranslatorConfig>>() {}
+        private val ITEM_DTO_TYPE_REF: TypeReference<List<ItemDTO>> = object : TypeReference<List<ItemDTO>>() {}
+        private val fed76Service: Fed76Service = Fed76Service(null, OM)
+        private val gameConfigService: GameConfigService = GameConfigService(OM)
+        private val itemConverterService: ItemConverterService = ItemConverterService(gameConfigService, fed76Service)
+        private val itemService: ItemService = ItemService(null, null, itemConverterService)
+        private val locale = "pl"
         private fun parseXml(file: File): Map<String, Fo76String> {
             val strings: List<Fo76String> = xTranslatorParser.parse(file)
             return genericListToFo76List(strings)
@@ -44,10 +59,9 @@ class ConfigPopulater {
     @Test
     fun legMods() {
         // xTranlator query = 'mod_Legendary_'
-        val inputFileName = "legendaryMods.modifiers.json"
+        val inputFileName = "legendaryMods.config.json"
         val configFile = File("src/main/resources/$inputFileName")
         val legMods: List<LegendaryModDescriptor> = OM.readValue(configFile, LEG_MOD_TYPE_REF)
-        val locale = "fr"
         val keysFile = File("test_resources/leg_mods/$locale/keys.xml")
         val valuesFile = File("test_resources/leg_mods/$locale/values.xml")
         val values: Map<String, Fo76String> = parseXml(valuesFile)
@@ -71,7 +85,6 @@ class ConfigPopulater {
         val inputFileName = "name.modifiers.json"
         val configFile = File("src/main/resources/$inputFileName")
         val configs: List<XTranslatorConfig> = OM.readValue(configFile, XTRANSLATOR_TYPE_REF)
-        val locale = "fr"
         val inputFile = File("test_resources/namemods/$locale/namemods.xml")
         val values: Map<String, Fo76String> = parseXml(inputFile)
 
@@ -90,7 +103,6 @@ class ConfigPopulater {
         val inputFileName = "ammo.types.json"
         val configFile = File("src/main/resources/$inputFileName")
         val configs: List<XTranslatorConfig> = OM.readValue(configFile, XTRANSLATOR_TYPE_REF)
-        val locale = "fr"
         val inputFile = File("test_resources/ammotypes/$locale/ammotypes.xml")
         val values: Map<String, Fo76String> = parseXml(inputFile)
 
@@ -162,6 +174,110 @@ class ConfigPopulater {
         }
         OM.writeValue(File(inputFileName), configs)
         println()
+    }
+
+    @Test
+    fun convertModRequestToItemDescriptors() {
+        val inDir: File = File("test_resources/testInventoryDumps/orig")
+        val outDir: File = File("test_resources/testInventoryDumps/converted")
+        for (origFile in inDir.listFiles()) {
+            try {
+                val modData = OM.readValue(origFile, ModData::class.java)
+                val modDataRequest: ModDataRequest = ModDataRequest()
+                modDataRequest.modData = modData
+                modDataRequest.filters = ItemsUploadFilters()
+//                modDataRequest.filters.tradableOnly = true
+//                modDataRequest.filters.legendaryOnly = true
+                val filterFlags: List<FilterFlag> = listOf(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_RANGED, FilterFlag.WEAPON_MELEE)
+                modDataRequest.filters.filterFlags = filterFlags.flatMap { x -> x.getFlags() }
+
+                val list = itemService.prepareModData(modDataRequest)
+                if (CollectionUtils.isNotEmpty(list)) {
+                    OM.writeValue(File(outDir, "${origFile.nameWithoutExtension}.json"), list)
+                }
+            } catch (e: Exception) {
+                println(origFile.name)
+            }
+        }
+    }
+
+    fun isCustomName(input: String): Boolean {
+        return StringUtils.containsIgnoreCase(input, "+3")
+    }
+
+    @Test
+    internal fun retrieveItemsGameIds() {
+        val inDir: File = File("test_resources/testInventoryDumps/converted")
+        val weaponNames: MutableSet<String> = HashSet()
+        val armorNames: MutableSet<String> = HashSet()
+        for (inputFile in inDir.listFiles()) {
+            try {
+                val items: List<ItemDTO> = OM.readValue(inputFile, ITEM_DTO_TYPE_REF)
+                for (item in items) {
+                    if (!item.isLegendary) {
+                        continue
+                    }
+                    if (item.filterFlag === FilterFlag.WEAPON_MELEE || item.filterFlag === FilterFlag.WEAPON_RANGED) {
+                        if (StringUtils.isBlank(item.itemDetails.name)) {
+                            weaponNames.add(item.text!!)
+                        } else {
+                            weaponNames.add(item.itemDetails.name)
+                        }
+                        continue
+                    }
+                    if (item.filterFlag === FilterFlag.ARMOR) {
+                        var name = item.itemDetails.name
+                        if (StringUtils.isBlank(item.itemDetails.name)) {
+                            name = item.text!!
+                        }
+                        if (!isCustomName(name)) {
+                            armorNames.add(name)
+                        }
+                    }
+                }
+            } catch (e: Exception) {
+
+            }
+        }
+        val nukaService = NukaCryptService(OM)
+        val nukaRequest = NukaRequest()
+        nukaRequest.setWeapon()
+        val nukaRows: MutableList<NukaRow> = ArrayList()
+        val emptyRows: MutableList<String> = ArrayList()
+        val multipleRows: MutableList<String> = ArrayList()
+        val noRows: MutableList<String> = ArrayList()
+        for (name in weaponNames) {
+            nukaRequest.searchtext = name
+            val request = nukaService.performRequest(nukaRequest)
+            if (request == null) {
+                println("Failure for $name")
+                continue
+            }
+            val rows: List<NukaRow> = request.rows
+            var found = false
+            for (row in rows) {
+                if (StringUtils.equalsIgnoreCase(name, row.name)) {
+                    found = true
+                    nukaRows.add(row)
+                    break
+                }
+            }
+            if (rows.size > 1 && found) {
+                multipleRows.add(name)
+                continue
+            }
+            if (CollectionUtils.isEmpty(rows)) {
+                emptyRows.add(name)
+                continue
+            }
+            if (!found) {
+                noRows.add(name)
+            }
+        }
+        OM.writeValue(File("weaponConfigs.json"), nukaRows)
+        println("Empty rows: $emptyRows")
+        println("Multiple rows: $multipleRows")
+        println("No rows: $noRows")
     }
 
     private fun getGameId(input: String, service: NukaCryptService): String? {

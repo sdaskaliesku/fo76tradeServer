@@ -5,7 +5,8 @@
     "texts": {
       "ru": "Убийственный",
       "en": "Assassin's",
-      "fr": "[Anti-humains]"
+      "fr": "[Anti-humains]",
+      "pl": "Zabójcz."
     },
     "rec": "OMOD:FULL",
     "sid": "039FF2",
@@ -23,7 +24,8 @@
     "translations": {
       "en": "75% chance to reduce damage by 8% from Players.",
       "ru": "75% шанс снизить урон от игроков на 8%.",
-      "fr": "75 % de chance de réduire les dégâts infligés par les joueurs de 8 %."
+      "fr": "75 % de chance de réduire les dégâts infligés par les joueurs de 8 %.",
+      "pl": "75% szansy na zmniejszenie o 8% obrażeń zadawanych przez graczy."
     },
     "itemType": "ARMOR"
   },
@@ -33,7 +35,8 @@
     "texts": {
       "ru": "Регенерирующий",
       "en": "Regenerating",
-      "fr": "Régénération"
+      "fr": "Régénération",
+      "pl": "Regeneracja"
     },
     "rec": "OMOD:FULL",
     "sid": "039B6F",
@@ -47,7 +50,8 @@
     "translations": {
       "en": "Slowly regenerate health while not in combat",
       "ru": "Здоровье постепенно восстанавливается, пока вы не участвуете в боях",
-      "fr": "Régénère la santé lentement lorsque vous ne vous battez pas"
+      "fr": "Régénère la santé lentement lorsque vous ne vous battez pas",
+      "pl": "Powoli regenerujesz zdrowie, gdy nie toczysz walki."
     },
     "itemType": "ARMOR"
   },
@@ -57,7 +61,8 @@
     "texts": {
       "ru": "Ночной",
       "en": "Nocturnal",
-      "fr": "Nocturne"
+      "fr": "Nocturne",
+      "pl": "Nocn."
     },
     "rec": "OMOD:FULL",
     "sid": "039F76",
@@ -70,7 +75,8 @@
     "translations": {
       "en": "Damage Resistance and Energy Resistance increase with the night and decrease with the day",
       "ru": "Сопротивляемость обычному и энергетическому урону усиливается ночью и снижается днем.",
-      "fr": "La résistance aux dégâts et la résistance à l'énergie augmentent la nuit et diminuent le jour"
+      "fr": "La résistance aux dégâts et la résistance à l'énergie augmentent la nuit et diminuent le jour",
+      "pl": "Odporność na obrażenia i energię rośnie w nocy, a spada w dzień."
     },
     "itemType": "ARMOR"
   },
@@ -80,7 +86,8 @@
     "texts": {
       "ru": "Усиление",
       "en": "Bolstering",
-      "fr": "Renfort"
+      "fr": "Renfort",
+      "pl": "Umocnienie"
     },
     "rec": "OMOD:FULL",
     "sid": "039F19",
@@ -93,7 +100,8 @@
     "translations": {
       "en": "Grants up to +35 Energy Resistance and Damage Resistance, the higher your health.",
       "ru": "Повышение сопротивляемости обычному и энергетическому урону по мере повышения здоровья (до +35).",
-      "fr": "Plus votre santé est élevée, plus votre résistance aux dégâts et à l'énergie augmente (+35 max)."
+      "fr": "Plus votre santé est élevée, plus votre résistance aux dégâts et à l'énergie augmente (+35 max).",
+      "pl": "Zapewnia tym więcej odporności na obrażenia i energię, im więcej masz zdrowia (do +35)."
     },
     "itemType": "ARMOR"
   },
@@ -103,7 +111,8 @@
     "texts": {
       "ru": "Зилотская",
       "en": "Zealot's",
-      "fr": "Dévot"
+      "fr": "Dévot",
+      "pl": "Zelo."
     },
     "rec": "OMOD:FULL",
     "sid": "03A003",
@@ -116,7 +125,8 @@
     "translations": {
       "en": "-15% damage from Scorched",
       "ru": "-15% урона от горелых",
-      "fr": "-15 % de dégâts infligés par les calcinés."
+      "fr": "-15 % de dégâts infligés par les calcinés.",
+      "pl": "Zmniejsza obrażenia zadawane przez spalonych o 15%."
     },
     "itemType": "ARMOR"
   },
@@ -126,7 +136,8 @@
     "texts": {
       "ru": "Истребителя",
       "en": "Exterminator's",
-      "fr": "[Insecticide]"
+      "fr": "[Insecticide]",
+      "pl": "Mod eksterminatora"
     },
     "rec": "OMOD:FULL",
     "sid": "032BD7",
@@ -141,7 +152,8 @@
     "translations": {
       "en": "+30% damage to Mirelurks and bugs",
       "ru": "+30% к урону болотникам и насекомым",
-      "fr": "30 % de dégâts supplémentaires sur les fangeux et les insectes."
+      "fr": "30 % de dégâts supplémentaires sur les fangeux et les insectes.",
+      "pl": "+30% do obrażeń zadawanych błotniakom i robalom"
     },
     "itemType": "WEAPON"
   },
@@ -151,7 +163,8 @@
     "texts": {
       "ru": "Гибельный",
       "en": "Exterminator's",
-      "fr": "[Insecticide]"
+      "fr": "[Insecticide]",
+      "pl": "Ekstermin."
     },
     "rec": "OMOD:FULL",
     "sid": "039FEA",
@@ -168,7 +181,8 @@
     "translations": {
       "en": "-15% damage from Mirelurks and bugs",
       "ru": "-15% урона от болотников и насекомых",
-      "fr": "Les dégâts infligés par les fangeux et les insectes diminuent de 15 %."
+      "fr": "Les dégâts infligés par les fangeux et les insectes diminuent de 15 %.",
+      "pl": "-15% obrażeń zadawanych przez błotniaki i robaki."
     },
     "itemType": "ARMOR"
   },
@@ -178,7 +192,8 @@
     "texts": {
       "ru": "Охотничий",
       "en": "Hunter's",
-      "fr": "Chasseur"
+      "fr": "Chasseur",
+      "pl": "Łowieck."
     },
     "rec": "OMOD:FULL",
     "sid": "039A94",
@@ -194,7 +209,8 @@
     "translations": {
       "en": "-15% damage from animals",
       "ru": "-15% урона от животных",
-      "fr": "Les dégâts infligés par les animaux diminuent de 15 %."
+      "fr": "Les dégâts infligés par les animaux diminuent de 15 %.",
+      "pl": "-15% obrażeń zadawanych przez zwierzęta."
     },
     "itemType": "ARMOR"
   },
@@ -204,7 +220,8 @@
     "texts": {
       "ru": "Автоматическое оживление",
       "en": "Auto Revive",
-      "fr": "Ranimation automatique"
+      "fr": "Ranimation automatique",
+      "pl": "Autom. wskrzeszenie"
     },
     "rec": "OMOD:FULL",
     "sid": "039A0C",
@@ -219,7 +236,8 @@
     "translations": {
       "en": "When incapacitated, gain a 50% chance to revive yourself with a Stimpak, once every minute",
       "ru": "Погибая, вы сможете раз в минуту оживить себя с помощью стимулятора с вероятностью 50%",
-      "fr": "En cas de neutralisation, permet de bénéficier de 50 % de chances de vous ranimer avec un Stimpak, une fois par minute"
+      "fr": "En cas de neutralisation, permet de bénéficier de 50 % de chances de vous ranimer avec un Stimpak, une fois par minute",
+      "pl": "Po obezwładnieniu masz 50% szans na ocucenie się za pomocą stimpaka. Dostępne raz na minutę."
     },
     "itemType": "ARMOR"
   },
@@ -229,7 +247,8 @@
     "texts": {
       "ru": "Стойкая",
       "en": "Unyielding",
-      "fr": "Rigide"
+      "fr": "Rigide",
+      "pl": "Nieustępl."
     },
     "rec": "OMOD:FULL",
     "sid": "039F13",
@@ -243,7 +262,8 @@
     "translations": {
       "en": "Gain up to +3 to all stats (except END) when low health",
       "ru": "+3 ко всем параметрам (кроме выносливости) при низком уровне здоровья",
-      "fr": "Bonus +3 maximum à toutes les stats (sauf END) en cas de santé faible"
+      "fr": "Bonus +3 maximum à toutes les stats (sauf END) en cas de santé faible",
+      "pl": "Gdy masz mało zdrowia, otrzymujesz +3 pkt. wszystkich statystyk (poza wytrzymałością)."
     },
     "itemType": "ARMOR"
   },
@@ -253,7 +273,8 @@
     "texts": {
       "ru": "Мутантный",
       "en": "Mutant's",
-      "fr": "[Mutant]"
+      "fr": "[Mutant]",
+      "pl": "Mutanck."
     },
     "rec": "OMOD:FULL",
     "sid": "039F15",
@@ -269,7 +290,8 @@
     "translations": {
       "en": "+10 Damage Resistance and Energy Resistance if you are mutated",
       "ru": "+10 к сопротивляемости обычному и энергетическому урону при мутации.",
-      "fr": "Résistance aux dégâts et résistance à l'énergie +10 si vous subissez une mutation."
+      "fr": "Résistance aux dégâts et résistance à l'énergie +10 si vous subissez une mutation.",
+      "pl": "+10 do odporności na obrażenia oraz odporności na energię, jeśli dotknęła cię mutacja."
     },
     "itemType": "ARMOR"
   },
@@ -279,7 +301,8 @@
     "texts": {
       "ru": "Усиление",
       "en": "Bolstering",
-      "fr": "Renfort"
+      "fr": "Renfort",
+      "pl": "Umocnienie"
     },
     "rec": "OMOD:FULL",
     "sid": "039F8A",
@@ -293,7 +316,8 @@
     "translations": {
       "en": "Grants up to +35 Energy Resistance and Damage Resistance, the lower your health",
       "ru": "Повышение сопротивляемости обычному и энергетическому урону по мере уменьшения здоровья (до +35).",
-      "fr": "Plus votre santé est faible, plus votre résistance aux dégâts et à l'énergie augmente (+35 max)."
+      "fr": "Plus votre santé est faible, plus votre résistance aux dégâts et à l'énergie augmente (+35 max).",
+      "pl": "Zapewnia tym więcej odporności na obrażenia i energię, im mniej masz zdrowia (do +35)."
     },
     "itemType": "ARMOR"
   },
@@ -303,7 +327,8 @@
     "texts": {
       "ru": "Мутантоистребительный",
       "en": "Mutant Slayer's",
-      "fr": "[Anti-mutants]"
+      "fr": "[Anti-mutants]",
+      "pl": "Mutantobójcz."
     },
     "rec": "OMOD:FULL",
     "sid": "03A248",
@@ -317,7 +342,8 @@
     "translations": {
       "en": "-15% damage from Super Mutants",
       "ru": "-15% урона от супермутантов",
-      "fr": "Les dégâts infligés par les super mutants diminuent de 15 %."
+      "fr": "Les dégâts infligés par les super mutants diminuent de 15 %.",
+      "pl": "-15% obrażeń zadawanych przez supermutantów."
     },
     "itemType": "ARMOR"
   },
@@ -327,7 +353,8 @@
     "texts": {
       "ru": "Хамелеон",
       "en": "Chameleon",
-      "fr": "Caméléon"
+      "fr": "Caméléon",
+      "pl": "Mod kameleona"
     },
     "rec": "OMOD:FULL",
     "sid": "039F82",
@@ -342,7 +369,8 @@
     "translations": {
       "en": "Blend with the environment while sneaking and not moving",
       "ru": "Сливайтесь с окружением в режиме скрытного передвижения и стоя на месте",
-      "fr": "Se fondre dans l'environnement en mode furtif en restant immobile"
+      "fr": "Se fondre dans l'environnement en mode furtif en restant immobile",
+      "pl": "Gdy pozostajesz nieruchomo podczas skradania, wtapiasz się w otoczenie."
     },
     "itemType": "ARMOR"
   },
@@ -352,7 +380,8 @@
     "texts": {
       "ru": "Маскирующая",
       "en": "Cloaking",
-      "fr": "Dissimulation"
+      "fr": "Dissimulation",
+      "pl": "Maskuj."
     },
     "rec": "OMOD:FULL",
     "sid": "039F84",
@@ -367,7 +396,8 @@
     "translations": {
       "en": "Being hit in melee generates a Stealth Field once per 30 seconds",
       "ru": "Ранение в ближнем бою создает стелс-поле раз в 30 секунд.",
-      "fr": "Un champ de furtivité est créé quand vous vous faites toucher au corps à corps, une fois toutes les 30 secondes."
+      "fr": "Un champ de furtivité est créé quand vous vous faites toucher au corps à corps, une fois toutes les 30 secondes.",
+      "pl": "Cios otrzymany wręcz generuje raz na 30 sekund pole maskujące."
     },
     "itemType": "ARMOR"
   },
@@ -377,7 +407,8 @@
     "texts": {
       "ru": "Стимуляторная",
       "en": "Auto Stim",
-      "fr": "Stimpack auto"
+      "fr": "Stimpack auto",
+      "pl": "Autostim"
     },
     "rec": "OMOD:FULL",
     "sid": "03993B",
@@ -393,7 +424,8 @@
     "translations": {
       "en": "Automatically use a Stimpak when hit while health is 25% or less, once every 60 seconds",
       "ru": "Автоматическое применение стимулятора при падении уровня здоровья до 25% или ниже раз в 60 секунд.",
-      "fr": "Utilisez automatiquement un Stimpak quand une attaque vous touche lorsque vous avez 25 % de santé ou moins, une fois toutes les 60 secondes."
+      "fr": "Utilisez automatiquement un Stimpak quand une attaque vous touche lorsque vous avez 25 % de santé ou moins, une fois toutes les 60 secondes.",
+      "pl": "Automatycznie używasz stimpaka po trafieniu, gdy zdrowie wyniesie 25% lub mniej. Działa raz na 60 sekund."
     },
     "itemType": "ARMOR"
   },
@@ -403,7 +435,8 @@
     "texts": {
       "ru": "Антирадиационный",
       "en": "Ghoul Slayer's",
-      "fr": "Tueur de goules"
+      "fr": "Tueur de goules",
+      "pl": "Ghulobój."
     },
     "rec": "OMOD:FULL",
     "sid": "03A29C",
@@ -417,7 +450,8 @@
     "translations": {
       "en": "-15% damage from ghouls",
       "ru": "-15% урона от гулей",
-      "fr": "Les dégâts infligés par les goules diminuent de 15 %."
+      "fr": "Les dégâts infligés par les goules diminuent de 15 %.",
+      "pl": "-15% obrażeń zadawanych przez ghule."
     },
     "itemType": "ARMOR"
   },
@@ -427,7 +461,8 @@
     "texts": {
       "ru": "Невесомый",
       "en": "Weightless",
-      "fr": "Poids plume"
+      "fr": "Poids plume",
+      "pl": "Nieważk."
     },
     "rec": "OMOD:FULL",
     "sid": "039D6C",
@@ -440,7 +475,8 @@
     "translations": {
       "en": "Weighs 90% less and does not count as armor for the Chameleon mutation.",
       "ru": "Весит на 90% меньше и не считается как броня для мутации \"Хамелеон\"",
-      "fr": "Poids réduit de 90 % et ne compte pas comme armure pour la mutation Caméléon."
+      "fr": "Poids réduit de 90 % et ne compte pas comme armure pour la mutation Caméléon.",
+      "pl": "Waży o 90% mniej i nie liczy się jako pancerz przy mutacji kameleona."
     },
     "itemType": "ARMOR"
   },
@@ -450,7 +486,8 @@
     "texts": {
       "ru": "Механика",
       "en": "Troubleshooter's",
-      "fr": "[Assistance]"
+      "fr": "[Assistance]",
+      "pl": "Ułatwiaj."
     },
     "rec": "OMOD:FULL",
     "sid": "039FF0",
@@ -464,7 +501,8 @@
     "translations": {
       "en": "-15% damage from robots",
       "ru": "-15% урона от роботов",
-      "fr": "Les dégâts infligés par les robots diminuent de 15 %."
+      "fr": "Les dégâts infligés par les robots diminuent de 15 %.",
+      "pl": "-15% obrażeń zadawanych przez roboty."
     },
     "itemType": "ARMOR"
   },
@@ -474,7 +512,8 @@
     "texts": {
       "ru": "Восприятие",
       "en": "Perception",
-      "fr": "Perception"
+      "fr": "Perception",
+      "pl": "Percepcja"
     },
     "rec": "OMOD:FULL",
     "sid": "039DE1",
@@ -488,7 +527,8 @@
     "translations": {
       "en": "+1 Perception",
       "ru": "+1 к восприятию",
-      "fr": "Perception +1"
+      "fr": "Perception +1",
+      "pl": "+1 do percepcji."
     },
     "itemType": "ARMOR"
   },
@@ -498,7 +538,8 @@
     "texts": {
       "ru": "Ловкость",
       "en": "Agility",
-      "fr": "Agilité"
+      "fr": "Agilité",
+      "pl": "Zwinność"
     },
     "rec": "OMOD:FULL",
     "sid": "039B69",
@@ -512,7 +553,8 @@
     "translations": {
       "en": "+1 Agility",
       "ru": "+1 к ловкости",
-      "fr": "Agilité +1"
+      "fr": "Agilité +1",
+      "pl": "+1 do zwinności"
     },
     "itemType": "ARMOR"
   },
@@ -522,7 +564,8 @@
     "texts": {
       "ru": "Удача",
       "en": "Luck",
-      "fr": "Chance"
+      "fr": "Chance",
+      "pl": "Szczęście"
     },
     "rec": "OMOD:FULL",
     "sid": "039DE3",
@@ -536,7 +579,8 @@
     "translations": {
       "en": "+1 Luck",
       "ru": "+1 к удаче",
-      "fr": "Chance +1"
+      "fr": "Chance +1",
+      "pl": "+1 do szczęścia."
     },
     "itemType": "ARMOR"
   },
@@ -546,7 +590,8 @@
     "texts": {
       "ru": "Сила",
       "en": "Strength",
-      "fr": "Force"
+      "fr": "Force",
+      "pl": "Siła"
     },
     "rec": "OMOD:FULL",
     "sid": "039E73",
@@ -560,7 +605,8 @@
     "translations": {
       "en": "+1 Strength",
       "ru": "+1 к силе",
-      "fr": "Force +1"
+      "fr": "Force +1",
+      "pl": "+1 do siły."
     },
     "itemType": "ARMOR"
   },
@@ -570,7 +616,8 @@
     "texts": {
       "ru": "Выносливость",
       "en": "Endurance",
-      "fr": "Endurance"
+      "fr": "Endurance",
+      "pl": "Wytrzymałość"
     },
     "rec": "OMOD:FULL",
     "sid": "039A5B",
@@ -584,7 +631,8 @@
     "translations": {
       "en": "+1 Endurance",
       "ru": "+1 к выносливости",
-      "fr": "Endurance +1"
+      "fr": "Endurance +1",
+      "pl": "+1 do wytrzymałości"
     },
     "itemType": "ARMOR"
   },
@@ -594,7 +642,8 @@
     "texts": {
       "ru": "Антисептик",
       "en": "Antiseptic",
-      "fr": "Antiseptique"
+      "fr": "Antiseptique",
+      "pl": "Antyseptyk"
     },
     "rec": "OMOD:FULL",
     "sid": "039F33",
@@ -610,7 +659,8 @@
     "translations": {
       "en": "+25% Environmental Disease Resistance",
       "ru": "+25% к сопротивляемости болезням от окружающей среды",
-      "fr": "Résistance aux maladies environnementales +25 %"
+      "fr": "Résistance aux maladies environnementales +25 %",
+      "pl": "+25% do odporności na choroby wynikające z zagrożeń środowiskowych"
     },
     "itemType": "ARMOR"
   },
@@ -620,7 +670,8 @@
     "texts": {
       "ru": "Знахарский",
       "en": "Poisoner's",
-      "fr": "Empoisonneur"
+      "fr": "Empoisonneur",
+      "pl": "Alchem."
     },
     "rec": "OMOD:FULL",
     "sid": "039BEA",
@@ -634,7 +685,8 @@
     "translations": {
       "en": "+25 Poison Resistance",
       "ru": "+25 к сопротивляемости ядам",
-      "fr": "Résistance au poison +25"
+      "fr": "Résistance au poison +25",
+      "pl": "+25 do odporności na trucizny."
     },
     "itemType": "ARMOR"
   },
@@ -644,7 +696,8 @@
     "texts": {
       "ru": "Интеллект",
       "en": "Intelligence",
-      "fr": "Intelligence"
+      "fr": "Intelligence",
+      "pl": "Inteligencja"
     },
     "rec": "OMOD:FULL",
     "sid": "0398E7",
@@ -658,7 +711,8 @@
     "translations": {
       "en": "+1 Intelligence",
       "ru": "+1 к интеллекту",
-      "fr": "Intelligence +1"
+      "fr": "Intelligence +1",
+      "pl": "+1 do inteligencji"
     },
     "itemType": "ARMOR"
   },
@@ -668,7 +722,8 @@
     "texts": {
       "ru": "Подключенный",
       "en": "Powered",
-      "fr": "Puissance"
+      "fr": "Puissance",
+      "pl": "Zasilanie"
     },
     "rec": "OMOD:FULL",
     "sid": "039F35",
@@ -684,7 +739,8 @@
     "translations": {
       "en": "Increases Action Point refresh speed",
       "ru": "ОД восстанавливаются быстрее.",
-      "fr": "Augmente la vitesse de récupération des points d'action"
+      "fr": "Augmente la vitesse de récupération des points d'action",
+      "pl": "Zwiększa tempo odnawiania punktów akcji."
     },
     "itemType": "ARMOR"
   },
@@ -694,7 +750,8 @@
     "texts": {
       "ru": "Харизма",
       "en": "Charisma",
-      "fr": "Charisme"
+      "fr": "Charisme",
+      "pl": "Charyzma"
     },
     "rec": "OMOD:FULL",
     "sid": "039A4C",
@@ -708,7 +765,8 @@
     "translations": {
       "en": "+1 Charisma",
       "ru": "+1 к харизме",
-      "fr": "Charisme +1"
+      "fr": "Charisme +1",
+      "pl": "+1 do charyzmy"
     },
     "itemType": "ARMOR"
   },
@@ -718,7 +776,8 @@
     "texts": {
       "ru": "Бегуна",
       "en": "Sprinter's",
-      "fr": "Sprinteur"
+      "fr": "Sprinteur",
+      "pl": "Mod biegacza"
     },
     "rec": "OMOD:FULL",
     "sid": "039A75",
@@ -729,7 +788,8 @@
     "translations": {
       "en": "Increases movement speed by 5%",
       "ru": "Увеличивает скорость передвижения на 5%",
-      "fr": "Augmente la vitesse des déplacements de 5 %"
+      "fr": "Augmente la vitesse des déplacements de 5 %",
+      "pl": "Zwiększona prędkość ruchu o 5%."
     },
     "itemType": "ARMOR"
   },
@@ -739,7 +799,8 @@
     "texts": {
       "ru": "Опасное вещество",
       "en": "HazMat",
-      "fr": "Décontamination"
+      "fr": "Décontamination",
+      "pl": "Ochronn."
     },
     "rec": "OMOD:FULL",
     "sid": "0399C2",
@@ -754,7 +815,8 @@
     "translations": {
       "en": "+25 Radiation Resistance",
       "ru": "+25 к сопротивляемости радиации",
-      "fr": "Résistance aux radiations +25"
+      "fr": "Résistance aux radiations +25",
+      "pl": "+25 do odporności na promieniowanie."
     },
     "itemType": "ARMOR"
   },
@@ -764,7 +826,8 @@
     "texts": {
       "ru": "Уменьшенный вес всех боеприпасов",
       "en": "Reduced ammo weight",
-      "fr": "Poids des munitions réduit"
+      "fr": "Poids des munitions réduit",
+      "pl": "Zmniejszony ciężar amunicji"
     },
     "rec": "OMOD:FULL",
     "sid": "039F0B",
@@ -777,7 +840,8 @@
     "translations": {
       "en": "Ammo weight reduced by 20%",
       "ru": "Боеприпасы весят на 20% меньше",
-      "fr": "Poids des munitions réduit de 20 %"
+      "fr": "Poids des munitions réduit de 20 %",
+      "pl": "Amunicja waży o 20% mniej."
     },
     "itemType": "ARMOR"
   },
@@ -787,7 +851,8 @@
     "texts": {
       "ru": "Уменьшенный урон конечностям",
       "en": "Reduced limb damage",
-      "fr": "Dégâts aux membres réduit"
+      "fr": "Dégâts aux membres réduit",
+      "pl": "Zmniejszone obrażenia kończyn"
     },
     "rec": "OMOD:FULL",
     "sid": "039BF5",
@@ -801,7 +866,8 @@
     "translations": {
       "en": "Receive 15% less limb damage",
       "ru": "Снижает урон конечностям на 15%",
-      "fr": "15 % de dégâts en moins aux membres"
+      "fr": "15 % de dégâts en moins aux membres",
+      "pl": "15% mniej obrażeń zadawanych kończynom."
     },
     "itemType": "ARMOR"
   },
@@ -811,7 +877,8 @@
     "texts": {
       "ru": "Уменьшение веса еды, воды и препаратов",
       "en": "Reduced food/drink/chem weight",
-      "fr": "Poids réduit aliments/boissons/drogues"
+      "fr": "Poids réduit aliments/boissons/drogues",
+      "pl": "Zmniejszona waga jedzenia/napojów/prochów"
     },
     "rec": "OMOD:FULL",
     "sid": "039C1F",
@@ -825,7 +892,8 @@
     "translations": {
       "en": "Food, drink, and chem weights reduced by 20%",
       "ru": "Еда, вода и препараты весят на 20% меньше",
-      "fr": "Poids réduit de 20 % pour les aliments, les boissons et les drogues"
+      "fr": "Poids réduit de 20 % pour les aliments, les boissons et les drogues",
+      "pl": "Jedzenie, napoje i prochy ważą 20% mniej."
     },
     "itemType": "ARMOR"
   },
@@ -835,7 +903,8 @@
     "texts": {
       "ru": "Взломщика",
       "en": "Safecracker's",
-      "fr": "Perceur de coffres"
+      "fr": "Perceur de coffres",
+      "pl": "Mod kasiarza"
     },
     "rec": "OMOD:FULL",
     "sid": "039FD3",
@@ -852,7 +921,8 @@
     "translations": {
       "en": "Increases size of sweet-spot while picking locks",
       "ru": "Увеличение размера зачетной зоны при взломе замков.",
-      "fr": "Facilite le positionnement correct de l'épingle à cheveux quand vous crochetez des serrures"
+      "fr": "Facilite le positionnement correct de l'épingle à cheveux quand vous crochetez des serrures",
+      "pl": "Zwiększa zakres otwierający zamki podczas włamywania się."
     },
     "itemType": "ARMOR"
   },
@@ -862,7 +932,8 @@
     "texts": {
       "ru": "Уменьшенный вес оружия",
       "en": "Reduced weapon weight",
-      "fr": "Poids de l'arme réduit"
+      "fr": "Poids de l'arme réduit",
+      "pl": "Zmniejszony ciężar broni"
     },
     "rec": "OMOD:FULL",
     "sid": "039F3F",
@@ -875,7 +946,8 @@
     "translations": {
       "en": "Weapon weights reduced by 20%",
       "ru": "Оружие весит на 20% меньше",
-      "fr": "Poids de l'arme réduit de 20 %"
+      "fr": "Poids de l'arme réduit de 20 %",
+      "pl": "Broń waży o 20% mniej."
     },
     "itemType": "ARMOR"
   },
@@ -885,7 +957,8 @@
     "texts": {
       "ru": "Защитный",
       "en": "Sentinel's",
-      "fr": "Sentinelle"
+      "fr": "Sentinelle",
+      "pl": "Wartown."
     },
     "rec": "OMOD:FULL",
     "sid": "046D32",
@@ -902,7 +975,8 @@
     "translations": {
       "en": "75% chance to reduce damage by 15% while standing still",
       "ru": "75%-й шанс снизить урон на 15%, пока вы неподвижны.",
-      "fr": "75 % de chance de réduire les dégâts de 15 % en restant immobile."
+      "fr": "75 % de chance de réduire les dégâts de 15 % en restant immobile.",
+      "pl": "75% szansy na zmniejszenie obrażeń o 15% podczas bezruchu."
     },
     "itemType": "ARMOR"
   },
@@ -912,7 +986,8 @@
     "texts": {
       "ru": "Улучшенная скрытность",
       "en": "Improved sneaking",
-      "fr": "Mode furtif amélioré"
+      "fr": "Mode furtif amélioré",
+      "pl": "Ulepszone skradanie się"
     },
     "rec": "OMOD:FULL",
     "sid": "039B94",
@@ -928,7 +1003,8 @@
     "translations": {
       "en": "Become harder to detect while sneaking",
       "ru": "Вероятность обнаружения в режиме скрытности снижена",
-      "fr": "Détection plus difficile en déplacements furtifs"
+      "fr": "Détection plus difficile en déplacements furtifs",
+      "pl": "Trudniej cię wykryć, gdy się skradasz."
     },
     "itemType": "ARMOR"
   },
@@ -938,7 +1014,8 @@
     "texts": {
       "ru": "Акробата",
       "en": "Acrobat's",
-      "fr": "Acrobate"
+      "fr": "Acrobate",
+      "pl": "Mod akrobaty"
     },
     "rec": "OMOD:FULL",
     "sid": "039F47",
@@ -952,7 +1029,8 @@
     "translations": {
       "en": "Reduces falling damage by 50%",
       "ru": "Уменьшение урона от падения на 50%.",
-      "fr": "Réduit de 50 % les dégâts dus aux chutes"
+      "fr": "Réduit de 50 % les dégâts dus aux chutes",
+      "pl": "Zmniejsza obrażenia od upadku o 50%."
     },
     "itemType": "ARMOR"
   },
@@ -962,7 +1040,8 @@
     "texts": {
       "ru": "Кавалерский",
       "en": "Cavalier's",
-      "fr": "Cavalier"
+      "fr": "Cavalier",
+      "pl": "Rycersk."
     },
     "rec": "OMOD:FULL",
     "sid": "039F43",
@@ -976,7 +1055,8 @@
     "translations": {
       "en": "Reduces damage while blocking by 15%",
       "ru": "Уменьшение урона при блоке на 15%.",
-      "fr": "Réduit les dégâts de 15 % quand bloquez une attaque."
+      "fr": "Réduit les dégâts de 15 % quand bloquez une attaque.",
+      "pl": "Zmniejsza obrażenia o 15% przy blokowaniu."
     },
     "itemType": "ARMOR"
   },
@@ -986,7 +1066,8 @@
     "texts": {
       "ru": "Прочность",
       "en": "Durability",
-      "fr": "Solidité"
+      "fr": "Solidité",
+      "pl": "Wytrzymałość"
     },
     "rec": "OMOD:FULL",
     "sid": "039F0D",
@@ -999,7 +1080,8 @@
     "translations": {
       "en": "50% more durability than normal",
       "ru": "Прочность выше на 50%",
-      "fr": "Solidité augmentée de 50 %."
+      "fr": "Solidité augmentée de 50 %.",
+      "pl": "Przedmiot ma 50% wytrzymałości więcej niż normalnie."
     },
     "itemType": "ARMOR"
   },
@@ -1009,7 +1091,8 @@
     "texts": {
       "ru": "Кавалерский",
       "en": "Cavalier's",
-      "fr": "Cavalier"
+      "fr": "Cavalier",
+      "pl": "Rycersk."
     },
     "rec": "OMOD:FULL",
     "sid": "039A9C",
@@ -1023,7 +1106,8 @@
     "translations": {
       "en": "75% chance to reduce damage by 15% while sprinting.",
       "ru": "75% шанс снизить урон на 15% во время бега.",
-      "fr": "75 % de chance de réduire les dégâts de 15 % en sprintant."
+      "fr": "75 % de chance de réduire les dégâts de 15 % en sprintant.",
+      "pl": "75% szansy na zmniejszenie obrażeń o 15% podczas sprintu."
     },
     "itemType": "ARMOR"
   },
@@ -1033,7 +1117,8 @@
     "texts": {
       "ru": "Дайвера",
       "en": "Diver's",
-      "fr": "[Plongeur]"
+      "fr": "[Plongeur]",
+      "pl": "Nurk."
     },
     "rec": "OMOD:FULL",
     "sid": "039F49",
@@ -1046,7 +1131,8 @@
     "translations": {
       "en": "Grants the ability to breathe underwater",
       "ru": "Позволяет дышать под водой",
-      "fr": "Donne la capacité de respirer sous l'eau"
+      "fr": "Donne la capacité de respirer sous l'eau",
+      "pl": "Zapewnia zdolność oddychania pod wodą."
     },
     "itemType": "ARMOR"
   },
@@ -1056,7 +1142,8 @@
     "texts": {
       "ru": "Уменьшенный вес хлама",
       "en": "Reduced junk weight",
-      "fr": "Poids de bric-à-brac réduit"
+      "fr": "Poids de bric-à-brac réduit",
+      "pl": "Zmniejszony ciężar śmieci"
     },
     "rec": "OMOD:FULL",
     "sid": "039D0E",
@@ -1069,7 +1156,8 @@
     "translations": {
       "en": "Junk item weights reduced by 20%",
       "ru": "Хлам весит на 20% меньше",
-      "fr": "Poids des munitions de bric-à-brac réduit de 20 %"
+      "fr": "Poids des munitions de bric-à-brac réduit de 20 %",
+      "pl": "Przedmioty będące śmieciami ważą o 20% mniej."
     },
     "itemType": "ARMOR"
   },
@@ -1079,7 +1167,8 @@
     "texts": {
       "ru": "Глушительный",
       "en": "Suppressor's",
-      "fr": "[Suppresseur]"
+      "fr": "[Suppresseur]",
+      "pl": "Tłum."
     },
     "rec": "OMOD:FULL",
     "sid": "03A3E7",
@@ -1093,7 +1182,8 @@
     "translations": {
       "en": "Reduce your target's damage output by 20% for 3s",
       "ru": "Сила урона цели будет снижена на 20% в течение 3 сек.",
-      "fr": "Réduit de 20 % les dégâts infligés pendant 3 s"
+      "fr": "Réduit de 20 % les dégâts infligés pendant 3 s",
+      "pl": "Na 3 sek. obniża obrażenia zadawane przez wroga o 20%."
     },
     "itemType": "WEAPON"
   },
@@ -1103,7 +1193,8 @@
     "texts": {
       "ru": "Окровавленный",
       "en": "Bloodied",
-      "fr": "[Sang]"
+      "fr": "[Sang]",
+      "pl": "Zakrwaw."
     },
     "rec": "OMOD:FULL",
     "sid": "039A7A",
@@ -1119,7 +1210,8 @@
     "translations": {
       "en": "Damage increases as health decreases.",
       "ru": "Чем меньше уровень здоровья, тем выше урон.",
-      "fr": "Les dégâts augmentent à mesure que la santé diminue."
+      "fr": "Les dégâts augmentent à mesure que la santé diminue.",
+      "pl": "Zadawane obrażenia zwiększają się wraz z utratą zdrowia."
     },
     "itemType": "WEAPON"
   },
@@ -1129,7 +1221,8 @@
     "texts": {
       "ru": "Медицинский",
       "en": "Medic's",
-      "fr": "Infirmier"
+      "fr": "Infirmier",
+      "pl": "Lekarsk."
     },
     "rec": "OMOD:FULL",
     "sid": "039F3B",
@@ -1142,7 +1235,8 @@
     "translations": {
       "en": "V.A.T.S. crits will heal you and your group",
       "ru": "Критические атаки в V.A.T.S. лечат вас и ваших соратников",
-      "fr": "Les coups critiques en mode SVAV soigneront votre groupe et vous-même"
+      "fr": "Les coups critiques en mode SVAV soigneront votre groupe et vous-même",
+      "pl": "Trafienia krytyczne w V.A.T.S. leczą ciebie i twoją grupę."
     },
     "itemType": "WEAPON"
   },
@@ -1152,7 +1246,8 @@
     "texts": {
       "ru": "Вампирский",
       "en": "Vampire's",
-      "fr": "[Vampire]"
+      "fr": "[Vampire]",
+      "pl": "Wampiryczn."
     },
     "rec": "OMOD:FULL",
     "sid": "03A2AC",
@@ -1166,7 +1261,8 @@
     "translations": {
       "en": "Gain brief health regeneration when you hit an enemy",
       "ru": "Здоровье быстро восстанавливается после того, как вы атаковали противника",
-      "fr": "Votre santé se régénère en touchant un ennemi"
+      "fr": "Votre santé se régénère en touchant un ennemi",
+      "pl": "Trafienie przeciwnika zapewnia tymczasową regenerację zdrowia."
     },
     "itemType": "WEAPON"
   },
@@ -1176,7 +1272,8 @@
     "texts": {
       "ru": "Бесконечный",
       "en": "Never Ending",
-      "fr": "[Sans fin]"
+      "fr": "[Sans fin]",
+      "pl": "Nieskończ."
     },
     "rec": "OMOD:FULL",
     "sid": "046868",
@@ -1192,7 +1289,8 @@
     "translations": {
       "en": "Double ammo capacity",
       "ru": "Удвоенный боезапас",
-      "fr": "Capacité en munitions doublée"
+      "fr": "Capacité en munitions doublée",
+      "pl": "Podwójna pojemność magazynka."
     },
     "itemType": "WEAPON"
   },
@@ -1202,7 +1300,8 @@
     "texts": {
       "ru": "Убийственный",
       "en": "Assassin's",
-      "fr": "[Anti-humains]"
+      "fr": "[Anti-humains]",
+      "pl": "Zabójcz."
     },
     "rec": "OMOD:FULL",
     "sid": "039FFB",
@@ -1218,7 +1317,8 @@
     "translations": {
       "en": "+10% damage to Players",
       "ru": "+10% к урону игрокам",
-      "fr": "+10 % de dégâts sur les humains"
+      "fr": "+10 % de dégâts sur les humains",
+      "pl": "+10% do obrażeń zadawanych ludziom."
     },
     "itemType": "WEAPON"
   },
@@ -1228,7 +1328,8 @@
     "texts": {
       "ru": "Зилотская",
       "en": "Zealot's",
-      "fr": "Dévot"
+      "fr": "Dévot",
+      "pl": "Zelo."
     },
     "rec": "OMOD:FULL",
     "sid": "03985F",
@@ -1241,7 +1342,8 @@
     "translations": {
       "en": "+30% damage to Scorched",
       "ru": "+30% к урону горелым",
-      "fr": "+30 % de dégâts sur les calcinés"
+      "fr": "+30 % de dégâts sur les calcinés",
+      "pl": "+30% do obrażeń zadawanych spalonym."
     },
     "itemType": "WEAPON"
   },
@@ -1251,7 +1353,8 @@
     "texts": {
       "ru": "Берсеркерский",
       "en": "Berserker's",
-      "fr": "Berserker"
+      "fr": "Berserker",
+      "pl": "Berserk."
     },
     "rec": "OMOD:FULL",
     "sid": "039E49",
@@ -1268,7 +1371,8 @@
     "translations": {
       "en": "Lower Damage Resistance increases damage dealt.",
       "ru": "Чем ниже сопротивляемость урону, тем выше наносимый урон.",
-      "fr": "Plus la résistance aux dégâts est faible, plus les dégâts infligés sont augmentés."
+      "fr": "Plus la résistance aux dégâts est faible, plus les dégâts infligés sont augmentés.",
+      "pl": "Im mniejsza odporność na obrażenia, tym większe zadawane obrażenia."
     },
     "itemType": "WEAPON"
   },
@@ -1278,7 +1382,8 @@
     "texts": {
       "ru": "Ночной",
       "en": "Nocturnal",
-      "fr": "Nocturne"
+      "fr": "Nocturne",
+      "pl": "Nocn."
     },
     "rec": "OMOD:FULL",
     "sid": "039AC9",
@@ -1291,7 +1396,8 @@
     "translations": {
       "en": "Damage increases with the night and decreases with the day",
       "ru": "Урон усиливается ночью и снижается днем",
-      "fr": "Les dégâts augmentent la nuit et diminuent le jour"
+      "fr": "Les dégâts augmentent la nuit et diminuent le jour",
+      "pl": "Zadawane obrażenia rosną nocą i spadają za dnia."
     },
     "itemType": "WEAPON"
   },
@@ -1301,7 +1407,8 @@
     "texts": {
       "ru": "Мутантный",
       "en": "Mutant's",
-      "fr": "[Mutant]"
+      "fr": "[Mutant]",
+      "pl": "Mutanck."
     },
     "rec": "OMOD:FULL",
     "sid": "03A103",
@@ -1315,7 +1422,8 @@
     "translations": {
       "en": "Damage increased by 10% if you are mutated",
       "ru": "+10% к урону, если у вас имеются мутации",
-      "fr": "Dégâts accrus de 10 % si vous subissez une mutation"
+      "fr": "Dégâts accrus de 10 % si vous subissez une mutation",
+      "pl": "Obrażenia zwiększone o 10%, jeśli dotknęła cię mutacja."
     },
     "itemType": "WEAPON"
   },
@@ -1325,7 +1433,8 @@
     "texts": {
       "ru": "Палаческий",
       "en": "Executioner's",
-      "fr": "Bourreau"
+      "fr": "Bourreau",
+      "pl": "Katowsk."
     },
     "rec": "OMOD:FULL",
     "sid": "039DB7",
@@ -1340,7 +1449,8 @@
     "translations": {
       "en": "+50% more damage when your target is below 40% health",
       "ru": "+50% к урону, если уровень здоровья вашей цели ниже 40%",
-      "fr": "Dégâts accrus de +50 % quand la santé de la cible est inférieure à 40 %"
+      "fr": "Dégâts accrus de +50 % quand la santé de la cible est inférieure à 40 %",
+      "pl": "+50% więcej obrażeń, gdy cel ma poniżej 40% zdrowia."
     },
     "itemType": "WEAPON"
   },
@@ -1350,7 +1460,8 @@
     "texts": {
       "ru": "Провоцирующий",
       "en": "Instigating",
-      "fr": "[Provocation]"
+      "fr": "[Provocation]",
+      "pl": "Inspir."
     },
     "rec": "OMOD:FULL",
     "sid": "039FF9",
@@ -1365,7 +1476,8 @@
     "translations": {
       "en": "Double damage if target is full health",
       "ru": "Удвоенный урон целям с максимальным количеством очков здоровья",
-      "fr": "Double les dégâts si la santé de la cible est à son maximum"
+      "fr": "Double les dégâts si la santé de la cible est à son maximum",
+      "pl": "Zadaje podwójne obrażenia, jeśli cel jest w pełni zdrowy."
     },
     "itemType": "WEAPON"
   },
@@ -1375,7 +1487,8 @@
     "texts": {
       "ru": "Бесконечная автоматическая стрельба",
       "en": "Never Ending Auto",
-      "fr": "Sans fin auto"
+      "fr": "Sans fin auto",
+      "pl": "Niekończąca się seria"
     },
     "rec": "OMOD:FULL",
     "sid": "039D10",
@@ -1389,7 +1502,8 @@
     "translations": {
       "en": "Quadruple ammo capacity",
       "ru": "Боезапас, увеличенный в 4 раза",
-      "fr": "Capacité en munitions quadruplée"
+      "fr": "Capacité en munitions quadruplée",
+      "pl": "Poczwórna pojemność magazynka."
     },
     "itemType": "WEAPON"
   },
@@ -1399,7 +1513,8 @@
     "texts": {
       "ru": "Антирадиационный",
       "en": "Ghoul Slayer's",
-      "fr": "Tueur de goules"
+      "fr": "Tueur de goules",
+      "pl": "Ghulobój."
     },
     "rec": "OMOD:FULL",
     "sid": "03A3E5",
@@ -1415,7 +1530,8 @@
     "translations": {
       "en": "+30% damage to ghouls",
       "ru": "+30% к урону гулям",
-      "fr": "+30 % de dégâts sur les goules"
+      "fr": "+30 % de dégâts sur les goules",
+      "pl": "+30% do obrażeń zadawanych ghulom."
     },
     "itemType": "WEAPON"
   },
@@ -1425,7 +1541,8 @@
     "texts": {
       "ru": "Следопытский",
       "en": "Stalker's",
-      "fr": "[Traque]"
+      "fr": "[Traque]",
+      "pl": "Tropiciel."
     },
     "rec": "OMOD:FULL",
     "sid": "039A73",
@@ -1438,7 +1555,8 @@
     "translations": {
       "en": "If not in combat, +100% VATS accuracy at +50% AP cost",
       "ru": "+100% к точности в V.A.T.S. по цене +50% ОД, если вы не в бою",
-      "fr": "Hors combat, précision en mode SVAV +100 % à un coût en PA de +50 %"
+      "fr": "Hors combat, précision en mode SVAV +100 % à un coût en PA de +50 %",
+      "pl": "Gdy nie toczysz walki, +100% do celności w V.A.T.S za cenę +50% PA."
     },
     "itemType": "WEAPON"
   },
@@ -1448,7 +1566,8 @@
     "texts": {
       "ru": "Механика",
       "en": "Troubleshooter's",
-      "fr": "[Assistance]"
+      "fr": "[Assistance]",
+      "pl": "Ułatwiaj."
     },
     "rec": "OMOD:FULL",
     "sid": "039A60",
@@ -1462,7 +1581,8 @@
     "translations": {
       "en": "+30% damage to robots",
       "ru": "+30% к урону роботам",
-      "fr": "+30 % de dégâts sur les robots"
+      "fr": "+30 % de dégâts sur les robots",
+      "pl": "+30% do obrażeń zadawanych robotom."
     },
     "itemType": "WEAPON"
   },
@@ -1472,7 +1592,8 @@
     "texts": {
       "ru": "Бронебойный",
       "en": "Anti-armor",
-      "fr": "Anti-armure"
+      "fr": "Anti-armure",
+      "pl": "Przeciwpanc."
     },
     "rec": "OMOD:FULL",
     "sid": "03A1F8",
@@ -1487,7 +1608,8 @@
     "translations": {
       "en": "Ignores 50% of your target's armor",
       "ru": "Эффективность брони противника снижается на 50%",
-      "fr": "Ignore 50 % de l'armure de la cible"
+      "fr": "Ignore 50 % de l'armure de la cible",
+      "pl": "Ignoruje 50% pancerza celu."
     },
     "itemType": "WEAPON"
   },
@@ -1497,7 +1619,8 @@
     "texts": {
       "ru": "Яростный",
       "en": "Furious",
-      "fr": "[Furie]"
+      "fr": "[Furie]",
+      "pl": "Wściekł."
     },
     "rec": "OMOD:FULL",
     "sid": "0398E1",
@@ -1513,7 +1636,8 @@
     "translations": {
       "en": "Damage increased after each consecutive hit on the same target",
       "ru": "Увеличение урона с каждой последующей атакой одной и той же цели",
-      "fr": "Dégâts augmentés après chaque coup consécutif sur la même cible"
+      "fr": "Dégâts augmentés après chaque coup consécutif sur la même cible",
+      "pl": "Zwiększone obrażenia po każdym kolejnym trafieniu tego samego celu."
     },
     "itemType": "WEAPON"
   },
@@ -1523,7 +1647,8 @@
     "texts": {
       "ru": "Охотничий",
       "en": "Hunter's",
-      "fr": "Chasseur"
+      "fr": "Chasseur",
+      "pl": "Łowieck."
     },
     "rec": "OMOD:FULL",
     "sid": "03A001",
@@ -1539,7 +1664,8 @@
     "translations": {
       "en": "+30% damage to animals",
       "ru": "+30% к урону животным",
-      "fr": "+30 % de dégâts sur les animaux"
+      "fr": "+30 % de dégâts sur les animaux",
+      "pl": "+30% do obrażeń zadawanych zwierzętom."
     },
     "itemType": "WEAPON"
   },
@@ -1549,7 +1675,8 @@
     "texts": {
       "ru": "Ударный",
       "en": "Concussive",
-      "fr": "Étourdissant"
+      "fr": "Étourdissant",
+      "pl": "Wstrząs"
     },
     "rec": "OMOD:FULL",
     "sid": "039B52",
@@ -1560,7 +1687,8 @@
     "translations": {
       "en": "Gain a chance to knock your target back",
       "ru": "Получите шанс сбить цель с ног",
-      "fr": "Chance de repousser la cible"
+      "fr": "Chance de repousser la cible",
+      "pl": "Zyskujesz szansę na odrzucenie celu w tył."
     },
     "itemType": "WEAPON"
   },
@@ -1570,7 +1698,8 @@
     "texts": {
       "ru": "Двухзарядный",
       "en": "Two Shot",
-      "fr": "[Deux coups]"
+      "fr": "[Deux coups]",
+      "pl": "Dwustrzał."
     },
     "rec": "OMOD:FULL",
     "sid": "039E91",
@@ -1585,7 +1714,8 @@
     "translations": {
       "en": "Shoots an additional projectile",
       "ru": "Выпускает дополнительный снаряд",
-      "fr": "Tire un projectile supplémentaire"
+      "fr": "Tire un projectile supplémentaire",
+      "pl": "Wystrzeliwuje dodatkowy pocisk."
     },
     "itemType": "WEAPON"
   },
@@ -1595,7 +1725,8 @@
     "texts": {
       "ru": "Мутантоистребительный",
       "en": "Mutant Slayer's",
-      "fr": "[Anti-mutants]"
+      "fr": "[Anti-mutants]",
+      "pl": "Mutantobójcz."
     },
     "rec": "OMOD:FULL",
     "sid": "039BA9",
@@ -1609,7 +1740,8 @@
     "translations": {
       "en": "+30% damage to super mutants",
       "ru": "+30% к урону супермутантам",
-      "fr": "+30 % de dégâts sur les super mutants"
+      "fr": "+30 % de dégâts sur les super mutants",
+      "pl": "+30% do obrażeń zadawanych supermutantom."
     },
     "itemType": "WEAPON"
   },
@@ -1619,7 +1751,8 @@
     "texts": {
       "ru": "Наркоманский",
       "en": "Junkie's",
-      "fr": "Junkie"
+      "fr": "Junkie",
+      "pl": "Ćpuńsk."
     },
     "rec": "OMOD:FULL",
     "sid": "039939",
@@ -1634,7 +1767,8 @@
     "translations": {
       "en": "Damage increases when suffering from addictions.",
       "ru": "Урон повышается при ломке от зависимости.",
-      "fr": "Augmentation des dégâts lorsque vous souffrez d'addictions."
+      "fr": "Augmentation des dégâts lorsque vous souffrez d'addictions.",
+      "pl": "Zwiększenie obrażeń podczas cierpienia z powodu uzależnień."
     },
     "itemType": "WEAPON"
   },
@@ -1644,7 +1778,8 @@
     "texts": {
       "ru": "Ликвидаторский",
       "en": "Hitman's",
-      "fr": "Meurtre"
+      "fr": "Meurtre",
+      "pl": "Zabójcz."
     },
     "rec": "OMOD:FULL",
     "sid": "039F78",
@@ -1665,7 +1800,8 @@
     "translations": {
       "en": "+10% damage while aiming",
       "ru": "+10% к наносимому урону при прицеливании",
-      "fr": "Dégâts +10 % en visant"
+      "fr": "Dégâts +10 % en visant",
+      "pl": "+10% obrażeń przy korzystaniu z celownika."
     },
     "itemType": "WEAPON"
   },
@@ -1675,7 +1811,8 @@
     "texts": {
       "ru": "Скорость атаки в ближнем бою",
       "en": "Melee Speed",
-      "fr": "Vitesse de mêlée"
+      "fr": "Vitesse de mêlée",
+      "pl": "Szybkość w walce w zwarciu"
     },
     "rec": "OMOD:FULL",
     "sid": "039B9F",
@@ -1694,7 +1831,8 @@
     "translations": {
       "en": "40% faster swing speed",
       "ru": "Повышение скорости замаха на 40%.",
-      "fr": "Vous frappez 40 % plus vite"
+      "fr": "Vous frappez 40 % plus vite",
+      "pl": "40% szybsze uderzenie."
     },
     "itemType": "WEAPON"
   },
@@ -1704,7 +1842,8 @@
     "texts": {
       "ru": "Взрывной",
       "en": "Explosive",
-      "fr": "[Explosif]"
+      "fr": "[Explosif]",
+      "pl": "Wybuch."
     },
     "rec": "OMOD:FULL",
     "sid": "039E7D",
@@ -1717,7 +1856,8 @@
     "translations": {
       "en": "Bullets explode for area damage.",
       "ru": "Пули взрываются и наносят урон по площади.",
-      "fr": "Les balles explosent et infligent des dégâts de zone."
+      "fr": "Les balles explosent et infligent des dégâts de zone.",
+      "pl": "Pociski eksplodują i zadają obrażenia obszarowe."
     },
     "itemType": "WEAPON"
   },
@@ -1727,7 +1867,8 @@
     "texts": {
       "ru": "Рипост",
       "en": "Riposting",
-      "fr": "Riposte"
+      "fr": "Riposte",
+      "pl": "Riposta"
     },
     "rec": "OMOD:FULL",
     "sid": "039EFE",
@@ -1741,7 +1882,8 @@
     "translations": {
       "en": "Reflects 50% of melee damage back while blocking",
       "ru": "Возвращает атакующему 50% урона в ближнем бою при блокировании.",
-      "fr": "Renvoie 50 % des dégâts de corps à corps lors d'une parade"
+      "fr": "Renvoie 50 % des dégâts de corps à corps lors d'une parade",
+      "pl": "Podczas bloku wręcz 50% obrażeń zostaje odbitych do napastnika."
     },
     "itemType": "WEAPON"
   },
@@ -1751,7 +1893,8 @@
     "texts": {
       "ru": "Хрясь!",
       "en": "Basher's",
-      "fr": "[Cogneur]"
+      "fr": "[Cogneur]",
+      "pl": "Osił."
     },
     "rec": "OMOD:FULL",
     "sid": "039D51",
@@ -1768,7 +1911,8 @@
     "translations": {
       "en": "Bashing damage increased by 40%",
       "ru": "+40% к урону в ближнем бою",
-      "fr": "Dégâts des coups de crosse accrus de 40 %"
+      "fr": "Dégâts des coups de crosse accrus de 40 %",
+      "pl": "Obrażenia od uderzeń zwiększone o 40%."
     },
     "itemType": "WEAPON"
   },
@@ -1778,7 +1922,8 @@
     "texts": {
       "ru": "Урон от мощных атак",
       "en": "Power Attack Damage",
-      "fr": "Dégâts d'attaque puissante"
+      "fr": "Dégâts d'attaque puissante",
+      "pl": "Obrażenia od potężnego ataku"
     },
     "rec": "OMOD:FULL",
     "sid": "039EFA",
@@ -1792,7 +1937,8 @@
     "translations": {
       "en": "40% more power attack damage",
       "ru": "Увеличение урона от мощных атак на 40%.",
-      "fr": "40 % de dégâts d'attaque puissante supplémentaires"
+      "fr": "40 % de dégâts d'attaque puissante supplémentaires",
+      "pl": "40% większe obrażenia potężnego ataku."
     },
     "itemType": "WEAPON"
   },
@@ -1802,7 +1948,8 @@
     "texts": {
       "ru": "С улучшенным V.A.T.S.",
       "en": "VATS Enhanced",
-      "fr": "[SVAV]"
+      "fr": "[SVAV]",
+      "pl": "Wspom. V.A.T.S."
     },
     "rec": "OMOD:FULL",
     "sid": "039F1D",
@@ -1816,7 +1963,8 @@
     "translations": {
       "en": "+33% VATS hit chance",
       "ru": "+33% к шансу провести удачную атаку в V.A.T.S.",
-      "fr": "+33 % de chances de toucher la cible en mode SVAV"
+      "fr": "+33 % de chances de toucher la cible en mode SVAV",
+      "pl": "+33% szans na trafienie w V.A.T.S."
     },
     "itemType": "WEAPON"
   },
@@ -1826,7 +1974,8 @@
     "texts": {
       "ru": "Стремительный",
       "en": "Rapid",
-      "fr": "[Rapidité]"
+      "fr": "[Rapidité]",
+      "pl": "Dynamicz."
     },
     "rec": "OMOD:FULL",
     "sid": "039F7A",
@@ -1845,7 +1994,8 @@
     "translations": {
       "en": "25% faster fire rate",
       "ru": "Повышение скорострельности на 25%",
-      "fr": "Cadence de tir accrue de 25 %"
+      "fr": "Cadence de tir accrue de 25 %",
+      "pl": "O 25% większa szybkostrzelność."
     },
     "itemType": "WEAPON"
   },
@@ -1855,7 +2005,8 @@
     "texts": {
       "ru": "Радиоактивный",
       "en": "Irradiated",
-      "fr": "[Radiations]"
+      "fr": "[Radiations]",
+      "pl": "Naprom."
     },
     "rec": "OMOD:FULL",
     "sid": "039934",
@@ -1866,7 +2017,8 @@
     "translations": {
       "en": "Converts damage to Radiation and adds 10%",
       "ru": "Превращает урон в радиацию и добавляет 10%",
-      "fr": "Augmente les dégâts de 10 % et les convertit en radiations."
+      "fr": "Augmente les dégâts de 10 % et les convertit en radiations.",
+      "pl": "Zmienia obrażenia na obrażenia od promieniowania i dodaje 10%."
     },
     "itemType": "WEAPON"
   },
@@ -1876,7 +2028,8 @@
     "texts": {
       "ru": "Взрывной",
       "en": "Explosive",
-      "fr": "Explosif"
+      "fr": "Explosif",
+      "pl": "Wybuch."
     },
     "rec": "OMOD:FULL",
     "sid": "61001560",
@@ -1891,7 +2044,8 @@
     "translations": {
       "en": "Bullets explode for area damage.",
       "ru": "Пули взрываются и наносят урон по площади.",
-      "fr": "Les balles explosent et infligent des dégâts de zone"
+      "fr": "Les balles explosent et infligent des dégâts de zone",
+      "pl": "Pociski eksplodują i zadają obrażenia obszarowe."
     },
     "itemType": "WEAPON"
   },
@@ -1901,7 +2055,8 @@
     "texts": {
       "ru": "Счастливый",
       "en": "Lucky",
-      "fr": "Lucky"
+      "fr": "Lucky",
+      "pl": "Farciarz"
     },
     "rec": "OMOD:FULL",
     "sid": "039F86",
@@ -1919,7 +2074,8 @@
     "translations": {
       "en": "V.A.T.S. critical shots do +50% damage",
       "ru": "+50% к урону, наносимому критическими атаками в V.A.T.S.",
-      "fr": "Vos coups critiques en mode SVAV infligent +50 % de dégâts supplémentaires"
+      "fr": "Vos coups critiques en mode SVAV infligent +50 % de dégâts supplémentaires",
+      "pl": "Trafienia krytyczne w V.A.T.S. zadają +50% obrażeń."
     },
     "itemType": "WEAPON"
   },
@@ -1929,7 +2085,8 @@
     "texts": {
       "ru": "Калечащий",
       "en": "Crippling",
-      "fr": "[Infirmité]"
+      "fr": "[Infirmité]",
+      "pl": "Okalecz."
     },
     "rec": "OMOD:FULL",
     "sid": "03A009",
@@ -1943,7 +2100,8 @@
     "translations": {
       "en": "+50% limb damage",
       "ru": "+50% к урону конечностям",
-      "fr": "+50 % de dégâts aux membres"
+      "fr": "+50 % de dégâts aux membres",
+      "pl": "+50% obrażeń zadawanych kończynom."
     },
     "itemType": "WEAPON"
   },
@@ -1953,7 +2111,8 @@
     "texts": {
       "ru": "Выносливость",
       "en": "Endurance",
-      "fr": "Endurance"
+      "fr": "Endurance",
+      "pl": "Wytrzymałość"
     },
     "rec": "OMOD:FULL",
     "sid": "039AD7",
@@ -1967,7 +2126,8 @@
     "translations": {
       "en": "+1 Endurance",
       "ru": "+1 к выносливости",
-      "fr": "Endurance +1"
+      "fr": "Endurance +1",
+      "pl": "+1 do wytrzymałości"
     },
     "itemType": "WEAPON"
   },
@@ -1977,7 +2137,8 @@
     "texts": {
       "ru": "Кавалерский",
       "en": "Cavalier's",
-      "fr": "Cavalier"
+      "fr": "Cavalier",
+      "pl": "Rycersk."
     },
     "rec": "OMOD:FULL",
     "sid": "039C45",
@@ -1991,7 +2152,8 @@
     "translations": {
       "en": "Take 40% less damage while power attacking",
       "ru": "Уменьшение урона при мощной атаке на 40%.",
-      "fr": "Réduit les dégâts de 40 % subis lorsque vous lancez une attaque puissante."
+      "fr": "Réduit les dégâts de 40 % subis lorsque vous lancez une attaque puissante.",
+      "pl": "Zmniejsza o 40% otrzymywane obrażenia przy potężnym ataku."
     },
     "itemType": "WEAPON"
   },
@@ -2001,7 +2163,8 @@
     "texts": {
       "ru": "Счастливый",
       "en": "Lucky",
-      "fr": "Lucky"
+      "fr": "Lucky",
+      "pl": "Farciarz"
     },
     "rec": "OMOD:FULL",
     "sid": "039F74",
@@ -2015,7 +2178,8 @@
     "translations": {
       "en": "Your V.A.T.S. critical meter fills 15% faster",
       "ru": "Индикатор критической атаки V.A.T.S. заполняется на 15% быстрее",
-      "fr": "La jauge de coup critique en mode SVAV se remplit 15 % plus vite"
+      "fr": "La jauge de coup critique en mode SVAV se remplit 15 % plus vite",
+      "pl": "Wskaźnik trafień krytycznych w V.A.T.S. zapełnia się 15% szybciej."
     },
     "itemType": "WEAPON"
   },
@@ -2025,7 +2189,8 @@
     "texts": {
       "ru": "Сила",
       "en": "Strength",
-      "fr": "Force"
+      "fr": "Force",
+      "pl": "Siła"
     },
     "rec": "OMOD:FULL",
     "sid": "039F17",
@@ -2039,7 +2204,8 @@
     "translations": {
       "en": "+1 Strength",
       "ru": "+1 к силе",
-      "fr": "Force +1"
+      "fr": "Force +1",
+      "pl": "+1 do siły."
     },
     "itemType": "WEAPON"
   },
@@ -2049,7 +2215,8 @@
     "texts": {
       "ru": "С улучшенным V.A.T.S.",
       "en": "VATS Enhanced",
-      "fr": "[SVAV]"
+      "fr": "[SVAV]",
+      "pl": "Wspom. V.A.T.S."
     },
     "rec": "OMOD:FULL",
     "sid": "039F80",
@@ -2071,7 +2238,8 @@
     "translations": {
       "en": "25% less V.A.T.S. Action Point cost",
       "ru": "Уменьшает расход ОД на атаки в режиме V.A.T.S. на 25%.",
-      "fr": "Coût en points d'action SVAV réduit de 25 %"
+      "fr": "Coût en points d'action SVAV réduit de 25 %",
+      "pl": "Zmniejszony o 25% koszt w punktach akcji w V.A.T.S."
     },
     "itemType": "WEAPON"
   },
@@ -2081,7 +2249,8 @@
     "texts": {
       "ru": "Прочность",
       "en": "Durability",
-      "fr": "Solidité"
+      "fr": "Solidité",
+      "pl": "Wytrzymałość"
     },
     "rec": "OMOD:FULL",
     "sid": "0421C8",
@@ -2094,7 +2263,8 @@
     "translations": {
       "en": "50% more durability than normal",
       "ru": "Прочность выше на 50%",
-      "fr": "Solidité augmentée de 50 %."
+      "fr": "Solidité augmentée de 50 %.",
+      "pl": "Przedmiot ma 50% wytrzymałości więcej niż normalnie."
     },
     "itemType": "WEAPON"
   },
@@ -2104,7 +2274,8 @@
     "texts": {
       "ru": "Ловкий",
       "en": "Nimble",
-      "fr": "Agilité"
+      "fr": "Agilité",
+      "pl": "Poręczn."
     },
     "rec": "OMOD:FULL",
     "sid": "039C5B",
@@ -2118,7 +2289,8 @@
     "translations": {
       "en": "Faster movement speed while aiming",
       "ru": "Увеличенная скорость передвижения при прицеливании.",
-      "fr": "Augmente la vitesse des déplacements en visant."
+      "fr": "Augmente la vitesse des déplacements en visant.",
+      "pl": "Zwiększona prędkość ruchu przy celowaniu."
     },
     "itemType": "WEAPON"
   },
@@ -2128,7 +2300,8 @@
     "texts": {
       "ru": "Кавалерский",
       "en": "Cavalier's",
-      "fr": "Cavalier"
+      "fr": "Cavalier",
+      "pl": "Rycersk."
     },
     "rec": "OMOD:FULL",
     "sid": "039F67",
@@ -2143,7 +2316,8 @@
     "translations": {
       "en": "Take 15% less damage while blocking",
       "ru": "Уменьшение урона при блоке на 15%.",
-      "fr": "Réduit les dégâts de 15 % quand vous bloquez une attaque."
+      "fr": "Réduit les dégâts de 15 % quand vous bloquez une attaque.",
+      "pl": "Zmniejsza o 15% obrażenia przy blokowaniu."
     },
     "itemType": "WEAPON"
   },
@@ -2153,7 +2327,8 @@
     "texts": {
       "ru": "Восприятие",
       "en": "Perception",
-      "fr": "Perception"
+      "fr": "Perception",
+      "pl": "Percepcja"
     },
     "rec": "OMOD:FULL",
     "sid": "039C05",
@@ -2168,7 +2343,8 @@
     "translations": {
       "en": "+1 Perception",
       "ru": "+1 к восприятию",
-      "fr": "Perception +1"
+      "fr": "Perception +1",
+      "pl": "+1 do percepcji."
     },
     "itemType": "WEAPON"
   },
@@ -2178,7 +2354,8 @@
     "texts": {
       "ru": "Безотказный",
       "en": "Resilient",
-      "fr": "Résilience"
+      "fr": "Résilience",
+      "pl": "Wytrzym."
     },
     "rec": "OMOD:FULL",
     "sid": "039A9A",
@@ -2192,7 +2369,8 @@
     "translations": {
       "en": "+250 Damage Resistance while reloading",
       "ru": "+250 к сопротивляемости урону при перезарядке.",
-      "fr": "Résistance aux dégâts +250 en rechargeant"
+      "fr": "Résistance aux dégâts +250 en rechargeant",
+      "pl": "+250 do odporności na uszkodzenia w trakcie przeładowywania."
     },
     "itemType": "WEAPON"
   },
@@ -2202,7 +2380,8 @@
     "texts": {
       "ru": "Надежный",
       "en": "Steadfast",
-      "fr": "Ferme"
+      "fr": "Ferme",
+      "pl": "Stabiln."
     },
     "rec": "OMOD:FULL",
     "sid": "039E83",
@@ -2216,7 +2395,8 @@
     "translations": {
       "en": "+50 Damage Resistance while aiming",
       "ru": "+50 к сопротивляемости урону при прицеливании.",
-      "fr": "Résistance aux dégâts +50 en visant."
+      "fr": "Résistance aux dégâts +50 en visant.",
+      "pl": "+50 do odporności na obrażenia fizyczne przy korzystaniu z celownika"
     },
     "itemType": "WEAPON"
   },
@@ -2226,7 +2406,8 @@
     "texts": {
       "ru": "Легкая",
       "en": "Lightweight",
-      "fr": "Poids plume"
+      "fr": "Poids plume",
+      "pl": "Lekk."
     },
     "rec": "OMOD:FULL",
     "sid": "039F7E",
@@ -2240,7 +2421,8 @@
     "translations": {
       "en": "90% reduced weight",
       "ru": "Вес снижен на 90%",
-      "fr": "Réduit le poids de 90 %"
+      "fr": "Réduit le poids de 90 %",
+      "pl": "Ciężar zmniejszony o 90%."
     },
     "itemType": "WEAPON"
   },
@@ -2250,7 +2432,8 @@
     "texts": {
       "ru": "Ловкость",
       "en": "Agility",
-      "fr": "Agilité"
+      "fr": "Agilité",
+      "pl": "Zwinność"
     },
     "rec": "OMOD:FULL",
     "sid": "03A4F1",
@@ -2264,7 +2447,8 @@
     "translations": {
       "en": "+1 Agility",
       "ru": "+1 к ловкости",
-      "fr": "Agilité +1"
+      "fr": "Agilité +1",
+      "pl": "+1 do zwinności."
     },
     "itemType": "WEAPON"
   },
@@ -2274,7 +2458,8 @@
     "texts": {
       "ru": "Стремительный",
       "en": "Rapid",
-      "fr": "[Rapidité]"
+      "fr": "[Rapidité]",
+      "pl": "Dynamicz."
     },
     "rec": "OMOD:FULL",
     "sid": "039F7C",
@@ -2290,7 +2475,8 @@
     "translations": {
       "en": "15% faster reload",
       "ru": "Ускорение перезарядки на 15%",
-      "fr": "Vitesse de rechargement accrue de 15 %"
+      "fr": "Vitesse de rechargement accrue de 15 %",
+      "pl": "O 15% szybsze przeładowanie."
     },
     "itemType": "WEAPON"
   }

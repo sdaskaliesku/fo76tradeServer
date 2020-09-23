@@ -19,7 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class Fed76Service(@Autowired private val priceCheckRepository: PriceCheckRepository, objectMapper: ObjectMapper) : BaseRestClient(objectMapper) {
+class Fed76Service(@Autowired private val priceCheckRepository: PriceCheckRepository?, objectMapper: ObjectMapper) : BaseRestClient(objectMapper) {
 
     companion object {
         private val LOGGER = LoggerFactory.getLogger(Fed76Service::class.java)
@@ -73,13 +73,13 @@ class Fed76Service(@Autowired private val priceCheckRepository: PriceCheckReposi
             LOGGER.warn("Request is invalid, ignoring {}", request)
             return PriceCheckResponse()
         }
-        val cachedResponse: PriceCheckCacheItem? = priceCheckRepository.findByRequestId(request.toId())
+        val cachedResponse: PriceCheckCacheItem? = priceCheckRepository?.findByRequestId(request.toId())
         if (cachedResponse != null) {
             LOGGER.debug("Found request in cache {}", request)
             val response = cachedResponse.response
             if (isResponseExpired(response)) {
                 LOGGER.debug("Request has expired {}", request)
-                priceCheckRepository.delete(cachedResponse)
+                priceCheckRepository?.delete(cachedResponse)
             } else {
                 LOGGER.debug("Price check Request is valid {}", request)
                 return response
@@ -100,6 +100,6 @@ class Fed76Service(@Autowired private val priceCheckRepository: PriceCheckReposi
         val cachedResponse = PriceCheckCacheItem()
         cachedResponse.requestId = request.toId()
         cachedResponse.response = response
-        priceCheckRepository.save(cachedResponse)
+        priceCheckRepository?.save(cachedResponse)
     }
 }

@@ -19,46 +19,46 @@ import org.springframework.stereotype.Service
 
 @Service
 class ItemService @Autowired constructor(
-        private val itemRepository: ItemRepository, private val userService: UserService,
+        private val itemRepository: ItemRepository?, private val userService: UserService?,
         private val itemConverterService: ItemConverterService,
 ) {
     fun findAll(pageable: Pageable?): Page<ItemDTO?> {
         return if (pageable == null) {
-            PageImpl(itemRepository.findAll())
-        } else itemRepository.findAll(pageable)
+            PageImpl(itemRepository?.findAll())
+        } else itemRepository?.findAll(pageable)!!
     }
 
     fun findAllByOwnerId(ownerId: String?, pageable: Pageable?): Page<ItemDTO?>? {
         return if (Objects.isNull(pageable)) {
-            PageImpl(itemRepository.findAllByOwnerInfoId(ownerId))
-        } else itemRepository.findAllByOwnerInfoId(ownerId, pageable)
+            PageImpl(itemRepository?.findAllByOwnerInfoId(ownerId))
+        } else itemRepository?.findAllByOwnerInfoId(ownerId, pageable)
     }
 
     fun findAllByOwnerName(ownerName: String?, pageable: Pageable?): Page<ItemDTO?>? {
         return if (Objects.isNull(pageable)) {
-            PageImpl(itemRepository.findAllByOwnerInfoName(ownerName))
-        } else itemRepository.findAllByOwnerInfoName(ownerName, pageable)
+            PageImpl(itemRepository?.findAllByOwnerInfoName(ownerName))
+        } else itemRepository?.findAllByOwnerInfoName(ownerName, pageable)
     }
 
     fun findByIdAndOwnerId(id: String?, ownerId: String?): ItemDTO? {
-        return itemRepository.findByIdAndOwnerInfoId(id, ownerId)
+        return itemRepository?.findByIdAndOwnerInfoId(id, ownerId)
     }
 
     fun findByIdAndOwnerName(id: String?, ownerName: String?): ItemDTO? {
-        return itemRepository.findByIdAndOwnerInfoName(id, ownerName)
+        return itemRepository?.findByIdAndOwnerInfoName(id, ownerName)
     }
 
     fun deleteAllByOwnerId(ownerId: String?): Boolean {
-        itemRepository.deleteAllByOwnerInfoId(ownerId)
+        itemRepository?.deleteAllByOwnerInfoId(ownerId)
         return true
     }
 
     fun deleteItems(items: List<ItemDTO?>) {
-        itemRepository.deleteAll(items)
+        itemRepository?.deleteAll(items)
     }
 
     fun addItem(userId: String?, itemDTO: ItemDTO): ItemDTO? {
-        val user = userService.findByIdOrName(userId)
+        val user = userService?.findByIdOrName(userId)
         return addItem(user, itemDTO)
     }
 
@@ -66,7 +66,7 @@ class ItemService @Autowired constructor(
         if (Objects.isNull(user)) {
             return null
         }
-        val userInDb = userService.findByIdOrName(user!!.id)
+        val userInDb = userService?.findByIdOrName(user!!.id)
         if (!Utils.validatePassword(user, userInDb)) {
             return null
         }
@@ -74,10 +74,10 @@ class ItemService @Autowired constructor(
         if (Objects.isNull(ownerInfo)) {
             ownerInfo = OwnerInfo()
         }
-        ownerInfo!!.name = user.name
-        ownerInfo.id = user.id
+        ownerInfo!!.name = user?.name
+        ownerInfo.id = user?.id
         itemDTO.ownerInfo = ownerInfo
-        return itemRepository.save(itemDTO)
+        return itemRepository?.save(itemDTO)
     }
 
     fun addItems(userId: String?, itemsDTO: List<ItemDTO>): MutableList<ItemDTO?>? {

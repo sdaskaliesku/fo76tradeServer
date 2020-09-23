@@ -4,7 +4,8 @@
     "gameId": null,
     "texts": {
       "en": "Searing Puncturing Rocket",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=160, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957A",
@@ -15,7 +16,8 @@
     "gameId": null,
     "texts": {
       "en": "Pint-Sized Slasher Knife",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=136, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000089",
@@ -26,7 +28,8 @@
     "gameId": null,
     "texts": {
       "en": "Appalachian Thunder Pipe",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=67, -idMax=303, #text=INNR:WNAM}",
     "sid": "790000D4",
@@ -37,7 +40,8 @@
     "gameId": null,
     "texts": {
       "en": "Blackened Combat Dagger",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=135, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A73",
@@ -48,7 +52,8 @@
     "gameId": null,
     "texts": {
       "en": "Quick Maximum Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=104, -idMax=303, #text=INNR:WNAM}",
     "sid": "039541",
@@ -59,7 +64,8 @@
     "gameId": null,
     "texts": {
       "en": "Quick Maximum Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=147, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956C",
@@ -70,7 +76,8 @@
     "gameId": null,
     "texts": {
       "en": "Target Seeking Fat Man",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=270, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395C1",
@@ -81,7 +88,8 @@
     "gameId": null,
     "texts": {
       "en": "Tactical Combat Dagger",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=125, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6F",
@@ -92,7 +100,8 @@
     "gameId": null,
     "texts": {
       "en": "Radstag Hunting Knife",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=122, -idMax=138, #text=INNR:WNAM}",
     "sid": "61009F4D",
@@ -103,7 +112,8 @@
     "gameId": null,
     "texts": {
       "en": "Grelok Sorcerer Staff",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=121, -idMax=138, #text=INNR:WNAM}",
     "sid": "6100A6C8",
@@ -114,7 +124,8 @@
     "gameId": null,
     "texts": {
       "en": "Heavy Shocking Sharp",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=162, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957C",
@@ -125,7 +136,8 @@
     "gameId": null,
     "texts": {
       "en": "Electrified Serrated",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=74, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982E",
@@ -136,7 +148,8 @@
     "gameId": null,
     "texts": {
       "en": "Electrified Serrated",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=108, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D71",
@@ -147,7 +160,8 @@
     "gameId": null,
     "texts": {
       "en": "Screaming Eagle Wood",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=70, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000EB7",
@@ -158,7 +172,8 @@
     "gameId": null,
     "texts": {
       "en": "Quick High Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=105, -idMax=303, #text=INNR:WNAM}",
     "sid": "039542",
@@ -169,7 +184,8 @@
     "gameId": null,
     "texts": {
       "en": "Quick High Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=148, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956D",
@@ -180,7 +196,8 @@
     "gameId": null,
     "texts": {
       "en": "Shocking Puncturing",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=161, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957B",
@@ -191,7 +208,8 @@
     "gameId": null,
     "texts": {
       "en": "Heavy Searing Sharp",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=163, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957D",
@@ -202,7 +220,8 @@
     "gameId": null,
     "texts": {
       "en": "Calibrated Powerful",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=217, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959D",
@@ -213,7 +232,8 @@
     "gameId": null,
     "texts": {
       "en": "Clandestine Service",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=41, -idMax=303, #text=INNR:WNAM}",
     "sid": "61009814",
@@ -224,7 +244,8 @@
     "gameId": null,
     "texts": {
       "en": "Grognak Battle Mace",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=124, -idMax=138, #text=INNR:WNAM}",
     "sid": "61009BB6",
@@ -235,7 +256,8 @@
     "gameId": null,
     "texts": {
       "en": "Recoil Compensated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=86, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952F",
@@ -246,7 +268,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved Targeting",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=90, -idMax=303, #text=INNR:WNAM}",
     "sid": "039533",
@@ -257,7 +280,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved Scattered",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=91, -idMax=303, #text=INNR:WNAM}",
     "sid": "039534",
@@ -268,7 +292,8 @@
     "gameId": null,
     "texts": {
       "en": "Recoil Compensated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=140, -idMax=303, #text=INNR:WNAM}",
     "sid": "039565",
@@ -279,7 +304,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved Automatic",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=255, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B1",
@@ -290,7 +316,8 @@
     "gameId": null,
     "texts": {
       "en": "Nuka-Nuke Launcher",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=274, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395CD",
@@ -301,7 +328,8 @@
     "gameId": null,
     "texts": {
       "en": "Gold Combat Dagger",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=126, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A70",
@@ -312,7 +340,8 @@
     "gameId": null,
     "texts": {
       "en": "Summersville Fancy",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=4, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD6",
@@ -323,7 +352,8 @@
     "gameId": null,
     "texts": {
       "en": "Flatwoods Fletcher",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=29, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A44A",
@@ -334,7 +364,8 @@
     "gameId": null,
     "texts": {
       "en": "Radscorpion Venom",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=78, -idMax=303, #text=INNR:WNAM}",
     "sid": "039526",
@@ -345,7 +376,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved Charging",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=115, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954C",
@@ -356,7 +388,8 @@
     "gameId": null,
     "texts": {
       "en": "Nuka-Cola Quantum",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=155, -idMax=303, #text=INNR:WNAM}",
     "sid": "039575",
@@ -367,7 +400,8 @@
     "gameId": null,
     "texts": {
       "en": "Hardened Piercing",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=214, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959A",
@@ -378,7 +412,8 @@
     "gameId": null,
     "texts": {
       "en": "Experimental MIRV",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=269, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395C0",
@@ -389,7 +424,8 @@
     "gameId": null,
     "texts": {
       "en": "Lucille's Lullaby",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=64, -idMax=303, #text=INNR:WNAM}",
     "sid": "610091D6",
@@ -400,7 +436,8 @@
     "gameId": null,
     "texts": {
       "en": "Troubleshooter's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=2, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950B",
@@ -411,7 +448,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved Focused",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=92, -idMax=303, #text=INNR:WNAM}",
     "sid": "039535",
@@ -422,7 +460,8 @@
     "gameId": null,
     "texts": {
       "en": "Maximum Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=107, -idMax=303, #text=INNR:WNAM}",
     "sid": "039544",
@@ -433,7 +472,8 @@
     "gameId": null,
     "texts": {
       "en": "Maximum Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=150, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956F",
@@ -444,7 +484,8 @@
     "gameId": null,
     "texts": {
       "en": "Nuka-Cola Cherry",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=154, -idMax=303, #text=INNR:WNAM}",
     "sid": "039574",
@@ -455,7 +496,8 @@
     "gameId": null,
     "texts": {
       "en": "Boosted Agitated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=203, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958F",
@@ -466,7 +508,8 @@
     "gameId": null,
     "texts": {
       "en": "Troubleshooter's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=24, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F7",
@@ -477,7 +520,8 @@
     "gameId": null,
     "texts": {
       "en": "Troubleshooter's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=14, -idMax=138, #text=INNR:WNAM}",
     "sid": "039810",
@@ -488,7 +532,8 @@
     "gameId": null,
     "texts": {
       "en": "Somerset Special",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=278, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B015",
@@ -499,7 +544,8 @@
     "gameId": null,
     "texts": {
       "en": "Anti-Power Armor",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=246, -idMax=303, #text=INNR:WNAM}",
     "sid": "61005C3C",
@@ -510,7 +556,8 @@
     "gameId": null,
     "texts": {
       "en": "Deep Cave Hunter",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=68, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A553",
@@ -521,7 +568,8 @@
     "gameId": null,
     "texts": {
       "en": "Mutant Slayer's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=6, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950F",
@@ -532,7 +580,8 @@
     "gameId": null,
     "texts": {
       "en": "Mutant Slayer's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=20, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F3",
@@ -543,7 +592,8 @@
     "gameId": null,
     "texts": {
       "en": "Mutant Slayer's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=16, -idMax=138, #text=INNR:WNAM}",
     "sid": "039812",
@@ -554,7 +604,8 @@
     "gameId": null,
     "texts": {
       "en": "Scorch Killer's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=73, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624A",
@@ -565,7 +616,8 @@
     "gameId": null,
     "texts": {
       "en": "Pioneer Scout's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=36, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6B",
@@ -576,7 +628,8 @@
     "gameId": null,
     "texts": {
       "en": "Blue Camouflage",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=48, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F2",
@@ -587,7 +640,8 @@
     "gameId": null,
     "texts": {
       "en": "Jack O' Lantern",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=54, -idMax=303, #text=INNR:WNAM}",
     "sid": "4100027D",
@@ -598,7 +652,8 @@
     "gameId": null,
     "texts": {
       "en": "Screaming Eagle",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=69, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000E30",
@@ -609,7 +664,8 @@
     "gameId": null,
     "texts": {
       "en": "Screaming Eagle",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=71, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000EB8",
@@ -620,7 +676,8 @@
     "gameId": null,
     "texts": {
       "en": "White Crocodile",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=5, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD7",
@@ -631,7 +688,8 @@
     "gameId": null,
     "texts": {
       "en": "Tesla Capacitor",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=184, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007044",
@@ -642,7 +700,8 @@
     "gameId": null,
     "texts": {
       "en": "Settler Special",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=30, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A32D",
@@ -653,7 +712,8 @@
     "gameId": null,
     "texts": {
       "en": "Ghoul Slayer's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=3, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950C",
@@ -664,7 +724,8 @@
     "gameId": null,
     "texts": {
       "en": "Exterminator's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=7, -idMax=303, #text=INNR:WNAM}",
     "sid": "039510",
@@ -675,7 +736,8 @@
     "gameId": null,
     "texts": {
       "en": "Sharpshooter's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=114, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954B",
@@ -686,7 +748,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved Short",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=119, -idMax=303, #text=INNR:WNAM}",
     "sid": "039550",
@@ -697,7 +760,8 @@
     "gameId": null,
     "texts": {
       "en": "Rocket Swatter",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=258, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B4",
@@ -708,7 +772,8 @@
     "gameId": null,
     "texts": {
       "en": "Ghoul Slayer's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=21, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F4",
@@ -719,7 +784,8 @@
     "gameId": null,
     "texts": {
       "en": "Exterminator's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=22, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F5",
@@ -730,7 +796,8 @@
     "gameId": null,
     "texts": {
       "en": "Asbestos Lined",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=86, -idMax=103, #text=INNR:WNAM}",
     "sid": "039612",
@@ -741,7 +808,8 @@
     "gameId": null,
     "texts": {
       "en": "Ghoul Slayer's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=11, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980D",
@@ -752,7 +820,8 @@
     "gameId": null,
     "texts": {
       "en": "Exterminator's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=13, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980F",
@@ -763,7 +832,8 @@
     "gameId": null,
     "texts": {
       "en": "Croquet Mallet",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=132, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B00A",
@@ -774,7 +844,8 @@
     "gameId": null,
     "texts": {
       "en": "Burning Barbed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=80, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCEC",
@@ -785,7 +856,8 @@
     "gameId": null,
     "texts": {
       "en": "Armor Piercing",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=216, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F8",
@@ -796,7 +868,8 @@
     "gameId": null,
     "texts": {
       "en": "Burning Barbed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=114, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D77",
@@ -807,7 +880,8 @@
     "gameId": null,
     "texts": {
       "en": "Starlet Sniper",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=42, -idMax=303, #text=INNR:WNAM}",
     "sid": "610094FD",
@@ -818,7 +892,8 @@
     "gameId": null,
     "texts": {
       "en": "Executioner's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=19, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951C",
@@ -829,7 +904,8 @@
     "gameId": null,
     "texts": {
       "en": "High Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=108, -idMax=303, #text=INNR:WNAM}",
     "sid": "039545",
@@ -840,7 +916,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved Long",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=120, -idMax=303, #text=INNR:WNAM}",
     "sid": "039551",
@@ -851,7 +928,8 @@
     "gameId": null,
     "texts": {
       "en": "High Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=151, -idMax=303, #text=INNR:WNAM}",
     "sid": "039570",
@@ -862,7 +940,8 @@
     "gameId": null,
     "texts": {
       "en": "Triple Barrel",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=194, -idMax=303, #text=INNR:WNAM}",
     "sid": "039586",
@@ -873,7 +952,8 @@
     "gameId": null,
     "texts": {
       "en": "Boosted Fiery",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=200, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958C",
@@ -884,7 +964,8 @@
     "gameId": null,
     "texts": {
       "en": "High Capacity",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=212, -idMax=303, #text=INNR:WNAM}",
     "sid": "039598",
@@ -895,7 +976,8 @@
     "gameId": null,
     "texts": {
       "en": "Rocket Hammer",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=260, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B6",
@@ -906,7 +988,8 @@
     "gameId": null,
     "texts": {
       "en": "VATS Enhanced",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=16, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395EF",
@@ -917,7 +1000,8 @@
     "gameId": null,
     "texts": {
       "en": "Safecracker's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=25, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F8",
@@ -928,7 +1012,8 @@
     "gameId": null,
     "texts": {
       "en": "Deep Pocketed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=88, -idMax=103, #text=INNR:WNAM}",
     "sid": "039614",
@@ -939,7 +1024,8 @@
     "gameId": null,
     "texts": {
       "en": "Executioner's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=4, -idMax=138, #text=INNR:WNAM}",
     "sid": "039808",
@@ -950,7 +1036,8 @@
     "gameId": null,
     "texts": {
       "en": "Chain-wrapped",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=68, -idMax=138, #text=INNR:WNAM}",
     "sid": "039828",
@@ -961,7 +1048,8 @@
     "gameId": null,
     "texts": {
       "en": "Stealth Blade",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=77, -idMax=138, #text=INNR:WNAM}",
     "sid": "039831",
@@ -972,7 +1060,8 @@
     "gameId": null,
     "texts": {
       "en": "Tricentennial",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=65, -idMax=303, #text=INNR:WNAM}",
     "sid": "04385F",
@@ -983,7 +1072,8 @@
     "gameId": null,
     "texts": {
       "en": "Tricentennial",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=38, -idMax=138, #text=INNR:WNAM}",
     "sid": "043861",
@@ -994,7 +1084,8 @@
     "gameId": null,
     "texts": {
       "en": "Silver Lining",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=101, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857C",
@@ -1005,7 +1096,8 @@
     "gameId": null,
     "texts": {
       "en": "Black Diamond",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=129, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B008",
@@ -1016,7 +1108,8 @@
     "gameId": null,
     "texts": {
       "en": "Bunker Buster",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=277, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B014",
@@ -1027,7 +1120,8 @@
     "gameId": null,
     "texts": {
       "en": "Perfect Storm",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=282, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B019",
@@ -1038,7 +1132,8 @@
     "gameId": null,
     "texts": {
       "en": "Glass-Covered",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=83, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCF5",
@@ -1049,7 +1144,8 @@
     "gameId": null,
     "texts": {
       "en": "Service Award",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=48, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6D",
@@ -1060,7 +1156,8 @@
     "gameId": null,
     "texts": {
       "en": "Combat Dagger",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=127, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A71",
@@ -1071,7 +1168,8 @@
     "gameId": null,
     "texts": {
       "en": "Pioneer Scout",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=38, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000EF",
@@ -1082,7 +1180,8 @@
     "gameId": null,
     "texts": {
       "en": "Hot Rod Shark",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=51, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F5",
@@ -1093,7 +1192,8 @@
     "gameId": null,
     "texts": {
       "en": "Chrome Plated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=62, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000FC",
@@ -1104,7 +1204,8 @@
     "gameId": null,
     "texts": {
       "en": "Chain-wrapped",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=102, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6B",
@@ -1115,7 +1216,8 @@
     "gameId": null,
     "texts": {
       "en": "Stealth Blade",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=111, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D74",
@@ -1126,7 +1228,8 @@
     "gameId": null,
     "texts": {
       "en": "Glass-Covered",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=117, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D7A",
@@ -1137,7 +1240,8 @@
     "gameId": null,
     "texts": {
       "en": "Wavy Willards",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=3, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD5",
@@ -1148,7 +1252,8 @@
     "gameId": null,
     "texts": {
       "en": "Triple Barrel",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=247, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007046",
@@ -1159,7 +1264,8 @@
     "gameId": null,
     "texts": {
       "en": "Special Issue",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=26, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A4F0",
@@ -1170,7 +1276,8 @@
     "gameId": null,
     "texts": {
       "en": "Burning Torch",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=50, -idMax=138, #text=INNR:WNAM}",
     "sid": "6100A6B5",
@@ -1181,7 +1288,8 @@
     "gameId": null,
     "texts": {
       "en": "Suppressor's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=23, -idMax=303, #text=INNR:WNAM}",
     "sid": "039520",
@@ -1192,7 +1300,8 @@
     "gameId": null,
     "texts": {
       "en": "Night-Vision",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=84, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952D",
@@ -1203,7 +1312,8 @@
     "gameId": null,
     "texts": {
       "en": "High Powered",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=97, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953A",
@@ -1214,7 +1324,8 @@
     "gameId": null,
     "texts": {
       "en": "Glow-Sighted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=101, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953E",
@@ -1225,7 +1336,8 @@
     "gameId": null,
     "texts": {
       "en": "Comfort Grip",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=113, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954A",
@@ -1236,7 +1348,8 @@
     "gameId": null,
     "texts": {
       "en": "Crystallized",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=127, -idMax=303, #text=INNR:WNAM}",
     "sid": "039558",
@@ -1247,7 +1360,8 @@
     "gameId": null,
     "texts": {
       "en": "Night-Vision",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=138, -idMax=303, #text=INNR:WNAM}",
     "sid": "039563",
@@ -1258,7 +1372,8 @@
     "gameId": null,
     "texts": {
       "en": "Glow-Sighted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=144, -idMax=303, #text=INNR:WNAM}",
     "sid": "039569",
@@ -1269,7 +1384,8 @@
     "gameId": null,
     "texts": {
       "en": "Heavy Spiked",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=164, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957E",
@@ -1280,7 +1396,8 @@
     "gameId": null,
     "texts": {
       "en": "Long Bow Bar",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=166, -idMax=303, #text=INNR:WNAM}",
     "sid": "039580",
@@ -1291,7 +1408,8 @@
     "gameId": null,
     "texts": {
       "en": "Hair Trigger",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=226, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A6",
@@ -1302,7 +1420,8 @@
     "gameId": null,
     "texts": {
       "en": "Regenerating",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=3, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E1",
@@ -1313,7 +1432,8 @@
     "gameId": null,
     "texts": {
       "en": "Inquisitor's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=41, -idMax=103, #text=INNR:WNAM}",
     "sid": "039622",
@@ -1324,7 +1444,8 @@
     "gameId": null,
     "texts": {
       "en": "Nanofiliment",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=69, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963E",
@@ -1335,7 +1456,8 @@
     "gameId": null,
     "texts": {
       "en": "Suppressor's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=7, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980B",
@@ -1346,7 +1468,8 @@
     "gameId": null,
     "texts": {
       "en": "Never Ending",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=26, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981C",
@@ -1357,7 +1480,8 @@
     "gameId": null,
     "texts": {
       "en": "Critical .38",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=181, -idMax=303, #text=INNR:WNAM}",
     "sid": "046254",
@@ -1368,7 +1492,8 @@
     "gameId": null,
     "texts": {
       "en": "Critical .45",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=182, -idMax=303, #text=INNR:WNAM}",
     "sid": "046255",
@@ -1379,7 +1504,8 @@
     "gameId": null,
     "texts": {
       "en": "Critical .50",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=183, -idMax=303, #text=INNR:WNAM}",
     "sid": "046256",
@@ -1390,7 +1516,8 @@
     "gameId": null,
     "texts": {
       "en": "Last Bastion",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=99, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857A",
@@ -1401,7 +1528,8 @@
     "gameId": null,
     "texts": {
       "en": "Trail Warden",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=102, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857D",
@@ -1412,7 +1540,8 @@
     "gameId": null,
     "texts": {
       "en": "Civil Unrest",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=281, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B018",
@@ -1423,7 +1552,8 @@
     "gameId": null,
     "texts": {
       "en": "Black Knight",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=60, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000B89",
@@ -1434,7 +1564,8 @@
     "gameId": null,
     "texts": {
       "en": "Night-Vision",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=9, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FDA",
@@ -1445,7 +1576,8 @@
     "gameId": null,
     "texts": {
       "en": "Tesla Dynamo",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=185, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007045",
@@ -1456,7 +1588,8 @@
     "gameId": null,
     "texts": {
       "en": "Penta Barrel",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=249, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007048",
@@ -1467,7 +1600,8 @@
     "gameId": null,
     "texts": {
       "en": "Instigating",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=10, -idMax=303, #text=INNR:WNAM}",
     "sid": "039513",
@@ -1478,7 +1612,8 @@
     "gameId": null,
     "texts": {
       "en": "Berserker's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=13, -idMax=303, #text=INNR:WNAM}",
     "sid": "039516",
@@ -1489,7 +1624,8 @@
     "gameId": null,
     "texts": {
       "en": "Compensated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=88, -idMax=303, #text=INNR:WNAM}",
     "sid": "039531",
@@ -1500,7 +1636,8 @@
     "gameId": null,
     "texts": {
       "en": "Bull Barrel",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=110, -idMax=303, #text=INNR:WNAM}",
     "sid": "039547",
@@ -1511,7 +1648,8 @@
     "gameId": null,
     "texts": {
       "en": "Electrified",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=135, -idMax=303, #text=INNR:WNAM}",
     "sid": "039560",
@@ -1522,7 +1660,8 @@
     "gameId": null,
     "texts": {
       "en": "Compensated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=142, -idMax=303, #text=INNR:WNAM}",
     "sid": "039567",
@@ -1533,7 +1672,8 @@
     "gameId": null,
     "texts": {
       "en": "Electrified",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=157, -idMax=303, #text=INNR:WNAM}",
     "sid": "039577",
@@ -1544,7 +1684,8 @@
     "gameId": null,
     "texts": {
       "en": "Heavy Sharp",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=165, -idMax=303, #text=INNR:WNAM}",
     "sid": "03957F",
@@ -1555,7 +1696,8 @@
     "gameId": null,
     "texts": {
       "en": "Electrified",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=168, -idMax=303, #text=INNR:WNAM}",
     "sid": "039582",
@@ -1566,7 +1708,8 @@
     "gameId": null,
     "texts": {
       "en": "Quad Barrel",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=193, -idMax=303, #text=INNR:WNAM}",
     "sid": "039585",
@@ -1577,7 +1720,8 @@
     "gameId": null,
     "texts": {
       "en": "Overcharged",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=207, -idMax=303, #text=INNR:WNAM}",
     "sid": "039593",
@@ -1588,7 +1732,8 @@
     "gameId": null,
     "texts": {
       "en": "Three-Crank",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=208, -idMax=303, #text=INNR:WNAM}",
     "sid": "039594",
@@ -1599,7 +1744,8 @@
     "gameId": null,
     "texts": {
       "en": "Life Saving",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=6, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E4",
@@ -1610,7 +1756,8 @@
     "gameId": null,
     "texts": {
       "en": "Rad Powered",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=9, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E7",
@@ -1621,7 +1768,8 @@
     "gameId": null,
     "texts": {
       "en": "Irradiating",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=76, -idMax=103, #text=INNR:WNAM}",
     "sid": "039608",
@@ -1632,7 +1780,8 @@
     "gameId": null,
     "texts": {
       "en": "Lightweight",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=80, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960C",
@@ -1643,7 +1792,8 @@
     "gameId": null,
     "texts": {
       "en": "BioCommMesh",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=82, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960E",
@@ -1654,7 +1804,8 @@
     "gameId": null,
     "texts": {
       "en": "Aerodynamic",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=89, -idMax=103, #text=INNR:WNAM}",
     "sid": "039615",
@@ -1665,7 +1816,8 @@
     "gameId": null,
     "texts": {
       "en": "Ultra-Light",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=91, -idMax=103, #text=INNR:WNAM}",
     "sid": "039617",
@@ -1676,7 +1828,8 @@
     "gameId": null,
     "texts": {
       "en": "Microcarbon",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=68, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963D",
@@ -1687,7 +1840,8 @@
     "gameId": null,
     "texts": {
       "en": "Penetrating",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=10, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980C",
@@ -1698,7 +1852,8 @@
     "gameId": null,
     "texts": {
       "en": "Instigating",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=18, -idMax=138, #text=INNR:WNAM}",
     "sid": "039814",
@@ -1709,7 +1864,8 @@
     "gameId": null,
     "texts": {
       "en": "Berserker's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=21, -idMax=138, #text=INNR:WNAM}",
     "sid": "039817",
@@ -1720,7 +1876,8 @@
     "gameId": null,
     "texts": {
       "en": "Electrified",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=76, -idMax=138, #text=INNR:WNAM}",
     "sid": "039830",
@@ -1731,7 +1888,8 @@
     "gameId": null,
     "texts": {
       "en": "Precise .38",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=175, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624E",
@@ -1742,7 +1900,8 @@
     "gameId": null,
     "texts": {
       "en": "Precise .45",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=176, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624F",
@@ -1753,7 +1912,8 @@
     "gameId": null,
     "texts": {
       "en": "Precise .50",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=177, -idMax=303, #text=INNR:WNAM}",
     "sid": "046250",
@@ -1764,7 +1924,8 @@
     "gameId": null,
     "texts": {
       "en": "Refined .38",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=178, -idMax=303, #text=INNR:WNAM}",
     "sid": "046251",
@@ -1775,7 +1936,8 @@
     "gameId": null,
     "texts": {
       "en": "Refined .45",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=179, -idMax=303, #text=INNR:WNAM}",
     "sid": "046252",
@@ -1786,7 +1948,8 @@
     "gameId": null,
     "texts": {
       "en": "Refined .50",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=180, -idMax=303, #text=INNR:WNAM}",
     "sid": "046253",
@@ -1797,7 +1960,8 @@
     "gameId": null,
     "texts": {
       "en": "Daisycutter",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=280, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B017",
@@ -1808,7 +1972,8 @@
     "gameId": null,
     "texts": {
       "en": "Responder's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=35, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6A",
@@ -1819,7 +1984,8 @@
     "gameId": null,
     "texts": {
       "en": "Responder's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=39, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F0",
@@ -1830,7 +1996,8 @@
     "gameId": null,
     "texts": {
       "en": "Untarnished",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=59, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000FA",
@@ -1841,7 +2008,8 @@
     "gameId": null,
     "texts": {
       "en": "Electrified",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=110, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D73",
@@ -1852,7 +2020,8 @@
     "gameId": null,
     "texts": {
       "en": "Blood Eagle",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=30, -idMax=138, #text=INNR:WNAM}",
     "sid": "4100119E",
@@ -1863,7 +2032,8 @@
     "gameId": null,
     "texts": {
       "en": "Candy-Claws",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=137, -idMax=138, #text=INNR:WNAM}",
     "sid": "610091AA",
@@ -1874,7 +2044,8 @@
     "gameId": null,
     "texts": {
       "en": "Matte Black",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=55, -idMax=303, #text=INNR:WNAM}",
     "sid": "610091FF",
@@ -1885,7 +2056,8 @@
     "gameId": null,
     "texts": {
       "en": "Blood Eagle",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=57, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100982F",
@@ -1896,7 +2068,8 @@
     "gameId": null,
     "texts": {
       "en": "Dark Matter",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=27, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A4D7",
@@ -1907,7 +2080,8 @@
     "gameId": null,
     "texts": {
       "en": "Concussive",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=0, -idMax=303, #text=INNR:WNAM}",
     "sid": "039509",
@@ -1918,7 +2092,8 @@
     "gameId": null,
     "texts": {
       "en": "Assassin's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=4, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950D",
@@ -1929,7 +2104,8 @@
     "gameId": null,
     "texts": {
       "en": "Vampire's ",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=20, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951D",
@@ -1940,7 +2116,8 @@
     "gameId": null,
     "texts": {
       "en": "Anti-armor",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=22, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951F",
@@ -1951,7 +2128,8 @@
     "gameId": null,
     "texts": {
       "en": "Endangerol",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=77, -idMax=303, #text=INNR:WNAM}",
     "sid": "039525",
@@ -1962,7 +2140,8 @@
     "gameId": null,
     "texts": {
       "en": "Suppressed",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=85, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952E",
@@ -1973,7 +2152,8 @@
     "gameId": null,
     "texts": {
       "en": "Marksman's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=87, -idMax=303, #text=INNR:WNAM}",
     "sid": "039530",
@@ -1984,7 +2164,8 @@
     "gameId": null,
     "texts": {
       "en": "High Speed",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=96, -idMax=303, #text=INNR:WNAM}",
     "sid": "039539",
@@ -1995,7 +2176,8 @@
     "gameId": null,
     "texts": {
       "en": "Compressed",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=132, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955D",
@@ -2006,7 +2188,8 @@
     "gameId": null,
     "texts": {
       "en": "Vaporizing",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=133, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955E",
@@ -2017,7 +2200,8 @@
     "gameId": null,
     "texts": {
       "en": "Suppressed",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=139, -idMax=303, #text=INNR:WNAM}",
     "sid": "039564",
@@ -2028,7 +2212,8 @@
     "gameId": null,
     "texts": {
       "en": "Marksman's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=141, -idMax=303, #text=INNR:WNAM}",
     "sid": "039566",
@@ -2039,7 +2224,8 @@
     "gameId": null,
     "texts": {
       "en": "Incendiary",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=199, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958B",
@@ -2050,7 +2236,8 @@
     "gameId": null,
     "texts": {
       "en": "Four-Crank",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=209, -idMax=303, #text=INNR:WNAM}",
     "sid": "039595",
@@ -2061,7 +2248,8 @@
     "gameId": null,
     "texts": {
       "en": "Five-Crank",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=210, -idMax=303, #text=INNR:WNAM}",
     "sid": "039596",
@@ -2072,7 +2260,8 @@
     "gameId": null,
     "texts": {
       "en": "Calibrated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=219, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959F",
@@ -2083,7 +2272,8 @@
     "gameId": null,
     "texts": {
       "en": "Rocket Bat",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=259, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B5",
@@ -2094,7 +2284,8 @@
     "gameId": null,
     "texts": {
       "en": "Vanguard's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=2, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E0",
@@ -2105,7 +2296,8 @@
     "gameId": null,
     "texts": {
       "en": "Weightless",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=7, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E5",
@@ -2116,7 +2308,8 @@
     "gameId": null,
     "texts": {
       "en": "Unyielding",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=8, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E6",
@@ -2127,7 +2320,8 @@
     "gameId": null,
     "texts": {
       "en": "Incendiary",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=10, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E8",
@@ -2138,7 +2332,8 @@
     "gameId": null,
     "texts": {
       "en": "Bolstering",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=14, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395ED",
@@ -2149,7 +2344,8 @@
     "gameId": null,
     "texts": {
       "en": "Poisoner's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=17, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F0",
@@ -2160,7 +2356,8 @@
     "gameId": null,
     "texts": {
       "en": "Cavalier's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=27, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FA",
@@ -2171,7 +2368,8 @@
     "gameId": null,
     "texts": {
       "en": "Sentinel's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=30, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FD",
@@ -2182,7 +2380,8 @@
     "gameId": null,
     "texts": {
       "en": "Assassin's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=32, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FF",
@@ -2193,7 +2392,8 @@
     "gameId": null,
     "texts": {
       "en": "Fortifying",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=33, -idMax=103, #text=INNR:WNAM}",
     "sid": "039600",
@@ -2204,7 +2404,8 @@
     "gameId": null,
     "texts": {
       "en": "Sprinter's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=35, -idMax=103, #text=INNR:WNAM}",
     "sid": "039602",
@@ -2215,7 +2416,8 @@
     "gameId": null,
     "texts": {
       "en": "Custom Fit",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=90, -idMax=103, #text=INNR:WNAM}",
     "sid": "039616",
@@ -2226,7 +2428,8 @@
     "gameId": null,
     "texts": {
       "en": "Buttressed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=45, -idMax=103, #text=INNR:WNAM}",
     "sid": "039626",
@@ -2237,7 +2440,8 @@
     "gameId": null,
     "texts": {
       "en": "Reinforced",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=48, -idMax=103, #text=INNR:WNAM}",
     "sid": "039629",
@@ -2248,7 +2452,8 @@
     "gameId": null,
     "texts": {
       "en": "Fiberglass",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=49, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962A",
@@ -2259,7 +2464,8 @@
     "gameId": null,
     "texts": {
       "en": "Buttressed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=65, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963A",
@@ -2270,7 +2476,8 @@
     "gameId": null,
     "texts": {
       "en": "Concussive",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=1, -idMax=138, #text=INNR:WNAM}",
     "sid": "039805",
@@ -2281,7 +2488,8 @@
     "gameId": null,
     "texts": {
       "en": "Anti-armor",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=6, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980A",
@@ -2292,7 +2500,8 @@
     "gameId": null,
     "texts": {
       "en": "Assassin's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=12, -idMax=138, #text=INNR:WNAM}",
     "sid": "03980E",
@@ -2303,7 +2512,8 @@
     "gameId": null,
     "texts": {
       "en": "Lead Lined",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=63, -idMax=138, #text=INNR:WNAM}",
     "sid": "039823",
@@ -2314,7 +2524,8 @@
     "gameId": null,
     "texts": {
       "en": "Puncturing",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=66, -idMax=138, #text=INNR:WNAM}",
     "sid": "039826",
@@ -2325,7 +2536,8 @@
     "gameId": null,
     "texts": {
       "en": "Gamma Wave",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=244, -idMax=303, #text=INNR:WNAM}",
     "sid": "046265",
@@ -2336,7 +2548,8 @@
     "gameId": null,
     "texts": {
       "en": "Stand Fast",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=100, -idMax=103, #text=INNR:WNAM}",
     "sid": "04857B",
@@ -2347,7 +2560,8 @@
     "gameId": null,
     "texts": {
       "en": "Slay Bells",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=131, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B009",
@@ -2358,7 +2572,8 @@
     "gameId": null,
     "texts": {
       "en": "Candy Cane",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=133, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B00B",
@@ -2369,7 +2584,8 @@
     "gameId": null,
     "texts": {
       "en": "Wiffle Bat",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=134, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A72",
@@ -2380,7 +2596,8 @@
     "gameId": null,
     "texts": {
       "en": "Free State",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=40, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F1",
@@ -2391,7 +2608,8 @@
     "gameId": null,
     "texts": {
       "en": "Lead Lined",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=97, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D66",
@@ -2402,7 +2620,8 @@
     "gameId": null,
     "texts": {
       "en": "Puncturing",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=100, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D69",
@@ -2413,7 +2632,8 @@
     "gameId": null,
     "texts": {
       "en": "Survivor's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=31, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D8D",
@@ -2424,7 +2644,8 @@
     "gameId": null,
     "texts": {
       "en": "Survivor's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=31, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000D8E",
@@ -2435,7 +2656,8 @@
     "gameId": null,
     "texts": {
       "en": "Camouflage",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=66, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000D8F",
@@ -2446,7 +2668,8 @@
     "gameId": null,
     "texts": {
       "en": "Wood Grain",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=2, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD4",
@@ -2457,7 +2680,8 @@
     "gameId": null,
     "texts": {
       "en": "Hex Barrel",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=248, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007047",
@@ -2468,7 +2692,8 @@
     "gameId": null,
     "texts": {
       "en": "Nocturnal",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=9, -idMax=303, #text=INNR:WNAM}",
     "sid": "039512",
@@ -2479,7 +2704,8 @@
     "gameId": null,
     "texts": {
       "en": "Stalker's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=12, -idMax=303, #text=INNR:WNAM}",
     "sid": "039515",
@@ -2490,7 +2716,8 @@
     "gameId": null,
     "texts": {
       "en": "Targeting",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=83, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952C",
@@ -2501,7 +2728,8 @@
     "gameId": null,
     "texts": {
       "en": "Targeting",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=93, -idMax=303, #text=INNR:WNAM}",
     "sid": "039536",
@@ -2512,7 +2740,8 @@
     "gameId": null,
     "texts": {
       "en": "Scattered",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=94, -idMax=303, #text=INNR:WNAM}",
     "sid": "039537",
@@ -2523,7 +2752,8 @@
     "gameId": null,
     "texts": {
       "en": "Bayoneted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=109, -idMax=303, #text=INNR:WNAM}",
     "sid": "039546",
@@ -2534,7 +2764,8 @@
     "gameId": null,
     "texts": {
       "en": "Snubnosed",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=111, -idMax=303, #text=INNR:WNAM}",
     "sid": "039548",
@@ -2545,7 +2776,8 @@
     "gameId": null,
     "texts": {
       "en": "Sawed-Off",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=112, -idMax=303, #text=INNR:WNAM}",
     "sid": "039549",
@@ -2556,7 +2788,8 @@
     "gameId": null,
     "texts": {
       "en": "Bayoneted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=152, -idMax=303, #text=INNR:WNAM}",
     "sid": "039571",
@@ -2567,7 +2800,8 @@
     "gameId": null,
     "texts": {
       "en": "Nuka-Cola",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=153, -idMax=303, #text=INNR:WNAM}",
     "sid": "039573",
@@ -2578,7 +2812,8 @@
     "gameId": null,
     "texts": {
       "en": "Shredding",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=195, -idMax=303, #text=INNR:WNAM}",
     "sid": "039587",
@@ -2589,7 +2824,8 @@
     "gameId": null,
     "texts": {
       "en": "Repeating",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=198, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958A",
@@ -2600,7 +2836,8 @@
     "gameId": null,
     "texts": {
       "en": "Maximized",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=206, -idMax=303, #text=INNR:WNAM}",
     "sid": "039592",
@@ -2611,7 +2848,8 @@
     "gameId": null,
     "texts": {
       "en": "Six-Crank",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=211, -idMax=303, #text=INNR:WNAM}",
     "sid": "039597",
@@ -2622,7 +2860,8 @@
     "gameId": null,
     "texts": {
       "en": "Converted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=224, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A4",
@@ -2633,7 +2872,8 @@
     "gameId": null,
     "texts": {
       "en": "Automatic",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=254, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B0",
@@ -2644,7 +2884,8 @@
     "gameId": null,
     "texts": {
       "en": "Automatic",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=256, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B2",
@@ -2655,7 +2896,8 @@
     "gameId": null,
     "texts": {
       "en": "Automatic",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=257, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395B3",
@@ -2666,7 +2908,8 @@
     "gameId": null,
     "texts": {
       "en": "Automatic",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=261, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395BB",
@@ -2677,7 +2920,8 @@
     "gameId": null,
     "texts": {
       "en": "Nocturnal",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=1, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395DF",
@@ -2688,7 +2932,8 @@
     "gameId": null,
     "texts": {
       "en": "Auto Stim",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=13, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395EB",
@@ -2699,7 +2944,8 @@
     "gameId": null,
     "texts": {
       "en": "Chameleon",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=26, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F9",
@@ -2710,7 +2956,8 @@
     "gameId": null,
     "texts": {
       "en": "Acrobat's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=29, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FC",
@@ -2721,7 +2968,8 @@
     "gameId": null,
     "texts": {
       "en": "Duelist's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=31, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FE",
@@ -2732,7 +2980,8 @@
     "gameId": null,
     "texts": {
       "en": "Fortified",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=72, -idMax=103, #text=INNR:WNAM}",
     "sid": "039604",
@@ -2743,7 +2992,8 @@
     "gameId": null,
     "texts": {
       "en": "Insulated",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=77, -idMax=103, #text=INNR:WNAM}",
     "sid": "039609",
@@ -2754,7 +3004,8 @@
     "gameId": null,
     "texts": {
       "en": "Brawler's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=85, -idMax=103, #text=INNR:WNAM}",
     "sid": "039611",
@@ -2765,7 +3016,8 @@
     "gameId": null,
     "texts": {
       "en": "Stablized",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=87, -idMax=103, #text=INNR:WNAM}",
     "sid": "039613",
@@ -2776,7 +3028,8 @@
     "gameId": null,
     "texts": {
       "en": "Pneumatic",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=93, -idMax=103, #text=INNR:WNAM}",
     "sid": "039619",
@@ -2787,7 +3040,8 @@
     "gameId": null,
     "texts": {
       "en": "Laminated",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=66, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963B",
@@ -2798,7 +3052,8 @@
     "gameId": null,
     "texts": {
       "en": "Vampire's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=5, -idMax=138, #text=INNR:WNAM}",
     "sid": "039809",
@@ -2809,7 +3064,8 @@
     "gameId": null,
     "texts": {
       "en": "Stalker's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=19, -idMax=138, #text=INNR:WNAM}",
     "sid": "039815",
@@ -2820,7 +3076,8 @@
     "gameId": null,
     "texts": {
       "en": "Nocturnal",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=24, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981A",
@@ -2831,7 +3088,8 @@
     "gameId": null,
     "texts": {
       "en": "Hasty .38",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=172, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624B",
@@ -2842,7 +3100,8 @@
     "gameId": null,
     "texts": {
       "en": "Hasty .45",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=173, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624C",
@@ -2853,7 +3112,8 @@
     "gameId": null,
     "texts": {
       "en": "Hasty .50",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=174, -idMax=303, #text=INNR:WNAM}",
     "sid": "04624D",
@@ -2864,7 +3124,8 @@
     "gameId": null,
     "texts": {
       "en": "Steadfast",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=237, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625E",
@@ -2875,7 +3136,8 @@
     "gameId": null,
     "texts": {
       "en": "Beta Wave",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=245, -idMax=303, #text=INNR:WNAM}",
     "sid": "046266",
@@ -2886,7 +3148,8 @@
     "gameId": null,
     "texts": {
       "en": "Vault-Tec",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=34, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B00C",
@@ -2897,7 +3160,8 @@
     "gameId": null,
     "texts": {
       "en": "Frostbite",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=63, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B011",
@@ -2908,7 +3172,8 @@
     "gameId": null,
     "texts": {
       "en": "Pyrolyzer",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=279, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B016",
@@ -2919,7 +3184,8 @@
     "gameId": null,
     "texts": {
       "en": "Gardening",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=0, -idMax=11, #text=INNR:WNAM}",
     "sid": "05386C",
@@ -2930,7 +3196,8 @@
     "gameId": null,
     "texts": {
       "en": "Atom Cats",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=50, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F4",
@@ -2941,7 +3208,8 @@
     "gameId": null,
     "texts": {
       "en": "Blackbird",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=47, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000104",
@@ -2952,7 +3220,8 @@
     "gameId": null,
     "texts": {
       "en": "Targeting",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=10, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FDB",
@@ -2963,7 +3232,8 @@
     "gameId": null,
     "texts": {
       "en": "Communist",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=45, -idMax=303, #text=INNR:WNAM}",
     "sid": "61003F6B",
@@ -2974,7 +3244,8 @@
     "gameId": null,
     "texts": {
       "en": "Blackbird",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=9, -idMax=138, #text=INNR:WNAM}",
     "sid": "61003F6D",
@@ -2985,7 +3256,8 @@
     "gameId": null,
     "texts": {
       "en": "Explosive",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=188, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F22",
@@ -2996,7 +3268,8 @@
     "gameId": null,
     "texts": {
       "en": "Fireworks",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=189, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F23",
@@ -3007,7 +3280,8 @@
     "gameId": null,
     "texts": {
       "en": "Flintlock",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=56, -idMax=303, #text=INNR:WNAM}",
     "sid": "61009643",
@@ -3018,7 +3292,8 @@
     "gameId": null,
     "texts": {
       "en": "Mutant's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=1, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950A",
@@ -3029,7 +3304,8 @@
     "gameId": null,
     "texts": {
       "en": "Zealot's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=5, -idMax=303, #text=INNR:WNAM}",
     "sid": "03950E",
@@ -3040,7 +3316,8 @@
     "gameId": null,
     "texts": {
       "en": "Hunter's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=8, -idMax=303, #text=INNR:WNAM}",
     "sid": "039511",
@@ -3051,7 +3328,8 @@
     "gameId": null,
     "texts": {
       "en": "Junkie's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=15, -idMax=303, #text=INNR:WNAM}",
     "sid": "039518",
@@ -3062,7 +3340,8 @@
     "gameId": null,
     "texts": {
       "en": "Bloodied",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=17, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951A",
@@ -3073,7 +3352,8 @@
     "gameId": null,
     "texts": {
       "en": "Two Shot",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=18, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951B",
@@ -3084,7 +3364,8 @@
     "gameId": null,
     "texts": {
       "en": "Bleedout",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=76, -idMax=303, #text=INNR:WNAM}",
     "sid": "039523",
@@ -3095,7 +3376,8 @@
     "gameId": null,
     "texts": {
       "en": "Tactical",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=102, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953F",
@@ -3106,7 +3388,8 @@
     "gameId": null,
     "texts": {
       "en": "Charging",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=116, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954D",
@@ -3117,7 +3400,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=117, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954E",
@@ -3128,7 +3412,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=118, -idMax=303, #text=INNR:WNAM}",
     "sid": "03954F",
@@ -3139,7 +3424,8 @@
     "gameId": null,
     "texts": {
       "en": "Extended",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=131, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955C",
@@ -3150,7 +3436,8 @@
     "gameId": null,
     "texts": {
       "en": "Tactical",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=145, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956A",
@@ -3161,7 +3448,8 @@
     "gameId": null,
     "texts": {
       "en": "Dual Bar",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=167, -idMax=303, #text=INNR:WNAM}",
     "sid": "039581",
@@ -3172,7 +3460,8 @@
     "gameId": null,
     "texts": {
       "en": "Agitated",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=204, -idMax=303, #text=INNR:WNAM}",
     "sid": "039590",
@@ -3183,7 +3472,8 @@
     "gameId": null,
     "texts": {
       "en": "Hardened",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=215, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959B",
@@ -3194,7 +3484,8 @@
     "gameId": null,
     "texts": {
       "en": "Powerful",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=218, -idMax=303, #text=INNR:WNAM}",
     "sid": "03959E",
@@ -3205,7 +3496,8 @@
     "gameId": null,
     "texts": {
       "en": "Advanced",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=225, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A5",
@@ -3216,7 +3508,8 @@
     "gameId": null,
     "texts": {
       "en": "Mutant's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=4, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E2",
@@ -3227,7 +3520,8 @@
     "gameId": null,
     "texts": {
       "en": "Zealot's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=5, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E3",
@@ -3238,7 +3532,8 @@
     "gameId": null,
     "texts": {
       "en": "Cloaking",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=11, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395E9",
@@ -3249,7 +3544,8 @@
     "gameId": null,
     "texts": {
       "en": "Martyr's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=18, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F1",
@@ -3260,7 +3556,8 @@
     "gameId": null,
     "texts": {
       "en": "Hunter's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=23, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F6",
@@ -3271,7 +3568,8 @@
     "gameId": null,
     "texts": {
       "en": "Shocking",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=75, -idMax=103, #text=INNR:WNAM}",
     "sid": "039607",
@@ -3282,7 +3580,8 @@
     "gameId": null,
     "texts": {
       "en": "Pocketed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=78, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960A",
@@ -3293,7 +3592,8 @@
     "gameId": null,
     "texts": {
       "en": "Weighted",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=94, -idMax=103, #text=INNR:WNAM}",
     "sid": "03961A",
@@ -3304,7 +3604,8 @@
     "gameId": null,
     "texts": {
       "en": "Improved",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=39, -idMax=103, #text=INNR:WNAM}",
     "sid": "039620",
@@ -3315,7 +3616,8 @@
     "gameId": null,
     "texts": {
       "en": "Tempered",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=43, -idMax=103, #text=INNR:WNAM}",
     "sid": "039624",
@@ -3326,7 +3628,8 @@
     "gameId": null,
     "texts": {
       "en": "Hardened",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=44, -idMax=103, #text=INNR:WNAM}",
     "sid": "039625",
@@ -3337,7 +3640,8 @@
     "gameId": null,
     "texts": {
       "en": "Zealot's",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=46, -idMax=103, #text=INNR:WNAM}",
     "sid": "039627",
@@ -3348,7 +3652,8 @@
     "gameId": null,
     "texts": {
       "en": "Shadowed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=47, -idMax=103, #text=INNR:WNAM}",
     "sid": "039628",
@@ -3359,7 +3664,8 @@
     "gameId": null,
     "texts": {
       "en": "Shadowed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=54, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962F",
@@ -3370,7 +3676,8 @@
     "gameId": null,
     "texts": {
       "en": "Enameled",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=58, -idMax=103, #text=INNR:WNAM}",
     "sid": "039633",
@@ -3381,7 +3688,8 @@
     "gameId": null,
     "texts": {
       "en": "Shadowed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=59, -idMax=103, #text=INNR:WNAM}",
     "sid": "039634",
@@ -3392,7 +3700,8 @@
     "gameId": null,
     "texts": {
       "en": "Polished",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=61, -idMax=103, #text=INNR:WNAM}",
     "sid": "039636",
@@ -3403,7 +3712,8 @@
     "gameId": null,
     "texts": {
       "en": "Tempered",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=63, -idMax=103, #text=INNR:WNAM}",
     "sid": "039638",
@@ -3414,7 +3724,8 @@
     "gameId": null,
     "texts": {
       "en": "Hardened",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=64, -idMax=103, #text=INNR:WNAM}",
     "sid": "039639",
@@ -3425,7 +3736,8 @@
     "gameId": null,
     "texts": {
       "en": "Mutant's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=2, -idMax=138, #text=INNR:WNAM}",
     "sid": "039806",
@@ -3436,7 +3748,8 @@
     "gameId": null,
     "texts": {
       "en": "Zealot's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=3, -idMax=138, #text=INNR:WNAM}",
     "sid": "039807",
@@ -3447,7 +3760,8 @@
     "gameId": null,
     "texts": {
       "en": "Hunter's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=15, -idMax=138, #text=INNR:WNAM}",
     "sid": "039811",
@@ -3458,7 +3772,8 @@
     "gameId": null,
     "texts": {
       "en": "Bloodied",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=22, -idMax=138, #text=INNR:WNAM}",
     "sid": "039818",
@@ -3469,7 +3784,8 @@
     "gameId": null,
     "texts": {
       "en": "Junkie's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=23, -idMax=138, #text=INNR:WNAM}",
     "sid": "039819",
@@ -3480,7 +3796,8 @@
     "gameId": null,
     "texts": {
       "en": "Two Shot",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=25, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981B",
@@ -3491,7 +3808,8 @@
     "gameId": null,
     "texts": {
       "en": "Security",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=59, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981F",
@@ -3502,7 +3820,8 @@
     "gameId": null,
     "texts": {
       "en": "Extended",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=61, -idMax=138, #text=INNR:WNAM}",
     "sid": "039821",
@@ -3513,7 +3832,8 @@
     "gameId": null,
     "texts": {
       "en": "Weighted",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=71, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982B",
@@ -3524,7 +3844,8 @@
     "gameId": null,
     "texts": {
       "en": "Stunning",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=75, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982F",
@@ -3535,7 +3856,8 @@
     "gameId": null,
     "texts": {
       "en": "Serrated",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=78, -idMax=138, #text=INNR:WNAM}",
     "sid": "039832",
@@ -3546,7 +3868,8 @@
     "gameId": null,
     "texts": {
       "en": "Mahogany",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=42, -idMax=138, #text=INNR:WNAM}",
     "sid": "039837",
@@ -3557,7 +3880,8 @@
     "gameId": null,
     "texts": {
       "en": "Aluminum",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=45, -idMax=138, #text=INNR:WNAM}",
     "sid": "03983A",
@@ -3568,7 +3892,8 @@
     "gameId": null,
     "texts": {
       "en": "Shrouded",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=98, -idMax=103, #text=INNR:WNAM}",
     "sid": "0444E1",
@@ -3579,7 +3904,8 @@
     "gameId": null,
     "texts": {
       "en": "Vigorous",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=242, -idMax=303, #text=INNR:WNAM}",
     "sid": "046263",
@@ -3590,7 +3916,8 @@
     "gameId": null,
     "texts": {
       "en": "Critical",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=243, -idMax=303, #text=INNR:WNAM}",
     "sid": "046264",
@@ -3601,7 +3928,8 @@
     "gameId": null,
     "texts": {
       "en": "All Star",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=28, -idMax=138, #text=INNR:WNAM}",
     "sid": "04700F",
@@ -3612,7 +3940,8 @@
     "gameId": null,
     "texts": {
       "en": "All Rise",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=128, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B007",
@@ -3623,7 +3952,8 @@
     "gameId": null,
     "texts": {
       "en": "Inventor",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=37, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B00D",
@@ -3634,7 +3964,8 @@
     "gameId": null,
     "texts": {
       "en": "Poisoned",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=56, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCEB",
@@ -3645,7 +3976,8 @@
     "gameId": null,
     "texts": {
       "en": "Survival",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=49, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6E",
@@ -3656,7 +3988,8 @@
     "gameId": null,
     "texts": {
       "en": "Poisoned",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=90, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D5F",
@@ -3667,7 +4000,8 @@
     "gameId": null,
     "texts": {
       "en": "Security",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=93, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D62",
@@ -3678,7 +4012,8 @@
     "gameId": null,
     "texts": {
       "en": "Extended",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=95, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D64",
@@ -3689,7 +4024,8 @@
     "gameId": null,
     "texts": {
       "en": "Weighted",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=105, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6E",
@@ -3700,7 +4036,8 @@
     "gameId": null,
     "texts": {
       "en": "Stunning",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=109, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D72",
@@ -3711,7 +4048,8 @@
     "gameId": null,
     "texts": {
       "en": "Serrated",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=112, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D75",
@@ -3722,7 +4060,8 @@
     "gameId": null,
     "texts": {
       "en": "Jet Pack",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=71, -idMax=103, #text=INNR:WNAM}",
     "sid": "6100696E",
@@ -3733,7 +4072,8 @@
     "gameId": null,
     "texts": {
       "en": "Poisoned",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=190, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F24",
@@ -3744,7 +4084,8 @@
     "gameId": null,
     "texts": {
       "en": "Furious",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=11, -idMax=303, #text=INNR:WNAM}",
     "sid": "039514",
@@ -3755,7 +4096,8 @@
     "gameId": null,
     "texts": {
       "en": "Medic's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=14, -idMax=303, #text=INNR:WNAM}",
     "sid": "039517",
@@ -3766,7 +4108,8 @@
     "gameId": null,
     "texts": {
       "en": "Medic's",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=21, -idMax=303, #text=INNR:WNAM}",
     "sid": "03951E",
@@ -3777,7 +4120,8 @@
     "gameId": null,
     "texts": {
       "en": "Flaming",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=79, -idMax=303, #text=INNR:WNAM}",
     "sid": "039528",
@@ -3788,7 +4132,8 @@
     "gameId": null,
     "texts": {
       "en": "Bow Bar",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=80, -idMax=303, #text=INNR:WNAM}",
     "sid": "039529",
@@ -3799,7 +4144,8 @@
     "gameId": null,
     "texts": {
       "en": "Muzzled",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=89, -idMax=303, #text=INNR:WNAM}",
     "sid": "039532",
@@ -3810,7 +4156,8 @@
     "gameId": null,
     "texts": {
       "en": "Focused",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=95, -idMax=303, #text=INNR:WNAM}",
     "sid": "039538",
@@ -3821,7 +4168,8 @@
     "gameId": null,
     "texts": {
       "en": "Sighted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=103, -idMax=303, #text=INNR:WNAM}",
     "sid": "039540",
@@ -3832,7 +4180,8 @@
     "gameId": null,
     "texts": {
       "en": "Muzzled",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=143, -idMax=303, #text=INNR:WNAM}",
     "sid": "039568",
@@ -3843,7 +4192,8 @@
     "gameId": null,
     "texts": {
       "en": "Sighted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=146, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956B",
@@ -3854,7 +4204,8 @@
     "gameId": null,
     "texts": {
       "en": "Flaming",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=158, -idMax=303, #text=INNR:WNAM}",
     "sid": "039578",
@@ -3865,7 +4216,8 @@
     "gameId": null,
     "texts": {
       "en": "Flaming",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=169, -idMax=303, #text=INNR:WNAM}",
     "sid": "039583",
@@ -3876,7 +4228,8 @@
     "gameId": null,
     "texts": {
       "en": "Excited",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=202, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958E",
@@ -3887,7 +4240,8 @@
     "gameId": null,
     "texts": {
       "en": "Boosted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=205, -idMax=303, #text=INNR:WNAM}",
     "sid": "039591",
@@ -3898,7 +4252,8 @@
     "gameId": null,
     "texts": {
       "en": "Painted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=32, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395AE",
@@ -3909,7 +4264,8 @@
     "gameId": null,
     "texts": {
       "en": "Thrower",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=291, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395D2",
@@ -3920,7 +4276,8 @@
     "gameId": null,
     "texts": {
       "en": "Powered",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=28, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395FB",
@@ -3931,7 +4288,8 @@
     "gameId": null,
     "texts": {
       "en": "Cunning",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=34, -idMax=103, #text=INNR:WNAM}",
     "sid": "039601",
@@ -3942,7 +4300,8 @@
     "gameId": null,
     "texts": {
       "en": "Muffled",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=81, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960D",
@@ -3953,7 +4312,8 @@
     "gameId": null,
     "texts": {
       "en": "Polymer",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=50, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962B",
@@ -3964,7 +4324,8 @@
     "gameId": null,
     "texts": {
       "en": "Treated",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=55, -idMax=103, #text=INNR:WNAM}",
     "sid": "039630",
@@ -3975,7 +4336,8 @@
     "gameId": null,
     "texts": {
       "en": "Studded",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=56, -idMax=103, #text=INNR:WNAM}",
     "sid": "039631",
@@ -3986,7 +4348,8 @@
     "gameId": null,
     "texts": {
       "en": "Painted",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=57, -idMax=103, #text=INNR:WNAM}",
     "sid": "039632",
@@ -3997,7 +4360,8 @@
     "gameId": null,
     "texts": {
       "en": "Alloyed",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=60, -idMax=103, #text=INNR:WNAM}",
     "sid": "039635",
@@ -4008,7 +4372,8 @@
     "gameId": null,
     "texts": {
       "en": "Furious",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=17, -idMax=138, #text=INNR:WNAM}",
     "sid": "039813",
@@ -4019,7 +4384,8 @@
     "gameId": null,
     "texts": {
       "en": "Medic's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=20, -idMax=138, #text=INNR:WNAM}",
     "sid": "039816",
@@ -4030,7 +4396,8 @@
     "gameId": null,
     "texts": {
       "en": "Searing",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=79, -idMax=138, #text=INNR:WNAM}",
     "sid": "039833",
@@ -4041,7 +4408,8 @@
     "gameId": null,
     "texts": {
       "en": "Swatter",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=130, -idMax=138, #text=INNR:WNAM}",
     "sid": "03983C",
@@ -4052,7 +4420,8 @@
     "gameId": null,
     "texts": {
       "en": "Refined",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=192, -idMax=303, #text=INNR:WNAM}",
     "sid": "046257",
@@ -4063,7 +4432,8 @@
     "gameId": null,
     "texts": {
       "en": "Focused",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=232, -idMax=303, #text=INNR:WNAM}",
     "sid": "046259",
@@ -4074,7 +4444,8 @@
     "gameId": null,
     "texts": {
       "en": "Tweaked",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=240, -idMax=303, #text=INNR:WNAM}",
     "sid": "046261",
@@ -4085,7 +4456,8 @@
     "gameId": null,
     "texts": {
       "en": "Vicious",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=241, -idMax=303, #text=INNR:WNAM}",
     "sid": "046262",
@@ -4096,7 +4468,8 @@
     "gameId": null,
     "texts": {
       "en": "Mothman",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=6, -idMax=11, #text=INNR:WNAM}",
     "sid": "04A9C0",
@@ -4107,7 +4480,8 @@
     "gameId": null,
     "texts": {
       "en": "Burning",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=82, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCEE",
@@ -4118,7 +4492,8 @@
     "gameId": null,
     "texts": {
       "en": "Fireman",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=58, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000F9",
@@ -4129,7 +4504,8 @@
     "gameId": null,
     "texts": {
       "en": "Scabber",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=46, -idMax=303, #text=INNR:WNAM}",
     "sid": "41000103",
@@ -4140,7 +4516,8 @@
     "gameId": null,
     "texts": {
       "en": "Stanley",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=123, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000AE3",
@@ -4151,7 +4528,8 @@
     "gameId": null,
     "texts": {
       "en": "Searing",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=113, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D76",
@@ -4162,7 +4540,8 @@
     "gameId": null,
     "texts": {
       "en": "Burning",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=116, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D79",
@@ -4173,7 +4552,8 @@
     "gameId": null,
     "texts": {
       "en": "Ghillie",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=38, -idMax=103, #text=INNR:WNAM}",
     "sid": "41001044",
@@ -4184,7 +4564,8 @@
     "gameId": null,
     "texts": {
       "en": "Flaming",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=186, -idMax=303, #text=INNR:WNAM}",
     "sid": "61007F20",
@@ -4195,7 +4576,8 @@
     "gameId": null,
     "texts": {
       "en": "Ghillie",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=28, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A455",
@@ -4206,7 +4588,8 @@
     "gameId": null,
     "texts": {
       "en": "Frenzy",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=75, -idMax=303, #text=INNR:WNAM}",
     "sid": "039522",
@@ -4217,7 +4600,8 @@
     "gameId": null,
     "texts": {
       "en": "Fluted",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=81, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952A",
@@ -4228,7 +4612,8 @@
     "gameId": null,
     "texts": {
       "en": "Vented",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=98, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953B",
@@ -4239,7 +4624,8 @@
     "gameId": null,
     "texts": {
       "en": "Ported",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=99, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953C",
@@ -4250,7 +4636,8 @@
     "gameId": null,
     "texts": {
       "en": "Finned",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=100, -idMax=303, #text=INNR:WNAM}",
     "sid": "03953D",
@@ -4261,7 +4648,8 @@
     "gameId": null,
     "texts": {
       "en": "Scoped",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=121, -idMax=303, #text=INNR:WNAM}",
     "sid": "039552",
@@ -4272,7 +4660,8 @@
     "gameId": null,
     "texts": {
       "en": "Scoped",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=122, -idMax=303, #text=INNR:WNAM}",
     "sid": "039553",
@@ -4283,7 +4672,8 @@
     "gameId": null,
     "texts": {
       "en": "Scoped",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=124, -idMax=303, #text=INNR:WNAM}",
     "sid": "039555",
@@ -4294,7 +4684,8 @@
     "gameId": null,
     "texts": {
       "en": "Scoped",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=134, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955F",
@@ -4305,7 +4696,8 @@
     "gameId": null,
     "texts": {
       "en": "Bladed",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=156, -idMax=303, #text=INNR:WNAM}",
     "sid": "039576",
@@ -4316,7 +4708,8 @@
     "gameId": null,
     "texts": {
       "en": "Spiked",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=159, -idMax=303, #text=INNR:WNAM}",
     "sid": "039579",
@@ -4327,7 +4720,8 @@
     "gameId": null,
     "texts": {
       "en": "Steady",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=170, -idMax=303, #text=INNR:WNAM}",
     "sid": "039584",
@@ -4338,7 +4732,8 @@
     "gameId": null,
     "texts": {
       "en": "Lobber",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=230, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395AA",
@@ -4349,7 +4744,8 @@
     "gameId": null,
     "texts": {
       "en": "Braced",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=73, -idMax=103, #text=INNR:WNAM}",
     "sid": "039605",
@@ -4360,7 +4756,8 @@
     "gameId": null,
     "texts": {
       "en": "Leaded",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=79, -idMax=103, #text=INNR:WNAM}",
     "sid": "03960B",
@@ -4371,7 +4768,8 @@
     "gameId": null,
     "texts": {
       "en": "Padded",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=84, -idMax=103, #text=INNR:WNAM}",
     "sid": "039610",
@@ -4382,7 +4780,8 @@
     "gameId": null,
     "texts": {
       "en": "Sturdy",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=96, -idMax=103, #text=INNR:WNAM}",
     "sid": "03961C",
@@ -4393,7 +4792,8 @@
     "gameId": null,
     "texts": {
       "en": "Welded",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=42, -idMax=103, #text=INNR:WNAM}",
     "sid": "039623",
@@ -4404,7 +4804,8 @@
     "gameId": null,
     "texts": {
       "en": "Boiled",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=52, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962D",
@@ -4415,7 +4816,8 @@
     "gameId": null,
     "texts": {
       "en": "Girded",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=53, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962E",
@@ -4426,7 +4828,8 @@
     "gameId": null,
     "texts": {
       "en": "Welded",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=62, -idMax=103, #text=INNR:WNAM}",
     "sid": "039637",
@@ -4437,7 +4840,8 @@
     "gameId": null,
     "texts": {
       "en": "Curved",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=62, -idMax=138, #text=INNR:WNAM}",
     "sid": "039822",
@@ -4448,7 +4852,8 @@
     "gameId": null,
     "texts": {
       "en": "Barbed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=65, -idMax=138, #text=INNR:WNAM}",
     "sid": "039825",
@@ -4459,7 +4864,8 @@
     "gameId": null,
     "texts": {
       "en": "Spiked",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=67, -idMax=138, #text=INNR:WNAM}",
     "sid": "039827",
@@ -4470,7 +4876,8 @@
     "gameId": null,
     "texts": {
       "en": "Bladed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=69, -idMax=138, #text=INNR:WNAM}",
     "sid": "039829",
@@ -4481,7 +4888,8 @@
     "gameId": null,
     "texts": {
       "en": "Hooked",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=72, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982C",
@@ -4492,7 +4900,8 @@
     "gameId": null,
     "texts": {
       "en": "Heated",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=73, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982D",
@@ -4503,7 +4912,8 @@
     "gameId": null,
     "texts": {
       "en": "Gilded",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=35, -idMax=303, #text=INNR:WNAM}",
     "sid": "042BE4",
@@ -4514,7 +4924,8 @@
     "gameId": null,
     "texts": {
       "en": "Golden",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=36, -idMax=303, #text=INNR:WNAM}",
     "sid": "042BE5",
@@ -4525,7 +4936,8 @@
     "gameId": null,
     "texts": {
       "en": "Fierce",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=231, -idMax=303, #text=INNR:WNAM}",
     "sid": "046258",
@@ -4536,7 +4948,8 @@
     "gameId": null,
     "texts": {
       "en": "Severe",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=234, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625B",
@@ -4547,7 +4960,8 @@
     "gameId": null,
     "texts": {
       "en": "Speedy",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=235, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625C",
@@ -4558,7 +4972,8 @@
     "gameId": null,
     "texts": {
       "en": "Snappy",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=236, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625D",
@@ -4569,7 +4984,8 @@
     "gameId": null,
     "texts": {
       "en": "Chef's",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=29, -idMax=138, #text=INNR:WNAM}",
     "sid": "047010",
@@ -4580,7 +4996,8 @@
     "gameId": null,
     "texts": {
       "en": "Modern",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=37, -idMax=138, #text=INNR:WNAM}",
     "sid": "04B006",
@@ -4591,7 +5008,8 @@
     "gameId": null,
     "texts": {
       "en": "Barbed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=81, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCED",
@@ -4602,7 +5020,8 @@
     "gameId": null,
     "texts": {
       "en": "Horned",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=84, -idMax=138, #text=INNR:WNAM}",
     "sid": "04BCF6",
@@ -4613,7 +5032,8 @@
     "gameId": null,
     "texts": {
       "en": "Yellow",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=34, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A69",
@@ -4624,7 +5044,8 @@
     "gameId": null,
     "texts": {
       "en": "Gilded",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=47, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A6C",
@@ -4635,7 +5056,8 @@
     "gameId": null,
     "texts": {
       "en": "Curved",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=96, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D65",
@@ -4646,7 +5068,8 @@
     "gameId": null,
     "texts": {
       "en": "Barbed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=99, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D68",
@@ -4657,7 +5080,8 @@
     "gameId": null,
     "texts": {
       "en": "Spiked",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=101, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6A",
@@ -4668,7 +5092,8 @@
     "gameId": null,
     "texts": {
       "en": "Bladed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=103, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6C",
@@ -4679,7 +5104,8 @@
     "gameId": null,
     "texts": {
       "en": "Hooked",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=106, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6F",
@@ -4690,7 +5116,8 @@
     "gameId": null,
     "texts": {
       "en": "Heated",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=107, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D70",
@@ -4701,7 +5128,8 @@
     "gameId": null,
     "texts": {
       "en": "Barbed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=115, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D78",
@@ -4712,7 +5140,8 @@
     "gameId": null,
     "texts": {
       "en": "Horned",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=118, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D7B",
@@ -4723,7 +5152,8 @@
     "gameId": null,
     "texts": {
       "en": "Cursed",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=52, -idMax=138, #text=INNR:WNAM}",
     "sid": "41001399",
@@ -4734,7 +5164,8 @@
     "gameId": null,
     "texts": {
       "en": "Cursed",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=251, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100A2D2",
@@ -4745,7 +5176,8 @@
     "gameId": null,
     "texts": {
       "en": "Karma",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=74, -idMax=303, #text=INNR:WNAM}",
     "sid": "039521",
@@ -4756,7 +5188,8 @@
     "gameId": null,
     "texts": {
       "en": "Recon",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=82, -idMax=303, #text=INNR:WNAM}",
     "sid": "03952B",
@@ -4767,7 +5200,8 @@
     "gameId": null,
     "texts": {
       "en": "Quick",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=106, -idMax=303, #text=INNR:WNAM}",
     "sid": "039543",
@@ -4778,7 +5212,8 @@
     "gameId": null,
     "texts": {
       "en": "Short",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=125, -idMax=303, #text=INNR:WNAM}",
     "sid": "039556",
@@ -4789,7 +5224,8 @@
     "gameId": null,
     "texts": {
       "en": "Short",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=128, -idMax=303, #text=INNR:WNAM}",
     "sid": "039559",
@@ -4800,7 +5236,8 @@
     "gameId": null,
     "texts": {
       "en": "Large",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=136, -idMax=303, #text=INNR:WNAM}",
     "sid": "039561",
@@ -4811,7 +5248,8 @@
     "gameId": null,
     "texts": {
       "en": "Recon",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=137, -idMax=303, #text=INNR:WNAM}",
     "sid": "039562",
@@ -4822,7 +5260,8 @@
     "gameId": null,
     "texts": {
       "en": "Quick",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=149, -idMax=303, #text=INNR:WNAM}",
     "sid": "03956E",
@@ -4833,7 +5272,8 @@
     "gameId": null,
     "texts": {
       "en": "Large",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=196, -idMax=303, #text=INNR:WNAM}",
     "sid": "039588",
@@ -4844,7 +5284,8 @@
     "gameId": null,
     "texts": {
       "en": "Fiery",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=201, -idMax=303, #text=INNR:WNAM}",
     "sid": "03958D",
@@ -4855,7 +5296,8 @@
     "gameId": null,
     "texts": {
       "en": "Tuned",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=227, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A7",
@@ -4866,7 +5308,8 @@
     "gameId": null,
     "texts": {
       "en": "Rapid",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=253, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395AF",
@@ -4877,7 +5320,8 @@
     "gameId": null,
     "texts": {
       "en": "Lucky",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=19, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395F2",
@@ -4888,7 +5332,8 @@
     "gameId": null,
     "texts": {
       "en": "Sharp",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=36, -idMax=103, #text=INNR:WNAM}",
     "sid": "039603",
@@ -4899,7 +5344,8 @@
     "gameId": null,
     "texts": {
       "en": "Dense",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=92, -idMax=103, #text=INNR:WNAM}",
     "sid": "039618",
@@ -4910,7 +5356,8 @@
     "gameId": null,
     "texts": {
       "en": "Sleek",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=95, -idMax=103, #text=INNR:WNAM}",
     "sid": "03961B",
@@ -4921,7 +5368,8 @@
     "gameId": null,
     "texts": {
       "en": "Resin",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=67, -idMax=103, #text=INNR:WNAM}",
     "sid": "03963C",
@@ -4932,7 +5380,8 @@
     "gameId": null,
     "texts": {
       "en": "Shock",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=57, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981D",
@@ -4943,7 +5392,8 @@
     "gameId": null,
     "texts": {
       "en": "Large",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=60, -idMax=138, #text=INNR:WNAM}",
     "sid": "039820",
@@ -4954,7 +5404,8 @@
     "gameId": null,
     "texts": {
       "en": "Sharp",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=70, -idMax=138, #text=INNR:WNAM}",
     "sid": "03982A",
@@ -4965,7 +5416,8 @@
     "gameId": null,
     "texts": {
       "en": "Cedar",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=46, -idMax=138, #text=INNR:WNAM}",
     "sid": "03983B",
@@ -4976,7 +5428,8 @@
     "gameId": null,
     "texts": {
       "en": "Fancy",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=33, -idMax=303, #text=INNR:WNAM}",
     "sid": "041008",
@@ -4987,7 +5440,8 @@
     "gameId": null,
     "texts": {
       "en": "Hasty",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=233, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625A",
@@ -4998,7 +5452,8 @@
     "gameId": null,
     "texts": {
       "en": "Tuned",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=239, -idMax=303, #text=INNR:WNAM}",
     "sid": "046260",
@@ -5009,7 +5464,8 @@
     "gameId": null,
     "texts": {
       "en": "Prime",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=171, -idMax=303, #text=INNR:WNAM}",
     "sid": "04B00E",
@@ -5020,7 +5476,8 @@
     "gameId": null,
     "texts": {
       "en": "Shark",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=33, -idMax=138, #text=INNR:WNAM}",
     "sid": "053A68",
@@ -5031,7 +5488,8 @@
     "gameId": null,
     "texts": {
       "en": "Shock",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=91, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D60",
@@ -5042,7 +5500,8 @@
     "gameId": null,
     "texts": {
       "en": "Large",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=94, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D63",
@@ -5053,7 +5512,8 @@
     "gameId": null,
     "texts": {
       "en": "Sharp",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=104, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D6D",
@@ -5064,7 +5524,8 @@
     "gameId": null,
     "texts": {
       "en": "105mm",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=7, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD8",
@@ -5075,7 +5536,8 @@
     "gameId": null,
     "texts": {
       "en": "200mm",
-      "fr": "[Visée]"
+      "fr": "[Visée]",
+      "pl": "Namierzaj."
     },
     "rec": "{-id=8, -idMax=11, #text=INNR:WNAM}",
     "sid": "61000FD9",
@@ -5086,7 +5548,8 @@
     "gameId": null,
     "texts": {
       "en": "Boney",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=8, -idMax=138, #text=INNR:WNAM}",
     "sid": "61003F6C",
@@ -5097,7 +5560,8 @@
     "gameId": null,
     "texts": {
       "en": "Turbo",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=120, -idMax=138, #text=INNR:WNAM}",
     "sid": "61005E5E",
@@ -5108,7 +5572,8 @@
     "gameId": null,
     "texts": {
       "en": "Quad",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=16, -idMax=303, #text=INNR:WNAM}",
     "sid": "039519",
@@ -5119,7 +5584,8 @@
     "gameId": null,
     "texts": {
       "en": "Long",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=123, -idMax=303, #text=INNR:WNAM}",
     "sid": "039554",
@@ -5130,7 +5596,8 @@
     "gameId": null,
     "texts": {
       "en": "Long",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=126, -idMax=303, #text=INNR:WNAM}",
     "sid": "039557",
@@ -5141,7 +5608,8 @@
     "gameId": null,
     "texts": {
       "en": "Long",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=129, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955A",
@@ -5152,7 +5620,8 @@
     "gameId": null,
     "texts": {
       "en": "Long",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=130, -idMax=303, #text=INNR:WNAM}",
     "sid": "03955B",
@@ -5163,7 +5632,8 @@
     "gameId": null,
     "texts": {
       "en": "Huge",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=197, -idMax=303, #text=INNR:WNAM}",
     "sid": "039589",
@@ -5174,7 +5644,8 @@
     "gameId": null,
     "texts": {
       "en": ".308",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=221, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A1",
@@ -5185,7 +5656,8 @@
     "gameId": null,
     "texts": {
       "en": "Stun",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=58, -idMax=138, #text=INNR:WNAM}",
     "sid": "03981E",
@@ -5196,7 +5668,8 @@
     "gameId": null,
     "texts": {
       "en": "Grey",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=43, -idMax=138, #text=INNR:WNAM}",
     "sid": "039838",
@@ -5207,7 +5680,8 @@
     "gameId": null,
     "texts": {
       "en": "Blue",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=44, -idMax=138, #text=INNR:WNAM}",
     "sid": "039839",
@@ -5218,7 +5692,8 @@
     "gameId": null,
     "texts": {
       "en": "True",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=238, -idMax=303, #text=INNR:WNAM}",
     "sid": "04625F",
@@ -5229,7 +5704,8 @@
     "gameId": null,
     "texts": {
       "en": "Gold",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=61, -idMax=303, #text=INNR:WNAM}",
     "sid": "410000FB",
@@ -5240,7 +5716,8 @@
     "gameId": null,
     "texts": {
       "en": "Bats",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=44, -idMax=303, #text=INNR:WNAM}",
     "sid": "4100027C",
@@ -5251,7 +5728,8 @@
     "gameId": null,
     "texts": {
       "en": "Stun",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=92, -idMax=138, #text=INNR:WNAM}",
     "sid": "41000D61",
@@ -5262,7 +5740,8 @@
     "gameId": null,
     "texts": {
       "en": "Long",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=191, -idMax=303, #text=INNR:WNAM}",
     "sid": "610064D7",
@@ -5273,7 +5752,8 @@
     "gameId": null,
     "texts": {
       "en": ".38",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=220, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A0",
@@ -5284,7 +5764,8 @@
     "gameId": null,
     "texts": {
       "en": ".45",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=222, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A2",
@@ -5295,7 +5776,8 @@
     "gameId": null,
     "texts": {
       "en": ".50",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=223, -idMax=303, #text=INNR:WNAM}",
     "sid": "0395A3",
@@ -5306,7 +5788,8 @@
     "gameId": null,
     "texts": {
       "en": "Tan",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=70, -idMax=103, #text=INNR:WNAM}",
     "sid": "0395EC",
@@ -5317,7 +5800,8 @@
     "gameId": null,
     "texts": {
       "en": "BOS",
-      "fr": "[Jetpack]"
+      "fr": "[Jetpack]",
+      "pl": "Plecak odrzutowy |"
     },
     "rec": "{-id=51, -idMax=103, #text=INNR:WNAM}",
     "sid": "03962C",
@@ -5328,7 +5812,8 @@
     "gameId": null,
     "texts": {
       "en": "Red",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=40, -idMax=138, #text=INNR:WNAM}",
     "sid": "039835",
@@ -5339,7 +5824,8 @@
     "gameId": null,
     "texts": {
       "en": "Oak",
-      "fr": "[Bâton de sorcier de Grelok]"
+      "fr": "[Bâton de sorcier de Grelok]",
+      "pl": "Magiczny kostur Greloka"
     },
     "rec": "{-id=41, -idMax=138, #text=INNR:WNAM}",
     "sid": "039836",
@@ -5350,7 +5836,8 @@
     "gameId": null,
     "texts": {
       "en": "R91",
-      "fr": "[Bâton-tonnerre des Appalaches]"
+      "fr": "[Bâton-tonnerre des Appalaches]",
+      "pl": "Appalaska grzmotrura"
     },
     "rec": "{-id=43, -idMax=303, #text=INNR:WNAM}",
     "sid": "6100649A",

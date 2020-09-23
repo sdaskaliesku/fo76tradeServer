@@ -49,13 +49,13 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         private fun matchesFilter(filter: ItemsUploadFilters, itemDescriptor: ItemDescriptor): Boolean {
             if (filter.tradableOnly) {
                 if (!itemDescriptor.isTradable) {
-                    LOGGER.debug("Skipping item(filter - tradableOnly) $itemDescriptor")
+//                    LOGGER.debug("Skipping item(filter - tradableOnly) $itemDescriptor")
                     return false
                 }
             }
             if (filter.legendaryOnly) {
                 if (!itemDescriptor.isLegendary) {
-                    LOGGER.debug("Skipping item(filter - legendaryOnly) $itemDescriptor")
+//                    LOGGER.debug("Skipping item(filter - legendaryOnly) $itemDescriptor")
                     return false
                 }
             }
@@ -72,7 +72,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                     return true
                 }
             }
-            LOGGER.debug("Skipping item(filter - filterFlags) $itemDescriptor")
+//            LOGGER.debug("Skipping item(filter - filterFlags) $itemDescriptor")
             return false
         }
 

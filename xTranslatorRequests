@@ -1,0 +1,23 @@
+Legendary mods:
+mod_Legendary_
+
+Ammo:
+AMMO:FULL
+
+Stats/Parameters:
+AVIF:FULL
+
+Modifications:
+mod
+OMOD:FULL
+
+dn_Common
+INNR:WNAM
+
+Armor:
+^Armor_.*$
+ARMO
+
+Weapons:
+^(?!Default|Epic|Random|Standar|Babylon|Simple).*$
+^(?!test|zzz|cr|Test|TEST|debug|POST|Temp|DEPRECATED|ZZZ|W05|CUT|cut|MTNL|Protest|ATX|DLC05W|atx|COMP|Survival|Workshop|MT|QA|Pharma|V96|Deleted|DELETED|P01).*$
