@@ -89,6 +89,7 @@ class Fed76Service(@Autowired private val priceCheckRepository: PriceCheckReposi
         val response = performRequest(request)
         if (StringUtils.equalsIgnoreCase(response.description, "Error\n")) {
             LOGGER.error("Error: $request\t$response")
+            response.price = -1
         } else {
             saveToCache(request, response)
         }

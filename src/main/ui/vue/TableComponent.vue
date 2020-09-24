@@ -13,9 +13,13 @@
     </div>
     <div class="toolbar mb-2 mt-2" v-show="!isLoading">
       <b-button-group>
-        <b-button class="my-2 my-sm-0" variant="info" type="submit" @click="priceCheck">
-          Fed76 price check
-        </b-button>
+        <b-input-group right class="w-auto">
+          <b-form-input v-model="maxItemsForPriceCheck" type="number"
+                        placeholder="Items for price check"></b-form-input>
+          <b-button class="my-2 my-sm-0" variant="info" type="submit" @click="priceCheck">
+            Fed76 price check
+          </b-button>
+        </b-input-group>
         <b-button class="my-2 my-sm-0" variant="danger" type="submit" @click="deleteSelected">
           Delete
         </b-button>
@@ -150,10 +154,10 @@ export default {
       required: false,
       default: function() {
         return {
-          isFedEnhancer: false
+          isFedEnhancer: false,
         };
-      }
-    }
+      },
+    },
   },
   methods: {
     getColumnsToDisplay: function() {
@@ -169,10 +173,16 @@ export default {
       this.isLoading = true;
       this.$bvToast.show('fed76');
       let priceCheckedItems = 0;
+      let itemsForCheck = maxPriceCheckItems;
+      let providedNumber = Number(this.maxItemsForPriceCheck);
+      if (!Number.isNaN(providedNumber) || providedNumber > 0) {
+        itemsForCheck = providedNumber;
+      }
       for (const item of this.tableData) {
-        if (Utils.isEligibleForPriceCheck(item) && Utils.isPriceCheckResponseEmpty(item.itemDetails.priceCheckResponse)) {
+        if (Utils.isEligibleForPriceCheck(item) && Utils.isPriceCheckResponseEmpty(
+            item.itemDetails.priceCheckResponse)) {
           item.itemDetails.priceCheckResponse = await gameApiService.priceCheck(item);
-          if (priceCheckedItems++ >= maxPriceCheckItems) {
+          if (priceCheckedItems++ >= itemsForCheck) {
             break;
           }
         }
@@ -204,8 +214,8 @@ export default {
         this.$bvToast.toast(`Price check available only for tradable legendary armor and weapon!`, {
           title: 'FED76',
           variant: 'danger',
-          autoHideDelay: 1000
-        })
+          autoHideDelay: 1000,
+        });
       }
     },
     deleteSingleRow: function(e, cell) {
@@ -297,7 +307,8 @@ export default {
   beforeMount: function() {
     columns.push({
       formatter: function() {
-        return new Vue({template: `<b-icon icon="cash" scale="2" variant="info" title="Fed76 Price estimate"/>`}).$mount().$el;
+        return new Vue(
+            {template: `<b-icon icon="cash" scale="2" variant="info" title="Fed76 Price estimate"/>`}).$mount().$el;
       },
       width: 10,
       hozAlign: 'center',
@@ -313,7 +324,7 @@ export default {
       headerSort: false,
       download: false,
       visible: true,
-      cellClick: this.deleteSingleRow
+      cellClick: this.deleteSingleRow,
     });
   },
   mounted: function() {
@@ -332,7 +343,7 @@ export default {
       handler: function(val) {
         this.tabulator.setData(val);
       },
-      deep: true
+      deep: true,
     },
     useGrouping: {
       handler: function() {
@@ -370,6 +381,7 @@ export default {
       useGrouping: true,
       filters: tableFilters(),
       searchText: '',
+      maxItemsForPriceCheck: maxPriceCheckItems,
       exportOptions: ['csv', 'html', 'json'],
       selectedItem: null,
       modalFields: modalFields,

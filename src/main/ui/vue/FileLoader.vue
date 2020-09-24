@@ -68,7 +68,6 @@ export default {
       });
     });
     this.config.isFedEnhancer = this.$route.path === '/fed76';
-    console.log(this.config.isFedEnhancer);
   },
   watch: {
     file: function(val) {
