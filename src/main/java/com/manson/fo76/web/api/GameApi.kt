@@ -1,16 +1,16 @@
 package com.manson.fo76.web.api
 
-import com.manson.fo76.domain.ArmorConfig
-import com.manson.fo76.domain.LegendaryModDescriptor
-import com.manson.fo76.domain.XTranslatorConfig
+import com.manson.domain.config.ArmorConfig
+import com.manson.domain.config.LegendaryModDescriptor
+import com.manson.domain.config.XTranslatorConfig
+import com.manson.domain.fed76.pricing.PriceCheckResponse
+import com.manson.domain.fo76.items.enums.ArmorGrade
+import com.manson.domain.fo76.items.enums.FilterFlag
+import com.manson.domain.fo76.items.enums.ItemCardText
 import com.manson.fo76.domain.dto.ItemDTO
-import com.manson.fo76.domain.items.enums.ArmorGrade
-import com.manson.fo76.domain.items.enums.FilterFlag
-import com.manson.fo76.domain.items.enums.ItemCardText
-import com.manson.fo76.domain.fed76.pricing.PriceCheckResponse
+import com.manson.fo76.service.Fed76Service
 import com.manson.fo76.service.GameConfigService
 import com.manson.fo76.service.ItemConverterService.Companion.SUPPORTED_PRICE_CHECK_ITEMS
-import com.manson.fo76.service.Fed76Service
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping

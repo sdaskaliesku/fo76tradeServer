@@ -38,9 +38,9 @@ export const columns = [
   createColumnDef({title: '2 star', field: 'legendaryMods.1.value'}),
   createColumnDef({title: '3 star', field: 'legendaryMods.2.value'}),
   createColumnDef({title: 'Vendor Price', field: 'tradeOptions.vendorPrice', visible: false}),
-  createColumnDef({title: 'fed76.info Price', field: 'itemDetails.priceCheckResponse.price'}),
-  createColumnDef({title: 'fed76.info description', field: 'itemDetails.priceCheckResponse.description'}),
-  createColumnDef({title: 'fed76.info value', field: 'itemDetails.priceCheckResponse.review.description'}),
+  createColumnDef({title: 'Fed76 Price', field: 'itemDetails.priceCheckResponse.price'}),
+  createColumnDef({title: 'Fed76 Description', field: 'itemDetails.priceCheckResponse.description'}),
+  createColumnDef({title: 'Fed76 Value', field: 'itemDetails.priceCheckResponse.review.description'}),
   createColumnDef({title: 'Description', field: 'description', visible: false}),
   {
     ...createColumnDef({title: 'Tradable', field: 'isTradable', visible: false}),
@@ -103,23 +103,23 @@ export const modalFields = [
     field: 'itemValue',
   },
   {
-    name: 'fed76.info name',
+    name: 'Fed76 Name',
     field: 'itemDetails.priceCheckResponse.name',
   },
   {
-    name: 'fed76.info Price',
+    name: 'Fed76 Price',
     field: 'itemDetails.priceCheckResponse.price',
   },
   {
-    name: 'fed76.info description',
+    name: 'Fed76 Description',
     field: 'itemDetails.priceCheckResponse.description',
   },
   {
-    name: 'fed76.info value',
+    name: 'Fed76 Value',
     field: 'itemDetails.priceCheckResponse.review.description',
   },
   {
-    name: 'fed76.info rating value',
+    name: 'fed76 Rating Value',
     field: 'itemDetails.priceCheckResponse.review.reviewRating.ratingValue',
   },
   {

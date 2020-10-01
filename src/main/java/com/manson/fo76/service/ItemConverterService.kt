@@ -1,25 +1,23 @@
 package com.manson.fo76.service
 
+import com.manson.domain.LegendaryMod
+import com.manson.domain.config.LegendaryModDescriptor
+import com.manson.domain.fed76.FedModDataRequest
+import com.manson.domain.fo76.items.enums.DamageType
+import com.manson.domain.fo76.items.enums.FilterFlag
+import com.manson.domain.fo76.items.enums.ItemCardText
+import com.manson.domain.fo76.items.item_card.ItemCardEntry
+import com.manson.domain.itemextractor.CharacterInventory
+import com.manson.domain.itemextractor.ItemDescriptor
+import com.manson.domain.itemextractor.ModData
+import com.manson.domain.itemextractor.OwnerInfo
 import com.manson.fo76.config.AppConfig.Companion.ENABLE_AUTO_PRICE_CHECK
-import com.manson.fo76.domain.CharacterInventory
-import com.manson.fo76.domain.fed76.FedModDataRequest
 import com.manson.fo76.domain.ItemsUploadFilters
-import com.manson.fo76.domain.LegendaryModDescriptor
-import com.manson.fo76.domain.ModData
 import com.manson.fo76.domain.ModDataRequest
-import com.manson.fo76.domain.ModUser
-import com.manson.fo76.domain.dto.User
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.dto.ItemDetails
-import com.manson.fo76.domain.dto.LegendaryMod
-import com.manson.fo76.domain.dto.OwnerInfo
 import com.manson.fo76.domain.dto.StatsDTO
 import com.manson.fo76.domain.dto.TradeOptions
-import com.manson.fo76.domain.items.ItemDescriptor
-import com.manson.fo76.domain.items.enums.DamageType
-import com.manson.fo76.domain.items.enums.FilterFlag
-import com.manson.fo76.domain.items.enums.ItemCardText
-import com.manson.fo76.domain.items.item_card.ItemCardEntry
 import com.manson.fo76.helper.Utils.areSameItems
 import com.manson.fo76.helper.Utils.silentParse
 import java.util.Comparator
@@ -29,8 +27,6 @@ import java.util.stream.Collectors
 import org.apache.commons.collections4.CollectionUtils
 import org.apache.commons.collections4.MapUtils
 import org.apache.commons.lang3.StringUtils
-import org.apache.commons.lang3.tuple.ImmutablePair
-import org.apache.commons.lang3.tuple.Pair
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
@@ -95,12 +91,9 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         }
     }
 
-    private fun processModDataItems(
-            modData: ModData?,
-            itemsUploadFilters: ItemsUploadFilters,
-    ): Pair<ModUser?, List<ItemDescriptor>> {
+    private fun processModDataItems(modData: ModData?, itemsUploadFilters: ItemsUploadFilters): List<ItemDescriptor> {
         if (modData == null || MapUtils.isEmpty(modData.characterInventories)) {
-            return ImmutablePair(ModUser(), listOf())
+            return listOf()
         }
         val values = modData.characterInventories.values
         val allItems: MutableList<ItemDescriptor> = ArrayList()
@@ -111,7 +104,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
             processItems(allCharacterItems, allItems, itemsUploadFilters, inventory.accountInfoData.name,
                     inventory.characterInfoData.name)
         }
-        return ImmutablePair(modData.user, allItems)
+        return allItems
     }
 
     fun prepareModData(fedModDataRequest: FedModDataRequest): List<ItemDTO?>? {
@@ -121,26 +114,15 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         val list: MutableList<ItemDescriptor> = ArrayList()
         map.forEach { (_, v) -> list.addAll(v) }
         characterInventory.playerInventory = list
-        modData.characterInventories = mapOf(Pair("test", characterInventory))
-        val pair = processModDataItems(modData, ItemsUploadFilters())
-        val itemDescriptors = pair.value
-        val user = User()
-        user.password = "noop"
-        user.name = "noop"
-        user.id = "noop"
-        return convertItems(itemDescriptors, user)
+        modData.characterInventories = HashMap()
+        modData.characterInventories["test"] = characterInventory
+        val itemDescriptors = processModDataItems(modData, ItemsUploadFilters())
+        return convertItems(itemDescriptors)
     }
 
     fun prepareModData(modDataRequest: ModDataRequest): List<ItemDTO?>? {
-        val pair = processModDataItems(modDataRequest.modData, modDataRequest.filters)
-        val itemDescriptors = pair.value
-        // todo: convert ModUser to User via userService
-        val modUser = pair.key
-        val user = User()
-        user.password = modUser!!.password
-        user.name = modUser.user
-        user.id = modUser.id
-        return convertItems(itemDescriptors, user)
+        val itemDescriptors = processModDataItems(modDataRequest.modData, modDataRequest.filters)
+        return convertItems(itemDescriptors)
     }
 
     private fun dedupeItems(itemDTOS: MutableList<ItemDTO>): List<ItemDTO?> {
@@ -168,8 +150,8 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return deduped
     }
 
-    private fun convertItems(items: List<ItemDescriptor>, user: User): List<ItemDTO?> {
-        val list: MutableList<ItemDTO> = items.stream().map { item: ItemDescriptor -> convertItem(item, user) }
+    private fun convertItems(items: List<ItemDescriptor>): List<ItemDTO?> {
+        val list: MutableList<ItemDTO> = items.stream().map { item: ItemDescriptor -> convertItem(item) }
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList())
         return dedupeItems(list)
@@ -179,7 +161,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         var filterFlag = item!!.filterFlagEnum
         try {
             if (filterFlag === FilterFlag.WEAPON) {
-                for (itemCardEntry in item.itemCardEntries!!) {
+                for (itemCardEntry in item.itemCardEntries) {
                     if (itemCardEntry.damageTypeEnum === DamageType.AMMO) {
                         filterFlag = FilterFlag.WEAPON_RANGED
                         break
@@ -217,7 +199,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         val itemValue = item.itemValue
         tradeOptions.gamePrice = itemValue.toDouble()
         if (Objects.nonNull(itemDescriptor.vendingData)) {
-            var price = itemDescriptor.vendingData!!.price
+            var price = itemDescriptor.vendingData.price
             if (price == 0) {
                 price = itemValue
             }
@@ -228,13 +210,14 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return tradeOptions
     }
 
-    private fun createOwnerInfo(item: ItemDTO, user: User): OwnerInfo {
+    private fun createOwnerInfo(item: ItemDTO): OwnerInfo {
         var ownerInfo = OwnerInfo()
         if (Objects.nonNull(item.ownerInfo)) {
             ownerInfo = item.ownerInfo!!
         }
-        ownerInfo.id = user.id
-        ownerInfo.name = user.name
+        // TODO: get user from request header's token
+        ownerInfo.id = "NONE"
+        ownerInfo.name = "NONE"
         return ownerInfo
     }
 
@@ -259,7 +242,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return itemDetails
     }
 
-    private fun convertItem(item: ItemDescriptor, user: User): ItemDTO? {
+    private fun convertItem(item: ItemDescriptor): ItemDTO? {
         val objectMap: MutableMap<String, Any?>? = JsonParser.objectToMap(item)
         if (MapUtils.isEmpty(objectMap)) {
             return null
@@ -270,7 +253,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
             return null
         }
         val itemDto: ItemDTO = itemDTO!!
-        itemDto.ownerInfo = createOwnerInfo(itemDto, user)
+        itemDto.ownerInfo = createOwnerInfo(itemDto)
         itemDto.tradeOptions = createTradeOptions(itemDto, item)
         itemDto.stats = processItemCardEntries(item, itemDto)
         itemDto.text = itemDto.text?.let { gameConfigService.cleanItemName(it) }
@@ -312,7 +295,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         if (CollectionUtils.isEmpty(item.itemCardEntries)) {
             return stats
         }
-        for (itemCardEntry in item.itemCardEntries!!) {
+        for (itemCardEntry in item.itemCardEntries) {
             val itemCardText = gameConfigService.findItemCardText(itemCardEntry)
             val statsDTO = convertItemStats(itemCardEntry, itemCardText)
             if (statsDTO != null) {

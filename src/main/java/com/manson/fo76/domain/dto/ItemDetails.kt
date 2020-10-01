@@ -1,7 +1,7 @@
 package com.manson.fo76.domain.dto
 
-import com.manson.fo76.domain.items.enums.ArmorGrade
-import com.manson.fo76.domain.fed76.pricing.PriceCheckResponse
+import com.manson.domain.fed76.pricing.PriceCheckResponse
+import com.manson.domain.fo76.items.enums.ArmorGrade
 
 class ItemDetails {
     var name: String = ""

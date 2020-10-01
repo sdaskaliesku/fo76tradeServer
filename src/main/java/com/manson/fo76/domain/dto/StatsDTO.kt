@@ -1,8 +1,8 @@
 package com.manson.fo76.domain.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-import com.manson.fo76.domain.items.enums.DamageType
-import com.manson.fo76.domain.items.enums.ItemCardText
+import com.manson.domain.fo76.items.enums.DamageType
+import com.manson.domain.fo76.items.enums.ItemCardText
 import org.apache.commons.lang3.builder.EqualsBuilder
 import org.apache.commons.lang3.builder.HashCodeBuilder
 import org.springframework.data.mongodb.core.index.Indexed
@@ -14,19 +14,18 @@ class StatsDTO {
     var value: String? = null
 
     @Indexed
-    var damageType: DamageType? = null
-    override fun equals(o: Any?): Boolean {
-        if (this === o) {
+    var damageType: DamageType = DamageType.RADIATION
+    override fun equals(other: Any?): Boolean {
+        if (this === other) {
             return true
         }
-        if (o !is StatsDTO) {
+        if (other !is StatsDTO) {
             return false
         }
-        val statsDTO = o
         return EqualsBuilder()
-                .append(text, statsDTO.text)
-                .append(value, statsDTO.value)
-                .append(damageType, statsDTO.damageType)
+                .append(text, other.text)
+                .append(value, other.value)
+                .append(damageType, other.damageType)
                 .isEquals
     }
 

@@ -17,6 +17,9 @@
               <b-button :href="nexus" target="_blank"
                         class="my-2 my-sm-0" variant="outline-danger" type="submit">Get mod!
               </b-button>
+              <b-button :href="modCompanion" target="_blank"
+                        class="my-2 my-sm-0" variant="outline-danger" type="submit">Get mod companion!
+              </b-button>
               <b-button :href="discord" target="_blank" class="my-2 my-sm-0"
                         variant="outline-success" type="submit">Help
               </b-button>
@@ -42,7 +45,7 @@
 
 <script>
 import {localStorageService} from '../localStorage.service';
-import {APP_VERSION, NEXUS_LINK, DISCORD_LINK, GH_LINK} from '../domain';
+import {APP_VERSION, NEXUS_LINK, DISCORD_LINK, GH_LINK, COMPANION_LINK} from '../domain';
 
 export default {
   name: 'NavBar',
@@ -60,6 +63,7 @@ export default {
     return {
       discord: DISCORD_LINK,
       github: GH_LINK,
+      modCompanion: COMPANION_LINK,
       nexus: NEXUS_LINK,
       version: APP_VERSION,
       isUserLoggedIn,

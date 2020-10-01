@@ -1,9 +1,9 @@
 package com.manson.fo76.web.api
 
-import com.manson.fo76.domain.fed76.FedModDataRequest
+import com.manson.domain.fed76.Fed76ItemDto
+import com.manson.domain.fed76.FedModDataRequest
 import com.manson.fo76.domain.ModDataRequest
 import com.manson.fo76.domain.UploadItemRequest
-import com.manson.fo76.domain.fed76.Fed76ItemDto
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.service.ItemService
 import java.util.ArrayList
@@ -80,6 +80,7 @@ class ItemsController @Autowired constructor(private val itemService: ItemServic
     @RequestMapping(value = ["/prepareFedModData"], consumes = ["application/json"], produces = ["application/json"], method = [RequestMethod.POST])
     fun prepareFedModData(@RequestBody fedModDataRequest: FedModDataRequest): List<Fed76ItemDto> {
         try {
+//            TODO: send data to fed76 instead of rendering on ui, once it will be ready
             return itemService.prepareFedModData(fedModDataRequest)
         } catch (e: Exception) {
             LOGGER.error("Error while preparing mod data {}", fedModDataRequest, e)

@@ -21,22 +21,20 @@
           </b-button>
         </b-input-group>
         <b-button class="my-2 my-sm-0" variant="danger" type="submit" @click="deleteSelected">
-          Delete
+          Delete Selected
         </b-button>
-        <b-dropdown right text="Table options">
-          <template v-for="col in tableColumns">
-            <b-form-checkbox v-model="col.visible" name="check-button" switch v-if="col.title">
-              {{ col.title }}
-            </b-form-checkbox>
-          </template>
-          <b-dropdown-divider></b-dropdown-divider>
-          <b-form-checkbox v-model="useGrouping" name="check-button" switch>Use grouping
-          </b-form-checkbox>
-        </b-dropdown>
-        <b-dropdown right text="Export options">
-          <template v-for="exportOption in exportOptions">
-            <b-dropdown-item class="export-option" :data-type="exportOption" @click="exportClick">
-              {{ exportOption }}
+        <b-input-group right class="w-auto">
+          <b-input-group-prepend is-text>
+            <b-icon icon="person-fill"/>
+          </b-input-group-prepend>
+          <b-form-input class="rogue-char" v-model="rogueCharName" type="search"
+                        placeholder="RogueTrader character name"></b-form-input>
+        </b-input-group>
+        <b-dropdown right text="Download" variant="success">
+          <template v-for="downloadOption in downloadOptions">
+            <b-dropdown-item v-if="downloadOption" class="export-option"
+                             @click="() => createDownloadHandler(downloadOption, tabulator)">
+              {{ downloadOption.title }}
             </b-dropdown-item>
           </template>
         </b-dropdown>
@@ -49,6 +47,16 @@
             <b-icon icon="x" @click="clearSearch"/>
           </b-input-group-append>
         </b-input-group>
+        <b-dropdown right text="Columns">
+          <template v-for="col in tableColumns">
+            <b-form-checkbox v-model="col.visible" name="check-button" switch v-if="col.title">
+              {{ col.title }}
+            </b-form-checkbox>
+          </template>
+          <b-dropdown-divider></b-dropdown-divider>
+          <b-form-checkbox v-model="useGrouping" name="check-button" switch>Use grouping
+          </b-form-checkbox>
+        </b-dropdown>
         <b-dropdown right text="Filters">
           <template v-for="filter in filters">
             <b-form-checkbox v-model="filter.checked" name="filter check-button" switch>
@@ -108,6 +116,7 @@ import {filters} from '../domain';
 import {gameApiService} from '../game.api.service';
 import Vue from 'vue';
 import {Utils} from '../utils';
+import {RogueService} from '../rogue.service';
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -144,6 +153,43 @@ const tableFilters = () => {
 
 let shouldDisplayFed76Toast = true;
 const maxPriceCheckItems = 950;
+const downloadOptions = [
+  {
+    title: 'Raw json',
+    type: 'raw_json',
+    handler: function({rawData}) {
+      Utils.downloadString(JSON.stringify(rawData), 'text/json', 'full_data.json');
+    },
+  },
+  {
+    title: 'RogueTrader CSV (extremely experimental)',
+    type: 'rogue_csv',
+    handler: function({rawData, character}) {
+      Utils.downloadString(RogueService.toCSV(rawData, character), 'text/csv', 'rogue_trader.csv');
+    },
+  },
+  {
+    title: 'json',
+    type: 'json',
+    handler: function({tabulator}) {
+      tabulator.download(this.type, `data.${this.type}`, {style: true});
+    },
+  },
+  {
+    title: 'csv / excel',
+    type: 'csv',
+    handler: function({tabulator}) {
+      tabulator.download(this.type, `data.${this.type}`, {style: true});
+    },
+  },
+  {
+    title: 'html',
+    type: 'html',
+    handler: function({tabulator}) {
+      tabulator.download(this.type, `data.${this.type}`, {style: true});
+    },
+  },
+];
 
 export default {
   name: 'TableComponent',
@@ -235,9 +281,8 @@ export default {
       }
       this.$emit('updateTableData', this.tabulator.getData());
     },
-    exportClick: function(e) {
-      const type = e.target.dataset['type'];
-      this.tabulator.download(type, `data.${type}`, {style: true});
+    createDownloadHandler: function(option, tabulator) {
+      return option.handler({tabulator, rawData: this.tableData, character: this.rogueCharName});
     },
     clearSearch: function() {
       this.searchText = '';
@@ -381,8 +426,9 @@ export default {
       useGrouping: true,
       filters: tableFilters(),
       searchText: '',
+      rogueCharName: '',
       maxItemsForPriceCheck: maxPriceCheckItems,
-      exportOptions: ['csv', 'html', 'json'],
+      downloadOptions: downloadOptions,
       selectedItem: null,
       modalFields: modalFields,
       isLoading: false,
@@ -403,6 +449,10 @@ export default {
 
 .export-option {
   text-transform: uppercase;
+}
+
+.rogue-char {
+  width: 250px;
 }
 
 ::v-deep .custom-control-label {

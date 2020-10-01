@@ -2,12 +2,10 @@ package com.manson.fo76.service
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
+import com.manson.domain.fed76.Fed76ItemDto
 import com.manson.fo76.config.AppConfig
-import com.manson.fo76.domain.ModData
-import com.manson.fo76.domain.fed76.Fed76ItemDto
 import com.manson.fo76.domain.dto.ItemDTO
 import com.manson.fo76.domain.dto.StatsDTO
-import java.io.File
 import org.slf4j.LoggerFactory
 
 object JsonParser {
@@ -38,15 +36,6 @@ object JsonParser {
 
     fun mapToStatsDTO(map: MutableMap<String, Any?>?): StatsDTO? {
         return mapToClass(map, StatsDTO::class.java)
-    }
-
-    fun parse(file: File?): ModData? {
-        try {
-            return OM.readValue(file, ModData::class.java)
-        } catch (e: Exception) {
-            LOGGER.error("Error parsing file", e)
-        }
-        return null
     }
 
     fun convertToFedItemDTO(itemDTO: ItemDTO): Fed76ItemDto? {

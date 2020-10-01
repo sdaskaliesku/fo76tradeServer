@@ -17,6 +17,7 @@ import {
   BFormInput,
   BIcon,
   BIconCash,
+  BIconPersonFill,
   BIconSearch,
   BIconX,
   BInputGroup,
@@ -67,11 +68,10 @@ Vue.component("BFormInput", BFormInput);
 Vue.component("BBadge", BBadge);
 Vue.component("BListGroup", BListGroup);
 Vue.component("BListGroupItem", BListGroupItem);
+Vue.component("BIconPersonFill", BIconPersonFill);
 Vue.use(ModalPlugin);
 Vue.use(ToastPlugin);
 Vue.use(VueRouter);
-
-const routes = [];
 
 const router = new VueRouter();
 

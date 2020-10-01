@@ -2,7 +2,9 @@ package com.manson.fo76.domain.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty
-import com.manson.fo76.domain.items.enums.FilterFlag
+import com.manson.domain.LegendaryMod
+import com.manson.domain.fo76.items.enums.FilterFlag
+import com.manson.domain.itemextractor.OwnerInfo
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.index.Indexed
 

@@ -2,16 +2,16 @@ package com.fo76
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.manson.fo76.domain.Fo76String
+import com.manson.domain.config.Fo76String
+import com.manson.domain.config.LegendaryModDescriptor
+import com.manson.domain.config.XTranslatorConfig
+import com.manson.domain.fo76.items.enums.FilterFlag
+import com.manson.domain.itemextractor.ModData
+import com.manson.domain.nuka.NukaRequest
+import com.manson.domain.nuka.NukaRow
 import com.manson.fo76.domain.ItemsUploadFilters
-import com.manson.fo76.domain.LegendaryModDescriptor
-import com.manson.fo76.domain.ModData
 import com.manson.fo76.domain.ModDataRequest
-import com.manson.fo76.domain.XTranslatorConfig
 import com.manson.fo76.domain.dto.ItemDTO
-import com.manson.fo76.domain.items.enums.FilterFlag
-import com.manson.fo76.domain.nuka.NukaRequest
-import com.manson.fo76.domain.nuka.NukaRow
 import com.manson.fo76.repository.PriceCheckRepository
 import com.manson.fo76.service.Fed76Service
 import com.manson.fo76.service.GameConfigService
@@ -27,7 +27,7 @@ import org.apache.commons.lang3.StringUtils
 import org.junit.jupiter.api.Test
 
 
-class ConfigPopulater {
+class ConfigPopulate {
 
     companion object {
         private val OM = ObjectMapper()
@@ -48,7 +48,7 @@ class ConfigPopulater {
         fun genericListToFo76List(fo76Strings: List<Fo76String>): Map<String, Fo76String> {
             var map: Map<String, Fo76String> = HashMap()
             try {
-                map = fo76Strings.stream().collect(Collectors.toMap(Fo76String::edid, { fo76String: Fo76String -> fo76String }) { a: Fo76String, b: Fo76String -> b })
+                map = fo76Strings.stream().collect(Collectors.toMap(Fo76String::edid, { fo76String: Fo76String -> fo76String }) { _: Fo76String, b: Fo76String -> b })
             } catch (e: Exception) {
                 e.printStackTrace()
             }

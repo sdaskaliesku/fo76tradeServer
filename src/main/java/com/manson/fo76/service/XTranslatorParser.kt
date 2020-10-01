@@ -3,7 +3,7 @@ package com.manson.fo76.service
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.github.underscore.lodash.U
-import com.manson.fo76.domain.Fo76String
+import com.manson.domain.config.Fo76String
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
