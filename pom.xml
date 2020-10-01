@@ -21,6 +21,11 @@
       <name>jcenter</name>
       <url>https://jcenter.bintray.com/</url>
     </repository>
+    <repository>
+      <id>github</id>
+      <name>GitHub sdaskaliesku Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/sdaskaliesku/fo76Domain</url>
+    </repository>
   </repositories>
 
   <properties>
