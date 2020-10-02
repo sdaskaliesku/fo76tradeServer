@@ -19,7 +19,7 @@
     <repository>
       <id>github</id>
       <name>GitHub sdaskaliesku Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/sdaskaliesku/fo76Domain</url>
+      <url>https://maven.pkg.github.com/sdaskaliesku</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
@@ -163,6 +163,7 @@
     </dependency>
 
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -251,6 +252,4 @@
       </plugin>
     </plugins>
   </build>
-
-
 </project>
