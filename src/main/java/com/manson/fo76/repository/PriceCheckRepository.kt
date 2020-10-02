@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface PriceCheckRepository : MongoRepository<PriceCheckCacheItem?, String?> {
-    fun findByRequestId(requestId: String): PriceCheckCacheItem?
+    fun findByRequestId(requestId: String): List<PriceCheckCacheItem>?
 }

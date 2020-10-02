@@ -13,6 +13,7 @@ import com.manson.fo76.repository.PriceCheckRepository
 import java.time.LocalDateTime
 import javax.ws.rs.client.WebTarget
 import javax.ws.rs.core.MediaType
+import org.apache.commons.collections4.CollectionUtils
 import org.apache.commons.lang3.StringUtils
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
@@ -73,16 +74,19 @@ class Fed76Service(@Autowired private val priceCheckRepository: PriceCheckReposi
             LOGGER.warn("Request is invalid, ignoring {}", request)
             return PriceCheckResponse()
         }
-        val cachedResponse: PriceCheckCacheItem? = priceCheckRepository?.findByRequestId(request.toId())
-        if (cachedResponse != null) {
+        val cachedResponse: List<PriceCheckCacheItem>? = priceCheckRepository?.findByRequestId(request.toId())
+        if (!CollectionUtils.isEmpty(cachedResponse)) {
             LOGGER.debug("Found request in cache {}", request)
-            val response = cachedResponse.response
-            if (isResponseExpired(response)) {
-                LOGGER.debug("Request has expired {}", request)
-                priceCheckRepository?.delete(cachedResponse)
-            } else {
-                LOGGER.debug("Price check Request is valid {}", request)
-                return response
+            val response: PriceCheckCacheItem? = cachedResponse?.get(0)
+            if (response != null) {
+                val resp: PriceCheckResponse = response.response
+                if (isResponseExpired(resp)) {
+                    LOGGER.debug("Request has expired {}", request)
+                    priceCheckRepository?.delete(response)
+                } else {
+                    LOGGER.debug("Price check Request is valid {}", request)
+                    return resp
+                }
             }
         }
         LOGGER.debug("Cache miss for request {}", request)
