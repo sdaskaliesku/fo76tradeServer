@@ -17,11 +17,8 @@
 
   <repositories>
     <repository>
-      <id>github</id>
-      <name>GitHub sdaskaliesku Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/sdaskaliesku</url>
-      <releases><enabled>true</enabled></releases>
-      <snapshots><enabled>true</enabled></snapshots>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
     </repository>
   </repositories>
 
@@ -36,9 +33,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.manson.fo76</groupId>
-      <artifactId>domain</artifactId>
-      <version>1.2</version>
+      <groupId>com.github.sdaskaliesku</groupId>
+      <artifactId>fo76Domain</artifactId>
+      <version>domain-1.2</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
