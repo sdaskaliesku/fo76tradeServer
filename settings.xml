@@ -30,7 +30,7 @@
     <server>
       <id>github</id>
       <username>sdaskaliesku</username>
-      <password>${env.GH_PKG_TOKEN}</password>
+      <password>${GH_PKG_TOKEN}</password>
     </server>
   </servers>
 </settings>
