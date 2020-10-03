@@ -276,10 +276,11 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                 val legendaryMod = LegendaryMod(newMod)
                 val descriptor: LegendaryModDescriptor? = gameConfigService.findLegendaryModDescriptor(newMod, filterFlag)
                 if (descriptor != null) {
-                    legendaryMod.abbreviation = descriptor.abbreviation
+                    legendaryMod.abbreviation = descriptor.abbreviation.toString()
                     legendaryMod.star = descriptor.star
                     legendaryMod.id = descriptor.id
-                    legendaryMod.gameId = descriptor.gameId
+                    legendaryMod.gameId = descriptor.gameId.toString()
+                    legendaryMod.text = descriptor.texts["en"].toString()
                 }
                 mods.add(legendaryMod)
             }

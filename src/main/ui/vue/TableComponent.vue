@@ -112,11 +112,10 @@
 <script>
 import {columns, modalFields} from '../table.columns';
 import Tabulator from 'tabulator-tables';
-import {filters} from '../domain';
+import {downloadOptions, filters} from '../domain';
 import {gameApiService} from '../game.api.service';
 import Vue from 'vue';
 import {Utils} from '../utils';
-import {RogueService} from '../rogue.service';
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -153,43 +152,6 @@ const tableFilters = () => {
 
 let shouldDisplayFed76Toast = true;
 const maxPriceCheckItems = 950;
-const downloadOptions = [
-  {
-    title: 'Raw json',
-    type: 'raw_json',
-    handler: function({rawData}) {
-      Utils.downloadString(JSON.stringify(rawData), 'text/json', 'full_data.json');
-    },
-  },
-  {
-    title: 'RogueTrader CSV (extremely experimental)',
-    type: 'rogue_csv',
-    handler: function({rawData, character}) {
-      Utils.downloadString(RogueService.toCSV(rawData, character), 'text/csv', 'rogue_trader.csv');
-    },
-  },
-  {
-    title: 'json',
-    type: 'json',
-    handler: function({tabulator}) {
-      tabulator.download(this.type, `data.${this.type}`, {style: true});
-    },
-  },
-  {
-    title: 'csv / excel',
-    type: 'csv',
-    handler: function({tabulator}) {
-      tabulator.download(this.type, `data.${this.type}`, {style: true});
-    },
-  },
-  {
-    title: 'html',
-    type: 'html',
-    handler: function({tabulator}) {
-      tabulator.download(this.type, `data.${this.type}`, {style: true});
-    },
-  },
-];
 
 export default {
   name: 'TableComponent',

@@ -1,8 +1,11 @@
+import {RogueService} from "./rogue.service";
+import {Utils} from "./utils";
+
 export const DISCORD_LINK = 'https://discord.gg/7fef733';
 export const NEXUS_LINK = 'https://www.nexusmods.com/fallout76/mods/698';
 export const GH_LINK = 'https://github.com/sdaskaliesku/fo76tradeServer';
 export const COMPANION_LINK = 'https://www.nexusmods.com/fallout76/mods/744';
-export const APP_VERSION = 0.6;
+export const APP_VERSION = 0.61;
 export const MIN_MOD_SUPPORTED_VERSION = 0.4;
 export const MIN_FED_MOD_SUPPORTED_VERSION = 0.1;
 
@@ -38,6 +41,7 @@ export declare interface Filter {
   filters?: string
   types?: Array<string>
 }
+
 export declare interface AuthorResponse {
   name: string
   logo: string
@@ -67,6 +71,7 @@ export declare interface PriceCheckResponse {
   timestamp: string
   path: string
   description: string
+
   isEmpty(): boolean
 }
 
@@ -142,5 +147,43 @@ export const filters: Array<Filter> = [
     filters: '33792, 1024',
     checked: true,
     types: ['JUNK'],
+  },
+];
+
+export const downloadOptions = [
+  {
+    title: 'Raw json',
+    type: 'raw_json',
+    handler: function ({rawData}: { rawData: any }) {
+      Utils.downloadString(JSON.stringify(rawData), 'text/json', 'full_data.json');
+    },
+  },
+  {
+    title: 'RogueTrader CSV (extremely experimental)',
+    type: 'rogue_csv',
+    handler: function ({rawData, character}: { rawData: any, character: string }) {
+      Utils.downloadString(RogueService.toCSV(rawData, character), 'text/csv', 'rogue_trader.csv');
+    },
+  },
+  {
+    title: 'json',
+    type: 'json',
+    handler: function ({tabulator}: { tabulator: any }) {
+      tabulator.download(this.type, `data.${this.type}`, {style: true});
+    },
+  },
+  {
+    title: 'csv / excel',
+    type: 'csv',
+    handler: function ({tabulator}: { tabulator: any }) {
+      tabulator.download(this.type, `data.${this.type}`, {style: true});
+    },
+  },
+  {
+    title: 'html',
+    type: 'html',
+    handler: function ({tabulator}: { tabulator: any }) {
+      tabulator.download(this.type, `data.${this.type}`, {style: true});
+    },
   },
 ];
