@@ -11,10 +11,10 @@
       </b-form-group>
     </div>
     <b-form-file v-if="!tableData"
-        v-model="file"
-        :state="Boolean(file)"
-        placeholder="Choose a file or drop it here..."
-        drop-placeholder="Drop file here..."
+                 v-model="file"
+                 :state="Boolean(file)"
+                 placeholder="Choose a file or drop it here..."
+                 drop-placeholder="Drop file here..."
     ></b-form-file>
     <div>
       <div class="d-flex justify-content-center mb-3 mt-5" v-if="loading">
@@ -22,9 +22,11 @@
       </div>
     </div>
     <b-modal title="Error" ok-variant="danger" centered ok-only id="errorModal">
-      {{modalText}}
+      {{ modalText }}
     </b-modal>
-    <table-component @priceCheckEvent='updateTableData' class="mt-2" v-if="tableData && tableData.length > 0" :table-data="tableData" :config="config"/>
+    <table-component @priceCheckEvent='updateTableData' class="mt-2"
+                     v-if="tableData && tableData.length > 0" :table-data="tableData"
+                     :config="config"/>
   </div>
 </template>
 
@@ -55,9 +57,9 @@ export default {
       loading: false,
       modalText: '',
       config: {
-        isFedEnhancer: this.$route.path === '/fed76'
-      }
-    }
+        isFedEnhancer: this.$route.path === '/fed76',
+      },
+    };
   },
   beforeMount() {
     filters.forEach((filter) => {
@@ -101,7 +103,10 @@ export default {
                 this.showModal(modalTexts.emptyResult());
               }
             },
-            e => console.error(e),
+            e => {
+              console.error(e);
+              this.tableData = null;
+            },
         ).finally(() => this.loading = false);
       }
     },
