@@ -42,8 +42,14 @@ export const columns = [
   createColumnDef({title: 'Minor', field: 'legendaryMods.2.text', visible: false}),
   createColumnDef({title: 'Vendor Price', field: 'tradeOptions.vendorPrice', visible: false}),
   createColumnDef({title: 'Fed76 Price', field: 'itemDetails.priceCheckResponse.price'}),
-  createColumnDef({title: 'Fed76 Description', field: 'itemDetails.priceCheckResponse.description'}),
-  createColumnDef({title: 'Fed76 Value', field: 'itemDetails.priceCheckResponse.review.description'}),
+  createColumnDef({
+    title: 'Fed76 Description',
+    field: 'itemDetails.priceCheckResponse.description'
+  }),
+  createColumnDef({
+    title: 'Fed76 Value',
+    field: 'itemDetails.priceCheckResponse.review.description'
+  }),
   createColumnDef({title: 'Description', field: 'description', visible: false}),
   {
     ...createColumnDef({title: 'Tradable', field: 'isTradable', visible: false}),
@@ -53,7 +59,14 @@ export const columns = [
     ...createColumnDef({title: 'Legendary', field: 'isLegendary', visible: false}),
     formatter: 'tickCross'
   },
-  createColumnDef({title: 'Weight', field: 'weight', visible: false})
+  createColumnDef({title: 'Weight', field: 'weight', visible: false}),
+  {
+    ...createColumnDef({title: 'Total weight', field: 'totalWeight', visible: false}),
+    formatter: function (e: any) {
+      const cellData = e.getData();
+      return cellData.count * cellData.weight;
+    }
+  }
 ];
 
 export const modalFields = [

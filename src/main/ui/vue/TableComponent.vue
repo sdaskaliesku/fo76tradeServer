@@ -116,6 +116,7 @@ import {downloadOptions, filters} from '../domain';
 import {gameApiService} from '../game.api.service';
 import Vue from 'vue';
 import {Utils} from '../utils';
+import {tableSettingsService} from '../tableSettings.service';
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -173,6 +174,12 @@ export default {
       columns.forEach(col => {
         if (col.visible) {
           cols.push(col);
+        }
+        if (col.field) {
+          tableSettingsService.set({
+            show: col.visible,
+            field: col.field,
+          });
         }
       });
       return cols;

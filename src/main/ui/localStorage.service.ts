@@ -1,4 +1,7 @@
-const LOCAL_STORAGE_TOKEN_KEY: string = 'fo76marketToken';
+export const LOCAL_STORAGE_KEYS = {
+  TOKEN: 'fo76marketToken',
+  TABLE_SETTINGS: 'fo76tableSettings'
+}
 
 class LocalStorageService {
   get(key: string): string {
@@ -14,7 +17,7 @@ class LocalStorageService {
   }
 
   getToken(): string {
-    return this.get(LOCAL_STORAGE_TOKEN_KEY);
+    return this.get(LOCAL_STORAGE_KEYS.TOKEN);
   }
 }
 
