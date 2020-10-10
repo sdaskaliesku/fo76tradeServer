@@ -65,6 +65,9 @@
             </b-form-checkbox>
           </template>
         </b-dropdown>
+        <b-button class="my-2 my-sm-0" type="submit" @click="$bvModal.show('modal-weight-info')">
+          Weight info
+        </b-button>
       </b-button-group>
     </div>
     <div ref="table" class="table-bordered table-dark table-striped table-sm"
@@ -96,6 +99,18 @@
           </b-list-group-item>
         </b-list-group>
       </template>
+    </b-modal>
+    <b-modal id="modal-weight-info" hide-footer>
+      <template v-slot:modal-title>
+        Weight info
+      </template>
+      <div class="d-block text-center">
+        <span class="d-block"><b>Total weight:</b> {{totalWeight}}</span>
+        <template v-for="(value, name) in weightInfo">
+          <span class="d-block"><b>{{name}}:</b> {{value}}</span>
+        </template>
+      </div>
+      <b-button class="mt-3" block @click="$bvModal.hide('modal-weight-info')">Close</b-button>
     </b-modal>
     <b-toast id="fed76" variant="info">
       <template v-slot:toast-title>
@@ -352,6 +367,14 @@ export default {
     this.$root.$on('bv::modal::hidden', function() {
       this.selectedItem = null;
     });
+    this.tableData.forEach(item => {
+      if (Number.isNaN(Number(this.weightInfo[item.filterFlag]))) {
+        this.weightInfo[item.filterFlag] = 0;
+      }
+      const itemWeight = item.count * item.weight;
+      this.weightInfo[item.filterFlag] += itemWeight;
+      this.totalWeight += itemWeight;
+    });
   },
   watch: {
     tableData: {
@@ -402,6 +425,8 @@ export default {
       selectedItem: null,
       modalFields: modalFields,
       isLoading: false,
+      weightInfo: {},
+      totalWeight: 0
     };
   },
 };
