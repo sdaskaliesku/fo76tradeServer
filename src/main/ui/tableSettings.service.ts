@@ -3,12 +3,10 @@ import {columns} from "./table.columns";
 
 class TableSettingsService {
 
-  private columns: Map<string, boolean> = new Map<string, boolean>();
-
+  private readonly columns: Map<string, boolean>;
 
   constructor() {
     this.columns = TableSettingsService.load();
-    console.log(this.columns);
     this.loadColumnsToDisplay();
   }
 
@@ -19,7 +17,7 @@ class TableSettingsService {
         return new Map(data);
       }
     } catch (e) {
-      console.log('Error loading table settings', e);
+      console.error('Error loading table settings', e);
     }
     return new Map<string, boolean>();
   }
@@ -48,7 +46,6 @@ class TableSettingsService {
 
   public set({show, field}: { show: boolean, field: string }) {
     this.columns.set(field, show);
-    // console.log(this.columns);
     this.save();
   }
 

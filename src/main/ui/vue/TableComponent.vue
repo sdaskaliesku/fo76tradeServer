@@ -11,6 +11,7 @@
         </h2>
       </div>
     </div>
+    <!--    TODO: move toolbar to a separate component -->
     <div class="toolbar mb-2 mt-2" v-show="!isLoading">
       <b-button-group>
         <b-input-group right class="w-auto">
