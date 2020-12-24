@@ -24,6 +24,7 @@ open class AppConfig {
         init {
             objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.NONE)
             objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY)
+            objectMapper.enable(JsonGenerator.Feature.IGNORE_UNKNOWN)
         }
     }
 
