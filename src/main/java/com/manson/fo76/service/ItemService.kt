@@ -96,14 +96,14 @@ class ItemService @Autowired constructor(
         return findAllByOwnerName(user.name, pageable)
     }
 
-    fun prepareModData(modDataRequest: ModDataRequest): List<ItemDTO?>? {
-        return itemConverterService.prepareModData(modDataRequest)
+    fun prepareModData(modDataRequest: ModDataRequest, autoPriceCheck: Boolean): List<ItemDTO?>? {
+        return itemConverterService.prepareModData(modDataRequest, autoPriceCheck)
     }
 
-    fun prepareFedModData(fedModDataRequest: FedModDataRequest): List<Fed76ItemDto> {
-        val list = itemConverterService.prepareModData(fedModDataRequest)
+    fun prepareFedModData(fedModDataRequest: FedModDataRequest, autoPriceCheck: Boolean): List<Fed76ItemDto> {
+        val list = itemConverterService.prepareModData(fedModDataRequest, autoPriceCheck)
         val fed76Items: MutableList<Fed76ItemDto> = ArrayList()
-        list?.forEach { itemDTO ->
+        list.forEach { itemDTO ->
             if (itemDTO != null) {
                 val converted = JsonParser.convertToFedItemDTO(itemDTO)
                 if (converted != null) {

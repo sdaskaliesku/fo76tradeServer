@@ -1,7 +1,9 @@
 package com.manson.fo76.helper
 
-import com.manson.fo76.domain.dto.User
+import com.manson.fo76.config.AppConfig
 import com.manson.fo76.domain.dto.ItemDTO
+import com.manson.fo76.domain.dto.User
+import java.io.StringWriter
 import org.apache.commons.lang3.StringUtils
 import org.apache.commons.lang3.math.NumberUtils
 import org.slf4j.LoggerFactory
@@ -26,5 +28,16 @@ object Utils {
         } catch (ignored: Exception) {
         }
         return -1
+    }
+
+    fun listToCSV(input: List<Any?>?): String {
+        val jsonString = AppConfig.objectMapper.writeValueAsString(input)
+        val flatMe = JFlatCustom(jsonString)
+        val stringWriter = StringWriter()
+        flatMe
+                .json2Sheet()
+                .headerSeparator(".")
+                .write2csv(stringWriter, ',')
+        return stringWriter.toString()
     }
 }

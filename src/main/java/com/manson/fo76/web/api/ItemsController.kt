@@ -2,12 +2,16 @@ package com.manson.fo76.web.api
 
 import com.manson.domain.fed76.Fed76ItemDto
 import com.manson.domain.fed76.FedModDataRequest
+import com.manson.domain.itemextractor.ModData
+import com.manson.fo76.config.AppConfig.Companion.ENABLE_AUTO_PRICE_CHECK
 import com.manson.fo76.domain.ModDataRequest
 import com.manson.fo76.domain.UploadItemRequest
 import com.manson.fo76.domain.dto.ItemDTO
+import com.manson.fo76.helper.Utils
 import com.manson.fo76.service.ItemService
 import java.util.ArrayList
 import java.util.Objects
+import javax.ws.rs.QueryParam
 import org.apache.commons.collections4.CollectionUtils
 import org.apache.commons.lang3.StringUtils
 import org.slf4j.LoggerFactory
@@ -67,10 +71,26 @@ class ItemsController @Autowired constructor(private val itemService: ItemServic
         return itemService.findByIdAndOwnerName(id, ownerName)
     }
 
+    @RequestMapping(value = ["/prepareModDataRaw"], consumes = ["application/json"], produces = ["application/json"], method = [RequestMethod.POST])
+    fun prepareModDataRaw(@QueryParam(value = "autoPriceCheck") autoPriceCheck: Boolean = false,@QueryParam(value = "toCSV") toCSV: Boolean = false, @RequestBody modData: ModData): Any? {
+        try {
+            val modDataRequest = ModDataRequest()
+            modDataRequest.modData = modData
+            val convertedData = itemService.prepareModData(modDataRequest, autoPriceCheck)
+            if (toCSV) {
+                return Utils.listToCSV(convertedData)
+            }
+            return convertedData
+        } catch (e: Exception) {
+            LOGGER.error("Error while preparing mod data {}", modData, e)
+        }
+        return null
+    }
+
     @RequestMapping(value = ["/prepareModData"], consumes = ["application/json"], produces = ["application/json"], method = [RequestMethod.POST])
     fun prepareModData(@RequestBody modDataRequest: ModDataRequest): List<ItemDTO?>? {
         try {
-            return itemService.prepareModData(modDataRequest)
+            return itemService.prepareModData(modDataRequest, ENABLE_AUTO_PRICE_CHECK)
         } catch (e: Exception) {
             LOGGER.error("Error while preparing mod data {}", modDataRequest, e)
         }
@@ -81,7 +101,7 @@ class ItemsController @Autowired constructor(private val itemService: ItemServic
     fun prepareFedModData(@RequestBody fedModDataRequest: FedModDataRequest): List<Fed76ItemDto> {
         try {
 //            TODO: send data to fed76 instead of rendering on ui, once it will be ready
-            return itemService.prepareFedModData(fedModDataRequest)
+            return itemService.prepareFedModData(fedModDataRequest, ENABLE_AUTO_PRICE_CHECK)
         } catch (e: Exception) {
             LOGGER.error("Error while preparing mod data {}", fedModDataRequest, e)
         }

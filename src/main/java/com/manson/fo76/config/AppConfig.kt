@@ -2,6 +2,7 @@ package com.manson.fo76.config
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect
 import com.fasterxml.jackson.annotation.PropertyAccessor
+import com.fasterxml.jackson.core.JsonGenerator
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoClients
@@ -23,6 +24,7 @@ open class AppConfig {
         init {
             objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.NONE)
             objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY)
+            objectMapper.disable(JsonGenerator.Feature.IGNORE_UNKNOWN)
         }
     }
 

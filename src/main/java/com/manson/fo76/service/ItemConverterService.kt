@@ -11,7 +11,6 @@ import com.manson.domain.itemextractor.CharacterInventory
 import com.manson.domain.itemextractor.ItemDescriptor
 import com.manson.domain.itemextractor.ModData
 import com.manson.domain.itemextractor.OwnerInfo
-import com.manson.fo76.config.AppConfig.Companion.ENABLE_AUTO_PRICE_CHECK
 import com.manson.fo76.domain.ItemsUploadFilters
 import com.manson.fo76.domain.ModDataRequest
 import com.manson.fo76.domain.dto.ItemDTO
@@ -107,7 +106,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return allItems
     }
 
-    fun prepareModData(fedModDataRequest: FedModDataRequest): List<ItemDTO?>? {
+    fun prepareModData(fedModDataRequest: FedModDataRequest, autoPriceCheck: Boolean): List<ItemDTO?> {
         val modData = ModData()
         val map: Map<String, List<ItemDescriptor>> = fedModDataRequest.characterInventories
         val characterInventory = CharacterInventory()
@@ -117,15 +116,15 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         modData.characterInventories = HashMap()
         modData.characterInventories["test"] = characterInventory
         val itemDescriptors = processModDataItems(modData, ItemsUploadFilters())
-        return convertItems(itemDescriptors)
+        return convertItems(itemDescriptors, autoPriceCheck)
     }
 
-    fun prepareModData(modDataRequest: ModDataRequest): List<ItemDTO?>? {
+    fun prepareModData(modDataRequest: ModDataRequest, autoPriceCheck: Boolean): List<ItemDTO?> {
         val itemDescriptors = processModDataItems(modDataRequest.modData, modDataRequest.filters)
-        return convertItems(itemDescriptors)
+        return convertItems(itemDescriptors, autoPriceCheck)
     }
 
-    private fun dedupeItems(itemDTOS: MutableList<ItemDTO>): List<ItemDTO?> {
+    private fun dedupeItems(itemDTOS: MutableList<ItemDTO>, autoPriceCheck: Boolean): List<ItemDTO?> {
         val deduped: MutableList<ItemDTO> = java.util.ArrayList()
         for (itemDTO in itemDTOS) {
             if (CollectionUtils.isEmpty(deduped)) {
@@ -143,18 +142,18 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
             if (!isDuplicate) {
                 // TODO: temp
                 itemDTO.id = UUID.randomUUID().toString()
-                itemDTO.itemDetails = createItemDetails(itemDTO)
+                itemDTO.itemDetails = createItemDetails(itemDTO, autoPriceCheck)
                 deduped.add(itemDTO)
             }
         }
         return deduped
     }
 
-    private fun convertItems(items: List<ItemDescriptor>): List<ItemDTO?> {
+    private fun convertItems(items: List<ItemDescriptor>, autoPriceCheck: Boolean): List<ItemDTO?> {
         val list: MutableList<ItemDTO> = items.stream().map { item: ItemDescriptor -> convertItem(item) }
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList())
-        return dedupeItems(list)
+        return dedupeItems(list, autoPriceCheck)
     }
 
     private fun findFilterFlag(item: ItemDescriptor?): FilterFlag {
@@ -221,13 +220,13 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
         return ownerInfo
     }
 
-    private fun createItemDetails(item: ItemDTO): ItemDetails {
+    private fun createItemDetails(item: ItemDTO, autoPriceCheck: Boolean): ItemDetails {
         val itemDetails = item.itemDetails
         itemDetails.armorGrade = gameConfigService.findArmorType(item)
         if (shouldConvertItemName(item)) {
             itemDetails.name = item.text?.let { gameConfigService.getPossibleItemName(it, isArmor(item)) }.toString()
             itemDetails.fedName = gameConfigService.findFedItemName(item)
-            if (!ENABLE_AUTO_PRICE_CHECK) {
+            if (!autoPriceCheck) {
                 return itemDetails
             }
             if (item.isLegendary && item.isTradable && SUPPORTED_PRICE_CHECK_ITEMS.contains(item.filterFlag)) {
@@ -309,7 +308,7 @@ class ItemConverterService @Autowired constructor(private val gameConfigService:
                     }
                     itemDTO.legendaryMods = legendaryMods
                     var abbreviation = legendaryMods.stream()
-                            .map<String>(LegendaryMod::abbreviation)
+                            .map(LegendaryMod::abbreviation)
                             .filter(StringUtils::isNotBlank)
                             .collect(Collectors.joining("/"))
                     if (StringUtils.isBlank(abbreviation)) {

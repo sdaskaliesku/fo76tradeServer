@@ -191,7 +191,7 @@ class ConfigPopulate {
                 val filterFlags: List<FilterFlag> = listOf(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_RANGED, FilterFlag.WEAPON_MELEE)
                 modDataRequest.filters.filterFlags = filterFlags.flatMap { x -> x.getFlags() }
 
-                val list = itemService.prepareModData(modDataRequest)
+                val list = itemService.prepareModData(modDataRequest, false)
                 if (CollectionUtils.isNotEmpty(list)) {
                     OM.writeValue(File(outDir, "${origFile.nameWithoutExtension}.json"), list)
                 }
