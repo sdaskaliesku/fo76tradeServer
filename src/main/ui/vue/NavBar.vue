@@ -1,15 +1,15 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#">Fo76TradeHub v{{ version }}</b-navbar-brand>
+      <b-navbar-brand href="https://fo76market.online/">Fo76TradeHub v{{ version }}</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="/" @click="$router.go()">Upload inventory dump</b-nav-item>
-          <b-nav-item to="/fed76" @click="$router.go()">Upload FED76 price check enhancer
-          </b-nav-item>
+<!--          <b-nav-item to="/" @click="$router.go()">Upload inventory dump</b-nav-item>-->
+<!--          <b-nav-item to="/fed76" @click="$router.go()">Upload FED76 price check enhancer-->
+<!--          </b-nav-item>-->
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-form>

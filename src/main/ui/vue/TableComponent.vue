@@ -80,9 +80,9 @@
             getObjectValue(selectedItem, field.field)
           }}</span>
       </template>
-      <template v-if="!isEmpty(selectedItem.stats)">
+      <template v-if="!isEmpty(selectedItem.itemDetails.stats)">
         <b>Additional parameters:</b>
-        <b-list-group v-for="stat in selectedItem.stats" v-bind:key="randomstring()">
+        <b-list-group v-for="stat in selectedItem.itemDetails.stats" v-bind:key="randomstring()">
           <b-list-group-item class="modal-row" v-if="!isEmpty(stat)">
             Text: {{ stat.text }},
             DamageType: {{ stat.damageType }},
@@ -91,9 +91,9 @@
         </b-list-group>
       </template>
       <template
-          v-if="!isEmpty(selectedItem.legendaryMods) && !isEmpty(selectedItem.legendaryMods[0]) && !isEmpty(selectedItem.legendaryMods[0].value)">
+          v-if="!isEmpty(selectedItem.itemDetails.legendaryMods) && !isEmpty(selectedItem.itemDetails.legendaryMods[0]) && !isEmpty(selectedItem.itemDetails.legendaryMods[0].value)">
         <b>Legendary mods:</b>
-        <b-list-group v-for="mod in selectedItem.legendaryMods" v-bind:key="randomstring()">
+        <b-list-group v-for="mod in selectedItem.itemDetails.legendaryMods" v-bind:key="randomstring()">
           <b-list-group-item class="modal-row" v-if="!isEmpty(mod) && !isEmpty(mod.value)">
             {{ mod.value }}
           </b-list-group-item>
@@ -210,9 +210,8 @@ export default {
         itemsForCheck = providedNumber;
       }
       for (const item of this.tableData) {
-        if (Utils.isEligibleForPriceCheck(item) && Utils.isPriceCheckResponseEmpty(
-            item.itemDetails.priceCheckResponse)) {
-          item.itemDetails.priceCheckResponse = await gameApiService.priceCheck(item);
+        if (Utils.isEligibleForPriceCheck(item) && Utils.isPriceCheckResponseEmpty(item.priceCheckResponse)) {
+          item.priceCheckResponse = await gameApiService.priceCheck(item);
           if (priceCheckedItems++ >= itemsForCheck) {
             break;
           }
@@ -226,7 +225,7 @@ export default {
       e.stopPropagation();
       const cellItem = cell.getData();
       if (Utils.isEligibleForPriceCheck(cellItem)) {
-        if (!Utils.isPriceCheckResponseEmpty(cellItem.itemDetails.priceCheckResponse)) {
+        if (!Utils.isPriceCheckResponseEmpty(cellItem.priceCheckResponse)) {
           return;
         }
         if (shouldDisplayFed76Toast) {
@@ -236,13 +235,14 @@ export default {
         const priceCheckResponse = await gameApiService.priceCheck(cellItem);
         for (const item of this.tableData) {
           if (cellItem.id === item.id) {
-            item.itemDetails.priceCheckResponse = priceCheckResponse;
+            item.priceCheckResponse = priceCheckResponse;
+            cellItem.priceCheckResponse = priceCheckResponse;
             break;
           }
         }
         this.$emit('updateTableData', this.tableData);
       } else {
-        this.$bvToast.toast(`Price check available only for tradable legendary armor and weapon!`, {
+        this.$bvToast.toast(`Price check available only for tradable notes and tradable legendary armor and weapon!`, {
           title: 'FED76',
           variant: 'danger',
           autoHideDelay: 1000,

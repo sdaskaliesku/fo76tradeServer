@@ -23,8 +23,8 @@ export const columns = [
   },
   createColumnDef({title: 'Name', field: 'text'}),
   createColumnDef({title: 'Name converted', field: 'itemDetails.name', visible: false}),
-  createColumnDef({title: 'Account', field: 'ownerInfo.accountOwner'}),
-  createColumnDef({title: 'Character', field: 'ownerInfo.characterOwner'}),
+  createColumnDef({title: 'Account', field: 'itemDetails.ownerInfo.accountName'}),
+  createColumnDef({title: 'Character', field: 'itemDetails.ownerInfo.characterName'}),
   {
     ...createColumnDef({title: 'Stars', field: 'legendaryMods.length'}),
     formatter: 'star',
@@ -34,22 +34,22 @@ export const columns = [
   createColumnDef({title: 'Armor Grade', field: 'itemDetails.armorGrade', visible: false}),
   createColumnDef({title: 'Level', field: 'itemLevel'}),
   createColumnDef({title: 'Count', field: 'count'}),
-  createColumnDef({title: '1 star', field: 'legendaryMods.0.value'}),
-  createColumnDef({title: '2 star', field: 'legendaryMods.1.value'}),
-  createColumnDef({title: '3 star', field: 'legendaryMods.2.value'}),
-  createColumnDef({title: 'Prefix', field: 'legendaryMods.0.text', visible: false}),
-  createColumnDef({title: 'Major', field: 'legendaryMods.1.text', visible: false}),
-  createColumnDef({title: 'Minor', field: 'legendaryMods.2.text', visible: false}),
-  createColumnDef({title: 'Vendor Price', field: 'tradeOptions.vendorPrice', visible: false}),
-  createColumnDef({title: 'Fed76 Price', field: 'itemDetails.priceCheckResponse.price'}),
+  createColumnDef({title: '1 star', field: 'itemDetails.legendaryMods.0.value'}),
+  createColumnDef({title: '2 star', field: 'itemDetails.legendaryMods.1.value'}),
+  createColumnDef({title: '3 star', field: 'itemDetails.legendaryMods.2.value'}),
+  createColumnDef({title: 'Prefix', field: 'itemDetails.legendaryMods.0.text', visible: false}),
+  createColumnDef({title: 'Major', field: 'itemDetails.legendaryMods.1.text', visible: false}),
+  createColumnDef({title: 'Minor', field: 'itemDetails.legendaryMods.2.text', visible: false}),
+  // createColumnDef({title: 'Vendor Price', field: 'tradeOptions.vendorPrice', visible: false}),
+  createColumnDef({title: 'Fed76 Price', field: 'priceCheckResponse.price'}),
   createColumnDef({
     title: 'Fed76 Description',
-    field: 'itemDetails.priceCheckResponse.description'
+    field: 'priceCheckResponse.description'
   }),
-  createColumnDef({
-    title: 'Fed76 Value',
-    field: 'itemDetails.priceCheckResponse.review.description'
-  }),
+  // createColumnDef({
+  //   title: 'Fed76 Value',
+  //   field: 'priceCheckResponse.review.description'
+  // }),
   createColumnDef({title: 'Description', field: 'description', visible: false}),
   {
     ...createColumnDef({title: 'Tradable', field: 'isTradable', visible: false}),
@@ -60,14 +60,9 @@ export const columns = [
     formatter: 'tickCross'
   },
   createColumnDef({title: 'Weight', field: 'weight', visible: false}),
-  {
-    ...createColumnDef({title: 'Total weight', field: 'totalWeight', visible: false}),
-    formatter: function (e: any) {
-      const cellData = e.getData();
-      return cellData.count * cellData.weight;
-    }
-  }
+  createColumnDef({title: 'Total weight', field: 'itemDetails.totalWeight', visible: false})
 ];
+
 
 export const modalFields = [
   {
@@ -88,7 +83,7 @@ export const modalFields = [
   },
   {
     name: 'Type',
-    field: 'filterFlag',
+    field: 'itemDetails.filterFlag',
   },
   {
     name: 'Armor Grade',
@@ -120,23 +115,23 @@ export const modalFields = [
   },
   {
     name: 'Fed76 Name',
-    field: 'itemDetails.priceCheckResponse.name',
+    field: 'priceCheckResponse.name',
   },
   {
     name: 'Fed76 Price',
-    field: 'itemDetails.priceCheckResponse.price',
+    field: 'priceCheckResponse.price',
   },
   {
     name: 'Fed76 Description',
-    field: 'itemDetails.priceCheckResponse.description',
+    field: 'priceCheckResponse.description',
   },
   {
     name: 'Fed76 Value',
-    field: 'itemDetails.priceCheckResponse.review.description',
+    field: 'priceCheckResponse.review.description',
   },
   {
-    name: 'fed76 Rating Value',
-    field: 'itemDetails.priceCheckResponse.review.reviewRating.ratingValue',
+    name: 'Fed76 Rating Value',
+    field: 'priceCheckResponse.review.reviewRating.ratingValue',
   },
   {
     name: 'Legendary stars',

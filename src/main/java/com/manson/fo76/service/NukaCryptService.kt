@@ -16,13 +16,14 @@ class NukaCryptService(objectMapper: ObjectMapper) : BaseRestClient(objectMapper
 
     fun performRequest(request: NukaRequest): NukaResponse? {
         val webResource: WebTarget = client
-                .target("https://nukacrypt.com/queries/searchdata.php")
+            .target("https://nukacrypt.com/queries/searchdata.php")
         val multiPart = FormDataMultiPart()
         val map = request.toMultiPartMap()
         map.forEach { (k, v) ->
             multiPart.field(k, v)
         }
-        val response = webResource.request().accept(MediaType.MULTIPART_FORM_DATA).buildPost(Entity.entity(multiPart, MediaType.MULTIPART_FORM_DATA)).invoke()
+        val response = webResource.request().accept(MediaType.MULTIPART_FORM_DATA)
+            .buildPost(Entity.entity(multiPart, MediaType.MULTIPART_FORM_DATA)).invoke()
         val responseString = BufferedReader((response.entity as InputStream).reader()).readText()
         return objectMapper.readValue(responseString, NukaResponse::class.java)
     }

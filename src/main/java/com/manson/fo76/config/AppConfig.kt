@@ -1,17 +1,18 @@
 package com.manson.fo76.config
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect
+import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.annotation.PropertyAccessor
 import com.fasterxml.jackson.core.JsonGenerator
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.mongodb.client.MongoClient
 import com.mongodb.client.MongoClients
+import javax.servlet.MultipartConfigElement
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.web.servlet.MultipartConfigFactory
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.util.unit.DataSize
-import javax.servlet.MultipartConfigElement
 
 @Configuration
 open class AppConfig {
@@ -25,6 +26,7 @@ open class AppConfig {
             objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.NONE)
             objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY)
             objectMapper.enable(JsonGenerator.Feature.IGNORE_UNKNOWN)
+            objectMapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY)
         }
     }
 

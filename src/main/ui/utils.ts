@@ -1,6 +1,6 @@
 import {PriceCheckResponse} from "./domain";
-
-const priceCheckFilterFlags: Array<string> = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE'];
+const NOTES = 'NOTES';
+const priceCheckFilterFlags: Array<string> = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE', NOTES];
 
 export class Utils {
   public static readFile(file: File): Promise<any> {
@@ -17,16 +17,20 @@ export class Utils {
 
   public static isEligibleForPriceCheck(item: any): boolean {
     const filterFlag: string = item.filterFlag;
-    return item.isLegendary && item.isTradable && priceCheckFilterFlags.includes(filterFlag);
+    return (item.isLegendary || filterFlag === NOTES) && item.isTradable && priceCheckFilterFlags.includes(filterFlag);
   }
 
   public static isPriceCheckResponseEmpty(priceCheckResponse: PriceCheckResponse): boolean {
-    let values = [];
-    values.push(priceCheckResponse.name);
-    values.push(priceCheckResponse.description);
-    values.push(priceCheckResponse.timestamp);
-    values.push(priceCheckResponse.path);
-    return values.every(value => value === 'EMPTY');
+    if (priceCheckResponse == null || priceCheckResponse.price < 1) {
+      return true;
+    }
+    // let values = [];
+    // values.push(priceCheckResponse.name);
+    // values.push(priceCheckResponse.description);
+    // values.push(priceCheckResponse.timestamp);
+    // values.push(priceCheckResponse.path);
+    // return values.every(value => value === 'EMPTY');
+    return true;
   }
 
   public static uuid(): string {
