@@ -11,7 +11,7 @@ public class JsonParser {
 
   private static final TypeReference<Map<String, Object>> TYPE_REFERENCE = new TypeReference<Map<String, Object>>() {
   };
-  private static final ObjectMapper OM = AppConfig.Companion.getObjectMapper();
+  private static final ObjectMapper OM = AppConfig.getObjectMapper();
 
   public static Map<String, Object> objectToMap(Object o) {
     try {

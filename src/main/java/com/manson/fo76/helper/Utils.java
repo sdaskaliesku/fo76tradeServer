@@ -25,7 +25,7 @@ public class Utils {
 
   public static String toCSV(List<?> list) {
     try {
-      String json = AppConfig.Companion.getObjectMapper().writeValueAsString(list);
+      String json = AppConfig.getObjectMapper().writeValueAsString(list);
       JFlatCustom jFlat = new JFlatCustom(json);
       StringWriter stringWriter = new StringWriter();
       jFlat
