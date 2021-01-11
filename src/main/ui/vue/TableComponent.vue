@@ -92,11 +92,11 @@
       <template v-slot:toast-title>
         <div class="d-flex flex-grow-1 align-items-baseline">
           <strong class="mr-auto">Thanks to <a href="https://fed76.info/"
-                                               target="_blank">imprezobus</a>!</strong>
+                                               target="_blank">imprezobus</a> and <a href="https://fed76.info/plans/">Plan collectors</a>!</strong>
         </div>
       </template>
       Price estimates powered by <a href="https://fed76.info/pricing/"
-                                    target="_blank">PriceCheck</a> tool
+                                    target="_blank">Item PriceCheck</a> and <a href="https://fed76.info/plans/">Plan PriceCheck</a> tools
     </b-toast>
   </div>
 </template>
