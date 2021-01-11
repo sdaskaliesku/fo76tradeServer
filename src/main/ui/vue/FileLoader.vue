@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="!tableData && !config.isFedEnhancer">
+    <div v-if="!tableData">
       <b-form-group label="Filters for uploading" label-size="lg">
         <b-form-checkbox-group
             v-model="selected"
@@ -25,8 +25,7 @@
       {{ modalText }}
     </b-modal>
     <table-component @priceCheckEvent='updateTableData' class="mt-2"
-                     v-if="tableData && tableData.length > 0" :table-data="tableData"
-                     :config="config"/>
+                     v-if="tableData && tableData.length > 0" :table-data="tableData"/>
   </div>
 </template>
 
@@ -56,9 +55,6 @@ export default {
       tableData: null,
       loading: false,
       modalText: '',
-      config: {
-        isFedEnhancer: this.$route.path === '/fed76',
-      },
     };
   },
   beforeMount() {
@@ -69,7 +65,6 @@ export default {
         checked: filter.checked,
       });
     });
-    this.config.isFedEnhancer = this.$route.path === '/fed76';
   },
   watch: {
     file: function(val) {
@@ -80,10 +75,6 @@ export default {
           const modFileVersion = data.version;
           let minSupportedVersion = MIN_MOD_SUPPORTED_VERSION;
           let prepareModDataFunc = itemService.prepareModData;
-          if (this.config.isFedEnhancer) {
-            minSupportedVersion = MIN_FED_MOD_SUPPORTED_VERSION;
-            prepareModDataFunc = itemService.prepareFedModData;
-          }
           if (modFileVersion < minSupportedVersion) {
             this.showModal(modalTexts.invalidVersion(modFileVersion));
             this.loading = false;
@@ -127,6 +118,7 @@ export default {
         filterFlags: [],
         legendaryOnly: false,
         tradableOnly: false,
+        priceCheckOnly: false
       };
       this.selected.forEach((v) => {
         let valNumber = Number(v);
@@ -138,6 +130,8 @@ export default {
             uploadFileFilters.tradableOnly = true;
           } else if (v === filters[1].name) {
             uploadFileFilters.legendaryOnly = true;
+          } else if (v === filters[2].name) {
+            uploadFileFilters.priceCheckOnly = true;
           }
         }
       });

@@ -1,7 +1,7 @@
 package com.manson.fo76.domain.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.manson.AbstractObject;
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,11 +15,10 @@ import lombok.ToString;
 @Builder
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-public class ItemsUploadFilters extends AbstractObject {
-
-  private List<Integer> filterFlags;
-  private boolean legendaryOnly = false;
-  private boolean tradableOnly = false;
-  private boolean priceCheckOnly = false;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class VendingData extends AbstractObject {
+  private Boolean isVendedOnOtherMachine;
+  private Integer price;
+  private Integer machineType;
 
 }

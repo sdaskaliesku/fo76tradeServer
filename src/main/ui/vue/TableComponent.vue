@@ -74,40 +74,16 @@
          v-show="!isLoading"></div>
     <b-modal size="xl" scrollable ok-only centered v-if="selectedItem" id="itemDetailsModal"
              :title="selectedItem.text">
-      <template v-for="field in modalFields">
-        <span class="modal-row"
-              v-if="!isEmpty(getObjectValue(selectedItem, field.field))"><b>{{ field.name }}: </b>{{
-            getObjectValue(selectedItem, field.field)
-          }}</span>
-      </template>
-      <template v-if="!isEmpty(selectedItem.itemDetails.stats)">
-        <b>Additional parameters:</b>
-        <b-list-group v-for="stat in selectedItem.itemDetails.stats" v-bind:key="randomstring()">
-          <b-list-group-item class="modal-row" v-if="!isEmpty(stat)">
-            Text: {{ stat.text }},
-            DamageType: {{ stat.damageType }},
-            Value: {{ stat.value }}
-          </b-list-group-item>
-        </b-list-group>
-      </template>
-      <template
-          v-if="!isEmpty(selectedItem.itemDetails.legendaryMods) && !isEmpty(selectedItem.itemDetails.legendaryMods[0]) && !isEmpty(selectedItem.itemDetails.legendaryMods[0].value)">
-        <b>Legendary mods:</b>
-        <b-list-group v-for="mod in selectedItem.itemDetails.legendaryMods" v-bind:key="randomstring()">
-          <b-list-group-item class="modal-row" v-if="!isEmpty(mod) && !isEmpty(mod.value)">
-            {{ mod.value }}
-          </b-list-group-item>
-        </b-list-group>
-      </template>
+      <pre class="modal-row" v-text="JSON.stringify(selectedItem, undefined, 2)"></pre>
     </b-modal>
     <b-modal id="modal-weight-info" hide-footer>
       <template v-slot:modal-title>
         Weight info
       </template>
       <div class="d-block text-center">
-        <span class="d-block"><b>Total weight:</b> {{totalWeight}}</span>
+        <span class="d-block"><b>Total weight:</b> {{ totalWeight }}</span>
         <template v-for="(value, name) in weightInfo">
-          <span class="d-block"><b>{{name}}:</b> {{value}}</span>
+          <span class="d-block"><b>{{ name }}:</b> {{ value }}</span>
         </template>
       </div>
       <b-button class="mt-3" block @click="$bvModal.hide('modal-weight-info')">Close</b-button>
@@ -126,7 +102,7 @@
 </template>
 
 <script>
-import {columns, modalFields} from '../table.columns';
+import {columns} from '../table.columns';
 import Tabulator from 'tabulator-tables';
 import {downloadOptions, filters} from '../domain';
 import {gameApiService} from '../game.api.service';
@@ -174,15 +150,6 @@ export default {
   name: 'TableComponent',
   props: {
     tableData: Array,
-    config: {
-      type: Object,
-      required: false,
-      default: function() {
-        return {
-          isFedEnhancer: false,
-        };
-      },
-    },
   },
   methods: {
     getColumnsToDisplay: function() {
@@ -326,13 +293,7 @@ export default {
         isEmpty = input.length <= 0;
       }
       return isUndef || isNull || isEmpty;
-    },
-    randomstring: function() {
-      return Utils.uuid();
-    },
-    getObjectValue: function(object, field) {
-      return field.split('.').reduce((p, c) => p && p[c] || null, object);
-    },
+    }
   },
   beforeMount: function() {
     columns.push({
@@ -423,10 +384,9 @@ export default {
       maxItemsForPriceCheck: maxPriceCheckItems,
       downloadOptions: downloadOptions,
       selectedItem: null,
-      modalFields: modalFields,
       isLoading: false,
       weightInfo: {},
-      totalWeight: 0
+      totalWeight: 0,
     };
   },
 };
@@ -456,6 +416,14 @@ export default {
 
 ::v-deep .custom-control-label:first-letter {
   text-transform: uppercase;
+}
+
+div.table-dark {
+  font-size: 12px;
+}
+
+::v-deep .tabulator .tabulator-footer .tabulator-page {
+  padding: 2px 8px;
 }
 
 </style>

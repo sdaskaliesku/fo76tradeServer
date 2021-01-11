@@ -37,10 +37,6 @@ public class AppConfig {
   @Value("#{systemProperties['mongo.url']}")
   private String mongoUrl;
 
-  public final String getMongoUrl() {
-    return this.mongoUrl;
-  }
-
   public String createMongoUrl() {
     return String.format(MONGO_URL_FORMAT, mongoUser, mongoPassword, mongoUrl, mongoDb);
   }
@@ -62,6 +58,5 @@ public class AppConfig {
   public static ObjectMapper getObjectMapper() {
     return objectMapper;
   }
-
 
 }

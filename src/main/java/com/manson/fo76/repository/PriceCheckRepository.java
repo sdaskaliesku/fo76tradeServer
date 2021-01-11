@@ -1,13 +1,10 @@
 package com.manson.fo76.repository;
 
-import com.manson.fo76.domain.fed76.PriceCheckCacheItem;
-import java.util.List;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
+//@Profile("cache")
 @Repository
-public interface PriceCheckRepository extends MongoRepository<PriceCheckCacheItem, String> {
-
-  List<PriceCheckCacheItem> findByRequestId(String requestId);
+public interface PriceCheckRepository extends BasePriceCheckRepository {
 
 }

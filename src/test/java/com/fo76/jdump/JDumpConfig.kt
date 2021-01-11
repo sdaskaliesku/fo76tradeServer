@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.manson.domain.config.LegendaryModDescriptor
 import com.manson.domain.config.XTranslatorConfig
 import com.manson.domain.fo76.items.enums.FilterFlag
+import com.manson.fo76.domain.dto.ItemConfig
 import java.io.File
 import java.util.function.Function
 import org.apache.commons.lang3.StringUtils
@@ -18,7 +19,6 @@ import org.hibernate.SessionFactory
 import org.hibernate.Transaction
 import org.hibernate.cfg.Configuration
 import org.junit.jupiter.api.Test
-import com.manson.fo76.domain.dto.ItemConfig
 
 
 class JDumpConfig {
@@ -105,51 +105,63 @@ class JDumpConfig {
         val outputFile = File("dumpLegendaryMods.json")
         val mainConfigFile = File("src/main/resources/legendaryMods.config.json")
         val newModList: MutableList<LegendaryModDescriptor> = ArrayList()
-
-        getData(Queries.LEG_MODS).forEach {
-            run {
-                val legMod = LegendaryModDescriptor()
-                legMod.texts = objectMapper.readValue(it.name, typeReference)
-                legMod.translations = objectMapper.readValue(it.desc, typeReference)
-                legMod.id = it.editorid
-                legMod.gameId = it.formid
-                val starStr = legMod.id.filter { it.isDigit() }
-                if (StringUtils.isNotBlank(starStr)) {
-                    legMod.star = Integer.parseInt(starStr)
-                }
-                legMod.itemType = getItemType(legMod)
-                if (legMod.star == 0) {
-                    legMod.enabled = false
-                }
-                newModList += legMod
-            }
-        }
-        objectMapper.writeValue(outputFile, newModList)
-
         val legMods: MutableList<LegendaryModDescriptor> =
             objectMapper.readValue(
                 mainConfigFile,
                 LEG_MOD_TYPE_REF
             ) as MutableList<LegendaryModDescriptor>
-        val list = objectMapper.readValue(outputFile, LEG_MOD_TYPE_REF)
-        list.forEach {
+        getData(Queries.LEG_MODS).forEach {
             run {
-                var found = false;
-                legMods.forEach { dumpLeg ->
+                val sqlLiteEntity = it;
+                legMods.forEach {
                     run {
-                        dumpLeg.itemType = getItemType(dumpLeg)
-                        if (StringUtils.equalsIgnoreCase(it.gameId, dumpLeg.gameId)) {
-                            dumpLeg.translations = it.translations
-                            dumpLeg.texts = it.texts
-                            found = true
+                        if (StringUtils.equalsIgnoreCase(it.id, sqlLiteEntity.editorid)) {
+                            it.gameId = sqlLiteEntity.formid
                         }
                     }
                 }
-                if (!found) {
-                    legMods.add(it);
-                }
+//                val legMod = LegendaryModDescriptor()
+//                legMod.texts = objectMapper.readValue(it.name, typeReference)
+//                legMod.translations = objectMapper.readValue(it.desc, typeReference)
+//                legMod.id = it.editorid
+//                legMod.gameId = it.formid
+//                val starStr = legMod.id.filter { it.isDigit() }
+//                if (StringUtils.isNotBlank(starStr)) {
+//                    legMod.star = Integer.parseInt(starStr)
+//                }
+//                legMod.itemType = getItemType(legMod)
+//                if (legMod.star == 0) {
+//                    legMod.enabled = false
+//                }
+//                newModList += legMod
             }
         }
+//        objectMapper.writeValue(outputFile, newModList)
+//
+//        val legMods: MutableList<LegendaryModDescriptor> =
+//            objectMapper.readValue(
+//                mainConfigFile,
+//                LEG_MOD_TYPE_REF
+//            ) as MutableList<LegendaryModDescriptor>
+//        val list = objectMapper.readValue(outputFile, LEG_MOD_TYPE_REF)
+//        list.forEach {
+//            run {
+//                var found = false;
+//                legMods.forEach { dumpLeg ->
+//                    run {
+//                        dumpLeg.itemType = getItemType(dumpLeg)
+//                        if (StringUtils.equalsIgnoreCase(it.gameId, dumpLeg.gameId)) {
+//                            dumpLeg.translations = it.translations
+//                            dumpLeg.texts = it.texts
+//                            found = true
+//                        }
+//                    }
+//                }
+//                if (!found) {
+//                    legMods.add(it);
+//                }
+//            }
+//        }
         objectMapper.writeValue(mainConfigFile, legMods)
     }
 

@@ -2,9 +2,9 @@ package com.manson.fo76.service;
 
 import com.google.common.collect.Sets;
 import com.manson.domain.LegendaryMod;
+import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.fed76.pricing.PriceCheckResponse;
-import com.manson.domain.fo76.items.enums.ArmorGrade;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.fo76.items.item_card.ItemCardEntry;
@@ -18,6 +18,7 @@ import com.manson.fo76.domain.dto.ModData;
 import com.manson.fo76.domain.dto.ModDataRequest;
 import com.manson.fo76.domain.dto.OwnerInfo;
 import com.manson.fo76.domain.dto.Stats;
+import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
 import com.manson.fo76.domain.fed76.PriceCheckRequest;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -50,7 +51,8 @@ public class ItemConverterService {
       .newHashSet(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
           FilterFlag.NOTES);
   public static final Set<FilterFlag> SUPPORTED_PRICE_CHECK_ITEMS = Sets
-      .newHashSet(FilterFlag.WEAPON, FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED, FilterFlag.NOTES);
+      .newHashSet(FilterFlag.WEAPON, FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
+          FilterFlag.NOTES);
 
   private final GameConfigService gameConfigService;
   private final Fed76Service fed76Service;
@@ -59,6 +61,41 @@ public class ItemConverterService {
   public ItemConverterService(GameConfigService gameConfigService, Fed76Service fed76Service) {
     this.gameConfigService = gameConfigService;
     this.fed76Service = fed76Service;
+  }
+
+  private static boolean matchesPriceCheckOnly(ItemDescriptor itemDescriptor) {
+    boolean isTradable = itemDescriptor.isTradable();
+    FilterFlag filterFlag = itemDescriptor.getFilterFlagEnum();
+    boolean validType = SUPPORTED_PRICE_CHECK_ITEMS.contains(filterFlag);
+    if (!validType || !isTradable) {
+      return false;
+    }
+    if (filterFlag == FilterFlag.NOTES) {
+      return true;
+    }
+    return itemDescriptor.isLegendary();
+  }
+
+  private static boolean matchesPriceCheckOnly(ItemResponse itemResponse) {
+    boolean isTradable = itemResponse.getIsTradable();
+    FilterFlag filterFlag = itemResponse.getFilterFlag();
+    boolean validType = SUPPORTED_PRICE_CHECK_ITEMS.contains(filterFlag);
+    if (!validType || !isTradable) {
+      return false;
+    }
+    boolean missingItemConfig =
+        Objects.isNull(itemResponse.getItemDetails()) || Objects.isNull(itemResponse.getItemDetails().getConfig());
+    if (missingItemConfig) {
+      return false;
+    }
+    boolean missingItemId = StringUtils.isBlank(itemResponse.getItemDetails().getConfig().getGameId());
+    if (missingItemId) {
+      return false;
+    }
+    if (filterFlag == FilterFlag.NOTES) {
+      return true;
+    }
+    return itemResponse.getIsLegendary();
   }
 
   private static boolean matchesFilter(ItemsUploadFilters filter, ItemDescriptor itemDescriptor) {
@@ -71,6 +108,9 @@ public class ItemConverterService {
       if (!itemDescriptor.isLegendary()) {
         return false;
       }
+    }
+    if (filter.isPriceCheckOnly()) {
+      return matchesPriceCheckOnly(itemDescriptor);
     }
     FilterFlag filterFlag = itemDescriptor.getFilterFlagEnum();
     if (filterFlag == FilterFlag.UNKNOWN) {
@@ -176,14 +216,14 @@ public class ItemConverterService {
         .isAutoScrappable(descriptor.isAutoScrappable())
         .build();
     if (autoPriceCheck) {
-      PriceCheckResponse priceCheck = getPriceCheck(itemResponse, autoPriceCheck);
+      BasePriceCheckResponse priceCheck = getPriceCheck(itemResponse, autoPriceCheck);
       itemResponse.setPriceCheckResponse(priceCheck);
     }
     return itemResponse;
   }
 
-  private PriceCheckResponse getPriceCheck(ItemResponse itemResponse, boolean autoPriceCheck) {
-    PriceCheckResponse priceCheckResponse = new PriceCheckResponse();
+  private BasePriceCheckResponse getPriceCheck(ItemResponse itemResponse, boolean autoPriceCheck) {
+    BasePriceCheckResponse priceCheckResponse = new BasePriceCheckResponse();
     if (autoPriceCheck) {
       if (itemResponse.getIsLegendary() && itemResponse.getIsTradable() && SUPPORTED_PRICE_CHECK_ITEMS
           .contains(itemResponse.getFilterFlag())) {
@@ -233,7 +273,7 @@ public class ItemConverterService {
       name = getDefaultText(config.getTexts());
     }
     List<Stats> stats = buildStats(pairs);
-    ArmorGrade armorGrade = gameConfigService.findArmorType(stats, abbreviation);
+    ArmorConfig armorConfig = gameConfigService.findArmorType(stats, abbreviation);
     return ItemDetails
         .builder()
         .name(name)
@@ -241,7 +281,7 @@ public class ItemConverterService {
         .config(config)
         .abbreviation(abbreviation)
         .abbreviationId(abbreviationId)
-        .armorGrade(armorGrade)
+        .armorConfig(armorConfig)
         .legendaryMods(legendaryMods)
         .itemSource(itemSource)
         .filterFlag(descriptor.getFilterFlagEnum())
@@ -358,7 +398,11 @@ public class ItemConverterService {
 
   public List<ItemResponse> prepareModData(ModDataRequest request, boolean autoPriceCheck) {
     // TODO: add dedupe logic
-    return prepareModData(request.getModData(), request.getFilters(), autoPriceCheck);
+    List<ItemResponse> responses = prepareModData(request.getModData(), request.getFilters(), autoPriceCheck);
+    if (request.getFilters().isPriceCheckOnly()) {
+      return responses.stream().filter(ItemConverterService::matchesPriceCheckOnly).collect(Collectors.toList());
+    }
+    return responses;
   }
 
 }

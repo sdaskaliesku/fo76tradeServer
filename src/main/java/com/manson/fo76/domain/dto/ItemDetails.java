@@ -2,7 +2,7 @@ package com.manson.fo76.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.manson.domain.LegendaryMod;
-import com.manson.domain.fo76.items.enums.ArmorGrade;
+import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.fo76.service.ItemSource;
 import java.util.List;
@@ -27,7 +27,7 @@ public class ItemDetails {
   private ItemConfig config;
   private String abbreviation;
   private String abbreviationId;
-  private ArmorGrade armorGrade;
+  private ArmorConfig armorConfig;
   private List<LegendaryMod> legendaryMods;
   private ItemSource itemSource;
   private FilterFlag filterFlag;

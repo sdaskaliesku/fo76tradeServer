@@ -10,7 +10,7 @@ public class PriceCheckCacheItem {
   private String id;
   @Indexed
   private String requestId;
-  private PriceCheckResponse response;
+  private BasePriceCheckResponse response;
 
 
   public String getId() {
@@ -29,11 +29,11 @@ public class PriceCheckCacheItem {
     this.requestId = requestId;
   }
 
-  public PriceCheckResponse getResponse() {
+  public BasePriceCheckResponse getResponse() {
     return response;
   }
 
-  public void setResponse(PriceCheckResponse response) {
+  public void setResponse(BasePriceCheckResponse response) {
     this.response = response;
   }
 }

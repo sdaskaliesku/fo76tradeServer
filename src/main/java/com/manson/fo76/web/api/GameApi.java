@@ -3,11 +3,10 @@ package com.manson.fo76.web.api;
 import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.config.XTranslatorConfig;
-import com.manson.domain.fed76.pricing.PriceCheckResponse;
-import com.manson.domain.fo76.items.enums.ArmorGrade;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.fo76.domain.dto.ItemResponse;
+import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
 import com.manson.fo76.domain.fed76.PriceCheckRequest;
 import com.manson.fo76.service.Fed76Service;
 import com.manson.fo76.service.GameConfigHolderService;
@@ -85,21 +84,8 @@ public class GameApi {
       produces = {"application/json"},
       value = {"/armorType"}
   )
-  public final ArmorGrade getArmorType(@RequestParam int dr, @RequestParam int er, @RequestParam int rr) {
+  public final ArmorConfig getArmorType(@RequestParam int dr, @RequestParam int er, @RequestParam int rr) {
     return gameConfigService.findArmorType(dr, rr, er);
-  }
-
-  @GetMapping(produces = {"application/json"}, value = {"/cleanItemName"})
-  public final String getCleanItemName(@RequestParam String input, @RequestParam(required = false) boolean isArmor) {
-    return gameConfigService.getPossibleItemName(input, isArmor);
-  }
-
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/nameModifiers"}
-  )
-  public final List<XTranslatorConfig> getNameModifiers() {
-    return holderService.getNameModifiers();
   }
 
   @PostMapping(
@@ -107,25 +93,25 @@ public class GameApi {
       consumes = {"application/json"},
       value = {"/priceCheck"}
   )
-  public final PriceCheckResponse priceCheck(@RequestBody ItemResponse item) {
+  public final BasePriceCheckResponse priceCheck(@RequestBody ItemResponse item) {
     Boolean isTradable = item.getIsTradable();
     boolean isValidFlag = ItemConverterService.SUPPORTED_PRICE_CHECK_ITEMS.contains(item.getFilterFlag());
     boolean isLegendary = item.getIsLegendary() || item.getFilterFlag() == FilterFlag.NOTES;
     boolean isInvalid = !isLegendary || !isValidFlag || !isTradable;
     if (isInvalid) {
-      return new PriceCheckResponse();
+      return new BasePriceCheckResponse();
     }
     PriceCheckRequest request = fed76Service.createPriceCheckRequest(item);
     if (Objects.isNull(request)) {
       log.error("Request is invalid, most likely invalid item {}", item.getText());
-      return new PriceCheckResponse();
+      return new BasePriceCheckResponse();
     }
     if (request.isValid()) {
       return fed76Service.priceCheck(request);
     } else {
       log.error("Request is invalid, ignoring: {} \r\n {}", request, item);
     }
-    return new PriceCheckResponse();
+    return new BasePriceCheckResponse();
   }
 
 }

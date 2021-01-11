@@ -3130,27 +3130,6 @@
   },
   {
     "type": "NOTES",
-    "id": "SFZ03_Queen_MiscFreddyBook",
-    "gameId": "00389A86",
-    "enabled": true,
-    "texts": {
-      "de": "Der Plan",
-      "en": "The Plan",
-      "es": "El Plan",
-      "esmx": "El Plan",
-      "fr": "Le Plan",
-      "it": "Il piano",
-      "ja": "計画",
-      "ko": "계획",
-      "pl": "Plan",
-      "ptbr": "O Plano",
-      "ru": "План",
-      "zhhans": "计划",
-      "zhhant": "偉大計畫"
-    }
-  },
-  {
-    "type": "NOTES",
     "id": "Recipe_Workshop_Walls_Warehouse_GarageDoor",
     "gameId": "003A0816",
     "enabled": true,
@@ -3399,48 +3378,6 @@
       "ru": "Схема: костюм лыжника",
       "zhhans": "设计图：滑雪服",
       "zhhant": "設計圖：滑雪服裝"
-    }
-  },
-  {
-    "type": "NOTES",
-    "id": "RSVP03_Book_Schematics",
-    "gameId": "003A1FF5",
-    "enabled": true,
-    "texts": {
-      "de": "Campinglehrstoff",
-      "en": "Camping Syllabus",
-      "es": "Plan de acampada",
-      "esmx": "Plan de campamento",
-      "fr": "Programme d'apprentissage : campements",
-      "it": "Programma accampamento",
-      "ja": "キャップ概要",
-      "ko": "야영 규칙",
-      "pl": "Sylabus obozowicza",
-      "ptbr": "Ementa do Acampamento",
-      "ru": "План похода",
-      "zhhans": "露营教学大纲",
-      "zhhant": "露營課程表"
-    }
-  },
-  {
-    "type": "NOTES",
-    "id": "RSVP03_Book_GotoTerminal",
-    "gameId": "003A1FF8",
-    "enabled": true,
-    "texts": {
-      "de": "Bauplan-Testprotokoll",
-      "en": "Schematics Test Plan",
-      "es": "Plan de prueba para planos",
-      "esmx": "Plan de prueba para planos",
-      "fr": "Plans de test",
-      "it": "Piano test progetto",
-      "ja": "設計図テスト計画",
-      "ko": "설계도 테스트 계획",
-      "pl": "Plan testowy schematów",
-      "ptbr": "Esquema de Teste de Diagramas",
-      "ru": "Schematics Test Plan",
-      "zhhans": "设计图测试计划",
-      "zhhant": "設計圖測試計畫"
     }
   },
   {
@@ -4827,27 +4764,6 @@
       "ru": "Рецепт: копченое филе болотника",
       "zhhans": "配方：烟熏泥沼蟹排",
       "zhhant": "配方：煙燻無骨泥沼蟹肉片"
-    }
-  },
-  {
-    "type": "NOTES",
-    "id": "LC019_BrandonNote",
-    "gameId": "003D6152",
-    "enabled": true,
-    "texts": {
-      "de": "Bester Plan aller Zeiten",
-      "en": "Best Plan Ever",
-      "es": "El mejor plan de la historia",
-      "esmx": "El mejor plan de la historia",
-      "fr": "Un plan à l'épreuve des balles",
-      "it": "Il miglior piano di sempre",
-      "ja": "史上最高の計画",
-      "ko": "사상 최고의 계획",
-      "pl": "Najlepszy plan w historii",
-      "ptbr": "Melhor Plano de Todos",
-      "ru": "Самый лучший план",
-      "zhhans": "有史以来最好的计划",
-      "zhhant": "史上最完美的計畫"
     }
   },
   {
@@ -6423,48 +6339,6 @@
       "ru": "Рецепт: жареная шкура оленя",
       "zhhans": "配方：油炸鹿皮",
       "zhhant": "配方：炸鹿皮"
-    }
-  },
-  {
-    "type": "NOTES",
-    "id": "DarlingSisters_LoreNote02",
-    "gameId": "003D7779",
-    "enabled": true,
-    "texts": {
-      "de": "Karlas Plan",
-      "en": "Karla's Plan",
-      "es": "Plan de Karla",
-      "esmx": "Plan de Karla",
-      "fr": "Plan de Karla",
-      "it": "Piano di Carla",
-      "ja": "カルラの計画",
-      "ko": "칼라의 계획",
-      "pl": "Plan Karli",
-      "ptbr": "Plano de Karla",
-      "ru": "План Карлы",
-      "zhhans": "卡拉的计划",
-      "zhhant": "卡拉的計畫"
-    }
-  },
-  {
-    "type": "NOTES",
-    "id": "Charleston_LoreNote_Summersville04",
-    "gameId": "003D7A0C",
-    "enabled": true,
-    "texts": {
-      "de": "Das Kraftwerk",
-      "en": "The Power Plant",
-      "es": "La central eléctrica",
-      "esmx": "La central eléctrica",
-      "fr": "La centrale",
-      "it": "La centrale elettrica",
-      "ja": "発電所",
-      "ko": "발전소",
-      "pl": "Elektrownia",
-      "ptbr": "A Usina de Energia",
-      "ru": "Электростанция",
-      "zhhans": "发电厂",
-      "zhhant": "發電廠"
     }
   },
   {
@@ -15159,27 +15033,6 @@
       "ru": "Схема: меч времен Войны за независимость",
       "zhhans": "设计图：革命战争剑",
       "zhhant": "設計圖：革命戰劍"
-    }
-  },
-  {
-    "type": "NOTES",
-    "id": "LC042_HotelNote_01",
-    "gameId": "004ED18A",
-    "enabled": true,
-    "texts": {
-      "de": "Flugzeugabsturz",
-      "en": "Airplane Crash",
-      "es": "Accidente de avión",
-      "esmx": "Accidente de avión",
-      "fr": "Crash de l'avion",
-      "it": "Schianto aereo",
-      "ja": "飛行機の墜落",
-      "ko": "비행기 사고",
-      "pl": "Katastrofa samolotowa",
-      "ptbr": "Acidente de Avião",
-      "ru": "Авиационная катастрофа",
-      "zhhans": "飞机坠毁",
-      "zhhant": "飛機墜毀"
     }
   },
   {
@@ -24714,27 +24567,6 @@
       "ru": "Схема: гриль супермутанта",
       "zhhans": "设计图：超级变种人烤肉架",
       "zhhant": "設計圖：超級變種人烤肉架"
-    }
-  },
-  {
-    "type": "NOTES",
-    "id": "WL005_EngineRoomNote02",
-    "gameId": "0055923B",
-    "enabled": true,
-    "texts": {
-      "de": "Lous Protokoll: Neuer Plan",
-      "en": "Lou's Log: New Plan",
-      "es": "Diario de Lou: nuevo plan",
-      "esmx": "Diario de Lou: nuevo plan",
-      "fr": "Journal de Lou : Nouveau plan",
-      "it": "Registro di Lou: nuovo progetto",
-      "ja": "ルーの日誌：新しい計画",
-      "ko": "루의 기록: 새로운 계획",
-      "pl": "Dziennik Lou - nowy plan",
-      "ptbr": "Registro do Lou: Novo Plano",
-      "ru": "Журнал Лу: новый план",
-      "zhhans": "卢的日志：新计划",
-      "zhhant": "老盧的日誌：新計畫"
     }
   },
   {

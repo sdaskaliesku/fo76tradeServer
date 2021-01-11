@@ -2,6 +2,7 @@ package com.manson.fo76.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.manson.domain.LegendaryMod;
+import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.fed76.mapping.MappingResponse;
 import com.manson.domain.fed76.pricing.PriceCheckResponse;
 import com.manson.domain.fo76.items.enums.ArmorGrade;
@@ -9,8 +10,12 @@ import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.fo76.domain.dto.ItemConfig;
 import com.manson.fo76.domain.dto.ItemDetails;
 import com.manson.fo76.domain.dto.ItemResponse;
+import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
+import com.manson.fo76.domain.fed76.ItemPriceCheckResponse;
+import com.manson.fo76.domain.fed76.PlanPriceCheckResponse;
 import com.manson.fo76.domain.fed76.PriceCheckCacheItem;
 import com.manson.fo76.domain.fed76.PriceCheckRequest;
+import com.manson.fo76.repository.BasePriceCheckRepository;
 import com.manson.fo76.repository.PriceCheckRepository;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -31,9 +36,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class Fed76Service extends BaseRestClient {
 
-  public static boolean USE_ID = true;
+  public static boolean USE_ID = false;
 
-  private final PriceCheckRepository priceCheckRepository;
+  private final BasePriceCheckRepository priceCheckRepository;
 
   @Autowired
   public Fed76Service(ObjectMapper objectMapper, PriceCheckRepository priceCheckRepository) {
@@ -41,7 +46,7 @@ public class Fed76Service extends BaseRestClient {
     this.priceCheckRepository = priceCheckRepository;
   }
 
-  private static boolean isResponseExpired(PriceCheckResponse response) {
+  private static boolean isResponseExpired(BasePriceCheckResponse response) {
     try {
       LocalDateTime respDate = LocalDateTime.parse(response.getTimestamp().replace(" ", "T")).plusHours(24);
       return respDate.isBefore(LocalDateTime.now());
@@ -51,9 +56,9 @@ public class Fed76Service extends BaseRestClient {
     return true;
   }
 
-  private PriceCheckResponse performRequest(PriceCheckRequest request) {
+  private BasePriceCheckResponse performRequest(PriceCheckRequest request) {
     if (!request.isValid()) {
-      return new PriceCheckResponse();
+      return new BasePriceCheckResponse();
     }
     WebTarget webTarget;
     if (request.getFilterFlag() == FilterFlag.NOTES) {
@@ -66,11 +71,11 @@ public class Fed76Service extends BaseRestClient {
       }
     }
     try {
-      return webTarget.request().accept(MediaType.APPLICATION_JSON_TYPE).get(PriceCheckResponse.class);
+      return webTarget.request().accept(MediaType.APPLICATION_JSON_TYPE).get(BasePriceCheckResponse.class);
     } catch (Exception e) {
-      log.error("Error requesting price check {}", request);
+      log.error("Error requesting price check {}\r\n{}", webTarget.getUri(), request);
     }
-    return new PriceCheckResponse();
+    return new BasePriceCheckResponse();
   }
 
   public final MappingResponse getMapping() {
@@ -79,8 +84,13 @@ public class Fed76Service extends BaseRestClient {
   }
 
 
-  public final PriceCheckResponse priceCheck(PriceCheckRequest request) {
-    PriceCheckResponse response = new PriceCheckResponse();
+  public final BasePriceCheckResponse priceCheck(PriceCheckRequest request) {
+    BasePriceCheckResponse response;
+    if (request.getFilterFlag() == FilterFlag.NOTES) {
+      response = new PlanPriceCheckResponse();
+    } else {
+      response = new ItemPriceCheckResponse();
+    }
     if (!request.isValid()) {
       return response;
     }
@@ -106,7 +116,7 @@ public class Fed76Service extends BaseRestClient {
     return response;
   }
 
-  private void saveToCache(PriceCheckRequest request, PriceCheckResponse response) {
+  private void saveToCache(PriceCheckRequest request, BasePriceCheckResponse response) {
     PriceCheckCacheItem cachedResponse = new PriceCheckCacheItem();
     cachedResponse.setRequestId(request.toId());
     cachedResponse.setResponse(response);
@@ -121,28 +131,25 @@ public class Fed76Service extends BaseRestClient {
       return request;
     }
     request.setFilterFlag(configName.getType());
-    request.setGrade(itemDetails.getArmorGrade());
-    if (USE_ID) {
-      List<String> ids = new ArrayList<>();
-      ids.add(configName.getGameId());
-      if (CollectionUtils.isNotEmpty(itemDetails.getLegendaryMods())) {
-        ids.addAll(itemDetails.getLegendaryMods().stream().map(LegendaryMod::getGameId).collect(Collectors.toList()));
-      }
-      String armorGradeId = GRADE_TO_GAME_ID_MAP.get(itemDetails.getArmorGrade());
-      if (StringUtils.isNotBlank(armorGradeId)) {
-        ids.add(armorGradeId);
-      }
-      request.setIds(ids);
-      request.setItem(configName.getGameId());
-    } else {
-      request.setMods(itemDetails.getAbbreviation());
-      request.setItem(configName.getText());
+    List<String> ids = new ArrayList<>();
+    ids.add(configName.getGameId());
+    if (CollectionUtils.isNotEmpty(itemDetails.getLegendaryMods())) {
+      List<String> modIds = itemDetails.getLegendaryMods().stream().map(LegendaryMod::getGameId)
+          .collect(Collectors.toList());
+      ids.addAll(modIds);
+      request.setMods(String.join("/", modIds));
     }
-    if (request.getFilterFlag() == FilterFlag.NOTES) {
-      request = new PriceCheckRequest();
-      request.setFilterFlag(configName.getType());
-      request.setItem(configName.getGameId());
+    ArmorConfig armorConfig = itemDetails.getArmorConfig();
+    if (armorConfig != null) {
+      request.setGrade(armorConfig.getArmorGrade());
+      String gradeId = GRADE_TO_GAME_ID_MAP.get(armorConfig.getArmorGrade());
+      if (StringUtils.isNotBlank(gradeId)) {
+        request.setGradeId(gradeId);
+        ids.add(gradeId);
+      }
     }
+    request.setIds(ids);
+    request.setItem(configName.getGameId());
     return request;
   }
 
@@ -151,7 +158,7 @@ public class Fed76Service extends BaseRestClient {
         .target(Endpoints.ARMOR_WEAPON_PRICE_API)
         .queryParam("item", item)
         .queryParam("mods", mods);
-    if (StringUtils.isNotBlank(grade)) {
+    if (StringUtils.isNotBlank(grade) && !StringUtils.equalsIgnoreCase(ArmorGrade.Unknown.getValue(), grade)) {
       webTarget = webTarget.queryParam("grade", grade);
     }
     return webTarget;

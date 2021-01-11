@@ -88,6 +88,11 @@ export const filters: Array<Filter> = [
     checked: true,
   },
   {
+    id: 'priceCheckOnly',
+    name: 'Price Check Only',
+    checked: true,
+  },
+  {
     name: 'WEAPON',
     filters: '2,3',
     checked: true,

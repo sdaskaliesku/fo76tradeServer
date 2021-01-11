@@ -3,8 +3,6 @@ package com.manson.fo76.service;
 import com.google.common.collect.Sets;
 import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.config.LegendaryModDescriptor;
-import com.manson.domain.config.XTranslatorConfig;
-import com.manson.domain.fo76.items.enums.ArmorGrade;
 import com.manson.domain.fo76.items.enums.DamageType;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
@@ -24,7 +22,6 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class GameConfigService {
 
-  private static final Set<String> SPECIAL_CHARACTERS = Sets.newHashSet("¢", "$ZEUSGLYPH");
   private static final String DOT = ".";
   private static final Set<FilterFlag> SUPPORTED_TYPES_ARMOR = Sets
       .newHashSet(FilterFlag.ARMOR, FilterFlag.ARMOR_OUTFIT, FilterFlag.POWER_ARMOR);
@@ -39,14 +36,6 @@ public class GameConfigService {
     boolean same = first == second;
     boolean subtype = first.getSubtypes().contains(second) || second.getSubtypes().contains(first);
     return same || subtype;
-  }
-
-  public static String cleanItemName(String name) {
-    String input = name;
-    for (String character : SPECIAL_CHARACTERS) {
-      input = replace(input, character);
-    }
-    return input;
   }
 
   private static String replace(String input, String replacement) {
@@ -111,11 +100,9 @@ public class GameConfigService {
     if (item.getFilterFlagEnum() != FilterFlag.NOTES) {
       return null;
     }
-    String itemName = replace(item.getText(), DOT);
     for (ItemConfig config : config.getPlanNames()) {
       for (String text : config.getTexts().values()) {
-        String fedItemText = replace(text, DOT);
-        if (StringUtils.containsIgnoreCase(itemName, fedItemText)) {
+        if (StringUtils.equalsIgnoreCase(item.getText(), text)) {
           return config;
         }
       }
@@ -152,20 +139,16 @@ public class GameConfigService {
     return 0;
   }
 
-  public ArmorGrade findArmorType(int dr, int rr, int er) {
+  public ArmorConfig findArmorType(int dr, int rr, int er) {
     for (ArmorConfig config : config.getArmorConfigs()) {
       if (config.getDr() == dr && config.getEr() == er && config.getRr() == rr) {
-        for (ArmorGrade armorGrade : ArmorGrade.values()) {
-          if (StringUtils.containsIgnoreCase(config.getArmorGrade().getValue(), armorGrade.getValue())) {
-            return armorGrade;
-          }
-        }
+        return config;
       }
     }
-    return ArmorGrade.Unknown;
+    return null;
   }
 
-  public ArmorGrade findArmorType(List<Stats> stats, String abbreviation) {
+  public ArmorConfig findArmorType(List<Stats> stats, String abbreviation) {
     int dr = findDamageTypeValue(stats, DamageType.BALLISTIC);
     int er = findDamageTypeValue(stats, DamageType.ENERGY);
     int rr = findDamageTypeValue(stats, DamageType.RADIATION);
@@ -174,25 +157,6 @@ public class GameConfigService {
     }
 
     return this.findArmorType(dr, rr, er);
-  }
-
-  public String getPossibleItemName(String name, boolean isArmor) {
-    String newName = cleanItemName(name);
-
-    for (XTranslatorConfig modifier : config.getNameModifiers()) {
-      for (String text : modifier.getTexts().values()) {
-        newName = replace(newName, text);
-      }
-    }
-    if (isArmor) {
-      for (ArmorGrade armorGrade : ArmorGrade.values()) {
-        newName = replace(newName, armorGrade.getValue());
-      }
-    }
-    if (StringUtils.isBlank(newName)) {
-      return StringUtils.EMPTY;
-    }
-    return newName.trim();
   }
 
 }

@@ -136,7 +136,7 @@
   },
   {
     "id": "mod_Legendary_Armor1_ResistancesProportionalHealth",
-    "gameId": "00521914",
+    "gameId": "00529A05",
     "texts": {
       "de": "Verstärkung",
       "en": "Bolstering",
@@ -222,7 +222,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsBugs",
-    "gameId": "004F6D7C",
+    "gameId": "001F81EB",
     "texts": {
       "de": "Des Kammerjägers",
       "en": "Exterminator's",
@@ -1720,7 +1720,7 @@
   },
   {
     "id": "mod_Legendary_Armor3_LessDamageBlocking",
-    "gameId": "00527F77",
+    "gameId": "00527F76",
     "texts": {
       "de": "Des Kavalleristen",
       "en": "Cavalier's",
@@ -2160,7 +2160,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsPlayers",
-    "gameId": "004F6D78",
+    "gameId": "004F5770",
     "texts": {
       "de": "Des Killers",
       "en": "Assassin's",
@@ -2206,7 +2206,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsScorched",
-    "gameId": "004EE548",
+    "gameId": "004ED02B",
     "texts": {
       "de": "Des Fanatikers",
       "en": "Zealot's",
@@ -2296,7 +2296,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DamageNight",
-    "gameId": "00524143",
+    "gameId": "004F6AAE",
     "texts": {
       "de": "Nachtaktiv",
       "en": "Nocturnal",
@@ -2339,7 +2339,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgWithMutation",
-    "gameId": "00529A0C",
+    "gameId": "005299F5",
     "texts": {
       "de": "des Mutanten",
       "en": "Mutant's",
@@ -2517,7 +2517,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsGhouls",
-    "gameId": "004F6D7E",
+    "gameId": "004F5779",
     "texts": {
       "de": "Des Ghultöters",
       "en": "Ghoul Slayer's",
@@ -2606,7 +2606,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsRobots",
-    "gameId": "004F6D7F",
+    "gameId": "004F577C",
     "texts": {
       "de": "Des Problemlösers",
       "en": "Troubleshooter's",
@@ -2741,7 +2741,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsAnimals",
-    "gameId": "004F6D7D",
+    "gameId": "004F577A",
     "texts": {
       "de": "Des Jägers",
       "en": "Hunter's",
@@ -2873,7 +2873,7 @@
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsSupermutants",
-    "gameId": "004F6D80",
+    "gameId": "004F577B",
     "texts": {
       "de": "Des Mutantentöters",
       "en": "Mutant Slayer's",
@@ -3374,7 +3374,7 @@
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_ExplosiveBullets_Shotgun",
-    "gameId": "004F5771",
+    "gameId": "00425E28",
     "texts": {
       "de": "Explosiv",
       "en": "Explosive",
@@ -3467,7 +3467,7 @@
   },
   {
     "id": "mod_Legendary_Weapon2_DmgLimbs",
-    "gameId": "0052BDBC",
+    "gameId": "004ED02C",
     "texts": {
       "de": "Verringerter Körperteilschaden",
       "en": "Reduced limb damage",
@@ -3511,7 +3511,7 @@
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_StatEndurance",
-    "gameId": "004F6D82",
+    "gameId": "005299FD",
     "texts": {
       "de": "Ausdauer",
       "en": "Endurance",
@@ -3555,7 +3555,7 @@
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_LessDamagePowerAttack",
-    "gameId": "00527F77",
+    "gameId": "001A7BD3",
     "texts": {
       "de": "Des Kavalleristen",
       "en": "Cavalier's",
@@ -3643,7 +3643,7 @@
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_StatStrength",
-    "gameId": "004EE54E",
+    "gameId": "005299FC",
     "texts": {
       "de": "Stärke",
       "en": "Strength",
@@ -3739,7 +3739,7 @@
   },
   {
     "id": "mod_Legendary_Weapon3_Durability",
-    "gameId": "0052BDBA",
+    "gameId": "0037F7D9",
     "texts": {
       "de": "Haltbarkeit",
       "en": "Durability",
@@ -3826,7 +3826,7 @@
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_LessDamageBlock",
-    "gameId": "00527F77",
+    "gameId": "005253FB",
     "texts": {
       "de": "Des Kavalleristen",
       "en": "Cavalier's",
@@ -3871,7 +3871,7 @@
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_StatPerception",
-    "gameId": "004F6D81",
+    "gameId": "005299FA",
     "texts": {
       "de": "Wahrnehmung",
       "en": "Perception",
@@ -4004,7 +4004,7 @@
   },
   {
     "id": "mod_Legendary_Weapon3_Weight",
-    "gameId": "00529a14",
+    "gameId": "00524152",
     "texts": {
       "de": "Schwerelos",
       "en": "Weightless",

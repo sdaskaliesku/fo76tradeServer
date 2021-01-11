@@ -15,6 +15,5 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class ItemPriceCheckResponse extends BasePriceCheckResponse {
 
-  private String description;
   private Object review;
 }

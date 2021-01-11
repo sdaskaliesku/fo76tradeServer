@@ -19,5 +19,6 @@ public class BasePriceCheckResponse extends AbstractObject {
   private String category;
   private String timestamp;
   private String path;
+  private String description;
 
 }

@@ -23,7 +23,6 @@ public class GameConfigHolderService {
   private static final String LEG_MODS_CONFIG_FILE = "legendaryMods.config.json";
   private static final String AMMO_TYPES_CONFIG_FILE = "ammo.types.json";
   private static final String ARMOR_CONFIG_FILE = "armor.config.json";
-  private static final String NAME_MODIFIERS_CONFIG_FILE = "name.modifiers.json";
   private static final String WEAPON_NAMES_CONFIG_FILE = "weapons.config.json";
   private static final String PLAN_RECIPES_CONFIG_FILE = "plans.config.json";
   private static final String ARMOR_NAMES_CONFIG_FILE = "armor.names.config.json";
@@ -37,7 +36,6 @@ public class GameConfigHolderService {
   };
   private final List<LegendaryModDescriptor> legModsConfig;
   private final List<XTranslatorConfig> ammoTypes;
-  private final List<XTranslatorConfig> nameModifiers;
   private final List<ArmorConfig> armorConfigs;
   private final List<ItemConfig> weaponNames;
   private final List<ItemConfig> planNames;
@@ -48,8 +46,6 @@ public class GameConfigHolderService {
     this.legModsConfig = loadConfig(objectMapper, LEG_MODS_CONFIG_FILE, LEG_MOD_TYPE_REF,
         XTranslatorConfig::getEnabled);
     this.ammoTypes = loadConfig(objectMapper, AMMO_TYPES_CONFIG_FILE, X_TRANSLATOR_TYPE_REF,
-        XTranslatorConfig::getEnabled);
-    this.nameModifiers = loadConfig(objectMapper, NAME_MODIFIERS_CONFIG_FILE, X_TRANSLATOR_TYPE_REF,
         XTranslatorConfig::getEnabled);
     this.armorConfigs = loadConfig(objectMapper, ARMOR_CONFIG_FILE, ARMOR_CONFIG_TYPE_REF, (x) -> true);
     this.weaponNames = loadConfig(objectMapper, WEAPON_NAMES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
@@ -77,10 +73,6 @@ public class GameConfigHolderService {
 
   public List<XTranslatorConfig> getAmmoTypes() {
     return ammoTypes;
-  }
-
-  public List<XTranslatorConfig> getNameModifiers() {
-    return nameModifiers;
   }
 
   public List<ArmorConfig> getArmorConfigs() {

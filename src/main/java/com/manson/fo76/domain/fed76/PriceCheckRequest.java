@@ -26,6 +26,7 @@ public class PriceCheckRequest {
   private String mods;
   @Builder.Default
   private ArmorGrade grade = ArmorGrade.Unknown;
+  private String gradeId;
   @Builder.Default
   private FilterFlag filterFlag = FilterFlag.UNKNOWN;
 
