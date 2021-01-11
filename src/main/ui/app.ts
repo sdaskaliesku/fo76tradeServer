@@ -37,6 +37,8 @@ import {
   ModalPlugin,
   ToastPlugin
 } from 'bootstrap-vue'
+// @ts-ignore
+import JsonViewer from 'vue-json-viewer/ssr'
 
 Vue.component("BIcon", BIcon);
 Vue.component("BIconSearch", BIconSearch);
@@ -72,6 +74,7 @@ Vue.component("BIconPersonFill", BIconPersonFill);
 Vue.use(ModalPlugin);
 Vue.use(ToastPlugin);
 Vue.use(VueRouter);
+Vue.use(JsonViewer);
 
 const router = new VueRouter();
 

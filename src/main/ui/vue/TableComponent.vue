@@ -74,7 +74,7 @@
          v-show="!isLoading"></div>
     <b-modal size="xl" scrollable ok-only centered v-if="selectedItem" id="itemDetailsModal"
              :title="selectedItem.text">
-      <pre class="modal-row" v-text="JSON.stringify(selectedItem, undefined, 2)"></pre>
+      <json-viewer :value="selectedItem"></json-viewer>
     </b-modal>
     <b-modal id="modal-weight-info" hide-footer>
       <template v-slot:modal-title>
