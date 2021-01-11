@@ -19,15 +19,21 @@ const legendaryFilter = (object: any) => {
 
 export class RogueService {
 
+  private static getLegModValue(item: any, index: number) {
+    if (item && item.itemDetails && item.itemDetails.legendaryMods && item.itemDetails.legendaryMods.length >= index && item.itemDetails.legendaryMods[index]) {
+      return item.itemDetails.legendaryMods[index].gameId;
+    }
+  }
+
   private static createRogueObject(item: any, character: string): RogueCSVLine {
     return {
-      prefix: item.legendaryMods[0]?.value,
+      prefix: this.getLegModValue(item, 0),
       type: item.itemDetails.name,
-      major: item.legendaryMods[1]?.value,
-      minor: item.legendaryMods[2]?.value,
+      major: this.getLegModValue(item, 1),
+      minor: this.getLegModValue(item, 2),
       level: item.itemLevel,
       notes: '',
-      value: 0,
+      value: item.itemValue,
       character,
     }
   }
