@@ -283,16 +283,6 @@ export default {
     rowClick: function(e, row) {
       this.selectedItem = row.getData();
       this.$bvModal.show('itemDetailsModal');
-    },
-    isEmpty: function(input) {
-      const isUndef = input === undefined;
-      const isNull = input === null;
-      let isEmpty = false;
-      const type = typeof input;
-      if (type === String || type === Array) {
-        isEmpty = input.length <= 0;
-      }
-      return isUndef || isNull || isEmpty;
     }
   },
   beforeMount: function() {

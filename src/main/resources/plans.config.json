@@ -6637,27 +6637,6 @@
   },
   {
     "type": "NOTES",
-    "id": "RSVP03_Book_Syllabus",
-    "gameId": "003E98C8",
-    "enabled": true,
-    "texts": {
-      "de": "Campinglehrstoff",
-      "en": "Camping Syllabus",
-      "es": "Plan de acampada",
-      "esmx": "Plan de campamento",
-      "fr": "Programme d'apprentissage : campements",
-      "it": "Programma accampamento",
-      "ja": "キャンプ概要",
-      "ko": "야영 규칙",
-      "pl": "Sylabus obozowicza",
-      "ptbr": "Ementa do Acampamento",
-      "ru": "План похода",
-      "zhhans": "露营教学大纲",
-      "zhhant": "露營課程表"
-    }
-  },
-  {
-    "type": "NOTES",
     "id": "RSVP00_Book_Recipe05_Deerskins",
     "gameId": "003E9FA7",
     "enabled": true,

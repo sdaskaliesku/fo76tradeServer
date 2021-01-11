@@ -21,14 +21,17 @@
     "sid": "039FF2",
     "enabled": true,
     "star": 1,
-    "abbreviation": "A",
+    "abbreviation": "a",
     "additionalAbbreviations": [
-      "Ass",
-      "Assn",
+      "a",
+      "ass",
       "assassin",
-      "ASN",
-      "A",
-      "ASS"
+      "assasin",
+      "asasin",
+      "assassin's",
+      "assn",
+      "asn",
+      "004f6d78"
     ],
     "translations": {
       "de": "75%ige Chance, den Schaden durch Spieler um 8% zu reduzieren.",
@@ -69,10 +72,13 @@
     "sid": "039B6F",
     "enabled": true,
     "star": 1,
-    "abbreviation": "R",
+    "abbreviation": "reg",
     "additionalAbbreviations": [
-      "Regen",
-      "R"
+      "reg",
+      "regen",
+      "regenerating",
+      "r",
+      "00529a09"
     ],
     "translations": {
       "de": "Du regenerierst außerhalb des Kampfes langsam Gesundheit.",
@@ -113,9 +119,14 @@
     "sid": "039F76",
     "enabled": true,
     "star": 1,
-    "abbreviation": "N",
+    "abbreviation": "n",
     "additionalAbbreviations": [
-      "N"
+      "n",
+      "noct",
+      "nocturnal",
+      "nocturn",
+      "00524143",
+      "noc"
     ],
     "translations": {
       "de": "Schadens- und Energieresistenz erhöhen sich bei Nacht und verringern sich bei Tag.",
@@ -156,9 +167,14 @@
     "sid": "039F19",
     "enabled": true,
     "star": 1,
-    "abbreviation": "B",
+    "abbreviation": "v",
     "additionalAbbreviations": [
-      "bolster"
+      "v",
+      "vg",
+      "vang",
+      "vanguard",
+      "vanguard's",
+      "00529a05"
     ],
     "translations": {
       "de": "Verleiht bis zu +35 Energie- und Schadensresistenz, je nachdem, wie niedrig deine Gesundheit ist.",
@@ -199,9 +215,13 @@
     "sid": "03A003",
     "enabled": true,
     "star": 1,
-    "abbreviation": "Z",
+    "abbreviation": "z",
     "additionalAbbreviations": [
-      "Z"
+      "z",
+      "zealot",
+      "zealots",
+      "zealot's",
+      "004ee548"
     ],
     "translations": {
       "de": "-15% Schaden durch Verbrannte.",
@@ -242,11 +262,15 @@
     "sid": "032BD7",
     "enabled": true,
     "star": 1,
-    "abbreviation": "ET",
+    "abbreviation": "ext",
     "additionalAbbreviations": [
+      "ext",
+      "et",
       "exterminator",
       "exterminators",
-      "ET"
+      "exterminator's",
+      "001f81eb",
+      "exterm"
     ],
     "translations": {
       "de": "-15% Schaden durch Mirelurks und Insekten.",
@@ -287,12 +311,14 @@
     "sid": "039FEA",
     "enabled": true,
     "star": 1,
-    "abbreviation": "ET",
+    "abbreviation": "ext",
     "additionalAbbreviations": [
+      "ext",
       "et",
       "exterminator",
       "exterminators",
       "exterminator's",
+      "004f6d7c",
       "exterm"
     ],
     "translations": {
@@ -334,12 +360,14 @@
     "sid": "039A94",
     "enabled": true,
     "star": 1,
-    "abbreviation": "H",
+    "abbreviation": "h",
     "additionalAbbreviations": [
+      "h",
       "hunt",
-      "Hunter",
-      "Hunters",
-      "H"
+      "hunter",
+      "hunters",
+      "hunter's",
+      "004f6d7d"
     ],
     "translations": {
       "de": "-15% Schaden durch Tiere.",
@@ -380,11 +408,15 @@
     "sid": "039A0C",
     "enabled": true,
     "star": 1,
-    "abbreviation": "L",
+    "abbreviation": "life saving",
     "additionalAbbreviations": [
-      "Auto",
-      "AS",
-      "L"
+      "life saving",
+      "lifesaving",
+      "l",
+      "life",
+      "live",
+      "00529a0f",
+      "lifesave"
     ],
     "translations": {
       "de": "Wenn du ausgeschaltet bist, erhältst einmal pro Minute eine Chance von 50%, dich mit einem Stimpak selbst wiederzubeleben.",
@@ -425,10 +457,13 @@
     "sid": "039F13",
     "enabled": true,
     "star": 1,
-    "abbreviation": "U",
+    "abbreviation": "u",
     "additionalAbbreviations": [
-      "UNY",
-      "U"
+      "u",
+      "uny",
+      "unyielding",
+      "0052414a",
+      "unyield"
     ],
     "translations": {
       "de": "Du erhältst bis zu +3 auf alle Werte (außer AUS), wenn deine Gesundheit niedrig ist.",
@@ -469,12 +504,14 @@
     "sid": "039F15",
     "enabled": true,
     "star": 1,
-    "abbreviation": "MU",
+    "abbreviation": "mu",
     "additionalAbbreviations": [
-      "M",
+      "mu",
       "mutant",
       "mutants",
-      "mutant's"
+      "mutant's",
+      "mut",
+      "00529a0c"
     ],
     "translations": {
       "de": "+10 Schadens- und Energieresistenz, wenn du mutiert bist.",
@@ -517,8 +554,12 @@
     "star": 1,
     "abbreviation": "bol",
     "additionalAbbreviations": [
-      "BOL",
-      "b"
+      "bol",
+      "bolst",
+      "bolstering",
+      "b",
+      "00521914",
+      "bolster"
     ],
     "translations": {
       "de": "Verleiht bis zu +35 Energie- und Schadensresistenz, je nachdem, wie niedrig deine Gesundheit ist.",
@@ -559,10 +600,16 @@
     "sid": "03A248",
     "enabled": true,
     "star": 1,
-    "abbreviation": "mutslayer",
+    "abbreviation": "mutant slayer's",
     "additionalAbbreviations": [
-      "MS",
-      "mutantslayer"
+      "mutant slayer's",
+      "mutant slayers",
+      "mutantslayers",
+      "mutantslayer",
+      "004f6d80",
+      "mutantslay",
+      "mutslayer",
+      "ms"
     ],
     "translations": {
       "de": "-15% Schaden durch Supermutanten.",
@@ -605,9 +652,12 @@
     "star": 1,
     "abbreviation": "cham",
     "additionalAbbreviations": [
+      "cham",
       "ch",
       "cm",
-      "chameleon"
+      "chameleon",
+      "",
+      "00524146"
     ],
     "translations": {
       "de": "Du verschmilzt mit deiner Umgebung, wenn du dich beim Schleichen nicht bewegst.",
@@ -648,11 +698,12 @@
     "sid": "039F84",
     "enabled": true,
     "star": 1,
-    "abbreviation": "CL",
+    "abbreviation": "cloak",
     "additionalAbbreviations": [
-      "Cloak",
-      "CL",
-      "CLOAK"
+      "cloak",
+      "cloaking",
+      "cl",
+      "00524147"
     ],
     "translations": {
       "de": "Wirst du im Nahkampf getroffen, wird alle 30 Sekunden ein Tarnfeld erzeugt.",
@@ -693,12 +744,13 @@
     "sid": "03993B",
     "enabled": true,
     "star": 1,
-    "abbreviation": "AS",
+    "abbreviation": "autostim",
     "additionalAbbreviations": [
-      "Auto",
-      "STIM",
-      "AUTO",
-      "AS"
+      "autostim",
+      "as",
+      "stim",
+      "auto-stim",
+      "00521915"
     ],
     "translations": {
       "de": "Verwendet automatisch alle 60 Sekunden ein Stimpak, wenn du getroffen wirst und deine Gesundheit bei 25% oder weniger liegt.",
@@ -739,10 +791,19 @@
     "sid": "03A29C",
     "enabled": true,
     "star": 1,
-    "abbreviation": "G",
+    "abbreviation": "gs",
     "additionalAbbreviations": [
-      "GS",
-      "G"
+      "gs",
+      "g",
+      "ghoul",
+      "ghouls",
+      "ghoul slayer",
+      "ghoul slayer's",
+      "ghoul slayers",
+      "ghoulslayer",
+      "ghoulslayers",
+      "004f6d7e",
+      "ghoulslay"
     ],
     "translations": {
       "de": "-15% Schaden durch Ghule.",
@@ -783,9 +844,13 @@
     "sid": "039D6C",
     "enabled": true,
     "star": 1,
-    "abbreviation": "W",
+    "abbreviation": "weightless",
     "additionalAbbreviations": [
-      "WL"
+      "weightless",
+      "weight",
+      "wl",
+      "w",
+      "00529a14"
     ],
     "translations": {
       "de": "Wiegt 90% weniger und zählt nicht als Rüstung für die Chamäleon-Mutation.",
@@ -826,10 +891,16 @@
     "sid": "039FF0",
     "enabled": true,
     "star": 1,
-    "abbreviation": "T",
+    "abbreviation": "t",
     "additionalAbbreviations": [
-      "TR",
-      "TRO"
+      "t",
+      "tro",
+      "tr",
+      "troubleshooter",
+      "troubleshooters",
+      "troubleshooter's",
+      "004f6d7f",
+      "trouble"
     ],
     "translations": {
       "de": "-15% Schaden durch Roboter.",
@@ -870,10 +941,14 @@
     "sid": "039DE1",
     "enabled": true,
     "star": 2,
-    "abbreviation": "P",
+    "abbreviation": "per",
     "additionalAbbreviations": [
-      "+1P",
-      "PER"
+      "per",
+      "1p",
+      "+1p",
+      "perception",
+      "p",
+      "004f6d81"
     ],
     "translations": {
       "de": "+1 Wahrnehmung.",
@@ -914,10 +989,15 @@
     "sid": "039B69",
     "enabled": true,
     "star": 2,
-    "abbreviation": "A",
+    "abbreviation": "agi",
     "additionalAbbreviations": [
-      "+1A",
-      "AGI"
+      "agi",
+      "+1a",
+      "agl",
+      "1a",
+      "agility",
+      "a",
+      "004f6d85"
     ],
     "translations": {
       "de": "+1 Beweglichkeit.",
@@ -958,10 +1038,14 @@
     "sid": "039DE3",
     "enabled": true,
     "star": 2,
-    "abbreviation": "L",
+    "abbreviation": "luck",
     "additionalAbbreviations": [
-      "+1L",
-      "LUK"
+      "luck",
+      "+1l",
+      "lck",
+      "1l",
+      "l",
+      "004f6d86"
     ],
     "translations": {
       "de": "+1 Glück.",
@@ -1002,10 +1086,14 @@
     "sid": "039E73",
     "enabled": true,
     "star": 2,
-    "abbreviation": "S",
+    "abbreviation": "str",
     "additionalAbbreviations": [
-      "+1S",
-      "STR"
+      "str",
+      "+1s",
+      "strength",
+      "1s",
+      "s",
+      "004ee54e"
     ],
     "translations": {
       "de": "+1 Stärke.",
@@ -1046,10 +1134,14 @@
     "sid": "039A5B",
     "enabled": true,
     "star": 2,
-    "abbreviation": "E",
+    "abbreviation": "end",
     "additionalAbbreviations": [
-      "+1E",
-      "END"
+      "end",
+      "+1e",
+      "endurance",
+      "1e",
+      "e",
+      "004f6d82"
     ],
     "translations": {
       "de": "+1 Ausdauer.",
@@ -1090,12 +1182,19 @@
     "sid": "039F33",
     "enabled": true,
     "star": 2,
-    "abbreviation": "25D",
+    "abbreviation": "25d",
     "additionalAbbreviations": [
-      "EDR",
-      "DR",
-      "25D",
-      "Disease"
+      "25d",
+      "edr",
+      "env",
+      "envir",
+      "environmental",
+      "25e",
+      "envres",
+      "envresistance",
+      "antiseptic",
+      "00527f72",
+      "disease"
     ],
     "translations": {
       "de": "+25% Krankheitsresistenz gegen Umweltgefahren.",
@@ -1136,10 +1235,13 @@
     "sid": "039BEA",
     "enabled": true,
     "star": 2,
-    "abbreviation": "P",
+    "abbreviation": "25p",
     "additionalAbbreviations": [
-      "POI",
-      "Poisoner's"
+      "25p",
+      "poison",
+      "poi",
+      "p",
+      "00527f6e"
     ],
     "translations": {
       "de": "+25 Giftresistenz.",
@@ -1180,10 +1282,14 @@
     "sid": "0398E7",
     "enabled": true,
     "star": 2,
-    "abbreviation": "I",
+    "abbreviation": "int",
     "additionalAbbreviations": [
-      "+1I",
-      "INT"
+      "int",
+      "+1i",
+      "intelligence",
+      "1i",
+      "i",
+      "004f6d84"
     ],
     "translations": {
       "de": "+1 Intelligenz.",
@@ -1224,12 +1330,14 @@
     "sid": "039F35",
     "enabled": true,
     "star": 2,
-    "abbreviation": "AP",
+    "abbreviation": "ap",
     "additionalAbbreviations": [
-      "PWR",
-      "Powered",
-      "POW",
-      "AP"
+      "ap",
+      "pow",
+      "pwr",
+      "powered",
+      "power",
+      "00527f75"
     ],
     "translations": {
       "de": "Beschleunigt die Regeneration deiner Aktionspunkte.",
@@ -1270,10 +1378,14 @@
     "sid": "039A4C",
     "enabled": true,
     "star": 2,
-    "abbreviation": "C",
+    "abbreviation": "cha",
     "additionalAbbreviations": [
-      "+1C",
-      "CHA"
+      "cha",
+      "+1c",
+      "charisma",
+      "1c",
+      "c",
+      "004f6d83"
     ],
     "translations": {
       "de": "+1 Charisma.",
@@ -1306,7 +1418,6 @@
     "enabled": true,
     "star": 2,
     "abbreviation": "5MS",
-    "additionalAbbreviations": [],
     "translations": {
       "en": "Increases movement speed by 5%",
       "ru": "Увеличивает скорость передвижения на 5%",
@@ -1337,11 +1448,18 @@
     "sid": "0399C2",
     "enabled": true,
     "star": 2,
-    "abbreviation": "R",
+    "abbreviation": "25rad",
     "additionalAbbreviations": [
-      "RR",
-      "Rad",
-      "RAD"
+      "25rad",
+      "25r",
+      "rr",
+      "rad",
+      "radres",
+      "radiation",
+      "radresistance",
+      "r",
+      "00527f6f",
+      "hazmat"
     ],
     "translations": {
       "de": "+25 Strahlungsresistenz.",
@@ -1382,9 +1500,13 @@
     "sid": "039F0B",
     "enabled": true,
     "star": 3,
-    "abbreviation": "AWR",
+    "abbreviation": "ammo",
     "additionalAbbreviations": [
-      "Ammo"
+      "ammo",
+      "awr",
+      "ammoweight",
+      "0052bdb4",
+      "ammo-weight"
     ],
     "translations": {
       "de": "Das Gewicht von Munition ist um 20% verringert.",
@@ -1425,10 +1547,14 @@
     "sid": "039BF5",
     "enabled": true,
     "star": 3,
-    "abbreviation": "LDR",
+    "abbreviation": "ldr",
     "additionalAbbreviations": [
-      "Limb",
-      "15L"
+      "ldr",
+      "lld",
+      "limb",
+      "limbdamage",
+      "0052bdbc",
+      "lesslimb"
     ],
     "translations": {
       "de": "Du erhältst 15% weniger Körperteilschaden.",
@@ -1469,10 +1595,13 @@
     "sid": "039C1F",
     "enabled": true,
     "star": 3,
-    "abbreviation": "FWR",
+    "abbreviation": "fwr",
     "additionalAbbreviations": [
-      "Aid",
-      "Food"
+      "fwr",
+      "food",
+      "foodweight",
+      "0052bdb5",
+      "food-weight"
     ],
     "translations": {
       "de": "Das Gewicht von Nahrungsmitteln, Getränken und Chems ist um 20% verringert.",
@@ -1513,13 +1642,14 @@
     "sid": "039FD3",
     "enabled": true,
     "star": 3,
-    "abbreviation": "LOCK",
+    "abbreviation": "lock",
     "additionalAbbreviations": [
-      "Safe",
-      "Safercracker's",
-      "LOCK",
+      "lock",
+      "safe",
       "safecracker",
-      "SAFE"
+      "safecracker's",
+      "00527f7b",
+      "lockpick"
     ],
     "translations": {
       "de": "Vergrößert den korrekten Bereich beim Knacken von Schlössern.",
@@ -1560,9 +1690,13 @@
     "sid": "039F3F",
     "enabled": true,
     "star": 3,
-    "abbreviation": "WWR",
+    "abbreviation": "weapon",
     "additionalAbbreviations": [
-      "Weapon"
+      "weapon",
+      "wwr",
+      "weaponweight",
+      "00527f78",
+      "weapon-weight"
     ],
     "translations": {
       "de": "Verringert das Gewicht von Waffen um 20%.",
@@ -1603,13 +1737,14 @@
     "sid": "046D32",
     "enabled": true,
     "star": 3,
-    "abbreviation": "SEN",
+    "abbreviation": "sent",
     "additionalAbbreviations": [
-      "Stand",
-      "Sentinel's",
-      "SEN",
-      "SENT",
-      "stand"
+      "sent",
+      "sen",
+      "sentinel",
+      "sentinels",
+      "sentinel's",
+      "004ee54c"
     ],
     "translations": {
       "de": "Chance von 75%, den Schaden im Stillstehen um 15% zu reduzieren.",
@@ -1650,12 +1785,16 @@
     "sid": "039B94",
     "enabled": true,
     "star": 3,
-    "abbreviation": "HTD",
+    "abbreviation": "sneak",
     "additionalAbbreviations": [
-      "Detect",
-      "SNK",
       "sneak",
-      "detect"
+      "sneaking",
+      "harder",
+      "htd",
+      "snk",
+      "snek",
+      "0052bdb7",
+      "sneaky"
     ],
     "translations": {
       "de": "Du bist beim Schleichen schwerer zu entdecken.",
@@ -1696,10 +1835,15 @@
     "sid": "039F47",
     "enabled": true,
     "star": 3,
-    "abbreviation": "50F",
+    "abbreviation": "acrobat",
     "additionalAbbreviations": [
-      "Acrobat's",
-      "acrobat"
+      "acrobat",
+      "acrobat's",
+      "50f",
+      "falling",
+      "fall",
+      "falldamage",
+      "00527f79"
     ],
     "translations": {
       "de": "Reduziert den Fallschaden um 50%.",
@@ -1740,10 +1884,13 @@
     "sid": "039F43",
     "enabled": true,
     "star": 3,
-    "abbreviation": "blocker",
+    "abbreviation": "bl",
     "additionalAbbreviations": [
-      "Blocking",
-      "Sprint"
+      "bl",
+      "block",
+      "blocker",
+      "00527f76",
+      "blocking"
     ],
     "translations": {
       "de": "75%ige Chance, den Schaden während des Sprintens um 15% zu reduzieren.",
@@ -1784,9 +1931,13 @@
     "sid": "039F0D",
     "enabled": true,
     "star": 3,
-    "abbreviation": "DUR",
+    "abbreviation": "dur",
     "additionalAbbreviations": [
-      "Durability"
+      "dur",
+      "durability",
+      "50d",
+      "durable",
+      "0052bdba"
     ],
     "translations": {
       "de": "50% höhere Haltbarkeit.",
@@ -1827,10 +1978,12 @@
     "sid": "039A9C",
     "enabled": true,
     "star": 3,
-    "abbreviation": "CAV",
+    "abbreviation": "cav",
     "additionalAbbreviations": [
-      "Sprint",
-      "Cavalier's"
+      "cav",
+      "cavalier",
+      "cavalier's",
+      "00527f77"
     ],
     "translations": {
       "de": "75%ige Chance, den Schaden während des Sprintens um 15% zu reduzieren.",
@@ -1871,9 +2024,13 @@
     "sid": "039F49",
     "enabled": true,
     "star": 3,
-    "abbreviation": "AQ",
+    "abbreviation": "aqua",
     "additionalAbbreviations": [
-      "Underwater"
+      "aqua",
+      "aq",
+      "underwater",
+      "00527f7a",
+      "diver"
     ],
     "translations": {
       "de": "Du erhältst die Fähigkeit, unter Wasser zu atmen.",
@@ -1914,9 +2071,13 @@
     "sid": "039D0E",
     "enabled": true,
     "star": 3,
-    "abbreviation": "JWR",
+    "abbreviation": "junk",
     "additionalAbbreviations": [
-      "Junk"
+      "junk",
+      "jwr",
+      "junkweight",
+      "0052bdb6",
+      "junk-weight"
     ],
     "translations": {
       "de": "Das Gewicht von Schrottgegenständen ist um 20% verringert.",
@@ -1957,10 +2118,17 @@
     "sid": "03A3E7",
     "enabled": true,
     "star": 1,
-    "abbreviation": "SS",
+    "abbreviation": "ss",
     "additionalAbbreviations": [
-      "SUP",
-      "SU"
+      "ss",
+      "su",
+      "supressor",
+      "supressors",
+      "supressor's",
+      "supresor",
+      "sup",
+      "005281b8",
+      "suppress"
     ],
     "translations": {
       "de": "Senkt den verursachten Schaden des Ziels 3 Sekunden lang um 20%.",
@@ -2001,12 +2169,12 @@
     "sid": "039A7A",
     "enabled": true,
     "star": 1,
-    "abbreviation": "B",
+    "abbreviation": "b",
     "additionalAbbreviations": [
+      "b",
       "blood",
       "bloodied",
-      "004f6aa0",
-      "B"
+      "004f6aa0"
     ],
     "translations": {
       "de": "Je weniger Gesundheit, desto höher der verursachte Schaden.",
@@ -2047,9 +2215,15 @@
     "sid": "039F3B",
     "enabled": true,
     "star": 1,
-    "abbreviation": "M",
+    "abbreviation": "m",
     "additionalAbbreviations": [
-      "ME"
+      "m",
+      "me",
+      "medic",
+      "med",
+      "medics",
+      "medic's",
+      "00527f8b"
     ],
     "translations": {
       "de": "Kritische V.A.T.S.-Treffer heilen dich und deine Gruppe.",
@@ -2090,10 +2264,15 @@
     "sid": "03A2AC",
     "enabled": true,
     "star": 1,
-    "abbreviation": "V",
+    "abbreviation": "v",
     "additionalAbbreviations": [
-      "Vamp",
-      "V"
+      "v",
+      "vamp",
+      "vampiric",
+      "vampire",
+      "vampires",
+      "vampire's",
+      "00527f84"
     ],
     "translations": {
       "de": "Regeneriert deine Gesundheit für kurze Zeit, wenn du einen Gegner triffst.",
@@ -2134,12 +2313,10 @@
     "sid": "046868",
     "enabled": true,
     "star": 1,
-    "abbreviation": "D",
+    "abbreviation": "d",
     "additionalAbbreviations": [
-      "Double",
-      "Double Ammo",
-      "DA",
-      "D"
+      "d",
+      "double"
     ],
     "translations": {
       "de": "Doppelte Magazinkapazität.",
@@ -2180,12 +2357,17 @@
     "sid": "039FFB",
     "enabled": true,
     "star": 1,
-    "abbreviation": "A",
+    "abbreviation": "a",
     "additionalAbbreviations": [
-      "Ass",
-      "ASN",
-      "A",
-      "ASS"
+      "a",
+      "ass",
+      "assn",
+      "assassin",
+      "assasin",
+      "asasin",
+      "assassin's",
+      "asn",
+      "004f5770"
     ],
     "translations": {
       "de": "75%ige Chance, den Schaden durch Spieler um 8% zu reduzieren.",
@@ -2226,9 +2408,13 @@
     "sid": "03985F",
     "enabled": true,
     "star": 1,
-    "abbreviation": "Z",
+    "abbreviation": "z",
     "additionalAbbreviations": [
-      "Z"
+      "z",
+      "zealot",
+      "zealots",
+      "zealot's",
+      "004ed02b"
     ],
     "translations": {
       "de": "-15% Schaden durch Verbrannte.",
@@ -2269,13 +2455,16 @@
     "sid": "039E49",
     "enabled": true,
     "star": 1,
-    "abbreviation": "BR",
+    "abbreviation": "br",
     "additionalAbbreviations": [
-      "BS",
+      "br",
       "bz",
       "berserker",
-      "BZ",
-      "BR"
+      "bs",
+      "berserker's",
+      "berserkers",
+      "004f6aa7",
+      "berserk"
     ],
     "translations": {
       "de": "Verringerte Schadensresistenz erhöht verursachten Schaden.",
@@ -2316,9 +2505,13 @@
     "sid": "039AC9",
     "enabled": true,
     "star": 1,
-    "abbreviation": "N",
+    "abbreviation": "n",
     "additionalAbbreviations": [
-      "N"
+      "n",
+      "nocturnal",
+      "noct",
+      "004f6aae",
+      "nocturn"
     ],
     "translations": {
       "de": "Schadens- und Energieresistenz erhöhen sich bei Nacht und verringern sich bei Tag.",
@@ -2359,10 +2552,14 @@
     "sid": "03A103",
     "enabled": true,
     "star": 1,
-    "abbreviation": "MU",
+    "abbreviation": "mu",
     "additionalAbbreviations": [
-      "MU",
-      "M"
+      "mu",
+      "mutant",
+      "mutants",
+      "mutant's",
+      "mut",
+      "005299f5"
     ],
     "translations": {
       "de": "+10 Schadens- und Energieresistenz, wenn du mutiert bist.",
@@ -2403,11 +2600,17 @@
     "sid": "039DB7",
     "enabled": true,
     "star": 1,
-    "abbreviation": "E",
+    "abbreviation": "e",
     "additionalAbbreviations": [
-      "EC",
-      "EX",
-      "EXE"
+      "e",
+      "ec",
+      "ex",
+      "exe",
+      "executioner",
+      "exec",
+      "executioner's",
+      "executioners",
+      "004f6aa1"
     ],
     "translations": {
       "de": "+50% mehr Schaden, wenn die Gesundheit deines Ziels unter 40% liegt.",
@@ -2448,11 +2651,14 @@
     "sid": "039FF9",
     "enabled": true,
     "star": 1,
-    "abbreviation": "I",
+    "abbreviation": "i",
     "additionalAbbreviations": [
-      "INST",
+      "i",
+      "inst",
       "instig",
-      "instigating"
+      "instigating",
+      "004f6aa5",
+      "instigate"
     ],
     "translations": {
       "de": "Verursacht doppelten Schaden, wenn das Ziel volle Gesundheit besitzt.",
@@ -2493,10 +2699,12 @@
     "sid": "039D10",
     "enabled": true,
     "star": 1,
-    "abbreviation": "Q",
+    "abbreviation": "q",
     "additionalAbbreviations": [
+      "q",
       "quad",
-      "Quad Ammo"
+      "4x",
+      "004f6ab1"
     ],
     "translations": {
       "de": "Vierfache Magazinkapazität",
@@ -2537,12 +2745,17 @@
     "sid": "03A3E5",
     "enabled": true,
     "star": 1,
-    "abbreviation": "G",
+    "abbreviation": "g",
     "additionalAbbreviations": [
-      "GS",
+      "g",
+      "gs",
       "ghoul",
       "ghouls",
-      "G"
+      "ghoul slayer",
+      "ghoul slayer's",
+      "ghoul slayers",
+      "004f5779",
+      "ghoulslay"
     ],
     "translations": {
       "de": "-15% Schaden durch Ghule.",
@@ -2583,9 +2796,15 @@
     "sid": "039A73",
     "enabled": true,
     "star": 1,
-    "abbreviation": "S",
+    "abbreviation": "s",
     "additionalAbbreviations": [
-      "ST"
+      "s",
+      "st",
+      "stalker",
+      "stalkers",
+      "stalker's",
+      "stalk",
+      "004f6d77"
     ],
     "translations": {
       "de": "Vor Kampfbeginn: +100% V.A.T.S.-Präzision bei +50% AP-Kosten.",
@@ -2626,10 +2845,16 @@
     "sid": "039A60",
     "enabled": true,
     "star": 1,
-    "abbreviation": "T",
+    "abbreviation": "t",
     "additionalAbbreviations": [
-      "TR",
-      "TRO"
+      "t",
+      "tr",
+      "tro",
+      "troubleshooter",
+      "troubleshooters",
+      "troubleshooter's",
+      "004f577c",
+      "trouble"
     ],
     "translations": {
       "de": "-15% Schaden durch Roboter.",
@@ -2670,11 +2895,14 @@
     "sid": "03A1F8",
     "enabled": true,
     "star": 1,
-    "abbreviation": "AA",
+    "abbreviation": "aa",
     "additionalAbbreviations": [
-      "Anti",
-      "Armor",
-      "antiarmor"
+      "aa",
+      "antiarmor",
+      "anti",
+      "armor",
+      "anti-armor",
+      "005281b4"
     ],
     "translations": {
       "de": "Ignoriert 50% der Rüstung deines Ziels.",
@@ -2715,12 +2943,12 @@
     "sid": "0398E1",
     "enabled": true,
     "star": 1,
-    "abbreviation": "F",
+    "abbreviation": "f",
     "additionalAbbreviations": [
-      "Furious",
+      "f",
+      "furious",
       "fury",
-      "004f577d",
-      "F"
+      "004f577d"
     ],
     "translations": {
       "de": "Erhöhter Schaden für jeden weiteren Treffer am selben Ziel.",
@@ -2761,12 +2989,14 @@
     "sid": "03A001",
     "enabled": true,
     "star": 1,
-    "abbreviation": "H",
+    "abbreviation": "h",
     "additionalAbbreviations": [
+      "h",
       "hunt",
-      "Hunter",
-      "Hunters",
-      "H"
+      "hunter",
+      "hunters",
+      "hunter's",
+      "004f577a"
     ],
     "translations": {
       "de": "-15% Schaden durch Tiere.",
@@ -2808,7 +3038,6 @@
     "enabled": true,
     "star": 1,
     "abbreviation": "Concussive",
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Du erhältst die Chance, dein Ziel zurückzustoßen.",
       "en": "Gain a chance to knock your target back",
@@ -2848,11 +3077,13 @@
     "sid": "039E91",
     "enabled": true,
     "star": 1,
-    "abbreviation": "TS",
+    "abbreviation": "ts",
     "additionalAbbreviations": [
+      "ts",
       "two-shot",
       "twoshot",
-      "two shot"
+      "two shot",
+      "004f6d76"
     ],
     "translations": {
       "de": "Feuert ein zusätzliches Geschoss ab.",
@@ -2893,10 +3124,15 @@
     "sid": "039BA9",
     "enabled": true,
     "star": 1,
-    "abbreviation": "mutslayer",
+    "abbreviation": "mutant slayer's",
     "additionalAbbreviations": [
-      "MS",
-      "mutantslayer"
+      "mutant slayer's",
+      "mutant slayers",
+      "mutantslayers",
+      "mutantslayer",
+      "004f577b",
+      "mutantslay",
+      "mutslayer"
     ],
     "translations": {
       "de": "-15% Schaden durch Supermutanten.",
@@ -2937,11 +3173,13 @@
     "sid": "039939",
     "enabled": true,
     "star": 1,
-    "abbreviation": "J",
+    "abbreviation": "j",
     "additionalAbbreviations": [
+      "j",
       "junkie",
       "junkies",
-      "junkie's"
+      "junkie's",
+      "004f6aab"
     ],
     "translations": {
       "de": "Erhöht den Schaden, wenn du an Abhängigkeiten leidest.",
@@ -2984,13 +3222,12 @@
     "star": 2,
     "abbreviation": "10",
     "additionalAbbreviations": [
-      "Aim",
-      "Aim dmg",
       "10",
       "aim",
       "aiming",
       "10aiming",
       "10aim",
+      "0052414e",
       "hitman",
       "10%"
     ],
@@ -3082,9 +3319,16 @@
     "sid": "039E7D",
     "enabled": true,
     "star": 2,
-    "abbreviation": "E",
+    "abbreviation": "e",
     "additionalAbbreviations": [
-      "Exp"
+      "e",
+      "x",
+      "exp",
+      "explosive",
+      "explo",
+      "004f5771",
+      "explode",
+      "ex"
     ],
     "translations": {
       "de": "Kugeln explodieren und verursachen Flächenschaden.",
@@ -3125,10 +3369,15 @@
     "sid": "039EFE",
     "enabled": true,
     "star": 2,
-    "abbreviation": "50B",
+    "abbreviation": "reflect",
     "additionalAbbreviations": [
-      "Blocking",
-      "Reflect"
+      "reflect",
+      "blocking",
+      "50b",
+      "reflects",
+      "rmd",
+      "001a7c39",
+      "punish"
     ],
     "translations": {
       "de": "Wirft beim Blocken 50% des Nahkampfschadens zurück.",
@@ -3169,11 +3418,12 @@
     "sid": "039D51",
     "enabled": true,
     "star": 2,
-    "abbreviation": "40B",
+    "abbreviation": "40bash",
     "additionalAbbreviations": [
       "40bash",
       "bash",
       "bashing",
+      "005299f9",
       "40%",
       "40b"
     ],
@@ -3216,10 +3466,17 @@
     "sid": "039EFA",
     "enabled": true,
     "star": 2,
-    "abbreviation": "40P",
+    "abbreviation": "40p",
     "additionalAbbreviations": [
-      "PowerAttack",
-      "AttackDmg"
+      "40p",
+      "atackdmg",
+      "poweratack",
+      "power",
+      "power attack",
+      "40power",
+      "pad",
+      "001a7be2",
+      "powerful"
     ],
     "translations": {
       "de": "Verursacht 40% mehr Schaden bei starken Angriffen.",
@@ -3262,8 +3519,14 @@
     "star": 2,
     "abbreviation": "33",
     "additionalAbbreviations": [
-      "Hit Chance",
-      "VATS Hit"
+      "33",
+      "33v",
+      "vatshit",
+      "hitchance",
+      "33vats",
+      "33%",
+      "00524153",
+      "targeting"
     ],
     "translations": {
       "de": "+33% V.A.T.S.-Trefferchance.",
@@ -3306,11 +3569,12 @@
     "star": 2,
     "abbreviation": "25",
     "additionalAbbreviations": [
-      "FR",
       "25",
       "25ffr",
+      "ffr",
       "firerate",
       "rof",
+      "0052414f",
       "25%",
       "fast-fire"
     ],
@@ -3354,7 +3618,6 @@
     "enabled": true,
     "star": 2,
     "abbreviation": "RADDMG",
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Verändert Schaden in Strahlungsschaden und erhöht ihn um 10%.",
       "en": "Converts damage to Radiation and adds 10%",
@@ -3439,13 +3702,16 @@
     "sid": "039F86",
     "enabled": true,
     "star": 2,
-    "abbreviation": "50vats",
+    "abbreviation": "50",
     "additionalAbbreviations": [
-      "50V",
+      "50",
       "crit",
+      "50v",
       "critical",
       "critdmg",
+      "50vats",
       "50crit",
+      "0052414b",
       "50%"
     ],
     "translations": {
@@ -3487,10 +3753,14 @@
     "sid": "03A009",
     "enabled": true,
     "star": 2,
-    "abbreviation": "50L",
+    "abbreviation": "50l",
     "additionalAbbreviations": [
-      "Limb",
-      "Limb Dmg"
+      "50l",
+      "limb",
+      "limbdamage",
+      "limb damage",
+      "004ed02c",
+      "crippling"
     ],
     "translations": {
       "de": "Du erhältst 15% weniger Körperteilschaden.",
@@ -3531,10 +3801,14 @@
     "sid": "039AD7",
     "enabled": true,
     "star": 3,
-    "abbreviation": "E",
+    "abbreviation": "e",
     "additionalAbbreviations": [
-      "+1E",
-      "END"
+      "e",
+      "end",
+      "+1e",
+      "1e",
+      "endurance",
+      "005299fd"
     ],
     "translations": {
       "de": "+1 Ausdauer.",
@@ -3577,8 +3851,11 @@
     "star": 3,
     "abbreviation": "40",
     "additionalAbbreviations": [
-      "Power Attack",
-      "Sprint"
+      "40",
+      "pdr",
+      "40less",
+      "001a7bd3",
+      "power-dr"
     ],
     "translations": {
       "de": "75%ige Chance, den Schaden während des Sprintens um 15% zu reduzieren.",
@@ -3621,8 +3898,16 @@
     "star": 3,
     "abbreviation": "15",
     "additionalAbbreviations": [
-      "Crit meter",
-      "VATS Crit"
+      "15",
+      "15c",
+      "15fill",
+      "critmeter",
+      "15v",
+      "0052414c",
+      "lucky",
+      "crit-meter",
+      "15%",
+      "15crit"
     ],
     "translations": {
       "de": "Mit jedem Treffer im V.A.T.S. füllt sich dein Balken für kritische Treffer um 15% schneller.",
@@ -3663,10 +3948,14 @@
     "sid": "039F17",
     "enabled": true,
     "star": 3,
-    "abbreviation": "S",
+    "abbreviation": "s",
     "additionalAbbreviations": [
-      "+1S",
-      "STR"
+      "s",
+      "str",
+      "+1s",
+      "1s",
+      "strength",
+      "005299fc"
     ],
     "translations": {
       "de": "+1 Stärke.",
@@ -3707,7 +3996,7 @@
     "sid": "039F80",
     "enabled": true,
     "star": 3,
-    "abbreviation": "25AP",
+    "abbreviation": "25",
     "additionalAbbreviations": [
       "25",
       "action",
@@ -3802,10 +4091,17 @@
     "sid": "039C5B",
     "enabled": true,
     "star": 3,
-    "abbreviation": "MS",
+    "abbreviation": "ms",
     "additionalAbbreviations": [
-      "Move faster",
-      "MOV"
+      "ms",
+      "movefaster",
+      "movespeed",
+      "movement",
+      "move",
+      "004ed02e",
+      "nimble",
+      "mov",
+      "fms"
     ],
     "translations": {
       "de": "Erhöhte Bewegungsgeschwindigkeit beim Zielen.",
@@ -3848,9 +4144,11 @@
     "star": 3,
     "abbreviation": "15b",
     "additionalAbbreviations": [
-      "Blocking",
       "15b",
-      "Sprint"
+      "blocking",
+      "block",
+      "005253fb",
+      "blocker"
     ],
     "translations": {
       "de": "75%ige Chance, den Schaden während des Sprintens um 15% zu reduzieren.",
@@ -3891,11 +4189,13 @@
     "sid": "039C05",
     "enabled": true,
     "star": 3,
-    "abbreviation": "P",
+    "abbreviation": "p",
     "additionalAbbreviations": [
-      "+1P",
-      "PER",
-      "1P"
+      "p",
+      "per",
+      "perception",
+      "005299fa",
+      "1p"
     ],
     "translations": {
       "de": "+1 Wahrnehmung.",
@@ -3936,10 +4236,14 @@
     "sid": "039A9A",
     "enabled": true,
     "star": 3,
-    "abbreviation": "250DR",
+    "abbreviation": "250",
     "additionalAbbreviations": [
-      "Reload DR",
-      "250"
+      "250",
+      "250dr",
+      "reloaddr",
+      "004f5777",
+      "reload-dr",
+      ""
     ],
     "translations": {
       "de": "+250 Schadensresistenz beim Nachladen.",
@@ -3982,8 +4286,14 @@
     "star": 3,
     "abbreviation": "50",
     "additionalAbbreviations": [
-      "Aim DR",
-      "ADR"
+      "50",
+      "aimdr",
+      "50dr",
+      "50aim",
+      "50a",
+      "adr",
+      "004f5772",
+      "steadfast"
     ],
     "translations": {
       "de": "+50 Schadensresistenz beim Zielen.",
@@ -4026,8 +4336,13 @@
     "star": 3,
     "abbreviation": "90",
     "additionalAbbreviations": [
-      "RW",
-      "W"
+      "90",
+      "rw",
+      "90rw",
+      "weight",
+      "reducedweight",
+      "00524152",
+      "light"
     ],
     "translations": {
       "de": "Wiegt 90% weniger und zählt nicht als Rüstung für die Chamäleon-Mutation.",
@@ -4068,10 +4383,15 @@
     "sid": "03A4F1",
     "enabled": true,
     "star": 3,
-    "abbreviation": "AGI",
+    "abbreviation": "a",
     "additionalAbbreviations": [
-      "+1A",
-      "A"
+      "a",
+      "agi",
+      "+1a",
+      "1a",
+      "agl",
+      "agility",
+      "005299fb"
     ],
     "translations": {
       "de": "+1 Beweglichkeit.",
@@ -4112,12 +4432,16 @@
     "sid": "039F7C",
     "enabled": true,
     "star": 3,
-    "abbreviation": "15R",
+    "abbreviation": "15r",
     "additionalAbbreviations": [
-      "15R",
-      "Reload",
-      "RE",
-      "FR"
+      "15r",
+      "re",
+      "reload",
+      "00524150",
+      "faster-reload",
+      "fast reload",
+      "fast-reload",
+      "15re"
     ],
     "translations": {
       "de": "15% höhere Nachladegeschwindigkeit.",
@@ -4154,12 +4478,8 @@
       "zhhans": "放射性",
       "zhhant": "放射性"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "50% Chance, bei erfolgreichem Blocken 50 RAD zuzufügen.",
       "en": "50% chance to deal 50 Rads on a successful block",
@@ -4195,12 +4515,8 @@
       "zhhans": "狂暴格挡",
       "zhhant": "狂暴格擋"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "10% Chance, Gegner bei erfolgreichem Blocken in die Raserei zu treiben.",
       "en": "10% chance to frenzy your opponent on a successful block",
@@ -4236,12 +4552,8 @@
       "zhhans": "冰冻格挡",
       "zhhant": "凍結格擋"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "25% Chance, Gegner bei erfolgreichem Blocken einzufrieren.",
       "en": "25% chance to freeze your opponent on a successful block",
@@ -4277,12 +4589,8 @@
       "zhhans": "已蓄能",
       "zhhant": "已蓄能"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "10% Chance, bei erfolgreichem Blocken 40 elektrischen Schaden zuzufügen.",
       "en": "10% chance to deal 40 Electrical damage on a successful block",
@@ -4318,12 +4626,16 @@
       "zhhans": "骑兵",
       "zhhant": "騎兵"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "40",
+    "additionalAbbreviations": [
+      "40",
+      "pdr",
+      "40less",
+      "001a7bd3",
+      "power-dr"
+    ],
     "translations": {
       "de": "Du erleidest bei starken Angriffen 40% weniger Schaden.",
       "en": "Take 40% less damage while power attacking",
@@ -4359,12 +4671,8 @@
       "zhhans": "爆裂物",
       "zhhant": "爆裂物"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Die Kugeln explodieren beim Einschlag und richten 15 Punkte Flächenschaden an.",
       "en": "Bullets explode on impact doing 15 points area effect damage.",
@@ -4400,12 +4708,8 @@
       "zhhans": "惩罚",
       "zhhant": "懲罰"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Wirft 10% des Nahkampfschadens zurück auf den Angreifer.",
       "en": "Reflects 10% of melee damage back on attacker.",
@@ -4441,12 +4745,8 @@
       "zhhans": "粉状",
       "zhhant": "粉狀"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Beschleunigt die Regeneration deiner Aktionspunkte.",
       "en": "Increases Action Point refresh speed.",
@@ -4482,12 +4782,18 @@
       "zhhans": "驱虫者",
       "zhhant": "驅蟲者"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "ext",
+    "additionalAbbreviations": [
+      "ext",
+      "et",
+      "exterminator",
+      "exterminators",
+      "exterminator's",
+      "001f81eb",
+      "exterm"
+    ],
     "translations": {
       "de": "+30% Schaden gegen Mirelurks und Insekten.",
       "en": "+30% damage to Mirelurks and bugs",
@@ -4523,12 +4829,8 @@
       "zhhans": "耐久",
       "zhhant": "耐用度"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "50% höhere Haltbarkeit.",
       "en": "50% more durability than normal",
@@ -4564,12 +4866,8 @@
       "zhhans": "爆裂物",
       "zhhant": "爆裂物"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 2,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Kugeln explodieren und verursachen Flächenschaden.",
       "en": "Bullets explode for area damage.",
@@ -4605,12 +4903,8 @@
       "zhhans": "闪电",
       "zhhant": "閃電"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Verschießt eine elektrische Entladung, die auf andere Ziele überspringt.",
       "en": "Fires an electrical discharge that arcs between targets.",
@@ -4646,12 +4940,8 @@
       "zhhans": "尸鬼克星",
       "zhhant": "屍鬼剋星"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Verursacht 50% mehr Schaden gegen Ghule.",
       "en": "Does 50% more damage against ghouls.",
@@ -4687,12 +4977,8 @@
       "zhhans": "VATS强化",
       "zhhant": "V.A.T.S.強化"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Verbesserte Trefferchance im V.A.T.S., 25% niedrigere Aktionspunkte-Kosten.",
       "en": "Improved VATS hit chance, 25% less Action Point cost.",
@@ -4728,12 +5014,8 @@
       "zhhans": "强固",
       "zhhant": "堅固"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "+50 Schadensresistenz beim Zielen.",
       "en": "+50 damage resistance while aiming.",
@@ -4769,12 +5051,8 @@
       "zhhans": "燃烧弹",
       "zhhant": "燃燒彈"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Steckt das Ziel in Brand und verursacht 15 Punkte Schaden.",
       "en": "Sets target on fire for 15 points of damage.",
@@ -4810,12 +5088,8 @@
       "zhhans": "燃烧弹",
       "zhhant": "燃燒彈"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Erhöht den Waffenschaden um 15%.",
       "en": "Increases weapon damage by 15%",
@@ -4851,12 +5125,8 @@
       "zhhans": "泰坦",
       "zhhant": "泰坦"
     },
-    "rec": null,
-    "sid": null,
     "enabled": false,
     "star": 0,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Reduziert den Schaden beim Stehen und sich nicht bewegen um 15%.",
       "en": "Reduces damage while standing and not moving by 15%.",
@@ -4892,12 +5162,16 @@
       "zhhans": "烈士",
       "zhhant": "烈士"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "z",
+    "additionalAbbreviations": [
+      "z",
+      "zealot",
+      "zealots",
+      "zealot's",
+      "004ed02b"
+    ],
     "translations": {
       "de": "+30% Schaden gegen Verbrannte.",
       "en": "+30% damage to Scorched",
@@ -4933,12 +5207,17 @@
       "zhhans": "瘫痪",
       "zhhant": "癱瘓"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 2,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "50l",
+    "additionalAbbreviations": [
+      "50l",
+      "limb",
+      "limbdamage",
+      "limb damage",
+      "004ed02c",
+      "crippling"
+    ],
     "translations": {
       "de": "+50% Körperteilschaden.",
       "en": "+50% limb damage",
@@ -4974,12 +5253,8 @@
       "zhhans": "创伤",
       "zhhant": "創傷"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Ziele bluten 5 Sekunden lang und erleiden dabei 25 Punkte Schaden.",
       "en": "Targets bleed for 25 damage over 5 seconds",
@@ -5015,12 +5290,20 @@
       "zhhans": "暗杀者",
       "zhhant": "刺客"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "a",
+    "additionalAbbreviations": [
+      "a",
+      "ass",
+      "assn",
+      "assassin",
+      "assasin",
+      "asasin",
+      "assassin's",
+      "asn",
+      "004f5770"
+    ],
     "translations": {
       "de": "+10% Schaden gegen Menschen.",
       "en": "+10% damage to Humans",
@@ -5056,12 +5339,8 @@
       "zhhans": "燃烧弹",
       "zhhant": "燃燒彈"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Ziele brennen 3 Sekunden lang und erleiden dabei 24 Punkte Schaden.",
       "en": "Targets burn for 24 damage over 3 seconds",
@@ -5097,12 +5376,8 @@
       "zhhans": "毒药师",
       "zhhant": "毒藥師"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Das Ziel ist 10 Sekunden lang vergiftet und erhält dabei 50 Schaden.",
       "en": "Target is poisoned for 50 damage over 10 seconds",
@@ -5138,12 +5413,20 @@
       "zhhans": "尸鬼克星",
       "zhhant": "屍鬼剋星"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "g",
+    "additionalAbbreviations": [
+      "g",
+      "gs",
+      "ghoul",
+      "ghouls",
+      "ghoul slayer",
+      "ghoul slayer's",
+      "ghoul slayers",
+      "004f5779",
+      "ghoulslay"
+    ],
     "translations": {
       "de": "+30% Schaden gegen Ghule.",
       "en": "+30% damage to ghouls",
@@ -5179,12 +5462,17 @@
       "zhhans": "猎人",
       "zhhant": "獵人"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "h",
+    "additionalAbbreviations": [
+      "h",
+      "hunt",
+      "hunter",
+      "hunters",
+      "hunter's",
+      "004f577a"
+    ],
     "translations": {
       "de": "+30% Schaden gegen Tiere.",
       "en": "+30% damage to animals",
@@ -5220,12 +5508,18 @@
       "zhhans": "变种克星",
       "zhhant": "變種剋星"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "mutant slayer's",
+    "additionalAbbreviations": [
+      "mutant slayer's",
+      "mutant slayers",
+      "mutantslayers",
+      "mutantslayer",
+      "004f577b",
+      "mutantslay",
+      "mutslayer"
+    ],
     "translations": {
       "de": "+30% Schaden gegen Supermutanten.",
       "en": "+30% damage to super mutants",
@@ -5261,12 +5555,19 @@
       "zhhans": "机械师",
       "zhhant": "機械師"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "t",
+    "additionalAbbreviations": [
+      "t",
+      "tr",
+      "tro",
+      "troubleshooter",
+      "troubleshooters",
+      "troubleshooter's",
+      "004f577c",
+      "trouble"
+    ],
     "translations": {
       "de": "Verursacht +30% Schaden gegen Roboter.",
       "en": "+30% damage to robots",
@@ -5302,12 +5603,16 @@
       "zhhans": "夜间",
       "zhhant": "夜間"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "n",
+    "additionalAbbreviations": [
+      "n",
+      "nocturnal",
+      "noct",
+      "004f6aae",
+      "nocturn"
+    ],
     "translations": {
       "de": "Schaden erhöht sich bei Nacht und verringert sich bei Tag.",
       "en": "Damage increases with the night and decreases with the day",
@@ -5343,12 +5648,18 @@
       "zhhans": "轻量",
       "zhhant": "輕量"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "90",
+    "additionalAbbreviations": [
+      "90",
+      "rw",
+      "90rw",
+      "weight",
+      "reducedweight",
+      "00524152",
+      "light"
+    ],
     "translations": {
       "de": "Gewicht um 90% reduziert.",
       "en": "90% reduced weight",
@@ -5384,12 +5695,16 @@
       "zhhans": "骑兵",
       "zhhant": "騎兵"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "15b",
+    "additionalAbbreviations": [
+      "15b",
+      "blocking",
+      "block",
+      "005253fb",
+      "blocker"
+    ],
     "translations": {
       "de": "Du erleidest beim Blocken 15% weniger Schaden.",
       "en": "Take 15% less damage while blocking",
@@ -5425,12 +5740,8 @@
       "zhhans": "震慑",
       "zhhant": "震懾"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Chance auf Taumeln bei Treffer.",
       "en": "Chance to stagger on hit",
@@ -5466,12 +5777,8 @@
       "zhhans": "破膝",
       "zhhant": "破膝"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Chance, ein Körperteil zu verkrüppeln.",
       "en": "Chance to cripple a limb",
@@ -5507,12 +5814,8 @@
       "zhhans": "激怒",
       "zhhant": "激怒"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Kritische Treffer bringen das Ziel zur Raserei.",
       "en": "Critical hits cause target to frenzy",
@@ -5548,12 +5851,8 @@
       "zhhans": "炽烈格挡",
       "zhhant": "熾烈格擋"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "25% Chance, bei erfolgreichem Blocken 50 Feuerschaden zuzufügen.",
       "en": "25% chance to deal 50 Fire damage on a successful block",
@@ -5589,12 +5888,16 @@
       "zhhans": "骑兵",
       "zhhant": "騎兵"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "bl",
+    "additionalAbbreviations": [
+      "bl",
+      "block",
+      "blocker",
+      "00527f76",
+      "blocking"
+    ],
     "translations": {
       "de": "Reduziert den Schaden beim Blocken um 15%.",
       "en": "Reduces damage while blocking by 15%",
@@ -5630,12 +5933,8 @@
       "zhhans": "超低温",
       "zhhant": "超低溫"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Alle 20 Sekunden eine Chance von 10%, Nahkampfangreifer einzufrieren.",
       "en": "10% chance to freeze melee attackers, once every 20 seconds",
@@ -5671,12 +5970,8 @@
       "zhhans": "燃烧弹",
       "zhhant": "燃燒彈"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Alle 20 Sekunden eine Chance von 30%, Nahkampfangreifer in Brand zu setzen.",
       "en": "30% chance to ignite melee attackers, once every 20 seconds",
@@ -5712,12 +6007,8 @@
       "zhhans": "决斗型",
       "zhhant": "決鬥型"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "10% Chance, Nahkampfangreifer zu entwaffnen.",
       "en": "10% chance to disarm melee attackers",
@@ -5753,12 +6044,8 @@
       "zhhans": "VATS强化",
       "zhhant": "V.A.T.S.強化"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Um 10% reduzierte Aktionspunkte-Kosten im V.A.T.S.",
       "en": "10% reduced Action Point costs in V.A.T.S.",
@@ -5794,12 +6081,17 @@
       "zhhans": "突变的",
       "zhhant": "變種人"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "mu",
+    "additionalAbbreviations": [
+      "mu",
+      "mutant",
+      "mutants",
+      "mutant's",
+      "mut",
+      "005299f5"
+    ],
     "translations": {
       "de": "Schaden wird um 10% erhöht, wenn du mutiert bist.",
       "en": "Damage increased by 10% if you are mutated",
@@ -5835,12 +6127,16 @@
       "zhhans": "感知",
       "zhhant": "感知"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "p",
+    "additionalAbbreviations": [
+      "p",
+      "per",
+      "perception",
+      "005299fa",
+      "1p"
+    ],
     "translations": {
       "de": "+1 Wahrnehmung.",
       "en": "+1 Perception",
@@ -5876,12 +6172,18 @@
       "zhhans": "敏捷",
       "zhhant": "敏捷"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "a",
+    "additionalAbbreviations": [
+      "a",
+      "agi",
+      "+1a",
+      "1a",
+      "agl",
+      "agility",
+      "005299fb"
+    ],
     "translations": {
       "de": "+1 Beweglichkeit.",
       "en": "+1 Agility",
@@ -5917,12 +6219,17 @@
       "zhhans": "力量",
       "zhhant": "力量"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "s",
+    "additionalAbbreviations": [
+      "s",
+      "str",
+      "+1s",
+      "1s",
+      "strength",
+      "005299fc"
+    ],
     "translations": {
       "de": "+1 Stärke.",
       "en": "+1 Strength",
@@ -5958,12 +6265,17 @@
       "zhhans": "耐力",
       "zhhant": "耐力"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 3,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "e",
+    "additionalAbbreviations": [
+      "e",
+      "end",
+      "+1e",
+      "1e",
+      "endurance",
+      "005299fd"
+    ],
     "translations": {
       "de": "+1 Ausdauer.",
       "en": "+1 Endurance",
@@ -5999,12 +6311,8 @@
       "zhhans": "冻结",
       "zhhant": "凍結"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Kritische Treffer frieren Ziele ein.",
       "en": "Critical hits freeze targets.",
@@ -6040,12 +6348,8 @@
       "zhhans": "危险",
       "zhhant": "危險"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 5,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "20% mehr Schaden.",
       "en": "20% more damage",
@@ -6081,12 +6385,8 @@
       "zhhans": "健康",
       "zhhant": "健康"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 5,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "+10 Gesundheit.",
       "en": "+10 Health",
@@ -6122,12 +6422,8 @@
       "zhhans": "行动力",
       "zhhant": "行動力"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 5,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "+10 Aktionspunkte.",
       "en": "+10 Action Points",
@@ -6163,12 +6459,17 @@
       "zhhans": "支撑",
       "zhhant": "支撐"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 1,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
+    "abbreviation": "v",
+    "additionalAbbreviations": [
+      "v",
+      "vg",
+      "vang",
+      "vanguard",
+      "vanguard's",
+      "00529a05"
+    ],
     "translations": {
       "de": "Verleiht bis zu +35 Energie- und Schadensresistenz, je nachdem, wie hoch deine Gesundheit ist.",
       "en": "Grants up to +35 Energy Resistance and Damage Resistance, the higher your health.",
@@ -6204,12 +6505,8 @@
       "zhhans": "枪械精准度",
       "zhhant": "槍砲準度"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Du erhältst +5% höhere Präzision mit Feuerwaffen.",
       "en": "Gain +5% accuracy with guns",
@@ -6245,12 +6542,8 @@
       "zhhans": "反射投掷物",
       "zhhant": "反射彈"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 4,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "Du erhältst eine Chance von 5%, Geschosse auf den Angreifer zurückzuwerfen.",
       "en": "Gain a 5% chance to reflect projectiles back at the attacker",
@@ -6286,12 +6579,8 @@
       "zhhans": "抗性",
       "zhhant": "抗性"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 5,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "+5 Schadens- und Energieresistenz.",
       "en": "+5 Damage Resistance and Energy Resistance",
@@ -6327,12 +6616,8 @@
       "zhhans": "生命值",
       "zhhant": "生命值"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 5,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "+5 Gesundheit",
       "en": "+5 Health",
@@ -6368,12 +6653,8 @@
       "zhhans": "行动点数",
       "zhhant": "行動點數"
     },
-    "rec": null,
-    "sid": null,
     "enabled": true,
     "star": 5,
-    "abbreviation": null,
-    "additionalAbbreviations": [],
     "translations": {
       "de": "+5 Aktionspunkte.",
       "en": "+5 Action Points",
