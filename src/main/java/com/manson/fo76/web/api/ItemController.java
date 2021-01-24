@@ -3,6 +3,7 @@ package com.manson.fo76.web.api;
 import static com.manson.fo76.config.AppConfig.ENABLE_AUTO_PRICE_CHECK;
 
 import com.manson.fo76.domain.dto.ItemResponse;
+import com.manson.fo76.domain.dto.ItemsUploadFilters;
 import com.manson.fo76.domain.dto.ModData;
 import com.manson.fo76.domain.dto.ModDataRequest;
 import com.manson.fo76.helper.Utils;
@@ -37,6 +38,7 @@ public class ItemController {
       @RequestBody ModData modData) {
     try {
       ModDataRequest request = new ModDataRequest();
+      request.setFilters(new ItemsUploadFilters());
       request.setModData(modData);
       List<ItemResponse> responses = itemService.prepareModData(request, autoPriceCheck);
       if (toCSV) {

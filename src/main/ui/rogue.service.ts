@@ -25,10 +25,19 @@ export class RogueService {
     }
   }
 
+  private static getItemName(item: any) {
+    // if (item && item.itemDetails && item.itemDetails.config && item.itemDetails.config.gameId) {
+    //   return item.itemDetails.config.gameId;
+    // }
+    if (item && item.itemDetails) {
+      return item.itemDetails.name;
+    }
+  }
+
   private static createRogueObject(item: any, character: string): RogueCSVLine {
     return {
       prefix: this.getLegModValue(item, 0),
-      type: item.itemDetails.name,
+      type: this.getItemName(item),
       major: this.getLegModValue(item, 1),
       minor: this.getLegModValue(item, 2),
       level: item.itemLevel,
