@@ -7,10 +7,10 @@ import com.fasterxml.jackson.core.JsonGenerator
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.manson.domain.config.LegendaryModDescriptor
 import com.manson.domain.config.XTranslatorConfig
-import com.manson.domain.fo76.items.enums.FilterFlag
+import com.manson.fo76.domain.dto.FilterFlag
 import com.manson.fo76.domain.dto.ItemConfig
+import com.manson.fo76.domain.dto.LegendaryModDescriptor
 import java.io.File
 import java.util.function.Function
 import org.apache.commons.lang3.StringUtils

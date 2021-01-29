@@ -3,17 +3,16 @@ package com.manson.fo76.service;
 import com.google.common.collect.Sets;
 import com.manson.domain.LegendaryMod;
 import com.manson.domain.config.ArmorConfig;
-import com.manson.domain.config.LegendaryModDescriptor;
-import com.manson.domain.fed76.pricing.PriceCheckResponse;
-import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.fo76.items.item_card.ItemCardEntry;
+import com.manson.fo76.domain.dto.FilterFlag;
 import com.manson.fo76.domain.dto.ItemsUploadFilters;
 import com.manson.fo76.domain.dto.CharacterInventory;
 import com.manson.fo76.domain.dto.ItemConfig;
 import com.manson.fo76.domain.dto.ItemDescriptor;
 import com.manson.fo76.domain.dto.ItemDetails;
 import com.manson.fo76.domain.dto.ItemResponse;
+import com.manson.fo76.domain.dto.LegendaryModDescriptor;
 import com.manson.fo76.domain.dto.ModData;
 import com.manson.fo76.domain.dto.ModDataRequest;
 import com.manson.fo76.domain.dto.OwnerInfo;
@@ -114,13 +113,14 @@ public class ItemConverterService {
     }
     FilterFlag filterFlag = itemDescriptor.getFilterFlagEnum();
     if (filterFlag == FilterFlag.UNKNOWN) {
-      log.warn("Empty filter flag for {}", itemDescriptor);
+      log.error("Empty filter flag: {}, {}", itemDescriptor.getFilterFlag(), itemDescriptor.getText());
+//      log.warn("Empty filter flag for {}", itemDescriptor);
       return false;
     }
     if (CollectionUtils.isEmpty(filter.getFilterFlags())) {
       return true;
     }
-    for (Integer flag : filterFlag.getFlags()) {
+    for (long flag : filterFlag.getFlags()) {
       if (filter.getFilterFlags().contains(flag)) {
         return true;
       }
@@ -246,7 +246,7 @@ public class ItemConverterService {
           return gameConfigService.findPlanConfig(descriptor);
         case ARMOR:
         case POWER_ARMOR:
-        case ARMOR_OUTFIT:
+        case APPAREL:
           return gameConfigService.findArmorConfig(descriptor);
         default:
           return gameConfigService.findWeaponConfig(descriptor);

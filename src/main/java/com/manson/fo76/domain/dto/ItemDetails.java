@@ -3,7 +3,6 @@ package com.manson.fo76.domain.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.manson.domain.LegendaryMod;
 import com.manson.domain.config.ArmorConfig;
-import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.fo76.service.ItemSource;
 import java.util.List;
 import lombok.AllArgsConstructor;

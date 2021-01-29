@@ -1,11 +1,11 @@
 package com.manson.fo76.web.api;
 
 import com.manson.domain.config.ArmorConfig;
-import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.config.XTranslatorConfig;
-import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
+import com.manson.fo76.domain.dto.FilterFlag;
 import com.manson.fo76.domain.dto.ItemResponse;
+import com.manson.fo76.domain.dto.LegendaryModDescriptor;
 import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
 import com.manson.fo76.domain.fed76.PriceCheckRequest;
 import com.manson.fo76.service.Fed76Service;

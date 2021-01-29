@@ -1,6 +1,5 @@
 package com.manson.fo76.domain.dto;
 
-import com.manson.domain.fo76.items.enums.FilterFlag;
 import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

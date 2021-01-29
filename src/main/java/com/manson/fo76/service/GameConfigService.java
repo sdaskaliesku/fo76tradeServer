@@ -2,13 +2,13 @@ package com.manson.fo76.service;
 
 import com.google.common.collect.Sets;
 import com.manson.domain.config.ArmorConfig;
-import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.fo76.items.enums.DamageType;
-import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.fo76.items.item_card.ItemCardEntry;
+import com.manson.fo76.domain.dto.FilterFlag;
 import com.manson.fo76.domain.dto.ItemConfig;
 import com.manson.fo76.domain.dto.ItemDescriptor;
+import com.manson.fo76.domain.dto.LegendaryModDescriptor;
 import com.manson.fo76.domain.dto.Stats;
 import java.util.Collection;
 import java.util.List;
@@ -24,7 +24,7 @@ public class GameConfigService {
 
   private static final String DOT = ".";
   private static final Set<FilterFlag> SUPPORTED_TYPES_ARMOR = Sets
-      .newHashSet(FilterFlag.ARMOR, FilterFlag.ARMOR_OUTFIT, FilterFlag.POWER_ARMOR);
+      .newHashSet(FilterFlag.ARMOR, FilterFlag.APPAREL, FilterFlag.POWER_ARMOR);
   private final GameConfigHolderService config;
 
   @Autowired

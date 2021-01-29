@@ -3,7 +3,6 @@ package com.manson.fo76.domain.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

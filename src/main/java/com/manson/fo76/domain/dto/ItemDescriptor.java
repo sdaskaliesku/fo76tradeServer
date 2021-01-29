@@ -3,7 +3,6 @@ package com.manson.fo76.domain.dto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.manson.AbstractObject;
-import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.item_card.ItemCardEntry;
 import com.manson.domain.fo76.items.mod_card.ModCardEntry;
 import java.util.List;
@@ -28,7 +27,7 @@ public class ItemDescriptor extends AbstractObject {
   private int count;
   private int itemValue;
   @Builder.Default
-  private int filterFlag = -1;
+  private long filterFlag = -1;
   private Integer currentHealth;
   private Integer damage;
   private Integer durability;

@@ -2,7 +2,7 @@ package com.manson.fo76.domain.fed76;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.manson.domain.fo76.items.enums.ArmorGrade;
-import com.manson.domain.fo76.items.enums.FilterFlag;
+import com.manson.fo76.domain.dto.FilterFlag;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
