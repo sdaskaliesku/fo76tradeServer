@@ -1,5 +1,6 @@
 import {RogueService} from "./rogue.service";
 import {Utils} from "./utils";
+import {UploadFileFilters} from "./filter.service";
 
 export const DISCORD_LINK = 'https://discord.gg/7fef733';
 export const NEXUS_LINK = 'https://www.nexusmods.com/fallout76/mods/698';
@@ -24,21 +25,6 @@ export declare interface ModData {
     id?: string,
     append?: boolean
   }
-}
-
-export declare interface UploadFileFilters {
-  filterFlags: Array<number>,
-  legendaryOnly: boolean,
-  tradableOnly: boolean,
-}
-
-export declare interface Filter {
-  id?: string,
-  name: string,
-  checked?: boolean,
-  hide?: boolean,
-  filters?: string
-  types?: Array<string>
 }
 
 export declare interface AuthorResponse {
@@ -73,32 +59,6 @@ export declare interface PriceCheckResponse {
 
   isEmpty(): boolean
 }
-
-export declare interface FilterFlag {
-  value: string
-  flags: Array<Number>
-  hasStarMods: boolean
-  subtypes: Array<FilterFlag>
-}
-
-export const filters: Array<Filter> = [
-  {
-    id: 'tradableOnly',
-    name: 'Tradable',
-    checked: true,
-    hide: true,
-  },
-  {
-    id: 'legendaries',
-    name: 'legendaries',
-    checked: true,
-  },
-  {
-    id: 'priceCheckOnly',
-    name: 'Price Check Only',
-    checked: true,
-  }
-];
 
 export const downloadOptions = [
   {

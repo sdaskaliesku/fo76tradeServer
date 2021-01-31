@@ -104,11 +104,12 @@
 <script>
 import {columns} from '../table.columns';
 import Tabulator from 'tabulator-tables';
-import {downloadOptions, filters} from '../domain';
+import {downloadOptions} from '../domain';
 import {gameApiService} from '../game.api.service';
 import Vue from 'vue';
 import {Utils} from '../utils';
 import {tableSettingsService} from '../tableSettings.service';
+import {filterService} from '../filter.service';
 
 const tableConfig = {
   layout: 'fitColumns',
@@ -119,28 +120,6 @@ const tableConfig = {
   movableColumns: true,
   groupBy: 'filterFlag',
   paginationSizeSelector: [5, 10, 20, 50, 100, 500, 1000, 5000, 50000],
-};
-
-const tableFilters = () => {
-  const tFilters = [];
-  filters.forEach((filter) => {
-    if (filter.types && filter.types.length > 0) {
-      filter.types.forEach(type => {
-        tFilters.push({
-          checked: false,
-          name: type.replace('_', ' '),
-          filterGroup: type,
-        });
-      });
-    } else {
-      tFilters.push({
-        checked: false,
-        name: filter.name,
-        type: filter.id,
-      });
-    }
-  });
-  return tFilters;
 };
 
 let shouldDisplayFed76Toast = true;
@@ -249,27 +228,17 @@ export default {
         if (filter.filterGroup) {
           filterGroups.push(filter.filterGroup);
         } else {
-          if (filter.type === 'legendaries') {
-            tableFilters.push({
-              field: 'numLegendaryStars',
-              type: '>',
-              value: 0,
-            });
-          } else if (filter.type === 'tradableOnly') {
-            tableFilters.push({
-              field: 'isTradable',
-              type: '=',
-              value: true,
-            });
+          if (filterService.isLegendaryTableFilter(filter)) {
+            tableFilters.push(filterService.getLegendaryTableFilter());
+          } else if (filterService.isTradableTableFilter(filter)) {
+            tableFilters.push(filterService.getTradableTableFilter());
+          } else if (filterService.isUnknownPlansTableFilter(filter)) {
+            tableFilters.push(...filterService.getUnknownPlansTableFilters());
           }
         }
       });
       if (filterGroups.length > 0) {
-        tableFilters.push({
-          field: 'filterFlag',
-          type: 'in',
-          value: filterGroups,
-        });
+        tableFilters.push(filterService.getFilterFlagTableFilter(filterGroups));
       }
       if (this.searchText.length > 0) {
         tableFilters.push({
@@ -286,6 +255,9 @@ export default {
     }
   },
   beforeMount: function() {
+    filterService.getTableFilters().then(filters => {
+      this.filters = filters;
+    });
     columns.push({
       formatter: function() {
         return new Vue(
@@ -358,6 +330,7 @@ export default {
     },
     filters: {
       handler: function() {
+        console.log(this.filters);
         this.tabulator.setFilter(this.getAppliedFilters());
       },
       deep: true,
@@ -368,7 +341,7 @@ export default {
       tabulator: null,
       tableColumns: columns,
       useGrouping: true,
-      filters: tableFilters(),
+      filters: [],
       searchText: '',
       rogueCharName: '',
       maxItemsForPriceCheck: maxPriceCheckItems,

@@ -1,5 +1,6 @@
 import {BaseService} from "./base.service";
-import {FilterFlag, PriceCheckResponse} from "./domain";
+import {PriceCheckResponse} from "./domain";
+import {FilterFlag} from "./filter.service";
 
 class GameApiService extends BaseService {
 

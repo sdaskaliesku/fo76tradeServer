@@ -31,7 +31,7 @@
 
 <script>
 import {Utils} from '../utils';
-import {filters, MIN_MOD_SUPPORTED_VERSION} from '../domain';
+import {MIN_MOD_SUPPORTED_VERSION} from '../domain';
 import {itemService} from '../item.service';
 import TableComponent from './TableComponent';
 import {filterService} from '../filter.service';
@@ -109,35 +109,7 @@ export default {
     },
     capitalize: (input) => {
       return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
-    },
-    getUploadDataFilters: function() {
-      let uploadFileFilters = {
-        filterFlags: [],
-        legendaryOnly: false,
-        tradableOnly: false,
-        priceCheckOnly: false,
-      };
-      console.log(this.selected);
-      filterService.getUploadFileFilters(this.selected).then(filters => {
-
-      });
-      this.selected.forEach((v) => {
-        let valNumber = Number(v);
-        if (v.includes(',') || !Number.isNaN(valNumber)) {
-          let nums = v.split(',').map(x => Number(x));
-          uploadFileFilters.filterFlags = uploadFileFilters.filterFlags.concat(nums);
-        } else {
-          if (v === filters[0].name) {
-            uploadFileFilters.tradableOnly = true;
-          } else if (v === filters[1].name) {
-            uploadFileFilters.legendaryOnly = true;
-          } else if (v === filters[2].name) {
-            uploadFileFilters.priceCheckOnly = true;
-          }
-        }
-      });
-      return uploadFileFilters;
-    },
+    }
   },
 };
 </script>

@@ -59,6 +59,7 @@ export const columns = [
     ...createColumnDef({title: 'Legendary', field: 'isLegendary', visible: false}),
     formatter: 'tickCross'
   },
+  createColumnDef({title: 'Source', field: 'itemDetails.itemSource'}),
   createColumnDef({title: 'Weight', field: 'weight', visible: false}),
   createColumnDef({title: 'Total weight', field: 'itemDetails.totalWeight', visible: false})
 ];

@@ -1,5 +1,11 @@
-import {FilterFlag} from "./domain";
 import {gameApiService} from "./game.api.service";
+
+export declare interface FilterFlag {
+  value: string
+  flags: Array<Number>
+  hasStarMods: boolean
+  subtypes: Array<FilterFlag>
+}
 
 declare interface UploadFilter {
   id: string
@@ -8,18 +14,39 @@ declare interface UploadFilter {
   checked: boolean
 }
 
-declare interface UploadFileFilters {
+declare interface TableFilter {
+  checked: boolean
+  name: string
+  type: string
+  filterGroup?: string
+}
+
+export declare interface UploadFileFilters {
   filterFlags?: Array<String>
-  legendaryOnly: boolean
-  tradableOnly: boolean
-  priceCheckOnly: boolean
 }
 
 class FilterService {
 
   private filterFlags: Array<FilterFlag> = [];
   private filterFlagsReady: boolean = false;
-  private defaultFilters: Array<UploadFilter> = [
+  private defaultTableFilters: Array<TableFilter> = [
+    {
+      name: 'Legendaries',
+      type: 'legendaries',
+      checked: false
+    },
+    {
+      name: 'Tradable',
+      type: 'tradableOnly',
+      checked: false
+    },
+    {
+      name: 'Unknown plans',
+      type: 'unknownPlans',
+      checked: false
+    }
+  ];
+  private defaultUploadFilters: Array<UploadFilter> = [
     {
       id: 'tradableOnly',
       text: 'Tradable',
@@ -58,7 +85,7 @@ class FilterService {
 
   private buildUploadFilters(filterFlags: Array<FilterFlag>): Array<UploadFilter> {
     let filters: Array<UploadFilter> = [];
-    filters.push(...this.defaultFilters);
+    filters.push(...this.defaultUploadFilters);
     filterFlags.forEach(filter => {
       filters.push({
         id: filter.value,
@@ -87,21 +114,9 @@ class FilterService {
     return this.getFilterFlags().then(filterFlags => {
       let uploadFilters = this.buildUploadFilters(filterFlags);
       const uploadFileFilter: UploadFileFilters = {
-        tradableOnly: false,
-        legendaryOnly: false,
-        priceCheckOnly: false,
         filterFlags: []
       };
       input.forEach(selectedFilter => {
-        if (!uploadFileFilter.tradableOnly) {
-          uploadFileFilter.tradableOnly = FilterService.isSameFilter(this.defaultFilters[0], selectedFilter);
-        }
-        if (!uploadFileFilter.legendaryOnly) {
-          uploadFileFilter.legendaryOnly = FilterService.isSameFilter(this.defaultFilters[1], selectedFilter);
-        }
-        if (!uploadFileFilter.priceCheckOnly) {
-          uploadFileFilter.priceCheckOnly = FilterService.isSameFilter(this.defaultFilters[2], selectedFilter);
-        }
         uploadFilters.forEach(filter => {
           if (FilterService.isSameFilter(filter, selectedFilter)) {
             uploadFileFilter.filterFlags?.push(filter.text);
@@ -110,6 +125,80 @@ class FilterService {
       });
       return Promise.resolve(uploadFileFilter);
     });
+  }
+
+  private buildTableFilters(filterFlags: Array<FilterFlag>): Array<TableFilter> {
+    let filters: Array<TableFilter> = [];
+    filters.push(...this.defaultTableFilters);
+    filterFlags.forEach(filterFlag => {
+      filters.push({
+        type: filterFlag.value,
+        name: filterFlag.value,
+        filterGroup: filterFlag.value.toUpperCase(),
+        checked: false
+      })
+    });
+    return filters;
+  }
+
+  getTableFilters(): Promise<Array<TableFilter>> {
+    if (this.filterFlagsReady) {
+      return Promise.resolve(this.buildTableFilters(this.filterFlags));
+    }
+    return this.getFilterFlags().then(filterFlags => {
+      return Promise.resolve(this.buildTableFilters(filterFlags));
+    })
+  }
+
+  isLegendaryTableFilter(filter: TableFilter) {
+    return filter.type === this.defaultTableFilters[0].type;
+  }
+
+  isTradableTableFilter(filter: TableFilter) {
+    return filter.type === this.defaultTableFilters[1].type;
+  }
+
+  isUnknownPlansTableFilter(filter: TableFilter) {
+    return filter.type === this.defaultTableFilters[2].type;
+  }
+
+  getLegendaryTableFilter() {
+    return {
+      field: 'numLegendaryStars',
+      type: '>',
+      value: 0,
+    };
+  }
+
+  getTradableTableFilter() {
+    return {
+      field: 'isTradable',
+      type: '=',
+      value: true,
+    };
+  }
+
+  getUnknownPlansTableFilters() {
+    return [
+      {
+        field: 'isLearnedRecipe',
+        type: '=',
+        value: false,
+      },
+      {
+        field: 'filterFlag',
+        type: '=',
+        value: 'NOTES',
+      },
+    ];
+  }
+
+  getFilterFlagTableFilter(filterFlags: any) {
+    return {
+      field: 'filterFlag',
+      type: 'in',
+      value: filterFlags,
+    };
   }
 }
 

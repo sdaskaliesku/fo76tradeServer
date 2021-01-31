@@ -121,7 +121,7 @@ public class ItemConverterService {
             predicates.add(ItemDescriptor::isTradable);
             break;
           default:
-            System.out.println("Unknown filter: " + filter);
+            log.warn("Unknown filter: " + filter);
         }
       }
     }
@@ -133,37 +133,6 @@ public class ItemConverterService {
       return true;
     }
     return predicates.stream().allMatch(x -> x.test(itemDescriptor));
-  }
-
-  private static boolean matchesFilter(ItemsUploadFilters filter, ItemDescriptor itemDescriptor) {
-    if (filter.isTradableOnly()) {
-      if (!itemDescriptor.isTradable()) {
-        return false;
-      }
-    }
-    if (filter.isLegendaryOnly()) {
-      if (!itemDescriptor.isLegendary()) {
-        return false;
-      }
-    }
-    if (filter.isPriceCheckOnly()) {
-      return matchesPriceCheckOnly(itemDescriptor);
-    }
-    FilterFlag filterFlag = itemDescriptor.getFilterFlagEnum();
-    if (filterFlag == FilterFlag.UNKNOWN) {
-      log.error("Empty filter flag: {}, {}", itemDescriptor.getFilterFlag(), itemDescriptor.getText());
-//      log.warn("Empty filter flag for {}", itemDescriptor);
-      return false;
-    }
-    if (CollectionUtils.isEmpty(filter.getFilterFlags())) {
-      return true;
-    }
-    for (long flag : filterFlag.getFlags()) {
-      if (filter.getFilterFlags().contains(flag)) {
-        return true;
-      }
-    }
-    return false;
   }
 
   private static OwnerInfo createOwnerInfo(String account, String character) {
