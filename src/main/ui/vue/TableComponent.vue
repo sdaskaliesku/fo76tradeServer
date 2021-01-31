@@ -330,7 +330,6 @@ export default {
     },
     filters: {
       handler: function() {
-        console.log(this.filters);
         this.tabulator.setFilter(this.getAppliedFilters());
       },
       deep: true,

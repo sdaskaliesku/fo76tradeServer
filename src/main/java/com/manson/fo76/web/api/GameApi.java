@@ -134,6 +134,7 @@ public class GameApi {
 
   @Data
   public static class FilterFlagResponse {
+    private final String name;
     private final List<Long> flags;
     private final String value;
     private final boolean hasStarMods;
@@ -144,7 +145,7 @@ public class GameApi {
       this.flags = filterFlag.getFlags();
       this.hasStarMods = filterFlag.isHasStarMods();
       this.subtypes = filterFlag.getSubtypes().stream().map(FilterFlagResponse::new).collect(Collectors.toList());
-
+      this.name = filterFlag.name();
     }
 
   }

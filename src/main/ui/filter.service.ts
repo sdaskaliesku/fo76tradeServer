@@ -1,6 +1,7 @@
 import {gameApiService} from "./game.api.service";
 
 export declare interface FilterFlag {
+  name: string
   value: string
   flags: Array<Number>
   hasStarMods: boolean
@@ -134,7 +135,7 @@ class FilterService {
       filters.push({
         type: filterFlag.value,
         name: filterFlag.value,
-        filterGroup: filterFlag.value.toUpperCase(),
+        filterGroup: filterFlag.name.toUpperCase(),
         checked: false
       })
     });
