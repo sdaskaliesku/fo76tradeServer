@@ -39,4 +39,12 @@ public class Utils {
     }
   }
 
+  public static Number silentParse(String value) {
+    try {
+      return Double.valueOf(value);
+    } catch (Exception ignored) {
+    }
+    return -1;
+  }
+
 }

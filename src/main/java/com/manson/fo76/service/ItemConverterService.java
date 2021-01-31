@@ -1,8 +1,11 @@
 package com.manson.fo76.service;
 
+import static com.manson.fo76.helper.Utils.silentParse;
+
 import com.google.common.collect.Sets;
 import com.manson.domain.LegendaryMod;
 import com.manson.domain.config.ArmorConfig;
+import com.manson.domain.fo76.items.enums.DamageType;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.fo76.items.item_card.ItemCardEntry;
 import com.manson.fo76.domain.dto.CharacterInventory;
@@ -174,6 +177,33 @@ public class ItemConverterService {
     return map.get(DEFAULT_LOCALE);
   }
 
+  private FilterFlag clarifyFilterFlag(ItemResponse item, ItemDescriptor descriptor) {
+    FilterFlag filterFlag = item.getFilterFlag();
+    if (filterFlag == FilterFlag.WEAPON) {
+      for (ItemCardEntry itemCardEntry : descriptor.getItemCardEntries()) {
+        if (itemCardEntry.getDamageTypeEnum() == DamageType.AMMO) {
+          return FilterFlag.WEAPON_RANGED;
+        }
+        ItemCardText cardText = gameConfigService.findItemCardText(itemCardEntry);
+        if (cardText == ItemCardText.ROF && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
+          return FilterFlag.WEAPON_RANGED;
+        }
+        if (cardText == ItemCardText.MELEE_SPEED) {
+          return FilterFlag.WEAPON_MELEE;
+        }
+        if (cardText == ItemCardText.RNG && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
+          return FilterFlag.WEAPON_THROWN;
+        }
+      }
+    }
+    if (item.getItemDetails() != null) {
+      if (item.getItemDetails().getConfig() != null) {
+        return item.getItemDetails().getConfig().getType();
+      }
+    }
+    return filterFlag;
+  }
+
   private List<ItemResponse> filterItems(List<ItemDescriptor> items, ItemsUploadFilters itemsUploadFilters,
       OwnerInfo ownerInfo, ItemSource itemSource, boolean autoPriceCheck) {
     if (CollectionUtils.isEmpty(items)) {
@@ -230,10 +260,8 @@ public class ItemConverterService {
         .scrapAllowed(descriptor.isScrapAllowed())
         .isAutoScrappable(descriptor.isAutoScrappable())
         .build();
-    if (autoPriceCheck) {
-      BasePriceCheckResponse priceCheck = getPriceCheck(itemResponse, autoPriceCheck);
-      itemResponse.setPriceCheckResponse(priceCheck);
-    }
+    itemResponse.setPriceCheckResponse(getPriceCheck(itemResponse, autoPriceCheck));
+    itemResponse.setFilterFlag(clarifyFilterFlag(itemResponse, descriptor));
     return itemResponse;
   }
 
