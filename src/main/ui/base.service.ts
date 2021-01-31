@@ -7,15 +7,18 @@ export class BaseService {
     this.baseEndPoint = baseEndPoint;
   }
 
-  protected performRequest = ({url, method, data}: { url: string, method: string, data: any }): any => {
+  protected performRequest = ({url, method, data}: { url: string, method: string, data?: any }): any => {
     const params = {
       method,
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
+      }
     };
+    if (data) {
+      // @ts-ignore
+      params.body = JSON.stringify(data);
+    }
     const token = localStorageService.getToken();
     if (token !== null && token !== undefined && token.length > 0) {
       // @ts-ignore

@@ -5,13 +5,14 @@ import com.manson.domain.LegendaryMod;
 import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.fo76.items.item_card.ItemCardEntry;
-import com.manson.fo76.domain.dto.FilterFlag;
-import com.manson.fo76.domain.dto.ItemsUploadFilters;
 import com.manson.fo76.domain.dto.CharacterInventory;
+import com.manson.fo76.domain.dto.FilterFlag;
 import com.manson.fo76.domain.dto.ItemConfig;
 import com.manson.fo76.domain.dto.ItemDescriptor;
 import com.manson.fo76.domain.dto.ItemDetails;
 import com.manson.fo76.domain.dto.ItemResponse;
+import com.manson.fo76.domain.dto.ItemSource;
+import com.manson.fo76.domain.dto.ItemsUploadFilters;
 import com.manson.fo76.domain.dto.LegendaryModDescriptor;
 import com.manson.fo76.domain.dto.ModData;
 import com.manson.fo76.domain.dto.ModDataRequest;
@@ -28,6 +29,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
@@ -42,17 +44,17 @@ import org.springframework.stereotype.Service;
 @Service
 public class ItemConverterService {
 
-
+  public static final Set<FilterFlag> SUPPORTED_PRICE_CHECK_ITEMS = Sets
+      .newHashSet(FilterFlag.WEAPON, FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
+          FilterFlag.NOTES);
+  private static final String PRICE_CHECK_ONLY = "Price Check Only";
+  private static final String TRADABLE = "Tradable";
+  private static final String LEGENDARIES = "Legendaries";
   private static final String DEFAULT_LOCALE = "en";
-
   private static final Set<ItemCardText> IGNORED_CARDS = Sets.newHashSet(ItemCardText.LEG_MODS, ItemCardText.DESC);
   private static final Set<FilterFlag> TYPES_FOR_NAME_CONVERT = Sets
       .newHashSet(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
           FilterFlag.NOTES);
-  public static final Set<FilterFlag> SUPPORTED_PRICE_CHECK_ITEMS = Sets
-      .newHashSet(FilterFlag.WEAPON, FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
-          FilterFlag.NOTES);
-
   private final GameConfigService gameConfigService;
   private final Fed76Service fed76Service;
 
@@ -95,6 +97,42 @@ public class ItemConverterService {
       return true;
     }
     return itemResponse.getIsLegendary();
+  }
+
+  private static List<Predicate<ItemDescriptor>> buildPredicates(List<String> filters) {
+    List<Predicate<ItemDescriptor>> predicates = new ArrayList<>();
+    for (String filter : filters) {
+      if (StringUtils.isBlank(filter)) {
+        continue;
+      }
+      FilterFlag filterFlag = FilterFlag.fromString(filter);
+      if (filterFlag != null) {
+        predicates.add(x -> x.getFilterFlagEnum() == filterFlag);
+      } else {
+        switch (filter) {
+          case PRICE_CHECK_ONLY:
+            predicates = new ArrayList<>();
+            predicates.add(ItemConverterService::matchesPriceCheckOnly);
+            break;
+          case LEGENDARIES:
+            predicates.add(ItemDescriptor::isLegendary);
+            break;
+          case TRADABLE:
+            predicates.add(ItemDescriptor::isTradable);
+            break;
+          default:
+            System.out.println("Unknown filter: " + filter);
+        }
+      }
+    }
+    return predicates;
+  }
+
+  private static boolean matchesFilter(List<Predicate<ItemDescriptor>> predicates, ItemDescriptor itemDescriptor) {
+    if (CollectionUtils.isEmpty(predicates)) {
+      return true;
+    }
+    return predicates.stream().allMatch(x -> x.test(itemDescriptor));
   }
 
   private static boolean matchesFilter(ItemsUploadFilters filter, ItemDescriptor itemDescriptor) {
@@ -160,13 +198,21 @@ public class ItemConverterService {
     return TYPES_FOR_NAME_CONVERT.contains(item.getFilterFlagEnum());
   }
 
+  private static String getDefaultText(Map<String, String> map) {
+    if (MapUtils.isEmpty(map)) {
+      return StringUtils.EMPTY;
+    }
+    return map.get(DEFAULT_LOCALE);
+  }
+
   private List<ItemResponse> filterItems(List<ItemDescriptor> items, ItemsUploadFilters itemsUploadFilters,
       OwnerInfo ownerInfo, ItemSource itemSource, boolean autoPriceCheck) {
     if (CollectionUtils.isEmpty(items)) {
       return new ArrayList<>();
     }
+    List<Predicate<ItemDescriptor>> predicates = buildPredicates(itemsUploadFilters.getFilterFlags());
     return items.stream()
-        .filter(itemDescriptor -> matchesFilter(itemsUploadFilters, itemDescriptor))
+        .filter(itemDescriptor -> matchesFilter(predicates, itemDescriptor))
         .map(x -> fromItemDescriptor(x, ownerInfo, itemSource, autoPriceCheck))
         .collect(Collectors.toList());
   }
@@ -387,13 +433,6 @@ public class ItemConverterService {
       mods.sort(Comparator.comparingInt(LegendaryMod::getStar));
     }
     return mods;
-  }
-
-  private static String getDefaultText(Map<String, String> map) {
-    if (MapUtils.isEmpty(map)) {
-      return StringUtils.EMPTY;
-    }
-    return map.get(DEFAULT_LOCALE);
   }
 
   public List<ItemResponse> prepareModData(ModDataRequest request, boolean autoPriceCheck) {

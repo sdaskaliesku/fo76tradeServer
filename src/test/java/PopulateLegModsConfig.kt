@@ -6,7 +6,7 @@ import com.manson.domain.config.LegendaryModDescriptor
 import com.manson.domain.config.XTranslatorConfig
 import com.manson.domain.config.XTranslatorConfig.Companion.merge
 import com.manson.domain.fo76.items.enums.ArmorGrade
-import com.manson.fo76.service.XTranslatorParser
+import com.fo76.XTranslatorParser
 import java.io.File
 import java.io.IOException
 import java.nio.file.Files

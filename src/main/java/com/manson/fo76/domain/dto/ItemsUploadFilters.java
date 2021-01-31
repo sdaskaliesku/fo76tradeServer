@@ -17,9 +17,12 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class ItemsUploadFilters extends AbstractObject {
 
-  private List<Long> filterFlags;
+  private List<String> filterFlags;
+  @Builder.Default
   private boolean legendaryOnly = false;
+  @Builder.Default
   private boolean tradableOnly = false;
+  @Builder.Default
   private boolean priceCheckOnly = false;
 
 }

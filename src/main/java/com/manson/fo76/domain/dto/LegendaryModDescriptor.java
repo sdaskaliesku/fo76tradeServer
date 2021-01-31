@@ -3,18 +3,26 @@ package com.manson.fo76.domain.dto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.manson.domain.config.XTranslatorConfig;
-import com.manson.fo76.domain.dto.FilterFlag;
 import java.util.List;
 import java.util.Map;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
 
-@EqualsAndHashCode(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
 public class LegendaryModDescriptor extends XTranslatorConfig {
 
+  @Builder.Default
   private int star = 0;
   private String abbreviation;
   private List<String> additionalAbbreviations;

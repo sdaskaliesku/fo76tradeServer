@@ -12,8 +12,11 @@ import com.manson.fo76.service.Fed76Service;
 import com.manson.fo76.service.GameConfigHolderService;
 import com.manson.fo76.service.GameConfigService;
 import com.manson.fo76.service.ItemConverterService;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +31,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/game")
 public class GameApi {
 
+  private static final List<FilterFlagResponse> FILTER_FLAGS = Arrays
+      .stream(FilterFlag.values())
+      .map(FilterFlagResponse::new)
+      .collect(Collectors.toList());
   private final GameConfigHolderService holderService;
   private final GameConfigService gameConfigService;
   private final Fed76Service fed76Service;
@@ -94,6 +101,9 @@ public class GameApi {
       value = {"/priceCheck"}
   )
   public final BasePriceCheckResponse priceCheck(@RequestBody ItemResponse item) {
+    if (item == null) {
+      return new BasePriceCheckResponse();
+    }
     Boolean isTradable = item.getIsTradable();
     boolean isValidFlag = ItemConverterService.SUPPORTED_PRICE_CHECK_ITEMS.contains(item.getFilterFlag());
     boolean isLegendary = item.getIsLegendary() || item.getFilterFlag() == FilterFlag.NOTES;
@@ -112,6 +122,31 @@ public class GameApi {
       log.error("Request is invalid, ignoring: {} \r\n {}", request, item);
     }
     return new BasePriceCheckResponse();
+  }
+
+  @GetMapping(
+      produces = {"application/json"},
+      value = {"/filterFlags"}
+  )
+  public List<FilterFlagResponse> filterFlags() {
+    return FILTER_FLAGS;
+  }
+
+  @Data
+  public static class FilterFlagResponse {
+    private final List<Long> flags;
+    private final String value;
+    private final boolean hasStarMods;
+    private final List<FilterFlagResponse> subtypes;
+
+    private FilterFlagResponse(FilterFlag filterFlag) {
+      this.value = filterFlag.getValue();
+      this.flags = filterFlag.getFlags();
+      this.hasStarMods = filterFlag.isHasStarMods();
+      this.subtypes = filterFlag.getSubtypes().stream().map(FilterFlagResponse::new).collect(Collectors.toList());
+
+    }
+
   }
 
 }

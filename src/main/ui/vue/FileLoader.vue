@@ -6,7 +6,7 @@
             v-model="selected"
             :options="options"
             switches
-            size="lg"
+            size="sm"
         ></b-form-checkbox-group>
       </b-form-group>
     </div>
@@ -31,9 +31,10 @@
 
 <script>
 import {Utils} from '../utils';
-import {filters, MIN_FED_MOD_SUPPORTED_VERSION, MIN_MOD_SUPPORTED_VERSION} from '../domain';
+import {filters, MIN_MOD_SUPPORTED_VERSION} from '../domain';
 import {itemService} from '../item.service';
 import TableComponent from './TableComponent';
+import {filterService} from '../filter.service';
 
 const modalTexts = {
   invalidVersion: (version) => {
@@ -58,12 +59,8 @@ export default {
     };
   },
   beforeMount() {
-    filters.forEach((filter) => {
-      this.options.push({
-        text: this.capitalize(filter.name),
-        value: filter.filters ? filter.filters : filter.name,
-        checked: filter.checked,
-      });
+    filterService.getUploadFilters().then(filters => {
+      this.options = filters;
     });
   },
   watch: {
@@ -73,17 +70,17 @@ export default {
         this.tableData = [];
         Utils.readFile(val).then((data) => {
           const modFileVersion = data.version;
-          let minSupportedVersion = MIN_MOD_SUPPORTED_VERSION;
-          let prepareModDataFunc = itemService.prepareModData;
-          if (modFileVersion < minSupportedVersion) {
+          if (modFileVersion < MIN_MOD_SUPPORTED_VERSION) {
             this.showModal(modalTexts.invalidVersion(modFileVersion));
             this.loading = false;
             this.file = null;
             return Promise.reject();
           }
-          return prepareModDataFunc({
-            modData: data,
-            filters: this.getUploadDataFilters(),
+          return filterService.getUploadFileFilters(this.selected).then(filters => {
+            return itemService.prepareModData({
+              modData: data,
+              filters: filters,
+            })
           });
         }).then(
             (items) => {
@@ -118,8 +115,12 @@ export default {
         filterFlags: [],
         legendaryOnly: false,
         tradableOnly: false,
-        priceCheckOnly: false
+        priceCheckOnly: false,
       };
+      console.log(this.selected);
+      filterService.getUploadFileFilters(this.selected).then(filters => {
+
+      });
       this.selected.forEach((v) => {
         let valNumber = Number(v);
         if (v.includes(',') || !Number.isNaN(valNumber)) {

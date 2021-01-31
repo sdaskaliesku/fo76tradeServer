@@ -1,4 +1,4 @@
-package com.manson.fo76.service
+package com.fo76
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper

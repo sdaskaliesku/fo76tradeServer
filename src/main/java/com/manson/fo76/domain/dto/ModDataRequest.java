@@ -22,27 +22,4 @@ public class ModDataRequest extends AbstractObject {
   private ItemsUploadFilters filters;
   private Double version;
 
-  public ModData getModData() {
-    return modData;
-  }
-
-  public void setModData(ModData modData) {
-    this.modData = modData;
-  }
-
-  public ItemsUploadFilters getFilters() {
-    return filters;
-  }
-
-  public void setFilters(ItemsUploadFilters filters) {
-    this.filters = filters;
-  }
-
-  public Double getVersion() {
-    return version;
-  }
-
-  public void setVersion(Double version) {
-    this.version = version;
-  }
 }

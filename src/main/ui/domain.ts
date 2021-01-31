@@ -7,7 +7,6 @@ export const GH_LINK = 'https://github.com/sdaskaliesku/fo76tradeServer';
 export const COMPANION_LINK = 'https://www.nexusmods.com/fallout76/mods/744';
 export const APP_VERSION = '0.92';
 export const MIN_MOD_SUPPORTED_VERSION = 0.4;
-export const MIN_FED_MOD_SUPPORTED_VERSION = 0.1;
 
 export declare interface ModDataRequest {
   modData: ModData
@@ -75,6 +74,13 @@ export declare interface PriceCheckResponse {
   isEmpty(): boolean
 }
 
+export declare interface FilterFlag {
+  value: string
+  flags: Array<Number>
+  hasStarMods: boolean
+  subtypes: Array<FilterFlag>
+}
+
 export const filters: Array<Filter> = [
   {
     id: 'tradableOnly',
@@ -91,68 +97,7 @@ export const filters: Array<Filter> = [
     id: 'priceCheckOnly',
     name: 'Price Check Only',
     checked: true,
-  },
-  {
-    name: 'WEAPON',
-    filters: '2,3',
-    checked: true,
-    types: [
-      'WEAPON_MELEE',
-      'WEAPON_RANGED',
-      'WEAPON_THROWN',
-    ],
-  },
-  {
-    name: 'ARMOR',
-    filters: '4',
-    checked: true,
-    types: [
-      'ARMOR',
-      'ARMOR_OUTFIT',
-    ],
-  },
-  {
-    name: 'AID',
-    filters: '8,9',
-    checked: true,
-    types: ['AID'],
-  },
-  {
-    name: 'HOLO',
-    filters: '512',
-    checked: true,
-    types: ['HOLO'],
-  },
-  {
-    name: 'AMMO',
-    filters: '4096',
-    checked: true,
-    types: ['AMMO'],
-  },
-  {
-    name: 'NOTES',
-    filters: '128,8192',
-    checked: true,
-    types: ['NOTES'],
-  },
-  {
-    name: 'MISC',
-    filters: '33280',
-    checked: true,
-    types: ['MISC'],
-  },
-  {
-    name: 'MODS',
-    filters: '2048',
-    checked: true,
-    types: ['MODS'],
-  },
-  {
-    name: 'JUNK',
-    filters: '33792, 1024',
-    checked: true,
-    types: ['JUNK'],
-  },
+  }
 ];
 
 export const downloadOptions = [
@@ -167,7 +112,7 @@ export const downloadOptions = [
     title: 'RogueTrader CSV (extremely experimental)',
     type: 'rogue_csv',
     handler: function ({rawData, character}: { rawData: any, character: string }) {
-      Utils.downloadString(RogueService.toCSV(rawData, character), 'text/csv', 'rogue_trader.csv');
+      Utils.downloadString(RogueService.toCSV(rawData, character), 'text/csv', `rogue_trader_${character}.csv`);
     },
   },
   {

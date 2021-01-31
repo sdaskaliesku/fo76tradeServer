@@ -1,8 +1,9 @@
-package com.manson.fo76.service
+package com.fo76
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.manson.domain.nuka.NukaRequest
 import com.manson.domain.nuka.NukaResponse
+import com.manson.fo76.service.BaseRestClient
 import java.io.BufferedReader
 import java.io.InputStream
 import javax.ws.rs.client.Entity

@@ -38,11 +38,11 @@ public class GameConfigService {
     return same || subtype;
   }
 
-  private static String replace(String input, String replacement) {
+  private static String replace(String input) {
     if (StringUtils.isBlank(input)) {
       return input;
     }
-    return input.replace(replacement, StringUtils.EMPTY).trim();
+    return input.replace(DOT, StringUtils.EMPTY).trim();
   }
 
   public final ItemCardText findItemCardText(ItemCardEntry cardEntry) {
@@ -84,10 +84,10 @@ public class GameConfigService {
     if (!SUPPORTED_TYPES_ARMOR.contains(item.getFilterFlagEnum()) || !item.isLegendary() || !item.isTradable()) {
       return null;
     }
-    String itemName = replace(item.getText(), DOT);
+    String itemName = replace(item.getText());
     for (ItemConfig config : config.getArmorNames()) {
       for (String text : config.getTexts().values()) {
-        String fedItemText = replace(text, DOT);
+        String fedItemText = replace(text);
         if (StringUtils.containsIgnoreCase(itemName, fedItemText)) {
           return config;
         }
@@ -114,11 +114,11 @@ public class GameConfigService {
     if (!item.isLegendary() || !item.isTradable()) {
       return null;
     }
-    String itemName = replace(item.getText(), DOT);
+    String itemName = replace(item.getText());
     for (ItemConfig config : config.getWeaponNames()) {
       if (isSameFilterFlag(config.getType(), item.getFilterFlagEnum())) {
         for (String text : config.getTexts().values()) {
-          String fedItemText = replace(text, DOT);
+          String fedItemText = replace(text);
           if (StringUtils.containsIgnoreCase(itemName, fedItemText)) {
             return config;
           }

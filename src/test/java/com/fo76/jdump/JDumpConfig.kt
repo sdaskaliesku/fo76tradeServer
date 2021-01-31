@@ -41,7 +41,6 @@ class JDumpConfig {
             val config = Configuration()
             config.configure()
             sessionFactory = config.buildSessionFactory()
-//            sessionFactory = null
         }
     }
 
@@ -223,8 +222,7 @@ class JDumpConfig {
         val data: MutableList<ItemConfig> = ArrayList()
         sqlData.forEach {
             run {
-                val itemConfig: ItemConfig =
-                    ItemConfig()
+                val itemConfig = ItemConfig()
                 val name = objectMapper.readValue(it.name, typeReference)
                 itemConfig.gameId = it.formid
                 itemConfig.id = it.editorid
@@ -242,7 +240,7 @@ class JDumpConfig {
                 data.add(itemConfig)
             }
         }
-        val file: File = File("armor_weapon_names.json")
+        val file = File("armor_weapon_names.json")
         objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, data)
     }
 
@@ -255,8 +253,7 @@ class JDumpConfig {
         val data: MutableList<ItemConfig> = ArrayList()
         sqlData.forEach {
             run {
-                val itemConfig: ItemConfig =
-                    ItemConfig()
+                val itemConfig = ItemConfig()
                 val name = objectMapper.readValue(it.name, typeReference)
                 itemConfig.gameId = it.formid
                 itemConfig.id = it.editorid
@@ -266,7 +263,7 @@ class JDumpConfig {
                 data.add(itemConfig)
             }
         }
-        val file: File = File("armor.config.json")
+        val file = File("armor.config.json")
         objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, data)
     }
 
@@ -279,8 +276,7 @@ class JDumpConfig {
         val data: MutableList<ItemConfig> = ArrayList()
         sqlData.forEach {
             run {
-                val itemConfig: ItemConfig =
-                    ItemConfig()
+                val itemConfig = ItemConfig()
                 val name = objectMapper.readValue(it.name, typeReference)
                 itemConfig.gameId = it.formid
                 itemConfig.id = it.editorid
@@ -290,7 +286,7 @@ class JDumpConfig {
                 data.add(itemConfig)
             }
         }
-        val file: File = File("plans.config.json")
+        val file = File("plans.config.json")
         objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, data)
     }
 }

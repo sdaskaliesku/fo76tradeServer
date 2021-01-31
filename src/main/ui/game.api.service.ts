@@ -1,5 +1,5 @@
 import {BaseService} from "./base.service";
-import {PriceCheckResponse} from "./domain";
+import {FilterFlag, PriceCheckResponse} from "./domain";
 
 class GameApiService extends BaseService {
 
@@ -13,6 +13,14 @@ class GameApiService extends BaseService {
       url: finalUrl,
       method: 'POST',
       data: item,
+    });
+  }
+
+  filterFlags(): Promise<Array<FilterFlag>> {
+    const finalUrl = `${this.baseEndPoint}filterFlags`;
+    return this.performRequest({
+      url: finalUrl,
+      method: 'GET',
     });
   }
 }
