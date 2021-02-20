@@ -24,7 +24,7 @@ public class DebugTests {
   void updateLegModsConfigWithAbbreviations() throws Exception {
     ObjectMapper om = AppConfig.getObjectMapper();
     File file = new File("src/main/resources/legendaryMods.config.json");
-    Fed76Service fed76Service = new Fed76Service(om, null);
+    Fed76Service fed76Service = new Fed76Service(om);
     Map<String, Fed76ApiMappingEntry> mapping = fed76Service.getMapping().getEffects().getById();
     List<LegendaryModDescriptor> descriptors = om.readValue(file, LEG_MOD_TYPE_REF);
     for (LegendaryModDescriptor descriptor : descriptors) {

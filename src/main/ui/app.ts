@@ -2,6 +2,7 @@ import './css/main.scss';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Main from './vue/Main.vue';
+import PrimeVue from 'primevue/config';
 import {
   BBadge,
   BButton,
@@ -75,6 +76,8 @@ Vue.use(ModalPlugin);
 Vue.use(ToastPlugin);
 Vue.use(VueRouter);
 Vue.use(JsonViewer);
+
+Vue.use(PrimeVue, {ripple: true});
 
 const router = new VueRouter();
 

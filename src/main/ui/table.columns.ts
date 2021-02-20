@@ -1,4 +1,4 @@
-const createColumnDef = ({title, field, visible = true}: { title: string, field: string, visible?: boolean }) => {
+const createColumnDef = ({title, field, visible = true}: { title: string, field: string, visible?: boolean, sorter?:string }) => {
   return {
     title,
     field,
@@ -26,14 +26,14 @@ export const columns = [
   createColumnDef({title: 'Account', field: 'itemDetails.ownerInfo.accountName'}),
   createColumnDef({title: 'Character', field: 'itemDetails.ownerInfo.characterName'}),
   {
-    ...createColumnDef({title: 'Stars', field: 'numLegendaryStars'}),
+    ...createColumnDef({title: 'Stars', field: 'numLegendaryStars', sorter:'number'}),
     formatter: 'star',
   },
   createColumnDef({title: 'Abbr', field: 'itemDetails.abbreviation'}),
   createColumnDef({title: 'Type', field: 'filterFlag'}),
   createColumnDef({title: 'Armor Grade', field: 'itemDetails.armorConfig.armorGrade', visible: false}),
-  createColumnDef({title: 'Level', field: 'itemLevel'}),
-  createColumnDef({title: 'Count', field: 'count'}),
+  createColumnDef({title: 'Level', field: 'itemLevel', sorter:'number'}),
+  createColumnDef({title: 'Count', field: 'count', sorter:'number'}),
   createColumnDef({title: '1 star', field: 'itemDetails.legendaryMods.0.value'}),
   createColumnDef({title: '2 star', field: 'itemDetails.legendaryMods.1.value'}),
   createColumnDef({title: '3 star', field: 'itemDetails.legendaryMods.2.value'}),
@@ -41,7 +41,7 @@ export const columns = [
   createColumnDef({title: 'Major', field: 'itemDetails.legendaryMods.1.text', visible: false}),
   createColumnDef({title: 'Minor', field: 'itemDetails.legendaryMods.2.text', visible: false}),
   // createColumnDef({title: 'Vendor Price', field: 'tradeOptions.vendorPrice', visible: false}),
-  createColumnDef({title: 'Fed76 Price', field: 'priceCheckResponse.price'}),
+  createColumnDef({title: 'Fed76 Price', field: 'priceCheckResponse.price', sorter:'number'}),
   // createColumnDef({
   //   title: 'Fed76 Description',
   //   field: 'priceCheckResponse.description'
@@ -60,6 +60,6 @@ export const columns = [
     formatter: 'tickCross'
   },
   createColumnDef({title: 'Source', field: 'itemDetails.itemSource'}),
-  createColumnDef({title: 'Weight', field: 'weight', visible: false}),
-  createColumnDef({title: 'Total weight', field: 'itemDetails.totalWeight', visible: false})
+  createColumnDef({title: 'Weight', field: 'weight', visible: false, sorter:'number'}),
+  createColumnDef({title: 'Total weight', field: 'itemDetails.totalWeight', visible: false, sorter:'number'})
 ];

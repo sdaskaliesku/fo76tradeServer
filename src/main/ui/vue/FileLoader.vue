@@ -1,21 +1,21 @@
 <template>
   <div>
-    <div v-if="!tableData">
-      <b-form-group label="Filters for uploading" label-size="lg">
-        <b-form-checkbox-group
-            v-model="selected"
-            :options="options"
-            switches
-            size="sm"
-        ></b-form-checkbox-group>
-      </b-form-group>
-    </div>
-    <b-form-file v-if="!tableData"
-                 v-model="file"
-                 :state="Boolean(file)"
-                 placeholder="Choose a file or drop it here..."
-                 drop-placeholder="Drop file here..."
-    ></b-form-file>
+<!--    <div v-if="!tableData">-->
+<!--      <b-form-group label="Filters for uploading" label-size="lg">-->
+<!--        <b-form-checkbox-group-->
+<!--            v-model="selected"-->
+<!--            :options="options"-->
+<!--            switches-->
+<!--            size="sm"-->
+<!--        ></b-form-checkbox-group>-->
+<!--      </b-form-group>-->
+<!--    </div>-->
+<!--    <b-form-file v-if="!tableData"-->
+<!--                 v-model="file"-->
+<!--                 :state="Boolean(file)"-->
+<!--                 placeholder="Choose a file or drop it here..."-->
+<!--                 drop-placeholder="Drop file here..."-->
+<!--    ></b-form-file>-->
     <div>
       <div class="d-flex justify-content-center mb-3 mt-5" v-if="loading">
         <b-spinner label="Loading..."></b-spinner>
@@ -24,8 +24,9 @@
     <b-modal title="Error" ok-variant="danger" centered ok-only id="errorModal">
       {{ modalText }}
     </b-modal>
-    <table-component @priceCheckEvent='updateTableData' class="mt-2"
-                     v-if="tableData && tableData.length > 0" :table-data="tableData"/>
+<!--    <table-component @priceCheckEvent='updateTableData' class="mt-2"-->
+<!--                     v-if="tableData && tableData.length > 0" :table-data="tableData"/>-->
+    <table-v2 class="mt-2"/>
   </div>
 </template>
 
@@ -34,6 +35,7 @@ import {Utils} from '../utils';
 import {MIN_MOD_SUPPORTED_VERSION} from '../domain';
 import {itemService} from '../item.service';
 import TableComponent from './TableComponent';
+import TableV2 from './tableV2/TableV2';
 import {filterService} from '../filter.service';
 
 const modalTexts = {
@@ -47,7 +49,7 @@ const modalTexts = {
 
 export default {
   name: 'FileLoader',
-  components: {TableComponent},
+  components: {TableComponent, TableV2},
   data() {
     return {
       file: null,

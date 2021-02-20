@@ -1,21 +1,22 @@
 package com.manson.fo76.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.manson.domain.LegendaryMod;
 import com.manson.domain.config.ArmorConfig;
+import com.manson.domain.fed76.BasePriceCheckResponse;
+import com.manson.domain.fed76.ItemPriceCheckResponse;
+import com.manson.domain.fed76.PlanPriceCheckResponse;
+import com.manson.domain.fed76.PriceCheckRequest;
 import com.manson.domain.fed76.mapping.MappingResponse;
+import com.manson.domain.fed76.pricing.PriceEnhanceRequest;
+import com.manson.domain.fed76.pricing.VendorData;
 import com.manson.domain.fo76.items.enums.ArmorGrade;
-import com.manson.fo76.domain.dto.FilterFlag;
-import com.manson.fo76.domain.dto.ItemConfig;
-import com.manson.fo76.domain.dto.ItemDetails;
-import com.manson.fo76.domain.dto.ItemResponse;
-import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
-import com.manson.fo76.domain.fed76.ItemPriceCheckResponse;
-import com.manson.fo76.domain.fed76.PlanPriceCheckResponse;
+import com.manson.domain.fo76.items.enums.FilterFlag;
+import com.manson.domain.itemextractor.ItemConfig;
+import com.manson.domain.itemextractor.ItemDetails;
+import com.manson.domain.itemextractor.ItemResponse;
+import com.manson.domain.itemextractor.LegendaryMod;
 import com.manson.fo76.domain.fed76.PriceCheckCacheItem;
-import com.manson.fo76.domain.fed76.PriceCheckRequest;
 import com.manson.fo76.repository.BasePriceCheckRepository;
-import com.manson.fo76.repository.PriceCheckRepository;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.EnumMap;
@@ -23,26 +24,35 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
+import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
 public class Fed76Service extends BaseRestClient {
 
+  private static final Map<ArmorGrade, String> GRADE_TO_GAME_ID_MAP = new EnumMap<>(ArmorGrade.class);
   public static boolean USE_ID = false;
 
-  private final BasePriceCheckRepository priceCheckRepository;
+  static {
+    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Light, "00182E78");
+    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Sturdy, "00182E79");
+    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Heavy, "00182E7A");
+    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Unknown, "");
+  }
 
-  @Autowired
-  public Fed76Service(ObjectMapper objectMapper, PriceCheckRepository priceCheckRepository) {
+  private BasePriceCheckRepository priceCheckRepository;
+
+  public Fed76Service(@Autowired ObjectMapper objectMapper) {
     super(objectMapper);
-    this.priceCheckRepository = priceCheckRepository;
   }
 
   private static boolean isResponseExpired(BasePriceCheckResponse response) {
@@ -53,6 +63,12 @@ public class Fed76Service extends BaseRestClient {
       log.error("Error parsing date {}", response);
     }
     return true;
+  }
+
+  @Autowired
+  @Qualifier("priceCheckRepository")
+  public void setPriceCheckRepository(BasePriceCheckRepository priceCheckRepository) {
+    this.priceCheckRepository = priceCheckRepository;
   }
 
   private BasePriceCheckResponse performRequest(PriceCheckRequest request) {
@@ -81,7 +97,6 @@ public class Fed76Service extends BaseRestClient {
     WebTarget webResource = this.client.target(Endpoints.MAPPING);
     return webResource.request().accept(MediaType.APPLICATION_JSON_TYPE).get(MappingResponse.class);
   }
-
 
   public final BasePriceCheckResponse priceCheck(PriceCheckRequest request) {
     BasePriceCheckResponse response;
@@ -120,6 +135,53 @@ public class Fed76Service extends BaseRestClient {
     cachedResponse.setRequestId(request.toId());
     cachedResponse.setResponse(response);
     priceCheckRepository.save(cachedResponse);
+  }
+
+  public PriceEnhanceRequest createPriceEnhanceRequest(ItemResponse itemResponse) {
+    if (itemResponse == null || itemResponse.getItemDetails() == null || itemResponse.getVendingData() == null
+        || itemResponse.getVendingData().getPrice() == null || itemResponse.getVendingData().getPrice() <= 0) {
+      return null;
+    }
+    ItemDetails itemDetails = itemResponse.getItemDetails();
+    PriceEnhanceRequest request = new PriceEnhanceRequest();
+    request.setVendingData(
+        VendorData
+            .builder()
+            .price(itemResponse.getVendingData().getPrice())
+            .build()
+    );
+    ArmorConfig config = itemDetails.getArmorConfig();
+    if (Objects.nonNull(config) && config.getArmorGrade() != ArmorGrade.Unknown) {
+      request.setArmorConfig(com.manson.domain.fed76.pricing.ArmorConfig.builder()
+          .armorGrade(config.getArmorGrade().getValue())
+          .armorId(config.getArmorId())
+          .build());
+    } else {
+      request.setArmorConfig(null);
+    }
+    if (CollectionUtils.isNotEmpty(itemDetails.getLegendaryMods())) {
+      List<com.manson.domain.fed76.pricing.LegendaryMod> mods = itemDetails.getLegendaryMods()
+          .stream().map(x -> {
+            com.manson.domain.fed76.pricing.LegendaryMod legendaryMod = new com.manson.domain.fed76.pricing.LegendaryMod();
+            legendaryMod.setAbbreviation(x.getAbbreviation());
+            legendaryMod.setGameId(x.getGameId());
+            legendaryMod.setText(x.getText());
+            return legendaryMod;
+          }).collect(Collectors.toList());
+      request.setLegendaryMods(mods);
+    }
+    if (request.isValid()) {
+      return request;
+    }
+    return null;
+  }
+
+  public Response enhancePriceCheck(PriceEnhanceRequest request) {
+    return client
+        .target(Endpoints.ENHANCE_PRICE_API)
+        .request()
+        .accept(MediaType.APPLICATION_JSON_TYPE)
+        .post(Entity.json(request));
   }
 
   public PriceCheckRequest createPriceCheckRequest(ItemResponse itemResponse) {
@@ -177,20 +239,12 @@ public class Fed76Service extends BaseRestClient {
         .queryParam("id", item);
   }
 
-  private static final Map<ArmorGrade, String> GRADE_TO_GAME_ID_MAP = new EnumMap<>(ArmorGrade.class);
-
-  static {
-    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Light, "00182E78");
-    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Sturdy, "00182E79");
-    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Heavy, "00182E7A");
-    GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Unknown, "");
-  }
-
   private static class Endpoints {
 
     private static final String BASE = "https://fed76.info/";
     public static final String MAPPING = BASE + "pricing/mapping";
     public static final String PLAN_PRICE_API = BASE + "plan-api/";
     public static final String ARMOR_WEAPON_PRICE_API = BASE + "pricing-api/";
+    public static final String ENHANCE_PRICE_API = BASE + BASE + "pricing/parse";
   }
 }

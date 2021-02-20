@@ -1,31 +1,34 @@
 package com.manson.fo76.service;
 
+import static com.manson.fo76.config.AppConfig.ENABLE_PRICE_ENHANCE;
 import static com.manson.fo76.helper.Utils.silentParse;
 
 import com.google.common.collect.Sets;
-import com.manson.domain.LegendaryMod;
 import com.manson.domain.config.ArmorConfig;
+import com.manson.domain.config.LegendaryModDescriptor;
+import com.manson.domain.fed76.BasePriceCheckResponse;
+import com.manson.domain.fed76.PriceCheckRequest;
+import com.manson.domain.fed76.pricing.PriceEnhanceRequest;
+import com.manson.domain.fo76.ItemCardEntry;
+import com.manson.domain.fo76.ItemDescriptor;
 import com.manson.domain.fo76.items.enums.DamageType;
+import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
-import com.manson.domain.fo76.items.item_card.ItemCardEntry;
-import com.manson.fo76.domain.dto.CharacterInventory;
-import com.manson.fo76.domain.dto.FilterFlag;
-import com.manson.fo76.domain.dto.ItemConfig;
-import com.manson.fo76.domain.dto.ItemDescriptor;
-import com.manson.fo76.domain.dto.ItemDetails;
-import com.manson.fo76.domain.dto.ItemResponse;
-import com.manson.fo76.domain.dto.ItemSource;
-import com.manson.fo76.domain.dto.ItemsUploadFilters;
-import com.manson.fo76.domain.dto.LegendaryModDescriptor;
-import com.manson.fo76.domain.dto.ModData;
-import com.manson.fo76.domain.dto.ModDataRequest;
-import com.manson.fo76.domain.dto.OwnerInfo;
-import com.manson.fo76.domain.dto.Stats;
-import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
-import com.manson.fo76.domain.fed76.PriceCheckRequest;
+import com.manson.domain.itemextractor.CharacterInventory;
+import com.manson.domain.itemextractor.ItemConfig;
+import com.manson.domain.itemextractor.ItemDetails;
+import com.manson.domain.itemextractor.ItemResponse;
+import com.manson.domain.itemextractor.ItemSource;
+import com.manson.domain.itemextractor.ItemsUploadFilters;
+import com.manson.domain.itemextractor.LegendaryMod;
+import com.manson.domain.itemextractor.ModData;
+import com.manson.domain.itemextractor.ModDataRequest;
+import com.manson.domain.itemextractor.OwnerInfo;
+import com.manson.domain.itemextractor.Stats;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -34,6 +37,7 @@ import java.util.UUID;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import javax.ws.rs.core.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.MapUtils;
@@ -80,7 +84,7 @@ public class ItemConverterService {
     return itemDescriptor.isLegendary();
   }
 
-  private static boolean matchesPriceCheckOnly(ItemResponse itemResponse) {
+  private static boolean hasCorePriceCheckConfigs(ItemResponse itemResponse) {
     boolean isTradable = itemResponse.getIsTradable();
     FilterFlag filterFlag = itemResponse.getFilterFlag();
     boolean validType = SUPPORTED_PRICE_CHECK_ITEMS.contains(filterFlag);
@@ -93,10 +97,18 @@ public class ItemConverterService {
       return false;
     }
     boolean missingItemId = StringUtils.isBlank(itemResponse.getItemDetails().getConfig().getGameId());
-    if (missingItemId) {
+    return !missingItemId;
+  }
+
+  private static boolean isValidForPriceCheckEnhance(ItemResponse response) {
+    return hasCorePriceCheckConfigs(response) && response.getIsLegendary();
+  }
+
+  private static boolean matchesPriceCheckOnly(ItemResponse itemResponse) {
+    if (!hasCorePriceCheckConfigs(itemResponse)) {
       return false;
     }
-    if (filterFlag == FilterFlag.NOTES) {
+    if (itemResponse.getFilterFlag() == FilterFlag.NOTES) {
       return true;
     }
     return itemResponse.getIsLegendary();
@@ -177,6 +189,34 @@ public class ItemConverterService {
     return map.get(DEFAULT_LOCALE);
   }
 
+  private static String getItemResponseKey(ItemResponse item) {
+    StringBuilder key = new StringBuilder();
+    String delimiter = "-";
+    key.append(item.getText()).append(delimiter);
+    key.append(item.getIsLegendary()).append(delimiter);
+    key.append(item.getItemLevel()).append(delimiter);
+    if (item.getIsLegendary()) {
+      if (item.getItemDetails() != null) {
+        key.append(item.getItemDetails().getAbbreviationId()).append(delimiter);
+      }
+    }
+    return key.toString();
+  }
+
+  private static List<ItemResponse> dedupeItems(List<ItemResponse> items) {
+    Map<String, ItemResponse> dedupedItems = new HashMap<>();
+    for (ItemResponse itemResponse : items) {
+      String key = getItemResponseKey(itemResponse);
+      if (dedupedItems.containsKey(key)) {
+        ItemResponse item = dedupedItems.get(key);
+        item.setCount(item.getCount() + 1);
+      } else {
+        dedupedItems.put(key, itemResponse);
+      }
+    }
+    return new ArrayList<>(dedupedItems.values());
+  }
+
   private FilterFlag clarifyFilterFlag(ItemResponse item, ItemDescriptor descriptor) {
     FilterFlag filterFlag = item.getFilterFlag();
     if (filterFlag == FilterFlag.WEAPON) {
@@ -220,7 +260,6 @@ public class ItemConverterService {
     if (modData == null || MapUtils.isEmpty(modData.getCharacterInventories())) {
       return new ArrayList<>();
     }
-    // TODO: check if there is 'priceCheck' in character inventories and send data to fed76
     Collection<CharacterInventory> inventories = modData.getCharacterInventories().values();
     List<ItemResponse> allItems = new ArrayList<>();
 
@@ -231,7 +270,7 @@ public class ItemConverterService {
       allItems
           .addAll(filterItems(inventory.getStashInventory(), filters, ownerInfo, ItemSource.CONTAINER, autoPriceCheck));
     }
-    return allItems;
+    return dedupeItems(allItems);
   }
 
   private ItemResponse fromItemDescriptor(ItemDescriptor descriptor, OwnerInfo ownerInfo, ItemSource itemSource,
@@ -262,6 +301,15 @@ public class ItemConverterService {
         .build();
     itemResponse.setPriceCheckResponse(getPriceCheck(itemResponse, autoPriceCheck));
     itemResponse.setFilterFlag(clarifyFilterFlag(itemResponse, descriptor));
+    if (ENABLE_PRICE_ENHANCE && isValidForPriceCheckEnhance(itemResponse)) {
+      PriceEnhanceRequest request = fed76Service.createPriceEnhanceRequest(itemResponse);
+      if (request != null) {
+        Response response = fed76Service.enhancePriceCheck(request);
+        log.info("Price enhance response: {} for item {}", response, itemResponse);
+      } else {
+        log.error("Item matches price enhance, but has missing data: {}", itemResponse);
+      }
+    }
     return itemResponse;
   }
 
@@ -310,10 +358,15 @@ public class ItemConverterService {
     String abbreviationId = buildLegendaryAbbreviation(legendaryMods, LegendaryMod::getGameId);
     double packWeight = Objects.isNull(descriptor.getWeight()) ? 0 : descriptor.getWeight();
 
+//    FilterFlag filterFlag = descriptor.getFilterFlagEnum();
     ItemConfig config = findItemConfig(descriptor);
     String name = StringUtils.EMPTY;
     if (Objects.nonNull(config)) {
       name = getDefaultText(config.getTexts());
+//      if (config.getType() == FilterFlag.NOTES) {
+//        filterFlag = FilterFlag.PLANS;
+//        config.setType(filterFlag);
+//      }
     }
     List<Stats> stats = buildStats(pairs);
     ArmorConfig armorConfig = gameConfigService.findArmorType(stats, abbreviation);
@@ -328,6 +381,7 @@ public class ItemConverterService {
         .legendaryMods(legendaryMods)
         .itemSource(itemSource)
         .filterFlag(descriptor.getFilterFlagEnum())
+//        .filterFlag(filteFlag)
         .stats(stats)
         .ownerInfo(ownerInfo)
         .totalWeight(packWeight * descriptor.getCount())
@@ -404,7 +458,8 @@ public class ItemConverterService {
         if (StringUtils.isBlank(newMod)) {
           continue;
         }
-        LegendaryMod legendaryMod = new LegendaryMod(newMod);
+        LegendaryMod legendaryMod = new LegendaryMod();
+        legendaryMod.setText(newMod);
         LegendaryModDescriptor descriptor = gameConfigService.findLegendaryModDescriptor(newMod, filterFlag);
         if (Objects.isNull(descriptor)) {
           descriptor = new LegendaryModDescriptor();

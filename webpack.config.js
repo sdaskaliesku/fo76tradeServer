@@ -28,12 +28,20 @@ module.exports = {
         },
       },
       {
+        test: /\.(png)(\?|$)/,
+        loader: 'url-loader?limit=100000'
+      },
+      {
         test: /\.(svg|ttf|woff|woff2|eot)$/,
-        loader: 'file-loader',
+        loader: 'url-loader',
         options: {
           name: '[name].[ext]?[hash]',
         },
       },
+      // {
+      //   test: /\.(png|jpg)$/,
+      //   loader: 'url-loader'
+      // },
       {
         test: /\.(sass|scss|css)$/i,
         use: [

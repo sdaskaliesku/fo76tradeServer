@@ -6,6 +6,7 @@ export declare interface FilterFlag {
   flags: Array<Number>
   hasStarMods: boolean
   subtypes: Array<FilterFlag>
+  parent: boolean
 }
 
 declare interface UploadFilter {
@@ -87,7 +88,7 @@ class FilterService {
   private buildUploadFilters(filterFlags: Array<FilterFlag>): Array<UploadFilter> {
     let filters: Array<UploadFilter> = [];
     filters.push(...this.defaultUploadFilters);
-    filterFlags.forEach(filter => {
+    filterFlags.filter(filterFlag => filterFlag.parent).forEach(filter => {
       filters.push({
         id: filter.value,
         text: filter.value,

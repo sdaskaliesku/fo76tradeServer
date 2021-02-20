@@ -5871,51 +5871,6 @@
     "itemType": "WEAPON_MELEE"
   },
   {
-    "id": "mod_Legendary_Armor3_LessDamageBlocking",
-    "gameId": "00527F76",
-    "texts": {
-      "de": "Des Kavalleristen",
-      "en": "Cavalier's",
-      "es": "Caballero",
-      "esmx": "Caballero",
-      "fr": "Cavalier",
-      "it": "Cavaliere",
-      "ja": "騎士の",
-      "ko": "기병대의",
-      "pl": "Rycersk.",
-      "ptbr": "Cavaleiro",
-      "ru": "Кавалерский",
-      "zhhans": "骑兵",
-      "zhhant": "騎兵"
-    },
-    "enabled": true,
-    "star": 3,
-    "abbreviation": "bl",
-    "additionalAbbreviations": [
-      "bl",
-      "block",
-      "blocker",
-      "00527f76",
-      "blocking"
-    ],
-    "translations": {
-      "de": "Reduziert den Schaden beim Blocken um 15%.",
-      "en": "Reduces damage while blocking by 15%",
-      "es": "Reduce en un 15% el daño al bloquear.",
-      "esmx": "Reduce en un 15% el daño al bloquear.",
-      "fr": "Réduit les dégâts de 15 % quand bloquez une attaque.",
-      "it": "Riduce del 15% i danni quando blocchi.",
-      "ja": "ブロック中に受けるダメージが15%減少する",
-      "ko": "질주 도중 받는 피해가 15% 감소합니다.",
-      "pl": "Zmniejsza obrażenia o 15% przy blokowaniu.",
-      "ptbr": "Reduz dano ao bloquear em 15%",
-      "ru": "Уменьшение урона при блоке на 15%.",
-      "zhhans": "格挡时受到的伤害降低15%",
-      "zhhant": "格擋時傷害-15%"
-    },
-    "itemType": "ARMOR"
-  },
-  {
     "id": "mod_Legendary_Armor4_OnMeleeHitFreeze",
     "gameId": "00527F7D",
     "texts": {

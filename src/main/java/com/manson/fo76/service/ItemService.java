@@ -1,7 +1,8 @@
 package com.manson.fo76.service;
 
-import com.manson.fo76.domain.dto.ItemResponse;
-import com.manson.fo76.domain.dto.ModDataRequest;
+
+import com.manson.domain.itemextractor.ItemResponse;
+import com.manson.domain.itemextractor.ModDataRequest;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

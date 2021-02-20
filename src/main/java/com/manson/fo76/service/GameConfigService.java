@@ -2,14 +2,15 @@ package com.manson.fo76.service;
 
 import com.google.common.collect.Sets;
 import com.manson.domain.config.ArmorConfig;
+import com.manson.domain.config.LegendaryModDescriptor;
+import com.manson.domain.fo76.ItemCardEntry;
+import com.manson.domain.fo76.ItemDescriptor;
 import com.manson.domain.fo76.items.enums.DamageType;
+import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
-import com.manson.domain.fo76.items.item_card.ItemCardEntry;
-import com.manson.fo76.domain.dto.FilterFlag;
-import com.manson.fo76.domain.dto.ItemConfig;
-import com.manson.fo76.domain.dto.ItemDescriptor;
-import com.manson.fo76.domain.dto.LegendaryModDescriptor;
-import com.manson.fo76.domain.dto.Stats;
+
+import com.manson.domain.itemextractor.ItemConfig;
+import com.manson.domain.itemextractor.Stats;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -74,7 +75,7 @@ public class GameConfigService {
     }
     return config.getLegModsConfig()
         .stream()
-        .filter(x -> x.getEnabled() && isSameFilterFlag(x.getItemType(), filterFlag))
+        .filter(x -> x.isEnabled() && isSameFilterFlag(x.getItemType(), filterFlag))
         .filter(x -> x.isTheSameMod(input, filterFlag))
         .findFirst()
         .orElse(null);

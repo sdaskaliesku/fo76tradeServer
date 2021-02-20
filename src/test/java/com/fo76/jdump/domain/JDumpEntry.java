@@ -1,7 +1,7 @@
 package com.fo76.jdump.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.manson.AbstractObject;
+import com.manson.domain.AbstractObject;
 import java.util.List;
 
 public class JDumpEntry extends AbstractObject {
@@ -27,8 +27,8 @@ public class JDumpEntry extends AbstractObject {
   @JsonProperty("INDX")
   private String indx;
 
-  @JsonProperty("DATA")
-  private Data data;
+//  @JsonProperty("DATA")
+//  private Data data;
 
   @JsonProperty("MNAM")
   private List<FormId> mnam;

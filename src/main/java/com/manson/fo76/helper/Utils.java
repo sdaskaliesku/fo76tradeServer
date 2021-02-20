@@ -1,7 +1,7 @@
 package com.manson.fo76.helper;
 
+import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.fo76.config.AppConfig;
-import com.manson.fo76.domain.dto.ItemResponse;
 import java.io.StringWriter;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;

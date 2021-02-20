@@ -4,7 +4,6 @@ import com.manson.domain.config.ArmorConfig
 import com.manson.domain.config.Fo76String
 import com.manson.domain.config.LegendaryModDescriptor
 import com.manson.domain.config.XTranslatorConfig
-import com.manson.domain.config.XTranslatorConfig.Companion.merge
 import com.manson.domain.fo76.items.enums.ArmorGrade
 import com.fo76.XTranslatorParser
 import java.io.File
@@ -31,7 +30,7 @@ class PopulateLegModsConfig {
                 .collect(Collectors.toList())
         for (config in configs) {
             for (initial in xTranslatorConfigs) {
-                merge(initial, config!!)
+                XTranslatorConfig.merge(initial, config!!)
             }
         }
         OM.writeValue(output, xTranslatorConfigs)
@@ -76,7 +75,7 @@ class PopulateLegModsConfig {
                 config.sid?.let { ignoredIds.add(it) }
             }
         }
-        // TODO: put "deep pocketed" BEFORE "pocketed" !!!
+        // put "deep pocketed" BEFORE "pocketed" !!!
         filtered.sortByDescending { it.texts.values.first().length }
         OM.writeValue(output, filtered)
         OM.writeValue(File("ignored.name.modifiers.ids.json"), ignoredIds)
@@ -148,7 +147,7 @@ class PopulateLegModsConfig {
         fun genericListToFo76List(fo76Strings: List<Fo76String>): Map<String, Fo76String> {
             var map: Map<String, Fo76String> = HashMap()
             try {
-                map = fo76Strings.stream().collect(Collectors.toMap(Fo76String::edid, { fo76String: Fo76String -> fo76String }) { _: Fo76String, b: Fo76String -> b })
+                map = fo76Strings.stream().collect(Collectors.toMap(Fo76String::getEdid, { fo76String: Fo76String -> fo76String }) { _: Fo76String, b: Fo76String -> b })
             } catch (e: Exception) {
                 e.printStackTrace()
             }

@@ -14,6 +14,8 @@
   "homepage": "https://github.com/sdaskaliesku/fo76tradeServer/",
   "dependencies": {
     "bootstrap-vue": "^2.16.0",
+    "primeicons": "^4.1.0",
+    "primevue": "^2.3.0",
     "tabulator-tables": "^4.8.0",
     "vue-json-viewer": "^2.2.17"
   },
@@ -32,6 +34,7 @@
     "style-loader": "^1.2.1",
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
+    "url-loader": "^4.1.1",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.3",
     "vue-router": "^3.4.3",

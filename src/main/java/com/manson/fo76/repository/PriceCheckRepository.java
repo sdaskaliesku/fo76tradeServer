@@ -1,10 +1,13 @@
 package com.manson.fo76.repository;
 
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
-//@Profile("cache")
+@Primary
 @Repository
-public interface PriceCheckRepository extends BasePriceCheckRepository {
+public abstract class PriceCheckRepository implements BasePriceCheckRepository {
 
+  public PriceCheckRepository() {
+    System.out.println("PriceCheckRepository!==============================================================");
+  }
 }

@@ -5,9 +5,13 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.JsonGenerator.Feature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.manson.fo76.repository.BasePriceCheckRepository;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
+import java.util.Objects;
 import javax.servlet.MultipartConfigElement;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
@@ -18,6 +22,7 @@ import org.springframework.util.unit.DataSize;
 public class AppConfig {
 
   public static final boolean ENABLE_AUTO_PRICE_CHECK = false;
+  public static final boolean ENABLE_PRICE_ENHANCE = false;
   private static final ObjectMapper objectMapper = new ObjectMapper();
   private static final String MONGO_URL_FORMAT = "mongodb+srv://%s:%s@%s/%s?retryWrites=true&w=majority";
 
@@ -36,6 +41,32 @@ public class AppConfig {
   private String mongoDb;
   @Value("#{systemProperties['mongo.url']}")
   private String mongoUrl;
+
+  @Value("#{systemProperties['useCache']}")
+  private Boolean useCache;
+
+
+  private BasePriceCheckRepository dummyRepository;
+  private BasePriceCheckRepository priceCheckRepository;
+
+  @Autowired(required = false)
+  public void setDummyRepository(BasePriceCheckRepository dummyRepository) {
+    this.dummyRepository = dummyRepository;
+  }
+
+  @Autowired(required = false)
+  public void setPriceCheckRepository(BasePriceCheckRepository priceCheckRepository) {
+    this.priceCheckRepository = priceCheckRepository;
+  }
+
+  @Qualifier("priceCheckRepository")
+  @Bean
+  public BasePriceCheckRepository getPriceCheckRepository() {
+    if (Objects.isNull(useCache) || useCache) {
+      return priceCheckRepository;
+    }
+    return dummyRepository;
+  }
 
   public String createMongoUrl() {
     return String.format(MONGO_URL_FORMAT, mongoUser, mongoPassword, mongoUrl, mongoDb);

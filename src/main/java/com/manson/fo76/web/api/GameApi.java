@@ -1,13 +1,13 @@
 package com.manson.fo76.web.api;
 
 import com.manson.domain.config.ArmorConfig;
+import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.config.XTranslatorConfig;
+import com.manson.domain.fed76.BasePriceCheckResponse;
+import com.manson.domain.fed76.PriceCheckRequest;
+import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
-import com.manson.fo76.domain.dto.FilterFlag;
-import com.manson.fo76.domain.dto.ItemResponse;
-import com.manson.fo76.domain.dto.LegendaryModDescriptor;
-import com.manson.fo76.domain.fed76.BasePriceCheckResponse;
-import com.manson.fo76.domain.fed76.PriceCheckRequest;
+import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.fo76.service.Fed76Service;
 import com.manson.fo76.service.GameConfigHolderService;
 import com.manson.fo76.service.GameConfigService;
@@ -16,7 +16,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -130,24 +129,6 @@ public class GameApi {
   )
   public List<FilterFlagResponse> filterFlags() {
     return FILTER_FLAGS;
-  }
-
-  @Data
-  public static class FilterFlagResponse {
-    private final String name;
-    private final List<Long> flags;
-    private final String value;
-    private final boolean hasStarMods;
-    private final List<FilterFlagResponse> subtypes;
-
-    private FilterFlagResponse(FilterFlag filterFlag) {
-      this.value = filterFlag.getValue();
-      this.flags = filterFlag.getFlags();
-      this.hasStarMods = filterFlag.isHasStarMods();
-      this.subtypes = filterFlag.getSubtypes().stream().map(FilterFlagResponse::new).collect(Collectors.toList());
-      this.name = filterFlag.name();
-    }
-
   }
 
 }

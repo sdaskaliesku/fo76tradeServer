@@ -4,9 +4,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.Resources;
 import com.manson.domain.config.ArmorConfig;
+import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.config.XTranslatorConfig;
-import com.manson.fo76.domain.dto.ItemConfig;
-import com.manson.fo76.domain.dto.LegendaryModDescriptor;
+import com.manson.domain.itemextractor.ItemConfig;
 import java.net.URL;
 import java.util.Collections;
 import java.util.List;
@@ -44,13 +44,17 @@ public class GameConfigHolderService {
   @Autowired
   public GameConfigHolderService(ObjectMapper objectMapper) {
     this.legModsConfig = loadConfig(objectMapper, LEG_MODS_CONFIG_FILE, LEG_MOD_TYPE_REF,
-        XTranslatorConfig::getEnabled);
+        XTranslatorConfig::isEnabled);
     this.ammoTypes = loadConfig(objectMapper, AMMO_TYPES_CONFIG_FILE, X_TRANSLATOR_TYPE_REF,
-        XTranslatorConfig::getEnabled);
+        XTranslatorConfig::isEnabled);
     this.armorConfigs = loadConfig(objectMapper, ARMOR_CONFIG_FILE, ARMOR_CONFIG_TYPE_REF, (x) -> true);
     this.weaponNames = loadConfig(objectMapper, WEAPON_NAMES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.planNames = loadConfig(objectMapper, PLAN_RECIPES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.armorNames = loadConfig(objectMapper, ARMOR_NAMES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
+  }
+
+  private static List<ItemConfig> sortByName(List<ItemConfig> itemConfigs) {
+    return null;
   }
 
 

@@ -2,10 +2,10 @@ package com.manson.fo76.web.api;
 
 import static com.manson.fo76.config.AppConfig.ENABLE_AUTO_PRICE_CHECK;
 
-import com.manson.fo76.domain.dto.ItemResponse;
-import com.manson.fo76.domain.dto.ItemsUploadFilters;
-import com.manson.fo76.domain.dto.ModData;
-import com.manson.fo76.domain.dto.ModDataRequest;
+import com.manson.domain.itemextractor.ItemResponse;
+import com.manson.domain.itemextractor.ItemsUploadFilters;
+import com.manson.domain.itemextractor.ModData;
+import com.manson.domain.itemextractor.ModDataRequest;
 import com.manson.fo76.helper.Utils;
 import com.manson.fo76.service.ItemService;
 import java.util.Collections;
