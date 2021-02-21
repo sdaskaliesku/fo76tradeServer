@@ -16,14 +16,14 @@
 <!--                 placeholder="Choose a file or drop it here..."-->
 <!--                 drop-placeholder="Drop file here..."-->
 <!--    ></b-form-file>-->
-    <div>
-      <div class="d-flex justify-content-center mb-3 mt-5" v-if="loading">
-        <b-spinner label="Loading..."></b-spinner>
-      </div>
-    </div>
-    <b-modal title="Error" ok-variant="danger" centered ok-only id="errorModal">
-      {{ modalText }}
-    </b-modal>
+<!--    <div>-->
+<!--      <div class="d-flex justify-content-center mb-3 mt-5" v-if="loading">-->
+<!--        <b-spinner label="Loading..."></b-spinner>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <b-modal title="Error" ok-variant="danger" centered ok-only id="errorModal">-->
+<!--      {{ modalText }}-->
+<!--    </b-modal>-->
 <!--    <table-component @priceCheckEvent='updateTableData' class="mt-2"-->
 <!--                     v-if="tableData && tableData.length > 0" :table-data="tableData"/>-->
     <table-v2 class="mt-2"/>
@@ -34,7 +34,7 @@
 import {Utils} from '../utils';
 import {MIN_MOD_SUPPORTED_VERSION} from '../domain';
 import {itemService} from '../item.service';
-import TableComponent from './TableComponent';
+// import TableComponent from './TableComponent';
 import TableV2 from './tableV2/TableV2';
 import {filterService} from '../filter.service';
 
@@ -49,7 +49,7 @@ const modalTexts = {
 
 export default {
   name: 'FileLoader',
-  components: {TableComponent, TableV2},
+  components: {TableV2},
   data() {
     return {
       file: null,

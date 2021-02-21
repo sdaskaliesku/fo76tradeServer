@@ -8,19 +8,19 @@ const createColumnDef = ({title, field, visible = true}: { title: string, field:
 }
 
 export const columns = [
-  {
-    formatter: 'rowSelection',
-    titleFormatter: 'rowSelection',
-    width: 10,
-    hozAlign: 'center',
-    headerSort: false,
-    download: false,
-    visible: true,
-    cellClick: function (e: any) {
-      e.preventDefault();
-      e.stopPropagation();
-    },
-  },
+  // {
+  //   formatter: 'rowSelection',
+  //   titleFormatter: 'rowSelection',
+  //   width: 10,
+  //   hozAlign: 'center',
+  //   headerSort: false,
+  //   download: false,
+  //   visible: true,
+  //   cellClick: function (e: any) {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //   },
+  // },
   createColumnDef({title: 'Name', field: 'text'}),
   createColumnDef({title: 'Name converted', field: 'itemDetails.name', visible: false}),
   createColumnDef({title: 'Account', field: 'itemDetails.ownerInfo.accountName'}),

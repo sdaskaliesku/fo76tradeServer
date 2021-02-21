@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const VueLoader = require('vue-loader');
 
 module.exports = {
   entry: './src/main/ui/app.ts',
@@ -56,14 +56,15 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
+      'Vue': 'vue/dist/vue.esm-bundler.js',
     },
   },
   performance: {
     hints: false,
   },
   plugins: [
-    new VueLoaderPlugin(),
+    new VueLoader.VueLoaderPlugin(),
+    // new VueLoaderPlugin({}),
     // new webpack.LoaderOptionsPlugin({
     //   minimize: true,
     // }),

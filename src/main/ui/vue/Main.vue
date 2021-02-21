@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar/>
+<!--    <nav-bar/>-->
     <file-loader/>
   </div>
 </template>

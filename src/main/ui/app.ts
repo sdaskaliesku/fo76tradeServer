@@ -1,91 +1,50 @@
 import './css/main.scss';
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import {createApp} from 'vue';
+// import VueRouter from 'vue-router';
 import Main from './vue/Main.vue';
 import PrimeVue from 'primevue/config';
-import {
-  BBadge,
-  BButton,
-  BButtonGroup,
-  BCollapse,
-  BDropdown,
-  BDropdownDivider,
-  BDropdownItem,
-  BFormCheckbox,
-  BFormCheckboxGroup,
-  BFormFile,
-  BFormGroup,
-  BFormInput,
-  BIcon,
-  BIconCash,
-  BIconPersonFill,
-  BIconSearch,
-  BIconX,
-  BInputGroup,
-  BInputGroupAppend,
-  BInputGroupPrepend,
-  BListGroup,
-  BListGroupItem,
-  BModal,
-  BNavbar,
-  BNavbarBrand,
-  BNavbarNav,
-  BNavbarToggle,
-  BNavForm,
-  BNavItem,
-  BSpinner,
-  BToast,
-  ModalPlugin,
-  ToastPlugin
-} from 'bootstrap-vue'
+
 // @ts-ignore
-import JsonViewer from 'vue-json-viewer/ssr'
+// import JsonViewer from 'vue-json-viewer/ssr'
+import JsonViewer from 'vue3-json-viewer'
 
-Vue.component("BIcon", BIcon);
-Vue.component("BIconSearch", BIconSearch);
-Vue.component("BIconCash", BIconCash);
-Vue.component("BIconX", BIconX);
-Vue.component("BFormGroup", BFormGroup);
-Vue.component("BFormCheckboxGroup", BFormCheckboxGroup);
-Vue.component("BFormFile", BFormFile);
-Vue.component("BSpinner", BSpinner);
-Vue.component("BModal", BModal);
-Vue.component("BToast", BToast);
-Vue.component("BNavbar", BNavbar);
-Vue.component("BNavbarNav", BNavbarNav);
-Vue.component("BCollapse", BCollapse);
-Vue.component("BNavbarBrand", BNavbarBrand);
-Vue.component("BNavbarToggle", BNavbarToggle);
-Vue.component("BNavItem", BNavItem);
-Vue.component("BNavForm", BNavForm);
-Vue.component("BButtonGroup", BButtonGroup);
-Vue.component("BButton", BButton);
-Vue.component("BDropdown", BDropdown);
-Vue.component("BFormCheckbox", BFormCheckbox);
-Vue.component("BDropdownDivider", BDropdownDivider);
-Vue.component("BDropdownItem", BDropdownItem);
-Vue.component("BInputGroup", BInputGroup);
-Vue.component("BInputGroupPrepend", BInputGroupPrepend);
-Vue.component("BInputGroupAppend", BInputGroupAppend);
-Vue.component("BFormInput", BFormInput);
-Vue.component("BBadge", BBadge);
-Vue.component("BListGroup", BListGroup);
-Vue.component("BListGroupItem", BListGroupItem);
-Vue.component("BIconPersonFill", BIconPersonFill);
-Vue.use(ModalPlugin);
-Vue.use(ToastPlugin);
-Vue.use(VueRouter);
-Vue.use(JsonViewer);
 
-Vue.use(PrimeVue, {ripple: true});
+const app = createApp(Main);
+app.use(JsonViewer);
+app.use(PrimeVue, {ripple: true});
 
-const router = new VueRouter();
+// app.component("BIcon", BIcon);
+// app.component("BIconSearch", BIconSearch);
+// app.component("BIconCash", BIconCash);
+// app.component("BIconX", BIconX);
+// app.component("BFormGroup", BFormGroup);
+// app.component("BFormCheckboxGroup", BFormCheckboxGroup);
+// app.component("BFormFile", BFormFile);
+// app.component("BSpinner", BSpinner);
+// app.component("BModal", BModal);
+// app.component("BToast", BToast);
+// app.component("BNavbar", BNavbar);
+// app.component("BNavbarNav", BNavbarNav);
+// app.component("BCollapse", BCollapse);
+// app.component("BNavbarBrand", BNavbarBrand);
+// app.component("BNavbarToggle", BNavbarToggle);
+// app.component("BNavItem", BNavItem);
+// app.component("BNavForm", BNavForm);
+// app.component("BButtonGroup", BButtonGroup);
+// app.component("BButton", BButton);
+// app.component("BDropdown", BDropdown);
+// app.component("BFormCheckbox", BFormCheckbox);
+// app.component("BDropdownDivider", BDropdownDivider);
+// app.component("BDropdownItem", BDropdownItem);
+// app.component("BInputGroup", BInputGroup);
+// app.component("BInputGroupPrepend", BInputGroupPrepend);
+// app.component("BInputGroupAppend", BInputGroupAppend);
+// app.component("BFormInput", BFormInput);
+// app.component("BBadge", BBadge);
+// app.component("BListGroup", BListGroup);
+// app.component("BListGroupItem", BListGroupItem);
+// app.component("BIconPersonFill", BIconPersonFill);
+// app.use(ModalPlugin);
+// app.use(ToastPlugin);
 
-new Vue({
-  el: "#app",
-  template: '<Main/>',
-  router,
-  components: {
-    Main
-  }
-});
+app.mount('#app');
