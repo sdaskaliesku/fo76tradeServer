@@ -19,6 +19,7 @@ import {gameApiService} from "../../service/game.api.service";
 import {Toast} from "primereact/toast";
 import {Prompt} from "react-st-modal";
 import {defaultTableFilters, TableFilter} from "../../service/filter.service";
+import {itemService} from "../../service/item.service";
 
 enum ExportType {
   JSON, CSV, ROGUE_TRADER
@@ -544,26 +545,20 @@ export class TableComponent extends React.Component<TableProps, TableState> {
           isRequired: true
         }
     ).then((result) => {
-      this.toast.current.show({
-        severity: 'warn',
-        summary: 'Report system is not ready yet on backend, stay tuned!',
-        detail: `Item name: ${data.text}. Reason: ${result}`
-      });
-      // TODO: uncomment this, once reporting will be implemented
-      // if (result && result.length > 0) {
-      //   gameApiService.reportItem({
-      //     item: data,
-      //     reason: result
-      //   }).then(() => {
-      //     this.toast.current.show({
-      //       severity: 'success',
-      //       summary: 'Item successfully reported!',
-      //       detail: `Item name: ${data.text}. Reason: ${result}`
-      //     });
-      //   }).catch((e) => {
-      //     console.error(`Error reporting item`, data, e);
-      //   })
-      // }
+      if (result && result.length > 0) {
+        itemService.reportItem({
+          item: data,
+          reason: result
+        }).then(() => {
+          this.toast.current.show({
+            severity: 'success',
+            summary: 'Item successfully reported!',
+            detail: `Item name: ${data.text}. Reason: ${result}`
+          });
+        }).catch((e) => {
+          console.error(`Error reporting item`, data, e);
+        })
+      }
     });
   }
 

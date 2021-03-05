@@ -6,6 +6,7 @@ import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.ItemsUploadFilters;
 import com.manson.domain.itemextractor.ModData;
 import com.manson.domain.itemextractor.ModDataRequest;
+import com.manson.fo76.domain.ReportedItem;
 import com.manson.fo76.helper.Utils;
 import com.manson.fo76.service.ItemService;
 import java.util.List;
@@ -13,9 +14,9 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
@@ -30,10 +31,10 @@ public class ItemController {
     this.itemService = itemService;
   }
 
-  @RequestMapping(value = "/prepareModDataRaw", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON, method = RequestMethod.POST)
+  @PostMapping(value = "/prepareModDataRaw", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
   public Object prepareModDataRaw(
       @QueryParam(value = "autoPriceCheck") Boolean autoPriceCheck,
-      @QueryParam(value = "toCSV") Boolean toCSV,
+      @QueryParam(value = "toCSV") boolean toCSV,
       @RequestBody ModData modData) {
     try {
       ModDataRequest request = new ModDataRequest();
@@ -50,7 +51,7 @@ public class ItemController {
     }
   }
 
-  @RequestMapping(value = "/prepareModData", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON, method = RequestMethod.POST)
+  @PostMapping(value = "/prepareModData", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
   public List<ItemResponse> prepareModData(@RequestBody ModDataRequest modDataRequest) {
     try {
       return itemService.prepareModData(modDataRequest, ENABLE_AUTO_PRICE_CHECK);
@@ -58,5 +59,16 @@ public class ItemController {
       log.error("Error while preparing mod data {}", modDataRequest, e);
       throw e;
     }
+  }
+
+  @PostMapping(value = "/report", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
+  public ReportedItem reportItem(@RequestBody ReportedItem item) {
+    try {
+      return itemService.reportItem(item);
+    } catch (Exception e) {
+      log.error("Error reporting item {}", item, e);
+      throw e;
+    }
+
   }
 }

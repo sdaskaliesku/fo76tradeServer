@@ -16,7 +16,7 @@ import com.manson.domain.itemextractor.ItemDetails;
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.LegendaryMod;
 import com.manson.fo76.domain.fed76.PriceCheckCacheItem;
-import com.manson.fo76.repository.BasePriceCheckRepository;
+import com.manson.fo76.repository.PriceCheckRepository;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.EnumMap;
@@ -40,7 +40,7 @@ import org.springframework.stereotype.Service;
 public class Fed76Service extends BaseRestClient {
 
   private static final Map<ArmorGrade, String> GRADE_TO_GAME_ID_MAP = new EnumMap<>(ArmorGrade.class);
-  public static boolean USE_ID = false;
+  public static final boolean USE_ID = false;
 
   static {
     GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Light, "00182E78");
@@ -49,7 +49,7 @@ public class Fed76Service extends BaseRestClient {
     GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Unknown, "");
   }
 
-  private BasePriceCheckRepository priceCheckRepository;
+  private PriceCheckRepository priceCheckRepository;
 
   public Fed76Service(@Autowired ObjectMapper objectMapper) {
     super(objectMapper);
@@ -67,7 +67,7 @@ public class Fed76Service extends BaseRestClient {
 
   @Autowired
   @Qualifier("priceCheckRepository")
-  public void setPriceCheckRepository(BasePriceCheckRepository priceCheckRepository) {
+  public void setPriceCheckRepository(PriceCheckRepository priceCheckRepository) {
     this.priceCheckRepository = priceCheckRepository;
   }
 
