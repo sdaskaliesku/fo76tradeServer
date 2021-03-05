@@ -272,7 +272,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
               });
               return;
             }
-            const json = JSON.stringify(this.state.currentTableData);
+            const json = JSON.stringify(this.getItemsToUse());
             Utils.downloadString(json, 'text/json', `${result}.json`);
           });
           return;
@@ -291,7 +291,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
               });
               return;
             }
-            const csv = RogueService.toCSV(this.state.currentTableData, result);
+            const csv = RogueService.toCSV(this.getItemsToUse(), result);
             Utils.downloadString(csv, 'text/csv', `RogueTrader_${result}.csv`);
           });
           return;
