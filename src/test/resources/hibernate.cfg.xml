@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+    <property name="connection.driver_class">org.sqlite.JDBC</property>
+    <property name="connection.url">jdbc:sqlite:C:\Users\manso\Desktop\sql/fo76jdump.sqlite</property>
+
+    <property name="hibernate.hbm2ddl.auto">validate</property>
+
+    <mapping class="com.fo76.jdump.SqlLiteEntity"/>
+  </session-factory>
+</hibernate-configuration>

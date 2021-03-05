@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "./built/",
-    "sourceMap": true,
-    "lib": ["es6", "dom", "es2017"],
-    "strict": true,
-    "noImplicitReturns": true,
-    "module": "es2015",
-    "moduleResolution": "node",
-    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react"
   },
-  "include": [
-    "./src/main/ui/**/*"
-  ]
+  "include": ["src"]
 }
