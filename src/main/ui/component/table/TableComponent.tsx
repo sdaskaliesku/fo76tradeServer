@@ -89,7 +89,6 @@ export class TableComponent extends React.Component<TableProps, TableState> {
 
 
   private onTableValueChange(data: Array<Item>) {
-    console.log(data);
     let newItems: Array<Item> = data;
     // if (data && data.length > 0) {
     //   if (this.state.selectedTableFilters.length <= 0) {

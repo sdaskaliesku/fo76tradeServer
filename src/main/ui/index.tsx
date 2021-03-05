@@ -51,7 +51,6 @@ const App = () => {
     }
     setFileStatus(FileUploaderStatus.LOADED);
     setTableData(e);
-    console.log(e);
   };
   const onStatusUpdate = (e: FileUploaderStatus) => {
     setFileStatus(e);
