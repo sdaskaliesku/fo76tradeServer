@@ -18,7 +18,7 @@ import {ItemStatsDialog} from "../dialog/ItemStatsDialog";
 import {gameApiService} from "../../service/game.api.service";
 import {Toast} from "primereact/toast";
 import {Prompt} from "react-st-modal";
-import {defaultTableFilters, filterService, TableFilter} from "../../service/filter.service";
+import {defaultTableFilters, TableFilter} from "../../service/filter.service";
 
 enum ExportType {
   JSON, CSV, ROGUE_TRADER
@@ -59,7 +59,7 @@ export interface TableState {
   filterFlagsItems: any,
   exportFilename: string,
   sortField: string,
-  tableFilters: Array<TableFilter>
+  tableFilters: any
 }
 
 export interface TableProps extends DataTableProps {
@@ -79,7 +79,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
     filterFlagsItems: {},
     exportFilename: 'dump',
     sortField: 'filterFlag',
-    tableFilters: []
+    tableFilters: {}
   }
   private table: any = React.createRef<DataTable>();
   private infoDialog: any = React.createRef();
@@ -89,29 +89,12 @@ export class TableComponent extends React.Component<TableProps, TableState> {
 
 
   private onTableValueChange(data: Array<Item>) {
-    let newItems: Array<Item> = data;
-    // if (data && data.length > 0) {
-    //   if (this.state.selectedTableFilters.length <= 0) {
-    //     newItems = this.props.value;
-    //   } else {
-    //     newItems = data.filter((item: Item) => {
-    //       return this.state.selectedTableFilters.every((filter: TableFilter) => {
-    //         return filter.predicate(item);
-    //       })
-    //     });
-    //   }
-    // }
-    // if (newItems && newItems.length < 1) {
-    //   this.toast.current.show({
-    //     severity: 'warn',
-    //     summary: 'No items matching selected filters!'
-    //   });
-    //   this.setSelectedFilters([]);
-    //   this.table.current.reset();
-    //   newItems = this.props.value;
-    // }
-    this.setCurrentTableData(newItems);
-    const filterFlagStats = this.calculateFilterFlagItems(newItems);
+    if (!data || data.length < 1) {
+      this.setCurrentTableData(this.state.tableData);
+    } else {
+      this.setCurrentTableData(data);
+    }
+    const filterFlagStats = this.calculateFilterFlagItems(this.getItemsToUse());
     this.setState({filterFlagsItems: filterFlagStats});
   }
 
@@ -148,9 +131,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
           matchMode: filterOption.mode
         };
       });
-      this.table.current.setState({
-        filters: {...filterFields}
-      });
+      this.setState({tableFilters: filterFields});
       this.setSelectedColumns(Array.from(additionalFilters));
     };
   }
@@ -168,6 +149,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
   }
 
   componentDidMount() {
+    this.onFilter = this.onFilter.bind(this);
     this.headerTemplate = this.headerTemplate.bind(this);
     this.onSelectedRow = this.onSelectedRow.bind(this);
     this.onColumnToggle = this.onColumnToggle.bind(this);
@@ -185,9 +167,6 @@ export class TableComponent extends React.Component<TableProps, TableState> {
     this.onDeleteSelectedItems = this.onDeleteSelectedItems.bind(this);
     this.onReportSelectedItems = this.onReportSelectedItems.bind(this);
     this.onReportItem = this.onReportItem.bind(this);
-    filterService.getTableFilters().then(filters => {
-      this.setState({tableFilters: filters});
-    });
     this.setSelectedColumns(columns.filter(col => col.visible));
     this.menuItems.push({
       label: 'Filters',
@@ -321,10 +300,23 @@ export class TableComponent extends React.Component<TableProps, TableState> {
 
   private bulkPriceCheck(items: Array<Item>, maxItems: number = 99999) {
     let i = 0;
+    let promises: Array<Promise<any>> = [];
+    this.toast.current.show({
+      severity: 'info',
+      summary: 'Bulk price check starts now...',
+      detail: 'You will get new message, once we will get all the prices'
+    });
     items.forEach((item: Item) => {
       if (i++ < maxItems) {
-        this.onPriceCheck(item, true);
+        promises.push(this.onPriceCheck(item, true));
       }
+    });
+    Promise.all(promises).finally(() => {
+      console.log('Bulk price check done!')
+      this.toast.current.show({
+        severity: 'info',
+        summary: 'Bulk price check done!',
+      });
     });
   }
 
@@ -365,8 +357,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
   }
 
   private onItemsStats() {
-    let itemsToUse = this.getItemsToUse();
-    this.itemStatsDialog.current.show(itemsToUse);
+    this.itemStatsDialog.current.show(this.getItemsToUse());
   }
 
   private setExpandedRows(data: any) {
@@ -405,8 +396,8 @@ export class TableComponent extends React.Component<TableProps, TableState> {
     } catch (_) {
 
     }
+    this.setState({tableFilters: {}});
     this.table.current.filter();
-    // this.table.current.reset();
   }
 
   private setCurrentTableData(data: Array<Item>) {
@@ -414,14 +405,8 @@ export class TableComponent extends React.Component<TableProps, TableState> {
   }
 
   componentDidUpdate(prevProps: DataTableProps) {
-
     if (!this.state.currentTableData) {
-      // const newItems = this.table.current.props.value.filter((item: Item) => {
-      //   return item.isLegendary;
-      // });
       this.setCurrentTableData(this.table.current.props.value);
-      // this.setCurrentTableData(newItems);
-      // this.state.currentTableData = this.table.current.props.value;
     }
   }
 
@@ -525,9 +510,9 @@ export class TableComponent extends React.Component<TableProps, TableState> {
           detail: `Item name: ${data.text}.`
         });
       }
-      return;
+      return Promise.resolve();
     }
-    gameApiService.priceCheck(data).then((response: PriceCheckResponse) => {
+    return gameApiService.priceCheck(data).then((response: PriceCheckResponse) => {
       this.getItemsToUse()?.forEach((item: Item) => {
         if (item.id === data.id) {
           item.priceCheckResponse = response;
@@ -537,6 +522,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
           this.triggerItemUpdate(data);
         }
       });
+      return Promise.resolve();
     }).catch(e => {
       console.error(`Error price checking item ${data}`, e);
       this.getItemsToUse()?.forEach((item: Item) => {
@@ -547,6 +533,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
           this.triggerItemUpdate(data);
         }
       });
+      return Promise.resolve();
     });
   }
 
@@ -660,13 +647,21 @@ export class TableComponent extends React.Component<TableProps, TableState> {
     this.setState({itemStatsDialog: data});
   }
 
+  private onFilter(e: any) {
+    setTimeout(() => {
+      this.setState({tableFilters: e.filters});
+    }, 100)
+  }
+
   render() {
     return (
         <React.Fragment>
           <InfoDialog ref={this.infoDialog}/>
           <ItemStatsDialog ref={this.itemStatsDialog}/>
-          <DataTable {...defaultTableProps} value={this.getItemsToUse()}
+          <DataTable {...defaultTableProps} value={this.state.tableData}
                      ref={this.table}
+                     filters={this.state.tableFilters}
+                     onFilter={this.onFilter}
                      header={this.createHeader()}
                      globalFilter={this.state.globalFilter}
                      onSelectionChange={this.onSelectedRow}
