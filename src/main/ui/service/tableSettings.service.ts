@@ -40,6 +40,7 @@ class TableSettingsService {
   }
 
   public save() {
+    // @ts-ignore
     const data = JSON.stringify([...this.columns]);
     localStorageService.set(LOCAL_STORAGE_KEYS.TABLE_SETTINGS, data);
   }

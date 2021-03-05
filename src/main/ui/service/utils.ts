@@ -1,4 +1,5 @@
-import {PriceCheckResponse} from "./domain";
+import {Item} from "./domain";
+
 const NOTES = 'NOTES';
 const priceCheckFilterFlags: Array<string> = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE', NOTES];
 
@@ -9,28 +10,36 @@ export class Utils {
       fr.onerror = reject;
       fr.onload = () => {
         const data: string | ArrayBuffer | null = fr.result;
-        resolve(JSON.parse(<string>data));
+        try {
+          resolve(JSON.parse(<string>data));
+        } catch (e) {
+          reject(e);
+        }
       }
       fr.readAsText(file);
     });
   }
 
-  public static isEligibleForPriceCheck(item: any): boolean {
-    const filterFlag: string = item.filterFlag;
-    return (item.isLegendary || filterFlag === NOTES) && item.isTradable && priceCheckFilterFlags.includes(filterFlag);
-  }
-
-  public static isPriceCheckResponseEmpty(priceCheckResponse: PriceCheckResponse): boolean {
-    if (priceCheckResponse == null || priceCheckResponse.price < 1) {
+  public static shouldPriceCheck(item: Item): boolean {
+    if (!item.isTradable) {
+      return false;
+    }
+    if (item.priceCheckResponse && item.priceCheckResponse.price) {
+      const price = item.priceCheckResponse.price;
+      if (price === -1 || price > 0) {
+        return false;
+      }
+    }
+    const filterFlag = item.filterFlag;
+    if (filterFlag === NOTES) {
       return true;
     }
-    // let values = [];
-    // values.push(priceCheckResponse.name);
-    // values.push(priceCheckResponse.description);
-    // values.push(priceCheckResponse.timestamp);
-    // values.push(priceCheckResponse.path);
-    // return values.every(value => value === 'EMPTY');
-    return true;
+    return item.isLegendary && priceCheckFilterFlags.includes(filterFlag);
+  }
+
+  public static isEligibleForPriceCheck(item: Item): boolean {
+    const filterFlag: string = item.filterFlag;
+    return (item.isLegendary || filterFlag === NOTES) && item.isTradable && priceCheckFilterFlags.includes(filterFlag);
   }
 
   public static uuid(): string {

@@ -1,0 +1,10 @@
+.variable-row > .copy-to-clipboard-container {
+  visibility: hidden;
+}
+
+* > #stfDialogPlace > * {
+  font-size: 12px;
+  > * {
+    text-transform: lowercase;
+  }
+}

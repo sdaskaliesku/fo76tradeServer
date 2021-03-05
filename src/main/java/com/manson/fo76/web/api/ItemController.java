@@ -8,7 +8,6 @@ import com.manson.domain.itemextractor.ModData;
 import com.manson.domain.itemextractor.ModDataRequest;
 import com.manson.fo76.helper.Utils;
 import com.manson.fo76.service.ItemService;
-import java.util.Collections;
 import java.util.List;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
@@ -47,8 +46,8 @@ public class ItemController {
       return responses;
     } catch (Exception e) {
       log.error("Error while preparing mod data {}", modData, e);
+      throw e;
     }
-    return null;
   }
 
   @RequestMapping(value = "/prepareModData", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON, method = RequestMethod.POST)
@@ -57,7 +56,7 @@ public class ItemController {
       return itemService.prepareModData(modDataRequest, ENABLE_AUTO_PRICE_CHECK);
     } catch (Exception e) {
       log.error("Error while preparing mod data {}", modDataRequest, e);
+      throw e;
     }
-    return Collections.emptyList();
   }
 }

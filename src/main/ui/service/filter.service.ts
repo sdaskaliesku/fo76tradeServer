@@ -1,73 +1,148 @@
 import {gameApiService} from "./game.api.service";
+import {Item} from "./domain";
 
 export declare interface FilterFlag {
   name: string
   value: string
-  flags: Array<Number>
+  flags: Array<number>
   hasStarMods: boolean
   subtypes: Array<FilterFlag>
   parent: boolean
 }
 
-declare interface UploadFilter {
+export interface UploadFilter {
   id: string
   text: string
   value: string
   checked: boolean
+  isSeparator?: boolean
 }
 
-declare interface TableFilter {
+export enum FilterMode {
+  "startsWith", "contains", "endsWidth", "equals", "notEquals", "in", "lt", "lte", "gt", "gte", "custom"
+}
+
+export interface FilterOption {
+  value: any,
+  field: string,
+  mode: keyof typeof FilterMode
+}
+
+export declare interface TableFilter {
   checked: boolean
   name: string
-  type: string
-  filterGroup?: string
+
+  predicate(item: Item): boolean;
+
+  filterOptions: Array<FilterOption>
 }
 
 export declare interface UploadFileFilters {
-  filterFlags?: Array<String>
+  filterFlags?: Array<string>
 }
+
+export const defaultTableFilters: Array<TableFilter> = [
+  {
+    name: 'Legendaries',
+    checked: false,
+    predicate(item: Item): boolean {
+      return item.isLegendary;
+    },
+    filterOptions: [
+      {
+        value: true,
+        mode: 'contains',
+        field: 'isLegendary'
+      }
+    ]
+  },
+  {
+    name: 'Tradable',
+    checked: false,
+    predicate(item: Item): boolean {
+      return item.isTradable;
+    },
+    filterOptions: [
+      {
+        value: true,
+        mode: 'contains',
+        field: 'isTradable'
+      }
+    ]
+  },
+  {
+    name: 'Unknown plans',
+    checked: false,
+    predicate(item: Item): boolean {
+      return item.filterFlag === 'NOTES' && !item.isLearnedRecipe;
+    },
+    filterOptions: [
+      {
+        value: false,
+        mode: 'contains',
+        field: 'isLearnedRecipe'
+      },
+      {
+        value: 'NOTES',
+        mode: 'contains',
+        field: 'filterFlag'
+      },
+    ]
+  },
+  {
+    name: 'Listed in vendor',
+    checked: false,
+    predicate(item: Item): boolean {
+      // @ts-ignore
+      return item.vendingData && item.vendingData.price && item.vendingData.price !== 0;
+    },
+    filterOptions: [
+      {
+        value: 0,
+        mode: 'notEquals',
+        field: 'vendingData.price'
+      }
+    ]
+  }
+];
 
 class FilterService {
 
   private filterFlags: Array<FilterFlag> = [];
   private filterFlagsReady: boolean = false;
-  private defaultTableFilters: Array<TableFilter> = [
-    {
-      name: 'Legendaries',
-      type: 'legendaries',
-      checked: false
-    },
-    {
-      name: 'Tradable',
-      type: 'tradableOnly',
-      checked: false
-    },
-    {
-      name: 'Unknown plans',
-      type: 'unknownPlans',
-      checked: false
-    }
-  ];
+
   private defaultUploadFilters: Array<UploadFilter> = [
     {
       id: 'tradableOnly',
       text: 'Tradable',
       value: 'Tradable',
-      checked: true,
+      checked: false,
     },
     {
       id: 'legendaries',
       text: 'Legendaries',
       value: 'legendaries',
-      checked: true,
+      checked: false,
     },
     {
       id: 'priceCheckOnly',
       text: 'Price Check Only',
       value: 'Price Check Only',
-      checked: true,
+      checked: false,
+    },
+    {
+      id: '',
+      text: '',
+      value: '',
+      checked: false,
+      isSeparator: true
     }
   ];
+
+  constructor() {
+    this.getFilterFlags().then(() => {
+    });
+  }
 
   private getFilterFlags(): Promise<Array<FilterFlag>> {
     if (this.filterFlagsReady) {
@@ -93,7 +168,7 @@ class FilterService {
         id: filter.value,
         text: filter.value,
         value: filter.value,
-        checked: true,
+        checked: false,
       })
     })
     return filters;
@@ -131,15 +206,14 @@ class FilterService {
 
   private buildTableFilters(filterFlags: Array<FilterFlag>): Array<TableFilter> {
     let filters: Array<TableFilter> = [];
-    filters.push(...this.defaultTableFilters);
-    filterFlags.forEach(filterFlag => {
-      filters.push({
-        type: filterFlag.value,
-        name: filterFlag.value,
-        filterGroup: filterFlag.name.toUpperCase(),
-        checked: false
-      })
-    });
+    filters.push(...defaultTableFilters);
+    // filterFlags.forEach(filterFlag => {
+    //   filters.push({
+    //     name: filterFlag.value,
+    //     checked: false,
+    //     predicate: filterFlagPredicate(filterFlag.name)
+    //   })
+    // });
     return filters;
   }
 
@@ -151,56 +225,11 @@ class FilterService {
       return Promise.resolve(this.buildTableFilters(filterFlags));
     })
   }
+}
 
-  isLegendaryTableFilter(filter: TableFilter) {
-    return filter.type === this.defaultTableFilters[0].type;
-  }
-
-  isTradableTableFilter(filter: TableFilter) {
-    return filter.type === this.defaultTableFilters[1].type;
-  }
-
-  isUnknownPlansTableFilter(filter: TableFilter) {
-    return filter.type === this.defaultTableFilters[2].type;
-  }
-
-  getLegendaryTableFilter() {
-    return {
-      field: 'numLegendaryStars',
-      type: '>',
-      value: 0,
-    };
-  }
-
-  getTradableTableFilter() {
-    return {
-      field: 'isTradable',
-      type: '=',
-      value: true,
-    };
-  }
-
-  getUnknownPlansTableFilters() {
-    return [
-      {
-        field: 'isLearnedRecipe',
-        type: '=',
-        value: false,
-      },
-      {
-        field: 'filterFlag',
-        type: '=',
-        value: 'NOTES',
-      },
-    ];
-  }
-
-  getFilterFlagTableFilter(filterFlags: any) {
-    return {
-      field: 'filterFlag',
-      type: 'in',
-      value: filterFlags,
-    };
+const filterFlagPredicate = (filterFlag: string) => {
+  return (item: Item) => {
+    return item.filterFlag === filterFlag;
   }
 }
 

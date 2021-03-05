@@ -1,4 +1,4 @@
-export const items = [
+export const items: any[] = [
   {
     'id': 'e70fa11a-7e54-41b0-9107-cc23e6b4b71d',
     'text': 'Negotiations',
@@ -15,7 +15,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -57,7 +57,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -121,7 +121,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -163,7 +163,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -205,7 +205,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -332,7 +332,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -396,7 +396,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -515,7 +515,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -557,7 +557,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -599,7 +599,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -641,7 +641,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -683,7 +683,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -725,7 +725,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -767,7 +767,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -809,7 +809,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -851,7 +851,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -893,7 +893,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -935,7 +935,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -977,7 +977,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1041,7 +1041,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1083,7 +1083,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1125,7 +1125,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1167,7 +1167,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1209,7 +1209,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1251,7 +1251,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1293,7 +1293,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1335,7 +1335,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1377,7 +1377,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1419,7 +1419,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1461,7 +1461,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1525,7 +1525,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1567,7 +1567,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1609,7 +1609,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1688,7 +1688,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1730,7 +1730,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1794,7 +1794,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1836,7 +1836,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -1970,7 +1970,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2012,7 +2012,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2054,7 +2054,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2118,7 +2118,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2160,7 +2160,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2202,7 +2202,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2266,7 +2266,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2386,7 +2386,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2428,7 +2428,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2470,7 +2470,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2512,7 +2512,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2554,7 +2554,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2596,7 +2596,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2638,7 +2638,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2680,7 +2680,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2744,7 +2744,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2786,7 +2786,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2828,7 +2828,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2870,7 +2870,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2912,7 +2912,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2954,7 +2954,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -2996,7 +2996,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3095,7 +3095,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3137,7 +3137,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3179,7 +3179,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3221,7 +3221,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3263,7 +3263,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3305,7 +3305,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3347,7 +3347,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3389,7 +3389,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3522,7 +3522,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3564,7 +3564,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3606,7 +3606,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3725,7 +3725,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3767,7 +3767,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3809,7 +3809,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3851,7 +3851,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3893,7 +3893,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3935,7 +3935,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -3977,7 +3977,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4019,7 +4019,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4061,7 +4061,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4103,7 +4103,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4191,7 +4191,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4233,7 +4233,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4312,7 +4312,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4354,7 +4354,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4481,7 +4481,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4523,7 +4523,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4603,7 +4603,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4645,7 +4645,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4687,7 +4687,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4751,7 +4751,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4793,7 +4793,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4835,7 +4835,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4877,7 +4877,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -4919,7 +4919,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5019,7 +5019,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5191,7 +5191,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5233,7 +5233,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5316,7 +5316,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5358,7 +5358,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5400,7 +5400,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5502,7 +5502,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5544,7 +5544,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5586,7 +5586,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5628,7 +5628,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5670,7 +5670,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5712,7 +5712,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5754,7 +5754,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5873,7 +5873,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5915,7 +5915,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5957,7 +5957,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -5999,7 +5999,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6041,7 +6041,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6153,7 +6153,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6240,7 +6240,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6345,7 +6345,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6387,7 +6387,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6429,7 +6429,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6471,7 +6471,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6562,7 +6562,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6604,7 +6604,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6646,7 +6646,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6688,7 +6688,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6730,7 +6730,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6772,7 +6772,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6814,7 +6814,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6856,7 +6856,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6898,7 +6898,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6940,7 +6940,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -6982,7 +6982,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7024,7 +7024,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7066,7 +7066,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7108,7 +7108,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7227,7 +7227,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7318,7 +7318,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7360,7 +7360,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7402,7 +7402,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7444,7 +7444,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7486,7 +7486,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7528,7 +7528,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7570,7 +7570,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7612,7 +7612,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7654,7 +7654,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7696,7 +7696,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7738,7 +7738,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7857,7 +7857,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -7984,7 +7984,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8026,7 +8026,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8068,7 +8068,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8132,7 +8132,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8174,7 +8174,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8216,7 +8216,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8258,7 +8258,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8300,7 +8300,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8342,7 +8342,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8384,7 +8384,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8426,7 +8426,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8468,7 +8468,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8510,7 +8510,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8552,7 +8552,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8594,7 +8594,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8636,7 +8636,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8678,7 +8678,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8720,7 +8720,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8762,7 +8762,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8804,7 +8804,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8846,7 +8846,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8888,7 +8888,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8930,7 +8930,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -8972,7 +8972,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9014,7 +9014,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9056,7 +9056,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9098,7 +9098,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9140,7 +9140,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9204,7 +9204,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9246,7 +9246,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9288,7 +9288,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9330,7 +9330,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9442,7 +9442,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9484,7 +9484,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9526,7 +9526,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9568,7 +9568,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9610,7 +9610,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9652,7 +9652,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9694,7 +9694,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9736,7 +9736,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9778,7 +9778,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9820,7 +9820,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9862,7 +9862,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9904,7 +9904,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9946,7 +9946,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -9988,7 +9988,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10030,7 +10030,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10072,7 +10072,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10114,7 +10114,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10178,7 +10178,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10220,7 +10220,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10262,7 +10262,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10304,7 +10304,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10346,7 +10346,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10388,7 +10388,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10430,7 +10430,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10472,7 +10472,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10544,7 +10544,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10586,7 +10586,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10628,7 +10628,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10670,7 +10670,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10712,7 +10712,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10776,7 +10776,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10818,7 +10818,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10860,7 +10860,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10902,7 +10902,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10944,7 +10944,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -10986,7 +10986,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11028,7 +11028,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11070,7 +11070,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11164,7 +11164,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11247,7 +11247,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11289,7 +11289,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11331,7 +11331,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11373,7 +11373,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11415,7 +11415,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11457,7 +11457,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11499,7 +11499,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11541,7 +11541,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11583,7 +11583,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11684,7 +11684,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11726,7 +11726,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11838,7 +11838,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11880,7 +11880,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11944,7 +11944,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -11986,7 +11986,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12063,7 +12063,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12127,7 +12127,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12169,7 +12169,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12211,7 +12211,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12253,7 +12253,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12295,7 +12295,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12337,7 +12337,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12379,7 +12379,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12421,7 +12421,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12463,7 +12463,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12505,7 +12505,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12547,7 +12547,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12652,7 +12652,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12694,7 +12694,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12736,7 +12736,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12778,7 +12778,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12869,7 +12869,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12911,7 +12911,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12953,7 +12953,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -12995,7 +12995,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13037,7 +13037,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13079,7 +13079,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13121,7 +13121,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13226,7 +13226,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13268,7 +13268,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13310,7 +13310,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13352,7 +13352,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13471,7 +13471,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13551,7 +13551,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13593,7 +13593,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13695,7 +13695,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13737,7 +13737,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13779,7 +13779,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13821,7 +13821,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13863,7 +13863,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13905,7 +13905,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -13981,7 +13981,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14045,7 +14045,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14087,7 +14087,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14221,7 +14221,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14263,7 +14263,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14382,7 +14382,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14424,7 +14424,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14466,7 +14466,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14530,7 +14530,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14572,7 +14572,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14614,7 +14614,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14656,7 +14656,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14698,7 +14698,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14740,7 +14740,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14782,7 +14782,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14824,7 +14824,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14866,7 +14866,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14908,7 +14908,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14950,7 +14950,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -14992,7 +14992,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15034,7 +15034,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15076,7 +15076,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15118,7 +15118,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15252,7 +15252,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15294,7 +15294,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15336,7 +15336,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15378,7 +15378,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15497,7 +15497,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15570,7 +15570,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15634,7 +15634,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15676,7 +15676,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15718,7 +15718,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15782,7 +15782,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15824,7 +15824,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15866,7 +15866,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15908,7 +15908,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15950,7 +15950,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -15992,7 +15992,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16034,7 +16034,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16076,7 +16076,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16118,7 +16118,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16160,7 +16160,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16202,7 +16202,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16244,7 +16244,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16286,7 +16286,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16350,7 +16350,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16392,7 +16392,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16434,7 +16434,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16476,7 +16476,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16518,7 +16518,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16560,7 +16560,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16602,7 +16602,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16644,7 +16644,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16686,7 +16686,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16728,7 +16728,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16770,7 +16770,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16812,7 +16812,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16899,7 +16899,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -16941,7 +16941,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17005,7 +17005,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17047,7 +17047,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17089,7 +17089,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17131,7 +17131,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17173,7 +17173,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17215,7 +17215,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17257,7 +17257,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17362,7 +17362,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17404,7 +17404,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17446,7 +17446,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17488,7 +17488,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17530,7 +17530,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17572,7 +17572,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17698,7 +17698,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17740,7 +17740,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17860,7 +17860,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17902,7 +17902,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -17966,7 +17966,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18008,7 +18008,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18050,7 +18050,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18092,7 +18092,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18156,7 +18156,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18198,7 +18198,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18293,7 +18293,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18335,7 +18335,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18432,7 +18432,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18512,7 +18512,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18554,7 +18554,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18596,7 +18596,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18638,7 +18638,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18708,7 +18708,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18750,7 +18750,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18792,7 +18792,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18834,7 +18834,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18876,7 +18876,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18918,7 +18918,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -18960,7 +18960,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19002,7 +19002,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19044,7 +19044,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19086,7 +19086,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19128,7 +19128,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19170,7 +19170,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19212,7 +19212,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19254,7 +19254,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19296,7 +19296,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19338,7 +19338,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19380,7 +19380,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19444,7 +19444,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19571,7 +19571,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19613,7 +19613,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19689,7 +19689,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19731,7 +19731,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19843,7 +19843,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -19885,7 +19885,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20004,7 +20004,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20046,7 +20046,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20088,7 +20088,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20130,7 +20130,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20172,7 +20172,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20214,7 +20214,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20256,7 +20256,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20298,7 +20298,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20340,7 +20340,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20382,7 +20382,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20424,7 +20424,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20466,7 +20466,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20585,7 +20585,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20649,7 +20649,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20691,7 +20691,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20733,7 +20733,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20775,7 +20775,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20854,7 +20854,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20896,7 +20896,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20938,7 +20938,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -20980,7 +20980,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21022,7 +21022,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21135,7 +21135,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21177,7 +21177,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21219,7 +21219,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21261,7 +21261,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21327,7 +21327,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21369,7 +21369,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21433,7 +21433,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21475,7 +21475,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21539,7 +21539,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21581,7 +21581,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21623,7 +21623,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21665,7 +21665,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21707,7 +21707,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21749,7 +21749,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21829,7 +21829,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21871,7 +21871,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -21976,7 +21976,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22018,7 +22018,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22060,7 +22060,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22102,7 +22102,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22144,7 +22144,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22227,7 +22227,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22269,7 +22269,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22311,7 +22311,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22353,7 +22353,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22455,7 +22455,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22582,7 +22582,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22646,7 +22646,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22688,7 +22688,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22730,7 +22730,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22794,7 +22794,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22836,7 +22836,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22878,7 +22878,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -22920,7 +22920,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23003,7 +23003,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23045,7 +23045,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23087,7 +23087,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23151,7 +23151,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23193,7 +23193,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23235,7 +23235,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23277,7 +23277,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23382,7 +23382,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23494,7 +23494,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23536,7 +23536,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23578,7 +23578,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23620,7 +23620,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23662,7 +23662,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23704,7 +23704,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23746,7 +23746,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23880,7 +23880,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23922,7 +23922,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -23986,7 +23986,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24069,7 +24069,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24111,7 +24111,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24216,7 +24216,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24258,7 +24258,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24300,7 +24300,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24342,7 +24342,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24406,7 +24406,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24525,7 +24525,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24567,7 +24567,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24646,7 +24646,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24725,7 +24725,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24767,7 +24767,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24809,7 +24809,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24851,7 +24851,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24893,7 +24893,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24957,7 +24957,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -24999,7 +24999,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25041,7 +25041,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25083,7 +25083,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25125,7 +25125,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25167,7 +25167,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25209,7 +25209,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25251,7 +25251,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25293,7 +25293,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25335,7 +25335,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25461,7 +25461,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25503,7 +25503,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25545,7 +25545,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25587,7 +25587,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25651,7 +25651,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25693,7 +25693,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25735,7 +25735,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25777,7 +25777,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25819,7 +25819,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25861,7 +25861,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -25995,7 +25995,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26037,7 +26037,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26101,7 +26101,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26143,7 +26143,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26185,7 +26185,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26311,7 +26311,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26405,7 +26405,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26447,7 +26447,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26489,7 +26489,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26531,7 +26531,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26573,7 +26573,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26679,7 +26679,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26721,7 +26721,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26763,7 +26763,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26805,7 +26805,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26847,7 +26847,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26889,7 +26889,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26931,7 +26931,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -26995,7 +26995,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27037,7 +27037,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27079,7 +27079,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27184,7 +27184,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27226,7 +27226,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27268,7 +27268,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27355,7 +27355,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27397,7 +27397,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27439,7 +27439,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27541,7 +27541,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27583,7 +27583,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27647,7 +27647,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27689,7 +27689,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27772,7 +27772,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27814,7 +27814,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27919,7 +27919,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -27961,7 +27961,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28003,7 +28003,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28108,7 +28108,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28150,7 +28150,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28214,7 +28214,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28256,7 +28256,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28298,7 +28298,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28340,7 +28340,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28382,7 +28382,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28424,7 +28424,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28466,7 +28466,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28508,7 +28508,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28550,7 +28550,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28592,7 +28592,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28634,7 +28634,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28676,7 +28676,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28718,7 +28718,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28760,7 +28760,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28802,7 +28802,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28844,7 +28844,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28886,7 +28886,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -28991,7 +28991,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29093,7 +29093,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29135,7 +29135,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29177,7 +29177,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29219,7 +29219,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29347,7 +29347,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29389,7 +29389,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29431,7 +29431,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29473,7 +29473,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29515,7 +29515,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29557,7 +29557,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29599,7 +29599,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29641,7 +29641,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29683,7 +29683,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29725,7 +29725,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29767,7 +29767,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29809,7 +29809,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29851,7 +29851,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29893,7 +29893,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29957,7 +29957,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -29999,7 +29999,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30041,7 +30041,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30083,7 +30083,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30125,7 +30125,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30167,7 +30167,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30209,7 +30209,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30251,7 +30251,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30293,7 +30293,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30335,7 +30335,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30377,7 +30377,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30471,7 +30471,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30513,7 +30513,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30555,7 +30555,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30619,7 +30619,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30661,7 +30661,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30703,7 +30703,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30745,7 +30745,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30809,7 +30809,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30851,7 +30851,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30893,7 +30893,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30935,7 +30935,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -30977,7 +30977,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31041,7 +31041,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31083,7 +31083,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31125,7 +31125,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31167,7 +31167,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31209,7 +31209,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31251,7 +31251,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31293,7 +31293,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31335,7 +31335,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31377,7 +31377,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31419,7 +31419,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31461,7 +31461,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31503,7 +31503,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31545,7 +31545,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31587,7 +31587,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31629,7 +31629,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31671,7 +31671,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31713,7 +31713,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31755,7 +31755,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31797,7 +31797,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31839,7 +31839,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31881,7 +31881,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31923,7 +31923,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -31965,7 +31965,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32007,7 +32007,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32049,7 +32049,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32091,7 +32091,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32133,7 +32133,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32175,7 +32175,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32217,7 +32217,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32259,7 +32259,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32301,7 +32301,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32343,7 +32343,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32385,7 +32385,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32449,7 +32449,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32525,7 +32525,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32567,7 +32567,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32672,7 +32672,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32714,7 +32714,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32833,7 +32833,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32952,7 +32952,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -32994,7 +32994,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33036,7 +33036,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33078,7 +33078,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33183,7 +33183,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33225,7 +33225,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33267,7 +33267,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33309,7 +33309,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33351,7 +33351,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33467,7 +33467,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33509,7 +33509,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33589,7 +33589,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33653,7 +33653,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33695,7 +33695,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33737,7 +33737,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33779,7 +33779,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33821,7 +33821,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33863,7 +33863,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33905,7 +33905,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33947,7 +33947,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -33989,7 +33989,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34031,7 +34031,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34073,7 +34073,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34115,7 +34115,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34157,7 +34157,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34199,7 +34199,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34241,7 +34241,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34283,7 +34283,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34325,7 +34325,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34367,7 +34367,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34409,7 +34409,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34451,7 +34451,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34493,7 +34493,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34535,7 +34535,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34577,7 +34577,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34619,7 +34619,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34661,7 +34661,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34703,7 +34703,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34745,7 +34745,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34787,7 +34787,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34829,7 +34829,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34871,7 +34871,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -34913,7 +34913,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35015,7 +35015,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35057,7 +35057,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35099,7 +35099,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35141,7 +35141,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35183,7 +35183,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35225,7 +35225,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35267,7 +35267,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35309,7 +35309,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35351,7 +35351,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35393,7 +35393,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35435,7 +35435,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35499,7 +35499,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35541,7 +35541,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35583,7 +35583,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35625,7 +35625,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35667,7 +35667,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35709,7 +35709,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35751,7 +35751,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35793,7 +35793,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35835,7 +35835,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35877,7 +35877,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35919,7 +35919,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -35961,7 +35961,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36003,7 +36003,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36105,7 +36105,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36188,7 +36188,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36293,7 +36293,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36357,7 +36357,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36399,7 +36399,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36441,7 +36441,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36483,7 +36483,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36525,7 +36525,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36567,7 +36567,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36609,7 +36609,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36651,7 +36651,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36693,7 +36693,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36735,7 +36735,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36777,7 +36777,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36819,7 +36819,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36861,7 +36861,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36903,7 +36903,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -36945,7 +36945,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37072,7 +37072,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37114,7 +37114,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37197,7 +37197,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37239,7 +37239,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37281,7 +37281,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37323,7 +37323,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37403,7 +37403,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37445,7 +37445,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37487,7 +37487,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37570,7 +37570,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37612,7 +37612,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37654,7 +37654,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37696,7 +37696,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37760,7 +37760,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37802,7 +37802,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37844,7 +37844,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37886,7 +37886,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -37928,7 +37928,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38047,7 +38047,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38089,7 +38089,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38131,7 +38131,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38195,7 +38195,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38237,7 +38237,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38279,7 +38279,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38321,7 +38321,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38363,7 +38363,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38405,7 +38405,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38507,7 +38507,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38609,7 +38609,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38697,7 +38697,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38739,7 +38739,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38781,7 +38781,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38823,7 +38823,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38865,7 +38865,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38907,7 +38907,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38949,7 +38949,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -38991,7 +38991,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39033,7 +39033,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39135,7 +39135,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39177,7 +39177,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39219,7 +39219,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39261,7 +39261,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39303,7 +39303,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39345,7 +39345,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39387,7 +39387,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39429,7 +39429,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39471,7 +39471,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39513,7 +39513,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39555,7 +39555,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39643,7 +39643,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39719,7 +39719,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39761,7 +39761,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39803,7 +39803,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39845,7 +39845,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39887,7 +39887,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -39929,7 +39929,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40012,7 +40012,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40054,7 +40054,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40096,7 +40096,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40138,7 +40138,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40243,7 +40243,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40285,7 +40285,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40327,7 +40327,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40369,7 +40369,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40489,7 +40489,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40531,7 +40531,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40573,7 +40573,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40615,7 +40615,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40657,7 +40657,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40699,7 +40699,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40741,7 +40741,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40783,7 +40783,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40825,7 +40825,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40867,7 +40867,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -40909,7 +40909,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41043,7 +41043,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41085,7 +41085,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41212,7 +41212,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41310,7 +41310,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41352,7 +41352,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41428,7 +41428,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41470,7 +41470,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41512,7 +41512,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41554,7 +41554,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41665,7 +41665,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41707,7 +41707,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41749,7 +41749,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41791,7 +41791,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41833,7 +41833,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41875,7 +41875,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41917,7 +41917,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -41959,7 +41959,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42001,7 +42001,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42065,7 +42065,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42107,7 +42107,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42171,7 +42171,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42213,7 +42213,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42255,7 +42255,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42297,7 +42297,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42339,7 +42339,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42381,7 +42381,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42423,7 +42423,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42465,7 +42465,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42507,7 +42507,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42549,7 +42549,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42613,7 +42613,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42655,7 +42655,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42719,7 +42719,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42761,7 +42761,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42803,7 +42803,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42845,7 +42845,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42887,7 +42887,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42929,7 +42929,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -42971,7 +42971,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43013,7 +43013,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43055,7 +43055,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43097,7 +43097,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43183,7 +43183,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43225,7 +43225,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43267,7 +43267,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43309,7 +43309,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43351,7 +43351,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43393,7 +43393,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43435,7 +43435,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43477,7 +43477,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43519,7 +43519,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43561,7 +43561,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43603,7 +43603,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43645,7 +43645,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43687,7 +43687,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43729,7 +43729,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43771,7 +43771,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43813,7 +43813,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43855,7 +43855,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43897,7 +43897,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -43939,7 +43939,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44003,7 +44003,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44045,7 +44045,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44087,7 +44087,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44129,7 +44129,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44231,7 +44231,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44273,7 +44273,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44315,7 +44315,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44357,7 +44357,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44459,7 +44459,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44501,7 +44501,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44543,7 +44543,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44585,7 +44585,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44649,7 +44649,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44691,7 +44691,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44792,7 +44792,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44834,7 +44834,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44876,7 +44876,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44918,7 +44918,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -44960,7 +44960,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45002,7 +45002,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45085,7 +45085,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45127,7 +45127,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45169,7 +45169,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45233,7 +45233,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45275,7 +45275,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45317,7 +45317,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45359,7 +45359,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45401,7 +45401,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45443,7 +45443,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45485,7 +45485,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45527,7 +45527,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45569,7 +45569,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45633,7 +45633,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45675,7 +45675,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45717,7 +45717,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45759,7 +45759,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45801,7 +45801,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45888,7 +45888,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45930,7 +45930,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -45972,7 +45972,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46014,7 +46014,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46056,7 +46056,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46098,7 +46098,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46189,7 +46189,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46317,7 +46317,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46359,7 +46359,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46401,7 +46401,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46443,7 +46443,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46485,7 +46485,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46527,7 +46527,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46569,7 +46569,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46611,7 +46611,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46653,7 +46653,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46695,7 +46695,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46737,7 +46737,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46779,7 +46779,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46892,7 +46892,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -46934,7 +46934,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47036,7 +47036,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47078,7 +47078,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47142,7 +47142,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47184,7 +47184,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47226,7 +47226,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47268,7 +47268,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47310,7 +47310,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47352,7 +47352,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47457,7 +47457,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47499,7 +47499,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47541,7 +47541,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47583,7 +47583,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47625,7 +47625,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47667,7 +47667,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47709,7 +47709,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47751,7 +47751,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47793,7 +47793,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47835,7 +47835,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47877,7 +47877,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -47996,7 +47996,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48129,7 +48129,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48171,7 +48171,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48213,7 +48213,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48277,7 +48277,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48319,7 +48319,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48361,7 +48361,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48403,7 +48403,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48445,7 +48445,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48487,7 +48487,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48567,7 +48567,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48609,7 +48609,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48651,7 +48651,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48693,7 +48693,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48819,7 +48819,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48861,7 +48861,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48937,7 +48937,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -48979,7 +48979,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49021,7 +49021,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49085,7 +49085,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49127,7 +49127,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49191,7 +49191,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49233,7 +49233,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49297,7 +49297,7 @@ export const items = [
     'isLegendary': true,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49380,7 +49380,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49422,7 +49422,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49464,7 +49464,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49506,7 +49506,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49548,7 +49548,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49590,7 +49590,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49632,7 +49632,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49674,7 +49674,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49738,7 +49738,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49780,7 +49780,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49822,7 +49822,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 
@@ -49870,7 +49870,7 @@ export const items = [
     'isLegendary': false,
     'vendingData': {
       'unknownFields': {
-  
+
 
       },
 

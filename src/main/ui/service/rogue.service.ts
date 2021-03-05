@@ -1,31 +1,33 @@
-const headers: Array<String> = ["Prefix", "Type", "Major", "Minor", "Level", "Notes", "Value", "Character"];
+import {Item} from "./domain";
+
+const headers: Array<string> = ["Prefix", "Type", "Major", "Minor", "Level", "Notes", "Value", "Character"];
 const separator = ",";
 const eof = "\r\n";
 
-declare interface RogueCSVLine {
+interface RogueCSVLine {
   prefix?: string,
-  type: string,
+  type?: string,
   major?: string,
   minor?: string,
-  level: Number,
+  level: number,
   notes?: string,
-  value?: Number,
+  value?: number,
   character: string,
 }
 
-const legendaryFilter = (object: any) => {
+const legendaryFilter = (object: Item) => {
   return object && object.isLegendary && object.isTradable;
 }
 
 export class RogueService {
 
-  private static getLegModValue(item: any, index: number) {
+  private static getLegModValue(item: Item, index: number) {
     if (item && item.itemDetails && item.itemDetails.legendaryMods && item.itemDetails.legendaryMods.length >= index && item.itemDetails.legendaryMods[index]) {
       return item.itemDetails.legendaryMods[index].gameId;
     }
   }
 
-  private static getItemName(item: any) {
+  private static getItemName(item: Item) {
     // if (item && item.itemDetails && item.itemDetails.config && item.itemDetails.config.gameId) {
     //   return item.itemDetails.config.gameId;
     // }
@@ -34,7 +36,7 @@ export class RogueService {
     }
   }
 
-  private static createRogueObject(item: any, character: string): RogueCSVLine {
+  private static createRogueObject(item: Item, character: string): RogueCSVLine {
     return {
       prefix: this.getLegModValue(item, 0),
       type: this.getItemName(item),
@@ -47,7 +49,7 @@ export class RogueService {
     }
   }
 
-  private static toRogueObject(data: Array<any>, character: string): Array<RogueCSVLine> {
+  private static toRogueObject(data: Array<Item>, character: string): Array<RogueCSVLine> {
     return data.filter(legendaryFilter).map(v => RogueService.createRogueObject(v, character));
   }
 
