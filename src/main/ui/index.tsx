@@ -56,10 +56,10 @@ const App = () => {
     setFileStatus(e);
   }
 
-  const template = (body: any) => (
+  const template = (content: any) => (
       <React.Fragment>
         <NavBar/>
-        {body}
+        {content}
         <InfoDialog ref={dialogRef}/>
       </React.Fragment>);
 

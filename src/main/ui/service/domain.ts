@@ -1,5 +1,3 @@
-import {RogueService} from "./rogue.service";
-import {Utils} from "./utils";
 import {UploadFileFilters} from "./filter.service";
 
 export const DISCORD_LINK = 'https://discord.gg/7fef733';
@@ -58,45 +56,8 @@ export declare interface PriceCheckResponse {
   description?: string;
 }
 
-export const downloadOptions = [
-  {
-    title: 'Raw json',
-    type: 'raw_json',
-    handler: function ({rawData}: { rawData: any }) {
-      Utils.downloadString(JSON.stringify(rawData), 'text/json', 'full_data.json');
-    },
-  },
-  {
-    title: 'RogueTrader CSV (extremely experimental)',
-    type: 'rogue_csv',
-    handler: function ({rawData, character}: { rawData: any, character: string }) {
-      Utils.downloadString(RogueService.toCSV(rawData, character), 'text/csv', `rogue_trader_${character}.csv`);
-    },
-  },
-  {
-    title: 'json',
-    type: 'json',
-    handler: function ({tabulator}: { tabulator: any }) {
-      tabulator.download(this.type, `data.${this.type}`, {style: true});
-    },
-  },
-  {
-    title: 'csv / excel',
-    type: 'csv',
-    handler: function ({tabulator}: { tabulator: any }) {
-      tabulator.download(this.type, `data.${this.type}`, {style: true});
-    },
-  },
-  {
-    title: 'html',
-    type: 'html',
-    handler: function ({tabulator}: { tabulator: any }) {
-      tabulator.download(this.type, `data.${this.type}`, {style: true});
-    },
-  },
-];
-
 export interface UnknownFields {
+  [key: string]: any
 }
 
 export interface VendingData {
@@ -156,7 +117,7 @@ export interface Item {
   isLegendary: boolean;
   vendingData?: VendingData;
   filterFlag: string;
-  itemDetails?: ItemDetails | undefined;
+  itemDetails?: ItemDetails;
   isWeightless: boolean;
   scrapAllowed: boolean;
   isAutoScrappable: boolean;
