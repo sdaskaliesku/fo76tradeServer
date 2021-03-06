@@ -308,10 +308,16 @@ export class TableComponent extends React.Component<TableProps, TableState> {
       detail: 'You will get new message, once we will get all the prices'
     });
     items.forEach((item: Item) => {
-      if (i++ < maxItems) {
+      if (i < maxItems) {
+        if (!Utils.shouldPriceCheck(item)) {
+          console.warn('Ignoring price check', item);
+          return;
+        }
         promises.push(this.onPriceCheck(item, true));
+        i++;
       }
     });
+    console.log(`Price check executed for ${i} items`);
     Promise.all(promises).finally(() => {
       console.log('Bulk price check done!')
       this.toast.current.show({
