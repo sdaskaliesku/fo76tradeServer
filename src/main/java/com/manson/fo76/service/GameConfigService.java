@@ -34,9 +34,6 @@ public class GameConfigService {
   }
 
   private static boolean isSameFilterFlag(FilterFlag first, FilterFlag second) {
-    if (FilterFlag.UNKNOWN == first || FilterFlag.UNKNOWN == second) {
-      return true;
-    }
     boolean same = first == second;
     boolean subtype = first.getSubtypes().contains(second) || second.getSubtypes().contains(first);
     return same || subtype;

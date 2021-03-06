@@ -58,8 +58,8 @@ public class GameApi {
       produces = {"application/json"},
       value = {"/legendaryMod"}
   )
-  public final LegendaryModDescriptor getLegendaryModConfig(@RequestParam String text) {
-    return this.gameConfigService.findLegendaryModDescriptor(text, FilterFlag.UNKNOWN);
+  public final LegendaryModDescriptor getLegendaryModConfig(@RequestParam String text, @RequestParam String filterFlag) {
+    return this.gameConfigService.findLegendaryModDescriptor(text, FilterFlag.fromString(filterFlag));
   }
 
   @GetMapping(
