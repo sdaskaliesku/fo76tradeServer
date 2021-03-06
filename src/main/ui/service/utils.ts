@@ -37,20 +37,6 @@ export class Utils {
     return item.isLegendary && priceCheckFilterFlags.includes(filterFlag);
   }
 
-  public static isEligibleForPriceCheck(item: Item): boolean {
-    const filterFlag: string = item.filterFlag;
-    return (item.isLegendary || filterFlag === NOTES) && item.isTradable && priceCheckFilterFlags.includes(filterFlag);
-  }
-
-  public static uuid(): string {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
-      const r = parseFloat(
-          '0.' + Math.random().toString().replace('0.', '') + new Date().getTime()) * 16 | 0,
-          v = c === 'x' ? r : (r & 0x3 | 0x8);
-      return v.toString(16);
-    });
-  }
-
   public static downloadString(text: string, fileType: string, fileName: string) {
     const blob = new Blob([text], {type: fileType});
 

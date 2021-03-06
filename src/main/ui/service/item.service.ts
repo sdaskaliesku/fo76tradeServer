@@ -1,5 +1,6 @@
 import {ModDataRequest, ReportItem} from "./domain";
 import {BaseService} from "./base.service";
+import {ItemContext} from "./filter.service";
 
 class ItemService extends BaseService {
 
@@ -9,8 +10,13 @@ class ItemService extends BaseService {
     this.reportItem = this.reportItem.bind(this);
   }
 
-  prepareModData(modDataRequest: ModDataRequest) {
-    const finalUrl = `${this.baseEndPoint}prepareModData?priceCheck=false&shortenResponse=true&fed76Enhance=false`;
+  prepareModData(modDataRequest: ModDataRequest, itemContext: ItemContext) {
+    let requestParams = '';
+    Object.keys(itemContext).forEach((k: string) => {
+      // @ts-ignore
+      requestParams += k + '=' + itemContext[k] + '&';
+    });
+    const finalUrl = `${this.baseEndPoint}prepareModData?${requestParams}`;
     return this.performRequest({
       url: finalUrl,
       method: 'POST',

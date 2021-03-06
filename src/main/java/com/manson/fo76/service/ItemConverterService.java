@@ -7,7 +7,6 @@ import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.fed76.BasePriceCheckResponse;
 import com.manson.domain.fed76.PriceCheckRequest;
-import com.manson.domain.fed76.pricing.PriceEnhanceRequest;
 import com.manson.domain.fo76.ItemCardEntry;
 import com.manson.domain.fo76.ItemDescriptor;
 import com.manson.domain.fo76.items.enums.DamageType;
@@ -25,6 +24,7 @@ import com.manson.domain.itemextractor.ModDataRequest;
 import com.manson.domain.itemextractor.OwnerInfo;
 import com.manson.domain.itemextractor.Stats;
 import com.manson.fo76.domain.ItemContext;
+import com.manson.fo76.domain.fed76.PriceEnhanceRequest;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -218,6 +218,26 @@ public class ItemConverterService {
     return new ArrayList<>(dedupedItems.values());
   }
 
+  private static ItemResponse shortenItemDescription(ItemResponse item) {
+    if (Objects.isNull(item)) {
+      return null;
+    }
+    if (Objects.nonNull(item.getItemDetails())) {
+      ItemConfig config = item.getItemDetails().getConfig();
+      if (Objects.nonNull(config)) {
+        ItemConfig itemConfig = new ItemConfig();
+        BeanUtils.copyProperties(config, itemConfig);
+        itemConfig.setTexts(null);
+        item.getItemDetails().setConfig(itemConfig);
+      }
+      item.getItemDetails().setStats(null);
+    }
+    if (Objects.nonNull(item.getVendingData())) {
+      item.getVendingData().setUnknownFields(null);
+    }
+    return item;
+  }
+
   private FilterFlag clarifyFilterFlag(ItemResponse item, ItemDescriptor descriptor) {
     FilterFlag filterFlag = item.getFilterFlag();
     if (filterFlag == FilterFlag.WEAPON) {
@@ -303,13 +323,7 @@ public class ItemConverterService {
     itemResponse.setPriceCheckResponse(getPriceCheck(itemResponse, context.isPriceCheck()));
     itemResponse.setFilterFlag(clarifyFilterFlag(itemResponse, descriptor));
     if (context.isFed76Enhance() && isValidForPriceCheckEnhance(itemResponse)) {
-      PriceEnhanceRequest request = fed76Service.createPriceEnhanceRequest(itemResponse);
-      if (request != null) {
-        Response response = fed76Service.enhancePriceCheck(request);
-        log.info("Price enhance response: {} for item {}", response, itemResponse);
-      } else {
-        log.error("Item matches price enhance, but has missing data: {}", itemResponse);
-      }
+      sendPriceEnhanceRequest(itemResponse);
     }
     if (context.isShortenResponse()) {
       return shortenItemDescription(itemResponse);
@@ -317,24 +331,19 @@ public class ItemConverterService {
     return itemResponse;
   }
 
-  private static ItemResponse shortenItemDescription(ItemResponse item) {
-    if (Objects.isNull(item)) {
-      return null;
-    }
-    if (Objects.nonNull(item.getItemDetails())) {
-      ItemConfig config = item.getItemDetails().getConfig();
-      if (Objects.nonNull(config)) {
-        ItemConfig itemConfig = new ItemConfig();
-        BeanUtils.copyProperties(config, itemConfig);
-        itemConfig.setTexts(null);
-        item.getItemDetails().setConfig(itemConfig);
+  private void sendPriceEnhanceRequest(ItemResponse itemResponse) {
+    try {
+
+      PriceEnhanceRequest request = fed76Service.createPriceEnhanceRequest(itemResponse);
+      if (request != null) {
+        Response response = fed76Service.enhancePriceCheck(request);
+        log.info("Price enhance response: {} for item {}", response, itemResponse);
+      } else {
+        log.error("Item matches price enhance, but has missing data: {}", itemResponse);
       }
-      item.getItemDetails().setStats(null);
+    } catch (Exception e) {
+      log.error("Error sending price enhance request for item {}", itemResponse, e);
     }
-    if (Objects.nonNull(item.getVendingData())) {
-      item.getVendingData().setUnknownFields(null);
-    }
-    return item;
   }
 
   private BasePriceCheckResponse getPriceCheck(ItemResponse itemResponse, boolean autoPriceCheck) {

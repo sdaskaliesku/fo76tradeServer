@@ -2,7 +2,12 @@ import React from "react";
 import {FileUpload} from "primereact/fileupload";
 import {Utils} from "../../service/utils";
 import {ModDataRequest} from "../../service/domain";
-import {filterService, UploadFileFilters, UploadFilter} from "../../service/filter.service";
+import {
+  filterService,
+  ItemContext,
+  UploadFileFilters,
+  UploadFilter
+} from "../../service/filter.service";
 import {ToggleButton} from "primereact/togglebutton";
 import {itemService} from "../../service/item.service";
 import './FileUploader.scss';
@@ -52,19 +57,27 @@ export class FileUploader extends React.Component<FileUploaderProps, FileUploade
     this.props.onStatusUpdate(status);
   }
 
-
   private uploadFile() {
     this.setStatus(FileUploaderStatus.LOADING);
     this.state.files.forEach((file) => {
       Utils.readFile(file).then(data => {
+        const itemContext: ItemContext = {
+          priceCheck: false,
+          shortenResponse: true,
+          fed76Enhance: true
+        }
         const filters: UploadFileFilters = {
-          filterFlags: this.state.filters.filter((f: UploadFilter) => f.checked).map((f: UploadFilter) => f.text)
+          filterFlags: this.state.filters.filter((f: UploadFilter) => !f.isContext).filter((f: UploadFilter) => f.checked).map((f: UploadFilter) => f.text)
         };
+        this.state.filters.filter((f: UploadFilter) => f.isContext).filter((f: UploadFilter) => f.checked).forEach((f: UploadFilter) => {
+          // @ts-ignore
+          itemContext[f.id] = f.checked;
+        });
         const request: ModDataRequest = {
           modData: data,
           filters: filters
         };
-        itemService.prepareModData(request).then((e: any) => {
+        itemService.prepareModData(request, itemContext).then((e: any) => {
           this.setStatus(FileUploaderStatus.LOADED);
           this.props.onDataReceived(e);
         }).catch((e: any) => {
@@ -100,7 +113,7 @@ export class FileUploader extends React.Component<FileUploaderProps, FileUploade
   private renderFilters() {
     return this.state.filters.map((filter: UploadFilter) => {
       if (filter.isSeparator) {
-        return (<div style={{paddingRight: '5px'}} key={'separator'}/>);
+        return (<div style={{paddingRight: '5px'}} key={'separator' + filter.id}/>);
       }
       const onChange = (e: any) => {
         this.setFilterChecked(e.value, filter);
@@ -113,7 +126,7 @@ export class FileUploader extends React.Component<FileUploaderProps, FileUploade
                         checked={filter.checked}
                         key={filter.id}
                         onChange={onChange}
-                        tooltip={filter.text}
+                        tooltip={filter.tooltipText?filter.tooltipText: filter.text}
                         tooltipOptions={{position: 'bottom'}}
                         className={'p-button-lg filter-button'}
           />);

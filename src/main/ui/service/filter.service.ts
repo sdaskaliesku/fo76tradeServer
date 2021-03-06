@@ -1,5 +1,4 @@
 import {gameApiService} from "./game.api.service";
-import {Item} from "./domain";
 
 export declare interface FilterFlag {
   name: string
@@ -16,10 +15,22 @@ export interface UploadFilter {
   value: string
   checked: boolean
   isSeparator?: boolean
+  tooltipText?: string
+  isContext?: boolean
 }
 
 export enum FilterMode {
-  "startsWith", "contains", "endsWidth", "equals", "notEquals", "in", "lt", "lte", "gt", "gte", "custom"
+  "startsWith",
+  "contains",
+  "endsWidth",
+  "equals",
+  "notEquals",
+  "in",
+  "lt",
+  "lte",
+  "gt",
+  "gte",
+  "custom"
 }
 
 export interface FilterOption {
@@ -29,11 +40,7 @@ export interface FilterOption {
 }
 
 export declare interface TableFilter {
-  checked: boolean
   name: string
-
-  predicate(item: Item): boolean;
-
   filterOptions: Array<FilterOption>
 }
 
@@ -41,13 +48,15 @@ export declare interface UploadFileFilters {
   filterFlags?: Array<string>
 }
 
+export interface ItemContext {
+  priceCheck?: boolean
+  fed76Enhance?: boolean
+  shortenResponse?: boolean
+}
+
 export const defaultTableFilters: Array<TableFilter> = [
   {
     name: 'Legendaries',
-    checked: false,
-    predicate(item: Item): boolean {
-      return item.isLegendary;
-    },
     filterOptions: [
       {
         value: true,
@@ -58,10 +67,6 @@ export const defaultTableFilters: Array<TableFilter> = [
   },
   {
     name: 'Tradable',
-    checked: false,
-    predicate(item: Item): boolean {
-      return item.isTradable;
-    },
     filterOptions: [
       {
         value: true,
@@ -72,10 +77,6 @@ export const defaultTableFilters: Array<TableFilter> = [
   },
   {
     name: 'Unknown plans',
-    checked: false,
-    predicate(item: Item): boolean {
-      return item.filterFlag === 'NOTES' && !item.isLearnedRecipe;
-    },
     filterOptions: [
       {
         value: false,
@@ -91,11 +92,6 @@ export const defaultTableFilters: Array<TableFilter> = [
   },
   {
     name: 'Listed in vendor',
-    checked: false,
-    predicate(item: Item): boolean {
-      // @ts-ignore
-      return item.vendingData && item.vendingData.price && item.vendingData.price !== 0;
-    },
     filterOptions: [
       {
         value: 0,
@@ -131,7 +127,38 @@ class FilterService {
       checked: false,
     },
     {
-      id: '',
+      id: '1',
+      text: '',
+      value: '',
+      checked: false,
+      isSeparator: true
+    },
+    {
+      id: 'priceCheck',
+      text: 'Auto price check',
+      value: 'priceCheck',
+      checked: false,
+      isContext: true,
+      tooltipText: 'Automatically get price estimates(WARNING: this may take a lot of processing time)'
+    },
+    {
+      id: 'shortenResponse',
+      text: 'Shorten response',
+      value: 'shortenResponse',
+      checked: true,
+      isContext: true,
+      tooltipText: 'Get rids of some unused fields, so website performance is better'
+    },
+    {
+      id: 'fed76Enhance',
+      text: 'Enhance FED76',
+      value: 'fed76Enhance',
+      checked: true,
+      isContext: true,
+      tooltipText: 'If item is listed in vendor - item name, leg. mods is sent to FED76 service to enhance price check estimates and make them more realistic'
+    },
+    {
+      id: '2',
       text: '',
       value: '',
       checked: false,
@@ -183,54 +210,6 @@ class FilterService {
     })
   }
 
-  private static isSameFilter(filter: UploadFilter, input: string): boolean {
-    return filter.text === input || filter.id === input || filter.value === input;
-  }
-
-  getUploadFileFilters(input: Array<string>): Promise<UploadFileFilters> {
-    return this.getFilterFlags().then(filterFlags => {
-      let uploadFilters = this.buildUploadFilters(filterFlags);
-      const uploadFileFilter: UploadFileFilters = {
-        filterFlags: []
-      };
-      input.forEach(selectedFilter => {
-        uploadFilters.forEach(filter => {
-          if (FilterService.isSameFilter(filter, selectedFilter)) {
-            uploadFileFilter.filterFlags?.push(filter.text);
-          }
-        });
-      });
-      return Promise.resolve(uploadFileFilter);
-    });
-  }
-
-  private buildTableFilters(filterFlags: Array<FilterFlag>): Array<TableFilter> {
-    let filters: Array<TableFilter> = [];
-    filters.push(...defaultTableFilters);
-    // filterFlags.forEach(filterFlag => {
-    //   filters.push({
-    //     name: filterFlag.value,
-    //     checked: false,
-    //     predicate: filterFlagPredicate(filterFlag.name)
-    //   })
-    // });
-    return filters;
-  }
-
-  getTableFilters(): Promise<Array<TableFilter>> {
-    if (this.filterFlagsReady) {
-      return Promise.resolve(this.buildTableFilters(this.filterFlags));
-    }
-    return this.getFilterFlags().then(filterFlags => {
-      return Promise.resolve(this.buildTableFilters(filterFlags));
-    })
-  }
-}
-
-const filterFlagPredicate = (filterFlag: string) => {
-  return (item: Item) => {
-    return item.filterFlag === filterFlag;
-  }
 }
 
 export const filterService = new FilterService();

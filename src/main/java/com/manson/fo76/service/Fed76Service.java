@@ -7,7 +7,6 @@ import com.manson.domain.fed76.ItemPriceCheckResponse;
 import com.manson.domain.fed76.PlanPriceCheckResponse;
 import com.manson.domain.fed76.PriceCheckRequest;
 import com.manson.domain.fed76.mapping.MappingResponse;
-import com.manson.domain.fed76.pricing.PriceEnhanceRequest;
 import com.manson.domain.fed76.pricing.VendorData;
 import com.manson.domain.fo76.items.enums.ArmorGrade;
 import com.manson.domain.fo76.items.enums.FilterFlag;
@@ -16,6 +15,7 @@ import com.manson.domain.itemextractor.ItemDetails;
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.LegendaryMod;
 import com.manson.fo76.domain.fed76.PriceCheckCacheItem;
+import com.manson.fo76.domain.fed76.PriceEnhanceRequest;
 import com.manson.fo76.repository.PriceCheckRepository;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -39,8 +39,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class Fed76Service extends BaseRestClient {
 
-  private static final Map<ArmorGrade, String> GRADE_TO_GAME_ID_MAP = new EnumMap<>(ArmorGrade.class);
   public static final boolean USE_ID = false;
+  private static final Map<ArmorGrade, String> GRADE_TO_GAME_ID_MAP = new EnumMap<>(ArmorGrade.class);
 
   static {
     GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Light, "00182E78");
@@ -144,6 +144,8 @@ public class Fed76Service extends BaseRestClient {
     }
     ItemDetails itemDetails = itemResponse.getItemDetails();
     PriceEnhanceRequest request = new PriceEnhanceRequest();
+    request.setItemName(itemDetails.getName());
+    request.setGameId(itemDetails.getConfig().getGameId());
     request.setVendingData(
         VendorData
             .builder()
@@ -156,9 +158,8 @@ public class Fed76Service extends BaseRestClient {
           .armorGrade(config.getArmorGrade().getValue())
           .armorId(config.getArmorId())
           .build());
-    } else {
-      request.setArmorConfig(null);
     }
+    request.setLegendary(itemResponse.getIsLegendary());
     if (CollectionUtils.isNotEmpty(itemDetails.getLegendaryMods())) {
       List<com.manson.domain.fed76.pricing.LegendaryMod> mods = itemDetails.getLegendaryMods()
           .stream().map(x -> {
@@ -245,6 +246,6 @@ public class Fed76Service extends BaseRestClient {
     public static final String MAPPING = BASE + "pricing/mapping";
     public static final String PLAN_PRICE_API = BASE + "plan-api/";
     public static final String ARMOR_WEAPON_PRICE_API = BASE + "pricing-api/";
-    public static final String ENHANCE_PRICE_API = BASE + BASE + "pricing/parse";
+    public static final String ENHANCE_PRICE_API = BASE + "pricing/parse";
   }
 }
