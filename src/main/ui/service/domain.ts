@@ -4,7 +4,7 @@ export const DISCORD_LINK = 'https://discord.gg/7fef733';
 export const NEXUS_LINK = 'https://www.nexusmods.com/fallout76/mods/698';
 export const GH_LINK = 'https://github.com/sdaskaliesku/fo76tradeServer';
 export const COMPANION_LINK = 'https://www.nexusmods.com/fallout76/mods/744';
-export const APP_VERSION = '0.94';
+export const APP_VERSION = '0.95';
 export const MIN_MOD_SUPPORTED_VERSION = 0.4;
 
 export declare interface ModDataRequest {
