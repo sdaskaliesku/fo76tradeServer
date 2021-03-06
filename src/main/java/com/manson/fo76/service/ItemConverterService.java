@@ -488,6 +488,7 @@ public class ItemConverterService {
         if (Objects.isNull(descriptor)) {
           descriptor = new LegendaryModDescriptor();
         }
+        legendaryMod.setValue(getDefaultText(descriptor.getTranslations()));
         String abbreviation = descriptor.getAbbreviation();
         if (StringUtils.isBlank(abbreviation)) {
           abbreviation = "";
