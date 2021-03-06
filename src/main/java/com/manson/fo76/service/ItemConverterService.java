@@ -1,6 +1,5 @@
 package com.manson.fo76.service;
 
-import static com.manson.fo76.config.AppConfig.ENABLE_PRICE_ENHANCE;
 import static com.manson.fo76.helper.Utils.silentParse;
 
 import com.google.common.collect.Sets;
@@ -25,6 +24,7 @@ import com.manson.domain.itemextractor.ModData;
 import com.manson.domain.itemextractor.ModDataRequest;
 import com.manson.domain.itemextractor.OwnerInfo;
 import com.manson.domain.itemextractor.Stats;
+import com.manson.fo76.domain.ItemContext;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -44,6 +44,7 @@ import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -245,18 +246,18 @@ public class ItemConverterService {
   }
 
   private List<ItemResponse> filterItems(List<ItemDescriptor> items, ItemsUploadFilters itemsUploadFilters,
-      OwnerInfo ownerInfo, ItemSource itemSource, boolean autoPriceCheck) {
+      OwnerInfo ownerInfo, ItemSource itemSource, ItemContext context) {
     if (CollectionUtils.isEmpty(items)) {
       return new ArrayList<>();
     }
     List<Predicate<ItemDescriptor>> predicates = buildPredicates(itemsUploadFilters.getFilterFlags());
     return items.stream()
         .filter(itemDescriptor -> matchesFilter(predicates, itemDescriptor))
-        .map(x -> fromItemDescriptor(x, ownerInfo, itemSource, autoPriceCheck))
+        .map(x -> fromItemDescriptor(x, ownerInfo, itemSource, context))
         .collect(Collectors.toList());
   }
 
-  public List<ItemResponse> prepareModData(ModData modData, ItemsUploadFilters filters, boolean autoPriceCheck) {
+  public List<ItemResponse> prepareModData(ModData modData, ItemsUploadFilters filters, ItemContext context) {
     if (modData == null || MapUtils.isEmpty(modData.getCharacterInventories())) {
       return new ArrayList<>();
     }
@@ -266,15 +267,15 @@ public class ItemConverterService {
     for (CharacterInventory inventory : inventories) {
       OwnerInfo ownerInfo = createOwnerInfo(inventory);
       allItems
-          .addAll(filterItems(inventory.getPlayerInventory(), filters, ownerInfo, ItemSource.PIP_BOY, autoPriceCheck));
+          .addAll(filterItems(inventory.getPlayerInventory(), filters, ownerInfo, ItemSource.PIP_BOY, context));
       allItems
-          .addAll(filterItems(inventory.getStashInventory(), filters, ownerInfo, ItemSource.CONTAINER, autoPriceCheck));
+          .addAll(filterItems(inventory.getStashInventory(), filters, ownerInfo, ItemSource.CONTAINER, context));
     }
     return dedupeItems(allItems);
   }
 
   private ItemResponse fromItemDescriptor(ItemDescriptor descriptor, OwnerInfo ownerInfo, ItemSource itemSource,
-      boolean autoPriceCheck) {
+      ItemContext context) {
     FilterFlag filterFlag = FilterFlag.fromInt(descriptor.getFilterFlag());
     ItemResponse itemResponse = ItemResponse.builder()
         .id(UUID.randomUUID().toString())
@@ -299,9 +300,9 @@ public class ItemConverterService {
         .scrapAllowed(descriptor.isScrapAllowed())
         .isAutoScrappable(descriptor.isAutoScrappable())
         .build();
-    itemResponse.setPriceCheckResponse(getPriceCheck(itemResponse, autoPriceCheck));
+    itemResponse.setPriceCheckResponse(getPriceCheck(itemResponse, context.isPriceCheck()));
     itemResponse.setFilterFlag(clarifyFilterFlag(itemResponse, descriptor));
-    if (ENABLE_PRICE_ENHANCE && isValidForPriceCheckEnhance(itemResponse)) {
+    if (context.isFed76Enhance() && isValidForPriceCheckEnhance(itemResponse)) {
       PriceEnhanceRequest request = fed76Service.createPriceEnhanceRequest(itemResponse);
       if (request != null) {
         Response response = fed76Service.enhancePriceCheck(request);
@@ -310,7 +311,30 @@ public class ItemConverterService {
         log.error("Item matches price enhance, but has missing data: {}", itemResponse);
       }
     }
+    if (context.isShortenResponse()) {
+      return shortenItemDescription(itemResponse);
+    }
     return itemResponse;
+  }
+
+  private static ItemResponse shortenItemDescription(ItemResponse item) {
+    if (Objects.isNull(item)) {
+      return null;
+    }
+    if (Objects.nonNull(item.getItemDetails())) {
+      ItemConfig config = item.getItemDetails().getConfig();
+      if (Objects.nonNull(config)) {
+        ItemConfig itemConfig = new ItemConfig();
+        BeanUtils.copyProperties(config, itemConfig);
+        itemConfig.setTexts(null);
+        item.getItemDetails().setConfig(itemConfig);
+      }
+      item.getItemDetails().setStats(null);
+    }
+    if (Objects.nonNull(item.getVendingData())) {
+      item.getVendingData().setUnknownFields(null);
+    }
+    return item;
   }
 
   private BasePriceCheckResponse getPriceCheck(ItemResponse itemResponse, boolean autoPriceCheck) {
@@ -487,9 +511,9 @@ public class ItemConverterService {
     return mods;
   }
 
-  public List<ItemResponse> prepareModData(ModDataRequest request, boolean autoPriceCheck) {
+  public List<ItemResponse> prepareModData(ModDataRequest request, ItemContext context) {
     // TODO: add dedupe logic
-    List<ItemResponse> responses = prepareModData(request.getModData(), request.getFilters(), autoPriceCheck);
+    List<ItemResponse> responses = prepareModData(request.getModData(), request.getFilters(), context);
     if (request.getFilters().isPriceCheckOnly()) {
       return responses.stream().filter(ItemConverterService::matchesPriceCheckOnly).collect(Collectors.toList());
     }

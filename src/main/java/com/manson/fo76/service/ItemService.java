@@ -3,6 +3,7 @@ package com.manson.fo76.service;
 
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.ModDataRequest;
+import com.manson.fo76.domain.ItemContext;
 import com.manson.fo76.domain.ReportedItem;
 import com.manson.fo76.repository.ReportedItemRepository;
 import java.util.Date;
@@ -30,8 +31,8 @@ public class ItemService {
     return reportedItemRepository.save(item);
   }
 
-  public List<ItemResponse> prepareModData(ModDataRequest request, boolean autoPriceCheck) {
-    return itemConverterService.prepareModData(request, autoPriceCheck);
+  public List<ItemResponse> prepareModData(ModDataRequest request, ItemContext context) {
+    return itemConverterService.prepareModData(request, context);
   }
 
 }

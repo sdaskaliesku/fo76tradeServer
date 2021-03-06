@@ -10,7 +10,7 @@ class ItemService extends BaseService {
   }
 
   prepareModData(modDataRequest: ModDataRequest) {
-    const finalUrl = `${this.baseEndPoint}prepareModData`;
+    const finalUrl = `${this.baseEndPoint}prepareModData?priceCheck=false&shortenResponse=true&fed76Enhance=false`;
     return this.performRequest({
       url: finalUrl,
       method: 'POST',

@@ -1,11 +1,11 @@
 package com.manson.fo76.web.api;
 
-import static com.manson.fo76.config.AppConfig.ENABLE_AUTO_PRICE_CHECK;
 
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.ItemsUploadFilters;
 import com.manson.domain.itemextractor.ModData;
 import com.manson.domain.itemextractor.ModDataRequest;
+import com.manson.fo76.domain.ItemContext;
 import com.manson.fo76.domain.ReportedItem;
 import com.manson.fo76.helper.Utils;
 import com.manson.fo76.service.ItemService;
@@ -24,42 +24,54 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/items")
 public class ItemController {
 
-  private final ItemService itemService;
+    private final ItemService itemService;
 
-  @Autowired
-  public ItemController(ItemService itemService) {
-    this.itemService = itemService;
-  }
-
-  @PostMapping(value = "/prepareModDataRaw", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
-  public Object prepareModDataRaw(
-      @QueryParam(value = "autoPriceCheck") Boolean autoPriceCheck,
-      @QueryParam(value = "toCSV") boolean toCSV,
-      @RequestBody ModData modData) {
-    try {
-      ModDataRequest request = new ModDataRequest();
-      request.setFilters(new ItemsUploadFilters());
-      request.setModData(modData);
-      List<ItemResponse> responses = itemService.prepareModData(request, autoPriceCheck);
-      if (toCSV) {
-        return Utils.toCSV(responses);
-      }
-      return responses;
-    } catch (Exception e) {
-      log.error("Error while preparing mod data {}", modData, e);
-      throw e;
+    @Autowired
+    public ItemController(ItemService itemService) {
+        this.itemService = itemService;
     }
-  }
 
-  @PostMapping(value = "/prepareModData", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
-  public List<ItemResponse> prepareModData(@RequestBody ModDataRequest modDataRequest) {
-    try {
-      return itemService.prepareModData(modDataRequest, ENABLE_AUTO_PRICE_CHECK);
-    } catch (Exception e) {
-      log.error("Error while preparing mod data {}", modDataRequest, e);
-      throw e;
+    @PostMapping(value = "/prepareModDataRaw", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
+    public Object prepareModDataRaw(
+        @QueryParam(value = "autoPriceCheck") boolean autoPriceCheck,
+        @QueryParam(value = "fed76Enhance") boolean fed76Enhance,
+        @QueryParam(value = "shortenResponse") boolean shortenResponse,
+        @QueryParam(value = "toCSV") boolean toCSV,
+        @RequestBody ModData modData) {
+        try {
+            ModDataRequest request = new ModDataRequest();
+            request.setFilters(new ItemsUploadFilters());
+            request.setModData(modData);
+            ItemContext context = new ItemContext();
+            context.setPriceCheck(autoPriceCheck);
+            context.setFed76Enhance(fed76Enhance);
+            context.setShortenResponse(shortenResponse);
+            List<ItemResponse> responses = itemService.prepareModData(request, context);
+            if (toCSV) {
+                return Utils.toCSV(responses);
+            }
+            return responses;
+        } catch (Exception e) {
+            log.error("Error while preparing mod data {}", modData, e);
+            throw e;
+        }
     }
-  }
+
+    @PostMapping(value = "/prepareModData", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
+    public List<ItemResponse> prepareModData(@RequestBody ModDataRequest modDataRequest,
+        @QueryParam("priceCheck") boolean priceCheck, @QueryParam("fed76Enhance") boolean fed76Enhance,
+        @QueryParam("shortenResponse") boolean shortenResponse) {
+        ItemContext context = new ItemContext();
+        context.setPriceCheck(priceCheck);
+        context.setFed76Enhance(fed76Enhance);
+        context.setShortenResponse(shortenResponse);
+        try {
+            return itemService.prepareModData(modDataRequest, context);
+        } catch (Exception e) {
+            log.error("Error while preparing mod data {}", modDataRequest, e);
+            throw e;
+        }
+    }
 
   @PostMapping(value = "/report", consumes = MediaType.APPLICATION_JSON, produces = MediaType.APPLICATION_JSON)
   public ReportedItem reportItem(@RequestBody ReportedItem item) {
