@@ -2837,7 +2837,7 @@
   {
     "type": "WEAPON_MELEE",
     "id": "BearArm",
-    "gameId": "003F06E2",
+    "gameId": "005A205C",
     "enabled": true,
     "texts": {
       "de": "Bärenstark",
@@ -3131,7 +3131,7 @@
   {
     "type": "WEAPON_MELEE",
     "id": "Shovel",
-    "gameId": "004E2E20",
+    "gameId": "00043E20",
     "enabled": true,
     "texts": {
       "de": "Schaufel",
@@ -3299,7 +3299,7 @@
   {
     "type": "WEAPON_MELEE",
     "id": "MeatTenderizer",
-    "gameId": "00553295",
+    "gameId": "00553294",
     "enabled": true,
     "texts": {
       "de": "Fleischklopfer",

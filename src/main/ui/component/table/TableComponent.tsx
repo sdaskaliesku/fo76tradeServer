@@ -323,6 +323,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
       this.toast.current.show({
         severity: 'info',
         summary: 'Bulk price check done!',
+        sticky: true
       });
     });
   }
