@@ -59,6 +59,7 @@ public class ItemConverterService {
       .newHashSet(FilterFlag.WEAPON, FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
           FilterFlag.NOTES);
   private static final String INVALID_LEG_MOD = "===INVALID===";
+  private static final String HACKED_LEG_MOD = "===HACKED===";
   private static final String PRICE_CHECK_ONLY = "Price Check Only";
   private static final String TRADABLE = "Tradable";
   private static final String LEGENDARIES = "Legendaries";
@@ -515,12 +516,17 @@ public class ItemConverterService {
     }
     legendaryMod.setValue(getDefaultText(descriptor.getTranslations()));
     String abbreviation = descriptor.getAbbreviation();
-    if (StringUtils.isBlank(abbreviation)) {
-      abbreviation = INVALID_LEG_MOD;
-    }
     String gameId = descriptor.getGameId();
-    if (StringUtils.isBlank(gameId)) {
-      gameId = INVALID_LEG_MOD;
+    if (legendaryMod.getStar() > 3) {
+      abbreviation = HACKED_LEG_MOD;
+      gameId = HACKED_LEG_MOD;
+    } else {
+      if (StringUtils.isBlank(abbreviation)) {
+        abbreviation = INVALID_LEG_MOD;
+      }
+      if (StringUtils.isBlank(gameId)) {
+        gameId = INVALID_LEG_MOD;
+      }
     }
     String text = getDefaultText(descriptor.getTexts());
     legendaryMod.setAbbreviation(abbreviation);
