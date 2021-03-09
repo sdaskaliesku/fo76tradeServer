@@ -14,7 +14,7 @@ export class NavBar extends React.Component<any, any> {
       }
       return buttons.map((el: MenuItem) => {
         return (
-            <a href={el.url} target={el.target} key={el.url}>
+            <a href={el.url} target={el.target} key={el.url} className={'button-link'}>
               <Button href={el.url} icon={el.icon} className={el.className}
                       label={el.label}/>
             </a>

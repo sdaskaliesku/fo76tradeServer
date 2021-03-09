@@ -7,8 +7,10 @@ import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.config.XTranslatorConfig;
 import com.manson.domain.itemextractor.ItemConfig;
+import com.manson.fo76.helper.Utils;
 import java.net.URL;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -51,10 +53,14 @@ public class GameConfigHolderService {
     this.weaponNames = loadConfig(objectMapper, WEAPON_NAMES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.planNames = loadConfig(objectMapper, PLAN_RECIPES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.armorNames = loadConfig(objectMapper, ARMOR_NAMES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
+    sortByName(this.weaponNames);
+    sortByName(this.planNames);
+    sortByName(this.armorNames);
   }
 
-  private static List<ItemConfig> sortByName(List<ItemConfig> itemConfigs) {
-    return null;
+  private static void sortByName(List<ItemConfig> itemConfigs) {
+    itemConfigs.sort(
+        (o1, o2) -> Utils.getDefaultText(o2.getTexts()).length() - Utils.getDefaultText(o1.getTexts()).length());
   }
 
 

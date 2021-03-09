@@ -87,6 +87,11 @@ export const columns = [
     field: 'priceCheckResponse.review.description',
     visible: false
   }),
+  createColumnDef({
+    header: 'Fed76 Plan verdict',
+    field: 'priceCheckResponse.verdict',
+    visible: false
+  }),
   createColumnDef({header: 'Description', field: 'description', visible: false}),
   createColumnDef({header: 'Tradable', field: 'isTradable', visible: false, isBool: true}),
   createColumnDef({header: 'Legendary', field: 'isLegendary', visible: false, isBool: true}),

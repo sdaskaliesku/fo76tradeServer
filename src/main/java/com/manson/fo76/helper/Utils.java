@@ -4,12 +4,16 @@ import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.fo76.config.AppConfig;
 import java.io.StringWriter;
 import java.util.List;
+import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 
 @Slf4j
 public class Utils {
+
+  private static final String DEFAULT_LOCALE = "en";
 
   public static boolean areSameItems(ItemResponse first, ItemResponse second) {
     try {
@@ -45,6 +49,13 @@ public class Utils {
     } catch (Exception ignored) {
     }
     return -1;
+  }
+
+  public static String getDefaultText(Map<String, String> map) {
+    if (MapUtils.isEmpty(map)) {
+      return StringUtils.EMPTY;
+    }
+    return map.get(DEFAULT_LOCALE);
   }
 
 }

@@ -18,9 +18,7 @@ MongoDB config:
 
 `mongo.url` - db url
 
-`jwt.secret` - secret for jwt generation
-
-e.g. `-Dmongo.user=<db user> -Dmongo.password=<db user passsword> -Dmongo.db=<db name> -Dmongo.url=<url> -Djwt.secret=<secret>`
+e.g. `-Dmongo.user=<db user> -Dmongo.password=<db user passsword> -Dmongo.db=<db name> -Dmongo.url=<url>`
 
 2. Run Main class
 

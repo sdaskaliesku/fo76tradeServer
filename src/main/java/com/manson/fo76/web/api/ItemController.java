@@ -1,6 +1,8 @@
 package com.manson.fo76.web.api;
 
 
+import com.manson.domain.fo76.items.enums.FilterFlag;
+import com.manson.domain.itemextractor.ItemConfig;
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.ItemsUploadFilters;
 import com.manson.domain.itemextractor.ModData;
@@ -14,6 +16,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -81,6 +84,15 @@ public class ItemController {
       log.error("Error reporting item {}", item, e);
       throw e;
     }
+  }
 
+  @GetMapping(value = "reported", produces = MediaType.APPLICATION_JSON)
+  public List<ReportedItem> getAllReportedItems() {
+        return itemService.getAllReportedItems();
+  }
+
+  @GetMapping(value = "itemConfig", produces = MediaType.APPLICATION_JSON)
+  public ItemConfig getItemConfig(@QueryParam(value = "name") String name, @QueryParam(value = "filterFlag") String filterFlag) {
+    return itemService.findItemConfig(name, FilterFlag.fromString(filterFlag));
   }
 }

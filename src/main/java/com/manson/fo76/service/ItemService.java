@@ -1,6 +1,8 @@
 package com.manson.fo76.service;
 
 
+import com.manson.domain.fo76.items.enums.FilterFlag;
+import com.manson.domain.itemextractor.ItemConfig;
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.ModDataRequest;
 import com.manson.fo76.domain.ItemContext;
@@ -33,6 +35,14 @@ public class ItemService {
 
   public List<ItemResponse> prepareModData(ModDataRequest request, ItemContext context) {
     return itemConverterService.prepareModData(request, context);
+  }
+
+  public List<ReportedItem> getAllReportedItems() {
+    return reportedItemRepository.findAll();
+  }
+
+  public ItemConfig findItemConfig(String name, FilterFlag filterFlag) {
+    return itemConverterService.findItemConfig(name, filterFlag);
   }
 
 }

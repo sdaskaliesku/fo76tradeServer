@@ -5,7 +5,7 @@ public class Queries {
   private static final String SELECT = "SELECT * from fo76jdump WHERE ";
   private static final String PLAYABLE_NAME_NOT_NULL = " and flags not like '%Non-Playable%' and name != 'null'";
   public static final String LEG_MODS = SELECT
-      + "signature = \"OMOD\" and editorid like '%mod_Legendary%'" + PLAYABLE_NAME_NOT_NULL;
+      + "signature = \"OMOD\" and editorid like '%mod_Legendary%'";// + PLAYABLE_NAME_NOT_NULL;
   public static final String AMMO = SELECT + "signature = \"AMMO\"" + PLAYABLE_NAME_NOT_NULL;
   public static final String ARMO = SELECT + "signature = \"ARMO\"" + PLAYABLE_NAME_NOT_NULL;
   public static final String WEAPON = SELECT + "signature = 'WEAP'\n"

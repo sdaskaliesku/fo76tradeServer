@@ -69,7 +69,7 @@ export class FileUploader extends React.Component<FileUploaderProps, FileUploade
         const filters: UploadFileFilters = {
           filterFlags: this.state.filters.filter((f: UploadFilter) => !f.isContext).filter((f: UploadFilter) => f.checked).map((f: UploadFilter) => f.text)
         };
-        this.state.filters.filter((f: UploadFilter) => f.isContext).filter((f: UploadFilter) => f.checked).forEach((f: UploadFilter) => {
+        this.state.filters.filter((f: UploadFilter) => f.isContext).forEach((f: UploadFilter) => {
           // @ts-ignore
           itemContext[f.id] = f.checked;
         });

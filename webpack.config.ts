@@ -1,6 +1,8 @@
 import path from "path";
 import webpack from "webpack";
 
+const outputPath = './src/main/resources/static/built/';
+
 const config: webpack.Configuration = {
   entry: "./src/main/ui/index.tsx",
   devtool: false,
@@ -55,11 +57,11 @@ const config: webpack.Configuration = {
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    path: path.join(__dirname, './src/main/resources/static/built/'),
+    path: path.join(__dirname, outputPath),
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, './src/main/resources/static/built/'),
+    contentBase: path.join(__dirname, outputPath),
     compress: true,
     port: 4000,
   }

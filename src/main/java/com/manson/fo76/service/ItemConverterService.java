@@ -1,6 +1,8 @@
 package com.manson.fo76.service;
 
+import static com.manson.fo76.helper.Utils.getDefaultText;
 import static com.manson.fo76.helper.Utils.silentParse;
+import static com.manson.fo76.service.GameConfigService.POPULATE_CONFIG_FOR_EVERYTHING;
 
 import com.google.common.collect.Sets;
 import com.manson.domain.config.ArmorConfig;
@@ -26,6 +28,7 @@ import com.manson.domain.itemextractor.Stats;
 import com.manson.fo76.domain.ItemContext;
 import com.manson.fo76.domain.fed76.PriceEnhanceRequest;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -55,10 +58,10 @@ public class ItemConverterService {
   public static final Set<FilterFlag> SUPPORTED_PRICE_CHECK_ITEMS = Sets
       .newHashSet(FilterFlag.WEAPON, FilterFlag.ARMOR, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
           FilterFlag.NOTES);
+  private static final String INVALID_LEG_MOD = "===INVALID===";
   private static final String PRICE_CHECK_ONLY = "Price Check Only";
   private static final String TRADABLE = "Tradable";
   private static final String LEGENDARIES = "Legendaries";
-  private static final String DEFAULT_LOCALE = "en";
   private static final Set<ItemCardText> IGNORED_CARDS = Sets.newHashSet(ItemCardText.LEG_MODS, ItemCardText.DESC);
   private static final Set<FilterFlag> TYPES_FOR_NAME_CONVERT = Sets
       .newHashSet(FilterFlag.ARMOR, FilterFlag.WEAPON, FilterFlag.WEAPON_MELEE, FilterFlag.WEAPON_RANGED,
@@ -179,15 +182,8 @@ public class ItemConverterService {
         .collect(Collectors.joining("/"));
   }
 
-  private static boolean shouldConvertItemName(ItemDescriptor item) {
-    return TYPES_FOR_NAME_CONVERT.contains(item.getFilterFlagEnum());
-  }
-
-  private static String getDefaultText(Map<String, String> map) {
-    if (MapUtils.isEmpty(map)) {
-      return StringUtils.EMPTY;
-    }
-    return map.get(DEFAULT_LOCALE);
+  private static boolean shouldConvertItemName(FilterFlag filterFlag) {
+    return TYPES_FOR_NAME_CONVERT.contains(filterFlag);
   }
 
   private static String getItemResponseKey(ItemResponse item) {
@@ -222,24 +218,45 @@ public class ItemConverterService {
     if (Objects.isNull(item)) {
       return null;
     }
-    if (Objects.nonNull(item.getItemDetails())) {
-      ItemConfig config = item.getItemDetails().getConfig();
+    ItemDetails itemDetails = item.getItemDetails();
+    if (Objects.nonNull(itemDetails)) {
+      ItemConfig config = itemDetails.getConfig();
       if (Objects.nonNull(config)) {
         ItemConfig itemConfig = new ItemConfig();
         BeanUtils.copyProperties(config, itemConfig);
         itemConfig.setTexts(null);
-        item.getItemDetails().setConfig(itemConfig);
+        itemDetails.setConfig(itemConfig);
       }
-      item.getItemDetails().setStats(null);
+      if (Objects.nonNull(itemDetails.getArmorConfig())) {
+        ArmorConfig armorConfig = new ArmorConfig();
+        BeanUtils.copyProperties(armorConfig, itemDetails.getArmorConfig());
+        armorConfig.setArmorPart(null);
+        armorConfig.setArmorType(null);
+        armorConfig.setHelper(null);
+        armorConfig.setShortTerm(null);
+        itemDetails.setArmorConfig(armorConfig);
+      }
+      itemDetails.setStats(null);
     }
     if (Objects.nonNull(item.getVendingData())) {
       item.getVendingData().setUnknownFields(null);
     }
+    item.setServerHandleId(null);
+    item.setItemDetails(itemDetails);
     return item;
   }
 
-  private FilterFlag clarifyFilterFlag(ItemResponse item, ItemDescriptor descriptor) {
-    FilterFlag filterFlag = item.getFilterFlag();
+  private static LegendaryMod invalidMod(String input) {
+    LegendaryMod legendaryMod = new LegendaryMod();
+    legendaryMod.setText(input);
+    legendaryMod.setStar(999);
+    legendaryMod.setValue(input);
+    legendaryMod.setAbbreviation(INVALID_LEG_MOD);
+    return legendaryMod;
+  }
+
+  private FilterFlag clarifyFilterFlag(ItemDescriptor descriptor) {
+    FilterFlag filterFlag = descriptor.getFilterFlagEnum();
     if (filterFlag == FilterFlag.WEAPON) {
       for (ItemCardEntry itemCardEntry : descriptor.getItemCardEntries()) {
         if (itemCardEntry.getDamageTypeEnum() == DamageType.AMMO) {
@@ -255,11 +272,6 @@ public class ItemConverterService {
         if (cardText == ItemCardText.RNG && silentParse(itemCardEntry.getValue()).doubleValue() > 0) {
           return FilterFlag.WEAPON_THROWN;
         }
-      }
-    }
-    if (item.getItemDetails() != null) {
-      if (item.getItemDetails().getConfig() != null) {
-        return item.getItemDetails().getConfig().getType();
       }
     }
     return filterFlag;
@@ -321,7 +333,7 @@ public class ItemConverterService {
         .isAutoScrappable(descriptor.isAutoScrappable())
         .build();
     itemResponse.setPriceCheckResponse(getPriceCheck(itemResponse, context.isPriceCheck()));
-    itemResponse.setFilterFlag(clarifyFilterFlag(itemResponse, descriptor));
+    itemResponse.setFilterFlag(clarifyFilterFlag(descriptor));
     if (context.isFed76Enhance() && isValidForPriceCheckEnhance(itemResponse)) {
       sendPriceEnhanceRequest(itemResponse);
     }
@@ -362,18 +374,35 @@ public class ItemConverterService {
     return priceCheckResponse;
   }
 
-  private ItemConfig findItemConfig(ItemDescriptor descriptor) {
+  public ItemConfig findItemConfig(String name, FilterFlag filterFlag) {
+    if (!shouldConvertItemName(filterFlag)) {
+      return null;
+    }
+    switch (filterFlag) {
+      case NOTES:
+        return gameConfigService.findPlanConfig(name, filterFlag);
+      case ARMOR:
+      case POWER_ARMOR:
+      case APPAREL:
+        return gameConfigService.findArmorConfig(name, filterFlag);
+      default:
+        return gameConfigService.findWeaponConfig(name, filterFlag);
+    }
+  }
+
+  private ItemConfig findItemConfig(ItemDescriptor descriptor, FilterFlag filterFlag) {
     // TODO: add Status field to ItemConfig - FOUND, NON_LEGENDARY, NON_TRADABLE, NOT_FOUND, etc.
-    if (shouldConvertItemName(descriptor) && descriptor.isTradable()) {
+    boolean isTradable = POPULATE_CONFIG_FOR_EVERYTHING || descriptor.isTradable();
+    if (shouldConvertItemName(filterFlag) && isTradable) {
       switch (descriptor.getFilterFlagEnum()) {
         case NOTES:
-          return gameConfigService.findPlanConfig(descriptor);
+          return gameConfigService.findPlanConfig(descriptor, filterFlag);
         case ARMOR:
         case POWER_ARMOR:
         case APPAREL:
-          return gameConfigService.findArmorConfig(descriptor);
+          return gameConfigService.findArmorConfig(descriptor, filterFlag);
         default:
-          return gameConfigService.findWeaponConfig(descriptor);
+          return gameConfigService.findWeaponConfig(descriptor, filterFlag);
       }
     }
     return null;
@@ -391,15 +420,11 @@ public class ItemConverterService {
     String abbreviationId = buildLegendaryAbbreviation(legendaryMods, LegendaryMod::getGameId);
     double packWeight = Objects.isNull(descriptor.getWeight()) ? 0 : descriptor.getWeight();
 
-//    FilterFlag filterFlag = descriptor.getFilterFlagEnum();
-    ItemConfig config = findItemConfig(descriptor);
+    FilterFlag filterFlag = clarifyFilterFlag(descriptor);
+    ItemConfig config = findItemConfig(descriptor, filterFlag);
     String name = StringUtils.EMPTY;
     if (Objects.nonNull(config)) {
       name = getDefaultText(config.getTexts());
-//      if (config.getType() == FilterFlag.NOTES) {
-//        filterFlag = FilterFlag.PLANS;
-//        config.setType(filterFlag);
-//      }
     }
     List<Stats> stats = buildStats(pairs);
     ArmorConfig armorConfig = gameConfigService.findArmorType(stats, abbreviation);
@@ -413,8 +438,7 @@ public class ItemConverterService {
         .armorConfig(armorConfig)
         .legendaryMods(legendaryMods)
         .itemSource(itemSource)
-        .filterFlag(descriptor.getFilterFlagEnum())
-//        .filterFlag(filteFlag)
+        .filterFlag(filterFlag)
         .stats(stats)
         .ownerInfo(ownerInfo)
         .totalWeight(packWeight * descriptor.getCount())
@@ -478,51 +502,60 @@ public class ItemConverterService {
     return getLegendaryMods(pair.getKey(), pair.getValue(), filterFlag);
   }
 
+  public LegendaryMod getLegendaryMod(String mod, FilterFlag filterFlag) {
+    if (StringUtils.isBlank(mod) || StringUtils.isBlank(mod.trim())) {
+      return invalidMod(mod);
+    }
+    String newMod = mod.trim();
+    LegendaryMod legendaryMod = new LegendaryMod();
+    legendaryMod.setText(mod);
+    LegendaryModDescriptor descriptor = gameConfigService.findLegendaryModDescriptor(newMod, filterFlag);
+    if (Objects.isNull(descriptor)) {
+      return invalidMod(mod);
+    }
+    legendaryMod.setValue(getDefaultText(descriptor.getTranslations()));
+    String abbreviation = descriptor.getAbbreviation();
+    if (StringUtils.isBlank(abbreviation)) {
+      abbreviation = INVALID_LEG_MOD;
+    }
+    String gameId = descriptor.getGameId();
+    if (StringUtils.isBlank(gameId)) {
+      gameId = INVALID_LEG_MOD;
+    }
+    String text = getDefaultText(descriptor.getTexts());
+    legendaryMod.setAbbreviation(abbreviation);
+    legendaryMod.setStar(descriptor.getStar());
+    legendaryMod.setId(descriptor.getId());
+    legendaryMod.setGameId(gameId);
+    if (StringUtils.isBlank(text)) {
+      text = mod;
+    }
+    legendaryMod.setText(text);
+    return legendaryMod;
+  }
+
+  public List<LegendaryMod> getLegendaryMods(List<String> modTexts, FilterFlag filterFlag) {
+    return modTexts
+        .stream()
+        .map(mod -> getLegendaryMod(mod, filterFlag))
+        .sorted(Comparator.comparingInt(LegendaryMod::getStar))
+        .collect(Collectors.toList());
+  }
+
   private List<LegendaryMod> getLegendaryMods(ItemCardEntry itemCardEntry, ItemCardText itemCardText,
       FilterFlag filterFlag) {
     List<LegendaryMod> mods = new ArrayList<>();
-    if (itemCardText == ItemCardText.DESC) {
-      if (StringUtils.isBlank(itemCardEntry.getValue())) {
-        return mods;
-      }
-      String[] strings = itemCardEntry.getValue().split("\n");
-      for (String mod : strings) {
-        String newMod = mod.trim();
-        if (StringUtils.isBlank(newMod)) {
-          continue;
-        }
-        LegendaryMod legendaryMod = new LegendaryMod();
-        legendaryMod.setText(newMod);
-        LegendaryModDescriptor descriptor = gameConfigService.findLegendaryModDescriptor(newMod, filterFlag);
-        if (Objects.isNull(descriptor)) {
-          descriptor = new LegendaryModDescriptor();
-        }
-        legendaryMod.setValue(getDefaultText(descriptor.getTranslations()));
-        String abbreviation = descriptor.getAbbreviation();
-        if (StringUtils.isBlank(abbreviation)) {
-          abbreviation = "";
-        }
-        String gameId = descriptor.getGameId();
-        if (StringUtils.isBlank(gameId)) {
-          gameId = "";
-        }
-        String text = getDefaultText(descriptor.getTexts());
-        legendaryMod.setAbbreviation(abbreviation);
-        legendaryMod.setStar(descriptor.getStar());
-        legendaryMod.setId(descriptor.getId());
-        legendaryMod.setGameId(gameId);
-        legendaryMod.setText(text);
-        mods.add(legendaryMod);
-      }
+    if (itemCardText != ItemCardText.DESC) {
+      return mods;
     }
-    if (CollectionUtils.isNotEmpty(mods)) {
-      mods.sort(Comparator.comparingInt(LegendaryMod::getStar));
+    if (StringUtils.isBlank(itemCardEntry.getValue())) {
+      return mods;
     }
-    return mods;
+    List<String> strings = Arrays.asList(itemCardEntry.getValue().split("\n"));
+    return getLegendaryMods(strings, filterFlag);
   }
 
   public List<ItemResponse> prepareModData(ModDataRequest request, ItemContext context) {
-    // TODO: add dedupe logic
     List<ItemResponse> responses = prepareModData(request.getModData(), request.getFilters(), context);
     if (request.getFilters().isPriceCheckOnly()) {
       return responses.stream().filter(ItemConverterService::matchesPriceCheckOnly).collect(Collectors.toList());

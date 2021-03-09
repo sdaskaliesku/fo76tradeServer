@@ -8,12 +8,12 @@ import com.manson.domain.fo76.ItemDescriptor;
 import com.manson.domain.fo76.items.enums.DamageType;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
-
 import com.manson.domain.itemextractor.ItemConfig;
 import com.manson.domain.itemextractor.Stats;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +22,8 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class GameConfigService {
+
+  public static final boolean POPULATE_CONFIG_FOR_EVERYTHING = true;
 
   private static final String DOT = ".";
   private static final Set<FilterFlag> SUPPORTED_TYPES_ARMOR = Sets
@@ -81,15 +83,15 @@ public class GameConfigService {
         .orElse(null);
   }
 
-  public ItemConfig findArmorConfig(ItemDescriptor item) {
-    if (!SUPPORTED_TYPES_ARMOR.contains(item.getFilterFlagEnum()) || !item.isLegendary() || !item.isTradable()) {
+  public ItemConfig findArmorConfig(String name, FilterFlag filterFlag) {
+    if (!SUPPORTED_TYPES_ARMOR.contains(filterFlag)) {
       return null;
     }
-    String itemName = replace(item.getText());
+    String itemName = replace(name);
     for (ItemConfig config : config.getArmorNames()) {
       for (String text : config.getTexts().values()) {
-        String fedItemText = replace(text);
-        if (StringUtils.containsIgnoreCase(itemName, fedItemText)) {
+        String cleanItemText = replace(text);
+        if (StringUtils.containsIgnoreCase(itemName, cleanItemText)) {
           return config;
         }
       }
@@ -97,13 +99,22 @@ public class GameConfigService {
     return null;
   }
 
-  public ItemConfig findPlanConfig(ItemDescriptor item) {
-    if (item.getFilterFlagEnum() != FilterFlag.NOTES) {
+  public ItemConfig findArmorConfig(ItemDescriptor item, FilterFlag filterFlag) {
+    if (!POPULATE_CONFIG_FOR_EVERYTHING) {
+      if (!item.isLegendary() || !item.isTradable()) {
+        return null;
+      }
+    }
+    return findArmorConfig(item.getText(), filterFlag);
+  }
+
+  public ItemConfig findPlanConfig(String itemName, FilterFlag filterFlag) {
+    if (filterFlag != FilterFlag.NOTES) {
       return null;
     }
     for (ItemConfig config : config.getPlanNames()) {
       for (String text : config.getTexts().values()) {
-        if (StringUtils.equalsIgnoreCase(item.getText(), text)) {
+        if (StringUtils.equalsIgnoreCase(itemName, text)) {
           return config;
         }
       }
@@ -111,22 +122,33 @@ public class GameConfigService {
     return null;
   }
 
-  public ItemConfig findWeaponConfig(ItemDescriptor item) {
-    if (!item.isLegendary() || !item.isTradable()) {
-      return null;
-    }
-    String itemName = replace(item.getText());
-    for (ItemConfig config : config.getWeaponNames()) {
-      if (isSameFilterFlag(config.getType(), item.getFilterFlagEnum())) {
-        for (String text : config.getTexts().values()) {
-          String fedItemText = replace(text);
-          if (StringUtils.containsIgnoreCase(itemName, fedItemText)) {
-            return config;
-          }
+  public ItemConfig findPlanConfig(ItemDescriptor item, FilterFlag filterFlag) {
+    return findPlanConfig(item.getText(), filterFlag);
+  }
+
+  public ItemConfig findWeaponConfig(String itemText, FilterFlag filterFlag) {
+    String itemName = replace(itemText);
+    List<ItemConfig> itemConfigs = config.getWeaponNames().stream().filter(x -> isSameFilterFlag(x.getType(), filterFlag))
+        .collect(Collectors.toList());
+    for (ItemConfig config : itemConfigs) {
+      for (String text : config.getTexts().values()) {
+        String cleanItemText = replace(text);
+        if (StringUtils.containsIgnoreCase(itemName, cleanItemText)) {
+          return config;
         }
       }
     }
+    // TODO: add fuzzy search for not-found items?
     return null;
+  }
+
+  public ItemConfig findWeaponConfig(ItemDescriptor item, FilterFlag filterFlag) {
+    if (!POPULATE_CONFIG_FOR_EVERYTHING) {
+      if (!item.isLegendary() || !item.isTradable()) {
+        return null;
+      }
+    }
+    return findWeaponConfig(item.getText(), filterFlag);
   }
 
   private int findDamageTypeValue(List<Stats> stats, DamageType dmgType) {
