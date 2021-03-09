@@ -517,7 +517,7 @@ public class ItemConverterService {
     legendaryMod.setValue(getDefaultText(descriptor.getTranslations()));
     String abbreviation = descriptor.getAbbreviation();
     String gameId = descriptor.getGameId();
-    if (legendaryMod.getStar() > 3) {
+    if (descriptor.getStar() > 3) {
       abbreviation = HACKED_LEG_MOD;
       gameId = descriptor.getGameId();
     } else {
