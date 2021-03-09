@@ -86,12 +86,12 @@ public class ItemController {
     }
   }
 
-  @GetMapping(value = "reported", produces = MediaType.APPLICATION_JSON)
+//  @GetMapping(value = "reported", produces = MediaType.APPLICATION_JSON)
   public List<ReportedItem> getAllReportedItems() {
         return itemService.getAllReportedItems();
   }
 
-//  @GetMapping(value = "itemConfig", produces = MediaType.APPLICATION_JSON)
+  @GetMapping(value = "itemConfig", produces = MediaType.APPLICATION_JSON)
   public ItemConfig getItemConfig(@QueryParam(value = "name") String name, @QueryParam(value = "filterFlag") String filterFlag) {
     return itemService.findItemConfig(name, FilterFlag.fromString(filterFlag));
   }
