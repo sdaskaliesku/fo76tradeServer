@@ -11,7 +11,6 @@ import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.itemextractor.ItemConfig;
 import com.manson.domain.itemextractor.Stats;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -128,24 +127,10 @@ public class GameConfigService {
     return findPlanConfig(item.getText(), filterFlag);
   }
 
-  private static final Map<String, String> WEAPON_SPECIAL_CASES = new HashMap<>();
-
-  static {
-    WEAPON_SPECIAL_CASES.put("Handmade", "00113854");
-    WEAPON_SPECIAL_CASES.put("Самодельный", "00113854");
-    WEAPON_SPECIAL_CASES.put("Napalmer", "000E5881");
-    WEAPON_SPECIAL_CASES.put("Напалмовый", "000E5881");
-    WEAPON_SPECIAL_CASES.put("Auto Grenade Launcher", "00182634");
-    WEAPON_SPECIAL_CASES.put("Автоматический гранатомет", "00182634");
-    WEAPON_SPECIAL_CASES.put("Heart Wrencher", "000D83BF");
-    WEAPON_SPECIAL_CASES.put("Inkwell's Quill", "0008C14D");
-    WEAPON_SPECIAL_CASES.put("MIRV", "000BD56F");
-    WEAPON_SPECIAL_CASES.put("M79", "0008F0EF");
-  }
-
   public ItemConfig findWeaponConfig(String itemText, FilterFlag filterFlag) {
     String itemName = replace(itemText);
-    List<ItemConfig> itemConfigs = config.getWeaponNames().stream().filter(x -> isSameFilterFlag(x.getType(), filterFlag))
+    List<ItemConfig> itemConfigs = config.getWeaponNames().stream()
+        .filter(x -> isSameFilterFlag(x.getType(), filterFlag))
         .collect(Collectors.toList());
     for (ItemConfig config : itemConfigs) {
       for (String text : config.getTexts().values()) {
@@ -155,11 +140,15 @@ public class GameConfigService {
         }
       }
     }
-    for (Map.Entry<String, String> entry : WEAPON_SPECIAL_CASES.entrySet()) {
+    return getSpecialCaseValue(itemName, config.getWeaponNames());
+  }
+
+  public ItemConfig getSpecialCaseValue(String itemName, List<ItemConfig> itemConfigs) {
+    for (Map.Entry<String, String> entry : config.getSpecialCasesConfig().entrySet()) {
       String cleanItemText = replace(entry.getKey());
       if (StringUtils.containsIgnoreCase(itemName, cleanItemText) || StringUtils
           .containsIgnoreCase(cleanItemText, itemName)) {
-        return config.getWeaponNames().stream()
+        return itemConfigs.stream()
             .filter(x -> StringUtils.equalsIgnoreCase(x.getGameId(), entry.getValue())).findFirst().orElse(null);
       }
     }

@@ -10,8 +10,8 @@ import com.manson.domain.itemextractor.ItemConfig;
 import com.manson.fo76.helper.Utils;
 import java.net.URL;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +28,7 @@ public class GameConfigHolderService {
   private static final String WEAPON_NAMES_CONFIG_FILE = "weapons.config.json";
   private static final String PLAN_RECIPES_CONFIG_FILE = "plans.config.json";
   private static final String ARMOR_NAMES_CONFIG_FILE = "armor.names.config.json";
+  private static final String SPECIAL_CASES_CONFIG_FILE = "special.cases.config.json";
   private static final TypeReference<List<LegendaryModDescriptor>> LEG_MOD_TYPE_REF = new TypeReference<List<LegendaryModDescriptor>>() {
   };
   private static final TypeReference<List<XTranslatorConfig>> X_TRANSLATOR_TYPE_REF = new TypeReference<List<XTranslatorConfig>>() {
@@ -36,12 +37,16 @@ public class GameConfigHolderService {
   };
   private static final TypeReference<List<ItemConfig>> ITEM_CONFIG_TYPE_REF = new TypeReference<List<ItemConfig>>() {
   };
+  private static final TypeReference<Map<String, String>> SPECIAL_CASES_CONFIG_REF = new TypeReference<Map<String, String>>() {
+  };
+
   private final List<LegendaryModDescriptor> legModsConfig;
   private final List<XTranslatorConfig> ammoTypes;
   private final List<ArmorConfig> armorConfigs;
   private final List<ItemConfig> weaponNames;
   private final List<ItemConfig> planNames;
   private final List<ItemConfig> armorNames;
+  private final Map<String, String> specialCasesConfig;
 
   @Autowired
   public GameConfigHolderService(ObjectMapper objectMapper) {
@@ -53,6 +58,7 @@ public class GameConfigHolderService {
     this.weaponNames = loadConfig(objectMapper, WEAPON_NAMES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.planNames = loadConfig(objectMapper, PLAN_RECIPES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.armorNames = loadConfig(objectMapper, ARMOR_NAMES_CONFIG_FILE, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
+    this.specialCasesConfig = loadConfig(objectMapper, SPECIAL_CASES_CONFIG_FILE, SPECIAL_CASES_CONFIG_REF);
     sortByName(this.weaponNames);
     sortByName(this.planNames);
     sortByName(this.armorNames);
@@ -61,6 +67,19 @@ public class GameConfigHolderService {
   private static void sortByName(List<ItemConfig> itemConfigs) {
     itemConfigs.sort(
         (o1, o2) -> Utils.getDefaultText(o2.getTexts()).length() - Utils.getDefaultText(o1.getTexts()).length());
+  }
+
+  private static <K, V> Map<K, V> loadConfig(ObjectMapper objectMapper, String file,
+      TypeReference<Map<K, V>> typeReference) {
+    try {
+      @SuppressWarnings("UnstableApiUsage")
+      URL resource = Resources.getResource(file);
+      return objectMapper.readValue(resource, typeReference);
+    } catch (Exception e) {
+      log.error("Error while loading game config", e);
+    }
+
+    return Collections.emptyMap();
   }
 
 
@@ -99,5 +118,9 @@ public class GameConfigHolderService {
 
   public List<ItemConfig> getArmorNames() {
     return armorNames;
+  }
+
+  public Map<String, String> getSpecialCasesConfig() {
+    return specialCasesConfig;
   }
 }

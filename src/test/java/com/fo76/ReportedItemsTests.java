@@ -31,7 +31,7 @@ public class ReportedItemsTests {
   private static final Fed76Service fed76Service = new Fed76Service(OM);
   private static final ItemConverterService itemConverterService = new ItemConverterService(gameConfigService, fed76Service);
 
-  private static final List<ReportedItem> listReportedItems() throws Exception {
+  private static List<ReportedItem> listReportedItems() throws Exception {
     File file = new File("src/test/resources/reported.items.json");
     return OM.readValue(file, REPORTED_ITEMS_REF);
   }
