@@ -819,7 +819,7 @@
     }
   },
   {
-    "type": "WEAPON_THROWN",
+    "type": "WEAPON_RANGED",
     "id": "M79",
     "gameId": "0008F0EF",
     "enabled": true,
