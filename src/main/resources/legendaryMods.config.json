@@ -3561,7 +3561,7 @@
       "zhhans": "武器重量降低20%",
       "zhhant": "武器重量-20%。"
     },
-    "itemType": "WEAPON"
+    "itemType": "ARMOR"
   },
   {
     "id": "mod_Legendary_Armor3_LessFallDamage",
