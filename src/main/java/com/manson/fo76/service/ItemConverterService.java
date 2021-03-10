@@ -121,6 +121,9 @@ public class ItemConverterService {
 
   private static List<Predicate<ItemDescriptor>> buildPredicates(List<String> filters) {
     List<Predicate<ItemDescriptor>> predicates = new ArrayList<>();
+    if (CollectionUtils.isEmpty(filters)) {
+      return predicates;
+    }
     for (String filter : filters) {
       if (StringUtils.isBlank(filter)) {
         continue;
