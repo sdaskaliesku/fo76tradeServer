@@ -231,13 +231,12 @@ public class ItemConverterService {
         itemConfig.setTexts(null);
         itemDetails.setConfig(itemConfig);
       }
-      if (Objects.nonNull(itemDetails.getArmorConfig())) {
+      ArmorConfig armorCfg = itemDetails.getArmorConfig();
+      if (Objects.nonNull(armorCfg)) {
         ArmorConfig armorConfig = new ArmorConfig();
-        BeanUtils.copyProperties(armorConfig, itemDetails.getArmorConfig());
-        armorConfig.setArmorPart(null);
-        armorConfig.setArmorType(null);
-        armorConfig.setHelper(null);
-        armorConfig.setShortTerm(null);
+        armorConfig.setArmorGrade(armorCfg.getArmorGrade());
+        armorConfig.setGradeId(armorCfg.getGradeId());
+        armorConfig.setArmorId(armorCfg.getArmorId());
         itemDetails.setArmorConfig(armorConfig);
       }
       itemDetails.setStats(null);
@@ -431,7 +430,10 @@ public class ItemConverterService {
       name = getDefaultText(config.getTexts());
     }
     List<Stats> stats = buildStats(pairs);
-    ArmorConfig armorConfig = gameConfigService.findArmorType(stats, abbreviation);
+    ArmorConfig armorConfig = null;
+    if (filterFlag == FilterFlag.ARMOR && descriptor.isLegendary() && descriptor.getItemLevel() >= 45) {
+      armorConfig = gameConfigService.findArmorType(stats, abbreviation);
+    }
     return ItemDetails
         .builder()
         .name(name)
