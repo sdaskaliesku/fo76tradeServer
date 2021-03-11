@@ -8,7 +8,10 @@ import com.google.common.collect.Sets;
 import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.fed76.BasePriceCheckResponse;
+import com.manson.domain.fed76.ItemPriceCheckResponse;
+import com.manson.domain.fed76.PlanPriceCheckResponse;
 import com.manson.domain.fed76.PriceCheckRequest;
+import com.manson.domain.fed76.PriceCheckResponse;
 import com.manson.domain.fo76.ItemCardEntry;
 import com.manson.domain.fo76.ItemDescriptor;
 import com.manson.domain.fo76.items.enums.DamageType;
@@ -21,6 +24,7 @@ import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.ItemSource;
 import com.manson.domain.itemextractor.ItemsUploadFilters;
 import com.manson.domain.itemextractor.LegendaryMod;
+import com.manson.domain.itemextractor.LegendaryModConfig;
 import com.manson.domain.itemextractor.ModData;
 import com.manson.domain.itemextractor.ModDataRequest;
 import com.manson.domain.itemextractor.OwnerInfo;
@@ -197,8 +201,8 @@ public class ItemConverterService {
     key.append(item.getIsLegendary()).append(delimiter);
     key.append(item.getItemLevel()).append(delimiter);
     if (item.getIsLegendary()) {
-      if (item.getItemDetails() != null) {
-        key.append(item.getItemDetails().getAbbreviationId()).append(delimiter);
+      if (item.getItemDetails() != null && item.getItemDetails().getLegendaryModConfig() != null) {
+        key.append(item.getItemDetails().getLegendaryModConfig().getAbbreviationId()).append(delimiter);
       }
     }
     return key.toString();
@@ -312,7 +316,7 @@ public class ItemConverterService {
 
   private ItemResponse fromItemDescriptor(ItemDescriptor descriptor, OwnerInfo ownerInfo, ItemSource itemSource,
       ItemContext context) {
-    FilterFlag filterFlag = FilterFlag.fromInt(descriptor.getFilterFlag());
+    FilterFlag filterFlag = clarifyFilterFlag(descriptor);
     ItemResponse itemResponse = ItemResponse.builder()
         .id(UUID.randomUUID().toString())
         .count(descriptor.getCount())
@@ -329,7 +333,7 @@ public class ItemConverterService {
         .isLegendary(descriptor.isLegendary())
         .vendingData(descriptor.getVendingData())
         .filterFlag(filterFlag)
-        .itemDetails(buildItemDetails(descriptor, ownerInfo, itemSource))
+        .itemDetails(buildItemDetails(descriptor, ownerInfo, itemSource, filterFlag))
         .isLearnedRecipe(descriptor.isLearnedRecipe())
         .canGoIntoScrapStash(descriptor.isCanGoIntoScrapStash())
         .isWeightless(descriptor.isWeightless())
@@ -337,7 +341,6 @@ public class ItemConverterService {
         .isAutoScrappable(descriptor.isAutoScrappable())
         .build();
     itemResponse.setPriceCheckResponse(getPriceCheck(itemResponse, context.isPriceCheck()));
-    itemResponse.setFilterFlag(clarifyFilterFlag(descriptor));
     if (context.isFed76Enhance() && isValidForPriceCheckEnhance(itemResponse)) {
       sendPriceEnhanceRequest(itemResponse);
     }
@@ -362,20 +365,38 @@ public class ItemConverterService {
     }
   }
 
-  private BasePriceCheckResponse getPriceCheck(ItemResponse itemResponse, boolean autoPriceCheck) {
-    BasePriceCheckResponse priceCheckResponse = new BasePriceCheckResponse();
+  private PriceCheckResponse getPriceCheck(ItemResponse itemResponse, boolean autoPriceCheck) {
     if (autoPriceCheck) {
       if (itemResponse.getIsLegendary() && itemResponse.getIsTradable() && SUPPORTED_PRICE_CHECK_ITEMS
           .contains(itemResponse.getFilterFlag())) {
         PriceCheckRequest request = fed76Service.createPriceCheckRequest(itemResponse);
         if (request.isValid()) {
-          priceCheckResponse = fed76Service.priceCheck(request);
+          BasePriceCheckResponse priceCheckResponse = fed76Service.priceCheck(request);
+          return toPriceCheckResponse(priceCheckResponse);
         } else {
           log.error("Request is invalid, ignoring: {}\r\n{}", request, itemResponse);
         }
       }
     }
-    return priceCheckResponse;
+    return null;
+  }
+
+  private PriceCheckResponse toPriceCheckResponse(BasePriceCheckResponse baseResponse) {
+    PriceCheckResponse response = new PriceCheckResponse();
+    response.setPrice(baseResponse.getPrice());
+    response.setCategory(baseResponse.getCategory());
+    response.setDescription(baseResponse.getDescription());
+    response.setUrl(baseResponse.getPath());
+    if (baseResponse instanceof ItemPriceCheckResponse) {
+      ItemPriceCheckResponse resp = (ItemPriceCheckResponse) baseResponse;
+      // TODO:
+    }
+
+    if (baseResponse instanceof PlanPriceCheckResponse) {
+      PlanPriceCheckResponse resp = (PlanPriceCheckResponse) baseResponse;
+      // TODO:
+    }
+    return response;
   }
 
   public ItemConfig findItemConfig(String name, FilterFlag filterFlag) {
@@ -395,7 +416,6 @@ public class ItemConverterService {
   }
 
   private ItemConfig findItemConfig(ItemDescriptor descriptor, FilterFlag filterFlag) {
-    // TODO: add Status field to ItemConfig - FOUND, NON_LEGENDARY, NON_TRADABLE, NOT_FOUND, etc.
     boolean isTradable = POPULATE_CONFIG_FOR_EVERYTHING || descriptor.isTradable();
     if (shouldConvertItemName(filterFlag) && isTradable) {
       switch (descriptor.getFilterFlagEnum()) {
@@ -412,8 +432,36 @@ public class ItemConverterService {
     return null;
   }
 
-  private ItemDetails buildItemDetails(ItemDescriptor descriptor, OwnerInfo ownerInfo, ItemSource itemSource) {
+  private ItemDetails buildItemDetails(ItemDescriptor descriptor, OwnerInfo ownerInfo, ItemSource itemSource, FilterFlag filterFlag) {
     List<Pair<ItemCardEntry, ItemCardText>> pairs = getItemCardTexts(descriptor.getItemCardEntries());
+
+    double packWeight = Objects.isNull(descriptor.getWeight()) ? 0 : descriptor.getWeight();
+
+    ItemConfig config = findItemConfig(descriptor, filterFlag);
+    String name = StringUtils.EMPTY;
+    if (Objects.nonNull(config)) {
+      name = getDefaultText(config.getTexts());
+    }
+    LegendaryModConfig modConfig = buildLegendaryModConfig(descriptor, pairs);
+    List<Stats> stats = buildStats(pairs);
+    ArmorConfig armorConfig = gameConfigService.findArmorType(stats, modConfig.getAbbreviation());
+    return ItemDetails
+        .builder()
+        .name(name)
+        .description(buildItemDescription(pairs, descriptor.isLegendary()))
+        .config(config)
+        .legendaryModConfig(modConfig)
+        .armorConfig(armorConfig)
+        .itemSource(itemSource)
+        .stats(buildStats(pairs))
+        .ownerInfo(ownerInfo)
+        .totalWeight(packWeight * descriptor.getCount())
+        .build();
+  }
+
+  private LegendaryModConfig buildLegendaryModConfig(ItemDescriptor descriptor,
+      List<Pair<ItemCardEntry, ItemCardText>> pairs) {
+    LegendaryModConfig modConfig = new LegendaryModConfig();
     List<LegendaryMod> legendaryMods = pairs
         .stream()
         .filter(Objects::nonNull)
@@ -422,31 +470,10 @@ public class ItemConverterService {
         .collect(Collectors.toList());
     String abbreviation = buildLegendaryAbbreviation(legendaryMods, LegendaryMod::getAbbreviation);
     String abbreviationId = buildLegendaryAbbreviation(legendaryMods, LegendaryMod::getGameId);
-    double packWeight = Objects.isNull(descriptor.getWeight()) ? 0 : descriptor.getWeight();
-
-    FilterFlag filterFlag = clarifyFilterFlag(descriptor);
-    ItemConfig config = findItemConfig(descriptor, filterFlag);
-    String name = StringUtils.EMPTY;
-    if (Objects.nonNull(config)) {
-      name = getDefaultText(config.getTexts());
-    }
-    List<Stats> stats = buildStats(pairs);
-    ArmorConfig armorConfig = gameConfigService.findArmorType(stats, abbreviation);
-    return ItemDetails
-        .builder()
-        .name(name)
-        .description(buildItemDescription(pairs, descriptor.isLegendary()))
-        .config(config)
-        .abbreviation(abbreviation)
-        .abbreviationId(abbreviationId)
-        .armorConfig(armorConfig)
-        .legendaryMods(legendaryMods)
-        .itemSource(itemSource)
-        .filterFlag(filterFlag)
-        .stats(stats)
-        .ownerInfo(ownerInfo)
-        .totalWeight(packWeight * descriptor.getCount())
-        .build();
+    modConfig.setAbbreviation(abbreviation);
+    modConfig.setAbbreviationId(abbreviationId);
+    modConfig.setLegendaryMods(legendaryMods);
+    return modConfig;
   }
 
   private Stats buildItemStats(ItemCardEntry itemCardEntry, ItemCardText itemCardText) {

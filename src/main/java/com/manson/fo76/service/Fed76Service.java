@@ -14,6 +14,7 @@ import com.manson.domain.itemextractor.ItemConfig;
 import com.manson.domain.itemextractor.ItemDetails;
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.LegendaryMod;
+import com.manson.domain.itemextractor.LegendaryModConfig;
 import com.manson.fo76.domain.fed76.PriceCheckCacheItem;
 import com.manson.fo76.domain.fed76.PriceEnhanceRequest;
 import com.manson.fo76.repository.PriceCheckRepository;
@@ -143,6 +144,7 @@ public class Fed76Service extends BaseRestClient {
       return null;
     }
     ItemDetails itemDetails = itemResponse.getItemDetails();
+    LegendaryModConfig modConfig = itemDetails.getLegendaryModConfig();
     PriceEnhanceRequest request = new PriceEnhanceRequest();
     request.setItemName(itemDetails.getName());
     request.setGameId(itemDetails.getConfig().getGameId());
@@ -160,8 +162,8 @@ public class Fed76Service extends BaseRestClient {
           .build());
     }
     request.setLegendary(itemResponse.getIsLegendary());
-    if (CollectionUtils.isNotEmpty(itemDetails.getLegendaryMods())) {
-      List<com.manson.domain.fed76.pricing.LegendaryMod> mods = itemDetails.getLegendaryMods()
+    if (CollectionUtils.isNotEmpty(modConfig.getLegendaryMods())) {
+      List<com.manson.domain.fed76.pricing.LegendaryMod> mods = modConfig.getLegendaryMods()
           .stream().map(x -> {
             com.manson.domain.fed76.pricing.LegendaryMod legendaryMod = new com.manson.domain.fed76.pricing.LegendaryMod();
             legendaryMod.setAbbreviation(x.getAbbreviation());
@@ -188,6 +190,7 @@ public class Fed76Service extends BaseRestClient {
   public PriceCheckRequest createPriceCheckRequest(ItemResponse itemResponse) {
     PriceCheckRequest request = new PriceCheckRequest();
     ItemDetails itemDetails = itemResponse.getItemDetails();
+    LegendaryModConfig modConfig = itemDetails.getLegendaryModConfig();
     ItemConfig configName = itemDetails.getConfig();
     if (Objects.isNull(configName)) {
       return request;
@@ -195,8 +198,8 @@ public class Fed76Service extends BaseRestClient {
     request.setFilterFlag(configName.getType());
     List<String> ids = new ArrayList<>();
     ids.add(configName.getGameId());
-    if (CollectionUtils.isNotEmpty(itemDetails.getLegendaryMods())) {
-      List<String> modIds = itemDetails.getLegendaryMods().stream().map(LegendaryMod::getGameId)
+    if (CollectionUtils.isNotEmpty(modConfig.getLegendaryMods())) {
+      List<String> modIds = modConfig.getLegendaryMods().stream().map(LegendaryMod::getGameId)
           .collect(Collectors.toList());
       ids.addAll(modIds);
       request.setMods(String.join("/", modIds));
