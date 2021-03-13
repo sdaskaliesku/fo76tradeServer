@@ -404,8 +404,9 @@ export class TableComponent extends React.Component<TableProps, TableState> {
     } catch (_) {
 
     }
-    this.setState({tableFilters: {}});
-    this.table.current.filter();
+    this.setState({tableFilters: {}}, () => {
+      this.table.current.filter();
+    });
   }
 
   private setCurrentTableData(data: Array<Item>) {
