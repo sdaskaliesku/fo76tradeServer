@@ -48,6 +48,11 @@ export class NavBar extends React.Component<any, any> {
               target: '_blank'
             },
             {
+              label: 'Stage v2',
+              url: 'https://fo76market.azurewebsites.net/',
+              target: '_blank'
+            },
+            {
               label: 'Production',
               url: 'https://fo76market.online/',
               target: '_blank'
