@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build Docker image
-      run: mvn -B clean spring-boot:build-image -Dspring-boot.build-image.imageName=mansonew2/fo76market -DskipTests=true --file pom.xml
+      run: mvn -B clean git-commit-id:revision spring-boot:build-image -Dspring-boot.build-image.imageName=mansonew2/fo76market -DskipTests=true --file pom.xml
     - name: Publish the Docker image
       run: docker push mansonew2/fo76market:latest
     - name: Deploy to Azure Web App
