@@ -18,18 +18,29 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+@Disabled
 public class ReportedItemsTests {
 
   private static final ObjectMapper OM = AppConfig.getObjectMapper();
   private static final TypeReference<List<ReportedItem>> REPORTED_ITEMS_REF = new TypeReference<List<ReportedItem>>() {
   };
 
-  private static final GameConfigHolderService gameConfigHolderService = new GameConfigHolderService(OM);
+  private static final GameConfigHolderService gameConfigHolderService = new GameConfigHolderService();
   private static final GameConfigService gameConfigService = new GameConfigService(gameConfigHolderService);
   private static final Fed76Service fed76Service = new Fed76Service(OM);
   private static final ItemConverterService itemConverterService = new ItemConverterService(gameConfigService, fed76Service);
+
+  @BeforeAll
+  static void beforeAll() {
+    gameConfigHolderService.setObjectMapper(OM);
+    gameConfigHolderService.setWeaponNamesConfigFile("configs/weapons.config.json");
+    gameConfigHolderService.setWeaponNamesConfigFile("configs/weapons.config.json");
+    gameConfigHolderService.setLegModsConfigFile("configs/legendaryMods.config.json");
+  }
 
   private static List<ReportedItem> listReportedItems() throws Exception {
     File file = new File("src/test/resources/reported.items.json");

@@ -14,6 +14,7 @@ import com.manson.domain.itemextractor.ItemConfig;
 import com.manson.domain.itemextractor.ItemDetails;
 import com.manson.domain.itemextractor.ItemResponse;
 import com.manson.domain.itemextractor.LegendaryMod;
+import com.manson.fo76.domain.config.Fed76Config;
 import com.manson.fo76.domain.fed76.PriceCheckCacheItem;
 import com.manson.fo76.domain.fed76.PriceEnhanceRequest;
 import com.manson.fo76.repository.PriceCheckRepository;
@@ -32,14 +33,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
 public class Fed76Service extends BaseRestClient {
 
-  public static final boolean USE_ID = false;
   private static final Map<ArmorGrade, String> GRADE_TO_GAME_ID_MAP = new EnumMap<>(ArmorGrade.class);
 
   static {
@@ -48,6 +47,9 @@ public class Fed76Service extends BaseRestClient {
     GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Heavy, "00182E7A");
     GRADE_TO_GAME_ID_MAP.put(ArmorGrade.Unknown, "");
   }
+
+  @Autowired
+  private Fed76Config fed76Config;
 
   private PriceCheckRepository priceCheckRepository;
 
@@ -66,7 +68,6 @@ public class Fed76Service extends BaseRestClient {
   }
 
   @Autowired
-  @Qualifier("priceCheckRepository")
   public void setPriceCheckRepository(PriceCheckRepository priceCheckRepository) {
     this.priceCheckRepository = priceCheckRepository;
   }
@@ -79,7 +80,7 @@ public class Fed76Service extends BaseRestClient {
     if (request.getFilterFlag() == FilterFlag.NOTES) {
       webTarget = planPriceCheck(request.getItem());
     } else {
-      if (USE_ID) {
+      if (fed76Config.isUseIdForPriceCheck()) {
         webTarget = armorWeaponPriceCheck(request.getIds());
       } else {
         webTarget = armorWeaponPriceCheck(request.getItem(), request.getMods(), request.getGrade().getValue());
@@ -94,7 +95,7 @@ public class Fed76Service extends BaseRestClient {
   }
 
   public final MappingResponse getMapping() {
-    WebTarget webResource = this.client.target(Endpoints.MAPPING);
+    WebTarget webResource = this.client.target(fed76Config.getMappingUrl());
     return webResource.request().accept(MediaType.APPLICATION_JSON_TYPE).get(MappingResponse.class);
   }
 
@@ -179,7 +180,7 @@ public class Fed76Service extends BaseRestClient {
 
   public Response enhancePriceCheck(PriceEnhanceRequest request) {
     return client
-        .target(Endpoints.ENHANCE_PRICE_API)
+        .target(fed76Config.getPriceEnhanceUrl())
         .request()
         .accept(MediaType.APPLICATION_JSON_TYPE)
         .post(Entity.json(request));
@@ -217,7 +218,7 @@ public class Fed76Service extends BaseRestClient {
 
   private WebTarget armorWeaponPriceCheck(String item, String mods, String grade) {
     WebTarget webTarget = client
-        .target(Endpoints.ARMOR_WEAPON_PRICE_API)
+        .target(fed76Config.getItemPricingUrl())
         .queryParam("item", item)
         .queryParam("mods", mods);
     if (StringUtils.isNotBlank(grade) && !StringUtils.equalsIgnoreCase(ArmorGrade.Unknown.getValue(), grade)) {
@@ -227,8 +228,7 @@ public class Fed76Service extends BaseRestClient {
   }
 
   private WebTarget armorWeaponPriceCheck(List<String> ids) {
-    WebTarget webTarget = client
-        .target(Endpoints.ARMOR_WEAPON_PRICE_API);
+    WebTarget webTarget = client.target(fed76Config.getItemPricingUrl());
     String idsParam = String.join("-", ids);
     webTarget = webTarget.queryParam("ids", idsParam);
     return webTarget;
@@ -236,16 +236,8 @@ public class Fed76Service extends BaseRestClient {
 
   private WebTarget planPriceCheck(String item) {
     return client
-        .target(Endpoints.PLAN_PRICE_API)
+        .target(fed76Config.getPlanPricingUrl())
         .queryParam("id", item);
   }
 
-  private static class Endpoints {
-
-    private static final String BASE = "https://fed76.info/";
-    public static final String MAPPING = BASE + "pricing/mapping";
-    public static final String PLAN_PRICE_API = BASE + "plan-api/";
-    public static final String ARMOR_WEAPON_PRICE_API = BASE + "pricing-api/";
-    public static final String ENHANCE_PRICE_API = BASE + "pricing/parse";
-  }
 }

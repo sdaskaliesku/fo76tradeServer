@@ -8,6 +8,7 @@ import com.manson.domain.fed76.PriceCheckRequest;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.itemextractor.ItemResponse;
+import com.manson.fo76.service.AppInfo;
 import com.manson.fo76.service.Fed76Service;
 import com.manson.fo76.service.GameConfigHolderService;
 import com.manson.fo76.service.GameConfigService;
@@ -16,6 +17,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+import javax.ws.rs.core.MediaType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,6 +41,9 @@ public class GameApi {
   private final Fed76Service fed76Service;
 
   @Autowired
+  private AppInfo appInfo;
+
+  @Autowired
   public GameApi(GameConfigHolderService holderService, GameConfigService gameConfigService,
       Fed76Service fed76Service) {
     this.holderService = holderService;
@@ -46,59 +51,38 @@ public class GameApi {
     this.fed76Service = fed76Service;
   }
 
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/legendaryMods"}
-  )
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/legendaryMods")
   public final List<LegendaryModDescriptor> getLegendaryModsConfig() {
     return holderService.getLegModsConfig();
   }
 
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/legendaryMod"}
-  )
-  public final LegendaryModDescriptor getLegendaryModConfig(@RequestParam String text, @RequestParam String filterFlag) {
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/legendaryMod")
+  public final LegendaryModDescriptor getLegendaryModConfig(@RequestParam String text,
+      @RequestParam String filterFlag) {
     return this.gameConfigService.findLegendaryModDescriptor(text, FilterFlag.fromString(filterFlag));
   }
 
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/itemCardText"}
-  )
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/itemCardText")
   public final ItemCardText findItemCardText(@RequestParam String text) {
     return this.gameConfigService.findItemCardText(text);
   }
 
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/ammoTypes"}
-  )
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/ammoTypes")
   public final List<XTranslatorConfig> getAmmoTypes() {
     return holderService.getAmmoTypes();
   }
 
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/armorTypes"}
-  )
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/armorTypes")
   public final List<ArmorConfig> getArmorTypes() {
     return holderService.getArmorConfigs();
   }
 
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/armorType"}
-  )
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/armorType")
   public final ArmorConfig getArmorType(@RequestParam int dr, @RequestParam int er, @RequestParam int rr) {
     return gameConfigService.findArmorType(dr, rr, er);
   }
 
-  @PostMapping(
-      produces = {"application/json"},
-      consumes = {"application/json"},
-      value = {"/priceCheck"}
-  )
+  @PostMapping(produces = MediaType.APPLICATION_JSON, consumes = MediaType.APPLICATION_JSON, value = "/priceCheck")
   public final BasePriceCheckResponse priceCheck(@RequestBody ItemResponse item) {
     if (item == null) {
       return new BasePriceCheckResponse();
@@ -123,12 +107,14 @@ public class GameApi {
     return new BasePriceCheckResponse();
   }
 
-  @GetMapping(
-      produces = {"application/json"},
-      value = {"/filterFlags"}
-  )
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/filterFlags")
   public List<FilterFlagResponse> filterFlags() {
     return FILTER_FLAGS;
+  }
+
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/appInfo")
+  public AppInfo appInfo() {
+    return appInfo;
   }
 
 }

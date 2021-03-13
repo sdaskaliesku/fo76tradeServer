@@ -1,6 +1,6 @@
 import {gameApiService} from "./game.api.service";
 
-export declare interface FilterFlag {
+export interface FilterFlag {
   name: string
   value: string
   flags: Array<number>
@@ -39,12 +39,12 @@ export interface FilterOption {
   mode: keyof typeof FilterMode
 }
 
-export declare interface TableFilter {
+export interface TableFilter {
   name: string
   filterOptions: Array<FilterOption>
 }
 
-export declare interface UploadFileFilters {
+export interface UploadFileFilters {
   filterFlags?: Array<string>
 }
 

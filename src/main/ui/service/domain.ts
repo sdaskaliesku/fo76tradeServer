@@ -1,18 +1,35 @@
 import {UploadFileFilters} from "./filter.service";
 
-export const DISCORD_LINK = 'https://discord.gg/7fef733';
-export const NEXUS_LINK = 'https://www.nexusmods.com/fallout76/mods/698';
-export const GH_LINK = 'https://github.com/sdaskaliesku/fo76tradeServer';
-export const COMPANION_LINK = 'https://www.nexusmods.com/fallout76/mods/744';
 export const APP_VERSION = '0.951';
 export const MIN_MOD_SUPPORTED_VERSION = 0.4;
 
-export declare interface ModDataRequest {
+export interface UrlConfig {
+  name: string
+  url: string
+}
+
+export interface GitConfig {
+  buildTimestamp: string
+  gitCommitId: string
+}
+
+export interface AppInfo {
+  name: string
+  version: string
+  sites: Array<UrlConfig>
+  tools: Array<UrlConfig>
+  discord: string
+  github: string
+  commitUrl: string
+  gitConfig: GitConfig
+}
+
+export interface ModDataRequest {
   modData: ModData
   filters: UploadFileFilters
 }
 
-export declare interface ModData {
+export interface ModData {
   version: number
   characterInventories: {
     string: any
@@ -25,20 +42,20 @@ export declare interface ModData {
   }
 }
 
-export declare interface AuthorResponse {
+export interface AuthorResponse {
   name: string
   logo: string
   description: string
   url: string
 }
 
-export declare interface ReviewRatingResponse {
+export interface ReviewRatingResponse {
   bestRating: string
   ratingValue: string
   worstRating: string
 }
 
-export declare interface ReviewResponse {
+export interface ReviewResponse {
   author: AuthorResponse
   dateCreated: string
   description: string
@@ -47,7 +64,7 @@ export declare interface ReviewResponse {
   url: string
 }
 
-export declare interface PriceCheckResponse {
+export interface PriceCheckResponse {
   name?: string;
   price?: number;
   review?: ReviewResponse;
