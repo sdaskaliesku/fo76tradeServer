@@ -2,8 +2,9 @@ import React from "react";
 import {Menubar} from 'primereact/menubar';
 import {MenuItem} from "primereact/api";
 import {Button} from "primereact/button";
-import {APP_VERSION, COMPANION_LINK, DISCORD_LINK, GH_LINK, NEXUS_LINK} from "../../service/domain";
+import { AppInfo, UrlConfig } from "../../service/domain";
 import './NavBar.scss';
+import {gameApiService} from "../../service/game.api.service";
 
 export class NavBar extends React.Component<any, any> {
 
@@ -32,70 +33,78 @@ export class NavBar extends React.Component<any, any> {
 
   constructor(props: any) {
     super(props);
+    const websites: Array<any> = [];
+    const tools: Array<any> = [];
+    gameApiService.appInfo().then((appInfo: AppInfo) => {
+      appInfo.sites.forEach((site: UrlConfig) => {
+        websites.push({
+          label: site.name,
+          url: site.url,
+          target: '_blank'
+        });
+      });
+      appInfo.tools.forEach((site: UrlConfig) => {
+        tools.push({
+          label: site.name,
+          icon: 'pi pi-fw pi-cog',
+          url: site.url,
+          target: '_blank'
+        });
+      });
+      const label = `${appInfo.name} v${appInfo.version} (${appInfo.gitConfig.buildTimestamp})`;
+      const {discord, github, commitUrl } = appInfo;
+      const newState = {
+        items: [
+          {
+            label: label,
+            disabled: true
+          },
+          {
+            label: 'Website',
+            icon: 'pi pi-fw pi-globe',
+            items: websites
+          },
+          {
+            separator: true
+          },
+          {
+            label: 'Get tools',
+            icon: 'pi pi-fw pi-download',
+            items: tools
+          }
+        ],
+        end: [
+          {
+            label: 'Discord',
+            icon: 'pi pi-fw pi-discord',
+            url: discord,
+            className: 'p-button-outlined p-button-success',
+            target: '_blank'
+          },
+          {
+            label: 'Source code',
+            icon: 'pi pi-fw pi-github',
+            url: github,
+            className: 'p-button-outlined p-button-primary',
+            target: '_blank'
+          },
+          {
+            label: 'Current website build',
+            icon: 'pi pi-fw pi-github',
+            url: commitUrl,
+            className: 'p-button-outlined p-button-primary',
+            target: '_blank'
+          }
+        ]
+      };
+      this.setState({...newState});
+    });
     this.state = {
       items: [
         {
-          label: 'FO76 Trade hub v' + APP_VERSION,
+          label: 'FO76 Trade hub',
           disabled: true
-        },
-        {
-          label: 'Website',
-          icon: 'pi pi-fw pi-globe',
-          items: [
-            {
-              label: 'Stage',
-              url: 'https://fo76market.herokuapp.com/',
-              target: '_blank'
-            },
-            {
-              label: 'Stage v2',
-              url: 'https://fo76market.azurewebsites.net/',
-              target: '_blank'
-            },
-            {
-              label: 'Production',
-              url: 'https://fo76market.online/',
-              target: '_blank'
-            }
-          ]
-        },
-        {
-          separator: true
-        },
-        {
-          label: 'Get tools',
-          icon: 'pi pi-fw pi-download',
-          items: [
-            {
-              label: 'Item Extractor Mod',
-              icon: 'pi pi-fw pi-cog',
-              url: NEXUS_LINK,
-              target: '_blank'
-            },
-            {
-              label: 'Mod companion app',
-              icon: 'pi pi-fw pi-cog',
-              url: COMPANION_LINK,
-              target: '_blank'
-            }
-          ]
         }
-      ],
-      end: [
-        {
-          label: 'Discord',
-          icon: 'pi pi-fw pi-discord',
-          url: DISCORD_LINK,
-          className: 'p-button-outlined p-button-success',
-          target: '_blank'
-        },
-        {
-          label: 'Source code',
-          icon: 'pi pi-fw pi-github',
-          url: GH_LINK,
-          className: 'p-button-outlined p-button-primary',
-          target: '_blank'
-        },
       ]
     };
   }

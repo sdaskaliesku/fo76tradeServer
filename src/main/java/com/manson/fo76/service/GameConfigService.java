@@ -15,16 +15,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
+@Data
 public class GameConfigService {
 
-  public static final boolean POPULATE_CONFIG_FOR_EVERYTHING = true;
+  @Value("${game.config.populate.details.all}")
+  private boolean populateConfigForEverything = true;
 
   private static final String DOT = ".";
   private static final Set<FilterFlag> SUPPORTED_TYPES_ARMOR = Sets
@@ -101,7 +105,7 @@ public class GameConfigService {
   }
 
   public ItemConfig findArmorConfig(ItemDescriptor item, FilterFlag filterFlag) {
-    if (!POPULATE_CONFIG_FOR_EVERYTHING) {
+    if (!populateConfigForEverything) {
       if (!item.isLegendary() || !item.isTradable()) {
         return null;
       }
@@ -156,7 +160,7 @@ public class GameConfigService {
   }
 
   public ItemConfig findWeaponConfig(ItemDescriptor item, FilterFlag filterFlag) {
-    if (!POPULATE_CONFIG_FOR_EVERYTHING) {
+    if (!populateConfigForEverything) {
       if (!item.isLegendary() || !item.isTradable()) {
         return null;
       }

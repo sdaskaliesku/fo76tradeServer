@@ -2,7 +2,6 @@ package com.manson.fo76.service;
 
 import static com.manson.fo76.helper.Utils.getDefaultText;
 import static com.manson.fo76.helper.Utils.silentParse;
-import static com.manson.fo76.service.GameConfigService.POPULATE_CONFIG_FOR_EVERYTHING;
 
 import com.google.common.collect.Sets;
 import com.manson.domain.config.ArmorConfig;
@@ -392,7 +391,7 @@ public class ItemConverterService {
 
   private ItemConfig findItemConfig(ItemDescriptor descriptor, FilterFlag filterFlag) {
     // TODO: add Status field to ItemConfig - FOUND, NON_LEGENDARY, NON_TRADABLE, NOT_FOUND, etc.
-    boolean isTradable = POPULATE_CONFIG_FOR_EVERYTHING || descriptor.isTradable();
+    boolean isTradable = gameConfigService.isPopulateConfigForEverything() || descriptor.isTradable();
     if (shouldConvertItemName(filterFlag) && isTradable) {
       switch (descriptor.getFilterFlagEnum()) {
         case NOTES:
