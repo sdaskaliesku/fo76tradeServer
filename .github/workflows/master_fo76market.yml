@@ -22,7 +22,7 @@ jobs:
         java-version: '8'
 
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn clean install -DskipTests
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
