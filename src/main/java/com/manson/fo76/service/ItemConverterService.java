@@ -155,7 +155,7 @@ public class ItemConverterService {
     if (CollectionUtils.isEmpty(predicates)) {
       return true;
     }
-    return predicates.stream().allMatch(x -> x.test(itemDescriptor));
+    return predicates.stream().anyMatch(x -> x.test(itemDescriptor));
   }
 
   private static OwnerInfo createOwnerInfo(String account, String character) {
