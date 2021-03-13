@@ -363,16 +363,13 @@ public class ItemConverterService {
 
   private BasePriceCheckResponse getPriceCheck(ItemResponse itemResponse, boolean autoPriceCheck) {
     BasePriceCheckResponse priceCheckResponse = new BasePriceCheckResponse();
-    if (autoPriceCheck) {
-      if (itemResponse.getIsLegendary() && itemResponse.getIsTradable() && SUPPORTED_PRICE_CHECK_ITEMS
-          .contains(itemResponse.getFilterFlag())) {
+    if (autoPriceCheck && matchesPriceCheckOnly(itemResponse)) {
         PriceCheckRequest request = fed76Service.createPriceCheckRequest(itemResponse);
         if (request.isValid()) {
           priceCheckResponse = fed76Service.priceCheck(request);
         } else {
           log.error("Request is invalid, ignoring: {}\r\n{}", request, itemResponse);
         }
-      }
     }
     return priceCheckResponse;
   }
