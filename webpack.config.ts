@@ -4,7 +4,7 @@ import webpack from "webpack";
 const outputPath = './src/main/resources/static/built/';
 
 const config: webpack.Configuration = {
-  entry: "./src/main/ui/index.tsx",
+  entry: "./src/main/ui/app.js",
   devtool: false,
   mode: 'development',
   module: {
