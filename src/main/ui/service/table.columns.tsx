@@ -6,12 +6,15 @@ export interface ColumnOptions {
   sort: boolean
 }
 
-export declare interface ColumnDefinition {
+export interface SimpleColumn {
   header: string;
   field: string;
   visible?: boolean;
   isRating?: boolean;
   isBool?: boolean;
+}
+
+export interface ColumnDefinition extends SimpleColumn {
   getValue?: (object: Item) => any;
   options?: ColumnOptions
 }
@@ -34,7 +37,7 @@ const getObjectValue = (path: string, obj: any) => {
   return current;
 };
 
-const createColumnDef = ({header, field, visible = true, isRating = false, isBool = false}: ColumnDefinition): ColumnDefinition => {
+export const createColumnDef = ({header, field, visible = true, isRating = false, isBool = false}: ColumnDefinition): ColumnDefinition => {
   return {
     header,
     field,
@@ -95,7 +98,12 @@ export const columns = [
   createColumnDef({header: 'Description', field: 'description', visible: false}),
   createColumnDef({header: 'Tradable', field: 'isTradable', visible: false, isBool: true}),
   createColumnDef({header: 'Legendary', field: 'isLegendary', visible: false, isBool: true}),
-  createColumnDef({header: 'Learned recipe', field: 'isLearnedRecipe', visible: false, isBool: true}),
+  createColumnDef({
+    header: 'Learned recipe',
+    field: 'isLearnedRecipe',
+    visible: false,
+    isBool: true
+  }),
   createColumnDef({header: 'Source', field: 'itemDetails.itemSource'}),
   createColumnDef({header: 'Weight', field: 'weight', visible: false}),
   createColumnDef({header: 'Total weight', field: 'itemDetails.totalWeight', visible: false}),

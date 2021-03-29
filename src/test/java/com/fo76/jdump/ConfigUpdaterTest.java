@@ -8,6 +8,7 @@ import com.manson.domain.fed76.mapping.Fed76ApiMappingEntry;
 import com.manson.domain.fed76.mapping.MappingResponse;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.fo76.config.AppConfig;
+import com.manson.fo76.domain.config.Fed76Config;
 import com.manson.fo76.service.Fed76Service;
 import java.io.File;
 import java.util.ArrayList;
@@ -49,7 +50,8 @@ public class ConfigUpdaterTest {
     Configuration configuration = new Configuration();
     configuration.configure();
     sessionFactory = configuration.buildSessionFactory();
-    fed76Service = new Fed76Service(OM);
+    Fed76Config fed76Config = new Fed76Config();
+    fed76Service = new Fed76Service(fed76Config, OM);
   }
 
   private static List<SqlLiteEntity> getData(String query) {

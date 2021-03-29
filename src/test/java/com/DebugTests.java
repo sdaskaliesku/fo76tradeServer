@@ -6,6 +6,7 @@ import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.fed76.mapping.Fed76ApiMappingEntry;
 import com.manson.domain.fed76.mapping.MappingResponse;
 import com.manson.fo76.config.AppConfig;
+import com.manson.fo76.domain.config.Fed76Config;
 import com.manson.fo76.service.Fed76Service;
 import java.io.File;
 import java.util.Arrays;
@@ -24,7 +25,8 @@ public class DebugTests {
   void updateLegModsConfigWithAbbreviations() throws Exception {
     ObjectMapper om = AppConfig.getObjectMapper();
     File file = new File("src/main/resources/legendaryMods.config.json");
-    Fed76Service fed76Service = new Fed76Service(om);
+    Fed76Config fed76Config = new Fed76Config();
+    Fed76Service fed76Service = new Fed76Service(fed76Config, om);
     Map<String, Fed76ApiMappingEntry> mapping = fed76Service.getMapping().getEffects().getById();
     List<LegendaryModDescriptor> descriptors = om.readValue(file, LEG_MOD_TYPE_REF);
     for (LegendaryModDescriptor descriptor : descriptors) {

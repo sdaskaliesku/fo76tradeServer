@@ -3,8 +3,8 @@ package com.manson.fo76.web.api;
 import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.config.LegendaryModDescriptor;
 import com.manson.domain.config.XTranslatorConfig;
-import com.manson.domain.fed76.BasePriceCheckResponse;
 import com.manson.domain.fed76.PriceCheckRequest;
+import com.manson.domain.fed76.PriceEstimate;
 import com.manson.domain.fo76.items.enums.FilterFlag;
 import com.manson.domain.fo76.items.enums.ItemCardText;
 import com.manson.domain.itemextractor.ItemResponse;
@@ -13,6 +13,7 @@ import com.manson.fo76.service.Fed76Service;
 import com.manson.fo76.service.GameConfigHolderService;
 import com.manson.fo76.service.GameConfigService;
 import com.manson.fo76.service.ItemConverterService;
+import com.manson.fo76.service.PriceRequestBuilder;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -83,28 +84,27 @@ public class GameApi {
   }
 
   @PostMapping(produces = MediaType.APPLICATION_JSON, consumes = MediaType.APPLICATION_JSON, value = "/priceCheck")
-  public final BasePriceCheckResponse priceCheck(@RequestBody ItemResponse item) {
+  public final PriceEstimate priceCheck(@RequestBody ItemResponse item) {
     if (item == null) {
-      return new BasePriceCheckResponse();
+      return new PriceEstimate();
     }
     Boolean isTradable = item.getIsTradable();
     boolean isValidFlag = ItemConverterService.SUPPORTED_PRICE_CHECK_ITEMS.contains(item.getFilterFlag());
     boolean isLegendary = item.getIsLegendary() || item.getFilterFlag() == FilterFlag.NOTES;
     boolean isInvalid = !isLegendary || !isValidFlag || !isTradable;
     if (isInvalid) {
-      return new BasePriceCheckResponse();
+      return new PriceEstimate();
     }
-    PriceCheckRequest request = fed76Service.createPriceCheckRequest(item);
+    PriceCheckRequest request = new PriceRequestBuilder(item).createPriceCheckRequest();
     if (Objects.isNull(request)) {
       log.error("Request is invalid, most likely invalid item {}", item.getText());
-      return new BasePriceCheckResponse();
+      return new PriceEstimate();
     }
     if (request.isValid()) {
       return fed76Service.priceCheck(request);
-    } else {
-      log.error("Request is invalid, ignoring: {} \r\n {}", request, item);
     }
-    return new BasePriceCheckResponse();
+    log.error("Request is invalid, ignoring: {} \r\n {}", request, item);
+    return new PriceEstimate();
   }
 
   @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/filterFlags")

@@ -180,9 +180,9 @@ public class GameConfigService {
   }
 
   public ArmorConfig findArmorType(int dr, int rr, int er) {
-    for (ArmorConfig config : config.getArmorConfigs()) {
-      if (config.getDr() == dr && config.getEr() == er && config.getRr() == rr) {
-        return config;
+    for (ArmorConfig conf : config.getArmorConfigs()) {
+      if (conf.getDr() == dr && conf.getEr() == er && conf.getRr() == rr) {
+        return conf;
       }
     }
     return null;

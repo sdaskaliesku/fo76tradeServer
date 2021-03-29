@@ -51,7 +51,10 @@ export class NavBar extends React.Component<any, any> {
           target: '_blank'
         });
       });
-      const label = `${appInfo.name} v${appInfo.version} (${appInfo.gitConfig.buildTimestamp})`;
+      let label = `${appInfo.name} v${appInfo.version}`;
+      if (appInfo.gitConfig.buildTimestamp && appInfo.gitConfig.buildTimestamp.length > 0) {
+        label += ` (${appInfo.gitConfig.buildTimestamp})`;
+      }
       const {discord, github, commitUrl } = appInfo;
       const newState = {
         items: [
