@@ -14,7 +14,7 @@
   "homepage": "https://github.com/sdaskaliesku/fo76tradeServer/",
   "dependencies": {
     "primeicons": "^4.1.0",
-    "primereact": "^6.0.2",
+    "primereact": "^6.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-json-view": "^1.21.1",

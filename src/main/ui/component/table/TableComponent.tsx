@@ -682,10 +682,10 @@ export class TableComponent extends React.Component<TableProps, TableState> {
                      exportFilename={this.state.exportFilename}
                      sortField={this.state.sortField}
           >
-            <Column selectionMode="multiple" headerStyle={{width: '3em'}}/>
-            <Column expander={true} headerStyle={{width: '3em'}}/>
+            <Column columnKey={'selection'} selectionMode="multiple" headerStyle={{width: '3em'}}/>
+            <Column columnKey={'expander'} expander={true} headerStyle={{width: '3em'}}/>
             {this.dynamicColumns()}
-            <Column exportable={false} header={'Actions'} body={this.actionsColumn}/>
+            <Column columnKey={'actions'} exportable={false} header={'Actions'} body={this.actionsColumn}/>
           </DataTable>
           <Toast ref={this.toast}/>
         </React.Fragment>
