@@ -87,12 +87,22 @@ export const columns = [
   }),
   createColumnDef({
     header: 'Fed76 Value',
-    field: 'priceCheckResponse.review.description',
+    field: 'priceCheckResponse.reviewDescription',
     visible: false
   }),
   createColumnDef({
     header: 'Fed76 Plan verdict',
     field: 'priceCheckResponse.verdict',
+    visible: false
+  }),
+  createColumnDef({
+    header: 'Fed76 min price',
+    field: 'priceCheckResponse.minPrice',
+    visible: false
+  }),
+  createColumnDef({
+    header: 'Fed76 max price',
+    field: 'priceCheckResponse.maxPrice',
     visible: false
   }),
   createColumnDef({header: 'Description', field: 'description', visible: false}),
