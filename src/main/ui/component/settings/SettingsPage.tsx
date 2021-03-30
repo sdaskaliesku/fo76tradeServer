@@ -28,17 +28,17 @@ export class SettingsPage extends React.Component<any, any> {
     const setIsBool = (value: boolean) => {
       this.setState({isBool: value});
     }
-    const setHeader = (value: string) => {
-      this.setState({header: value});
+    const setHeader = (e: any) => {
+      this.setState({header: e.target.value});
     }
-    const setField = (value: string) => {
-      this.setState({field: value});
+    const setField = (e: any) => {
+      this.setState({field: e.target.value});
     }
     const clearNewColumn = () => {
       setVisible(true);
       setIsBool(false);
-      setHeader('');
-      setField('');
+      setHeader({target: {value: ''}});
+      setField({target: {value: ''}});
     };
     const addNewColumn = () => {
       if (!field || field.length < 1 || !header || header.length < 1) {
@@ -82,7 +82,9 @@ export class SettingsPage extends React.Component<any, any> {
                        emptyMessage={'No custom columns'}
                        rows={100}
                        className={"p-datatable-sm p-datatable-gridlines"}
-                       selection={selected} onSelectionChange={e => this.setState({selected: e.value})} selectionMode="multiple"
+                       selection={selected}
+                       onSelectionChange={e => this.setState({selected: e.value})}
+                       selectionMode="multiple"
             >
               <Column field="header" header="Header"/>
               <Column field="field" header="Field"/>
@@ -100,14 +102,14 @@ export class SettingsPage extends React.Component<any, any> {
                   <div className="p-col-12 p-md-4 divider">
                     <div className="p-inputgroup">
                       <InputText placeholder="Field path" value={field}
-                                 onChange={e => setField(e.target.value)}/>
+                                 onChange={e => setField(e)}/>
                     </div>
                   </div>
 
                   <div className="p-col-12 p-md-4 divider">
                     <div className="p-inputgroup">
                       <InputText placeholder="Header name" value={header}
-                                 onChange={e => setHeader(e.target.value)}/>
+                                 onChange={e => setHeader(e)}/>
                     </div>
                   </div>
 
