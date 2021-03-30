@@ -55,7 +55,7 @@ export const createColumnDef = ({header, field, visible = true, isRating = false
 };
 
 const getLegModField = (index: number, field: string) => {
-  return `itemDetails.legendaryMods.${index}.${field}`
+  return `itemDetails.legendaryModConfig.legendaryMods.${index}.${field}`
 };
 
 export const columns = [
@@ -64,7 +64,7 @@ export const columns = [
   createColumnDef({header: 'Account', field: 'itemDetails.ownerInfo.accountName'}),
   createColumnDef({header: 'Character', field: 'itemDetails.ownerInfo.characterName'}),
   createColumnDef({header: 'Stars', field: 'numLegendaryStars', isRating: true}),
-  createColumnDef({header: 'Abbr', field: 'itemDetails.abbreviation'}),
+  createColumnDef({header: 'Abbr', field: 'itemDetails.legendaryModConfig.abbreviation'}),
   createColumnDef({header: 'Type', field: 'filterFlag'}),
   createColumnDef({
     header: 'Armor Grade',
