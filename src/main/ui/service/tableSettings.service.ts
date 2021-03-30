@@ -1,55 +1,55 @@
 import {LOCAL_STORAGE_KEYS, localStorageService} from "./localStorage.service";
-import {columns} from "./table.columns";
+import {ColumnDefinition, columns, createColumnDef, SimpleColumn,} from "./table.columns";
 
 class TableSettingsService {
 
-  private readonly columns: Map<string, boolean>;
+  private columnsInUse: Array<ColumnDefinition> = [...columns];
 
-  constructor() {
-    this.columns = TableSettingsService.load();
-    this.loadColumnsToDisplay();
+  public save(obj: Array<SimpleColumn>) {
+    localStorageService.set(LOCAL_STORAGE_KEYS.TABLE_COLUMNS, JSON.stringify(obj));
   }
 
-  private static load(): Map<string, boolean> {
+  private static load(): Array<SimpleColumn> {
     try {
-      const data = JSON.parse(localStorageService.get(LOCAL_STORAGE_KEYS.TABLE_SETTINGS));
-      if (data) {
-        return new Map(data);
-      }
+      return JSON.parse(localStorageService.get(LOCAL_STORAGE_KEYS.TABLE_COLUMNS));
     } catch (e) {
-      console.error('Error loading table settings', e);
+      console.error('Error loading table columns');
     }
-    return new Map<string, boolean>();
+    return [];
   }
 
-  public loadColumnsToDisplay() {
-    if (this.columns.size < 1) {
-      return;
+  public saveNewColumn(obj: SimpleColumn) {
+    const savedColumns = TableSettingsService.load();
+    savedColumns.push(obj);
+    this.save(savedColumns);
+  }
+
+  public getAllSavedColumns(): Array<ColumnDefinition> {
+    const savedColumns = TableSettingsService.load();
+    const newColumns: Array<ColumnDefinition> = [];
+
+    if (savedColumns && savedColumns.length > 0) {
+      savedColumns.forEach((col: ColumnDefinition) => {
+        if (!columns.some(e => e.field === col.field)) {
+          newColumns.push(createColumnDef({...col}));
+        }
+      });
     }
-    columns.forEach(col => {
-      // @ts-ignore
-      const hasKey = this.columns.has(col.field);
-      // @ts-ignore
-      const value = this.columns.get(col.field);
-      if (hasKey && value) {
-        col.visible = true;
-      } else {
-        col.visible = !hasKey;
-      }
-    });
+    return newColumns;
   }
 
-  public save() {
-    // @ts-ignore
-    const data = JSON.stringify([...this.columns]);
-    localStorageService.set(LOCAL_STORAGE_KEYS.TABLE_SETTINGS, data);
+
+  public getAllColumns(): Array<ColumnDefinition> {
+    const newColumns: Array<ColumnDefinition> = this.getAllSavedColumns();
+    this.columnsInUse = [...columns, ...newColumns];
+    return this.columnsInUse;
   }
 
-  public set({show, field}: { show: boolean, field: string }) {
-    this.columns.set(field, show);
-    this.save();
+  public getColumns(): Array<ColumnDefinition> {
+    return this.columnsInUse;
   }
 
 }
 
 export const tableSettingsService = new TableSettingsService();
+tableSettingsService.getAllColumns();

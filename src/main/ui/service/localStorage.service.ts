@@ -1,6 +1,7 @@
 export const LOCAL_STORAGE_KEYS = {
   TOKEN: 'fo76marketToken',
-  TABLE_SETTINGS: 'fo76tableSettings'
+  TABLE_SETTINGS: 'fo76tableSettings',
+  TABLE_COLUMNS: 'fo76tableColumns'
 }
 
 class LocalStorageService {

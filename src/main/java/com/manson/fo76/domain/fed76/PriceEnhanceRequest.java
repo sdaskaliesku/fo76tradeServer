@@ -3,9 +3,11 @@ package com.manson.fo76.domain.fed76;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.manson.domain.fed76.pricing.ArmorConfig;
+
+import com.manson.domain.config.ArmorConfig;
 import com.manson.domain.fed76.pricing.LegendaryMod;
 import com.manson.domain.fed76.pricing.VendorData;
+import com.manson.domain.fo76.items.enums.ArmorGrade;
 import java.util.List;
 import java.util.Objects;
 import lombok.Data;
@@ -41,8 +43,8 @@ public class PriceEnhanceRequest {
         boolean validMods = CollectionUtils.isNotEmpty(this.legendaryMods) && this.legendaryMods.stream()
             .allMatch(x -> StringUtils.isNotBlank(x.getGameId()));
         boolean validConfig = true;
-        if (Objects.nonNull(this.armorConfig)) {
-            validConfig = StringUtils.isNoneBlank(armorConfig.getArmorId(), armorConfig.getArmorGrade());
+        if (Objects.nonNull(this.armorConfig) && armorConfig.getArmorGrade() != ArmorGrade.Unknown) {
+            validConfig = StringUtils.isNoneBlank(armorConfig.getArmorId());
         }
 
         return validConfig && validMods && validPrice;

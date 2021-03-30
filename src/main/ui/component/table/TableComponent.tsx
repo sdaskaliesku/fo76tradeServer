@@ -1,5 +1,5 @@
 import {DataTable, DataTableProps} from "primereact/datatable";
-import {ColumnDefinition, columns} from "../../service/table.columns";
+import {ColumnDefinition} from "../../service/table.columns";
 import {MultiSelect} from "primereact/multiselect";
 import {InputText} from "primereact/inputtext";
 import React from "react";
@@ -20,6 +20,7 @@ import {Toast} from "primereact/toast";
 import {Prompt} from "react-st-modal";
 import {defaultTableFilters, TableFilter} from "../../service/filter.service";
 import {itemService} from "../../service/item.service";
+import {tableSettingsService} from "../../service/tableSettings.service";
 
 enum ExportType {
   JSON, CSV, ROGUE_TRADER
@@ -121,7 +122,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
       const additionalFilters = new Set(this.state.selectedColumns);
       const filterFields = {};
       filter.filterOptions.forEach(filterOption => {
-        columns.forEach(col => {
+        tableSettingsService.getColumns().forEach(col => {
           if (col.field === filterOption.field) {
             additionalFilters.add(col);
           }
@@ -168,7 +169,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
     this.onDeleteSelectedItems = this.onDeleteSelectedItems.bind(this);
     this.onReportSelectedItems = this.onReportSelectedItems.bind(this);
     this.onReportItem = this.onReportItem.bind(this);
-    this.setSelectedColumns(columns.filter(col => col.visible));
+    this.setSelectedColumns(tableSettingsService.getColumns().filter(col => col.visible));
     this.menuItems.push({
       label: 'Filters',
       icon: 'pi pi-fw pi-filter',
@@ -392,7 +393,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
 
   private onColumnToggle(event: any) {
     let selected = event.value as Array<ColumnDefinition>;
-    let orderedSelectedColumns = columns.filter(col => selected.some(sCol => sCol.field === col.field));
+    let orderedSelectedColumns = tableSettingsService.getColumns().filter(col => selected.some(sCol => sCol.field === col.field));
     this.setSelectedColumns(orderedSelectedColumns);
   }
 
@@ -423,7 +424,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
     return () => (
         <React.Fragment>
           <span>Columns to display&nbsp;</span>
-          <MultiSelect value={selectedColumns} options={columns} optionLabel="header"
+          <MultiSelect value={selectedColumns} options={tableSettingsService.getColumns()} optionLabel="header"
                        onChange={this.onColumnToggle} style={{width: '20em'}}/>
         </React.Fragment>)
   }
