@@ -5,18 +5,27 @@ class TableSettingsService {
 
   private columnsInUse: Array<ColumnDefinition> = [...columns];
 
-  TableSettingsService() {
-    this.getAllColumns();
+  public save(obj: Array<SimpleColumn>) {
+    localStorageService.set(LOCAL_STORAGE_KEYS.TABLE_COLUMNS, JSON.stringify(obj));
+  }
+
+  private static load(): Array<SimpleColumn> {
+    try {
+      return JSON.parse(localStorageService.get(LOCAL_STORAGE_KEYS.TABLE_COLUMNS));
+    } catch (e) {
+      console.error('Error loading table columns');
+    }
+    return [];
   }
 
   public saveNewColumn(obj: SimpleColumn) {
-    const savedColumns = JSON.parse(localStorageService.get(LOCAL_STORAGE_KEYS.TABLE_COLUMNS));
+    const savedColumns = TableSettingsService.load();
     savedColumns.push(obj);
-    localStorageService.set(LOCAL_STORAGE_KEYS.TABLE_COLUMNS, JSON.stringify(savedColumns));
+    this.save(savedColumns);
   }
 
-  private getAllSavedColumns(): Array<ColumnDefinition> {
-    const savedColumns = JSON.parse(localStorageService.get(LOCAL_STORAGE_KEYS.TABLE_COLUMNS));
+  public getAllSavedColumns(): Array<ColumnDefinition> {
+    const savedColumns = TableSettingsService.load();
     const newColumns: Array<ColumnDefinition> = [];
 
     if (savedColumns && savedColumns.length > 0) {

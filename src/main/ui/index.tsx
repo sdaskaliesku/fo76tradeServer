@@ -10,7 +10,8 @@ import {NavBar} from "./component/navbar/NavBar";
 import {FileUploader, FileUploaderStatus} from "./component/fileUploader/FileUploader";
 import {InfoDialog} from "./component/dialog/InfoDialog";
 import {MIN_MOD_SUPPORTED_VERSION} from "./service/domain";
-
+import {Route, Switch, HashRouter} from "react-router-dom";
+import {SettingsPage} from "./component/settings/SettingsPage";
 PrimeReact.ripple = true;
 
 document.documentElement.style.fontSize = '9px';
@@ -32,7 +33,7 @@ const App = () => {
   const [fileStatus, setFileStatus] = useState(FileUploaderStatus.NONE);
   const dialogRef: any = useRef(null);
 
-   const showModal = (input: string) => {
+  const showModal = (input: string) => {
     dialogRef.current.show('Ooops', input);
   }
 
@@ -57,11 +58,19 @@ const App = () => {
   }
 
   const template = (content: any) => (
-      <React.Fragment>
+      <HashRouter>
         <NavBar/>
-        {content}
-        <InfoDialog ref={dialogRef}/>
-      </React.Fragment>);
+        <Switch>
+          <Route path='/settings'>
+            <SettingsPage/>
+          </Route>
+          <Route path="/">
+            {content}
+            <InfoDialog ref={dialogRef}/>
+          </Route>
+        </Switch>
+      </HashRouter>
+  );
 
   let body: any;
 

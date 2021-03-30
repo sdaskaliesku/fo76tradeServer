@@ -63,6 +63,13 @@ export class NavBar extends React.Component<any, any> {
             disabled: true
           },
           {
+            label: 'Home',
+            icon: 'pi pi-fw pi-home',
+            command: (event: any) => {
+              window.location.hash = "/";
+            }
+          },
+          {
             label: 'Website',
             icon: 'pi pi-fw pi-globe',
             items: websites
@@ -74,7 +81,17 @@ export class NavBar extends React.Component<any, any> {
             label: 'Get tools',
             icon: 'pi pi-fw pi-download',
             items: tools
-          }
+          },
+          {
+            separator: true
+          },
+          {
+            label: 'Settings',
+            icon: 'pi pi-fw pi-cog',
+            command: (event: any) => {
+              window.location.hash = "/settings";
+            }
+          },
         ],
         end: [
           {
