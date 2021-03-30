@@ -1625,6 +1625,7 @@
   {
     "id": "mod_Legendary_Armor1_ResistancesProportionalHealth",
     "gameId": "00529A05",
+    "nameOverride": "Vanguard",
     "texts": {
       "de": "Verstärkung",
       "en": "Bolstering",
@@ -5178,6 +5179,7 @@
       "zhhant": "無限"
     },
     "enabled": true,
+    "legacy": true,
     "star": 1,
     "abbreviation": "d",
     "additionalAbbreviations": [

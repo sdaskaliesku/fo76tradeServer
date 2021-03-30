@@ -541,7 +541,7 @@ public class ItemConverterService {
         legendaryMod.setValue(getDefaultText(descriptor.getTranslations()));
         String abbreviation = descriptor.getAbbreviation();
         String gameId = descriptor.getGameId();
-        if (descriptor.getStar() > 3) {
+        if (descriptor.getStar() > 3 || descriptor.isLegacy()) {
             abbreviation = HACKED_LEG_MOD;
             gameId = descriptor.getGameId();
         } else {
@@ -553,6 +553,9 @@ public class ItemConverterService {
             }
         }
         String text = getDefaultText(descriptor.getTexts());
+        if (StringUtils.isNotBlank(descriptor.getNameOverride())) {
+            text = descriptor.getNameOverride() + "(" + text + ")";
+        }
         legendaryMod.setAbbreviation(abbreviation);
         legendaryMod.setStar(descriptor.getStar());
         legendaryMod.setId(descriptor.getId());

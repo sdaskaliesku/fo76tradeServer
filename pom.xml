@@ -41,7 +41,7 @@
     <dependency>
       <groupId>com.github.sdaskaliesku</groupId>
       <artifactId>fo76Domain</artifactId>
-      <version>domain-1.9.0</version>
+      <version>domain-1.10.0</version>
     </dependency>
     <dependency>
       <groupId>com.github.opendevl</groupId>
