@@ -51,13 +51,23 @@ export class NavBar extends React.Component<any, any> {
           target: '_blank'
         });
       });
-      const label = `${appInfo.name} v${appInfo.version} (${appInfo.gitConfig.buildTimestamp})`;
+      let label = `${appInfo.name} v${appInfo.version}`;
+      if (appInfo.gitConfig.buildTimestamp && appInfo.gitConfig.buildTimestamp.length > 0) {
+        label += ` (${appInfo.gitConfig.buildTimestamp})`;
+      }
       const {discord, github, commitUrl } = appInfo;
       const newState = {
         items: [
           {
             label: label,
             disabled: true
+          },
+          {
+            label: 'Home',
+            icon: 'pi pi-fw pi-home',
+            command: (event: any) => {
+              window.location.hash = "/";
+            }
           },
           {
             label: 'Website',
@@ -71,7 +81,17 @@ export class NavBar extends React.Component<any, any> {
             label: 'Get tools',
             icon: 'pi pi-fw pi-download',
             items: tools
-          }
+          },
+          {
+            separator: true
+          },
+          {
+            label: 'Settings',
+            icon: 'pi pi-fw pi-cog',
+            command: (event: any) => {
+              window.location.hash = "/settings";
+            }
+          },
         ],
         end: [
           {

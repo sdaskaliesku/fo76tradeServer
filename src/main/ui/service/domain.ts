@@ -1,6 +1,5 @@
 import {UploadFileFilters} from "./filter.service";
 
-export const APP_VERSION = '0.951';
 export const MIN_MOD_SUPPORTED_VERSION = 0.4;
 
 export interface UrlConfig {

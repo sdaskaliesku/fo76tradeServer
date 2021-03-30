@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class GitConfig {
 
-  @Value("${git.build.time}")
+  @Value("${git.build.time:}")
   private String buildTimestamp;
 
   @Value("${git.commit.id:}")

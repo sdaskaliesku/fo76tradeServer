@@ -31,7 +31,7 @@ public class ReportedItemsTests {
 
   private static final GameConfigHolderService gameConfigHolderService = new GameConfigHolderService();
   private static final GameConfigService gameConfigService = new GameConfigService(gameConfigHolderService);
-  private static final Fed76Service fed76Service = new Fed76Service(OM);
+  private static final Fed76Service fed76Service = new Fed76Service(null, OM);
   private static final ItemConverterService itemConverterService = new ItemConverterService(gameConfigService, fed76Service);
 
   @BeforeAll
@@ -56,7 +56,7 @@ public class ReportedItemsTests {
       if (item.getItemDetails() == null) {
         continue;
       }
-      List<LegendaryMod> legendaryMods = item.getItemDetails().getLegendaryMods();
+      List<LegendaryMod> legendaryMods = item.getItemDetails().getLegendaryModConfig().getLegendaryMods();
       if (CollectionUtils.isEmpty(legendaryMods)) {
         continue;
       }
