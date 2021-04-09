@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dserver.port=$PORT -Dmongo.user=$mongo_user -Dmongo.password=$mongo_password -Dmongo.db=$mongo_db -Dmongo.url=$mongo_url -Dgit.build.time=$HEROKU_RELEASE_CREATED_AT -Dgit.commit.id=$HEROKU_SLUG_COMMIT -jar target/fo76tradeServer-1.1-SNAPSHOT.jar
+web: java $JAVA_OPTS -Dserver.port=$PORT -Dmongo.user=$mongo_user -Dmongo.password=$mongo_password -Dmongo.db=$mongo_db -Dmongo.url=$mongo_url -Dgit.build.time=$HEROKU_RELEASE_CREATED_AT -Dgit.commit.id=$HEROKU_SLUG_COMMIT -jar target/fo76tradeServer-1.2-SNAPSHOT.jar
