@@ -27,6 +27,8 @@ import com.manson.domain.itemextractor.OwnerInfo;
 import com.manson.domain.itemextractor.Stats;
 import com.manson.fo76.domain.ItemContext;
 import com.manson.fo76.domain.fed76.PriceEnhanceRequest;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -218,7 +220,7 @@ public class ItemConverterService {
             String key = getItemResponseKey(itemResponse);
             if (dedupedItems.containsKey(key)) {
                 ItemResponse item = dedupedItems.get(key);
-                item.setCount(item.getCount() + 1);
+                item.setCount(item.getCount() + itemResponse.getCount());
             } else {
                 dedupedItems.put(key, itemResponse);
             }
@@ -318,6 +320,16 @@ public class ItemConverterService {
         return dedupeItems(allItems);
     }
 
+    private static Double formatDouble(Double input) {
+        try {
+            BigDecimal bd = new BigDecimal(input).setScale(2, RoundingMode.HALF_UP);
+            return bd.doubleValue();
+        } catch (Exception ignored) {
+
+        }
+        return input;
+    }
+
     private ItemResponse fromItemDescriptor(ItemDescriptor descriptor, OwnerInfo ownerInfo, ItemSource itemSource,
         ItemContext context) {
         FilterFlag filterFlag = FilterFlag.fromInt(descriptor.getFilterFlag());
@@ -327,7 +339,7 @@ public class ItemConverterService {
             .serverHandleId(descriptor.getServerHandleId())
             .text(descriptor.getText())
             .itemValue(descriptor.getItemValue())
-            .weight(descriptor.getWeight())
+            .weight(formatDouble(descriptor.getWeight()))
             .itemLevel(descriptor.getItemLevel())
             .numLegendaryStars(descriptor.getNumLegendaryStars())
             .isTradable(descriptor.isTradable())
@@ -439,7 +451,7 @@ public class ItemConverterService {
         List<Pair<ItemCardEntry, ItemCardText>> pairs = getItemCardTexts(descriptor.getItemCardEntries());
 
         double packWeight = Objects.isNull(descriptor.getWeight()) ? 0 : descriptor.getWeight();
-
+        double totalWeight = formatDouble(packWeight * descriptor.getCount());
         FilterFlag filterFlag = clarifyFilterFlag(descriptor);
         ItemConfig config = findItemConfig(descriptor, filterFlag);
         String name = StringUtils.EMPTY;
@@ -458,15 +470,11 @@ public class ItemConverterService {
             .description(buildItemDescription(pairs, descriptor.isLegendary()))
             .config(config)
             .legendaryModConfig(legModConfig)
-//        .abbreviation(abbreviation)
-//        .abbreviationId(abbreviationId)
             .armorConfig(armorConfig)
-//        .legendaryMods(legendaryMods)
             .itemSource(itemSource)
-//        .filterFlag(filterFlag)
             .stats(stats)
             .ownerInfo(ownerInfo)
-            .totalWeight(packWeight * descriptor.getCount())
+            .totalWeight(totalWeight)
             .build();
     }
 
@@ -554,7 +562,7 @@ public class ItemConverterService {
         }
         String text = getDefaultText(descriptor.getTexts());
         if (StringUtils.isNotBlank(descriptor.getNameOverride())) {
-            text = descriptor.getNameOverride() + "(" + text + ")";
+            text = descriptor.getNameOverride();
         }
         legendaryMod.setAbbreviation(abbreviation);
         legendaryMod.setStar(descriptor.getStar());
