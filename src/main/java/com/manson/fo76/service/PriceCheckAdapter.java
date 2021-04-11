@@ -70,7 +70,15 @@ public class PriceCheckAdapter {
         String errorMessage = String.join(", ", errors);
         PriceType priceType = MAP.get(filterFlag);
         if (PriceType.ITEM == priceType) {
-            ItemPriceCheckResponse itemResponse = (ItemPriceCheckResponse) response;
+            ItemPriceCheckResponse itemResponse = null;
+            try {
+                itemResponse = (ItemPriceCheckResponse) response;
+            } catch (ClassCastException ignored) {
+
+            }
+            if (Objects.isNull(itemResponse)) {
+                return priceEstimate;
+            }
             priceEstimate.setDescription(itemResponse.getDescription());
             ItemReview review = itemResponse.getReview();
             if (Objects.isNull(review)) {
@@ -87,7 +95,15 @@ public class PriceCheckAdapter {
             priceEstimate.setNiche(details.getNiche());
             priceEstimate.setOriginal(silentParse(details.getOriginal()).intValue());
         } else if (PriceType.PLAN == priceType) {
-            PlanPriceCheckResponse planResponse = (PlanPriceCheckResponse) response;
+            PlanPriceCheckResponse planResponse = null;
+            try {
+                planResponse = (PlanPriceCheckResponse) response;
+            } catch (ClassCastException ignored) {
+
+            }
+            if (Objects.isNull(planResponse)) {
+                return priceEstimate;
+            }
             priceEstimate.setDescription(planResponse.getVerdict());
             PlanReview review = planResponse.getReview();
             if (Objects.isNull(review) || Objects.isNull(review.getReview())) {
