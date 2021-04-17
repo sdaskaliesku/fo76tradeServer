@@ -22,8 +22,9 @@ const legendaryFilter = (object: Item) => {
 export class RogueService {
 
   private static getLegModValue(item: Item, index: number) {
-    if (item && item.itemDetails && item.itemDetails.legendaryMods && item.itemDetails.legendaryMods.length >= index && item.itemDetails.legendaryMods[index]) {
-      return item.itemDetails.legendaryMods[index].gameId;
+    if (item && item.itemDetails && item.itemDetails.legendaryModConfig && item.itemDetails.legendaryModConfig.legendaryMods.length >= index
+        && item.itemDetails.legendaryModConfig.legendaryMods[index]) {
+      return item.itemDetails.legendaryModConfig.legendaryMods[index].gameId;
     }
   }
 

@@ -100,6 +100,7 @@ export interface ItemDetails {
   abbreviationId?: string;
   config?: any;
   armorConfig?: any;
+  legendaryModConfig: any;
   legendaryMods?: Array<any>;
   stats?: Array<Stat>;
 }
