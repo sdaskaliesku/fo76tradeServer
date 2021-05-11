@@ -12,6 +12,9 @@ import {InfoDialog} from "./component/dialog/InfoDialog";
 import {MIN_MOD_SUPPORTED_VERSION} from "./service/domain";
 import {Route, Switch, HashRouter} from "react-router-dom";
 import {SettingsPage} from "./component/settings/SettingsPage";
+import {routes} from "./service/Routes";
+import {InventOmaticPipboy} from "./component/config/InventOmaticPipboy";
+import {InventOmaticStash} from "./component/config/InventOmaticStash";
 PrimeReact.ripple = true;
 
 document.documentElement.style.fontSize = '9px';
@@ -61,10 +64,16 @@ const App = () => {
       <HashRouter>
         <NavBar/>
         <Switch>
-          <Route path='/settings'>
+          <Route path={routes.InventOmaticPipboy}>
+            <InventOmaticPipboy/>
+          </Route>
+          <Route path={routes.InventOmaticStash}>
+            <InventOmaticStash/>
+          </Route>
+          <Route path={routes.SETTINGS}>
             <SettingsPage/>
           </Route>
-          <Route path="/">
+          <Route path={routes.HOME}>
             {content}
             <InfoDialog ref={dialogRef}/>
           </Route>
@@ -76,7 +85,7 @@ const App = () => {
 
   switch (fileStatus) {
     case FileUploaderStatus.ERROR:
-      body = <p>'modal dialog'</p>;
+      // todo: show error
       break;
     case FileUploaderStatus.LOADED:
       if (tableData.length > 1) {
