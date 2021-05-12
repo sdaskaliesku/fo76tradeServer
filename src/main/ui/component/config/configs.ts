@@ -1,6 +1,9 @@
-import {MatchMode} from "./BaseInventOmatic";
+const stringIsNumber = (value: any) => !isNaN(Number(value));
 
-export enum ItemTypes {
+const toArray = (enumme: any) => Object.keys(enumme).filter(stringIsNumber).map(key => enumme[key]);
+
+export enum ItemType {
+  ALL,
   POWER_ARMOR,
   WEAPON,
   ARMOR,
@@ -15,17 +18,27 @@ export enum ItemTypes {
   JUNK
 }
 
+export enum MatchMode {
+  ALL,
+  EXACT,
+  CONTAINS,
+  STARTS
+}
+
+export const MatchModes = toArray(MatchMode);
+export const ItemTypes = toArray(ItemType);
+
 export interface TeenoodleTragedyProtection {
   ignoreLegendaries: boolean,
-  ignoreNonTradable: boolean,
-  typesToDrop: Array<string>
+  ignoreNonTradable: boolean
 }
 
 export interface ItemNameConfig {
   name: string,
   quantity: number,
   matchMode: keyof MatchMode,
-  enabled: boolean
+  enabled: boolean,
+  type: keyof ItemType
 }
 
 export interface SectionConfig {
