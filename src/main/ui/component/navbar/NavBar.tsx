@@ -5,6 +5,7 @@ import {Button} from "primereact/button";
 import { AppInfo, UrlConfig } from "../../service/domain";
 import './NavBar.scss';
 import {gameApiService} from "../../service/game.api.service";
+import {routes} from "../../service/Routes";
 
 export class NavBar extends React.Component<any, any> {
 
@@ -66,7 +67,7 @@ export class NavBar extends React.Component<any, any> {
             label: 'Home',
             icon: 'pi pi-fw pi-home',
             command: (event: any) => {
-              window.location.hash = "/";
+              window.location.hash = routes.HOME;
             }
           },
           {
@@ -89,7 +90,21 @@ export class NavBar extends React.Component<any, any> {
             label: 'Settings',
             icon: 'pi pi-fw pi-cog',
             command: (event: any) => {
-              window.location.hash = "/settings";
+              window.location.hash = routes.SETTINGS;
+            }
+          },
+          {
+            label: 'InventOmaticPipboy',
+            icon: 'pi pi-fw pi-cog',
+            command: (event: any) => {
+              window.location.hash = routes.InventOmaticPipboy;
+            }
+          },
+          {
+            label: 'InventOmaticStash',
+            icon: 'pi pi-fw pi-cog',
+            command: (event: any) => {
+              window.location.hash = routes.InventOmaticStash;
             }
           },
         ],
