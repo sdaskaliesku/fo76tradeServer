@@ -5,6 +5,7 @@ import {Utils} from "../../service/utils";
 import {JsonForms} from "@jsonforms/react";
 import {materialCells, materialRenderers} from "@jsonforms/material-renderers";
 import {schema1} from "./schema1";
+import {Button} from "primereact/button";
 
 export class InventOmaticPipboy extends BaseInventOmatic<any> {
 
@@ -45,17 +46,18 @@ export class InventOmaticPipboy extends BaseInventOmatic<any> {
     this.setData = this.setData.bind(this);
   }
 
-  private setData(data: any, errors: any) {
-    console.log(errors);
-    console.log(data);
-    this.setState({...data});
+  private setData(e: any) {
+    if (e.errors && e.errors.length > 0) {
+      console.error(e.errors);
+    }
+    this.setState({...e.data});
   }
 
   render() {
     const {data} = this.state;
 
-    const onSubmit = (e: any) => {
-      const jsonString: string = JSON.stringify(e.formData, null, 10);
+    const onSubmit = () => {
+      const jsonString: string = JSON.stringify(data, null, 10);
       Utils.downloadString(jsonString, 'text/json', 'inventOmaticPipboyConfig.json');
     };
     const theme = createMuiTheme({
@@ -68,13 +70,14 @@ export class InventOmaticPipboy extends BaseInventOmatic<any> {
           <CssBaseline/>
           <div className={"wrapper"}>
             <div className={"pipboy-form"}>
+              <Button className={'p-button-success'} onClick={onSubmit}>Get config!</Button>
               <JsonForms
                   schema={schema1.schema}
                   data={data}
                   renderers={materialRenderers}
                   cells={materialCells}
                   validationMode={"ValidateAndShow"}
-                  onChange={({errors, data1}: any) => this.setData(errors, data1)}
+                  onChange={(e: any) => this.setData(e)}
               />
             </div>
           </div>
