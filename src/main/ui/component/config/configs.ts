@@ -25,8 +25,10 @@ export enum MatchMode {
   STARTS
 }
 
-export const MatchModes = toArray(MatchMode);
-export const ItemTypes = toArray(ItemType);
+export enum Action {
+  CONSUME,
+  DROP
+}
 
 export interface TeenoodleTragedyProtection {
   ignoreLegendaries: boolean,
@@ -38,7 +40,8 @@ export interface ItemNameConfig {
   quantity: number,
   matchMode: keyof MatchMode,
   enabled: boolean,
-  type: keyof ItemType
+  type: keyof ItemType,
+  action: keyof Action
 }
 
 export interface SectionConfig {
@@ -60,6 +63,9 @@ export interface ActionSectionConfig {
 export interface InventOmaticPipboyConfig {
   debug: boolean,
   showRealItemName: boolean,
-  drop: Array<ActionSectionConfig>,
-  consume: Array<ActionSectionConfig>
+  actions: Array<ActionSectionConfig>
 }
+
+export const MatchModes = toArray(MatchMode);
+export const ItemTypes = toArray(ItemType);
+export const Actions = toArray(Action);
