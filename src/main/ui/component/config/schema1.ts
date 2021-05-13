@@ -1,4 +1,5 @@
-import {MatchModes} from "./configs";
+import {Actions, ItemTypes, MatchModes} from "./configs";
+import {JsonSchema, JsonSchema4} from "@jsonforms/core";
 
 const commonSchema = {
   debug: {
@@ -34,7 +35,7 @@ const itemNameConfigSchema = {
   }
 }
 
-const sectionConfigSchema = {
+const sectionConfigSchema: JsonSchema4 = {
   items: {
     type: 'object',
     properties: {
@@ -42,10 +43,11 @@ const sectionConfigSchema = {
         type: "string"
       },
       hotkey: {
-        type: "integer"
+        type: "number"
       },
       enabled: {
-        type: "boolean"
+        type: "boolean",
+        default: true
       },
       checkCharacterName: {
         type: "boolean"
@@ -61,12 +63,20 @@ const sectionConfigSchema = {
             name: {
               type: 'string'
             },
+            type: {
+              type: 'string',
+              enum: ItemTypes,
+            },
             quantity: {
               type: 'string'
             },
             matchMode: {
               type: "string",
               enum: MatchModes
+            },
+            action: {
+              type: 'string',
+              enum: Actions
             },
             enabled: {
               type: "boolean"
@@ -87,7 +97,7 @@ const consumeSection = {
   ...sectionConfigSchema
 }
 
-export const schema = {
+export const schema: JsonSchema = {
   type: 'object',
   properties: {
     debug: {
@@ -99,12 +109,83 @@ export const schema = {
       title: 'Show pop-up with real item name',
       description: 'Once you select item in pipboy, it will show a message with full real item name'
     },
-    drop: dropSection,
-    consume: consumeSection
+    configs: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          name: {
+            type: "string"
+          },
+          hotkey: {
+            type: "integer",
+          },
+          enabled: {
+            type: "boolean",
+            default: true
+          },
+          checkCharacterName: {
+            type: "boolean"
+          },
+          characterName: {
+            type: "string"
+          },
+          itemNames: {
+            type: "array",
+            items: {
+              type: 'object',
+              properties: {
+                name: {
+                  type: 'string'
+                },
+                type: {
+                  type: 'string',
+                  enum: ItemTypes,
+                },
+                quantity: {
+                  type: 'number'
+                },
+                matchMode: {
+                  type: "string",
+                  enum: MatchModes,
+                  default: 'EXACT'
+                },
+                action: {
+                  type: 'string',
+                  enum: Actions,
+                  default: 'CONSUME'
+                },
+                enabled: {
+                  type: "boolean",
+                  default: true
+                },
+              }
+            }
+          },
+          teenoodleTragedyProtection: {
+            type: 'object',
+            title: 'Teenoodle tragedy protection',
+            properties: {
+              ignoreLegendaries: {
+                title: 'Ignore legendaries items (do not drop them)',
+                type: "boolean",
+                default: true
+              },
+              ignoreNonTradable: {
+                title: 'Ignore non-tradable items (do not drop them)',
+                type: "boolean",
+                default: true
+              }
+            }
+          }
+        }
+      }
+    }
   }
 };
 
 export const uischema = {
+  // type: 'HorizontalLayout',
   type: 'VerticalLayout',
   elements: [
     {
