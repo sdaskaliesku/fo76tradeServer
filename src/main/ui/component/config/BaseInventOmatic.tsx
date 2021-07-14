@@ -14,5 +14,13 @@ export class BaseInventOmatic<State> extends React.Component<any, State> {
     super(props, context);
   }
 
+  render() {
+    return (
+        <div>
+          <h1>THIS IS WORK IN PROGRESS!</h1>
+        </div>
+    );
+  }
+
 }
 

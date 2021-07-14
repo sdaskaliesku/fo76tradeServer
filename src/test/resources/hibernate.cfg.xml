@@ -10,7 +10,7 @@
     <property name="format_sql">true</property>
     <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
     <property name="connection.driver_class">org.sqlite.JDBC</property>
-    <property name="connection.url">jdbc:sqlite:C:\Users\manso\Desktop\sql/fo76jdump.sqlite</property>
+    <property name="connection.url">jdbc:sqlite:D:\workspace\fo76tradeServer\db.slqlite</property>
 
     <property name="hibernate.hbm2ddl.auto">validate</property>
 

@@ -70,6 +70,7 @@ export class InventOmaticPipboy extends BaseInventOmatic<any> {
           <CssBaseline/>
           <div className={"wrapper"}>
             <div className={"pipboy-form"}>
+              <h1>THIS IS WORK IN PROGRESS!</h1>
               <Button className={'p-button-success'} onClick={onSubmit}>Get config!</Button>
               <JsonForms
                   schema={schema1.schema}

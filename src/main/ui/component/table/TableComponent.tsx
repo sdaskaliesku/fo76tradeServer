@@ -8,7 +8,7 @@ import {Column} from "primereact/column";
 import {Item, PriceCheckResponse} from "../../service/domain";
 import {Button} from "primereact/button";
 import {Menubar} from "primereact/menubar";
-import {MenuItem} from "primereact/components/menuitem/MenuItem";
+
 import {RogueService} from "../../service/rogue.service";
 import {Utils} from "../../service/utils";
 import ReactJson from "react-json-view";
@@ -21,6 +21,7 @@ import {Prompt} from "react-st-modal";
 import {defaultTableFilters, TableFilter} from "../../service/filter.service";
 import {itemService} from "../../service/item.service";
 import {tableSettingsService} from "../../service/tableSettings.service";
+import {MenuItem} from "primereact/menuitem";
 
 enum ExportType {
   JSON, CSV, ROGUE_TRADER
@@ -46,7 +47,7 @@ const defaultTableProps: DataTableProps = {
 
 const filterOptions = {
   filter: true,
-  filterMatchMode: 'contains',
+  filterMatchMode: "contains",
   filterPlaceholder: 'Search'
 }
 
@@ -625,6 +626,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
   private dynamicColumns() {
     return this.state.selectedColumns.map((col: ColumnDefinition) => {
       if (col.isRating) {
+        // @ts-ignore
         return <Column
             key={col.field}
             columnKey={col.field}
@@ -635,6 +637,7 @@ export class TableComponent extends React.Component<TableProps, TableState> {
             {...filterOptions}
         />;
       }
+      // @ts-ignore
       return <Column
           key={col.field}
           body={col.isBool ? TableComponent.booleanBodyTemplate(col) : ''}
