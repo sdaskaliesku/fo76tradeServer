@@ -4,7 +4,7 @@ import {createMuiTheme, CssBaseline, ThemeProvider} from "@material-ui/core";
 import {Button} from "primereact/button";
 import "./HUDEditor.scss";
 import {InputNumber} from "primereact/inputnumber";
-import {toXML} from "jstoxml";
+import { toXML } from "jstoxml";
 
 interface HudEditorSettings {
   Elements: any
@@ -17,7 +17,11 @@ interface ElementProps {
 }
 
 export class Element extends React.Component<ElementProps, any> {
-  state = {};
+  state = {
+    Scale: 1,
+    X: 1,
+    Y: 0
+  };
   elements = [
     {
       label: 'Scale',
