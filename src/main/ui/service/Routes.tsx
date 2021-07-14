@@ -3,4 +3,5 @@ export const routes = {
   SETTINGS: "/settings",
   InventOmaticPipboy: "/InventOmaticPipboy",
   InventOmaticStash: "/InventOmaticStash",
+  HUDEditor: "/HUDEditor",
 }

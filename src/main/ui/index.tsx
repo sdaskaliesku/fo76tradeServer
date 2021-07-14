@@ -15,6 +15,7 @@ import {SettingsPage} from "./component/settings/SettingsPage";
 import {routes} from "./service/Routes";
 import {InventOmaticPipboy} from "./component/config/InventOmaticPipboy";
 import {InventOmaticStash} from "./component/config/InventOmaticStash";
+import {HUDEditor} from "./component/config/HUDEditor";
 PrimeReact.ripple = true;
 
 document.documentElement.style.fontSize = '9px';
@@ -69,6 +70,9 @@ const App = () => {
           </Route>
           <Route path={routes.InventOmaticStash}>
             <InventOmaticStash/>
+          </Route>
+          <Route path={routes.HUDEditor}>
+            <HUDEditor/>
           </Route>
           <Route path={routes.SETTINGS}>
             <SettingsPage/>
