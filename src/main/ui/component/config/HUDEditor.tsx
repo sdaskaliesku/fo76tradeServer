@@ -4,7 +4,7 @@ import {createMuiTheme, CssBaseline, ThemeProvider} from "@material-ui/core";
 import {Button} from "primereact/button";
 import "./HUDEditor.scss";
 import {InputNumber} from "primereact/inputnumber";
-import { toXML } from "jstoxml";
+import {toXML} from "jstoxml";
 
 interface HudEditorSettings {
   Elements: any
@@ -41,12 +41,14 @@ export class Element extends React.Component<ElementProps, any> {
       step: 1
     }
   ];
+  htmlElements: any;
 
 
   componentDidMount() {
     this.elements.forEach(el => {
       this.setState({[el.label]: el.default});
     });
+    this.htmlElements = this.elements.map((el) => this.createInput(el.label, el.step, el.min, el.max, Utils.uuidv4()));
     this.onDataChange(this.state);
   }
 
@@ -74,12 +76,11 @@ export class Element extends React.Component<ElementProps, any> {
   }
 
   render() {
-    let htmlEls = this.elements.map((el) => this.createInput(el.label, el.step, el.min, el.max, Utils.uuidv4()));
     return (
         <div className={'hud-elements'}>
           <label className={'title'}>{this.props.label}</label>
           <label className={'description'}>{this.props.description}</label>
-          {htmlEls}
+          {this.htmlElements}
         </div>
     );
   }
@@ -194,12 +195,10 @@ export class HUDEditor extends React.Component<any, HudEditorSettings> {
 
   onElementsPartsDataChange(data: any) {
     this.elementsHolder.Elements.RightMeter.Parts = {...this.elementsHolder.Elements.RightMeter.Parts, ...data};
-    console.log(this.elementsHolder);
   }
 
   onElementsDataChange(data: any) {
     this.elementsHolder = {...this.elementsHolder, ...{Elements: {...this.elementsHolder.Elements, ...data}}};
-    console.log(this.elementsHolder);
   }
 
   render() {
@@ -207,7 +206,6 @@ export class HUDEditor extends React.Component<any, HudEditorSettings> {
       const finalObject = {
         HUDEditor: this.elementsHolder
       };
-      console.log(finalObject);
       const jsonString: string = toXML(finalObject, {
         indent: '       '
       });
