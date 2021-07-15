@@ -3,23 +3,23 @@
     "QuickLoot": {
       "label": "Quickloot",
       "id": "QuickLoot",
-      "description": "some desc",
+      "description": "Menu that shows when you roll over a container. Also includes some container interact prompts (eg Stash box).",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -29,7 +29,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -40,23 +40,23 @@
     "Frobber": {
       "label": "Frobber",
       "id": "Frobber",
-      "description": "some desc",
+      "description": "Includes lock prompts (like unlocking a door or interacting with NPCs)Includes lock prompts (like unlocking a door or interacting with NPCs)",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -66,7 +66,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -77,23 +77,23 @@
     "RollOver": {
       "label": "RollOver",
       "id": "RollOver",
-      "description": "some desc",
+      "description": "Includes the interact prompts for most other things.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -103,7 +103,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -114,23 +114,23 @@
     "Compass": {
       "label": "Compass",
       "id": "Compass",
-      "description": "some desc",
+      "description": "Compass that is normally centered at the bottom.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -140,7 +140,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -151,23 +151,23 @@
     "QuestTracker": {
       "label": "QuestTracker",
       "id": "QuestTracker",
-      "description": "some desc",
+      "description": "Quest tracker that is normally in the upper right.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -177,7 +177,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -188,23 +188,23 @@
     "Notification": {
       "label": "Notification",
       "id": "Notification",
-      "description": "some desc",
+      "description": "Includes messages like \"You lack the requirements to make this\". Also includes public event notifications.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -214,7 +214,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -225,23 +225,23 @@
     "LeftMeter": {
       "label": "LeftMeter",
       "id": "LeftMeter",
-      "description": "some desc",
+      "description": "Health bar and rads indicator/taking rads text.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -251,7 +251,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -262,23 +262,23 @@
     "StealthMeter": {
       "label": "StealthMeter",
       "id": "StealthMeter",
-      "description": "some desc",
+      "description": "The meter that appears when you crouch (Hidden/Danger etc).",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -288,7 +288,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -299,23 +299,23 @@
     "Announce": {
       "label": "Announce",
       "id": "Announce",
-      "description": "some desc",
+      "description": "Quest announcements/rewards.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -325,7 +325,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -336,23 +336,23 @@
     "TeamPanel": {
       "label": "TeamPanel",
       "id": "TeamPanel",
-      "description": "some desc",
+      "description": "The list of teammates shown when on a team.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -362,7 +362,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -373,23 +373,23 @@
     "FusionCoreMeter": {
       "label": "FusionCoreMeter",
       "id": "FusionCoreMeter",
-      "description": "some desc",
+      "description": "Fusion core meter when the power armor gauges UI is disabled.",
       "fields": [
         {
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "X",
           "id": "X",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -399,7 +399,7 @@
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -410,36 +410,36 @@
     "RightMeter": {
       "label": "RightMeter",
       "id": "RightMeter",
-      "description": "some desc",
+      "description": "desc",
       "fields": [],
       "additionalElements": [
         {
           "Parts": {
             "label": "Parts",
             "id": "Parts",
-            "description": "some desc",
+            "description": "desc",
             "fields": [],
             "additionalConfigs": [
               {
                 "label": "APMeter",
                 "id": "APMeter",
-                "description": "some desc",
+                "description": "Shows your current AP.",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -449,7 +449,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -460,23 +460,23 @@
               {
                 "label": "ActiveEffects",
                 "id": "ActiveEffects",
-                "description": "some desc",
+                "description": "Shows your current acive effects (Diseased etc).",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -486,7 +486,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -497,23 +497,23 @@
               {
                 "label": "HungerMeter",
                 "id": "HungerMeter",
-                "description": "some desc",
+                "description": "The hunger bar.",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -523,7 +523,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -534,23 +534,23 @@
               {
                 "label": "ThirstMeter",
                 "id": "ThirstMeter",
-                "description": "some desc",
+                "description": "The thirst bar.",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -560,7 +560,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -571,23 +571,23 @@
               {
                 "label": "AmmoCount",
                 "id": "AmmoCount",
-                "description": "some desc",
+                "description": "Your current/total ammo counts.",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -597,7 +597,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -608,23 +608,23 @@
               {
                 "label": "ExplosiveAmmoCount",
                 "id": "ExplosiveAmmoCount",
-                "description": "some desc",
+                "description": "Your current grenade/mine total.",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -634,7 +634,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -645,23 +645,23 @@
               {
                 "label": "FlashLightWidget",
                 "id": "FlashLightWidget",
-                "description": "some desc",
+                "description": "Unused for now. Would be the indicator that displays when flashlight is on.",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -671,7 +671,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -682,23 +682,23 @@
               {
                 "label": "Emote",
                 "id": "Emote",
-                "description": "some desc",
+                "description": "Shows the animation of your last used emote.",
                 "fields": [
                   {
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   },
                   {
                     "label": "X",
                     "id": "X",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -708,7 +708,7 @@
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "some desc",
+                    "description": "desc",
                     "type": "NUMERIC",
                     "step": 0.01,
                     "min": 0,
@@ -726,20 +726,20 @@
     "HitMarkerTint": {
       "label": "HitMarkerTint",
       "id": "HitMarkerTint",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -749,7 +749,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -759,7 +759,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -770,20 +770,20 @@
     "RightMeters": {
       "label": "RightMeters",
       "id": "RightMeters",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -793,7 +793,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -803,7 +803,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -814,27 +814,27 @@
     "LeftMeters": {
       "label": "LeftMeters",
       "id": "LeftMeters",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RadsBarRGB",
           "id": "RadsBarRGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -844,7 +844,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -854,7 +854,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -865,20 +865,20 @@
     "Notifications": {
       "label": "Notifications",
       "id": "Notifications",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -888,7 +888,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -898,7 +898,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -909,20 +909,20 @@
     "HudFrobber": {
       "label": "HudFrobber",
       "id": "HudFrobber",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -932,7 +932,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -942,7 +942,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -953,20 +953,20 @@
     "QuestTracker": {
       "label": "QuestTracker",
       "id": "QuestTracker",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -976,7 +976,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -986,7 +986,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -997,20 +997,20 @@
     "TopCenter": {
       "label": "TopCenter",
       "id": "TopCenter",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1020,7 +1020,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1030,7 +1030,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1041,20 +1041,20 @@
     "Announce": {
       "label": "Announce",
       "id": "Announce",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1064,7 +1064,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1074,7 +1074,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1085,20 +1085,20 @@
     "BottomCenter": {
       "label": "BottomCenter",
       "id": "BottomCenter",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1108,7 +1108,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1118,7 +1118,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1128,14 +1128,14 @@
           "label": "CompassRGB",
           "id": "CompassRGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "CompassBrightness",
           "id": "CompassBrightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1145,7 +1145,7 @@
           "label": "CompassContrast",
           "id": "CompassContrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1155,7 +1155,7 @@
           "label": "CompassSaturation",
           "id": "CompassSaturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1166,20 +1166,20 @@
     "Center": {
       "label": "Center",
       "id": "Center",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1189,7 +1189,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1199,7 +1199,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1210,27 +1210,27 @@
     "Team": {
       "label": "Team",
       "id": "Team",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RadsBarRGB",
           "id": "RadsBarRGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1240,7 +1240,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1250,7 +1250,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1261,20 +1261,20 @@
     "Floating": {
       "label": "Center",
       "id": "Center",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "some desc",
+          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1284,7 +1284,7 @@
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1294,7 +1294,7 @@
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "some desc",
+          "description": "desc",
           "type": "NUMERIC",
           "step": 0.01,
           "min": 0,
@@ -1305,7 +1305,7 @@
     "HUD": {
       "label": "HUD",
       "id": "HUD",
-      "description": "some desc",
+      "description": "desc",
       "fields": [
         {
           "label": "CrosshairOpacity",
@@ -1314,49 +1314,49 @@
           "step": 0.01,
           "min": 0,
           "max": 1.5,
-          "description": "some desc",
+          "description": "desc",
           "defaultValue": 1
         },
         {
           "label": "EnableRecoloring",
           "id": "EnableRecoloring",
           "type": "BOOLEAN",
-          "description": "some desc",
+          "description": "desc",
           "defaultValue": true
         },
         {
           "label": "ThirstHungerPercentShow",
           "id": "ThirstHungerPercentShow",
           "type": "BOOLEAN",
-          "description": "some desc",
+          "description": "desc",
           "defaultValue": true
         },
         {
           "label": "AlwaysShowThirstHunger",
           "id": "AlwaysShowThirstHunger",
           "type": "BOOLEAN",
-          "description": "some desc",
+          "description": "desc",
           "defaultValue": false
         },
         {
           "label": "EditMode",
           "id": "EditMode",
           "type": "BOOLEAN",
-          "description": "some desc",
+          "description": "desc",
           "defaultValue": false
         },
         {
           "label": "CustomCrosshair",
           "id": "CustomCrosshair",
           "type": "BOOLEAN",
-          "description": "some desc",
+          "description": "desc",
           "defaultValue": false
         },
         {
           "label": "TZMapMarkers",
           "id": "TZMapMarkers",
           "type": "BOOLEAN",
-          "description": "some desc",
+          "description": "desc",
           "defaultValue": false
         }
       ]

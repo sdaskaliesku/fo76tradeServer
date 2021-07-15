@@ -16,6 +16,9 @@
 
       > .hud-elements {
         //border: 2px solid blue;
+        > .tooltip {
+          font-size: 30px;
+        }
         width: 15rem;
         margin: 1rem;
         display: flex;
