@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
+import './index.scss';
 import PrimeReact from 'primereact/api';
 import {TableComponent} from "./component/table/TableComponent";
 import {NavBar} from "./component/navbar/NavBar";
@@ -16,7 +17,6 @@ import {routes} from "./service/Routes";
 import {InventOmaticPipboy} from "./component/config/InventOmaticPipboy";
 import {InventOmaticStash} from "./component/config/InventOmaticStash";
 import {HUDEditor, HUDEditorSchema} from "./component/config/HUDEditor";
-// import {hudEditorSchema} from "./component/config/HUDEditor.schema";
 import hudEditorSchema from './component/config/hudeditor.json';
 import {createMuiTheme} from "@material-ui/core";
 

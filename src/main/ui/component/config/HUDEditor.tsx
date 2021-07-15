@@ -1,6 +1,6 @@
 import React from "react";
 import {Utils} from "../../service/utils";
-import {Button, CssBaseline, ThemeProvider} from "@material-ui/core";
+import {Button, CssBaseline, ThemeProvider, Tooltip} from "@material-ui/core";
 import "./HUDEditor.scss";
 import {theme} from "../../index";
 
@@ -21,7 +21,7 @@ interface HUDElement {
 interface HudConfigElement {
   label: string
   id: string
-  description?: string
+  description: string
   additionalElements?: Array<HUDElement>
   additionalConfigs?: Array<HudConfigElement>
   fields: Array<HUDField>
@@ -46,7 +46,7 @@ export interface HUDEditorSchema {
 export class HUDEditor extends React.Component<HUDEditorProps, any> {
   htmlElements: Array<any> = [];
   HUDEditor: any = {};
-  fileReader:FileReader = new FileReader();
+  fileReader: FileReader = new FileReader();
 
   constructor(props: HUDEditorProps, context: any) {
     super(props, context);
@@ -74,8 +74,9 @@ export class HUDEditor extends React.Component<HUDEditorProps, any> {
       });
       elements.push(
           <div className={'hud-elements'} key={Utils.uuidv4()}>
-            <label className={'title'}>{configEl.label}</label>
-            <label className={'description'}>{configEl.description}</label>
+            <Tooltip title={configEl.description}>
+              <label className={'title'}>{configEl.label}</label>
+            </Tooltip>
             {fieldsElements}
           </div>
       );
