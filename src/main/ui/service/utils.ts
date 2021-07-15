@@ -1,4 +1,5 @@
 import {Item} from "./domain";
+import {toXML} from "jstoxml";
 
 const NOTES = 'NOTES';
 const priceCheckFilterFlags: Array<string> = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE', NOTES];
@@ -58,5 +59,46 @@ export class Utils {
       const r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
       return v.toString(16);
     });
+  }
+
+  public static getPropertyByPath(obj: any, path: string) {
+    path = path.replace(/\[(\w+)\]/g, '.$1');
+    path = path.replace(/^\./, '');
+    const a = path.split('.');
+    let o = obj;
+    while (a.length) {
+      const n = a.shift();
+      // @ts-ignore
+      if (!(n in o)) return;
+      // @ts-ignore
+      o = o[n];
+    }
+    return o;
+  }
+
+  public static setPropertyByPath(obj: any, path: string, value: any) {
+    const a = path.split('.');
+    let o = obj;
+    while (a.length - 1) {
+      const n = a.shift();
+      // @ts-ignore
+      if (!(n in o)) {
+        // @ts-ignore
+        o[n] = {};
+      }
+      // @ts-ignore
+      o = o[n];
+    }
+    o[a[0]] = value;
+  }
+
+  public static toXML(input: any): string {
+    return toXML(input, {
+      indent: '       '
+    });
+  }
+
+  public static fromXML(input: any): any {
+    return 'TODO';
   }
 }
