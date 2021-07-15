@@ -15,10 +15,20 @@ import {SettingsPage} from "./component/settings/SettingsPage";
 import {routes} from "./service/Routes";
 import {InventOmaticPipboy} from "./component/config/InventOmaticPipboy";
 import {InventOmaticStash} from "./component/config/InventOmaticStash";
-import {HUDEditor} from "./component/config/HUDEditor";
+import {HUDEditor, HUDEditorSchema} from "./component/config/HUDEditor";
+// import {hudEditorSchema} from "./component/config/HUDEditor.schema";
+import hudEditorSchema from './component/config/hudeditor.json';
+import {createMuiTheme} from "@material-ui/core";
+
 PrimeReact.ripple = true;
 
 document.documentElement.style.fontSize = '9px';
+
+export const theme = createMuiTheme({
+  palette: {
+    type: "dark"
+  }
+});
 
 const modalTexts = {
   invalidVersion: (version: any) => {
@@ -61,29 +71,33 @@ const App = () => {
     setFileStatus(e);
   }
 
-  const template = (content: any) => (
-      <HashRouter>
-        <NavBar/>
-        <Switch>
-          <Route path={routes.InventOmaticPipboy}>
-            <InventOmaticPipboy/>
-          </Route>
-          <Route path={routes.InventOmaticStash}>
-            <InventOmaticStash/>
-          </Route>
-          <Route path={routes.HUDEditor}>
-            <HUDEditor/>
-          </Route>
-          <Route path={routes.SETTINGS}>
-            <SettingsPage/>
-          </Route>
-          <Route path={routes.HOME}>
-            {content}
-            <InfoDialog ref={dialogRef}/>
-          </Route>
-        </Switch>
-      </HashRouter>
-  );
+  const template = (content: any) => {
+    // @ts-ignore
+    const schema: HUDEditorSchema = hudEditorSchema;
+    return (
+        <HashRouter>
+          <NavBar/>
+          <Switch>
+            <Route path={routes.InventOmaticPipboy}>
+              <InventOmaticPipboy/>
+            </Route>
+            <Route path={routes.InventOmaticStash}>
+              <InventOmaticStash/>
+            </Route>
+            <Route path={routes.HUDEditor}>
+              <HUDEditor schema={schema}/>
+            </Route>
+            <Route path={routes.SETTINGS}>
+              <SettingsPage/>
+            </Route>
+            <Route path={routes.HOME}>
+              {content}
+              <InfoDialog ref={dialogRef}/>
+            </Route>
+          </Switch>
+        </HashRouter>
+    )
+  };
 
   let body: any;
 
