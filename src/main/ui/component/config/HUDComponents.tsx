@@ -9,14 +9,10 @@ export const InputNumberComponent = (props: any) => {
   const [value, setValue] = useState(defaultValue);
   const key = Utils.uuidv4();
 
-  const onChange = useCallback(
-      (e) => {
-        // setValue(e.value);
-        onDataChange(e.value);
-      },
-      [value]
-  );
-
+  const onChange = (e: any) => {
+    // setValue(e.value);
+    onDataChange(e.value);
+  };
   return (
       <div className="p-field p-col-12 p-md-3 hud-element" key={key}>
         <label className={'element-label'} htmlFor={label + key}>{label}</label>
@@ -35,13 +31,10 @@ export const ColorPickerComponent = (props: any) => {
   const [value, setValue] = useState(defaultValue);
   const key = Utils.uuidv4();
 
-  const onChange = useCallback(
-      (e) => {
-        // setValue(e.value);
-        onDataChange(e.value);
-      },
-      [value]
-  );
+  const onChange = (e: any) => {
+    // setValue(e.value);
+    onDataChange(e.value);
+  };
 
   return (
       <div className="p-field p-col-12 p-md-3 hud-element" key={key}>

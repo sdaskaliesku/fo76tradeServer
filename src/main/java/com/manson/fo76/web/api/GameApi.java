@@ -117,4 +117,9 @@ public class GameApi {
     return appInfo;
   }
 
+  @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/hudEditorConfig")
+  public Object hudEditorConfig() {
+    return holderService.getHudEditorConfig();
+  }
+
 }

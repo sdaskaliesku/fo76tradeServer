@@ -36,6 +36,8 @@ public class GameConfigHolderService {
   };
   private static final TypeReference<Map<String, String>> SPECIAL_CASES_CONFIG_REF = new TypeReference<Map<String, String>>() {
   };
+  private static final TypeReference<Map<String, Object>> HUD_EDITOR_CONFIG = new TypeReference<Map<String, Object>>() {
+  };
 
   @Value("${game.config.leg.mods.file}")
   private String legModsConfigFile;
@@ -58,6 +60,9 @@ public class GameConfigHolderService {
   @Value("${game.config.weapon.special.file}")
   private String specialCasesConfigFile;
 
+  @Value("${config.hud.editor.schema}")
+  private String hudEditorConfigFile;
+
   @Autowired
   private ObjectMapper objectMapper;
 
@@ -68,6 +73,7 @@ public class GameConfigHolderService {
   private List<ItemConfig> planNames;
   private List<ItemConfig> armorNames;
   private Map<String, String> specialCasesConfig;
+  private Map<String, Object> hudEditorConfig;
 
   @PostConstruct
   public void init() {
@@ -80,6 +86,7 @@ public class GameConfigHolderService {
     this.planNames = loadConfig(objectMapper, planRecipesConfigFile, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.armorNames = loadConfig(objectMapper, armorNamesConfigFile, ITEM_CONFIG_TYPE_REF, ItemConfig::isEnabled);
     this.specialCasesConfig = loadConfig(objectMapper, specialCasesConfigFile, SPECIAL_CASES_CONFIG_REF);
+    this.hudEditorConfig = loadConfig(objectMapper, hudEditorConfigFile, HUD_EDITOR_CONFIG);
     sortByName(this.weaponNames);
     sortByName(this.planNames);
     sortByName(this.armorNames);

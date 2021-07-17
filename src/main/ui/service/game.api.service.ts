@@ -1,6 +1,7 @@
 import {BaseService} from "./base.service";
 import {AppInfo, Item, PriceCheckResponse} from "./domain";
 import {FilterFlag} from "./filter.service";
+import {HUDEditorSchema} from "../component/config/HUDEditor";
 
 class GameApiService extends BaseService {
 
@@ -27,6 +28,14 @@ class GameApiService extends BaseService {
 
   appInfo(): Promise<AppInfo> {
     const finalUrl = `${this.baseEndPoint}appInfo`;
+    return this.performRequest({
+      url: finalUrl,
+      method: 'GET',
+    });
+  }
+
+  hudEditorConfig(): Promise<HUDEditorSchema> {
+    const finalUrl = `${this.baseEndPoint}hudEditorConfig`;
     return this.performRequest({
       url: finalUrl,
       method: 'GET',
