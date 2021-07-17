@@ -1,5 +1,6 @@
 import {Item} from "./domain";
 import {toXML} from "jstoxml";
+import {parse} from "fast-xml-parser";
 
 const NOTES = 'NOTES';
 const priceCheckFilterFlags: Array<string> = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE', NOTES];
@@ -62,34 +63,42 @@ export class Utils {
   }
 
   public static getPropertyByPath(obj: any, path: string) {
-    path = path.replace(/\[(\w+)\]/g, '.$1');
-    path = path.replace(/^\./, '');
-    const a = path.split('.');
-    let o = obj;
-    while (a.length) {
-      const n = a.shift();
-      // @ts-ignore
-      if (!(n in o)) return;
-      // @ts-ignore
-      o = o[n];
+    try {
+      path = path.replace(/\[(\w+)\]/g, '.$1');
+      path = path.replace(/^\./, '');
+      const a = path.split('.');
+      let o = obj;
+      while (a.length) {
+        const n = a.shift();
+        // @ts-ignore
+        if (!(n in o)) return;
+        // @ts-ignore
+        o = o[n];
+      }
+      return o;
+    } catch (e) {
+      return undefined;
     }
-    return o;
   }
 
   public static setPropertyByPath(obj: any, path: string, value: any) {
-    const a = path.split('.');
-    let o = obj;
-    while (a.length - 1) {
-      const n = a.shift();
-      // @ts-ignore
-      if (!(n in o)) {
+    try {
+      const a = path.split('.');
+      let o = obj;
+      while (a.length - 1) {
+        const n = a.shift();
         // @ts-ignore
-        o[n] = {};
+        if (!(n in o)) {
+          // @ts-ignore
+          o[n] = {};
+        }
+        // @ts-ignore
+        o = o[n];
       }
-      // @ts-ignore
-      o = o[n];
+      o[a[0]] = value;
+    } catch (e) {
+
     }
-    o[a[0]] = value;
   }
 
   public static toXML(input: any): string {
@@ -99,6 +108,6 @@ export class Utils {
   }
 
   public static fromXML(input: any): any {
-    return 'TODO';
+    return parse(input);
   }
 }

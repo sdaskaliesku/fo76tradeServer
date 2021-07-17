@@ -9,31 +9,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -46,31 +43,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -83,31 +77,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -120,31 +111,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -157,31 +145,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -194,31 +179,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -231,31 +213,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -268,31 +247,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -305,31 +281,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -342,31 +315,28 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
@@ -379,45 +349,42 @@
           "label": "Scale",
           "id": "Scale",
           "defaultValue": 1,
-          "description": "desc",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
           "type": "NUMERIC",
           "step": 1,
           "min": -10000,
           "max": 10000
         },
         {
-          "label": "X",
-          "id": "X",
-          "defaultValue": 0,
-          "description": "desc",
-          "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
-        },
-        {
           "label": "Y",
           "id": "Y",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "RightMeter": {
       "label": "RightMeter",
       "id": "RightMeter",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [],
       "additionalElements": [
         {
           "Parts": {
             "label": "Parts",
             "id": "Parts",
-            "description": "desc",
+            "description": "Description in progress",
             "fields": [],
             "additionalConfigs": [
               {
@@ -429,31 +396,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               },
@@ -466,31 +430,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               },
@@ -503,31 +464,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               },
@@ -540,31 +498,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               },
@@ -577,31 +532,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               },
@@ -614,31 +566,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               },
@@ -651,31 +600,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               },
@@ -688,31 +634,28 @@
                     "label": "Scale",
                     "id": "Scale",
                     "defaultValue": 1,
-                    "description": "desc",
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
                     "type": "NUMERIC",
                     "step": 1,
                     "min": -10000,
                     "max": 10000
                   },
                   {
-                    "label": "X",
-                    "id": "X",
-                    "defaultValue": 0,
-                    "description": "desc",
-                    "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
-                  },
-                  {
                     "label": "Y",
                     "id": "Y",
                     "defaultValue": 0,
-                    "description": "desc",
                     "type": "NUMERIC",
-                    "step": 0.01,
-                    "min": 0,
-                    "max": 1.5
+                    "step": 1,
+                    "min": -10000,
+                    "max": 10000
                   }
                 ]
               }
@@ -726,637 +669,583 @@
     "HitMarkerTint": {
       "label": "HitMarkerTint",
       "id": "HitMarkerTint",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "RightMeters": {
       "label": "RightMeters",
       "id": "RightMeters",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "LeftMeters": {
       "label": "LeftMeters",
       "id": "LeftMeters",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RadsBarRGB",
           "id": "RadsBarRGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "Notifications": {
       "label": "Notifications",
       "id": "Notifications",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "HudFrobber": {
       "label": "HudFrobber",
       "id": "HudFrobber",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "QuestTracker": {
       "label": "QuestTracker",
       "id": "QuestTracker",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "TopCenter": {
       "label": "TopCenter",
       "id": "TopCenter",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "Announce": {
       "label": "Announce",
       "id": "Announce",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "BottomCenter": {
       "label": "BottomCenter",
       "id": "BottomCenter",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "CompassRGB",
           "id": "CompassRGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "CompassBrightness",
           "id": "CompassBrightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "CompassContrast",
           "id": "CompassContrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "CompassSaturation",
           "id": "CompassSaturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "Center": {
       "label": "Center",
       "id": "Center",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "Team": {
       "label": "Team",
       "id": "Team",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RadsBarRGB",
           "id": "RadsBarRGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "Floating": {
       "label": "Center",
       "id": "Center",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
           "defaultValue": "881111",
-          "description": "desc",
           "type": "COLOR"
         },
         {
           "label": "Brightness",
           "id": "Brightness",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
-          "description": "desc",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5
+          "step": 1,
+          "min": -10000,
+          "max": 10000
         }
       ]
     },
     "HUD": {
       "label": "HUD",
       "id": "HUD",
-      "description": "desc",
+      "description": "Description in progress",
       "fields": [
         {
           "label": "CrosshairOpacity",
           "id": "CrosshairOpacity",
           "type": "NUMERIC",
-          "step": 0.01,
-          "min": 0,
-          "max": 1.5,
-          "description": "desc",
+          "step": 1,
+          "min": -10000,
+          "max": 10000,
+          "description": "Description in progress",
           "defaultValue": 1
         },
         {
           "label": "EnableRecoloring",
           "id": "EnableRecoloring",
           "type": "BOOLEAN",
-          "description": "desc",
+          "description": "Description in progress",
           "defaultValue": true
         },
         {
           "label": "ThirstHungerPercentShow",
           "id": "ThirstHungerPercentShow",
           "type": "BOOLEAN",
-          "description": "desc",
+          "description": "Description in progress",
           "defaultValue": true
         },
         {
           "label": "AlwaysShowThirstHunger",
           "id": "AlwaysShowThirstHunger",
           "type": "BOOLEAN",
-          "description": "desc",
+          "description": "Description in progress",
           "defaultValue": false
         },
         {
           "label": "EditMode",
           "id": "EditMode",
           "type": "BOOLEAN",
-          "description": "desc",
+          "description": "Description in progress",
           "defaultValue": false
         },
         {
           "label": "CustomCrosshair",
           "id": "CustomCrosshair",
           "type": "BOOLEAN",
-          "description": "desc",
+          "description": "Description in progress",
           "defaultValue": false
         },
         {
           "label": "TZMapMarkers",
           "id": "TZMapMarkers",
           "type": "BOOLEAN",
-          "description": "desc",
+          "description": "Description in progress",
           "defaultValue": false
         }
       ]

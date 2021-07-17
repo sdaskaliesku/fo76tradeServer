@@ -1,18 +1,15 @@
 import React from "react";
 import {Utils} from "../../service/utils";
-import {Button, CssBaseline, ThemeProvider, Tooltip} from "@material-ui/core";
+import {Button, Fab, Tooltip} from "@material-ui/core";
 import "./HUDEditor.scss";
-import {theme} from "../../index";
 
 import {
   CheckboxComponent,
   ColorPickerComponent,
   InputNumberComponent
 } from "./HUDComponents";
-
-interface HUDEditorProps {
-  schema: HUDEditorSchema
-}
+import HelpIcon from '@material-ui/icons/Help';
+import {gameApiService} from "../../service/game.api.service";
 
 interface HUDElement {
   [name: string]: HudConfigElement
@@ -43,39 +40,74 @@ export interface HUDEditorSchema {
 }
 
 
-export class HUDEditor extends React.Component<HUDEditorProps, any> {
+export class HUDEditor extends React.Component<any, any> {
   htmlElements: Array<any> = [];
   HUDEditor: any = {};
   fileReader: FileReader = new FileReader();
+  data: any = {};
+  schema: HUDEditorSchema = {};
+  state: any = {
+    HUDEditor: {},
+    htmlElements: []
+  };
 
-  constructor(props: HUDEditorProps, context: any) {
+  setConfigState(path: string, value: any, callback: boolean = false) {
+    const configState = JSON.parse(JSON.stringify(this.HUDEditor));
+    Utils.setPropertyByPath(this.HUDEditor, path, value);
+    Utils.setPropertyByPath(configState, path, value);
+    const prevState = this.state.HUDEditor;
+    const newState = {
+      ...prevState,
+      ...configState
+    };
+    if (callback) {
+      debugger
+    }
+    this.setState({
+      HUDEditor: {
+        ...this.state.HUDEditor,
+        ...newState
+      }
+    });
+  }
+
+  constructor(props: any, context: any) {
     super(props, context);
     this.onSubmit = this.onSubmit.bind(this);
     this.handleFileChosen = this.handleFileChosen.bind(this);
     this.handleFileRead = this.handleFileRead.bind(this);
   }
 
-  processHudElement(hudElement: HUDElement, stateObj: any, elements: Array<any>, path: string) {
+  processHudElement(hudElement: HUDElement, elements: Array<any>, path: string) {
     const schemaElKeys = Object.keys(hudElement);
     for (const schemaElKey of schemaElKeys) {
       const newPath = path + '.' + schemaElKey;
       const configEl: HudConfigElement = hudElement[schemaElKey];
-      this.processHudConfigElement(configEl, stateObj, elements, newPath);
+      this.processHudConfigElement(configEl, elements, newPath);
     }
   }
 
-  processHudConfigElement(configEl: HudConfigElement, stateObj: any, elements: Array<any>, path: string) {
-    stateObj[configEl.id] = {};
+  getFieldValue(hudField: HUDField, path: string): any {
+    const providedValue = Utils.getPropertyByPath(this.data.HUDEditor, path);
+    const hudVal = hudField.defaultValue;
+    if (providedValue !== undefined) {
+      return providedValue;
+    }
+    return hudVal;
+  }
+
+  processHudConfigElement(configEl: HudConfigElement, elements: Array<any>, path: string) {
+    this.setConfigState(path, {});
     if (configEl.fields && configEl.fields.length > 0) {
       const fieldsElements = configEl.fields.map((hudField) => {
-        stateObj[configEl.id][hudField.id] = hudField.defaultValue;
         const newPath = path + '.' + hudField.id;
-        return this.createHtmlElement(hudField, stateObj[configEl.id], newPath);
+        this.setConfigState(newPath, this.getFieldValue(hudField, path));
+        return this.createHtmlElement(hudField, newPath);
       });
       elements.push(
           <div className={'hud-elements'} key={Utils.uuidv4()}>
             <Tooltip title={configEl.description}>
-              <label className={'title'}>{configEl.label}</label>
+              <label className={'title'}>{configEl.label}&nbsp;<HelpIcon fontSize={'large'}/></label>
             </Tooltip>
             {fieldsElements}
           </div>
@@ -83,18 +115,16 @@ export class HUDEditor extends React.Component<HUDEditorProps, any> {
     }
     if (configEl.additionalConfigs && configEl.additionalConfigs.length > 0) {
       const els: Array<any> = [];
-
       configEl.additionalConfigs.forEach(hudConfigEl => {
         const newPath = path + '.' + hudConfigEl.id;
-        this.processHudConfigElement(hudConfigEl, stateObj[configEl.id], els, newPath);
+        this.processHudConfigElement(hudConfigEl, els, newPath);
       });
       elements.push(...els);
     }
     if (configEl.additionalElements && configEl.additionalElements.length > 0) {
       const els: Array<any> = [];
       configEl.additionalElements.forEach(hudEl => {
-        const newPath = path + '.' + hudEl.id;
-        this.processHudElement(hudEl, stateObj[configEl.id], els, newPath);
+        this.processHudElement(hudEl, els, path);
       });
       elements.push(...els);
     }
@@ -109,39 +139,38 @@ export class HUDEditor extends React.Component<HUDEditorProps, any> {
   }
 
   onSubmit() {
-    HUDEditor.downloadConfig(this.HUDEditor);
-    console.log(this.HUDEditor);
+    HUDEditor.downloadConfig(this.state.HUDEditor);
   }
 
-  createHtmlElement(hudField: HUDField, stateObj: any, path: string) {
-    // const newPath = path + '.' + hudField.id;
-    const newPath = path;
+  createHtmlElement(hudField: HUDField, path: string) {
     const onDataChange = (data: any) => {
-      stateObj[hudField.id] = data;
-      console.log(newPath + ' = ' + data);
-      console.log(stateObj);
+      this.setConfigState(path, data, true);
     }
     switch (hudField.type) {
       case "COLOR":
-        return this.createColorInput(hudField, stateObj, onDataChange, newPath);
+        return this.createColorInput(hudField, onDataChange, path);
       case "BOOLEAN":
-        return this.createCheckBox(hudField, stateObj, onDataChange, newPath);
+        return this.createCheckBox(hudField, onDataChange, path);
       case "NUMERIC":
-        return this.createInput(hudField, stateObj, onDataChange, newPath);
+        return this.createInput(hudField, onDataChange, path);
     }
   }
 
-  createColorInput(hudField: HUDField, stateObj: any, onDataChange: Function, path: string) {
+  createColorInput(hudField: HUDField, onDataChange: Function, path: string) {
     const key = Utils.uuidv4();
-    const {label, defaultValue} = hudField;
+    const {label} = hudField;
+    const defaultValue = String(this.getFieldValue(hudField, path));
+    this.setConfigState(path, defaultValue);
     return (
         <ColorPickerComponent label={label} defaultValue={defaultValue} onDataChange={onDataChange}
                               key={key}/>)
   }
 
-  createInput(hudField: HUDField, stateObj: any, onDataChange: Function, path: string) {
+  createInput(hudField: HUDField, onDataChange: Function, path: string) {
     const key = Utils.uuidv4();
-    const {label, step, min, max, defaultValue} = hudField;
+    const {label, step, min, max} = hudField;
+    const defaultValue = this.getFieldValue(hudField, path);
+    this.setConfigState(path, defaultValue);
     return (
         <InputNumberComponent onDataChange={onDataChange}
                               defaultValue={defaultValue}
@@ -151,63 +180,75 @@ export class HUDEditor extends React.Component<HUDEditorProps, any> {
     )
   }
 
-  createCheckBox(hudField: HUDField, stateObj: any, onDataChange: Function, path: string) {
-    let val = stateObj[hudField.id];
+  createCheckBox(hudField: HUDField, onDataChange: Function, path: string) {
     const key = Utils.uuidv4();
-    const {label, defaultValue} = hudField;
+    const {label} = hudField;
+    const defaultValue = this.getFieldValue(hudField, path);
+    this.setConfigState(path, defaultValue);
     return (
-        <CheckboxComponent checked={val} onDataChange={onDataChange} label={label} key={key}
+        <CheckboxComponent checked={Utils.getPropertyByPath(this.state.HUDEditor, path)}
+                           onDataChange={onDataChange} label={label} key={key}
                            defaultValue={defaultValue}/>
     )
   }
 
   handleFileRead(e: any) {
     const content = this.fileReader.result;
-    console.log(content)
+    this.data = Utils.fromXML(content);
+    this.buildElements();
   };
 
-  handleFileChosen(file: any) {
+  handleFileChosen(e: any) {
     this.fileReader = new FileReader();
     this.fileReader.onloadend = this.handleFileRead;
-    this.fileReader.readAsText(file);
+    this.fileReader.readAsText(e.target.files[0]);
   }
 
-  render() {
-
-    const {schema} = this.props;
-    const schemaKeys = Object.keys(schema);
+  buildElements() {
+    const schemaKeys = Object.keys(this.schema);
+    const htmlElements = [];
     for (const key of schemaKeys) {
       const path = key;
-      this.HUDEditor[key] = {};
+      this.setConfigState(path, {});
       const elements: Array<any> = [];
-      const schemaElement: HUDElement = schema[key];
-      this.processHudElement(schemaElement, this.HUDEditor[key], elements, path);
-      this.htmlElements.push(
+      const schemaElement: HUDElement = this.schema[key];
+      this.processHudElement(schemaElement, elements, path);
+      htmlElements.push(
           <div className={'elements-row'} key={Utils.uuidv4()}>
             {elements}
           </div>
       )
     }
+    this.setState({
+      htmlElements
+    });
+  }
 
+  componentDidMount() {
+    gameApiService.hudEditorConfig().then((schema) => {
+      this.schema = schema;
+      console.log(schema);
+      this.buildElements();
+    });
+  }
+
+  render() {
     return (
-        <ThemeProvider theme={theme}>
-          <CssBaseline/>
-          <div className={"wrapper"}>
-            <div className={"hud-editor-form"}>
-              <h1>THIS IS WORK IN PROGRESS!</h1>
-              {/*<Button variant="contained" component="label">*/}
-              {/*  Upload File*/}
-              {/*  <input type="file"*/}
-              {/*         hidden*/}
-              {/*         onChange={e => this.handleFileChosen(e.target.files[0])}*/}
-              {/*  />*/}
-              {/*</Button>*/}
-              <Button variant="contained" color={'secondary'} onClick={this.onSubmit}>Get
-                config!</Button>
-              {this.htmlElements}
-            </div>
+        <div className={"wrapper"}>
+          <div className={"hud-editor-form"}>
+            <h1>THIS IS WORK IN PROGRESS!</h1>
+            <Button variant="contained" component="label">
+              Upload File
+              <input type="file"
+                     hidden
+                     onChange={e => this.handleFileChosen(e)}
+              />
+            </Button>
+            <Button variant="contained" color={'secondary'} onClick={this.onSubmit}>Get
+              config!</Button>
+            {this.state.htmlElements}
           </div>
-        </ThemeProvider>
+        </div>
     );
   }
 }

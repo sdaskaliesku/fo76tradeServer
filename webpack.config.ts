@@ -65,7 +65,7 @@ const config: webpack.Configuration = {
       "net": false,
       "path": false,
       "zlib": false,
-      "stream": false,
+      "stream": require.resolve("stream-browserify"),
       "crypto": false,
       "process": false
     }
