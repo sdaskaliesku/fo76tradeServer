@@ -60,6 +60,7 @@ public class ItemConverterService {
     public static final Set<FilterFlag> SUPPORTED_PRICE_CHECK_ITEMS = Sets.newHashSet(
         FilterFlag.WEAPON,
         FilterFlag.ARMOR,
+        FilterFlag.POWER_ARMOR,
         FilterFlag.WEAPON_MELEE,
         FilterFlag.WEAPON_RANGED,
         FilterFlag.NOTES
@@ -72,6 +73,7 @@ public class ItemConverterService {
     private static final Set<ItemCardText> IGNORED_CARDS = Sets.newHashSet(ItemCardText.LEG_MODS, ItemCardText.DESC);
     private static final Set<FilterFlag> TYPES_FOR_NAME_CONVERT = Sets.newHashSet(
         FilterFlag.ARMOR,
+        FilterFlag.POWER_ARMOR,
         FilterFlag.WEAPON,
         FilterFlag.WEAPON_MELEE,
         FilterFlag.WEAPON_RANGED,

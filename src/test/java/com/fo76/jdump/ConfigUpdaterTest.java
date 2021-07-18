@@ -11,11 +11,15 @@ import com.manson.fo76.config.AppConfig;
 import com.manson.fo76.domain.config.Fed76Config;
 import com.manson.fo76.service.Fed76Service;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.Session;
@@ -41,6 +45,8 @@ public class ConfigUpdaterTest {
   private static SessionFactory sessionFactory;
   private static Fed76Service fed76Service;
 
+  private static final String LEG_MODS_FILE = "src/main/resources/configs/legendaryMods.config.json";
+
   @BeforeAll
   public static void beforeAll() {
 //    OM.setSerializationInclusion(Include.ALWAYS);
@@ -51,6 +57,7 @@ public class ConfigUpdaterTest {
     configuration.configure();
     sessionFactory = configuration.buildSessionFactory();
     Fed76Config fed76Config = new Fed76Config();
+    fed76Config.setMappingUrl("https://fed76.info/pricing/mapping");
     fed76Service = new Fed76Service(fed76Config, OM);
   }
 
@@ -139,7 +146,8 @@ public class ConfigUpdaterTest {
       descriptors.add(modDescriptor);
     }
     descriptors.sort(Comparator.comparingInt(LegendaryModDescriptor::getStar));
-    OM.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/legendaryMods.config1.json"), descriptors);
+    OM.writerWithDefaultPrettyPrinter()
+        .writeValue(new File("src/main/resources/legendaryMods.config1.json"), descriptors);
   }
 
   private Fed76ApiMappingEntry getFedEntry(Map<String, Fed76ApiMappingEntry> map, String key) {
@@ -154,5 +162,35 @@ public class ConfigUpdaterTest {
       return fed76ApiMappingEntry.getQueries();
     }
     return null;
+  }
+
+  @Test
+  public void printMissingLegModIdsAndAddAbbreviation() throws IOException {
+    MappingResponse mapping = fed76Service.getMapping();
+    List<LegendaryModDescriptor> mods = OM.readValue(new File(LEG_MODS_FILE), LEG_MOD_REF);
+    Set<String> strings = mapping.getEffects().getById().keySet();
+    for (String id : strings) {
+      if (StringUtils.isBlank(id) || StringUtils.equalsIgnoreCase(id, "None")) {
+        continue;
+      }
+      if (mods.stream().noneMatch(x -> StringUtils.equalsIgnoreCase(id, x.getGameId()))) {
+        System.out.println(id);
+        continue;
+      }
+      mods.stream().filter(x -> StringUtils.equalsIgnoreCase(id, x.getGameId())).findFirst().map(x -> {
+        if (StringUtils.isBlank(x.getAbbreviation())) {
+          x.setAbbreviation(mapping.getEffects().getById().get(id).getQueries().get(0));
+        }
+        List<String> abbreviations = x.getAdditionalAbbreviations();
+        if (CollectionUtils.isEmpty(abbreviations)) {
+          abbreviations = new ArrayList<>();
+        }
+        Set<String> newAbbr = new HashSet<>(abbreviations);
+        newAbbr.addAll(mapping.getEffects().getById().get(id).getQueries());
+        x.setAdditionalAbbreviations(new ArrayList<>(newAbbr));
+        return x;
+      });
+    }
+    OM.writeValue(new File(LEG_MODS_FILE), mods);
   }
 }
