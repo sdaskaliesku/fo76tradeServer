@@ -37,10 +37,15 @@ export class NavBar extends React.Component<any, any> {
     super(props);
     const websites: Array<any> = [];
     const tools: Array<any> = [];
+    const currentWebsite = '(current)';
     gameApiService.appInfo().then((appInfo: AppInfo) => {
       appInfo.sites.forEach((site: UrlConfig) => {
+        let siteName = site.name;
+        if (window.location.href.includes(site.name)) {
+          siteName += currentWebsite;
+        }
         websites.push({
-          label: site.name,
+          label: siteName,
           url: site.url,
           target: '_blank'
         });
@@ -95,25 +100,24 @@ export class NavBar extends React.Component<any, any> {
             }
           },
           {
-            label: 'InventOmaticPipboy',
+            label: 'Mod configurations',
             icon: 'pi pi-fw pi-cog',
-            command: (event: any) => {
-              window.location.hash = routes.InventOmaticPipboy;
-            }
-          },
-          {
-            label: 'InventOmaticStash',
-            icon: 'pi pi-fw pi-cog',
-            command: (event: any) => {
-              window.location.hash = routes.InventOmaticStash;
-            }
-          },
-          {
-            label: 'HUDEditor',
-            icon: 'pi pi-fw pi-cog',
-            command: (event: any) => {
-              window.location.hash = routes.HUDEditor;
-            }
+            items: [
+              {
+                label: 'InventOmatic',
+                icon: 'pi pi-fw pi-cog',
+                command: (event: any) => {
+                  window.location.hash = routes.InventOmaticPipboy;
+                }
+              },
+              {
+                label: 'HUDEditor',
+                icon: 'pi pi-fw pi-cog',
+                command: (event: any) => {
+                  window.location.hash = routes.HUDEditor;
+                }
+              },
+            ]
           },
         ],
         end: [

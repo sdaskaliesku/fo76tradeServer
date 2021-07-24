@@ -22,12 +22,15 @@ export enum MatchMode {
   ALL,
   EXACT,
   CONTAINS,
-  STARTS
+  STARTS,
+  NOT_CONTAINS
 }
 
 export enum Action {
   CONSUME,
-  DROP
+  DROP,
+  TRANSFER,
+  SCRAP
 }
 
 export interface TeenoodleTragedyProtection {

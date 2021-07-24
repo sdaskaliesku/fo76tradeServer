@@ -15,7 +15,6 @@ import {Route, Switch, HashRouter} from "react-router-dom";
 import {SettingsPage} from "./component/settings/SettingsPage";
 import {routes} from "./service/Routes";
 import {InventOmaticPipboy} from "./component/config/InventOmaticPipboy";
-import {InventOmaticStash} from "./component/config/InventOmaticStash";
 import {HUDEditor} from "./component/config/HUDEditor";
 import {createMuiTheme, CssBaseline, ThemeProvider} from "@material-ui/core";
 
@@ -79,9 +78,6 @@ const App = () => {
             <Switch>
               <Route path={routes.InventOmaticPipboy}>
                 <InventOmaticPipboy/>
-              </Route>
-              <Route path={routes.InventOmaticStash}>
-                <InventOmaticStash/>
               </Route>
               <Route path={routes.HUDEditor}>
                 <HUDEditor/>

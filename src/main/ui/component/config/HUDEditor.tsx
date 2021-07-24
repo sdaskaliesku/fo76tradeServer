@@ -1,15 +1,15 @@
 import React from "react";
 import {Utils} from "../../service/utils";
-import {Button, Fab, Tooltip} from "@material-ui/core";
+import {Button, Tooltip} from "@material-ui/core";
 import "./HUDEditor.scss";
 
+import HelpIcon from '@material-ui/icons/Help';
+import {gameApiService} from "../../service/game.api.service";
 import {
   CheckboxComponent,
   ColorPickerComponent,
   InputNumberComponent
-} from "./HUDComponents";
-import HelpIcon from '@material-ui/icons/Help';
-import {gameApiService} from "../../service/game.api.service";
+} from "./schema-form/Components";
 
 interface HUDElement {
   [name: string]: HudConfigElement
@@ -51,7 +51,7 @@ export class HUDEditor extends React.Component<any, any> {
     htmlElements: []
   };
 
-  setConfigState(path: string, value: any, callback: boolean = false) {
+  setConfigState(path: string, value: any) {
     const configState = JSON.parse(JSON.stringify(this.HUDEditor));
     Utils.setPropertyByPath(this.HUDEditor, path, value);
     Utils.setPropertyByPath(configState, path, value);
@@ -60,9 +60,6 @@ export class HUDEditor extends React.Component<any, any> {
       ...prevState,
       ...configState
     };
-    if (callback) {
-      debugger
-    }
     this.setState({
       HUDEditor: {
         ...this.state.HUDEditor,
@@ -107,7 +104,9 @@ export class HUDEditor extends React.Component<any, any> {
       elements.push(
           <div className={'hud-elements'} key={Utils.uuidv4()}>
             <Tooltip title={configEl.description}>
-              <label className={'title'}>{configEl.label}&nbsp;<HelpIcon fontSize={'large'}/></label>
+              <label className={'title'}>
+                {configEl.label}&nbsp;<HelpIcon fontSize={'large'}/>
+              </label>
             </Tooltip>
             {fieldsElements}
           </div>
@@ -144,7 +143,7 @@ export class HUDEditor extends React.Component<any, any> {
 
   createHtmlElement(hudField: HUDField, path: string) {
     const onDataChange = (data: any) => {
-      this.setConfigState(path, data, true);
+      this.setConfigState(path, data);
     }
     switch (hudField.type) {
       case "COLOR":
@@ -186,13 +185,12 @@ export class HUDEditor extends React.Component<any, any> {
     const defaultValue = this.getFieldValue(hudField, path);
     this.setConfigState(path, defaultValue);
     return (
-        <CheckboxComponent checked={Utils.getPropertyByPath(this.state.HUDEditor, path)}
-                           onDataChange={onDataChange} label={label} key={key}
+        <CheckboxComponent onDataChange={onDataChange} label={label} key={key}
                            defaultValue={defaultValue}/>
     )
   }
 
-  handleFileRead(e: any) {
+  handleFileRead() {
     const content = this.fileReader.result;
     this.data = Utils.fromXML(content);
     this.buildElements();
@@ -239,10 +237,7 @@ export class HUDEditor extends React.Component<any, any> {
             <h1>THIS IS WORK IN PROGRESS!</h1>
             <Button variant="contained" component="label">
               Upload File
-              <input type="file"
-                     hidden
-                     onChange={e => this.handleFileChosen(e)}
-              />
+              <input type="file" hidden onChange={this.handleFileChosen}/>
             </Button>
             <Button variant="contained" color={'secondary'} onClick={this.onSubmit}>Get
               config!</Button>

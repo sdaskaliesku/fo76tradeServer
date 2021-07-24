@@ -1,13 +1,17 @@
 import React from "react";
-import {BaseInventOmatic} from './BaseInventOmatic';
-import {createMuiTheme, CssBaseline, ThemeProvider} from "@material-ui/core";
-import {Utils} from "../../service/utils";
-import {JsonForms} from "@jsonforms/react";
+import "./BaseInventOmatic.scss";
+import {getAs3CharCode, inventOmaticPipboySchema} from "./schema1";
 import {materialCells, materialRenderers} from "@jsonforms/material-renderers";
-import {schema1} from "./schema1";
-import {Button} from "primereact/button";
+import {JsonForms} from "@jsonforms/react";
+import {Button} from "@material-ui/core";
+import {createAjv} from "@jsonforms/core";
+import {Utils} from "../../service/utils";
 
-export class InventOmaticPipboy extends BaseInventOmatic<any> {
+export enum MatchMode {
+  CONTAINS, EXACT, ALL, STARTS
+}
+
+export class InventOmaticPipboy extends React.Component<any, any> {
 
   state = {
     data: {
@@ -16,8 +20,8 @@ export class InventOmaticPipboy extends BaseInventOmatic<any> {
       configs: [
         {
           name: 'Sample config',
-          hotkey: 49,
-          itemNames: [
+          hotkey: getAs3CharCode("79"),
+          itemConfigs: [
             {
               name: 'Mini Nuke',
               type: 'AMMO',
@@ -39,50 +43,67 @@ export class InventOmaticPipboy extends BaseInventOmatic<any> {
     }
   }
 
-  constructor(props: any);
-  constructor(props: any, context: any);
+  fileReader: FileReader = new FileReader();
+  ajv: any;
+
   constructor(props: any, context?: any) {
     super(props, context);
     this.setData = this.setData.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+    this.handleFileChosen = this.handleFileChosen.bind(this);
+    this.handleFileRead = this.handleFileRead.bind(this);
+    this.ajv = createAjv({useDefaults: true});
   }
 
-  private setData(e: any) {
-    if (e.errors && e.errors.length > 0) {
-      console.error(e.errors);
-    }
-    this.setState({...e.data});
+  private setData({errors, data}: { errors: any, data: any }) {
+    this.setState({errors, data});
+  }
+
+  private onSubmit() {
+    const {data} = this.state;
+    const jsonString: string = JSON.stringify(data, null, 10);
+    Utils.downloadString(jsonString, 'text/json', 'inventOmaticPipboyConfig.json');
+    console.log(data);
+  }
+
+  handleFileRead() {
+    // @ts-ignore
+    const content = JSON.parse(this.fileReader.result);
+    console.log(content);
+    this.setState({data: content});
+  };
+
+  handleFileChosen(e: any) {
+    this.fileReader = new FileReader();
+    this.fileReader.onloadend = this.handleFileRead;
+    this.fileReader.readAsText(e.target.files[0]);
   }
 
   render() {
     const {data} = this.state;
 
-    const onSubmit = () => {
-      const jsonString: string = JSON.stringify(data, null, 10);
-      Utils.downloadString(jsonString, 'text/json', 'inventOmaticPipboyConfig.json');
-    };
-    const theme = createMuiTheme({
-      palette: {
-        type: "dark"
-      }
-    });
     return (
-        <ThemeProvider theme={theme}>
-          <CssBaseline/>
-          <div className={"wrapper"}>
-            <div className={"pipboy-form"}>
-              <h1>THIS IS WORK IN PROGRESS!</h1>
-              <Button className={'p-button-success'} onClick={onSubmit}>Get config!</Button>
-              <JsonForms
-                  schema={schema1.schema}
-                  data={data}
-                  renderers={materialRenderers}
-                  cells={materialCells}
-                  validationMode={"ValidateAndShow"}
-                  onChange={(e: any) => this.setData(e)}
-              />
-            </div>
+        <div className={"wrapper"}>
+          <Button variant="contained" component="label">
+            Upload File
+            <input type="file" hidden onChange={this.handleFileChosen}/>
+          </Button>
+          <Button variant="contained" color={'secondary'} onClick={this.onSubmit}>Get
+            config!</Button>
+          <div className={"pipboy-form"}>
+            <JsonForms
+                schema={inventOmaticPipboySchema.schema}
+                uischema={inventOmaticPipboySchema.uischema}
+                data={data}
+                renderers={materialRenderers}
+                cells={materialCells}
+                ajv={this.ajv}
+                validationMode={"ValidateAndShow"}
+                onChange={(e: any) => this.setData(e)}
+
+            />
           </div>
-        </ThemeProvider>
+        </div>
     );
   }
 }
