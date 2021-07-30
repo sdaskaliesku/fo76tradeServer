@@ -60,18 +60,21 @@ public class ItemConverterService {
     public static final Set<FilterFlag> SUPPORTED_PRICE_CHECK_ITEMS = Sets.newHashSet(
         FilterFlag.WEAPON,
         FilterFlag.ARMOR,
+        FilterFlag.POWER_ARMOR,
         FilterFlag.WEAPON_MELEE,
         FilterFlag.WEAPON_RANGED,
         FilterFlag.NOTES
     );
     private static final String INVALID_LEG_MOD = "===INVALID===";
     private static final String HACKED_LEG_MOD = "===HACKED===";
+    private static final String LEGACY_LEG_MOD = "===LEGACY===";
     private static final String PRICE_CHECK_ONLY = "Price Check Only";
     private static final String TRADABLE = "Tradable";
     private static final String LEGENDARIES = "Legendaries";
     private static final Set<ItemCardText> IGNORED_CARDS = Sets.newHashSet(ItemCardText.LEG_MODS, ItemCardText.DESC);
     private static final Set<FilterFlag> TYPES_FOR_NAME_CONVERT = Sets.newHashSet(
         FilterFlag.ARMOR,
+        FilterFlag.POWER_ARMOR,
         FilterFlag.WEAPON,
         FilterFlag.WEAPON_MELEE,
         FilterFlag.WEAPON_RANGED,
@@ -549,9 +552,10 @@ public class ItemConverterService {
         legendaryMod.setValue(getDefaultText(descriptor.getTranslations()));
         String abbreviation = descriptor.getAbbreviation();
         String gameId = descriptor.getGameId();
-        if (descriptor.getStar() > 3 || descriptor.isLegacy()) {
+        if (descriptor.getStar() > 3 || !descriptor.isEnabled()) {
             abbreviation = HACKED_LEG_MOD;
-            gameId = descriptor.getGameId();
+        } else if (descriptor.isLegacy()) {
+            abbreviation = LEGACY_LEG_MOD;
         } else {
             if (StringUtils.isBlank(abbreviation)) {
                 abbreviation = INVALID_LEG_MOD;

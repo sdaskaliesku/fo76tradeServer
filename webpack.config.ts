@@ -55,7 +55,26 @@ const config: webpack.Configuration = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+    fallback: {
+      "buffer": false,
+      "http": false,
+      "https": false,
+
+      "fs": false,
+      "tls": false,
+      "net": false,
+      "path": false,
+      "zlib": false,
+      "stream": require.resolve("stream-browserify"),
+      "crypto": false,
+      "process": false
+    }
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
+  ],
   output: {
     path: path.join(__dirname, outputPath),
     filename: 'bundle.js',

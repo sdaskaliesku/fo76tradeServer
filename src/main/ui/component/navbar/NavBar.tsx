@@ -1,10 +1,12 @@
 import React from "react";
 import {Menubar} from 'primereact/menubar';
-import {MenuItem} from "primereact/api";
+
 import {Button} from "primereact/button";
 import { AppInfo, UrlConfig } from "../../service/domain";
 import './NavBar.scss';
 import {gameApiService} from "../../service/game.api.service";
+import {routes} from "../../service/Routes";
+import {MenuItem} from "primereact/menuitem";
 
 export class NavBar extends React.Component<any, any> {
 
@@ -16,7 +18,7 @@ export class NavBar extends React.Component<any, any> {
       return buttons.map((el: MenuItem) => {
         return (
             <a href={el.url} target={el.target} key={el.url} className={'button-link'}>
-              <Button href={el.url} icon={el.icon} className={el.className}
+              <Button icon={el.icon} className={el.className}
                       label={el.label}/>
             </a>
         );
@@ -35,10 +37,15 @@ export class NavBar extends React.Component<any, any> {
     super(props);
     const websites: Array<any> = [];
     const tools: Array<any> = [];
+    const currentWebsite = '(current)';
     gameApiService.appInfo().then((appInfo: AppInfo) => {
       appInfo.sites.forEach((site: UrlConfig) => {
+        let siteName = site.name;
+        if (window.location.href.includes(site.name)) {
+          siteName += currentWebsite;
+        }
         websites.push({
-          label: site.name,
+          label: siteName,
           url: site.url,
           target: '_blank'
         });
@@ -66,7 +73,7 @@ export class NavBar extends React.Component<any, any> {
             label: 'Home',
             icon: 'pi pi-fw pi-home',
             command: (event: any) => {
-              window.location.hash = "/";
+              window.location.hash = routes.HOME;
             }
           },
           {
@@ -89,8 +96,28 @@ export class NavBar extends React.Component<any, any> {
             label: 'Settings',
             icon: 'pi pi-fw pi-cog',
             command: (event: any) => {
-              window.location.hash = "/settings";
+              window.location.hash = routes.SETTINGS;
             }
+          },
+          {
+            label: 'Mod configurations',
+            icon: 'pi pi-fw pi-cog',
+            items: [
+              {
+                label: 'InventOmatic',
+                icon: 'pi pi-fw pi-cog',
+                command: (event: any) => {
+                  window.location.hash = routes.InventOmatic;
+                }
+              },
+              {
+                label: 'HUDEditor',
+                icon: 'pi pi-fw pi-cog',
+                command: (event: any) => {
+                  window.location.hash = routes.HUDEditor;
+                }
+              },
+            ]
           },
         ],
         end: [

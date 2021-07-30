@@ -1,0 +1,45 @@
+.wrapper {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+
+  > .hud-editor-form {
+    > .elements-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & .hud {
+        width: 20px;
+      }
+
+      > .hud-elements {
+        //border: 2px solid blue;
+        > .tooltip {
+          font-size: 30px;
+        }
+        width: 15rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        > .title {
+          font-size: 14px;
+        }
+
+        > .description {
+          font-size: 13px;
+          word-break: break-all;
+        }
+
+        > .hud-element {
+          > .element-label {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+
+  }
+}

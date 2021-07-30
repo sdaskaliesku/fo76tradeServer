@@ -1,0 +1,1322 @@
+{
+  "Elements": {
+    "QuickLoot": {
+      "label": "Quickloot",
+      "id": "QuickLoot",
+      "description": "Menu that shows when you roll over a container. Also includes some container interact prompts (eg Stash box).",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "Frobber": {
+      "label": "Frobber",
+      "id": "Frobber",
+      "description": "Includes lock prompts (like unlocking a door or interacting with NPCs)Includes lock prompts (like unlocking a door or interacting with NPCs)",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "RollOver": {
+      "label": "RollOver",
+      "id": "RollOver",
+      "description": "Includes the interact prompts for most other things.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "Compass": {
+      "label": "Compass",
+      "id": "Compass",
+      "description": "Compass that is normally centered at the bottom.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "QuestTracker": {
+      "label": "QuestTracker",
+      "id": "QuestTracker",
+      "description": "Quest tracker that is normally in the upper right.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "Notification": {
+      "label": "Notification",
+      "id": "Notification",
+      "description": "Includes messages like \"You lack the requirements to make this\". Also includes public event notifications.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "LeftMeter": {
+      "label": "LeftMeter",
+      "id": "LeftMeter",
+      "description": "Health bar and rads indicator/taking rads text.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "StealthMeter": {
+      "label": "StealthMeter",
+      "id": "StealthMeter",
+      "description": "The meter that appears when you crouch (Hidden/Danger etc).",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "Announce": {
+      "label": "Announce",
+      "id": "Announce",
+      "description": "Quest announcements/rewards.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "TeamPanel": {
+      "label": "TeamPanel",
+      "id": "TeamPanel",
+      "description": "The list of teammates shown when on a team.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "FusionCoreMeter": {
+      "label": "FusionCoreMeter",
+      "id": "FusionCoreMeter",
+      "description": "Fusion core meter when the power armor gauges UI is disabled.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "Subtitles": {
+      "label": "Subtitles",
+      "id": "Subtitles",
+      "description": "Subtitle text.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "EnemyHealthMeter": {
+      "label": "EnemyHealthMeter",
+      "id": "EnemyHealthMeter",
+      "description": "Meter that shows up when you target an enemy/other entity.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "RightMeter": {
+      "label": "RightMeter",
+      "id": "RightMeter",
+      "description": "Description in progress",
+      "fields": [],
+      "additionalElements": [
+        {
+          "Parts": {
+            "label": "Parts",
+            "id": "Parts",
+            "description": "Description in progress",
+            "fields": [],
+            "additionalConfigs": [
+              {
+                "label": "APMeter",
+                "id": "APMeter",
+                "description": "Shows your current AP.",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              },
+              {
+                "label": "ActiveEffects",
+                "id": "ActiveEffects",
+                "description": "Shows your current acive effects (Diseased etc).",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              },
+              {
+                "label": "HungerMeter",
+                "id": "HungerMeter",
+                "description": "The hunger bar.",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              },
+              {
+                "label": "ThirstMeter",
+                "id": "ThirstMeter",
+                "description": "The thirst bar.",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              },
+              {
+                "label": "AmmoCount",
+                "id": "AmmoCount",
+                "description": "Your current/total ammo counts.",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              },
+              {
+                "label": "ExplosiveAmmoCount",
+                "id": "ExplosiveAmmoCount",
+                "description": "Your current grenade/mine total.",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              },
+              {
+                "label": "FlashLightWidget",
+                "id": "FlashLightWidget",
+                "description": "Unused for now. Would be the indicator that displays when flashlight is on.",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              },
+              {
+                "label": "Emote",
+                "id": "Emote",
+                "description": "Shows the animation of your last used emote.",
+                "fields": [
+                  {
+                    "label": "Scale",
+                    "id": "Scale",
+                    "defaultValue": 1,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": 0,
+                    "max": 1.5
+                  },
+                  {
+                    "label": "X",
+                    "id": "X",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  },
+                  {
+                    "label": "Y",
+                    "id": "Y",
+                    "defaultValue": 0,
+                    "type": "NUMERIC",
+                    "step": 0.1,
+                    "min": -10000,
+                    "max": 10000
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "Colors": {
+    "HitMarkerTint": {
+      "label": "HitMarkerTint",
+      "id": "HitMarkerTint",
+      "description": "Tints the hit marker that shows up when you hit something. Red by default in-game, so take that into account.",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "881111",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "RightMeters": {
+      "label": "RightMeters",
+      "id": "RightMeters",
+      "description": "AP meter, active effects, hunger/thirst, etc",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "LeftMeters": {
+      "label": "LeftMeters",
+      "id": "LeftMeters",
+      "description": "HP meter",
+      "fields": [
+        {
+          "label": "RadsBarRGB",
+          "id": "RadsBarRGB",
+          "defaultValue": "F67259",
+          "type": "COLOR"
+        },
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "Notifications": {
+      "label": "Notifications",
+      "id": "Notifications",
+      "description": "Top right notifications (things like 'You can't drop this' and public events)",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "HudFrobber": {
+      "label": "HudFrobber",
+      "id": "HudFrobber",
+      "description": "Shows when you hover something that can be locked (doors, terminals, etc)",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "QuestTracker": {
+      "label": "QuestTracker",
+      "id": "QuestTracker",
+      "description": "Quest tracker in the top right (by default)",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "TopCenter": {
+      "label": "TopCenter",
+      "id": "TopCenter",
+      "description": "Enemy health bar and sneak meter",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "Announce": {
+      "label": "Announce",
+      "id": "Announce",
+      "description": "Event started, quest/event rewards etc.",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "BottomCenter": {
+      "label": "BottomCenter",
+      "id": "BottomCenter",
+      "description": "Subtitles and compass.",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "CompassRGB",
+          "id": "CompassRGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "CompassBrightness",
+          "id": "CompassBrightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "CompassContrast",
+          "id": "CompassContrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "CompassSaturation",
+          "id": "CompassSaturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "Center": {
+      "label": "Center",
+      "id": "Center",
+      "description": "Quick loot menu (and crosshair when CustomCrosshair is not installed).",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "Team": {
+      "label": "Team",
+      "id": "Team",
+      "description": "Team panel",
+      "fields": [
+        {
+          "label": "RadsBarRGB",
+          "id": "RadsBarRGB",
+          "defaultValue": "F67259",
+          "type": "COLOR"
+        },
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "Floating": {
+      "label": "Center",
+      "id": "Center",
+      "description": "Floating quest markers, teammate/player markers",
+      "fields": [
+        {
+          "label": "RGB",
+          "id": "RGB",
+          "defaultValue": "FFFFCB",
+          "type": "COLOR"
+        },
+        {
+          "label": "Brightness",
+          "id": "Brightness",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Contrast",
+          "id": "Contrast",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        },
+        {
+          "label": "Saturation",
+          "id": "Saturation",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100
+        }
+      ]
+    },
+    "HUD": {
+      "label": "HUD",
+      "id": "HUD",
+      "description": "Configuration options for the various HUD options.",
+      "fields": [
+        {
+          "label": "CrosshairOpacity",
+          "id": "CrosshairOpacity",
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -100,
+          "max": 100,
+          "description": "Opacity of the crosshair on top of your current HUD opacity. Can't go higher than your current HUD opacity.",
+          "defaultValue": 1
+        },
+        {
+          "label": "EnableRecoloring",
+          "id": "EnableRecoloring",
+          "type": "BOOLEAN",
+          "description": "Enables or disables the coloring of HUD elements.",
+          "defaultValue": true
+        },
+        {
+          "label": "ThirstHungerPercentShow",
+          "id": "ThirstHungerPercentShow",
+          "type": "BOOLEAN",
+          "description": "Show hunger and thirst percentage numbers.",
+          "defaultValue": true
+        },
+        {
+          "label": "AlwaysShowThirstHunger",
+          "id": "AlwaysShowThirstHunger",
+          "type": "BOOLEAN",
+          "description": "Keep hunger and thirst bars visible at all times.",
+          "defaultValue": false
+        },
+        {
+          "label": "EditMode",
+          "id": "EditMode",
+          "type": "BOOLEAN",
+          "description": "Enables you to see changes to HUDEditor.xml in real time. NOTE: Only works if you're editing the file in your data folder, not on this site.",
+          "defaultValue": false
+        },
+        {
+          "label": "CustomCrosshair",
+          "id": "CustomCrosshair",
+          "type": "BOOLEAN",
+          "description": "Enable if you have Custom Crosshair installed. Disables HUDEditor's coloring of the crosshair so it doesn't override CC's.",
+          "defaultValue": false
+        },
+        {
+          "label": "TZMapMarkers",
+          "id": "TZMapMarkers",
+          "type": "BOOLEAN",
+          "description": "Enable if you have TZMapMarkers installed. Disables HUDEditor's marker coloring on the compass",
+          "defaultValue": false
+        }
+      ]
+    }
+  }
+}

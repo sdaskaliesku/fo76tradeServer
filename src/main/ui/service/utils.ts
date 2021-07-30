@@ -1,4 +1,6 @@
 import {Item} from "./domain";
+import {toXML} from "jstoxml";
+import {parse} from "fast-xml-parser";
 
 const NOTES = 'NOTES';
 const priceCheckFilterFlags: Array<string> = ['WEAPON', 'ARMOR', 'WEAPON_RANGED', 'WEAPON_MELEE', NOTES];
@@ -51,5 +53,61 @@ export class Utils {
     setTimeout(function () {
       URL.revokeObjectURL(a.href);
     }, 1500);
+  }
+
+  public static uuidv4() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      const r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  public static getPropertyByPath(obj: any, path: string) {
+    try {
+      path = path.replace(/\[(\w+)\]/g, '.$1');
+      path = path.replace(/^\./, '');
+      const a = path.split('.');
+      let o = obj;
+      while (a.length) {
+        const n = a.shift();
+        // @ts-ignore
+        if (!(n in o)) return;
+        // @ts-ignore
+        o = o[n];
+      }
+      return o;
+    } catch (e) {
+      return undefined;
+    }
+  }
+
+  public static setPropertyByPath(obj: any, path: string, value: any) {
+    try {
+      const a = path.split('.');
+      let o = obj;
+      while (a.length - 1) {
+        const n = a.shift();
+        // @ts-ignore
+        if (!(n in o)) {
+          // @ts-ignore
+          o[n] = {};
+        }
+        // @ts-ignore
+        o = o[n];
+      }
+      o[a[0]] = value;
+    } catch (e) {
+
+    }
+  }
+
+  public static toXML(input: any): string {
+    return toXML(input, {
+      indent: '       '
+    });
+  }
+
+  public static fromXML(input: any): any {
+    return parse(input);
   }
 }

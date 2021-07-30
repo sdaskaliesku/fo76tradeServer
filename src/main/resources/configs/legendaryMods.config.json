@@ -3,121 +3,130 @@
     "id": "mod_Legendary_Weapon1_DmgVsBugs",
     "gameId": "001F81EB",
     "texts": {
-      "de": "Des Kammerjägers",
-      "en": "Exterminator's",
-      "es": "Exterminador",
-      "esmx": "Exterminador",
-      "fr": "[Insecticide]",
-      "it": "Sterminatore",
-      "ja": "害虫駆除の",
-      "ko": "구제업자의",
-      "pl": "Mod eksterminatora",
-      "ptbr": "Exterminador",
-      "ru": "Истребителя",
-      "zhhans": "驱虫者",
-      "zhhant": "驅蟲者"
+      "de": "Legendäre Mod des Kammerjägers",
+      "en": "Exterminator's Legendary Mod",
+      "es": "Módulo legendario de exterminador",
+      "esmx": "Módulo legendario de exterminador",
+      "fr": "Mod légendaire Exterminateur",
+      "it": "Modifica leggendaria Sterminatore",
+      "ja": "害虫駆除のレジェンダリーモジュール",
+      "ko": "구제업자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja eksterminatora",
+      "ptbr": "Mod Lendário de Exterminador",
+      "ru": "Легендарный модуль дезинсектора",
+      "zhhans": "驱虫者的传奇改装件",
+      "zhhant": "驅蟲者傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "ext",
     "additionalAbbreviations": [
       "ext",
-      "et",
-      "exterminator",
       "exterminators",
-      "exterminator's",
       "001f81eb",
-      "exterm"
+      "exterminator's",
+      "exterm",
+      "гибельная",
+      "гибельный",
+      "004f6d7c",
+      "exterminator",
+      "et"
     ],
     "translations": {
-      "de": "+30% Schaden gegen Mirelurks und Insekten.",
-      "en": "+30% damage to Mirelurks and bugs",
-      "es": "+30% de daño a mirelurks y bichos.",
-      "esmx": "+30% de daño a mirelurks y bichos",
-      "fr": "30 % de dégâts supplémentaires sur les fangeux et les insectes.",
-      "it": "+30% Danni contro mirelurk e insetti",
-      "ja": "マイアラークとバグに与えるダメージが30%増加する",
-      "ko": "마이얼럭과 벌레에게 주는 피해가 +30% 증가합니다.",
-      "pl": "+30% do obrażeń zadawanych błotniakom i robalom",
-      "ptbr": "+30% de dano em Mirelurks e insetos",
-      "ru": "+30% к урону болотникам и насекомым",
-      "zhhans": "对泥沼蟹和虫类生物造成伤害+30%",
-      "zhhant": "對泥沼蟹和蟲子傷害+30%"
+      "de": "+50% Schaden gegen Mirelurks und Insekten.",
+      "en": "+50% damage to Mirelurks and bugs",
+      "es": "+50% de daño a mirelurks y bichos.",
+      "esmx": "+50% de daño a mirelurks y bichos.",
+      "fr": "+50 % de dégâts supplémentaires sur les fangeux et les insectes",
+      "it": "+50% Danni contro mirelurk e insetti.",
+      "ja": "マイアラークとバグに与えるダメージが50%増加する",
+      "ko": "마이얼럭과 벌레에게 주는 피해가 50% 증가합니다.",
+      "pl": "+50% do obrażeń zadawanych błotniakom i robalom.",
+      "ptbr": "+50% de dano em Mirelurks e insetos.",
+      "ru": "+50% к урону болотникам и насекомым",
+      "zhhans": "对泥沼蟹和虫类生物造成伤害+50%",
+      "zhhant": "對泥沼蟹和蟲子傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsScorched",
     "gameId": "004ED02B",
     "texts": {
-      "de": "Des Fanatikers",
-      "en": "Zealot's",
-      "es": "Fanático",
-      "esmx": "Fanático",
-      "fr": "Dévot",
-      "it": "Zelota",
-      "ja": "狂信者の",
-      "ko": "광전사의",
-      "pl": "Zelo.",
-      "ptbr": "Fanático",
-      "ru": "Зилотская",
-      "zhhans": "烈士",
-      "zhhant": "烈士"
+      "de": "Legendäre Mod des Fanatikers",
+      "en": "Zealot's Legendary Mod",
+      "es": "Módulo legendario de fanático",
+      "esmx": "Módulo legendario de fanático",
+      "fr": "Mod légendaire Dévot",
+      "it": "Modifica leggendaria Zelota",
+      "ja": "狂信者のレジェンダリーモジュール",
+      "ko": "광신도의 전설적인 개조",
+      "pl": "Legendarna modyfikacja zelota",
+      "ptbr": "Mod Lendário de Fanático",
+      "ru": "Легендарный модуль зилота",
+      "zhhans": "狂热者的传奇改装件",
+      "zhhant": "烈士傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "z",
     "additionalAbbreviations": [
-      "z",
-      "zealot",
+      "004ed02b",
       "zealots",
+      "зилотская",
+      "zealot",
       "zealot's",
-      "004ed02b"
+      "фанатический",
+      "004ee548",
+      "z",
+      "фанатическая"
     ],
     "translations": {
-      "de": "+30% Schaden gegen Verbrannte.",
-      "en": "+30% damage to Scorched",
-      "es": "+30% de daño a calcinados.",
-      "esmx": "+30% de daño a calcinados",
-      "fr": "+30 % de dégâts sur les calcinés",
-      "it": "+30% Danni agli ardenti",
-      "ja": "スコーチへのダメージが30%増加する",
-      "ko": "스코치드에게 주는 피해 +30% 증가합니다.",
-      "pl": "+30% do obrażeń zadawanych spalonym.",
-      "ptbr": "+30% de dano contra Chamuscados",
-      "ru": "+30% к урону горелым",
-      "zhhans": "对辐尸人造成伤害+30%",
-      "zhhant": "對輻屍人傷害+30%"
+      "de": "+50% Schaden gegen Verbrannte.",
+      "en": "+50% damage to Scorched",
+      "es": "+50% de daño a calcinados.",
+      "esmx": "+50% de daño a calcinados.",
+      "fr": "+50 % de dégâts sur les calcinés",
+      "it": "+50% Danni agli ardenti.",
+      "ja": "スコーチへのダメージが50%増加する",
+      "ko": "스코치드에게 주는 피해 50% 증가합니다.",
+      "pl": "+50% do obrażeń zadawanych spalonym.",
+      "ptbr": "+50% de dano contra Chamuscados.",
+      "ru": "+50% к урону горелым",
+      "zhhans": "对辐尸人造成伤害+50%",
+      "zhhant": "對輻屍人傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LessDmgScorched",
     "gameId": "004EE548",
     "texts": {
-      "de": "Des Fanatikers",
-      "en": "Zealot's",
-      "es": "Fanático",
-      "esmx": "Fanático",
-      "fr": "Dévot",
-      "it": "Zelota",
-      "ja": "狂信者の",
-      "ko": "광전사의",
-      "pl": "Zelo.",
-      "ptbr": "Fanático",
-      "ru": "Зилотская",
-      "zhhans": "烈士",
-      "zhhant": "烈士"
+      "de": "Legendäre Mod des Fanatikers",
+      "en": "Zealot's Legendary Mod",
+      "es": "Módulo legendario de fanático",
+      "esmx": "Módulo legendario de fanático",
+      "fr": "Mod légendaire Dévot",
+      "it": "Modifica leggendaria Zelota",
+      "ja": "狂信者のレジェンダリーモジュール",
+      "ko": "광신도의 전설적인 개조",
+      "pl": "Legendarna modyfikacja zelota",
+      "ptbr": "Mod Lendário de Fanático",
+      "ru": "Легендарный модуль зилота",
+      "zhhans": "狂热者的传奇改装件",
+      "zhhant": "烈士傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "z",
     "additionalAbbreviations": [
-      "z",
-      "zealot",
       "zealots",
+      "zealot",
       "zealot's",
-      "004ee548"
+      "004ee548",
+      "z"
     ],
     "translations": {
       "de": "-15% Schaden durch Verbrannte.",
@@ -134,273 +143,308 @@
       "zhhans": "来自辐尸人的伤害-15%",
       "zhhant": "被輻屍人攻擊時傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsPlayers",
     "gameId": "004F5770",
     "texts": {
-      "de": "Des Killers",
-      "en": "Assassin's",
-      "es": "Asesino",
-      "esmx": "Asesino",
-      "fr": "[Anti-humains]",
-      "it": "Assassino",
-      "ja": "暗殺者の",
-      "ko": "암살자의",
-      "pl": "Zabójcz.",
-      "ptbr": "Assassino",
-      "ru": "Убийственный",
-      "zhhans": "暗杀者",
-      "zhhant": "刺客"
+      "de": "Legendäre Mod des Assassinen",
+      "en": "Assassin's Legendary Mod",
+      "es": "Módulo legendario de asesino",
+      "esmx": "Módulo legendario de asesino",
+      "fr": "Mod légendaire Assassin",
+      "it": "Modifica leggendaria Assassino",
+      "ja": "暗殺者のレジェンダリーモジュール",
+      "ko": "암살자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja zabójcy",
+      "ptbr": "Mod Lendário de Assassino",
+      "ru": "Легендарный модуль убийцы",
+      "zhhans": "刺客的传奇改装件",
+      "zhhant": "刺客傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "a",
     "additionalAbbreviations": [
-      "a",
       "ass",
       "assn",
-      "assassin",
-      "assasin",
+      "a",
       "asasin",
+      "assasin",
+      "убийственная",
       "assassin's",
-      "asn",
-      "004f5770"
+      "assassin",
+      "убийство",
+      "убийственный",
+      "004f6d78",
+      "004f5770",
+      "asn"
     ],
     "translations": {
-      "de": "+10% Schaden gegen Menschen.",
-      "en": "+10% damage to Humans",
-      "es": "+10% de daño a humanos.",
-      "esmx": "+10% de daño a humanos.",
-      "fr": "+10 % de dégâts sur les humains",
-      "it": "+10% Danni contro gli umani",
-      "ja": "人間へのダメージが10%増加する",
-      "ko": "인간에게 주는 피해 +10%",
-      "pl": "+10% do obrażeń zadawanych ludziom.",
-      "ptbr": "+10% de dano contra Humanos",
-      "ru": "+10% к урону людям",
-      "zhhans": "对人类造成伤害+10%",
-      "zhhant": "對人類傷害+10%"
+      "de": "+50% Schaden gegen Menschen.",
+      "en": "+50% damage to Humans",
+      "es": "+50% de daño a humanos.",
+      "esmx": "+50% de daño a humanos.",
+      "fr": "+50 % de dégâts sur les humains",
+      "it": "+50% Danni contro gli umani.",
+      "ja": "人間へのダメージが50%増加する",
+      "ko": "인간에게 주는 피해가 50% 증가합니다.",
+      "pl": "+50% do obrażeń zadawanych ludziom.",
+      "ptbr": "+50% de dano contra humanos.",
+      "ru": "+50% к урону людям",
+      "zhhans": "对人类造成伤害+50%",
+      "zhhant": "對人類傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsGhouls",
     "gameId": "004F5779",
     "texts": {
-      "de": "Des Ghultöters",
-      "en": "Ghoul Slayer's",
-      "es": "Cazanecrófagos",
-      "esmx": "Cazanecrófagos",
-      "fr": "Tueur de goules",
-      "it": "Ammazzaghoul",
-      "ja": "グールスレイヤーの",
-      "ko": "구울 학살자의",
-      "pl": "Ghulobój.",
-      "ptbr": "Matador de Necróticos",
-      "ru": "Антирадиационный",
-      "zhhans": "尸鬼克星",
-      "zhhant": "屍鬼剋星"
+      "de": "Legendäre Mod des Ghultöters",
+      "en": "Ghoul Slayer's Legendary Mod",
+      "es": "Módulo legendario de asesino de necrófagos",
+      "esmx": "Módulo legendario de cazanecrófagos",
+      "fr": "Mod légendaire Anti-goules",
+      "it": "Modifica leggendaria Ammazzaghoul",
+      "ja": "グールスレイヤーのレジェンダリーモジュール",
+      "ko": "구울 학살자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja ghulobója",
+      "ptbr": "Mod Lendário de Matador de Necróticos",
+      "ru": "Легендарный модуль убийцы гулей",
+      "zhhans": "尸鬼屠杀者的传奇改装件",
+      "zhhant": "屍鬼剋星傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "g",
     "additionalAbbreviations": [
+      "004f5779",
       "g",
       "gs",
-      "ghoul",
-      "ghouls",
-      "ghoul slayer",
-      "ghoul slayer's",
+      "антирадиационный",
+      "ghoulslayer",
+      "ар",
       "ghoul slayers",
-      "004f5779",
-      "ghoulslay"
+      "ghoulslay",
+      "ghoul slayer's",
+      "ghoulslayers",
+      "гуль",
+      "004f6d7e",
+      "ghoul",
+      "ghoul slayer",
+      "ghouls",
+      "антирадиационная"
     ],
     "translations": {
-      "de": "+30% Schaden gegen Ghule.",
-      "en": "+30% damage to ghouls",
-      "es": "+30% de daño a necrófagos.",
-      "esmx": "+30% de daño a necrófagos",
-      "fr": "+30 % de dégâts sur les goules",
-      "it": "+30% Danni contro i ghoul",
-      "ja": "グールへのダメージが30%増加する",
-      "ko": "구울에게 주는 피해가 30% 증가합니다.",
-      "pl": "+30% do obrażeń zadawanych ghulom.",
-      "ptbr": "+30% de dano contra necróticos",
-      "ru": "+30% к урону гулям",
-      "zhhans": "对尸鬼造成伤害+30%",
-      "zhhant": "對屍鬼傷害+30%"
+      "de": "+50% Schaden gegen Ghule.",
+      "en": "+50% damage to ghouls",
+      "es": "+50% de daño a necrófagos.",
+      "esmx": "+50% de daño a necrófagos.",
+      "fr": "+50 % de dégâts sur les goules",
+      "it": "+50% Danni contro i ghoul.",
+      "ja": "グールへのダメージが50%増加する",
+      "ko": "구울에게 주는 피해가 50% 증가합니다.",
+      "pl": "+50% do obrażeń zadawanych ghulom.",
+      "ptbr": "+50% de dano contra necróticos.",
+      "ru": "+50% к урону гулям",
+      "zhhans": "对尸鬼造成伤害+50%",
+      "zhhant": "對屍鬼傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsAnimals",
     "gameId": "004F577A",
     "texts": {
-      "de": "Des Jägers",
-      "en": "Hunter's",
-      "es": "Cazador",
-      "esmx": "Cazador",
-      "fr": "Chasseur",
-      "it": "Cacciatore",
-      "ja": "狩人の",
-      "ko": "사냥꾼의",
-      "pl": "Łowieck.",
-      "ptbr": "Caçador",
-      "ru": "Охотничий",
-      "zhhans": "猎人",
-      "zhhant": "獵人"
+      "de": "Legendäre Mod des Jägers",
+      "en": "Hunter's Legendary Mod",
+      "es": "Módulo legendario de cazador",
+      "esmx": "Módulo legendario de cazador",
+      "fr": "Mod légendaire Chasseur",
+      "it": "Modifica leggendaria Cacciatore",
+      "ja": "ハンターのレジェンダリーモジュール",
+      "ko": "사냥꾼의 전설적인 개조",
+      "pl": "Legendarna modyfikacja łowcy",
+      "ptbr": "Mod Lendário de Caçador",
+      "ru": "Легендарный модуль охотника",
+      "zhhans": "猎人的传奇改装件",
+      "zhhant": "獵人傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "h",
     "additionalAbbreviations": [
-      "h",
-      "hunt",
-      "hunter",
       "hunters",
+      "hunt",
       "hunter's",
-      "004f577a"
+      "h",
+      "охотничий",
+      "охотничийохот",
+      "004f577a",
+      "hunter",
+      "охотничья"
     ],
     "translations": {
-      "de": "+30% Schaden gegen Tiere.",
-      "en": "+30% damage to animals",
-      "es": "+30% de daño a animales.",
-      "esmx": "+30% de daño a animales",
-      "fr": "+30 % de dégâts sur les animaux",
-      "it": "+30% Danni contro gli animali",
-      "ja": "動物へのダメージが30%増加する",
-      "ko": "동물에게 주는 피해가 30% 증가합니다.",
-      "pl": "+30% do obrażeń zadawanych zwierzętom.",
-      "ptbr": "+30% de dano contra animais",
-      "ru": "+30% к урону животным",
-      "zhhans": "对动物造成伤害+30%",
-      "zhhant": "對動物傷害+30%"
+      "de": "+50% Schaden gegen Tiere.",
+      "en": "+50% damage to animals",
+      "es": "+50% de daño a animales.",
+      "esmx": "+50% de daño a animales.",
+      "fr": "+50 % de dégâts sur les animaux",
+      "it": "+50% Danni contro gli animali.",
+      "ja": "動物へのダメージが50%増加する",
+      "ko": "동물에게 주는 피해가 50% 증가합니다.",
+      "pl": "+50% do obrażeń zadawanych zwierzętom.",
+      "ptbr": "+50% de dano contra animais.",
+      "ru": "+50% к урону животным",
+      "zhhans": "对动物造成伤害+50%",
+      "zhhant": "對動物傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsSupermutants",
     "gameId": "004F577B",
     "texts": {
-      "de": "Des Mutantentöters",
-      "en": "Mutant Slayer's",
-      "es": "Cazamutantes",
-      "esmx": "Cazamutantes",
-      "fr": "[Anti-mutants]",
-      "it": "Ammazzamutanti",
-      "ja": "ミュータントスレイヤーの",
-      "ko": "뮤턴트 학살자의",
-      "pl": "Mutantobójcz.",
-      "ptbr": "Matador de Mutantes",
-      "ru": "Мутантоистребительный",
-      "zhhans": "变种克星",
-      "zhhant": "變種剋星"
+      "de": "Legendäre Mod des Mutantentöters",
+      "en": "Mutant Slayer's Legendary Mod",
+      "es": "Módulo legendario de asesino de mutantes",
+      "esmx": "Módulo legendario de cazamutantes",
+      "fr": "Mod légendaire Anti-mutants",
+      "it": "Modifica leggendaria Ammazzamutanti",
+      "ja": "ミュータントスレイヤーのレジェンダリーモジュール",
+      "ko": "뮤턴트 학살자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja mutantobójcy",
+      "ptbr": "Mod Lendário de Matador de Mutantes",
+      "ru": "Легендарный модуль убийцы мутантов",
+      "zhhans": "变种人屠杀者的传奇改装件",
+      "zhhant": "變種剋星傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "mutant slayer's",
     "additionalAbbreviations": [
-      "mutant slayer's",
       "mutant slayers",
-      "mutantslayers",
-      "mutantslayer",
+      "ms",
+      "мутантоистребительный",
+      "мутантноистребительный",
       "004f577b",
+      "мтс",
+      "004f6d80",
+      "супермутант",
       "mutantslay",
-      "mutslayer"
+      "mutantslayer",
+      "mutslayer",
+      "mutant slayer's",
+      "мутантоистребительная",
+      "мутантноистребительная",
+      "mutantslayers"
     ],
     "translations": {
-      "de": "+30% Schaden gegen Supermutanten.",
-      "en": "+30% damage to super mutants",
-      "es": "+30% de daño a supermutantes.",
-      "esmx": "+30% de daño a supermutantes",
-      "fr": "+30 % de dégâts sur les super mutants",
-      "it": "+30% Danni contro i supermutanti",
-      "ja": "スーパーミュータントへのダメージが30%増加する",
-      "ko": "슈퍼 뮤턴트에게 주는 피해가 30% 증가합니다.",
-      "pl": "+30% do obrażeń zadawanych supermutantom.",
-      "ptbr": "+30% de dano contra supermutantes",
-      "ru": "+30% к урону супермутантам",
-      "zhhans": "对超级变种人造成伤害+30%",
-      "zhhant": "對超級變種人傷害+30%"
+      "de": "+50% Schaden gegen Supermutanten.",
+      "en": "+50% damage to super mutants",
+      "es": "+50% de daño a supermutantes.",
+      "esmx": "+50% de daño a supermutantes.",
+      "fr": "+50 % de dégâts sur les super mutants",
+      "it": "+50% Danni contro i supermutanti.",
+      "ja": "スーパーミュータントへのダメージが50%増加する",
+      "ko": "슈퍼 뮤턴트에게 주는 피해가 50% 증가합니다.",
+      "pl": "+50% do obrażeń zadawanych supermutantom.",
+      "ptbr": "+50% de dano contra supermutantes.",
+      "ru": "+50% к урону супермутантам",
+      "zhhans": "对超级变种人造成伤害+50%",
+      "zhhant": "對超級變種人傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgVsRobots",
     "gameId": "004F577C",
     "texts": {
-      "de": "Des Problemlösers",
-      "en": "Troubleshooter's",
-      "es": "Cazarrobots",
-      "esmx": "Cazarrobots",
-      "fr": "[Assistance]",
-      "it": "Tecnocida",
-      "ja": "壊し屋の",
-      "ko": "해결사의",
-      "pl": "Ułatwiaj.",
-      "ptbr": "Quebra-Galho",
-      "ru": "Механика",
-      "zhhans": "机械师",
-      "zhhant": "機械師"
+      "de": "Legendäre Mod des Problemlösers",
+      "en": "Troubleshooter's Legendary Mod",
+      "es": "Módulo legendario Solucionador de problemas",
+      "esmx": "Módulo legendario Solucionador de problemas",
+      "fr": "Mod légendaire Assistance",
+      "it": "Modifica leggendaria Tecnocida",
+      "ja": "壊し屋のレジェンダリーモジュール",
+      "ko": "해결사의 전설적인 개조",
+      "pl": "Legendarna modyfikacja rozwiązywania problemów",
+      "ptbr": "Mod Lendário de Quebra-Galho",
+      "ru": "Легендарный модуль \"Устранитель проблем\"",
+      "zhhans": "故障排除器的传奇改装件",
+      "zhhant": "機械師傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "t",
     "additionalAbbreviations": [
-      "t",
-      "tr",
       "tro",
-      "troubleshooter",
-      "troubleshooters",
-      "troubleshooter's",
+      "t",
+      "ремонтная",
       "004f577c",
-      "trouble"
+      "робот",
+      "troubleshooter",
+      "troubleshooter's",
+      "trouble",
+      "004f6d7f",
+      "ремонтный",
+      "troubleshooters",
+      "tr"
     ],
     "translations": {
-      "de": "Verursacht +30% Schaden gegen Roboter.",
-      "en": "+30% damage to robots",
-      "es": "+30% de daño a robots.",
-      "esmx": "+30% de daño a robots",
-      "fr": "+30 % de dégâts sur les robots",
-      "it": "+30% Danni contro i robot",
-      "ja": "ロボットへのダメージが30%増加する",
-      "ko": "로봇에게 주는 피해가 30% 증가합니다.",
-      "pl": "+30% do obrażeń zadawanych robotom.",
-      "ptbr": "+30% de dano contra robôs",
-      "ru": "+30% к урону роботам",
-      "zhhans": "对机器人造成伤害+30%",
-      "zhhant": "對機器人傷害+30%"
+      "de": "+50% Schaden gegen Roboter.",
+      "en": "+50% damage to robots",
+      "es": "+50% de daño a robots.",
+      "esmx": "+50% de daño a robots.",
+      "fr": "+50 % de dégâts sur les robots",
+      "it": "+50% Danni contro i robot.",
+      "ja": "ロボットへのダメージが50%増加する",
+      "ko": "로봇에게 주는 피해가 50% 증가합니다.",
+      "pl": "+50% do obrażeń zadawanych robotom.",
+      "ptbr": "+50% de dano contra robôs.",
+      "ru": "+50% к урону роботам",
+      "zhhans": "对机器人造成伤害+50%",
+      "zhhant": "對機器人傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgConsecutiveHits",
     "gameId": "004F577D",
     "texts": {
-      "de": "Wütend",
-      "en": "Furious",
-      "es": "Furioso",
-      "esmx": "Furioso",
-      "fr": "[Furie]",
-      "it": "Furioso",
-      "ja": "猛烈な",
-      "ko": "맹렬한",
-      "pl": "Wściekł.",
-      "ptbr": "Furioso",
-      "ru": "Яростный",
-      "zhhans": "狂怒",
-      "zhhant": "狂怒"
+      "de": "Legendäre Mod der Raserei",
+      "en": "Furious Legendary Mod",
+      "es": "Módulo legendario furioso",
+      "esmx": "Módulo legendario furioso",
+      "fr": "Mod légendaire Furie",
+      "it": "Modifica leggendaria Furioso",
+      "ja": "猛烈なレジェンダリーモジュール",
+      "ko": "맹렬한 전설적인 개조",
+      "pl": "Wściekła legendarna modyfikacja",
+      "ptbr": "Mod Lendário de Furioso",
+      "ru": "Легендарный модуль ярости",
+      "zhhans": "狂怒传奇改装件",
+      "zhhant": "狂怒傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "f",
     "additionalAbbreviations": [
+      "яростный",
+      "яростная",
+      "004f577d",
       "f",
-      "furious",
       "fury",
-      "004f577d"
+      "furious",
+      "ярость"
     ],
     "translations": {
       "de": "Erhöhter Schaden für jeden weiteren Treffer am selben Ziel.",
@@ -417,83 +461,88 @@
       "zhhans": "每次对同一目标进行连续攻击伤害都会增加",
       "zhhant": "每次連續命中相同目標都會增加傷害量。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DamageInverseHealth",
     "gameId": "004F6AA0",
     "texts": {
-      "de": "Blutbefleckt",
-      "en": "Bloodied",
-      "es": "Ensangrentado",
-      "esmx": "Ensangrentado",
-      "fr": "[Sang]",
-      "it": "Insanguinato",
-      "ja": "血濡れの",
-      "ko": "피 묻은",
-      "pl": "Zakrwaw.",
-      "ptbr": "Sangrento",
-      "ru": "Окровавленный",
-      "zhhans": "染血",
-      "zhhant": "染血"
+      "de": "Legendäre blutbefleckte Mod",
+      "en": "Bloodied Legendary Mod",
+      "es": "Módulo legendario Ensangrentado",
+      "esmx": "Módulo legendario Ensangrentado",
+      "fr": "Mod légendaire Sang",
+      "it": "Modifica leggendaria Insanguinato",
+      "ja": "血濡れのレジェンダリーモジュール",
+      "ko": "피 묻은 전설적인 개조",
+      "pl": "Zakrwawiona legendarna modyfikacja",
+      "ptbr": "Mod Lendário Sangrento",
+      "ru": "Окровавленный легендарный модуль",
+      "zhhans": "染血传奇改装件",
+      "zhhant": "染血傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "b",
     "additionalAbbreviations": [
       "b",
-      "blood",
+      "окровавленный",
       "bloodied",
-      "004f6aa0"
+      "004f6aa0",
+      "кровь",
+      "blood"
     ],
     "translations": {
       "de": "Je weniger Gesundheit, desto höher der verursachte Schaden.",
-      "en": "Damage increases as health decreases.",
-      "es": "El daño va aumentando a medida que se reduce la salud.",
-      "esmx": "El daño va aumentando a medida que se reduce la salud.",
-      "fr": "Les dégâts augmentent à mesure que la santé diminue.",
+      "en": "Damage increases as health decreases",
+      "es": "El daño va aumentando a medida que se reduce la salud",
+      "esmx": "El daño va aumentando a medida que se reduce la salud",
+      "fr": "Les dégâts augmentent à mesure que la santé diminue",
       "it": "I danni aumentano al diminuire della salute.",
       "ja": "体力が減少すると、ダメージが増加する",
-      "ko": "감소한 체력만큼 피해량 증가.",
+      "ko": "감소한 체력만큼 피해량이 증가합니다.",
       "pl": "Zadawane obrażenia zwiększają się wraz z utratą zdrowia.",
-      "ptbr": "Dano aumenta conforme a saúde é reduzida.",
+      "ptbr": "Dano aumenta quando conforme a saúde é reduzida.",
       "ru": "Чем меньше уровень здоровья, тем выше урон.",
-      "zhhans": "伤害随着生命值的降低而提高。",
-      "zhhant": "生命值越低，傷害量越高。"
+      "zhhans": "伤害提高，效果随着你的生命值降低而提高。",
+      "zhhant": "生命值越低，傷害量越高"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_Execute",
     "gameId": "004F6AA1",
     "texts": {
-      "de": "des Henkers",
-      "en": "Executioner's",
-      "es": "Verdugo",
-      "esmx": "Verdugo",
-      "fr": "Bourreau",
-      "it": "Giustiziere",
-      "ja": "処刑人の",
-      "ko": "처형자의",
-      "pl": "Katowsk.",
-      "ptbr": "Executor",
-      "ru": "Палаческий",
-      "zhhans": "行刑者的",
-      "zhhant": "劊子手"
+      "de": "Legendäre Mod des Henkers",
+      "en": "Executioner's Legendary Mod",
+      "es": "Módulo legendario de ejecutor",
+      "esmx": "Módulo legendario de verdugo",
+      "fr": "Mod légendaire Bourreau",
+      "it": "Modifica leggendaria Giustiziere",
+      "ja": "処刑人のレジェンダリーモジュール",
+      "ko": "처형자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja egzekutora",
+      "ptbr": "Mod Lendário de Executor",
+      "ru": "Легендарный модуль палача",
+      "zhhans": "刽子手的传奇改装件",
+      "zhhant": "劊子手傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "e",
     "additionalAbbreviations": [
-      "e",
-      "ec",
       "ex",
       "exe",
+      "e",
+      "палаческий",
       "executioner",
-      "exec",
+      "004f6aa1",
       "executioner's",
       "executioners",
-      "004f6aa1"
+      "ec",
+      "exec"
     ],
     "translations": {
       "de": "+50% mehr Schaden, wenn die Gesundheit deines Ziels unter 40% liegt.",
@@ -510,36 +559,39 @@
       "zhhans": "目标生命值低于40%的时候对其伤害+50%",
       "zhhant": "目標生命值低於40%時，傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DamageFirstBlood",
     "gameId": "004F6AA5",
     "texts": {
-      "de": "Anstachelnd",
-      "en": "Instigating",
-      "es": "Provocador",
-      "esmx": "Provocador",
-      "fr": "[Provocation]",
-      "it": "Fomentatore",
-      "ja": "扇動の",
-      "ko": "선동의",
-      "pl": "Inspir.",
-      "ptbr": "Instigador",
-      "ru": "Провоцирующий",
-      "zhhans": "煽动",
-      "zhhant": "煽動"
+      "de": "Legendäre Anstachelnd-Mod",
+      "en": "Instigating Legendary Mod",
+      "es": "Módulo legendario Provocador",
+      "esmx": "Módulo legendario Provocador",
+      "fr": "Mod légendaire Instigateur",
+      "it": "Modifica leggendaria Fomentatore",
+      "ja": "扇動のレジェンダリーモジュール",
+      "ko": "선동의 전설적인 개조",
+      "pl": "Inspirująca legendarna modyfikacja",
+      "ptbr": "Mod Lendário Instigante",
+      "ru": "Легендарный модуль провокатора",
+      "zhhans": "煽动传奇改装件",
+      "zhhant": "煽動傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "i",
     "additionalAbbreviations": [
-      "i",
-      "inst",
       "instig",
-      "instigating",
+      "inst",
       "004f6aa5",
-      "instigate"
+      "instigate",
+      "провоцирующий",
+      "провокация",
+      "i",
+      "instigating"
     ],
     "translations": {
       "de": "Verursacht doppelten Schaden, wenn das Ziel volle Gesundheit besitzt.",
@@ -556,174 +608,191 @@
       "zhhans": "目标生命值全满时伤害翻倍",
       "zhhant": "目標生命值全滿時，傷害變兩倍"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DamageUnarmored",
     "gameId": "004F6AA7",
     "texts": {
-      "de": "Des Berserkers",
-      "en": "Berserker's",
-      "es": "Berserker",
-      "esmx": "Berserker",
-      "fr": "Berserker",
-      "it": "Berserker",
-      "ja": "狂戦士の",
-      "ko": "광전사의",
-      "pl": "Berserk.",
-      "ptbr": "Berserker",
-      "ru": "Берсеркерский",
-      "zhhans": "狂战士",
-      "zhhant": "狂戰士"
+      "de": "Legendäre Mod des Berserkers",
+      "en": "Berserker's Legendary Mod",
+      "es": "Módulo legendario de berserker",
+      "esmx": "Módulo legendario de berserker",
+      "fr": "Mod légendaire Berseker",
+      "it": "Modifica leggendaria Berserker",
+      "ja": "狂戦士のレジェンダリーモジュール",
+      "ko": "광전사의 전설적인 개조",
+      "pl": "Legendarna modyfikacja berserkera",
+      "ptbr": "Mod Lendário de Berserker",
+      "ru": "Легендарный модуль берсерка",
+      "zhhans": "狂战士的传奇改装件",
+      "zhhant": "狂戰士傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "ber",
     "additionalAbbreviations": [
-      "ber",
       "br",
-      "bz",
-      "berserker",
+      "берсеркерский",
       "bs",
+      "berserk",
       "berserker's",
-      "berserkers",
       "004f6aa7",
-      "berserk"
+      "berserker",
+      "bz",
+      "berserkers",
+      "ber",
+      "берсерк",
+      "бр"
     ],
     "translations": {
       "de": "Verringerte Schadensresistenz erhöht verursachten Schaden.",
-      "en": "Lower Damage Resistance increases damage dealt.",
-      "es": "Una resistencia al daño más baja aumenta el daño causado.",
-      "esmx": "Una resistencia al daño más baja aumenta el daño causado.",
-      "fr": "Plus la résistance aux dégâts est faible, plus les dégâts infligés sont augmentés.",
+      "en": "Lower Damage Resistance increases damage dealt",
+      "es": "Una resistencia al daño más baja aumenta el daño causado",
+      "esmx": "Una resistencia al daño más baja aumenta el daño causado",
+      "fr": "Plus la résistance aux dégâts est faible, plus les dégâts infligés sont augmentés",
       "it": "Resistenza ai danni più bassa aumenta i danni inflitti.",
       "ja": "ダメージ耐性が低いと、与えるダメージが増加する",
-      "ko": "피해 저항이 낮아질수록 주는 피해 증가.",
+      "ko": "피해 저항이 낮아질수록 주는 피해 증가합니다.",
       "pl": "Im mniejsza odporność na obrażenia, tym większe zadawane obrażenia.",
       "ptbr": "Reduz a Resistência a Dano e aumenta o dano causado.",
       "ru": "Чем ниже сопротивляемость урону, тем выше наносимый урон.",
       "zhhans": "较低的伤害抗性会提高造成的伤害。",
-      "zhhant": "傷害抗性越低，造成的傷害越高。"
+      "zhhant": "傷害抗性越低，造成的傷害越高"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DamageAddiction",
     "gameId": "004F6AAB",
     "texts": {
-      "de": "Des Junkies",
-      "en": "Junkie's",
-      "es": "Adictivo",
-      "esmx": "Adictivo",
-      "fr": "Junkie",
-      "it": "Tossico",
-      "ja": "ジャンキーの",
-      "ko": "중독자의",
-      "pl": "Ćpuńsk.",
-      "ptbr": "Drogado",
-      "ru": "Наркоманский",
-      "zhhans": "毒虫",
-      "zhhant": "毒蟲"
+      "de": "Legendäre Mod des Junkies",
+      "en": "Junkie's Legendary Mod",
+      "es": "Módulo legendario de yonqui",
+      "esmx": "Módulo legendario Adictivo",
+      "fr": "Mod légendaire Junkie",
+      "it": "Modifica leggendaria Tossico",
+      "ja": "ジャンキーのレジェンダリーモジュール",
+      "ko": "약쟁이 전설적인 개조",
+      "pl": "Legendarna modyfikacja ćpuna",
+      "ptbr": "Mod Lendário de Viciado",
+      "ru": "Легендарный модуль наркомана",
+      "zhhans": "瘾君子的传奇改装件",
+      "zhhant": "毒蟲傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "j",
     "additionalAbbreviations": [
-      "j",
       "junkie",
       "junkies",
-      "junkie's",
-      "004f6aab"
+      "наркоманский",
+      "004f6aab",
+      "j",
+      "junkie's"
     ],
     "translations": {
       "de": "Erhöht den Schaden, wenn du an Abhängigkeiten leidest.",
-      "en": "Damage increases when suffering from addictions.",
-      "es": "El daño aumenta cuando se sufren los efectos de una adicción.",
-      "esmx": "El daño aumenta cuando se sufren los efectos de una adicción.",
-      "fr": "Augmentation des dégâts lorsque vous souffrez d'addictions.",
+      "en": "Damage increases when suffering from addictions",
+      "es": "El daño aumenta cuando se sufren los efectos de una adicción",
+      "esmx": "El daño aumenta cuando se sufren los efectos de una adicción",
+      "fr": "Augmentation des dégâts lorsque vous souffrez d'addictions",
       "it": "I danni aumentano quando subisci gli effetti di una dipendenza.",
       "ja": "中毒状態の時にダメージが増加する",
-      "ko": "중독으로 고통받을 때 피해량 증가.",
+      "ko": "중독으로 고통받을 때 피해량 증가합니다.",
       "pl": "Zwiększenie obrażeń podczas cierpienia z powodu uzależnień.",
       "ptbr": "O dano aumenta quando se sofre de vícios.",
       "ru": "Урон повышается при ломке от зависимости.",
       "zhhans": "成瘾时伤害增加",
-      "zhhant": "成癮發作時，傷害會提高。"
+      "zhhant": "成癮發作時，傷害量提升"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DamageNight",
     "gameId": "004F6AAE",
     "texts": {
-      "de": "Nachtaktiv",
-      "en": "Nocturnal",
-      "es": "Nocturno",
-      "esmx": "Nocturno",
-      "fr": "Nocturne",
-      "it": "Notturno",
-      "ja": "夜行性の",
-      "ko": "야행성",
-      "pl": "Nocn.",
-      "ptbr": "Noturno",
-      "ru": "Ночной",
-      "zhhans": "夜间",
-      "zhhant": "夜間"
+      "de": "Legendäre Nachtaktiv-Mod",
+      "en": "Nocturnal Legendary Mod",
+      "es": "Módulo legendario nocturno",
+      "esmx": "Módulo legendario nocturno",
+      "fr": "Mod légendaire Nocturne",
+      "it": "Modifica leggendaria Notturno",
+      "ja": "夜行性のレジェンダリーモジュール",
+      "ko": "야행성 전설적인 개조",
+      "pl": "Nocna legendarna modyfikacja",
+      "ptbr": "Mod Lendário Noturno",
+      "ru": "Легендарный ночной модуль",
+      "zhhans": "夜间传奇改装件",
+      "zhhant": "夜間傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "n",
     "additionalAbbreviations": [
-      "n",
       "nocturnal",
       "noct",
+      "ночная",
+      "00524143",
+      "ночной",
       "004f6aae",
+      "нч",
+      "ночь",
+      "n",
       "nocturn"
     ],
     "translations": {
-      "de": "Schaden erhöht sich bei Nacht und verringert sich bei Tag.",
-      "en": "Damage increases with the night and decreases with the day",
-      "es": "El daño aumenta por la noche y se reduce de día.",
-      "esmx": "El daño aumenta por la noche y se reduce de día.",
-      "fr": "Les dégâts augmentent la nuit et diminuent le jour",
-      "it": "Danni aumentati di notte e ridotti di giorno.",
-      "ja": "夜はダメージが増加し、昼はダメージが減少する",
-      "ko": "밤 동안에는 피해량이 증가하고 낮에는 감소합니다.",
-      "pl": "Zadawane obrażenia rosną nocą i spadają za dnia.",
-      "ptbr": "O dano aumenta com a noite e diminui com o dia",
-      "ru": "Урон усиливается ночью и снижается днем",
-      "zhhans": "夜晚伤害上升，但在白天伤害降低",
-      "zhhant": "傷害隨黑夜增加，隨白日減少"
+      "de": "Schaden erhöht sich bei Nacht.",
+      "en": "Damage increases with the night",
+      "es": "El daño aumenta por la noche.",
+      "esmx": "El daño aumenta por la noche.",
+      "fr": "Dégâts augmentés la nuit",
+      "it": "Danni aumentati di notte.",
+      "ja": "夜間のダメージが増加する",
+      "ko": "밤에 주는 피해가 증가합니다.",
+      "pl": "Obrażenia zadawane nocą rosną.",
+      "ptbr": "O dano aumenta com a noite.",
+      "ru": "Урон усиливается ночью",
+      "zhhans": "夜晚伤害上升",
+      "zhhant": "傷害隨黑夜增加"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_Guns_TwoShot",
     "gameId": "004F6D76",
     "texts": {
-      "de": "Doppelschuss",
-      "en": "Two Shot",
-      "es": "Dos tiros",
-      "esmx": "Dos tiros",
-      "fr": "[Deux coups]",
-      "it": "Due colpi",
-      "ja": "ツーショット",
-      "ko": "이중 사격",
-      "pl": "Dwustrzał.",
-      "ptbr": "Dois tiros",
-      "ru": "Двухзарядный",
-      "zhhans": "双弹",
-      "zhhant": "雙彈"
+      "de": "Legendäre Doppelschuss-Mod",
+      "en": "Two Shot Legendary Mod",
+      "es": "Módulo legendario de dos tiros",
+      "esmx": "Módulo legendario de dos tiros",
+      "fr": "Mod légendaire Deux coups",
+      "it": "Modifica leggendaria Due colpi",
+      "ja": "ツーショットのレジェンダリーモジュール",
+      "ko": "이중 사격 전설적인 개조",
+      "pl": "Dwustrzałowa legendarna modyfikacja",
+      "ptbr": "Mod Lendário de Disparo Duplo",
+      "ru": "Легендарный модуль двустволки",
+      "zhhans": "双弹传奇改装件",
+      "zhhant": "雙彈傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "ts",
     "additionalAbbreviations": [
-      "ts",
-      "two-shot",
       "twoshot",
+      "тш",
+      "004f6d76",
+      "тушот",
+      "two-shot",
       "two shot",
-      "004f6d76"
+      "двухзарядный",
+      "ts",
+      "тс"
     ],
     "translations": {
       "de": "Feuert ein zusätzliches Geschoss ab.",
@@ -740,133 +809,137 @@
       "zhhans": "发射额外的投掷物",
       "zhhant": "多射出一發射彈"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_AccuracyNotInCombat",
     "gameId": "004F6D77",
     "texts": {
-      "de": "Des Pirschers",
-      "en": "Stalker's",
-      "es": "Acechante",
-      "esmx": "Acechante",
-      "fr": "[Traque]",
-      "it": "Inseguitore",
-      "ja": "忍び寄る者の",
-      "ko": "추적자의",
-      "pl": "Tropiciel.",
-      "ptbr": "Perseguidor",
-      "ru": "Следопытский",
-      "zhhans": "潜行者",
-      "zhhant": "潛行者"
+      "de": "Legendäre Mod des Pirschers",
+      "en": "Stalker's Legendary Mod",
+      "es": "Módulo legendario de acechante",
+      "esmx": "Módulo legendario de acechante",
+      "fr": "Mod légendaire Traque",
+      "it": "Modifica leggendaria Inseguitore",
+      "ja": "忍び寄る者のレジェンダリーモジュール",
+      "ko": "추적자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja tropiciela",
+      "ptbr": "Mod Lendário Perseguidor",
+      "ru": "Легендарный модуль следопыта",
+      "zhhans": "跟踪者的传奇改装件",
+      "zhhant": "潛行者傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "s",
     "additionalAbbreviations": [
-      "s",
+      "следопытский",
       "st",
-      "stalker",
+      "s",
       "stalkers",
-      "stalker's",
+      "stalker",
       "stalk",
-      "004f6d77"
+      "004f6d77",
+      "stalker's"
     ],
     "translations": {
-      "de": "Vor Kampfbeginn: +100% V.A.T.S.-Präzision bei +50% AP-Kosten.",
-      "en": "If not in combat, +100% VATS accuracy at +50% AP cost",
-      "es": "Si no estás en combate, +100% de precisión en V.A.T.S. al consumir +50% de PA.",
-      "esmx": "Si no estás en combate, +100% de precisión en V.A.T.S. al consumir +50% de PA.",
-      "fr": "Hors combat, précision en mode SVAV +100 % à un coût en PA de +50 %",
-      "it": "+100% precisione S.P.A.V. con costo PA +50% non in combattimento",
-      "ja": "非戦闘中は、AP消費が50%増え、VATSの命中率が100%上昇する",
-      "ko": "전투 중이 아닐 때 AP를 +50% 더 소모하여 VATS 명중률을 +100% 증가시킵니다.",
-      "pl": "Gdy nie toczysz walki, +100% do celności w V.A.T.S za cenę +50% PA.",
-      "ptbr": "Fora de combate, +100% de precisão em V.A.T.S por um custo de +50% de PA",
-      "ru": "+100% к точности в V.A.T.S. по цене +50% ОД, если вы не в бою",
-      "zhhans": "非战斗状态下，+100%V.A.T.S.精确度，且+50%的行动点消耗",
-      "zhhant": "非戰鬥時，消耗AP +50%，V.A.T.S.準度+100%"
+      "de": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "en": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "es": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "esmx": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "fr": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "it": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "ja": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "ko": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "pl": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "ptbr": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "ru": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "zhhans": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost",
+      "zhhant": "If not in combat, +100% V.A.T.S. accuracy at +50% AP cost"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LessDMGPlayers",
     "gameId": "004F6D78",
     "texts": {
-      "de": "Des Killers",
-      "en": "Assassin's",
-      "es": "Asesino",
-      "esmx": "Asesino",
-      "fr": "[Anti-humains]",
-      "it": "Assassino",
-      "ja": "暗殺者の",
-      "ko": "암살자의",
-      "pl": "Zabójcz.",
-      "ptbr": "Assassino",
-      "ru": "Убийственный",
-      "zhhans": "暗杀者",
-      "zhhant": "刺客"
+      "de": "Legendäre Mod des Assassinen",
+      "en": "Assassin's Legendary Mod",
+      "es": "Módulo legendario de asesino",
+      "esmx": "Módulo legendario de asesino",
+      "fr": "Mod légendaire Assassin",
+      "it": "Modifica leggendaria Assassino",
+      "ja": "暗殺者のレジェンダリーモジュール",
+      "ko": "암살자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja zabójcy",
+      "ptbr": "Mod Lendário de Assassino",
+      "ru": "Легендарный модуль убийцы",
+      "zhhans": "刺客的传奇改装件",
+      "zhhant": "刺客傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "a",
     "additionalAbbreviations": [
-      "a",
       "ass",
-      "assassin",
-      "assasin",
-      "asasin",
-      "assassin's",
       "assn",
-      "asn",
-      "004f6d78"
+      "a",
+      "asasin",
+      "assasin",
+      "004f6d78",
+      "assassin's",
+      "assassin",
+      "asn"
     ],
     "translations": {
-      "de": "75%ige Chance, den Schaden durch Spieler um 8% zu reduzieren.",
-      "en": "75% chance to reduce damage by 8% from Players.",
-      "es": "Probabilidad del 75% de reducir el daño de los jugadores en un 8%.",
-      "esmx": "Probabilidad del 75% de reducir el daño de los jugadores en un 8%.",
-      "fr": "75 % de chance de réduire les dégâts infligés par les joueurs de 8 %.",
-      "it": "Hai il 75% di probabilità di ridurre i danni subiti da altri giocatori dell'8%.",
-      "ja": "75%の確率でプレイヤーから受けるダメージが8%減少する",
-      "ko": "75% 확률로 다른 플레이어에게 받는 피해가 8% 감소합니다.",
-      "pl": "75% szansy na zmniejszenie o 8% obrażeń zadawanych przez graczy.",
-      "ptbr": "75% de chance de reduzir o dano causado por jogadores em 8%.",
-      "ru": "75% шанс снизить урон от игроков на 8%.",
-      "zhhans": "冲刺时有75%的几率降低8%的伤害",
-      "zhhant": "被玩家攻擊時，有75%機率傷害-8%。"
+      "de": "-15% Schaden durch Menschen.",
+      "en": "-15% damage from Humans",
+      "es": "-15% de daño procedente de humanos.",
+      "esmx": "-15% de daño procedente de humanos.",
+      "fr": "-15 % de dégâts infligés par les humains",
+      "it": "-15% Danni dagli umani.",
+      "ja": "-人間からのダメージが15%減少する",
+      "ko": "인간에게 받는 피해가 -15% 감소합니다.",
+      "pl": "-15% obrażeń zadawanych przez ludzi.",
+      "ptbr": "-15% de dano recebido de humanos.",
+      "ru": "-15% урона от людей",
+      "zhhans": "-15%来自人类的伤害",
+      "zhhant": "被人類攻擊時傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LessDMGBugs",
     "gameId": "004F6D7C",
     "texts": {
-      "de": "Des Kammerjägers",
-      "en": "Exterminator's",
-      "es": "Exterminador",
-      "esmx": "Exterminador",
-      "fr": "[Insecticide]",
-      "it": "Sterminatore",
-      "ja": "害虫駆除の",
-      "ko": "구제업자의",
-      "pl": "Ekstermin.",
-      "ptbr": "Exterminador",
-      "ru": "Гибельный",
-      "zhhans": "驱虫者",
-      "zhhant": "驅蟲者"
+      "de": "Legendäre Mod des Kammerjägers",
+      "en": "Exterminator's Legendary Mod",
+      "es": "Módulo legendario de exterminador",
+      "esmx": "Módulo legendario de exterminador",
+      "fr": "Mod légendaire Exterminateur",
+      "it": "Modifica leggendaria Sterminatore",
+      "ja": "害虫駆除のレジェンダリーモジュール",
+      "ko": "구제업자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja eksterminatora",
+      "ptbr": "Mod Lendário de Exterminador",
+      "ru": "Легендарный модуль дезинсектора",
+      "zhhans": "驱虫者的传奇改装件",
+      "zhhant": "驅蟲者傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "ext",
     "additionalAbbreviations": [
       "ext",
-      "et",
-      "exterminator",
       "exterminators",
       "exterminator's",
+      "exterm",
       "004f6d7c",
-      "exterm"
+      "exterminator",
+      "et"
     ],
     "translations": {
       "de": "-15% Schaden durch Mirelurks und Insekten.",
@@ -883,36 +956,39 @@
       "zhhans": "-15%来自泥沼蟹和昆虫的伤害",
       "zhhant": "被泥沼蟹和昆蟲攻擊時傷害-15%。"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LessDMGAnimals",
     "gameId": "004F6D7D",
     "texts": {
-      "de": "Des Jägers",
-      "en": "Hunter's",
-      "es": "Cazador",
-      "esmx": "Cazador",
-      "fr": "Chasseur",
-      "it": "Cacciatore",
-      "ja": "ハンターの",
-      "ko": "사냥꾼의",
-      "pl": "Łowieck.",
-      "ptbr": "Caçador",
-      "ru": "Охотничий",
-      "zhhans": "猎人",
-      "zhhant": "獵人"
+      "de": "Legendäre Mod des Jägers",
+      "en": "Hunter's Legendary Mod",
+      "es": "Módulo legendario de cazador",
+      "esmx": "Módulo legendario de cazador",
+      "fr": "Mod légendaire Chasseur",
+      "it": "Modifica leggendaria Cacciatore",
+      "ja": "ハンターのレジェンダリーモジュール",
+      "ko": "사냥꾼의 전설적인 개조",
+      "pl": "Legendarna modyfikacja łowcy",
+      "ptbr": "Mod Lendário de Caçador",
+      "ru": "Легендарный модуль охотника",
+      "zhhans": "猎人的传奇改装件",
+      "zhhant": "獵人傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "h",
     "additionalAbbreviations": [
-      "h",
-      "hunt",
-      "hunter",
       "hunters",
+      "hunt",
       "hunter's",
-      "004f6d7d"
+      "h",
+      "охотничий",
+      "004f6d7d",
+      "hunter",
+      "охотничья"
     ],
     "translations": {
       "de": "-15% Schaden durch Tiere.",
@@ -929,41 +1005,42 @@
       "zhhans": "-15%来自动物的伤害",
       "zhhant": "被動物攻擊時傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LessDMGGhouls",
     "gameId": "004F6D7E",
     "texts": {
-      "de": "Des Ghultöters",
-      "en": "Ghoul Slayer's",
-      "es": "Cazanecrófagos",
-      "esmx": "Cazanecrófagos",
-      "fr": "Tueur de goules",
-      "it": "Ammazzaghoul",
-      "ja": "グールスレイヤーの",
-      "ko": "구울 학살자의",
-      "pl": "Ghulobój.",
-      "ptbr": "Matador de Necróticos",
-      "ru": "Антирадиационный",
-      "zhhans": "尸鬼克星",
-      "zhhant": "屍鬼剋星"
+      "de": "Legendäre Mod des Ghultöters",
+      "en": "Ghoul Slayer's Legendary Mod",
+      "es": "Módulo legendario de asesino de necrófagos",
+      "esmx": "Módulo legendario de cazanecrófagos",
+      "fr": "Mod légendaire Anti-goules",
+      "it": "Modifica leggendaria Ammazzaghoul",
+      "ja": "グールスレイヤーのレジェンダリーモジュール",
+      "ko": "구울 학살자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja ghulobója",
+      "ptbr": "Mod Lendário de Matador de Necróticos",
+      "ru": "Легендарный модуль убийцы гулей",
+      "zhhans": "尸鬼屠杀者的传奇改装件",
+      "zhhant": "屍鬼剋星傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "gs",
     "additionalAbbreviations": [
-      "gs",
-      "g",
-      "ghoul",
-      "ghouls",
-      "ghoul slayer",
-      "ghoul slayer's",
       "ghoul slayers",
-      "ghoulslayer",
+      "ghoulslay",
+      "ghoul slayer's",
+      "g",
       "ghoulslayers",
       "004f6d7e",
-      "ghoulslay"
+      "ghoul",
+      "gs",
+      "ghoul slayer",
+      "ghouls",
+      "ghoulslayer"
     ],
     "translations": {
       "de": "-15% Schaden durch Ghule.",
@@ -980,38 +1057,39 @@
       "zhhans": "-15%来自尸鬼的伤害",
       "zhhant": "被屍鬼攻擊時傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LessDMGRobots",
     "gameId": "004F6D7F",
     "texts": {
-      "de": "Des Problemlösers",
-      "en": "Troubleshooter's",
-      "es": "Cazarrobots",
-      "esmx": "Cazarrobots",
-      "fr": "[Assistance]",
-      "it": "Tecnocida",
-      "ja": "壊し屋の",
-      "ko": "해결사의",
-      "pl": "Ułatwiaj.",
-      "ptbr": "Quebra-Galho",
-      "ru": "Механика",
-      "zhhans": "机械师",
-      "zhhant": "機械師"
+      "de": "Legendäre Mod des Problemlösers",
+      "en": "Troubleshooter's Legendary Mod",
+      "es": "Módulo legendario Solucionador de problemas",
+      "esmx": "Módulo legendario Solucionador de problemas",
+      "fr": "Mod légendaire Assistance",
+      "it": "Modifica leggendaria Tecnocida",
+      "ja": "壊し屋のレジェンダリーモジュール",
+      "ko": "해결사의 전설적인 개조",
+      "pl": "Legendarna modyfikacja rozwiązywania problemów",
+      "ptbr": "Mod Lendário de Quebra-Galho",
+      "ru": "Легендарный модуль \"Устранитель проблем\"",
+      "zhhans": "故障排除器的传奇改装件",
+      "zhhant": "機械師傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "t",
     "additionalAbbreviations": [
-      "t",
       "tro",
-      "tr",
+      "t",
       "troubleshooter",
-      "troubleshooters",
       "troubleshooter's",
       "004f6d7f",
-      "trouble"
+      "trouble",
+      "troubleshooters",
+      "tr"
     ],
     "translations": {
       "de": "-15% Schaden durch Roboter.",
@@ -1028,38 +1106,39 @@
       "zhhans": "-15%来自机器人的伤害",
       "zhhant": "被機器人攻擊時傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LessDMGSuperMutants",
     "gameId": "004F6D80",
     "texts": {
-      "de": "Des Mutantentöters",
-      "en": "Mutant Slayer's",
-      "es": "Cazamutantes",
-      "esmx": "Cazamutantes",
-      "fr": "[Anti-mutants]",
-      "it": "Ammazzamutanti",
-      "ja": "ミュータントスレイヤーの",
-      "ko": "뮤턴트 학살자의",
-      "pl": "Mutantobójcz.",
-      "ptbr": "Matador de Mutantes",
-      "ru": "Мутантоистребительный",
-      "zhhans": "变种克星",
-      "zhhant": "變種剋星"
+      "de": "Legendäre Mod des Mutantentöters",
+      "en": "Mutant Slayer's Legendary Mod",
+      "es": "Módulo legendario de asesino de mutantes",
+      "esmx": "Módulo legendario de cazamutantes",
+      "fr": "Mod légendaire Anti-mutants",
+      "it": "Modifica leggendaria Ammazzamutanti",
+      "ja": "ミュータントスレイヤーのレジェンダリーモジュール",
+      "ko": "뮤턴트 학살자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja mutantobójcy",
+      "ptbr": "Mod Lendário de Matador de Mutantes",
+      "ru": "Легендарный модуль убийцы мутантов",
+      "zhhans": "变种人屠杀者的传奇改装件",
+      "zhhant": "變種剋星傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "mutant slayer's",
     "additionalAbbreviations": [
-      "mutant slayer's",
-      "mutant slayers",
-      "mutantslayers",
-      "mutantslayer",
-      "004f6d80",
       "mutantslay",
+      "mutant slayers",
+      "mutantslayer",
       "mutslayer",
-      "ms"
+      "ms",
+      "mutant slayer's",
+      "mutantslayers",
+      "004f6d80"
     ],
     "translations": {
       "de": "-15% Schaden durch Supermutanten.",
@@ -1076,36 +1155,38 @@
       "zhhans": "-15%来自超级变种人的伤害",
       "zhhant": "被超級變種人攻擊時傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_ResistancesInverseHealth",
     "gameId": "00521914",
     "texts": {
-      "de": "Verstärkung",
-      "en": "Bolstering",
-      "es": "Reconstituyente",
-      "esmx": "Reconstituyente",
-      "fr": "Renfort",
-      "it": "Rinforzante",
-      "ja": "頑強な",
-      "ko": "끈기의",
-      "pl": "Umocnienie",
-      "ptbr": "Potencializante",
-      "ru": "Усиление",
-      "zhhans": "支撑",
-      "zhhant": "支撐"
+      "de": "Legendäre polsternde Mod",
+      "en": "Bolstering Legendary Mod",
+      "es": "Módulo legendario de reconstituyente",
+      "esmx": "Módulo legendario de reconstituyente",
+      "fr": "Mod légendaire Consolidation",
+      "it": "Modifica leggendaria Rinforzante",
+      "ja": "頑強なレジェンダリーモジュール",
+      "ko": "끈기의 전설적인 개조",
+      "pl": "Umocniona legendarna modyfikacja",
+      "ptbr": "Mod Lendário Potencializante",
+      "ru": "Легендарный модуль усиления",
+      "zhhans": "支撑传奇改装件",
+      "zhhant": "支撐傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "bol",
     "additionalAbbreviations": [
-      "bol",
-      "bolst",
-      "bolstering",
       "b",
       "00521914",
-      "bolster"
+      "подкрепляющая",
+      "bolst",
+      "bolster",
+      "bol",
+      "bolstering"
     ],
     "translations": {
       "de": "Verleiht bis zu +35 Energie- und Schadensresistenz, je nachdem, wie niedrig deine Gesundheit ist.",
@@ -1122,35 +1203,38 @@
       "zhhans": "获得最多35能量抗性和伤害抗性，生命值越低效果越高。",
       "zhhant": "生命值越低，能量抗性和傷害抗性越高，最高+35"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LowHealthTriggersStimpak",
     "gameId": "00521915",
     "texts": {
-      "de": "Auto-Stim",
-      "en": "Auto Stim",
-      "es": "Autoestim",
-      "esmx": "Autoestim",
-      "fr": "Stimpack auto",
-      "it": "Auto stimpak",
-      "ja": "オートスティム付き",
-      "ko": "자동 주입",
-      "pl": "Autostim",
-      "ptbr": "Auto Stimpak",
-      "ru": "Стимуляторная",
-      "zhhans": "自动注射",
-      "zhhant": "自動注射"
+      "de": "Legendäre Automatisches-Stimpak-Mod",
+      "en": "Auto Stim Legendary Mod",
+      "es": "Módulo legendario de autoestim",
+      "esmx": "Módulo legendario de autoestim",
+      "fr": "Mod légendaire Stimpack auto",
+      "it": "Modifica leggendaria Auto stimpak",
+      "ja": "オートスティムのレジェンダリーモジュール",
+      "ko": "자동 주입 전설적인 개조",
+      "pl": "Legendarna modyfikacja stimpakowa",
+      "ptbr": "Mod Lendário de Auto Stimpak",
+      "ru": "Легендарный модуль автолечения",
+      "zhhans": "自动注射传奇改装件",
+      "zhhant": "自動注射傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "autostim",
     "additionalAbbreviations": [
-      "autostim",
+      "ст",
       "as",
       "stim",
+      "стимуляторная",
+      "00521915",
       "auto-stim",
-      "00521915"
+      "autostim"
     ],
     "translations": {
       "de": "Verwendet automatisch alle 60 Sekunden ein Stimpak, wenn du getroffen wirst und deine Gesundheit bei 25% oder weniger liegt.",
@@ -1167,82 +1251,85 @@
       "zhhans": "生命值降至25%以下时，若遭攻击，每60秒自动注射一次治疗针。",
       "zhhant": "生命值降至25%以下時，若遭攻擊，每60秒自動注射一次治療針"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_ResistancesNight",
     "gameId": "00524143",
     "texts": {
-      "de": "Nachtaktiv",
-      "en": "Nocturnal",
-      "es": "Nocturno",
-      "esmx": "Nocturno",
-      "fr": "Nocturne",
-      "it": "Notturno",
-      "ja": "夜行性の",
-      "ko": "야행성",
-      "pl": "Nocn.",
-      "ptbr": "Noturno",
-      "ru": "Ночной",
-      "zhhans": "夜间",
-      "zhhant": "夜間"
+      "de": "Legendäre Nachtaktiv-Mod",
+      "en": "Nocturnal Legendary Mod",
+      "es": "Módulo legendario nocturno",
+      "esmx": "Módulo legendario nocturno",
+      "fr": "Mod légendaire Nocturne",
+      "it": "Modifica leggendaria Notturno",
+      "ja": "夜行性のレジェンダリーモジュール",
+      "ko": "야행성 전설적인 개조",
+      "pl": "Nocna legendarna modyfikacja",
+      "ptbr": "Mod Lendário Noturno",
+      "ru": "Легендарный ночной модуль",
+      "zhhans": "夜间传奇改装件",
+      "zhhant": "夜間傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "n",
     "additionalAbbreviations": [
-      "n",
       "noct",
       "nocturnal",
-      "nocturn",
+      "noc",
       "00524143",
-      "noc"
+      "n",
+      "nocturn"
     ],
     "translations": {
-      "de": "Schadens- und Energieresistenz erhöhen sich bei Nacht und verringern sich bei Tag.",
-      "en": "Damage Resistance and Energy Resistance increase with the night and decrease with the day",
-      "es": "La resistencia al daño y la resistencia a la energía aumentan por la noche y se reducen de día.",
-      "esmx": "La resistencia al daño y la resistencia a la energía aumentan por la noche y se reducen de día.",
-      "fr": "La résistance aux dégâts et la résistance à l'énergie augmentent la nuit et diminuent le jour",
-      "it": "Resistenza ai danni e all'energia aumentati di notte e ridotti di giorno.",
-      "ja": "夜はダメージ耐性とエネルギー耐性が増加し、昼は減少する",
-      "ko": "밤에는 공격 피해 저항 및 에너지 저항이 증가하고 낮에는 감소합니다.",
-      "pl": "Odporność na obrażenia i energię rośnie w nocy, a spada w dzień.",
-      "ptbr": "Resistência a Dano e Resistência à Energia aumentam com a noite e diminuem com o dia.",
-      "ru": "Сопротивляемость обычному и энергетическому урону усиливается ночью и снижается днем.",
-      "zhhans": "夜晚时伤害抗性与能量抗性上升，白天时效果相反。",
-      "zhhant": "傷害抗性和能量抗性隨黑夜增加，隨白日減少"
+      "de": "Erhöhter Schaden und bessere Energieresistenz bei Nacht.",
+      "en": "Damage and Energy Resistance increase at night",
+      "es": "La resistencia al daño y a la energía aumentan por la noche.",
+      "esmx": "La resistencia al daño y a la energía aumentan por la noche.",
+      "fr": "Résistance aux dégâts et à l'énergie augmentée pendant la nuit",
+      "it": "La resistenza ai danni e all'energia aumenta di notte.",
+      "ja": "夜間のダメージとエネルギー耐性が増加する",
+      "ko": "밤에 피해 및 에너지 저항이 증가합니다.",
+      "pl": "Odporność na obrażenia i energię większa nocą.",
+      "ptbr": "Resistência a Dano e a Energia aumentam à noite.",
+      "ru": "Повышенная сопротивляемость обычному и энергетическому урону по ночам",
+      "zhhans": "在夜间提升伤害和能量抗性",
+      "zhhant": "夜晚的傷害和能量抗性提升"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_Chameleon",
     "gameId": "00524146",
     "texts": {
-      "de": "Chamäleon",
-      "en": "Chameleon",
-      "es": "Camaleónico",
-      "esmx": "Camaleón",
-      "fr": "Caméléon",
-      "it": "Camaleonte",
-      "ja": "カメレオンの",
-      "ko": "카멜레온",
-      "pl": "Mod kameleona",
-      "ptbr": "Camaleão",
-      "ru": "Хамелеон",
-      "zhhans": "变色龙",
-      "zhhant": "變色龍"
+      "de": "Legendäre Mod des Chamäleons",
+      "en": "Chameleon Legendary Mod",
+      "es": "Módulo legendario camaleónico",
+      "esmx": "Módulo legendario camaleónico",
+      "fr": "Mod légendaire Caméléon",
+      "it": "Modifica leggendaria Camaleonte",
+      "ja": "カメレオンのレジェンダリーモジュール",
+      "ko": "카멜레온 전설적인 개조",
+      "pl": "Legendarna modyfikacja kameleona",
+      "ptbr": "Mod Lendário de Camaleão",
+      "ru": "Легендарный модуль хамелеона",
+      "zhhans": "变色龙传奇改装件",
+      "zhhant": "變色龍傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "cham",
     "additionalAbbreviations": [
-      "cham",
+      "",
+      "00524146",
+      "chameleon",
       "ch",
       "cm",
-      "chameleon",
-      "",
-      "00524146"
+      "хамелеон",
+      "cham"
     ],
     "translations": {
       "de": "Du verschmilzt mit deiner Umgebung, wenn du dich beim Schleichen nicht bewegst.",
@@ -1259,34 +1346,37 @@
       "zhhans": "潜行并且静止时与环境融为一体",
       "zhhant": "潛行與靜止不動時能融入環境"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_CloakOnMelee",
     "gameId": "00524147",
     "texts": {
-      "de": "Getarnt",
-      "en": "Cloaking",
-      "es": "Infiltración",
-      "esmx": "Infiltración",
-      "fr": "Dissimulation",
-      "it": "Occultamento",
-      "ja": "クロークの",
-      "ko": "은폐",
-      "pl": "Maskuj.",
-      "ptbr": "Camuflagem",
-      "ru": "Маскирующая",
-      "zhhans": "护罩",
-      "zhhant": "護罩"
+      "de": "Legendäre Tarn-Mod",
+      "en": "Cloaking Legendary Mod",
+      "es": "Módulo legendario de infiltración",
+      "esmx": "Módulo legendario de infiltración",
+      "fr": "Mod légendaire Dissimulation",
+      "it": "Modifica leggendaria Occultamento",
+      "ja": "クロークのレジェンダリーモジュール",
+      "ko": "은폐 전설적인 개조",
+      "pl": "Maskująca legendarna modyfikacja",
+      "ptbr": "Mod Lendário de Camuflagem",
+      "ru": "Легендарный модуль маскировки",
+      "zhhans": "护罩传奇改装件",
+      "zhhant": "護罩傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "cloak",
     "additionalAbbreviations": [
+      "00524147",
+      "маскирующая",
       "cloak",
-      "cloaking",
       "cl",
-      "00524147"
+      "cloaking",
+      "маскировка"
     ],
     "translations": {
       "de": "Wirst du im Nahkampf getroffen, wird alle 30 Sekunden ein Tarnfeld erzeugt.",
@@ -1294,7 +1384,7 @@
       "es": "Si te dan cuerpo a cuerpo, se genera un campo de invisibilidad una vez cada 30 segundos.",
       "esmx": "Si te dan cuerpo a cuerpo, se genera un campo de invisibilidad una vez cada 30 segundos.",
       "fr": "Un champ de furtivité est créé quand vous vous faites toucher au corps à corps, une fois toutes les 30 secondes.",
-      "it": "Subire colpi in mischia genera un campo stealth per 30 secondi.",
+      "it": "Subire colpi in mischia genera un campo stealth una volta ogni 30 secondi.",
       "ja": "30秒に1回、近接攻撃が当たるとステルスフィールドが発生する",
       "ko": "근접 공격에 맞을 시 30초 동안 은폐장을 형성합니다.",
       "pl": "Cios otrzymany wręcz generuje raz na 30 sekund pole maskujące.",
@@ -1303,34 +1393,37 @@
       "zhhans": "遭受近战伤害时每30秒内会生成一次隐形护罩",
       "zhhant": "遭受近身攻擊時，每30秒觸發一次隱形護罩"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_LowHealthIncreasesStats",
     "gameId": "0052414A",
     "texts": {
-      "de": "Unnachgiebig",
-      "en": "Unyielding",
-      "es": "Inflexible",
-      "esmx": "Inflexible",
-      "fr": "Rigide",
-      "it": "Caparbio",
-      "ja": "不屈の",
-      "ko": "불굴의",
-      "pl": "Nieustępl.",
-      "ptbr": "Irredutível",
-      "ru": "Стойкая",
-      "zhhans": "不屈不挠",
-      "zhhant": "不屈不撓"
+      "de": "Legendäre Unnachgiebig-Mod",
+      "en": "Unyielding Legendary Mod",
+      "es": "Módulo legendario Inflexible",
+      "esmx": "Módulo legendario Inflexible",
+      "fr": "Mod légendaire Rigide",
+      "it": "Modifica leggendaria Caparbio",
+      "ja": "不屈のレジェンダリーモジュール",
+      "ko": "불굴의 전설적인 개조",
+      "pl": "Nieustępliwa legendarna modyfikacja",
+      "ptbr": "Mod Lendário de Irredutível",
+      "ru": "Легендарный модуль стойкости",
+      "zhhans": "不屈传奇改装件",
+      "zhhant": "不屈不撓傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "u",
     "additionalAbbreviations": [
-      "u",
       "uny",
       "unyielding",
+      "u",
+      "+3",
       "0052414a",
+      "стойкая",
       "unyield"
     ],
     "translations": {
@@ -1341,44 +1434,46 @@
       "fr": "Bonus +3 maximum à toutes les stats (sauf END) en cas de santé faible",
       "it": "Guadagni fino a +3 in tutte le statistiche (eccetto COS) quando la salute scarseggia",
       "ja": "HPが少ない時、全ステータス(ENDを除く)が3増加する",
-      "ko": "체력이 낮을 때 지구력을 제외한 모든 능력치가 +3 증가합니다.",
+      "ko": "체력이 낮을 때 지구력을 제외한 모든 능력치가 최대 +3 증가합니다.",
       "pl": "Gdy masz mało zdrowia, otrzymujesz +3 pkt. wszystkich statystyk (poza wytrzymałością).",
       "ptbr": "Ganha até +3 em todas as estatísticas (exceto RES) quando a Saúde estiver baixa",
       "ru": "+3 ко всем параметрам (кроме выносливости) при низком уровне здоровья",
       "zhhans": "生命值过低时所有数值+3（除了耐力）",
       "zhhant": "生命值低落時，所有能力值最多+3（耐力除外）"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_Vampire",
     "gameId": "00527F84",
     "texts": {
-      "de": "des Vampirs",
-      "en": "Vampire's",
-      "es": "Vampiro",
-      "esmx": "Vampiro",
-      "fr": "[Vampire]",
-      "it": "Vampiro",
-      "ja": "ヴァンパイアの",
-      "ko": "흡혈귀의",
-      "pl": "Wampiryczn.",
-      "ptbr": "Vampiro",
-      "ru": "Вампирский",
-      "zhhans": "吸血鬼",
-      "zhhant": "吸血鬼"
+      "de": "Legendäre Mod des Vampirs",
+      "en": "Vampire's Legendary Mod",
+      "es": "Módulo legendario de vampiro",
+      "esmx": "Módulo legendario de vampiro",
+      "fr": "Mod légendaire Vampire",
+      "it": "Modifica leggendaria Vampiro",
+      "ja": "ヴァンパイアのレジェンダリーモジュール",
+      "ko": "뱀파이어의 전설적인 개조",
+      "pl": "Legendarna modyfikacja wampira",
+      "ptbr": "Mod Lendário de Vampiro",
+      "ru": "Легендарный модуль вампира",
+      "zhhans": "吸血鬼的传奇改装件",
+      "zhhant": "吸血鬼傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "v",
     "additionalAbbreviations": [
-      "v",
-      "vamp",
+      "вампирский",
       "vampiric",
-      "vampire",
+      "v",
       "vampires",
-      "vampire's",
-      "00527f84"
+      "vampire",
+      "00527f84",
+      "vamp",
+      "vampire's"
     ],
     "translations": {
       "de": "Regeneriert deine Gesundheit für kurze Zeit, wenn du einen Gegner triffst.",
@@ -1395,37 +1490,40 @@
       "zhhans": "当你击中一名敌人时，你会获得短暂的生命值回复效果",
       "zhhant": "擊中敵人時，生命值可短暫恢復"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_Guns_CritsHealGroup",
     "gameId": "00527F8B",
     "texts": {
-      "de": "Des Sanitäters",
-      "en": "Medic's",
-      "es": "Curativo",
-      "esmx": "Curativo",
-      "fr": "Infirmier",
-      "it": "Medico",
-      "ja": "衛生兵の",
-      "ko": "의무병의",
-      "pl": "Lekarsk.",
-      "ptbr": "Médico",
-      "ru": "Медицинский",
-      "zhhans": "医护",
-      "zhhant": "醫護"
+      "de": "Legendäre Mod des Sanitäters",
+      "en": "Medic's Legendary Mod",
+      "es": "Módulo legendario de médico",
+      "esmx": "Módulo legendario de médico",
+      "fr": "Mod légendaire Infirmier",
+      "it": "Modifica leggendaria Medico",
+      "ja": "衛生兵のレジェンダリーモジュール",
+      "ko": "의무병 전설적인 개조",
+      "pl": "Medyczna legendarna modyfikacja",
+      "ptbr": "Mod Lendário de Médico",
+      "ru": "Легендарный модуль медика",
+      "zhhans": "医护兵的传奇改装件",
+      "zhhant": "醫護傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "m",
     "additionalAbbreviations": [
-      "m",
+      "medic's",
+      "medics",
       "me",
       "medic",
-      "med",
-      "medics",
-      "medic's",
-      "00527f8b"
+      "00527f8b",
+      "медицинский",
+      "мед",
+      "m",
+      "med"
     ],
     "translations": {
       "de": "Kritische V.A.T.S.-Treffer heilen dich und deine Gruppe.",
@@ -1442,36 +1540,42 @@
       "zhhans": "V.A.T.S.暴击会治疗你和你的队伍",
       "zhhant": "V.A.T.S.爆擊會治療你和隊友"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_AntiArmor",
     "gameId": "005281B4",
     "texts": {
-      "de": "Anti-Rüstung",
-      "en": "Anti-armor",
-      "es": "Antiblindaje",
-      "esmx": "Antiblindaje",
-      "fr": "Anti-armure",
-      "it": "Anti-corazza",
-      "ja": "対アーマーの",
-      "ko": "방어구 대응",
-      "pl": "Przeciwpanc.",
-      "ptbr": "Antiblindagem",
-      "ru": "Бронебойный",
-      "zhhans": "反装甲",
-      "zhhant": "反裝甲"
+      "de": "Legendäre Anti-Rüstung-Mod",
+      "en": "Anti-armor Legendary Mod",
+      "es": "Módulo legendario antiblindaje",
+      "esmx": "Módulo legendario antiblindaje",
+      "fr": "Mod légendaire Anti-armure",
+      "it": "Modifica leggendaria Anti-corazza",
+      "ja": "対アーマーのレジェンダリーモジュール",
+      "ko": "방어구 대응 전설적인 개조",
+      "pl": "Legendarna modyfikacja przeciwpancerna",
+      "ptbr": "Mod Lendário Antiblindagem",
+      "ru": "Легендарный бронебойный модуль",
+      "zhhans": "反装甲传奇改装件",
+      "zhhant": "反裝甲傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "aa",
     "additionalAbbreviations": [
       "aa",
-      "antiarmor",
-      "anti",
+      "аа",
+      "аа005281b4",
       "armor",
+      "antiarmor",
+      "005281b4",
+      "пронзительный",
       "anti-armor",
-      "005281b4"
+      "антиармор",
+      "анти-армор",
+      "anti"
     ],
     "translations": {
       "de": "Ignoriert 50% der Rüstung deines Ziels.",
@@ -1488,56 +1592,59 @@
       "zhhans": "无视你目标50%的护甲",
       "zhhant": "忽略50%的目標裝甲"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DebuffDamage",
     "gameId": "005281B8",
     "texts": {
-      "de": "des Unterdrückers",
-      "en": "Suppressor's",
-      "es": "Silenciador",
-      "esmx": "Silenciador",
-      "fr": "[Suppresseur]",
-      "it": "Soppressore",
-      "ja": "抑圧者の",
-      "ko": "억제자의",
-      "pl": "Tłum.",
-      "ptbr": "Silenciador",
-      "ru": "Глушительный",
-      "zhhans": "消音的",
-      "zhhant": "抑制"
+      "de": "Legendäre Mod des Unterdrückers",
+      "en": "Suppressor's Legendary Mod",
+      "es": "Módulo legendario para silenciador",
+      "esmx": "Módulo legendario para silenciador",
+      "fr": "Mod légendaire Suppresseur",
+      "it": "Modifica leggendaria Soppressore",
+      "ja": "抑圧者のレジェンダリーモジュール",
+      "ko": "억제자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja tłumika",
+      "ptbr": "Mod Lendário de Silenciador",
+      "ru": "Легендарный модуль глушителя",
+      "zhhans": "消音器的传奇改装件",
+      "zhhant": "抑制傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "ss",
     "additionalAbbreviations": [
       "ss",
+      "supresor",
       "su",
+      "005281b8",
+      "глушительный",
       "supressor",
+      "suppress",
       "supressors",
       "supressor's",
-      "supresor",
-      "sup",
-      "005281b8",
-      "suppress"
+      "sup"
     ],
     "translations": {
-      "de": "Senkt den verursachten Schaden des Ziels 3 Sekunden lang um 20%.",
-      "en": "Reduce your target's damage output by 20% for 3s",
-      "es": "El daño que inflige el objetivo se reduce un 20% durante 3 segundos.",
-      "esmx": "El daño que inflige el objetivo se reduce un 20% durante 3 segundos.",
-      "fr": "Réduit de 20 % les dégâts infligés pendant 3 s",
-      "it": "Riduce del 20% i danni inflitti dal bersaglio per 3 secondi.",
-      "ja": "3秒間、ターゲットの与えるダメージが20%減少する",
-      "ko": "대상이 주는 피해량을 3초 동안 20% 감소시킵니다.",
-      "pl": "Na 3 sek. obniża obrażenia zadawane przez wroga o 20%.",
-      "ptbr": "Reduz o dano aplicado pelo alvo em 20% por 3 segundos",
-      "ru": "Сила урона цели будет снижена на 20% в течение 3 сек.",
-      "zhhans": "3秒内降低你目标20%的伤害输出",
-      "zhhant": "使目標的傷害輸出-20%，效力3秒鐘。"
+      "de": "Senkt den verursachten Schaden des Ziels 5 Sekunden lang um 25%.",
+      "en": "Reduce your target's damage output by 25% for 5s",
+      "es": "El daño que inflige el objetivo se reduce un 25% durante 5 segundos.",
+      "esmx": "El daño que inflige el objetivo se reduce un 25% durante 5 segundos.",
+      "fr": "Réduit de 25 % les dégâts que votre cible inflige pendant 5 secondes",
+      "it": "Riduce del 25% i danni inflitti dal bersaglio per 5 secondi.",
+      "ja": "5秒間、ターゲットの与えるダメージが25%減少する",
+      "ko": "대상이 주는 피해량을 5초 동안 25% 감소시킵니다.",
+      "pl": "Na 35 sek. obniża obrażenia zadawane przez wroga o 25%.",
+      "ptbr": "Reduz o dano aplicado pelo alvo em 25% por 5 segundos.",
+      "ru": "Сила урона цели будет снижена на 25% в течение 5 сек.",
+      "zhhans": "5秒内降低你目标25%的伤害输出",
+      "zhhant": "使目標的傷害輸出-25%，效力5秒鐘"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon1_Knockback",
@@ -1574,127 +1681,139 @@
       "zhhans": "有一定几率可以将你的目标击退",
       "zhhant": "一定機率回擊目標"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_DmgWithMutation",
     "gameId": "005299F5",
     "texts": {
-      "de": "des Mutanten",
-      "en": "Mutant's",
-      "es": "Mutante",
-      "esmx": "Mutante",
-      "fr": "[Mutant]",
-      "it": "Mutante",
-      "ja": "ミュータントの",
-      "ko": "돌연변이의",
-      "pl": "Mutanck.",
-      "ptbr": "Mutante",
-      "ru": "Мутантный",
-      "zhhans": "突变的",
-      "zhhant": "變種人"
+      "de": "Legendäre Mod des Mutanten",
+      "en": "Mutant's Legendary Mod",
+      "es": "Módulo legendario de mutante",
+      "esmx": "Módulo legendario de mutante",
+      "fr": "Mod légendaire Mutant",
+      "it": "Modifica leggendaria Mutante",
+      "ja": "ミュータントのレジェンダリーモジュール",
+      "ko": "뮤턴트의 전설적인 개조",
+      "pl": "Legendarna modyfikacja mutanta",
+      "ptbr": "Mod Lendário de Mutante",
+      "ru": "Легендарный модуль мутанта",
+      "zhhans": "变种人的传奇改装件",
+      "zhhant": "變種人傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "mu",
     "additionalAbbreviations": [
-      "mu",
-      "mutant",
-      "mutants",
       "mutant's",
-      "mut",
-      "005299f5"
+      "005299f5",
+      "мутантный",
+      "mutants",
+      "мт",
+      "мутантная",
+      "mu",
+      "00529a0c",
+      "мутант",
+      "мут",
+      "mutant",
+      "mut"
     ],
     "translations": {
-      "de": "Schaden wird um 10% erhöht, wenn du mutiert bist.",
-      "en": "Damage increased by 10% if you are mutated",
-      "es": "Daño aumentado un 10% si sufres una mutación.",
-      "esmx": "Daño aumentado un 10% si sufres una mutación.",
-      "fr": "Dégâts accrus de 10 % si vous subissez une mutation",
-      "it": "Danni aumentati del 10% se hai una mutazione",
-      "ja": "変異していると、ダメージが10%増加する",
-      "ko": "돌연변이 상태일 때 받는 피해가 10% 감소합니다.",
-      "pl": "Obrażenia zwiększone o 10%, jeśli dotknęła cię mutacja.",
-      "ptbr": "Dano aumentado em 10% se você tiver sofrido mutação",
-      "ru": "+10% к урону, если у вас имеются мутации",
-      "zhhans": "如果你处于突变状态，伤害提高10%",
-      "zhhant": "突變時，傷害+10%"
+      "de": "Schaden wird um 5% pro Mutation erhöht.",
+      "en": "Damage increased by 5% for each mutation",
+      "es": "Daño aumentado un 5% por cada mutación",
+      "esmx": "Daño aumentado un 5% por cada mutación",
+      "fr": "Dégâts accrus de 5 % pour chaque mutation",
+      "it": "+5% Danni per ogni mutazione.",
+      "ja": "変異ごとにダメージが5%増加する",
+      "ko": "돌연변이 상태일 때는 받는 피해가 5% 증가합니다.",
+      "pl": "Po każdej mutacji obrażenia zwiększone o 5%.",
+      "ptbr": "Dano aumentado em 5% por cada mutação.",
+      "ru": "+5% к урону для каждой мутации",
+      "zhhans": "每获取一种变异效果，伤害提高5%",
+      "zhhant": "每突變一次，傷害+5%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_ResistancesProportionalHealth",
     "gameId": "00529A05",
-    "nameOverride": "Vanguard",
     "texts": {
-      "de": "Verstärkung",
-      "en": "Bolstering",
-      "es": "Reconstituyente",
-      "esmx": "Reconstituyente",
-      "fr": "Renfort",
-      "it": "Rinforzante",
-      "ja": "頑強な",
-      "ko": "끈기의",
-      "pl": "Umocnienie",
-      "ptbr": "Potencializante",
-      "ru": "Усиление",
-      "zhhans": "支撑",
-      "zhhant": "支撐"
+      "de": "Legendäre Mod der Vorhut",
+      "en": "Vanguard's Legendary Mod",
+      "es": "Módulo legendario de vanguardia",
+      "esmx": "Módulo legendario de vanguardia",
+      "fr": "Mod légendaire d'Avant-garde",
+      "it": "Modifica leggendaria Avanguardia",
+      "ja": "ヴァンガードのレジェンダリーモジュール",
+      "ko": "선봉대의 전설적인 개조",
+      "pl": "Legendarna modyfikacja przedniej straży",
+      "ptbr": "Mod Lendário de Vanguarda",
+      "ru": "Авангардный легендарный модуль",
+      "zhhans": "先锋的传奇改装件",
+      "zhhant": "先鋒傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "v",
     "additionalAbbreviations": [
-      "v",
+      "vanguard's",
       "vg",
       "vang",
+      "авангардная",
+      "v",
+      "00529a05",
       "vanguard",
-      "vanguard's",
-      "00529a05"
+      "авангард"
     ],
     "translations": {
       "de": "Verleiht bis zu +35 Energie- und Schadensresistenz, je nachdem, wie hoch deine Gesundheit ist.",
-      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the higher your health.",
-      "es": "Otorga hasta +35 de resistencia al daño y resistencia a la energía cuanto mayor sea la salud.",
-      "esmx": "Otorga hasta +35 de resistencia al daño y resistencia a la energía cuanto mayor sea la salud.",
-      "fr": "Plus votre santé est élevée, plus votre résistance aux dégâts et à l'énergie augmente (+35 max).",
+      "en": "Grants up to +35 Energy Resistance and Damage Resistance, the higher your health",
+      "es": "Otorga hasta +35 de resistencia al daño y resistencia a la energía cuanto mayor sea la salud",
+      "esmx": "Otorga hasta +35 de resistencia al daño y resistencia a la energía cuanto mayor sea la salud",
+      "fr": "Plus votre santé est élevée, plus votre résistance aux dégâts et à l'énergie augmente (+35 max)",
       "it": "Aumenta la Resistenza ai danni e all'energia quanto più è alta la tua salute (fino a +35).",
       "ja": "HPが多い時、エネルギー耐性、ダメージ耐性が35増加する",
       "ko": "체력이 낮아질수록 에너지 저항 및 피해 저항이 최대 +35까지 증가합니다.",
       "pl": "Zapewnia tym więcej odporności na obrażenia i energię, im więcej masz zdrowia (do +35).",
       "ptbr": "Concede até +35 de Resistência a Energia e Resistência a Dano quanto maior for a sua saúde.",
       "ru": "Повышение сопротивляемости обычному и энергетическому урону по мере повышения здоровья (до +35).",
-      "zhhans": "获得最多35能量抗性和伤害抗性，效果随着你的生命值提高而提高。",
-      "zhhant": "生命值越高，能量抗性和傷害抗性越高，最高+35。"
+      "zhhans": "获得最多+35能量抗性和伤害抗性，效果随着你的生命值增加而提高。",
+      "zhhant": "生命值越高，能量抗性和傷害抗性越高，最高+35"
     },
-    "itemType": "ARMOR"
+    "nameOverride": "Vanguard",
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_HealthRegen",
     "gameId": "00529A09",
     "texts": {
-      "de": "Regenerierend",
-      "en": "Regenerating",
-      "es": "Regeneración",
-      "esmx": "Regeneración",
-      "fr": "Régénération",
-      "it": "Rigenerante",
-      "ja": "再生の",
-      "ko": "재생의",
-      "pl": "Regeneracja",
-      "ptbr": "Regenerando",
-      "ru": "Регенерирующий",
-      "zhhans": "快速回血",
-      "zhhant": "再生"
+      "de": "Legendäre Regenerierend-Mod",
+      "en": "Regenerating Legendary Mod",
+      "es": "Módulo legendario de regeneración",
+      "esmx": "Módulo legendario de regeneración",
+      "fr": "Mod légendaire Régénération",
+      "it": "Modifica leggendaria Rigenerante",
+      "ja": "再生のレジェンダリーモジュール",
+      "ko": "재생의 전설적인 개조",
+      "pl": "Regenerująca legendarna modyfikacja",
+      "ptbr": "Mod Lendário Regenerador",
+      "ru": "Легендарный модуль регенерации",
+      "zhhans": "回复传奇改装件",
+      "zhhant": "再生傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "reg",
     "additionalAbbreviations": [
+      "r",
       "reg",
+      "регенерирующая",
       "regen",
       "regenerating",
-      "r",
       "00529a09"
     ],
     "translations": {
@@ -1712,36 +1831,37 @@
       "zhhans": "不战斗时缓慢回复生命",
       "zhhant": "不戰鬥時緩慢恢復生命值"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_ResistancesMutation",
     "gameId": "00529A0C",
     "texts": {
-      "de": "des Mutanten",
-      "en": "Mutant's",
-      "es": "Mutante",
-      "esmx": "Mutante",
-      "fr": "[Mutant]",
-      "it": "Mutante",
-      "ja": "ミュータントの",
-      "ko": "돌연변이의",
-      "pl": "Mutanck.",
-      "ptbr": "Mutante",
-      "ru": "Мутантный",
-      "zhhans": "突变的",
-      "zhhant": "變種人"
+      "de": "Legendäre Mod des Mutanten",
+      "en": "Mutant's Legendary Mod",
+      "es": "Módulo legendario de mutante",
+      "esmx": "Módulo legendario de mutante",
+      "fr": "Mod légendaire Mutant",
+      "it": "Modifica leggendaria Mutante",
+      "ja": "ミュータントのレジェンダリーモジュール",
+      "ko": "뮤턴트의 전설적인 개조",
+      "pl": "Legendarna modyfikacja mutanta",
+      "ptbr": "Mod Lendário de Mutante",
+      "ru": "Легендарный модуль мутанта",
+      "zhhans": "变种人的传奇改装件",
+      "zhhant": "變種人傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "mu",
     "additionalAbbreviations": [
-      "mu",
-      "mutant",
-      "mutants",
       "mutant's",
-      "mut",
-      "00529a0c"
+      "mutants",
+      "mu",
+      "00529a0c",
+      "mutant",
+      "mut"
     ],
     "translations": {
       "de": "+10 Schadens- und Energieresistenz, wenn du mutiert bist.",
@@ -1758,37 +1878,40 @@
       "zhhans": "如果你处于突变状态，+10伤害抗性和能量抗性",
       "zhhant": "突變時，傷害抗性和能量抗性+10"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_AutoRevive",
     "gameId": "00529A0F",
     "texts": {
-      "de": "Automatische Wiederbelebung",
-      "en": "Auto Revive",
-      "es": "Resurrección automática",
-      "esmx": "Resurrección automática",
-      "fr": "Ranimation automatique",
-      "it": "Autorianimazione",
-      "ja": "自動復活の",
-      "ko": "자동 부활",
-      "pl": "Autom. wskrzeszenie",
-      "ptbr": "Autorreviver",
-      "ru": "Автоматическое оживление",
-      "zhhans": "自动复活",
-      "zhhant": "自動復活"
+      "de": "Legendäre Lebensrettend-Mod",
+      "en": "Life Saving Legendary Mod",
+      "es": "Módulo legendario salvavidas",
+      "esmx": "Módulo legendario salvavidas",
+      "fr": "Mod légendaire Salutaire",
+      "it": "Modifica leggendaria Salvavita",
+      "ja": "救命のレジェンダリーモジュール",
+      "ko": "구명의 무기 전설적인 개조",
+      "pl": "Legendarna modyfikacja ratowania życia",
+      "ptbr": "Mod Lendário de Salva-Vidas",
+      "ru": "Спасательный легендарный модуль",
+      "zhhans": "救生传奇改装件",
+      "zhhant": "起死回生傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "life saving",
     "additionalAbbreviations": [
-      "life saving",
       "lifesaving",
+      "спасательная",
+      "life saving",
+      "lifesave",
+      "00529a0f",
       "l",
       "life",
       "live",
-      "00529a0f",
-      "lifesave"
+      "сп"
     ],
     "translations": {
       "de": "Wenn du ausgeschaltet bist, erhältst einmal pro Minute eine Chance von 50%, dich mit einem Stimpak selbst wiederzubeleben.",
@@ -1805,52 +1928,55 @@
       "zhhans": "濒死时有50%几率复活并对自己使用治疗针，此效果每分钟可以触发一次",
       "zhhant": "無行動能力時，每分鐘用一次治療針，有50%機率復活自己"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor1_Weightless",
     "gameId": "00529A14",
     "texts": {
-      "de": "Schwerelos",
-      "en": "Weightless",
-      "es": "Ingrávido",
-      "esmx": "[Ingrávido]",
-      "fr": "Poids plume",
-      "it": "Senza peso",
-      "ja": "重さのない",
-      "ko": "깃털 같은",
-      "pl": "Nieważk.",
-      "ptbr": "Sem Peso",
-      "ru": "Невесомый",
-      "zhhans": "无重量的",
-      "zhhant": "無重量"
+      "de": "Legendäre Schwerelos-Mod",
+      "en": "Weightless Legendary Mod",
+      "es": "Módulo legendario Ingrávido",
+      "esmx": "Módulo legendario Ingrávido",
+      "fr": "Mod légendaire Poids plume",
+      "it": "Modifica leggendaria Senza peso",
+      "ja": "無重量のレジェンダリーモジュール",
+      "ko": "깃털 같은 전설적인 개조",
+      "pl": "Legendarna modyfikacja nieważkości",
+      "ptbr": "Mod Lendário Sem Peso",
+      "ru": "Легендарный модуль невесомости",
+      "zhhans": "无重量的传奇改装件",
+      "zhhant": "無重量傳奇改造配件"
     },
     "enabled": true,
     "star": 1,
     "abbreviation": "weightless",
     "additionalAbbreviations": [
-      "weightless",
-      "weight",
       "wl",
       "w",
-      "00529a14"
+      "невесомая",
+      "00529a14",
+      "weight",
+      "weightless"
     ],
     "translations": {
       "de": "Wiegt 90% weniger und zählt nicht als Rüstung für die Chamäleon-Mutation.",
-      "en": "Weighs 90% less and does not count as armor for the Chameleon mutation.",
-      "es": "El peso se reduce en un 90% y no cuenta como armadura para la mutación Camaleónico.",
-      "esmx": "El peso se reduce en un 90% y no cuenta como armadura para la mutación camaleónico.",
-      "fr": "Poids réduit de 90 % et ne compte pas comme armure pour la mutation Caméléon.",
+      "en": "Weighs 90% less and does not count as armor for the Chameleon mutation",
+      "es": "El peso se reduce en un 90% y no cuenta como armadura para la mutación Camaleónico",
+      "esmx": "El peso se reduce en un 90% y no cuenta como armadura para la mutación camaleónico",
+      "fr": "Poids réduit de 90 % et ne compte pas comme armure pour la mutation Caméléon",
       "it": "Il peso si riduce del 90% e non conta come armatura per la mutazione Camaleonte.",
-      "ja": "重量が90%少なく、カメレオンの変異でアーマーとして数えられない",
-      "ko": "무게가 90% 감소합니다. 카멜레온 돌연변이 적용 시 방어구로 간주되지 않습니다.",
+      "ja": "重量が90%少なくなり、カメレオンの変異でアーマーとして数えられない",
+      "ko": "무게가 90% 감소합니다. 카멜레온 돌연변이 적용 시 방어구로 간주하지 않습니다.",
       "pl": "Waży o 90% mniej i nie liczy się jako pancerz przy mutacji kameleona.",
       "ptbr": "Pesa 90% menos e não conta como armadura na mutação Camaleão.",
       "ru": "Весит на 90% меньше и не считается как броня для мутации \"Хамелеон\"",
       "zhhans": "重量减轻90%，并且在变色龙变异效果中不被视作护甲。",
-      "zhhant": "重量-90%，而且不計入變色龍突變裝甲。"
+      "zhhant": "重量-90%，而且不影響變色龍突變"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Melee_SwingSpeed",
@@ -1874,12 +2000,17 @@
     "star": 2,
     "abbreviation": "40",
     "additionalAbbreviations": [
-      "40",
-      "40s",
       "ss",
+      "сс",
       "swing",
-      "swingspeed",
+      "замах",
+      "40замах",
+      "сз",
+      "40s",
       "001a7bda",
+      "swingspeed",
+      "40з",
+      "40",
       "fast-swing"
     ],
     "translations": {
@@ -1897,7 +2028,8 @@
       "zhhans": "挥击速度提高40%",
       "zhhant": "揮動武器速度+40%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Melee_DamagePowerAttack",
@@ -1921,15 +2053,19 @@
     "star": 2,
     "abbreviation": "40p",
     "additionalAbbreviations": [
-      "40p",
-      "atackdmg",
-      "poweratack",
-      "power",
-      "power attack",
+      "мощная атака",
       "40power",
+      "40мощ",
+      "power attack",
       "pad",
+      "40p",
+      "powerful",
+      "ма",
+      "poweratack",
+      "atackdmg",
       "001a7be2",
-      "powerful"
+      "мощные атаки",
+      "power"
     ],
     "translations": {
       "de": "Verursacht 40% mehr Schaden bei starken Angriffen.",
@@ -1946,7 +2082,8 @@
       "zhhans": "强力攻击伤害增加40%",
       "zhhant": "強力攻擊傷害+40%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Melee_BlockReflects",
@@ -1970,13 +2107,17 @@
     "star": 2,
     "abbreviation": "reflect",
     "additionalAbbreviations": [
+      "001a7c39",
       "reflect",
       "blocking",
+      "punish",
+      "50 блок",
       "50b",
-      "reflects",
+      "50r",
       "rmd",
-      "001a7c39",
-      "punish"
+      "50% блок",
+      "50блок",
+      "reflects"
     ],
     "translations": {
       "de": "Wirft beim Blocken 50% des Nahkampfschadens zurück.",
@@ -1993,7 +2134,8 @@
       "zhhans": "格挡时向攻击者返还50%的近战伤害",
       "zhhant": "格擋時將50%的近戰傷害反射回去"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_ExplosiveBullets_Shotgun",
@@ -2017,20 +2159,21 @@
     "star": 2,
     "translations": {
       "de": "Kugeln explodieren und verursachen Flächenschaden.",
-      "en": "Bullets explode for area damage.",
-      "es": "Las balas explotan y causan daño de área.",
-      "esmx": "Las balas explotan y causan daño de área.",
+      "en": "Bullets explode for area damage",
+      "es": "Las balas explotan y causan daño de área",
+      "esmx": "Las balas explotan y causan daño de área",
       "fr": "Les balles explosent et infligent des dégâts de zone",
       "it": "I proiettili esplodono infliggendo danni ad area.",
       "ja": "弾が爆発し、周囲にダメージを与える",
       "ko": "탄환이 폭발을 일으켜 광역 피해를 줍니다.",
       "pl": "Pociski eksplodują i zadają obrażenia obszarowe.",
       "ptbr": "Projéteis explodem e causam dano em área.",
-      "ru": "Пули взрываются и наносят урон по площади.",
-      "zhhans": "子弹爆炸造成范围伤害。",
-      "zhhant": "子彈爆炸造成範圍傷害。"
+      "ru": "Пули взрываются и наносят урон по области",
+      "zhhans": "子弹爆炸造成范围伤害",
+      "zhhant": "子彈爆炸造成範圍傷害"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_DmgLimbs",
@@ -2054,12 +2197,15 @@
     "star": 2,
     "abbreviation": "50l",
     "additionalAbbreviations": [
-      "50l",
       "limb",
-      "limbdamage",
-      "limb damage",
+      "конечности",
+      "50l",
       "004ed02c",
-      "crippling"
+      "конечность",
+      "crippling",
+      "limb damage",
+      "50лимб",
+      "limbdamage"
     ],
     "translations": {
       "de": "+50% Körperteilschaden.",
@@ -2076,7 +2222,8 @@
       "zhhans": "+50%肢体伤害",
       "zhhant": "部位傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_StatStrength",
@@ -2101,10 +2248,15 @@
     "abbreviation": "str",
     "additionalAbbreviations": [
       "str",
-      "+1s",
-      "strength",
+      "+1сила",
       "1s",
       "s",
+      "сила",
+      "+ сила",
+      "strength",
+      "+ 1 сила",
+      "+сила",
+      "+1s",
       "004ee54e"
     ],
     "translations": {
@@ -2122,7 +2274,8 @@
       "zhhans": "+1力量",
       "zhhant": "力量+1"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_ExplosiveBullets",
@@ -2146,31 +2299,33 @@
     "star": 2,
     "abbreviation": "e",
     "additionalAbbreviations": [
-      "e",
-      "x",
-      "exp",
       "explosive",
-      "explo",
-      "004f5771",
+      "ex",
+      "взрывной",
+      "e",
       "explode",
-      "ex"
+      "explo",
+      "x",
+      "004f5771",
+      "exp"
     ],
     "translations": {
       "de": "Kugeln explodieren und verursachen Flächenschaden.",
-      "en": "Bullets explode for area damage.",
-      "es": "Las balas explotan y causan daño de área.",
-      "esmx": "Las balas explotan y causan daño de área.",
-      "fr": "Les balles explosent et infligent des dégâts de zone.",
+      "en": "Bullets explode for area damage",
+      "es": "Las balas explotan y causan daño de área",
+      "esmx": "Las balas explotan y causan daño de área",
+      "fr": "Les balles explosent et infligent des dégâts de zone",
       "it": "I proiettili esplodono infliggendo danni ad area.",
       "ja": "弾が爆発し、周囲にダメージを与える",
       "ko": "탄환이 폭발을 일으켜 광역 피해를 줍니다.",
       "pl": "Pociski eksplodują i zadają obrażenia obszarowe.",
       "ptbr": "Projéteis explodem e causam dano em área.",
-      "ru": "Пули взрываются и наносят урон по площади.",
-      "zhhans": "子弹爆炸造成范围伤害。",
-      "zhhant": "子彈爆炸造成範圍傷害。"
+      "ru": "Пули взрываются и наносят урон по области",
+      "zhhans": "子弹爆炸造成范围伤害",
+      "zhhant": "子彈爆炸造成範圍傷害"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon2_RadiationDamage",
@@ -2207,7 +2362,8 @@
       "zhhans": "将伤害转化为辐射并额外增加10%",
       "zhhant": "將傷害轉為輻射，另外+10%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_StatPerception",
@@ -2231,11 +2387,16 @@
     "star": 2,
     "abbreviation": "per",
     "additionalAbbreviations": [
-      "per",
-      "1p",
-      "+1p",
-      "perception",
       "p",
+      "восприятие",
+      "+восприятие",
+      "+1восприятие",
+      "+ восприятие",
+      "+1p",
+      "per",
+      "+ 1 восприятие",
+      "1p",
+      "perception",
       "004f6d81"
     ],
     "translations": {
@@ -2253,7 +2414,8 @@
       "zhhans": "+1感知",
       "zhhant": "感知+1"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_StatEndurance",
@@ -2277,12 +2439,17 @@
     "star": 2,
     "abbreviation": "end",
     "additionalAbbreviations": [
-      "end",
-      "+1e",
-      "endurance",
+      "+ выносливость",
       "1e",
       "e",
-      "004f6d82"
+      "+выносливость",
+      "+1выносливость",
+      "end",
+      "выносливость",
+      "endurance",
+      "004f6d82",
+      "+ 1 выносливость",
+      "+1e"
     ],
     "translations": {
       "de": "+1 Ausdauer.",
@@ -2299,7 +2466,8 @@
       "zhhans": "+1耐力",
       "zhhant": "耐力+1"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_StatCharisma",
@@ -2323,12 +2491,17 @@
     "star": 2,
     "abbreviation": "cha",
     "additionalAbbreviations": [
-      "cha",
-      "+1c",
-      "charisma",
       "1c",
       "c",
-      "004f6d83"
+      "+ 1 харизма",
+      "+харизма",
+      "+ харизма",
+      "cha",
+      "+1c",
+      "004f6d83",
+      "харизма",
+      "charisma",
+      "+1харизма"
     ],
     "translations": {
       "de": "+1 Charisma.",
@@ -2345,7 +2518,8 @@
       "zhhans": "+1魅力",
       "zhhant": "魅力+1"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_StatIntelligence",
@@ -2369,12 +2543,16 @@
     "star": 2,
     "abbreviation": "int",
     "additionalAbbreviations": [
-      "int",
+      "интеллект",
+      "+1и",
       "+1i",
-      "intelligence",
+      "1и",
       "1i",
       "i",
-      "004f6d84"
+      "004f6d84",
+      "инт",
+      "int",
+      "intelligence"
     ],
     "translations": {
       "de": "+1 Intelligenz.",
@@ -2391,7 +2569,8 @@
       "zhhans": "+1智力",
       "zhhant": "智力+1"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_StatAgility",
@@ -2415,13 +2594,16 @@
     "star": 2,
     "abbreviation": "agi",
     "additionalAbbreviations": [
-      "agi",
-      "+1a",
-      "agl",
       "1a",
-      "agility",
       "a",
-      "004f6d85"
+      "agi",
+      "ловкость",
+      "+1л",
+      "agl",
+      "+1a",
+      "004f6d85",
+      "agility",
+      "лов"
     ],
     "translations": {
       "de": "+1 Beweglichkeit.",
@@ -2438,7 +2620,8 @@
       "zhhans": "+1敏捷",
       "zhhant": "敏捷+1"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_StatLuck",
@@ -2462,12 +2645,16 @@
     "star": 2,
     "abbreviation": "luck",
     "additionalAbbreviations": [
+      "1у",
       "luck",
-      "+1l",
       "lck",
+      "+1l",
+      "удч",
+      "004f6d86",
       "1l",
       "l",
-      "004f6d86"
+      "+1у",
+      "удача"
     ],
     "translations": {
       "de": "+1 Glück.",
@@ -2484,7 +2671,8 @@
       "zhhans": "+1运气",
       "zhhant": "運氣+1"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_DmgCrits",
@@ -2498,42 +2686,47 @@
       "it": "Lucky",
       "ja": "幸運の",
       "ko": "행운의",
-      "pl": "Farciarz",
+      "pl": "Szczęśl.",
       "ptbr": "Luke",
       "ru": "Счастливый",
-      "zhhans": "拉奇",
+      "zhhans": "幸运",
       "zhhant": "幸運"
     },
     "enabled": true,
     "star": 2,
     "abbreviation": "50",
     "additionalAbbreviations": [
-      "50",
-      "crit",
-      "50v",
+      "lucky",
+      "50%крит",
       "critical",
-      "critdmg",
-      "50vats",
-      "50crit",
       "0052414b",
-      "50%"
+      "50vats",
+      "50%",
+      "critdmg",
+      "crit",
+      "50crit",
+      "50крит",
+      "50",
+      "50v",
+      "50к"
     ],
     "translations": {
-      "de": "Kritische Schüsse im V.A.T.S verursachen +50% Schaden.",
-      "en": "V.A.T.S. critical shots do +50% damage",
-      "es": "Los disparos críticos en V.A.T.S. causan +50% de daño.",
-      "esmx": "Los disparos críticos en V.A.T.S. causan +50% de daño.",
-      "fr": "Vos coups critiques en mode SVAV infligent +50 % de dégâts supplémentaires",
-      "it": "I colpi critici con lo S.P.A.V. infliggono +50% Danni",
-      "ja": "V.A.T.S.のクリティカルダメージが50%増加する",
-      "ko": "V.A.T.S. 치명타 확률이 +50% 증가합니다.",
-      "pl": "Trafienia krytyczne w V.A.T.S. zadają +50% obrażeń.",
-      "ptbr": "Acertos críticos no V.A.T.S. causam +50% de dano",
-      "ru": "+50% к урону, наносимому критическими атаками в V.A.T.S.",
-      "zhhans": "V.A.T.S.暴击伤害+50%",
-      "zhhant": "V.A.T.S.爆擊傷害量+50%"
+      "de": "V.A.T.S. critical hits do +50% damage",
+      "en": "V.A.T.S. critical hits do +50% damage",
+      "es": "V.A.T.S. critical hits do +50% damage",
+      "esmx": "V.A.T.S. critical hits do +50% damage",
+      "fr": "V.A.T.S. critical hits do +50% damage",
+      "it": "V.A.T.S. critical hits do +50% damage",
+      "ja": "V.A.T.S. critical hits do +50% damage",
+      "ko": "V.A.T.S. critical hits do +50% damage",
+      "pl": "V.A.T.S. critical hits do +50% damage",
+      "ptbr": "V.A.T.S. critical hits do +50% damage",
+      "ru": "V.A.T.S. critical hits do +50% damage",
+      "zhhans": "V.A.T.S. critical hits do +50% damage",
+      "zhhant": "V.A.T.S. critical hits do +50% damage"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_DmgSights",
@@ -2557,31 +2750,36 @@
     "star": 2,
     "abbreviation": "10",
     "additionalAbbreviations": [
-      "10",
-      "aim",
-      "aiming",
-      "10aiming",
-      "10aim",
-      "0052414e",
+      "10%прицел",
       "hitman",
-      "10%"
+      "25d",
+      "hit",
+      "10прицел",
+      "aim",
+      "0052414e",
+      "10%",
+      "10aiming",
+      "aiming",
+      "10",
+      "10aim"
     ],
     "translations": {
-      "de": "+10% Schaden, wenn du zielst.",
-      "en": "+10% damage while aiming",
-      "es": "+10% de daño al apuntar.",
-      "esmx": "+10% de daño al apuntar.",
-      "fr": "Dégâts +10 % en visant",
-      "it": "+10% Danni mentre prendi la mira",
-      "ja": "照準中、ダメージが10%増加する",
-      "ko": "조준 사격으로 인한 피해가 +10% 증가합니다.",
-      "pl": "+10% obrażeń przy korzystaniu z celownika.",
-      "ptbr": "+10% de dano ao mirar",
-      "ru": "+10% к наносимому урону при прицеливании",
-      "zhhans": "瞄准时攻击伤害+10%",
-      "zhhant": "瞄準時攻擊傷害+10%"
+      "de": "+25% Schaden, wenn du zielst.",
+      "en": "+25% damage while aiming",
+      "es": "+25% de daño al apuntar",
+      "esmx": "+25% de daño al apuntar",
+      "fr": "Dégâts accrus de 25 % en visant",
+      "it": "+25% Danni mentre prendi la mira.",
+      "ja": "照準中、ダメージが25%増加する",
+      "ko": "조준 사격으로 인한 피해가 25% 증가합니다.",
+      "pl": "+25% obrażeń przy korzystaniu z celownika.",
+      "ptbr": "+25% de dano ao mirar.",
+      "ru": "+25% к наносимому урону при прицеливании",
+      "zhhans": "瞄准时攻击伤害+25%",
+      "zhhant": "瞄準時，攻擊傷害+25%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_RoF",
@@ -2605,13 +2803,14 @@
     "star": 2,
     "abbreviation": "25",
     "additionalAbbreviations": [
+      "0052414f",
+      "25скорость",
+      "25%",
       "25",
-      "25ffr",
       "ffr",
+      "25ffr",
       "firerate",
       "rof",
-      "0052414f",
-      "25%",
       "fast-fire"
     ],
     "translations": {
@@ -2629,55 +2828,60 @@
       "zhhans": "射速提升25%",
       "zhhant": "射速+25%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_VATSAccuracy",
     "gameId": "00524153",
     "texts": {
-      "de": "V.A.T.S. verbessert",
-      "en": "VATS Enhanced",
-      "es": "V.A.T.S. mejorado",
-      "esmx": "mejorado con V.A.T.S.",
-      "fr": "[SVAV]",
-      "it": "Potenziato S.P.A.V.",
-      "ja": "V.A.T.S.強化の",
-      "ko": "VATS 강화",
-      "pl": "Wspom. V.A.T.S.",
-      "ptbr": "Aprimorado com V.A.T.S.",
-      "ru": "С улучшенным V.A.T.S.",
-      "zhhans": "VATS强化",
-      "zhhant": "V.A.T.S.強化"
+      "de": "V.A.T.S. Enhanced",
+      "en": "V.A.T.S. Enhanced",
+      "es": "V.A.T.S. Enhanced",
+      "esmx": "V.A.T.S. Enhanced",
+      "fr": "V.A.T.S. Enhanced",
+      "it": "V.A.T.S. Enhanced",
+      "ja": "V.A.T.S. Enhanced",
+      "ko": "V.A.T.S. Enhanced",
+      "pl": "V.A.T.S. Enhanced",
+      "ptbr": "V.A.T.S. Enhanced",
+      "ru": "V.A.T.S. Enhanced",
+      "zhhans": "V.A.T.S. Enhanced",
+      "zhhant": "V.A.T.S. Enhanced"
     },
     "enabled": true,
     "star": 2,
     "abbreviation": "33",
     "additionalAbbreviations": [
       "33",
-      "33v",
+      "targeting",
+      "33ватс",
       "vatshit",
+      "33%ватс",
       "hitchance",
-      "33vats",
       "33%",
       "00524153",
-      "targeting"
+      "33v",
+      "33vats",
+      "50h"
     ],
     "translations": {
-      "de": "+33% V.A.T.S.-Trefferchance.",
-      "en": "+33% VATS hit chance",
-      "es": "+33% de probabilidad de impacto en V.A.T.S.",
-      "esmx": "+33% de probabilidad de impacto en V.A.T.S.",
-      "fr": "+33 % de chances de toucher la cible en mode SVAV",
-      "it": "+33% di probabilità di colpire con lo S.P.A.V.",
-      "ja": "V.A.T.S.命中率が33%上昇する",
-      "ko": "VATS 명중률이 +33% 증가합니다.",
-      "pl": "+33% szans na trafienie w V.A.T.S.",
-      "ptbr": "+33% de chance de acerto no V.A.T.S.",
-      "ru": "+33% к шансу провести удачную атаку в V.A.T.S.",
-      "zhhans": "V.A.T.S.的命中率+33%",
-      "zhhant": "V.A.T.S.命中率+33%"
+      "de": "+50% V.A.T.S. hit chance",
+      "en": "+50% V.A.T.S. hit chance",
+      "es": "+50% V.A.T.S. hit chance",
+      "esmx": "+50% V.A.T.S. hit chance",
+      "fr": "+50% V.A.T.S. hit chance",
+      "it": "+50% V.A.T.S. hit chance",
+      "ja": "+50% V.A.T.S. hit chance",
+      "ko": "+50% V.A.T.S. hit chance",
+      "pl": "+50% V.A.T.S. hit chance",
+      "ptbr": "+50% V.A.T.S. hit chance",
+      "ru": "+50% V.A.T.S. hit chance",
+      "zhhans": "+50% V.A.T.S. hit chance",
+      "zhhant": "+50% V.A.T.S. hit chance"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_PoisonResistance",
@@ -2701,12 +2905,15 @@
     "star": 2,
     "abbreviation": "25p",
     "additionalAbbreviations": [
-      "25p",
-      "poison",
-      "poi",
       "p",
+      "poison",
       "00527f6e",
-      "poisoner"
+      "25з",
+      "знахарская",
+      "poisoner",
+      "зна",
+      "poi",
+      "25p"
     ],
     "translations": {
       "de": "+25 Giftresistenz.",
@@ -2723,7 +2930,8 @@
       "zhhans": "+25毒素抗性",
       "zhhant": "毒素抗性+25"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_RadResistance",
@@ -2747,16 +2955,19 @@
     "star": 2,
     "abbreviation": "25rad",
     "additionalAbbreviations": [
-      "25rad",
-      "25r",
       "rr",
-      "rad",
       "radres",
-      "radiation",
-      "radresistance",
+      "25rad",
+      "25рад",
+      "25r",
       "r",
       "00527f6f",
-      "hazmat"
+      "rad",
+      "сопротивление радиации",
+      "radiation",
+      "hazmat",
+      "radresistance",
+      "ср"
     ],
     "translations": {
       "de": "+25 Strahlungsresistenz.",
@@ -2773,7 +2984,8 @@
       "zhhans": "+25辐射抗性",
       "zhhant": "輻射抗性+25"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_DiseaseResistance",
@@ -2798,16 +3010,18 @@
     "abbreviation": "25d",
     "additionalAbbreviations": [
       "25d",
-      "edr",
-      "env",
-      "envir",
-      "environmental",
-      "25e",
-      "envres",
-      "envresistance",
       "antiseptic",
+      "25e",
+      "антисептическая",
+      "environmental",
+      "disease",
       "00527f72",
-      "disease"
+      "env",
+      "envres",
+      "25а",
+      "envresistance",
+      "edr",
+      "envir"
     ],
     "translations": {
       "de": "+25% Krankheitsresistenz gegen Umweltgefahren.",
@@ -2824,7 +3038,8 @@
       "zhhans": "+25%环境疾病抗性",
       "zhhant": "環境疾病抗性+25%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor2_APRegen",
@@ -2848,12 +3063,13 @@
     "star": 2,
     "abbreviation": "ap",
     "additionalAbbreviations": [
-      "ap",
+      "powered",
+      "00527f75",
+      "од",
       "pow",
       "pwr",
-      "powered",
       "power",
-      "00527f75"
+      "ap"
     ],
     "translations": {
       "de": "Beschleunigt die Regeneration deiner Aktionspunkte.",
@@ -2870,7 +3086,8 @@
       "zhhans": "提高行动点恢复速度",
       "zhhant": "提高行動點數恢復速度"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon2_Guns_Bashing",
@@ -2894,29 +3111,35 @@
     "star": 2,
     "abbreviation": "40bash",
     "additionalAbbreviations": [
-      "40bash",
-      "bash",
       "bashing",
-      "005299f9",
+      "бб",
+      "40бб",
+      "40b",
+      "50b",
       "40%",
-      "40b"
+      "40%ближний бой",
+      "bash",
+      "40%бб",
+      "40bash",
+      "005299f9"
     ],
     "translations": {
-      "de": "Nahkampfschaden wird um 40% erhöht.",
-      "en": "Bashing damage increased by 40%",
-      "es": "Daño de golpes aumentado un 40%.",
-      "esmx": "Daño de golpes aumentado un 40%.",
-      "fr": "Dégâts des coups de crosse accrus de 40 %",
-      "it": "Danni da sfondamento aumentati del 40%",
-      "ja": "バッシュのダメージが40%増加する",
-      "ko": "강타 피해가 40% 증가합니다.",
-      "pl": "Obrażenia od uderzeń zwiększone o 40%.",
-      "ptbr": "Dano de pancada aumentado em 40%",
-      "ru": "+40% к урону в ближнем бою",
-      "zhhans": "击打伤害提高40%",
-      "zhhant": "破壞傷害+40%"
+      "de": "Nahkampfschaden wird um 50% erhöht.",
+      "en": "Bashing damage increased by 50%",
+      "es": "Daño de golpes aumentado un 50%",
+      "esmx": "Daño de golpes aumentado un 50%",
+      "fr": "Dégâts des coups de crosse accrus de 50 %",
+      "it": "+50% Danni da sfondamento.",
+      "ja": "バッシュのダメージが50%増加する",
+      "ko": "강타 피해가 50% 증가합니다.",
+      "pl": "Obrażenia od uderzeń zwiększone o 50%.",
+      "ptbr": "Dano de pancada aumentado em 50%.",
+      "ru": "+50% к урону в ближнем бою",
+      "zhhans": "击打伤害提高50%",
+      "zhhant": "破壞傷害+50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_LessDamagePowerAttack",
@@ -2940,11 +3163,12 @@
     "star": 3,
     "abbreviation": "40",
     "additionalAbbreviations": [
-      "40",
-      "pdr",
+      "мощная",
       "40less",
       "001a7bd3",
-      "power-dr"
+      "40",
+      "power-dr",
+      "pdr"
     ],
     "translations": {
       "de": "Du erleidest bei starken Angriffen 40% weniger Schaden.",
@@ -2961,7 +3185,8 @@
       "zhhans": "在进行强力攻击时所受的伤害减少40%",
       "zhhant": "強力攻擊時承受的傷害-40%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Durability",
@@ -2981,24 +3206,36 @@
       "zhhans": "耐久",
       "zhhant": "耐用度"
     },
-    "enabled": false,
+    "enabled": true,
     "star": 3,
+    "abbreviation": "dur",
+    "additionalAbbreviations": [
+      "dur",
+      "durable",
+      "прочность",
+      "50п",
+      "durability",
+      "50d",
+      "0037f7d9",
+      "про"
+    ],
     "translations": {
-      "de": "50% höhere Haltbarkeit.",
-      "en": "50% more durability than normal",
-      "es": "50% más de durabilidad de lo habitual.",
-      "esmx": "50% más de durabilidad de lo habitual.",
-      "fr": "Solidité augmentée de 50 %.",
-      "it": "+50% alla normale durabilità",
-      "ja": "耐久が50%上昇する",
-      "ko": "내구도가 기존에 비해 50% 증가",
-      "pl": "Przedmiot ma 50% wytrzymałości więcej niż normalnie.",
-      "ptbr": "50% a mais de durabilidade do que o normal",
-      "ru": "Прочность выше на 50%",
-      "zhhans": "比平时增加50%耐久",
-      "zhhant": "比普通耐用度+50%"
+      "de": "Geht 50% langsamer kaputt.",
+      "en": "Breaks 50% slower",
+      "es": "Tarda un 50% más en romperse.",
+      "esmx": "Tarda un 50% más en romperse.",
+      "fr": "Votre arme s'use 50 % plus lentement.",
+      "it": "Si rompe più lentamente del 50%.",
+      "ja": "耐久力減少が50%遅くなる",
+      "ko": "손상되는 속도가 50% 느려집니다.",
+      "pl": "Zużywa się o 50% wolniej.",
+      "ptbr": "Demora 50% mais para quebrar.",
+      "ru": "Вероятность поломки снижается на 50%",
+      "zhhans": "损坏速度降低50%。",
+      "zhhant": "損壞速率-50%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_MoveSpeedSights",
@@ -3022,18 +3259,21 @@
     "star": 3,
     "abbreviation": "ms",
     "additionalAbbreviations": [
+      "movespeed",
+      "move",
+      "mov",
       "ms",
       "movefaster",
-      "movespeed",
-      "movement",
-      "move",
-      "004ed02e",
       "nimble",
-      "mov",
-      "fms"
+      "004ed02e",
+      "movement",
+      "fms",
+      "скорость передвижения",
+      "передвижение",
+      "сп"
     ],
     "translations": {
-      "de": "Erhöhte Bewegungsgeschwindigkeit beim Zielen.",
+      "de": "Erhöhte Geschwindigkeit beim Zielen.",
       "en": "Faster movement speed while aiming",
       "es": "Aumento de velocidad de movimiento al apuntar.",
       "esmx": "Aumento de velocidad de movimiento al apuntar.",
@@ -3047,7 +3287,8 @@
       "zhhans": "加快瞄准时的移动速度。",
       "zhhant": "瞄準時的移動速度加快"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_LessDamageStandStill",
@@ -3071,11 +3312,13 @@
     "star": 3,
     "abbreviation": "sent",
     "additionalAbbreviations": [
+      "sentinels",
+      "sentinel",
+      "защитная",
+      "защит",
+      "sentinel's",
       "sent",
       "sen",
-      "sentinel",
-      "sentinels",
-      "sentinel's",
       "004ee54c"
     ],
     "translations": {
@@ -3093,7 +3336,8 @@
       "zhhans": "站在原地不动时有75%的几率降低15%的伤害",
       "zhhant": "站在原地不動時，有75%機率傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_ResistSights",
@@ -3117,14 +3361,15 @@
     "star": 3,
     "abbreviation": "50",
     "additionalAbbreviations": [
+      "50dr",
+      "steadfast",
+      "50a",
+      "50aim",
+      "004f5772",
       "50",
       "aimdr",
-      "50dr",
-      "50aim",
-      "50a",
       "adr",
-      "004f5772",
-      "steadfast"
+      "50сопротивление"
     ],
     "translations": {
       "de": "+50 Schadensresistenz beim Zielen.",
@@ -3141,7 +3386,8 @@
       "zhhans": "瞄准时伤害抗性+50。",
       "zhhant": "瞄準時傷害抗性+50"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_ResistReload",
@@ -3156,7 +3402,7 @@
       "ja": "弾力性の",
       "ko": "끈질긴",
       "pl": "Wytrzym.",
-      "ptbr": "Estoico",
+      "ptbr": "Resiliente",
       "ru": "Безотказный",
       "zhhans": "弹力",
       "zhhant": "彈力"
@@ -3165,12 +3411,13 @@
     "star": 3,
     "abbreviation": "250",
     "additionalAbbreviations": [
-      "250",
-      "250dr",
-      "reloaddr",
+      "",
       "004f5777",
+      "250dr",
       "reload-dr",
-      ""
+      "250сопротивление",
+      "reloaddr",
+      "250"
     ],
     "translations": {
       "de": "+250 Schadensresistenz beim Nachladen.",
@@ -3187,7 +3434,8 @@
       "zhhans": "换弹时伤害抗性+250",
       "zhhant": "裝填時傷害抗性+250。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_CritSpeed",
@@ -3201,26 +3449,28 @@
       "it": "Lucky",
       "ja": "幸運の",
       "ko": "행운의",
-      "pl": "Farciarz",
+      "pl": "Szczęśl.",
       "ptbr": "Luke",
       "ru": "Счастливый",
-      "zhhans": "拉奇",
+      "zhhans": "幸运",
       "zhhant": "幸運"
     },
     "enabled": true,
     "star": 3,
     "abbreviation": "15",
     "additionalAbbreviations": [
-      "15",
-      "15c",
-      "15fill",
+      "lucky",
+      "15крит",
+      "15%",
       "critmeter",
       "15v",
+      "15",
       "0052414c",
-      "lucky",
+      "15%крит",
+      "15crit",
       "crit-meter",
-      "15%",
-      "15crit"
+      "15c",
+      "15fill"
     ],
     "translations": {
       "de": "Mit jedem Treffer im V.A.T.S. füllt sich dein Balken für kritische Treffer um 15% schneller.",
@@ -3237,7 +3487,8 @@
       "zhhans": "你的V.A.T.S.暴击计补充速度+15%",
       "zhhant": "V.A.T.S.爆擊條補充速度+15%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_ReloadSpeed",
@@ -3261,14 +3512,18 @@
     "star": 3,
     "abbreviation": "15r",
     "additionalAbbreviations": [
-      "15r",
+      "15re",
       "re",
       "reload",
-      "00524150",
-      "faster-reload",
+      "15% перезарядка",
       "fast reload",
       "fast-reload",
-      "15re"
+      "00524150",
+      "15%п",
+      "15п",
+      "faster-reload",
+      "15 перезарядка",
+      "15r"
     ],
     "translations": {
       "de": "15% höhere Nachladegeschwindigkeit.",
@@ -3285,7 +3540,8 @@
       "zhhans": "装弹速度提升15%",
       "zhhant": "裝填速度+15%。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Weight",
@@ -3309,13 +3565,17 @@
     "star": 3,
     "abbreviation": "90",
     "additionalAbbreviations": [
-      "90",
+      "минус вес",
       "rw",
-      "90rw",
-      "weight",
       "reducedweight",
+      "light",
+      "-вес",
+      "90rw",
+      "90",
+      "weight",
       "00524152",
-      "light"
+      "90%",
+      "вес"
     ],
     "translations": {
       "de": "Gewicht um 90% reduziert.",
@@ -3332,40 +3592,45 @@
       "zhhans": "减少90%的重量",
       "zhhant": "重量-90%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_VATSCostAP",
     "gameId": "00524154",
     "texts": {
-      "de": "V.A.T.S. verbessert",
-      "en": "VATS Enhanced",
-      "es": "V.A.T.S. mejorado",
-      "esmx": "mejorado con V.A.T.S.",
-      "fr": "[SVAV]",
-      "it": "Potenziato S.P.A.V.",
-      "ja": "V.A.T.S.強化の",
-      "ko": "VATS 강화",
-      "pl": "Wspom. V.A.T.S.",
-      "ptbr": "Aprimorado com V.A.T.S.",
-      "ru": "С улучшенным V.A.T.S.",
-      "zhhans": "VATS强化",
-      "zhhant": "V.A.T.S.強化"
+      "de": "V.A.T.S. Enhanced",
+      "en": "V.A.T.S. Enhanced",
+      "es": "V.A.T.S. Enhanced",
+      "esmx": "V.A.T.S. Enhanced",
+      "fr": "V.A.T.S. Enhanced",
+      "it": "V.A.T.S. Enhanced",
+      "ja": "V.A.T.S. Enhanced",
+      "ko": "V.A.T.S. Enhanced",
+      "pl": "V.A.T.S. Enhanced",
+      "ptbr": "V.A.T.S. Enhanced",
+      "ru": "V.A.T.S. Enhanced",
+      "zhhans": "V.A.T.S. Enhanced",
+      "zhhant": "V.A.T.S. Enhanced"
     },
     "enabled": true,
     "star": 3,
     "abbreviation": "25",
     "additionalAbbreviations": [
-      "25",
-      "action",
-      "25ap",
-      "apcost",
-      "zerovats",
-      "ap",
-      "00524154",
-      "lvc",
+      "25од",
+      "25%од",
       "25%",
-      "betteraction"
+      "25",
+      "apcost",
+      "25ap",
+      "ap",
+      "zerovats",
+      "00524154",
+      "25ватс",
+      "25%ватс",
+      "betteraction",
+      "lvc",
+      "action"
     ],
     "translations": {
       "de": "25% weniger V.A.T.S-Aktionspunkte-Kosten.",
@@ -3382,7 +3647,8 @@
       "zhhans": "V.A.T.S.行动点数花费降低25%",
       "zhhant": "V.A.T.S.行動點數花費-25%。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_LessDamageBlock",
@@ -3406,11 +3672,13 @@
     "star": 3,
     "abbreviation": "15b",
     "additionalAbbreviations": [
-      "15b",
+      "blocker",
       "blocking",
       "block",
       "005253fb",
-      "blocker"
+      "15b",
+      "блок",
+      "-15блок"
     ],
     "translations": {
       "de": "Du erleidest beim Blocken 15% weniger Schaden.",
@@ -3427,7 +3695,8 @@
       "zhhans": "格挡时受到的伤害减少15%。",
       "zhhant": "格擋時受到的傷害-15%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_LessDamageBlocking",
@@ -3451,11 +3720,14 @@
     "star": 3,
     "abbreviation": "bl",
     "additionalAbbreviations": [
-      "bl",
-      "block",
+      "15%бл",
       "blocker",
       "00527f76",
-      "blocking"
+      "blocking",
+      "bl",
+      "block",
+      "бл",
+      "блок"
     ],
     "translations": {
       "de": "Reduziert den Schaden beim Blocken um 15%.",
@@ -3465,14 +3737,15 @@
       "fr": "Réduit les dégâts de 15 % quand bloquez une attaque.",
       "it": "Riduce del 15% i danni quando blocchi.",
       "ja": "ブロック中に受けるダメージが15%減少する",
-      "ko": "질주 도중 받는 피해가 15% 감소합니다.",
+      "ko": "막고 있을 때 받는 피해가 15% 감소합니다.",
       "pl": "Zmniejsza obrażenia o 15% przy blokowaniu.",
       "ptbr": "Reduz dano ao bloquear em 15%",
       "ru": "Уменьшение урона при блоке на 15%.",
       "zhhans": "格挡时受到的伤害降低15%",
       "zhhant": "格擋時傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_LessDamageSprinting",
@@ -3496,27 +3769,31 @@
     "star": 3,
     "abbreviation": "cav",
     "additionalAbbreviations": [
-      "cav",
-      "cavalier",
       "cavalier's",
-      "00527f77"
+      "cavaliers",
+      "00527f77",
+      "кавалерская",
+      "cavalier",
+      "cav",
+      "кав"
     ],
     "translations": {
       "de": "75%ige Chance, den Schaden während des Sprintens um 15% zu reduzieren.",
-      "en": "75% chance to reduce damage by 15% while sprinting.",
-      "es": "Probabilidad del 75% de reducir el daño en un 15% al esprintar.",
-      "esmx": "Probabilidad del 75% de reducir el daño en un 15% al correr.",
-      "fr": "75 % de chance de réduire les dégâts de 15 % en sprintant.",
+      "en": "75% chance to reduce damage by 15% while sprinting",
+      "es": "Probabilidad del 75% de reducir el daño en un 15% al esprintar",
+      "esmx": "Probabilidad del 75% de reducir el daño en un 15% al correr",
+      "fr": "75 % de chance de réduire les dégâts de 15 % en sprintant",
       "it": "Hai il 75% di probabilità di ridurre i danni del 15% mentre scatti.",
       "ja": "75%の確率でダッシュ中に受けるダメージが15%減少する",
       "ko": "75% 확률로 전력 질주 중에 받는 피해가 15% 감소합니다.",
       "pl": "75% szansy na zmniejszenie obrażeń o 15% podczas sprintu.",
       "ptbr": "75% de chance de reduzir o dano em 15% ao correr.",
       "ru": "75% шанс снизить урон на 15% во время бега.",
-      "zhhans": "冲刺时有75%的几率降低15%的伤害",
-      "zhhant": "衝刺時，有75%機率傷害-15%。"
+      "zhhans": "冲刺时有75%的几率降低15%所承受伤害",
+      "zhhant": "衝刺時，有75%機率傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_WeightWeapons",
@@ -3541,11 +3818,15 @@
     "abbreviation": "weapon",
     "additionalAbbreviations": [
       "weapon",
-      "wwr",
-      "weaponweight",
+      "оружие",
       "00527f78",
+      "wwr",
+      "wpn",
+      "вес-оружия",
+      "weaponweight",
       "weapon-weight",
-      "wpn"
+      "овм",
+      "весоружия"
     ],
     "translations": {
       "de": "Verringert das Gewicht von Waffen um 20%.",
@@ -3562,7 +3843,8 @@
       "zhhans": "武器重量降低20%",
       "zhhant": "武器重量-20%。"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_LessFallDamage",
@@ -3587,12 +3869,17 @@
     "abbreviation": "acrobat",
     "additionalAbbreviations": [
       "acrobat",
-      "acrobat's",
-      "50f",
       "falling",
+      "00527f79",
       "fall",
+      "урон от падения",
       "falldamage",
-      "00527f79"
+      "acrobat's",
+      "50т",
+      "фолл",
+      "50f",
+      "трюковая",
+      "падение"
     ],
     "translations": {
       "de": "Reduziert den Fallschaden um 50%.",
@@ -3609,7 +3896,8 @@
       "zhhans": "降低50%坠落伤害",
       "zhhant": "墜落傷害-50%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_Waterbreathing",
@@ -3633,11 +3921,14 @@
     "star": 3,
     "abbreviation": "aqua",
     "additionalAbbreviations": [
-      "aqua",
       "aq",
+      "aqua",
       "underwater",
       "00527f7a",
-      "diver"
+      "позволяет дышать под водой",
+      "diver",
+      "пдв",
+      "подводный"
     ],
     "translations": {
       "de": "Du erhältst die Fähigkeit, unter Wasser zu atmen.",
@@ -3654,7 +3945,8 @@
       "zhhans": "获得水中呼吸能力",
       "zhhant": "能在水中呼吸"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_LockPick",
@@ -3678,13 +3970,15 @@
     "star": 3,
     "abbreviation": "lock",
     "additionalAbbreviations": [
-      "lock",
-      "safe",
-      "safecracker",
+      "safecrack",
+      "замок",
       "safecracker's",
-      "00527f7b",
       "lockpick",
-      "safecrack"
+      "safe",
+      "00527f7b",
+      "lock",
+      "safecracker",
+      "воровская"
     ],
     "translations": {
       "de": "Vergrößert den korrekten Bereich beim Knacken von Schlössern.",
@@ -3701,7 +3995,8 @@
       "zhhans": "开锁时正确位置范围增大",
       "zhhant": "「最佳開鎖點」範圍增大"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Guns_StatPerception",
@@ -3726,9 +4021,11 @@
     "abbreviation": "p",
     "additionalAbbreviations": [
       "p",
+      "восприятие",
+      "восп",
+      "005299fa",
       "per",
       "perception",
-      "005299fa",
       "1p"
     ],
     "translations": {
@@ -3746,7 +4043,8 @@
       "zhhans": "+1感知",
       "zhhant": "感知+1"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_StatAgility",
@@ -3770,13 +4068,14 @@
     "star": 3,
     "abbreviation": "a",
     "additionalAbbreviations": [
+      "1a",
       "a",
       "agi",
-      "+1a",
-      "1a",
+      "ловкость",
+      "005299fb",
       "agl",
-      "agility",
-      "005299fb"
+      "+1a",
+      "agility"
     ],
     "translations": {
       "de": "+1 Beweglichkeit.",
@@ -3793,7 +4092,8 @@
       "zhhans": "+1敏捷",
       "zhhant": "敏捷+1"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_StatStrength",
@@ -3817,12 +4117,17 @@
     "star": 3,
     "abbreviation": "s",
     "additionalAbbreviations": [
-      "s",
       "str",
-      "+1s",
+      "+1сила",
       "1s",
+      "s",
+      "сила",
+      "+ сила",
       "strength",
-      "005299fc"
+      "005299fc",
+      "+ 1 сила",
+      "+сила",
+      "+1s"
     ],
     "translations": {
       "de": "+1 Stärke.",
@@ -3839,7 +4144,8 @@
       "zhhans": "+1力量",
       "zhhant": "力量+1"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon3_Melee_StatEndurance",
@@ -3863,12 +4169,17 @@
     "star": 3,
     "abbreviation": "e",
     "additionalAbbreviations": [
-      "e",
-      "end",
-      "+1e",
+      "+ выносливость",
       "1e",
+      "005299fd",
+      "e",
+      "+выносливость",
+      "+1выносливость",
+      "end",
+      "выносливость",
       "endurance",
-      "005299fd"
+      "+ 1 выносливость",
+      "+1e"
     ],
     "translations": {
       "de": "+1 Ausdauer.",
@@ -3885,7 +4196,8 @@
       "zhhans": "+1耐力",
       "zhhant": "耐力+1"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_WeightAmmo",
@@ -3909,11 +4221,16 @@
     "star": 3,
     "abbreviation": "ammo",
     "additionalAbbreviations": [
-      "ammo",
-      "awr",
-      "ammoweight",
       "0052bdb4",
-      "ammo-weight"
+      "ammo",
+      "весбоеприпасов",
+      "весбое",
+      "боеприпасы",
+      "ammoweight",
+      "вес-боеприпасов",
+      "ammo-weight",
+      "бвм",
+      "awr"
     ],
     "translations": {
       "de": "Das Gewicht von Munition ist um 20% verringert.",
@@ -3930,7 +4247,8 @@
       "zhhans": "弹药重量降低20%",
       "zhhant": "彈藥重量-20%。"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_WeightFoodDrinkChems",
@@ -3955,10 +4273,14 @@
     "abbreviation": "fwr",
     "additionalAbbreviations": [
       "fwr",
-      "food",
-      "foodweight",
       "0052bdb5",
-      "food-weight"
+      "помощьвес",
+      "foodweight",
+      "food-weight",
+      "веспомощи",
+      "-вес помощи",
+      "пвм",
+      "food"
     ],
     "translations": {
       "de": "Das Gewicht von Nahrungsmitteln, Getränken und Chems ist um 20% verringert.",
@@ -3975,7 +4297,8 @@
       "zhhans": "食物、饮料和药物重量降低20%",
       "zhhant": "食物、飲料、武器重量-20%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_WeightJunk",
@@ -3999,11 +4322,14 @@
     "star": 3,
     "abbreviation": "junk",
     "additionalAbbreviations": [
-      "junk",
-      "jwr",
-      "junkweight",
       "0052bdb6",
-      "junk-weight"
+      "хлам",
+      "jwr",
+      "junk",
+      "весхлама",
+      "junkweight",
+      "junk-weight",
+      "хвм"
     ],
     "translations": {
       "de": "Das Gewicht von Schrottgegenständen ist um 20% verringert.",
@@ -4020,7 +4346,8 @@
       "zhhans": "垃圾物品重量降低20%",
       "zhhant": "垃圾重量-20%。"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_Sneak",
@@ -4044,13 +4371,15 @@
     "star": 3,
     "abbreviation": "sneak",
     "additionalAbbreviations": [
-      "sneak",
-      "sneaking",
-      "harder",
-      "htd",
       "snk",
+      "скрытная",
       "snek",
       "0052bdb7",
+      "скр",
+      "sneaking",
+      "htd",
+      "sneak",
+      "harder",
       "sneaky"
     ],
     "translations": {
@@ -4068,7 +4397,8 @@
       "zhhans": "潜行时更难被侦测到",
       "zhhant": "潛行時更難偵測"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_Durability",
@@ -4093,27 +4423,31 @@
     "abbreviation": "dur",
     "additionalAbbreviations": [
       "dur",
+      "durable",
+      "прочность",
+      "50п",
       "durability",
       "50d",
-      "durable",
-      "0052bdba"
+      "0052bdba",
+      "про"
     ],
     "translations": {
-      "de": "50% höhere Haltbarkeit.",
-      "en": "50% more durability than normal",
-      "es": "50% más de durabilidad de lo habitual.",
-      "esmx": "50% más de durabilidad de lo habitual.",
-      "fr": "Solidité augmentée de 50 %.",
-      "it": "+50% alla normale durabilità",
-      "ja": "耐久が50%上昇する",
-      "ko": "내구도가 기존에 비해 50% 증가",
-      "pl": "Przedmiot ma 50% wytrzymałości więcej niż normalnie.",
-      "ptbr": "50% a mais de durabilidade do que o normal",
-      "ru": "Прочность выше на 50%",
-      "zhhans": "和平时相比额外增加50%耐久度",
-      "zhhant": "比普通耐用度+50%"
+      "de": "Geht 50% langsamer kaputt.",
+      "en": "Breaks 50% slower",
+      "es": "Tarda un 50% más en romperse.",
+      "esmx": "Tarda un 50% más en romperse.",
+      "fr": "Votre arme s'use 50 % plus lentement.",
+      "it": "Si rompe più lentamente del 50%.",
+      "ja": "耐久力減少が50%遅くなる",
+      "ko": "손상되는 속도가 50% 느려집니다.",
+      "pl": "Zużywa się o 50% wolniej.",
+      "ptbr": "Demora 50% mais para quebrar.",
+      "ru": "Вероятность поломки снижается на 50%",
+      "zhhans": "损坏速度降低50%。",
+      "zhhant": "損壞速率-50%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor3_ReducedLimbDamage",
@@ -4137,12 +4471,16 @@
     "star": 3,
     "abbreviation": "ldr",
     "additionalAbbreviations": [
-      "ldr",
-      "lld",
       "limb",
-      "limbdamage",
       "0052bdbc",
-      "lesslimb"
+      "lesslimb",
+      "конечность",
+      "lld",
+      "сук",
+      "урон по конечности",
+      "ldr",
+      "лимб",
+      "limbdamage"
     ],
     "translations": {
       "de": "Du erhältst 15% weniger Körperteilschaden.",
@@ -4159,7 +4497,8 @@
       "zhhans": "受到的肢体伤害减少15%。",
       "zhhant": "部位傷害-15%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon4_Melee_BlockIrradiates",
@@ -4196,7 +4535,8 @@
       "zhhans": "每次成功格挡时会有50%几率能造成50点的辐射伤害",
       "zhhant": "成功格擋後有50%機率給予對方50點輻射"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon4_Melee_BlockFrenzies",
@@ -4233,7 +4573,8 @@
       "zhhans": "每次成功格挡时会有10%几率能使敌人陷入狂暴状态",
       "zhhant": "成功格擋後有10%機率使敵人陷入狂暴"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon4_Melee_BlockFreeze",
@@ -4270,7 +4611,8 @@
       "zhhans": "每次成功格挡时会有25%几率能将敌人冻住",
       "zhhant": "成功格擋後有25%機率凍結敵人"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon4_Melee_BlockElectrocutes",
@@ -4307,7 +4649,8 @@
       "zhhans": "每次成功格挡时会有10%几率能造成40点电击伤害",
       "zhhant": "成功格擋後有10%機率給予對方40點電擊傷害"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon4_Bleed",
@@ -4344,7 +4687,8 @@
       "zhhans": "目标在5秒内受到25出血伤害",
       "zhhant": "使目標失血，造成25點傷害，效力5秒鐘"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon4_Burn",
@@ -4365,7 +4709,7 @@
       "zhhant": "燃燒彈"
     },
     "enabled": false,
-    "star": 4,
+    "star": 999,
     "translations": {
       "de": "Ziele brennen 3 Sekunden lang und erleiden dabei 24 Punkte Schaden.",
       "en": "Targets burn for 24 damage over 3 seconds",
@@ -4381,7 +4725,8 @@
       "zhhans": "目标在3秒内受到24烧灼伤害",
       "zhhant": "使目標燃燒，造成24點傷害，效力3秒鐘。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon4_Poison",
@@ -4418,7 +4763,8 @@
       "zhhans": "目标在10秒内受到50中毒伤害",
       "zhhant": "使目標中毒10秒，造成50點傷害"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon4_Stagger",
@@ -4455,7 +4801,8 @@
       "zhhans": "命中时有一定机率使目标失衡。",
       "zhhant": "命中時有一定機率使目標畏縮"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon4_Cripple",
@@ -4492,7 +4839,8 @@
       "zhhans": "有几率致残一处肢体",
       "zhhant": "一定機率癱瘓一個身體部位"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon4_Guns_CritFrenzy",
@@ -4529,7 +4877,8 @@
       "zhhans": "暴击会造成目标暴怒。",
       "zhhant": "爆擊會使目標陷入狂暴"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon4_Melee_BlockBurns",
@@ -4566,7 +4915,8 @@
       "zhhans": "成功格挡后有25%的机会给予对方50火焰伤害",
       "zhhant": "成功格擋後有25%機率給予對方50點火焰傷害"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor4_OnMeleeHitFreeze",
@@ -4603,7 +4953,8 @@
       "zhhans": "10%几率可冻结近身攻击的敌人，此效果每20秒可触发一次",
       "zhhant": "每20秒就有10%機率凍結近戰攻擊的敵人"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor4_OnMeleeHitBurn",
@@ -4640,7 +4991,8 @@
       "zhhans": "有30%几率点燃近身攻击的敌人，此效果每20秒可触发一次",
       "zhhant": "每20秒就有30%機率點燃近戰攻擊的敵人"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor4_OnMeleeDisarm",
@@ -4670,32 +5022,33 @@
       "fr": "10 % de chances de désarmer un attaquant au corps à corps",
       "it": "10% di probabilità di disarmare chi ti attacca in mischia.",
       "ja": "10%の確率で近接攻撃をした相手の武器を落とさせる",
-      "ko": "착용자를 근접 공격한 공격자가 10%의 확률로 무기를 놓칩니다.",
+      "ko": "10%의 확률로 근접 공격한 공격자의 무기를 놓치게 합니다.",
       "pl": "10% szans na rozbrojenie atakującego w zwarciu.",
       "ptbr": "10% de chance de desarmar um agressor com armas brancas",
       "ru": "Вы сможете обезоружить противника в ближнем бою с вероятностью 10%",
       "zhhans": "有10%几率解除近战攻击者的武装",
       "zhhant": "有10%機率解除近戰攻擊敵人的武裝"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Armor4_APCost",
     "gameId": "00527F82",
     "texts": {
-      "de": "V.A.T.S. verbessert",
-      "en": "VATS Enhanced",
-      "es": "V.A.T.S. mejorado",
-      "esmx": "mejorado con V.A.T.S.",
-      "fr": "[SVAV]",
-      "it": "Potenziato S.P.A.V.",
-      "ja": "V.A.T.S.強化の",
-      "ko": "VATS 강화",
-      "pl": "Wspom. V.A.T.S.",
-      "ptbr": "Aprimorado com V.A.T.S.",
-      "ru": "С улучшенным V.A.T.S.",
-      "zhhans": "VATS强化",
-      "zhhant": "V.A.T.S.強化"
+      "de": "V.A.T.S. Enhanced",
+      "en": "V.A.T.S. Enhanced",
+      "es": "V.A.T.S. Enhanced",
+      "esmx": "V.A.T.S. Enhanced",
+      "fr": "V.A.T.S. Enhanced",
+      "it": "V.A.T.S. Enhanced",
+      "ja": "V.A.T.S. Enhanced",
+      "ko": "V.A.T.S. Enhanced",
+      "pl": "V.A.T.S. Enhanced",
+      "ptbr": "V.A.T.S. Enhanced",
+      "ru": "V.A.T.S. Enhanced",
+      "zhhans": "V.A.T.S. Enhanced",
+      "zhhant": "V.A.T.S. Enhanced"
     },
     "enabled": false,
     "star": 4,
@@ -4714,7 +5067,8 @@
       "zhhans": "有10%几率降低V.A.T.S.中消耗的行动点",
       "zhhant": "V.A.T.S.行動點數花費-10%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon4_Guns_CritFreeze",
@@ -4751,7 +5105,8 @@
       "zhhans": "暴击会冻结目标。",
       "zhhant": "爆擊會使目標凍結。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor4_GunAccuracy",
@@ -4772,7 +5127,7 @@
       "zhhant": "槍砲準度"
     },
     "enabled": false,
-    "star": 4,
+    "star": 999,
     "translations": {
       "de": "Du erhältst +5% höhere Präzision mit Feuerwaffen.",
       "en": "Gain +5% accuracy with guns",
@@ -4788,7 +5143,8 @@
       "zhhans": "使用枪械时的精准度+5%",
       "zhhant": "槍砲準度+5%"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Armor4_ReflectProjectiles",
@@ -4825,7 +5181,8 @@
       "zhhans": "有5%几率将投掷物反射到攻击者处",
       "zhhant": "有5%機率將射彈反射給攻擊者"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon5_Damage",
@@ -4846,7 +5203,7 @@
       "zhhant": "危險"
     },
     "enabled": false,
-    "star": 5,
+    "star": 999,
     "translations": {
       "de": "20% mehr Schaden.",
       "en": "20% more damage",
@@ -4862,7 +5219,8 @@
       "zhhans": "20%额外伤害",
       "zhhant": "傷害+20%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon5_Health",
@@ -4883,7 +5241,7 @@
       "zhhant": "健康"
     },
     "enabled": false,
-    "star": 5,
+    "star": 999,
     "translations": {
       "de": "+10 Gesundheit.",
       "en": "+10 Health",
@@ -4899,7 +5257,8 @@
       "zhhans": "+10生命值",
       "zhhant": "生命值+10"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon5_ActionPoints",
@@ -4920,7 +5279,7 @@
       "zhhant": "行動力"
     },
     "enabled": false,
-    "star": 5,
+    "star": 999,
     "translations": {
       "de": "+10 Aktionspunkte.",
       "en": "+10 Action Points",
@@ -4936,7 +5295,8 @@
       "zhhans": "+10行动点",
       "zhhant": "行動點數+10"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Armor5_Resistance",
@@ -4973,7 +5333,8 @@
       "zhhans": "+5伤害抗性和能量抗性。",
       "zhhant": "傷害抗性和能量抗性+5"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor5_Health",
@@ -5010,7 +5371,8 @@
       "zhhans": "+5生命值",
       "zhhant": "生命值+5"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor5_AP",
@@ -5047,7 +5409,8 @@
       "zhhans": "+5行动点",
       "zhhant": "行動點數+5"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon_ExplosiveBullets",
@@ -5084,7 +5447,8 @@
       "zhhans": "子弹冲击时会炸开，造成15点范围伤害。",
       "zhhant": "子彈衝擊時會炸開，造成15點範圍傷害。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor_ReflectDamage",
@@ -5107,21 +5471,22 @@
     "enabled": false,
     "star": 999,
     "translations": {
-      "de": "Wirft 10% des Nahkampfschadens zurück auf den Angreifer.",
-      "en": "Reflects 10% of melee damage back on attacker.",
+      "de": "Wirft 10% des Nahkampfschadens auf den Angreifer zurück.",
+      "en": "Reflects 10% of melee damage back on attacker",
       "es": "Devuelve un 10% del daño cuerpo a cuerpo sufrido al atacante.",
       "esmx": "Devuelve un 10% del daño cuerpo a cuerpo sufrido al atacante.",
-      "fr": "Renvoie 10 % des dégâts de corps à corps subis à l'attaquant.",
-      "it": "Respinge sull'assalitore il 10% dei danni in mischia.",
-      "ja": "近接攻撃で受けたダメージの10%を攻撃した相手に与える",
+      "fr": "Renvoie 10 % des dégâts de corps à corps subis à l'attaquant",
+      "it": "Respinge sull'assalitore il 10% dei danni in mischia",
+      "ja": "攻撃した相手に近接ダメージの10%を与える",
       "ko": "공격자가 입힌 근접 피해의 10%을 돌려줍니다.",
       "pl": "Odbija 10% obrażeń od ataków wręcz do agresora.",
-      "ptbr": "Reflete 10% de dano corpo a corpo de volta ao agressor.",
+      "ptbr": "Reflete 10% de dano corpo a corpo de volta ao agressor",
       "ru": "Возвращение атакующему 10% урона, полученного в ближнем бою.",
-      "zhhans": "反射10%的近战伤害量给攻击者。",
-      "zhhant": "反射10%的近戰傷害量給攻擊者。"
+      "zhhans": "向攻击者返还10%的近战伤害。",
+      "zhhant": "反射10%的近戰傷害量給攻擊者"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Armor_APRegen",
@@ -5158,7 +5523,8 @@
       "zhhans": "提高行动点数恢复速度。",
       "zhhant": "提高行動點數恢復速度。"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon1_Guns_AmmoCapacity2x",
@@ -5179,12 +5545,13 @@
       "zhhant": "無限"
     },
     "enabled": true,
-    "legacy": true,
     "star": 1,
     "abbreviation": "d",
     "additionalAbbreviations": [
       "d",
-      "double"
+      "double",
+      "двойной",
+      "дабл"
     ],
     "translations": {
       "de": "Doppelte Magazinkapazität.",
@@ -5201,7 +5568,8 @@
       "zhhans": "双倍弹药容量",
       "zhhant": "雙倍的彈藥量"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": true
   },
   {
     "id": "DLC01mod_Legendary_Weapon_LightningGun_Babylon",
@@ -5222,7 +5590,7 @@
       "zhhant": "閃電"
     },
     "enabled": false,
-    "star": 999,
+    "star": 1,
     "translations": {
       "de": "Verschießt eine elektrische Entladung, die auf andere Ziele überspringt.",
       "en": "Fires an electrical discharge that arcs between targets.",
@@ -5238,7 +5606,8 @@
       "zhhans": "发出电流，电弧会在目标间传递。",
       "zhhant": "發出電流，電弧會在目標間傳遞。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon_DamageVsGhouls",
@@ -5248,7 +5617,7 @@
       "en": "Ghoul Slayer's",
       "es": "[Cazanecrófagos]",
       "esmx": "Cazanecrófagos",
-      "fr": "Tueur de goules",
+      "fr": "Anti-goules",
       "it": "Ammazzaghoul",
       "ja": "グールスレイヤーの",
       "ko": "구울 학살자의",
@@ -5275,44 +5644,46 @@
       "zhhans": "对尸鬼造成的伤害+50%。",
       "zhhant": "對屍鬼造成的傷害+50%。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "TEST_mod_Legendary_Weapon_VATSGun",
     "gameId": "004E89AD",
     "texts": {
-      "de": "V.A.T.S. verbessert",
-      "en": "VATS Enhanced",
-      "es": "V.A.T.S. mejorado",
-      "esmx": "mejorado con V.A.T.S.",
-      "fr": "[SVAV]",
-      "it": "Potenziato S.P.A.V.",
-      "ja": "V.A.T.S.強化の",
-      "ko": "VATS 강화",
-      "pl": "Wspom. V.A.T.S.",
-      "ptbr": "Aprimorado com V.A.T.S.",
-      "ru": "С улучшенным V.A.T.S.",
-      "zhhans": "VATS强化",
-      "zhhant": "V.A.T.S.強化"
+      "de": "V.A.T.S. Enhanced",
+      "en": "V.A.T.S. Enhanced",
+      "es": "V.A.T.S. Enhanced",
+      "esmx": "V.A.T.S. Enhanced",
+      "fr": "V.A.T.S. Enhanced",
+      "it": "V.A.T.S. Enhanced",
+      "ja": "V.A.T.S. Enhanced",
+      "ko": "V.A.T.S. Enhanced",
+      "pl": "V.A.T.S. Enhanced",
+      "ptbr": "V.A.T.S. Enhanced",
+      "ru": "V.A.T.S. Enhanced",
+      "zhhans": "V.A.T.S. Enhanced",
+      "zhhant": "V.A.T.S. Enhanced"
     },
     "enabled": false,
     "star": 999,
     "translations": {
-      "de": "Verbesserte Trefferchance im V.A.T.S., 25% niedrigere Aktionspunkte-Kosten.",
-      "en": "Improved VATS hit chance, 25% less Action Point cost.",
-      "es": "Mejora la probabilidad de impacto en V.A.T.S., cuesta un 25% menos de puntos de acción.",
-      "esmx": "Probabilidad de impacto en V.A.T.S. mejorada, cuesta un 25% menos de puntos de acción.",
-      "fr": "Précision accrue en mode SVAV, coût en points d'action réduit de 25 %.",
-      "it": "Migliora la probabilità di colpire con lo S.P.A.V. Costo in Punti Azione ridotto del 25%.",
-      "ja": "V.A.T.S.の命中率が上昇し、APコストが25%減少する",
-      "ko": "V.A.T.S. 명중률이 향상되며, 액션 포인트 소모량이 25% 감소합니다.",
-      "pl": "Zwiększona szansa na trafienie w V.A.T.S., o 25% mniejsze zużycie punktów akcji.",
-      "ptbr": "Maior chance de acerto com o V.A.T.S., custo em Pontos de Ação 25% menor.",
-      "ru": "Повышение вероятности попадания в V.A.T.S., уменьшение расхода ОД на 25%.",
-      "zhhans": "VATS命中率提高，消耗行动点数-25%。",
-      "zhhant": "V.A.T.S.命中率提高，消耗行動點數-25%。"
+      "de": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "en": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "es": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "esmx": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "fr": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "it": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "ja": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "ko": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "pl": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "ptbr": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "ru": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "zhhans": "Improved V.A.T.S. hit chance, 25% less Action Point cost.",
+      "zhhant": "Improved V.A.T.S. hit chance, 25% less Action Point cost."
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon_IronSightsIncreaseDamageResist",
@@ -5349,7 +5720,8 @@
       "zhhans": "瞄准时伤害抗性+50。",
       "zhhant": "瞄準時傷害抗性+50。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon_IncendiaryBullets",
@@ -5386,7 +5758,8 @@
       "zhhans": "使目标着火，造成15点伤害。",
       "zhhant": "使目標著火，造成15點傷害。"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "zzz_mod_Legendary_Weapon_SuperDamage",
@@ -5423,7 +5796,8 @@
       "zhhans": "增加15%的武器伤害",
       "zhhant": "武器傷害+15%"
     },
-    "itemType": "WEAPON"
+    "itemType": "WEAPON",
+    "legacy": false
   },
   {
     "id": "TEST_mod_Legendary_Armor_LessDamageStandStill",
@@ -5460,35 +5834,39 @@
       "zhhans": "静止站立时受到的伤害-15%。",
       "zhhant": "靜止站立時受到的傷害-15%。"
     },
-    "itemType": "ARMOR"
+    "itemType": "ARMOR",
+    "legacy": false
   },
   {
     "id": "mod_Legendary_Weapon1_Guns_AmmoCapacity4x",
     "gameId": "004F6AB1",
     "texts": {
-      "de": "Endlose Automatik",
-      "en": "Never Ending Auto",
-      "es": "Automático inagotable",
-      "esmx": "Automático inagotable",
-      "fr": "Sans fin auto",
-      "it": "Automatico infinito",
-      "ja": "無限の",
-      "ko": "무한 연사의",
-      "pl": "Niekończąca się seria",
-      "ptbr": "Infindável Automático",
-      "ru": "Бесконечная автоматическая стрельба",
-      "zhhans": "无限火力",
-      "zhhant": "無限自動"
+      "de": "Legendäre Vierfach-Mod",
+      "en": "Quad Legendary Mod",
+      "es": "Módulo legendario cuádruple",
+      "esmx": "Módulo legendario cuádruple",
+      "fr": "Mod légendaire Quadruple",
+      "it": "Modifica leggendaria Quadruplo",
+      "ja": "クアッドレジェンダリーモジュール",
+      "ko": "4연장 전설적인 개조",
+      "pl": "Legendarna poczwórna modyfikacja",
+      "ptbr": "Mod Lendário de Quádruplo",
+      "ru": "Четырехствольный легендарный модуль",
+      "zhhans": "四联传奇改装件",
+      "zhhant": "四倍彈藥傳奇改造配件"
     },
-    "nameOverride": "Quad",
     "enabled": true,
     "star": 1,
     "abbreviation": "q",
     "additionalAbbreviations": [
+      "квад",
       "q",
       "quad",
+      "четверной",
       "4x",
-      "004f6ab1"
+      "004f6ab1",
+      "четверой",
+      "х4"
     ],
     "translations": {
       "de": "Vierfache Magazinkapazität",
@@ -5505,6 +5883,823 @@
       "zhhans": "弹药容量变为四倍",
       "zhhant": "四倍彈匣容量"
     },
-    "itemType": "WEAPON"
+    "nameOverride": "Quad",
+    "itemType": "WEAPON",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Weapon1_DamageViaCaps",
+    "gameId": "00606B71",
+    "texts": {
+      "de": "Legendäre Mod des Aristokraten",
+      "en": "Aristocrat's Legendary Mod",
+      "es": "Módulo legendario de aristócrata",
+      "esmx": "Módulo legendario de aristócrata",
+      "fr": "Mod légendaire Aristocrate",
+      "it": "Modifica leggendaria Aristocratico",
+      "ja": "貴族のレジェンダリーモジュール",
+      "ko": "상류층의 전설적인 개조",
+      "pl": "Legendarna modyfikacja arystokraty",
+      "ptbr": "Mod Lendário de Aristocrata",
+      "ru": "Легендарный модуль аристократа",
+      "zhhans": "贵族的传奇改装件",
+      "zhhant": "貴族派頭傳奇改造配件"
+    },
+    "enabled": true,
+    "star": 1,
+    "abbreviation": "ari",
+    "additionalAbbreviations": [
+      "aristocrats",
+      "00606b71",
+      "ari",
+      "aristocrat"
+    ],
+    "translations": {
+      "de": "Je mehr Kronkorken, desto mehr Schaden fügst du zu.",
+      "en": "Damage increases as caps increases",
+      "es": "El daño va aumentando a medida que lo hacen las chapas.",
+      "esmx": "El daño va aumentando a medida que lo hacen las tapas.",
+      "fr": "Les dégâts augmentent à mesure que la quantité de capsules augmente.",
+      "it": "I danni aumentano all'aumentare dei tappi.",
+      "ja": "キャップが増加すると、ダメージが増加する",
+      "ko": "병뚜껑이 많아질수록 주는 피해가 증가합니다.",
+      "pl": "Zadawane obrażenia zwiększają się wraz z liczbą posiadanych kapsli.",
+      "ptbr": "O dano aumenta conforme o total de tampas é aumentado.",
+      "ru": "Чем больше крышек, тем выше урон",
+      "zhhans": "伤害随着瓶盖的增加而提高。",
+      "zhhant": "瓶蓋數增加時，傷害量也提高"
+    },
+    "itemType": "WEAPON",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Weapon1_DamageViaHealth",
+    "gameId": "00606B73",
+    "texts": {
+      "de": "Legendäre Mod des Schwergewichts",
+      "en": "Juggernaut's Legendary Mod",
+      "es": "Módulo legendario de mastodonte",
+      "esmx": "Módulo legendario de mastodonte",
+      "fr": "Mod légendaire Titan",
+      "it": "Modifica leggendaria Poderoso",
+      "ja": "ジャガーノートのレジェンダリーモジュール",
+      "ko": "강력한 전설적인 개조",
+      "pl": "Legendarna modyfikacja molocha",
+      "ptbr": "Mod Lendário de Tirânico",
+      "ru": "Легендарный модуль гиганта",
+      "zhhans": "克星的传奇改装件",
+      "zhhant": "巨無霸傳奇改造配件"
+    },
+    "enabled": true,
+    "star": 1,
+    "abbreviation": "jug",
+    "additionalAbbreviations": [
+      "00606b73",
+      "juggernaut",
+      "juggernauts",
+      "jugger",
+      "ju",
+      "jug"
+    ],
+    "translations": {
+      "de": "Je mehr Gesundheit, desto höher der verursachte Schaden.",
+      "en": "Damage increases as health increases",
+      "es": "El daño va aumentando a medida que lo hace la salud.",
+      "esmx": "El daño va aumentando a medida que lo hace la salud.",
+      "fr": "Les dégâts augmentent à mesure que la santé augmente.",
+      "it": "I danni aumentano all'aumentare della salute.",
+      "ja": "体力が増加すると、ダメージが増加する",
+      "ko": "체력이 증가할수록 주는 피해가 증가합니다.",
+      "pl": "Zadawane obrażenia zwiększają się wraz ze wzrostem zdrowia.",
+      "ptbr": "Dano aumenta conforme a saúde aumenta.",
+      "ru": "Чем больше уровень здоровья, тем выше урон",
+      "zhhans": "伤害随着生命值的恢复而提高。",
+      "zhhant": "生命值增加時，傷害量也提高"
+    },
+    "itemType": "WEAPON",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Weapon1_Gourmand",
+    "gameId": "006069F2",
+    "texts": {
+      "de": "Legendäre Mod des Gourmets",
+      "en": "Gourmand's Legendary Mod",
+      "es": "Módulo legendario de Sibarita",
+      "esmx": "Módulo legendario de Sibarita",
+      "fr": "Mod légendaire Gourmet",
+      "it": "Modifica leggendaria Ingordo",
+      "ja": "グルマンズのレジェンダリーモジュール",
+      "ko": "대식가의 전설적인 개조",
+      "pl": "Legendarna modyfikacja smakosza",
+      "ptbr": "Mod Lendário de Gourmand",
+      "ru": "Легендарный модуль гурмана",
+      "zhhans": "美食家的传奇改装件",
+      "zhhant": "貪食人傳奇改造配件"
+    },
+    "enabled": true,
+    "star": 1,
+    "abbreviation": "go",
+    "additionalAbbreviations": [
+      "",
+      "gourmand",
+      "gour",
+      "go",
+      "gourmands"
+    ],
+    "translations": {
+      "de": "Je mehr du die Balken für Hunger und Durst füllst, desto mehr Schaden fügst du zu.",
+      "en": "Damage increases as you fill your hunger and thirst meters",
+      "es": "El daño aumenta a medida que se llenan el medidor de sed y el de hambre",
+      "esmx": "El daño aumenta a medida que se llenan el medidor de sed y el de hambre",
+      "fr": "Les dégâts augmentent lorsque vous remplissez vos jauges de faim et de soif",
+      "it": "I danni aumentano mentre riempi gli indicatori di fame e sete.",
+      "ja": "飢えと喉の渇きのメーターを満たすとダメージが増加する",
+      "ko": "허기와 갈증 미터기를 채울수록 주는 피해가 증가합니다.",
+      "pl": "Zadawane obrażenia wzrastają wraz z wypełnianiem wskaźnika głodu i pragnienia.",
+      "ptbr": "O dano aumenta conforme você enche seus medidores de fome e sede.",
+      "ru": "Наносимый урон увеличивается по мере заполнения шкал голода и жажды.",
+      "zhhans": "伤害增加，效果随着你补充饥饿计和口渴计而提高。",
+      "zhhant": "補充飢餓條與口渴條時，傷害量提升"
+    },
+    "itemType": "WEAPON",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Weapon2_APViaKill",
+    "gameId": "00606B72",
+    "texts": {
+      "de": "Trägheit",
+      "en": "Inertial",
+      "es": "Inercia",
+      "esmx": "Inercia",
+      "fr": "Inertiel",
+      "it": "Inerziale",
+      "ja": "慣性の",
+      "ko": "관성",
+      "pl": "Inercja",
+      "ptbr": "Inercial",
+      "ru": "Инерция",
+      "zhhans": "不活泼",
+      "zhhant": "慣性使然"
+    },
+    "enabled": true,
+    "star": 2,
+    "abbreviation": "ine",
+    "additionalAbbreviations": [
+      "ine",
+      "00606b72",
+      "intertial",
+      "inert"
+    ],
+    "translations": {
+      "de": "Regeniere mit jedem Kill AP.",
+      "en": "Replenish Action Points with each kill",
+      "es": "Recuperas PA con cada baja.",
+      "esmx": "Recuperas PA con cada baja.",
+      "fr": "Régénère des PA à chaque élimination",
+      "it": "Recuperi PA a ogni uccisione.",
+      "ja": "敵を倒すごとにAPを補充する",
+      "ko": "처치할 때마다 AP가 보충됩니다.",
+      "pl": "Przywraca PA po każdym zabójstwie.",
+      "ptbr": "Recupera PA a cada eliminação.",
+      "ru": "Восстанавливает ОД при каждом убийстве.",
+      "zhhans": "每次击杀后都会恢复行动点。",
+      "zhhant": "每次擊殺都能補充AP"
+    },
+    "itemType": "WEAPON",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Weapon2_Guns_LastShot",
+    "gameId": "006069EC",
+    "texts": {
+      "de": "Letzter Schuss",
+      "en": "Last Shot",
+      "es": "Último disparo",
+      "esmx": "Último disparo",
+      "fr": "Dernier tir",
+      "it": "Ultimo colpo",
+      "ja": "ラストショットの",
+      "ko": "마지막 탄환",
+      "pl": "Ostatni strzał",
+      "ptbr": "Último Tiro",
+      "ru": "Последний выстрел",
+      "zhhans": "最后一击",
+      "zhhant": "最後一發"
+    },
+    "enabled": true,
+    "star": 2,
+    "abbreviation": "last",
+    "additionalAbbreviations": [
+      "lastshot",
+      "last",
+      "006069ec",
+      "last-shot"
+    ],
+    "translations": {
+      "de": "Die letzte Patrone im Magazin hat eine Chance von 25% auf doppelten Schaden.",
+      "en": "The last round in a magazine has a 25% chance to deal 2x DMG",
+      "es": "La última bala de un cargador tiene una probabilidad del 25% de infligir el doble de daño.",
+      "esmx": "La última bala de un cargador tiene una probabilidad del 25% de infligir el doble de daño.",
+      "fr": "La dernière balle d'un chargeur a 25 % de chances d'infliger deux fois plus de dégâts.",
+      "it": "L'ultimo colpo di un caricatore ha il 25% di probabilità di infliggere danni doppi.",
+      "ja": "マガジンの最後の弾が25%の確率で2倍のダメージを与える",
+      "ko": "탄창의 마지막 탄환이 25% 확률로 2배 피해를 줍니다.",
+      "pl": "Ostatni nabój w magazynku ma 25% szans na zadanie podwójnych obrażeń.",
+      "ptbr": "O último projétil do carregador tem 25% de chance de causar dano em dobro.",
+      "ru": "Последний патрон в магазине с вероятностью 25% наносит вдвое больше урона",
+      "zhhans": "弹匣里的最后一发弹药有25%的几率造成2倍伤害",
+      "zhhant": "彈匣中最後一發彈藥有25%機率造成2倍傷害"
+    },
+    "itemType": "WEAPON_RANGED",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Weapon2_Melee_Steady",
+    "gameId": "00606C8D",
+    "texts": {
+      "de": "Stabilisiert",
+      "en": "Steady",
+      "es": "Estable",
+      "esmx": "Firme",
+      "fr": "Stabilité",
+      "it": "Stabile",
+      "ja": "ステディ",
+      "ko": "안정적인",
+      "pl": "Stabil.",
+      "ptbr": "Estável",
+      "ru": "Стойкий",
+      "zhhans": "稳定",
+      "zhhant": "穩定"
+    },
+    "enabled": true,
+    "star": 2,
+    "abbreviation": "ste",
+    "additionalAbbreviations": [
+      "00606c8d",
+      "ste",
+      "stead",
+      "steady"
+    ],
+    "translations": {
+      "de": "+25% Schaden im Stillstehen.",
+      "en": "+25% damage while standing still",
+      "es": "+25% de daño si no te mueves.",
+      "esmx": "+25% de daño si no te mueves.",
+      "fr": "Dégâts +25 % en restant immobile.",
+      "it": "+25% Danni mentre sei immobile in piedi.",
+      "ja": "立っているときのダメージが25%増加する",
+      "ko": "가만히 서 있는 동안 주는 피해가 25% 증가합니다.",
+      "pl": "+25% obrażeń podczas bezruchu.",
+      "ptbr": "+25% de dano enquanto não estiver se movendo.",
+      "ru": "+25% к наносимому урону, пока вы неподвижны",
+      "zhhans": "站在原地时伤害+25%",
+      "zhhant": "站在原地不動時，傷害+25%"
+    },
+    "itemType": "WEAPON_MELEE",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Weapon3_Guns_CloakOnHit",
+    "gameId": "00609E4F",
+    "texts": {
+      "de": "Des Geistes",
+      "en": "Ghost's",
+      "es": "Fantasmal",
+      "esmx": "Fantasmal",
+      "fr": "De fantôme",
+      "it": "Fantasma",
+      "ja": "ゴーストの",
+      "ko": "유령의",
+      "pl": "Ducha",
+      "ptbr": "Fantasma",
+      "ru": "Призрак",
+      "zhhans": "幽灵的",
+      "zhhant": "幽魂"
+    },
+    "enabled": true,
+    "star": 3,
+    "abbreviation": "gho",
+    "additionalAbbreviations": [
+      "00609e4f",
+      "ghost",
+      "ghosts",
+      "gho"
+    ],
+    "translations": {
+      "de": "Bei Treffern besteht die Chance auf ein Tarnfeld.",
+      "en": "Hits have a chance to generate a Stealth Field",
+      "es": "Los impactos tienen probabilidades de generar un campo de invisibilidad.",
+      "esmx": "Los impactos tienen probabilidades de generar un campo de invisibilidad.",
+      "fr": "Les tirs réussis ont une chance de générer un champ de furtivité.",
+      "it": "I colpi a segno hanno una probabilità di generare un campo stealth.",
+      "ja": "ヒットすると一定確率でステルスフィールドが発生する",
+      "ko": "적중 시 일정 확률로 은폐장을 생성합니다.",
+      "pl": "Trafienia mają szansę na generowanie pola maskującego.",
+      "ptbr": "Acertos têm chance de gerar um Campo de Furtividade.",
+      "ru": "При попаданиях есть шанс создать стелс-поле",
+      "zhhans": "击中时有机会生成隐形护罩",
+      "zhhant": "擊中時有機率產生隱形護罩"
+    },
+    "itemType": "WEAPON_RANGED",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor1_ResistancesProportionalCaps",
+    "gameId": "0060893C",
+    "texts": {
+      "de": "Legendäre Mod des Aristokraten",
+      "en": "Aristocrat's Legendary Mod",
+      "es": "Módulo legendario de aristócrata",
+      "esmx": "Módulo legendario de aristócrata",
+      "fr": "Mod légendaire Aristocrate",
+      "it": "Modifica leggendaria Aristocratico",
+      "ja": "貴族のレジェンダリーモジュール",
+      "ko": "상류층의 전설적인 개조",
+      "pl": "Legendarna modyfikacja arystokraty",
+      "ptbr": "Mod Lendário de Aristocrata",
+      "ru": "Легендарный модуль аристократа",
+      "zhhans": "贵族的传奇改装件",
+      "zhhant": "貴族派頭傳奇改造配件"
+    },
+    "enabled": true,
+    "star": 1,
+    "abbreviation": "ari",
+    "additionalAbbreviations": [
+      "aristocrats",
+      "ari",
+      "aristocrat",
+      "0060893c"
+    ],
+    "translations": {
+      "de": "Verleiht bis zu +20 Energie- und Schadensresistenz, je nachdem, wie viele Kronkorken du hast.",
+      "en": "Grants up to +20 Energy Resistance and Damage Resistance, the higher your caps",
+      "es": "Otorga hasta +20 de resistencia al daño y resistencia a la energía cuantas más chapas tengas",
+      "esmx": "Otorga hasta +20 de resistencia al daño y resistencia a la energía cuantas más tapas tengas",
+      "fr": "Plus vous avez de capsules, plus votre résistance aux dégâts et à l'énergie augmente (+20 max)",
+      "it": "Aumenta la Resistenza ai danni e all'energia quanto più sono numerosi i tuoi tappi (fino a +20).",
+      "ja": "キャップが多い時、エネルギー耐性、ダメージ耐性が最大20増加する",
+      "ko": "병뚜껑이 많아질수록 에너지 저항 및 피해 저항을 최대 +20까지 부여합니다.",
+      "pl": "Zapewnia tym więcej odporności na obrażenia i energię, im więcej masz kapsli (do +20).",
+      "ptbr": "Concede até +20 de Resistência a Energia e Resistência a Dano quanto mais tampas você tiver.",
+      "ru": "Повышение сопротивляемости обычному и энергетическому урону по мере увеличения количества крышек (до +20).",
+      "zhhans": "获得最多+20能量抗性和伤害抗性，效果随着你持有的瓶盖增加而提高。",
+      "zhhant": "瓶蓋數越多，能量抗性和傷害抗性越高，最高+20"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor1_Overeater",
+    "gameId": "00606C84",
+    "texts": {
+      "de": "Legendäre Mod des Vielfraßes",
+      "en": "Overeater's Legendary Mod",
+      "es": "Módulo legendario Insaciable",
+      "esmx": "Módulo legendario Insaciable",
+      "fr": "Mod légendaire Vorace",
+      "it": "Modifica leggendaria Divoratore",
+      "ja": "暴食のレジェンダリーモジュール",
+      "ko": "과식자의 전설적인 개조",
+      "pl": "Legendarna modyfikacja żarłoka",
+      "ptbr": "Mod Lendário de Esfomeado",
+      "ru": "Легендарный модуль лакомки",
+      "zhhans": "暴食者的传奇改装件",
+      "zhhant": "過度進食人傳奇改造配件"
+    },
+    "enabled": true,
+    "star": 1,
+    "abbreviation": "ovr",
+    "additionalAbbreviations": [
+      "over",
+      "overeater",
+      "overeaters",
+      "00606c84",
+      "ovr"
+    ],
+    "translations": {
+      "de": "Erhöht beim Füllen der Balken für Hunger und Durst die Schadensreduktion um bis zu 6%.",
+      "en": "Increases Damage Reduction up to 6% as you fill your hunger and thirst meters",
+      "es": "La reducción de daño aumenta hasta un 6% a medida que se llenan el medidor de sed y el de hambre",
+      "esmx": "La reducción de daño aumenta hasta un 6% a medida que se llenan el medidor de sed y el de hambre",
+      "fr": "Les dégâts sont réduits jusqu'à 6 % lorsque vous remplissez vos jauges de faim et de soif",
+      "it": "Aumenta la riduzione dei danni fino al 6% mentre riempi gli indicatori di fame e sete.",
+      "ja": "飢えと喉の渇きのメーターを満たすと、ダメージ軽減が最大6%まで増加する",
+      "ko": "허기와 갈증 미터기를 채울수록 피해량 감소가 최대 6%까지 증가합니다.",
+      "pl": "Odnoszone obrażenia maleją (maksymalne o 6%) wraz z wypełnianiem wskaźnika głodu i pragnienia.",
+      "ptbr": "Aumenta a Redução de Dano em até 6% conforme você enche seus medidores de fome e sede.",
+      "ru": "Снижает получаемый урон до 6% по мере заполнения шкал голода и жажды.",
+      "zhhans": "获得最多6%伤害减免，效果随着你补充饥饿计和口渴计而提高。",
+      "zhhant": "補充飢餓條與口渴條時，傷害減少最多+6%"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor2_Fireproof",
+    "gameId": "00606B39",
+    "texts": {
+      "de": "Feuerfest",
+      "en": "Fireproof",
+      "es": "Ignífugo",
+      "esmx": "Ignífugo",
+      "fr": "Ignifuge",
+      "it": "Ignifugo",
+      "ja": "ファイアプルーフ",
+      "ko": "불연성",
+      "pl": "Ognioodporność",
+      "ptbr": "À Prova de Fogo",
+      "ru": "Огнеупорный",
+      "zhhans": "防火",
+      "zhhant": "防火"
+    },
+    "enabled": true,
+    "star": 2,
+    "abbreviation": "fire",
+    "additionalAbbreviations": [
+      "fireproof",
+      "25fr",
+      "fire",
+      "00606b39"
+    ],
+    "translations": {
+      "de": "+25 Feuerresistenz.",
+      "en": "+25 Fire Resistance",
+      "es": "+25 de resistencia al fuego",
+      "esmx": "+25 de resistencia al fuego",
+      "fr": "Résistance au feu +25",
+      "it": "+25 Resistenza al fuoco.",
+      "ja": "炎耐性が25増加する",
+      "ko": "화염 저항이 25 증가합니다.",
+      "pl": "+25 do odporności na ogień.",
+      "ptbr": "+25 de Resistência ao Fogo.",
+      "ru": "+25 к сопротивляемости огню",
+      "zhhans": "+25火焰抗性",
+      "zhhant": "火焰抗性+25"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor2_CryoResistance",
+    "gameId": "00606B6F",
+    "texts": {
+      "de": "Aufwärmen",
+      "en": "Warming",
+      "es": "Tibio",
+      "esmx": "Tibio",
+      "fr": "Réchauffant",
+      "it": "Riscaldante",
+      "ja": "加温の",
+      "ko": "온기",
+      "pl": "Ogrzewanie",
+      "ptbr": "Aquecido",
+      "ru": "Обогрев",
+      "zhhans": "加热",
+      "zhhant": "逐步加溫"
+    },
+    "enabled": true,
+    "star": 2,
+    "abbreviation": "warm",
+    "additionalAbbreviations": [
+      "00606b6f",
+      "warm",
+      "warming"
+    ],
+    "translations": {
+      "de": "+25 Kryoresistenz.",
+      "en": "+25 Cryo Resistance",
+      "es": "+25 de resistencia criogénica",
+      "esmx": "+25 de resistencia criogénica",
+      "fr": "Résistance à la cryogénie +25",
+      "it": "+25 Resistenza al freddo.",
+      "ja": "冷却耐性が25増加する",
+      "ko": "냉기 저항이 25 증가합니다.",
+      "pl": "+25 do odporności na zimno.",
+      "ptbr": "+25 de Resistência a Frio.",
+      "ru": "+25 к сопр. холоду",
+      "zhhans": "+25冷冻抗性",
+      "zhhant": "冷凍抗性+25"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor2_ReduceExplosionDamage",
+    "gameId": "00609E4E",
+    "texts": {
+      "de": "Zäh",
+      "en": "Hardy",
+      "es": "Resistente",
+      "esmx": "Resistente",
+      "fr": "Robuste",
+      "it": "Robusto",
+      "ja": "屈強な",
+      "ko": "강건한",
+      "pl": "Tward.",
+      "ptbr": "Maciço",
+      "ru": "Живучесть",
+      "zhhans": "结实",
+      "zhhant": "哈第"
+    },
+    "enabled": true,
+    "star": 2,
+    "abbreviation": "hard",
+    "additionalAbbreviations": [
+      "hardy",
+      "hard",
+      "00609e4e"
+    ],
+    "translations": {
+      "de": "Du erleidest 7% weniger Explosionsschaden.",
+      "en": "Receive 7% less explosion damage",
+      "es": "Recibe un 7% menos de daño por explosión.",
+      "esmx": "Recibe un 7% menos de daño por explosión.",
+      "fr": "Réduit de 7 % les dégâts infligés par les explosions.",
+      "it": "Subisci il 7% di danni da esplosione in meno",
+      "ja": "爆発ダメージが7%減少する",
+      "ko": "받는 폭발 피해가 7% 감소합니다.",
+      "pl": "7% mniej otrzymywanych obrażeń od wybuchu.",
+      "ptbr": "Recebe 7% menos dano de explosão.",
+      "ru": "Снижает урон от взрывов на 7%",
+      "zhhans": "受到的爆炸伤害减少7%",
+      "zhhant": "爆炸傷害-7%"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor3_IncreaseHealing",
+    "gameId": "00609C46",
+    "texts": {
+      "de": "Des Arztes",
+      "en": "Doctor's",
+      "es": "Médico",
+      "esmx": "Médico",
+      "fr": "De docteur",
+      "it": "Medico",
+      "ja": "ドクターの",
+      "ko": "의사의",
+      "pl": "Lekarza",
+      "ptbr": "Medicinal",
+      "ru": "Врач",
+      "zhhans": "医生的",
+      "zhhant": "專業醫生"
+    },
+    "enabled": true,
+    "star": 3,
+    "abbreviation": "doc",
+    "additionalAbbreviations": [
+      "doctor",
+      "doctors",
+      "doc",
+      "00609c46"
+    ],
+    "translations": {
+      "de": "Stimpaks, RadAways und Rad-X sind 5% effektiver.",
+      "en": "Stimpaks, RadAway, and Rad-X are 5% more effective",
+      "es": "Los estimulantes, el RadAway y el Rad-X son un 5% más efectivos.",
+      "esmx": "Los estimulantes, el RadAway y el Rad-X son un 5% más efectivos.",
+      "fr": "Les Stimpaks, RadAway et Rad-X sont 5 % plus efficaces.",
+      "it": "Stimpak, RadAway e Rad-X sono più efficaci del 5%.",
+      "ja": "スティムパック、RADアウェイ、RAD-Xの効果が5%増加する",
+      "ko": "스팀팩, 라드어웨이, 라드-X 효율이 5% 증가합니다.",
+      "pl": "Stimpaki, AntyRad i Rad-X są o 5% bardziej skuteczne.",
+      "ptbr": "Stimpaks, RadAway e Rad-X são 5% mais eficazes.",
+      "ru": "Стимуляторы, антирадин и Рад-Х действуют на 5% эффективнее",
+      "zhhans": "治疗针、消辐宁和抗辐宁的效果提升5%",
+      "zhhant": "治療針、消輻寧、抗輻寧的效果+5%"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor3_Burning",
+    "gameId": "00608371",
+    "texts": {
+      "de": "Brennend",
+      "en": "Burning",
+      "es": "En llamas",
+      "esmx": "En llamas",
+      "fr": "Incendiaire",
+      "it": "Bruciante",
+      "ja": "バーニング",
+      "ko": "불타는",
+      "pl": "Płonąc.",
+      "ptbr": "Chamuscante",
+      "ru": "Горящий",
+      "zhhans": "燃烧",
+      "zhhant": "火焰"
+    },
+    "enabled": true,
+    "star": 3,
+    "abbreviation": "burn",
+    "additionalAbbreviations": [
+      "burning",
+      "burn",
+      "00608371"
+    ],
+    "translations": {
+      "de": "Chance von 5%, Nahkampfangreifern 100 Feuerschaden zuzufügen.",
+      "en": "5% chance to deal 100 Fire DMG to melee attackers",
+      "es": "5% de probabilidad de infligir 100 de daño por fuego a los atacantes cuerpo a cuerpo",
+      "esmx": "5% de probabilidad de infligir 100 de daño por fuego a los atacantes cuerpo a cuerpo",
+      "fr": "5 % de chances d'infliger 100 points de dégâts de feu à un attaquant au corps à corps.",
+      "it": "5% di probabilità di infliggere 100 Danni da fuoco agli attaccanti in mischia.",
+      "ja": "近接攻撃されると5%の確率で100の炎ダメージを与える",
+      "ko": "착용자를 근접 공격한 공격자에게 5% 확률로 100 화염 피해를 줍니다.",
+      "pl": "5% szansy zadania 100 obrażeń od ognia przeciwnikom atakującym bronią białą.",
+      "ptbr": "5% de chance de causar 100 de dano por fogo a agressores em corpo a corpo.",
+      "ru": "5%-ный шанс нанести 100 ед. урона огнем в ближнем бою",
+      "zhhans": "与近战攻击者战斗时有5%机会给予对方100火焰伤害。",
+      "zhhant": "有5%機率對近身攻擊的敵人造成100點火焰傷害"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor3_Electrified",
+    "gameId": "00608373",
+    "texts": {
+      "de": "Elektrifiziert",
+      "en": "Electrified",
+      "es": "Electrificado",
+      "esmx": "Electrificado",
+      "fr": "Électrifié",
+      "it": "Elettrificato",
+      "ja": "帯電",
+      "ko": "전류 도선 부착",
+      "pl": "Elektr.",
+      "ptbr": "Eletrificante",
+      "ru": "Электрический",
+      "zhhans": "带电",
+      "zhhant": "帶電"
+    },
+    "enabled": true,
+    "star": 3,
+    "abbreviation": "ele",
+    "additionalAbbreviations": [
+      "electro",
+      "electrified",
+      "00608373",
+      "elec",
+      "elect",
+      "ele"
+    ],
+    "translations": {
+      "de": "Chance von 5%, Nahkampfangreifern 100 Energieschaden zuzufügen.",
+      "en": "5% chance to deal 100 Energy DMG to melee attackers",
+      "es": "5% de probabilidad de infligir 100 de daño por energía a los atacantes cuerpo a cuerpo",
+      "esmx": "5% de probabilidad de infligir 100 de daño por energía a los atacantes cuerpo a cuerpo",
+      "fr": "5 % de chances d'infliger 100 points de dégâts d'énergie à un attaquant au corps à corps.",
+      "it": "5% di probabilità di infliggere 100 Danni da energia agli attaccanti in mischia.",
+      "ja": "近接攻撃されると5%の確率で100のエネルギーダメージを与える",
+      "ko": "착용자를 근접 공격한 공격자에게 5% 확률로 100 에너지 피해를 줍니다.",
+      "pl": "5% szansy zadania 100 obrażeń od energii przeciwnikom atakującym bronią białą.",
+      "ptbr": "5% de chance de causar 100 de dano de energia a agressores em corpo a corpo.",
+      "ru": "5%-ный шанс нанести 100 ед. энергетического урона в ближнем бою",
+      "zhhans": "与近战攻击者战斗时有5%机会给予对方100能量伤害。",
+      "zhhant": "有5%機率對近身攻擊的敵人造成100點能量傷害"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor3_Frozen",
+    "gameId": "00608372",
+    "texts": {
+      "de": "Eingefroren",
+      "en": "Frozen",
+      "es": "Gélido",
+      "esmx": "Gélido",
+      "fr": "Gelé",
+      "it": "Gelato",
+      "ja": "冷凍",
+      "ko": "냉동",
+      "pl": "Zamrożone",
+      "ptbr": "Congelado",
+      "ru": "Ледяной",
+      "zhhans": "冻结",
+      "zhhant": "凍僵"
+    },
+    "enabled": true,
+    "star": 3,
+    "abbreviation": "fro",
+    "additionalAbbreviations": [
+      "fro",
+      "froz",
+      "00608372",
+      "frozen",
+      "ice",
+      "icy"
+    ],
+    "translations": {
+      "de": "Chance von 5%, Nahkampfangreifern 100 Kälteschaden zuzufügen.",
+      "en": "5% chance to deal 100 Frost DMG to melee attackers",
+      "es": "5% de probabilidad de infligir 100 de daño por hielo a los atacantes cuerpo a cuerpo",
+      "esmx": "5% de probabilidad de infligir 100 de daño por hielo a los atacantes cuerpo a cuerpo",
+      "fr": "5 % de chances d'infliger 100 points de dégâts de froid à un attaquant au corps à corps.",
+      "it": "5% di probabilità di infliggere 100 Danni da gelo agli attaccanti in mischia.",
+      "ja": "近接攻撃されると5%の確率で100の氷結ダメージを与える",
+      "ko": "착용자를 근접 공격한 공격자에게 5% 확률로 100 냉기 피해를 줍니다.",
+      "pl": "5% szansy zadania 100 obrażeń od mrozu przeciwnikom atakującym bronią białą.",
+      "ptbr": "5% de chance de causar 100 de dano por gelo a agressores em corpo a corpo.",
+      "ru": "5%-ный шанс нанести 100 ед. урона холодом в ближнем бою",
+      "zhhans": "与近战攻击者战斗时有5%机会给予对方100冰霜伤害。",
+      "zhhant": "有5%機率對近身攻擊的敵人造成100點冰凍傷害"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor3_Toxic",
+    "gameId": "00608370",
+    "texts": {
+      "de": "Giftig",
+      "en": "Toxic",
+      "es": "Tóxica",
+      "esmx": "Tóxica",
+      "fr": "Toxique",
+      "it": "Venefico",
+      "ja": "トキシック",
+      "ko": "독성",
+      "pl": "Toksyczn.",
+      "ptbr": "Tóxico",
+      "ru": "Ядовит.",
+      "zhhans": "剧毒",
+      "zhhant": "毒物"
+    },
+    "enabled": true,
+    "star": 3,
+    "abbreviation": "tox",
+    "additionalAbbreviations": [
+      "toxic",
+      "00608370",
+      "tox"
+    ],
+    "translations": {
+      "de": "Chance von 5%, Nahkampfangreifern 100 Giftschaden zuzufügen.",
+      "en": "5% chance to deal 100 Poison DMG to melee attackers",
+      "es": "5% de probabilidad de infligir 100 de daño por veneno a los atacantes cuerpo a cuerpo",
+      "esmx": "5% de probabilidad de infligir 100 de daño por veneno a los atacantes cuerpo a cuerpo",
+      "fr": "5 % de chances d'infliger 100 points de dégâts de poison à un attaquant au corps à corps.",
+      "it": "5% di probabilità di infliggere 100 Danni da veleno agli attaccanti in mischia.",
+      "ja": "近接攻撃されると5%の確率で100の毒ダメージを与える",
+      "ko": "착용자를 근접 공격한 공격자에게 5% 확률로 100 중독 피해를 줍니다.",
+      "pl": "5% szansy zadania 100 obrażeń od trucizny przeciwnikom atakującym bronią białą.",
+      "ptbr": "5% de chance de causar 100 de dano por veneno a agressores em corpo a corpo.",
+      "ru": "5%-ный шанс нанести 100 ед. урона ядом в ближнем бою",
+      "zhhans": "与近战攻击者战斗时有5%机会给予对方100毒素伤害。",
+      "zhhant": "有5%機率對近身攻擊的敵人造成100點毒素傷害"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
+  },
+  {
+    "id": "mod_Legendary_Armor3_RadsRegen",
+    "gameId": "00606B6D",
+    "texts": {
+      "de": "Abklingen",
+      "en": "Dissipating",
+      "es": "Disipación",
+      "esmx": "Disipación",
+      "fr": "Dissipateur",
+      "it": "Disperdente",
+      "ja": "消散の",
+      "ko": "소멸성",
+      "pl": "Rozpraszanie",
+      "ptbr": "Dissipante",
+      "ru": "Рассеивание",
+      "zhhans": "驱散",
+      "zhhant": "漸漸逸散"
+    },
+    "enabled": true,
+    "star": 3,
+    "abbreviation": "diss",
+    "additionalAbbreviations": [
+      "radheal",
+      "00606b6d",
+      "dissipating",
+      "dissipat",
+      "diss"
+    ],
+    "translations": {
+      "de": "Du heilst außerhalb des Kampfes langsam Strahlungsschaden.",
+      "en": "Slowly regen radiation damage while not in combat",
+      "es": "El daño por radiación se regenera lentamente cuando no estás luchando.",
+      "esmx": "El daño por radiación se regenera lentamente cuando no estás luchando.",
+      "fr": "Soigne lentement les dégâts de radiations lorsque vous ne vous battez pas.",
+      "it": "Rigenera lentamente i danni da radiazioni mentre non sei in combattimento.",
+      "ja": "非戦闘時、放射能ダメージがゆっくり回復する",
+      "ko": "전투 중이 아닐 때 방사능이 서서히 줄어듭니다.",
+      "pl": "Powoli regenerujesz obrażenia od promieniowania, gdy nie toczysz walki.",
+      "ptbr": "Regenera lentamente o dano por radiação fora de combate.",
+      "ru": "Урон от радиации постепенно восстанавливается, пока вы не участвуете в боях",
+      "zhhans": "不在战斗时可以缓慢恢复辐射伤害",
+      "zhhant": "不戰鬥時緩慢恢復輻射傷害"
+    },
+    "itemType": "ARMOR",
+    "legacy": false
   }
 ]

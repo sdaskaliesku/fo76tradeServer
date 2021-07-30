@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
+import './index.scss';
 import PrimeReact from 'primereact/api';
 import {TableComponent} from "./component/table/TableComponent";
 import {NavBar} from "./component/navbar/NavBar";
@@ -12,9 +13,20 @@ import {InfoDialog} from "./component/dialog/InfoDialog";
 import {MIN_MOD_SUPPORTED_VERSION} from "./service/domain";
 import {Route, Switch, HashRouter} from "react-router-dom";
 import {SettingsPage} from "./component/settings/SettingsPage";
+import {routes} from "./service/Routes";
+import {InventOmatic} from "./component/config/InventOmatic";
+import {HUDEditor} from "./component/config/HUDEditor";
+import {createMuiTheme, CssBaseline, ThemeProvider} from "@material-ui/core";
+
 PrimeReact.ripple = true;
 
 document.documentElement.style.fontSize = '9px';
+
+export const theme = createMuiTheme({
+  palette: {
+    type: "dark"
+  }
+});
 
 const modalTexts = {
   invalidVersion: (version: any) => {
@@ -57,26 +69,37 @@ const App = () => {
     setFileStatus(e);
   }
 
-  const template = (content: any) => (
-      <HashRouter>
-        <NavBar/>
-        <Switch>
-          <Route path='/settings'>
-            <SettingsPage/>
-          </Route>
-          <Route path="/">
-            {content}
-            <InfoDialog ref={dialogRef}/>
-          </Route>
-        </Switch>
-      </HashRouter>
-  );
+  const template = (content: any) => {
+    return (
+        <HashRouter>
+          <ThemeProvider theme={theme}>
+            <CssBaseline/>
+            <NavBar/>
+            <Switch>
+              <Route path={routes.InventOmatic}>
+                <InventOmatic/>
+              </Route>
+              <Route path={routes.HUDEditor}>
+                <HUDEditor/>
+              </Route>
+              <Route path={routes.SETTINGS}>
+                <SettingsPage/>
+              </Route>
+              <Route path={routes.HOME}>
+                {content}
+                <InfoDialog ref={dialogRef}/>
+              </Route>
+            </Switch>
+          </ThemeProvider>
+        </HashRouter>
+    )
+  };
 
   let body: any;
 
   switch (fileStatus) {
     case FileUploaderStatus.ERROR:
-      body = <p>'modal dialog'</p>;
+      // todo: show error
       break;
     case FileUploaderStatus.LOADED:
       if (tableData.length > 1) {

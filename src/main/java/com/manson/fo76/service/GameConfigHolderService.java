@@ -36,7 +36,6 @@ public class GameConfigHolderService {
   };
   private static final TypeReference<Map<String, String>> SPECIAL_CASES_CONFIG_REF = new TypeReference<Map<String, String>>() {
   };
-
   @Value("${game.config.leg.mods.file}")
   private String legModsConfigFile;
 
