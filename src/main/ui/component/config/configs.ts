@@ -23,10 +23,9 @@ export enum MatchMode {
   EXACT,
   CONTAINS,
   STARTS,
-  NOT_CONTAINS
 }
 
-export enum Action {
+enum Action {
   CONSUME,
   DROP,
   TRANSFER,
@@ -71,4 +70,6 @@ export interface InventOmaticPipboyConfig {
 
 export const MatchModes = toArray(MatchMode);
 export const ItemTypes = toArray(ItemType);
-export const Actions = toArray(Action);
+const Actions = toArray(Action);
+export const StashActions = Actions.filter(x => 'CONSUME' !== x).filter(x => 'DROP' !== x);
+export const PipboyActions = Actions.filter(x => 'SCRAP' !== x).filter(x => 'TRANSFER' !== x);

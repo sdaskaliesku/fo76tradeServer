@@ -107,7 +107,7 @@ export class NavBar extends React.Component<any, any> {
                 label: 'InventOmatic',
                 icon: 'pi pi-fw pi-cog',
                 command: (event: any) => {
-                  window.location.hash = routes.InventOmaticPipboy;
+                  window.location.hash = routes.InventOmatic;
                 }
               },
               {

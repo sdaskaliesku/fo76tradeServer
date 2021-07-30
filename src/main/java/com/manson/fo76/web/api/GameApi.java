@@ -12,6 +12,7 @@ import com.manson.fo76.service.AppInfo;
 import com.manson.fo76.service.Fed76Service;
 import com.manson.fo76.service.GameConfigHolderService;
 import com.manson.fo76.service.GameConfigService;
+import com.manson.fo76.service.HudEditorConfigService;
 import com.manson.fo76.service.ItemConverterService;
 import com.manson.fo76.service.PriceRequestBuilder;
 import java.util.Arrays;
@@ -38,6 +39,7 @@ public class GameApi {
       .map(FilterFlagResponse::new)
       .collect(Collectors.toList());
   private final GameConfigHolderService holderService;
+  private final HudEditorConfigService hudEditorConfigService;
   private final GameConfigService gameConfigService;
   private final Fed76Service fed76Service;
 
@@ -46,10 +48,11 @@ public class GameApi {
 
   @Autowired
   public GameApi(GameConfigHolderService holderService, GameConfigService gameConfigService,
-      Fed76Service fed76Service) {
+      Fed76Service fed76Service, HudEditorConfigService hudEditorConfigService) {
     this.holderService = holderService;
     this.gameConfigService = gameConfigService;
     this.fed76Service = fed76Service;
+    this.hudEditorConfigService = hudEditorConfigService;
   }
 
   @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/legendaryMods")
@@ -119,7 +122,7 @@ public class GameApi {
 
   @GetMapping(produces = MediaType.APPLICATION_JSON, value = "/hudEditorConfig")
   public Object hudEditorConfig() {
-    return holderService.getHudEditorConfig();
+    return hudEditorConfigService.getConfig();
   }
 
 }

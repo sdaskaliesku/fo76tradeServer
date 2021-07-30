@@ -1,6 +1,6 @@
 export const routes = {
   HOME: "/",
   SETTINGS: "/settings",
-  InventOmaticPipboy: "/InventOmaticPipboy",
+  InventOmatic: "/InventOmatic",
   HUDEditor: "/HUDEditor",
 }

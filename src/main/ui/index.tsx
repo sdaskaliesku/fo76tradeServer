@@ -14,7 +14,7 @@ import {MIN_MOD_SUPPORTED_VERSION} from "./service/domain";
 import {Route, Switch, HashRouter} from "react-router-dom";
 import {SettingsPage} from "./component/settings/SettingsPage";
 import {routes} from "./service/Routes";
-import {InventOmaticPipboy} from "./component/config/InventOmaticPipboy";
+import {InventOmatic} from "./component/config/InventOmatic";
 import {HUDEditor} from "./component/config/HUDEditor";
 import {createMuiTheme, CssBaseline, ThemeProvider} from "@material-ui/core";
 
@@ -76,8 +76,8 @@ const App = () => {
             <CssBaseline/>
             <NavBar/>
             <Switch>
-              <Route path={routes.InventOmaticPipboy}>
-                <InventOmaticPipboy/>
+              <Route path={routes.InventOmatic}>
+                <InventOmatic/>
               </Route>
               <Route path={routes.HUDEditor}>
                 <HUDEditor/>
