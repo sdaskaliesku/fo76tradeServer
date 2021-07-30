@@ -19,7 +19,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -28,7 +28,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -53,7 +53,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -62,7 +62,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -87,7 +87,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -96,7 +96,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -121,7 +121,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -130,7 +130,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -155,7 +155,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -164,7 +164,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -189,7 +189,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -198,7 +198,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -223,7 +223,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -232,7 +232,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -257,7 +257,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -266,7 +266,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -291,7 +291,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -300,7 +300,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -325,7 +325,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -334,7 +334,7 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -359,7 +359,7 @@
           "id": "X",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         },
@@ -368,7 +368,75 @@
           "id": "Y",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "Subtitles": {
+      "label": "Subtitles",
+      "id": "Subtitles",
+      "description": "Subtitle text.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        }
+      ]
+    },
+    "EnemyHealthMeter": {
+      "label": "EnemyHealthMeter",
+      "id": "EnemyHealthMeter",
+      "description": "Meter that shows up when you target an enemy/other entity.",
+      "fields": [
+        {
+          "label": "Scale",
+          "id": "Scale",
+          "defaultValue": 1,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": 0,
+          "max": 1.5
+        },
+        {
+          "label": "X",
+          "id": "X",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
+          "min": -10000,
+          "max": 10000
+        },
+        {
+          "label": "Y",
+          "id": "Y",
+          "defaultValue": 0,
+          "type": "NUMERIC",
+          "step": 0.1,
           "min": -10000,
           "max": 10000
         }
@@ -406,7 +474,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -415,7 +483,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -440,7 +508,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -449,7 +517,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -474,7 +542,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -483,7 +551,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -508,7 +576,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -517,7 +585,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -542,7 +610,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -551,7 +619,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -576,7 +644,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -585,7 +653,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -610,7 +678,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -619,7 +687,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -644,7 +712,7 @@
                     "id": "X",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   },
@@ -653,7 +721,7 @@
                     "id": "Y",
                     "defaultValue": 0,
                     "type": "NUMERIC",
-                    "step": 1,
+                    "step": 0.1,
                     "min": -10000,
                     "max": 10000
                   }
@@ -669,7 +737,7 @@
     "HitMarkerTint": {
       "label": "HitMarkerTint",
       "id": "HitMarkerTint",
-      "description": "Description in progress",
+      "description": "Tints the hit marker that shows up when you hit something. Red by default in-game, so take that into account.",
       "fields": [
         {
           "label": "RGB",
@@ -682,39 +750,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "RightMeters": {
       "label": "RightMeters",
       "id": "RightMeters",
-      "description": "Description in progress",
+      "description": "AP meter, active effects, hunger/thirst, etc",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -722,45 +790,45 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "LeftMeters": {
       "label": "LeftMeters",
       "id": "LeftMeters",
-      "description": "Description in progress",
+      "description": "HP meter",
       "fields": [
         {
           "label": "RadsBarRGB",
           "id": "RadsBarRGB",
-          "defaultValue": "881111",
+          "defaultValue": "F67259",
           "type": "COLOR"
         },
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -768,39 +836,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "Notifications": {
       "label": "Notifications",
       "id": "Notifications",
-      "description": "Description in progress",
+      "description": "Top right notifications (things like 'You can't drop this' and public events)",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -808,39 +876,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "HudFrobber": {
       "label": "HudFrobber",
       "id": "HudFrobber",
-      "description": "Description in progress",
+      "description": "Shows when you hover something that can be locked (doors, terminals, etc)",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -848,39 +916,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "QuestTracker": {
       "label": "QuestTracker",
       "id": "QuestTracker",
-      "description": "Description in progress",
+      "description": "Quest tracker in the top right (by default)",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -888,39 +956,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "TopCenter": {
       "label": "TopCenter",
       "id": "TopCenter",
-      "description": "Description in progress",
+      "description": "Enemy health bar and sneak meter",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -928,39 +996,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "Announce": {
       "label": "Announce",
       "id": "Announce",
-      "description": "Description in progress",
+      "description": "Event started, quest/event rewards etc.",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -968,39 +1036,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "BottomCenter": {
       "label": "BottomCenter",
       "id": "BottomCenter",
-      "description": "Description in progress",
+      "description": "Subtitles and compass.",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -1008,32 +1076,32 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "CompassRGB",
           "id": "CompassRGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -1041,39 +1109,39 @@
           "id": "CompassBrightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "CompassContrast",
           "id": "CompassContrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "CompassSaturation",
           "id": "CompassSaturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "Center": {
       "label": "Center",
       "id": "Center",
-      "description": "Description in progress",
+      "description": "Quick loot menu (and crosshair when CustomCrosshair is not installed).",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -1081,45 +1149,45 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "Team": {
       "label": "Team",
       "id": "Team",
-      "description": "Description in progress",
+      "description": "Team panel",
       "fields": [
         {
           "label": "RadsBarRGB",
           "id": "RadsBarRGB",
-          "defaultValue": "881111",
+          "defaultValue": "F67259",
           "type": "COLOR"
         },
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -1127,39 +1195,39 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "Floating": {
       "label": "Center",
       "id": "Center",
-      "description": "Description in progress",
+      "description": "Floating quest markers, teammate/player markers",
       "fields": [
         {
           "label": "RGB",
           "id": "RGB",
-          "defaultValue": "881111",
+          "defaultValue": "FFFFCB",
           "type": "COLOR"
         },
         {
@@ -1167,85 +1235,85 @@
           "id": "Brightness",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Contrast",
           "id": "Contrast",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         },
         {
           "label": "Saturation",
           "id": "Saturation",
           "defaultValue": 0,
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000
+          "step": 0.1,
+          "min": -100,
+          "max": 100
         }
       ]
     },
     "HUD": {
       "label": "HUD",
       "id": "HUD",
-      "description": "Description in progress",
+      "description": "Configuration options for the various HUD options.",
       "fields": [
         {
           "label": "CrosshairOpacity",
           "id": "CrosshairOpacity",
           "type": "NUMERIC",
-          "step": 1,
-          "min": -10000,
-          "max": 10000,
-          "description": "Description in progress",
+          "step": 0.1,
+          "min": -100,
+          "max": 100,
+          "description": "Opacity of the crosshair on top of your current HUD opacity. Can't go higher than your current HUD opacity.",
           "defaultValue": 1
         },
         {
           "label": "EnableRecoloring",
           "id": "EnableRecoloring",
           "type": "BOOLEAN",
-          "description": "Description in progress",
+          "description": "Enables or disables the coloring of HUD elements.",
           "defaultValue": true
         },
         {
           "label": "ThirstHungerPercentShow",
           "id": "ThirstHungerPercentShow",
           "type": "BOOLEAN",
-          "description": "Description in progress",
+          "description": "Show hunger and thirst percentage numbers.",
           "defaultValue": true
         },
         {
           "label": "AlwaysShowThirstHunger",
           "id": "AlwaysShowThirstHunger",
           "type": "BOOLEAN",
-          "description": "Description in progress",
+          "description": "Keep hunger and thirst bars visible at all times.",
           "defaultValue": false
         },
         {
           "label": "EditMode",
           "id": "EditMode",
           "type": "BOOLEAN",
-          "description": "Description in progress",
+          "description": "Enables you to see changes to HUDEditor.xml in real time. NOTE: Only works if you're editing the file in your data folder, not on this site.",
           "defaultValue": false
         },
         {
           "label": "CustomCrosshair",
           "id": "CustomCrosshair",
           "type": "BOOLEAN",
-          "description": "Description in progress",
+          "description": "Enable if you have Custom Crosshair installed. Disables HUDEditor's coloring of the crosshair so it doesn't override CC's.",
           "defaultValue": false
         },
         {
           "label": "TZMapMarkers",
           "id": "TZMapMarkers",
           "type": "BOOLEAN",
-          "description": "Description in progress",
+          "description": "Enable if you have TZMapMarkers installed. Disables HUDEditor's marker coloring on the compass",
           "defaultValue": false
         }
       ]
