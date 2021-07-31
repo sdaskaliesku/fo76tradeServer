@@ -4,6 +4,9 @@
   color: rgba(255, 255, 255, 0.6);
 
   > .hud-editor-form {
+    > .title {
+      text-decoration: none;
+    }
     > .elements-row {
       display: flex;
       flex-direction: row;

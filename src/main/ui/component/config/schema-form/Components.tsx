@@ -1,8 +1,8 @@
 import React, {useCallback, useState} from "react";
 import {Utils} from "../../../service/utils";
 import {InputNumber} from "primereact/inputnumber";
-import {ColorPicker} from "primereact/colorpicker";
 import {Checkbox, FormControlLabel} from "@material-ui/core";
+import {Color, ColorPicker, createColor} from 'material-ui-color';
 
 export interface CheckboxComponentProps {
   label: string
@@ -59,19 +59,20 @@ export const InputNumberComponent = (props: any) => {
 
 export const ColorPickerComponent = (props: any) => {
   const {label, onDataChange, defaultValue} = props;
-  const [value, setValue] = useState(defaultValue);
+  const [value, setValue] = useState('#' + defaultValue);
   const key = Utils.uuidv4();
 
-  const onChange = (e: any) => {
-    // setValue(e.value);
-    onDataChange(e.value);
-  };
+  const onChange = useCallback((e: any) => {
+    if (e.hex) {
+      onDataChange(e.hex);
+    }
+    setValue(e);
+  }, []);
 
   return (
       <div className="p-field p-col-12 p-md-3 hud-element" key={key}>
         <label className={'element-label'} htmlFor={label + key}>{label}</label>
-        <ColorPicker inputId={label + key} format="hex" value={value}
-                     onChange={(e) => onChange(e)}/>
+        <ColorPicker value={value} onChange={onChange} deferred={true}/>
       </div>
   )
 }
