@@ -234,7 +234,7 @@ export class HUDEditor extends React.Component<any, any> {
     return (
         <div className={"wrapper"}>
           <div className={"hud-editor-form"}>
-            <h1>THIS IS WORK IN PROGRESS!</h1>
+            <h1 className={'title'}>UI config for <a href={'https://www.nexusmods.com/fallout76/mods/953'} target={'_blank'}>HUDEditor</a>!</h1>
             <Button variant="contained" component="label">
               Upload File
               <input type="file" hidden onChange={this.handleFileChosen}/>
