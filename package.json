@@ -61,7 +61,7 @@
     "babel-loader": "^8.2.2",
     "classnames": "^2.2.6",
     "css-loader": "^5.0.2",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.17",
